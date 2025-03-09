@@ -7,6 +7,7 @@ import {
   setSeasonShowThisWeek,
   setSeasonShowTrackConfig,
   setSeasonShowWishlist,
+  setSeasonShowParticipation,
   useUi,
 } from "@/store/ui";
 import { For, VStack } from "@chakra-ui/react";
@@ -23,6 +24,7 @@ function SeasonSettingsPopover() {
     seasonShowThisWeek,
     seasonShowWishlist,
     seasonShowOwned,
+    seasonShowParticipation,
   } = useUi();
 
   const settingsList = [
@@ -81,6 +83,13 @@ function SeasonSettingsPopover() {
       tooltip: "Either owned items should be colored",
       checked: seasonShowOwned,
       setChecked: setSeasonShowOwned,
+    },
+    {
+      id: "minParticipation",
+      text: "Show race participation credit program",
+      tooltip: "Either series you have enough tracks to get reward should be colored",
+      checked: seasonShowParticipation,
+      setChecked: setSeasonShowParticipation,
     },
   ];
 
