@@ -28,7 +28,7 @@ export const useUiStorePersist = create(
       seasonHighlight: true,
       seasonShowWishlist: true,
       seasonShowOwned: true,
-      seasonShowParticipation: true,
+      seasonShowParticipation: false,
       seasonShowThisWeek: true,
       seasonCategory: ECarCategories.all,
       shopVolumeDiscount: true,
