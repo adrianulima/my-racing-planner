@@ -61,8 +61,10 @@ function SeasonTable({ filteredFavorites }: { filteredFavorites: number[] }) {
       >
         <Table.ScrollArea borderRadius={"md"} onScroll={onScroll}>
           <Table.Root size="sm" showColumnBorder stickyHeader>
-            <SeasonTableHeader filteredFavorites={filteredFavorites} 
-                    seriesDateMap={seriesDateMap}/>
+            <SeasonTableHeader
+              filteredFavorites={filteredFavorites}
+              seriesDateMap={seriesDateMap}
+            />
             <Table.Body>
               <For
                 each={weeksStartDates}
