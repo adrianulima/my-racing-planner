@@ -54,7 +54,7 @@ function SeasonTableHeader({
             const numberOfTracks = Object.keys(tracks.filter((track: any) => track.free || (myTracks.includes(track.sku) ||
             ownNurbCombined(track.id, myTracks)))).length
             const enoughTracks = numberOfTracks >= numberOfTracksNeededForParticipation
-            return (
+            return ( series && (
               <SortableColumnHeader
                 dragId={seriesId}
                 showDragButton={seasonShowReorder}
@@ -87,33 +87,34 @@ function SeasonTableHeader({
                       />
                     )}
 
-                    <Collapsible.Root open={!scrolled}>
-                      <Collapsible.Content>
-                        <Tooltip
-                          lazyMount
-                          unmountOnExit
-                          content={series.name}
-                          showArrow
-                          positioning={{ placement: "bottom" }}
-                          openDelay={200}
-                          closeDelay={100}
-                        >
-                          <Text
-                            textAlign={"center"}
-                            lineClamp="2"
-                            maxW={"200px"}
+                      <Collapsible.Root open={!scrolled}>
+                        <Collapsible.Content>
+                          <Tooltip
+                            lazyMount
+                            unmountOnExit
+                            content={series.name}
+                            showArrow
+                            positioning={{ placement: "bottom" }}
+                            openDelay={200}
+                            closeDelay={100}
                           >
-                            {series.name}
-                          </Text>
-                        </Tooltip>
-                      </Collapsible.Content>
-                    </Collapsible.Root>
-                  </VStack>
-                  {seasonShowCarsDropdown && (
-                    <SeasonCarsPopover cars={series.cars} />
-                  )}
-                </>
-              </SortableColumnHeader>
+                            <Text
+                              textAlign={"center"}
+                              lineClamp="2"
+                              maxW={"200px"}
+                            >
+                              {series.name}
+                            </Text>
+                          </Tooltip>
+                        </Collapsible.Content>
+                      </Collapsible.Root>
+                    </VStack>
+                    {seasonShowCarsDropdown && (
+                      <SeasonCarsPopover cars={series.cars} />
+                    )}
+                  </>
+                </SortableColumnHeader>
+              )
             );
           }}
         />

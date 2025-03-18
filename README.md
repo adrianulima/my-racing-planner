@@ -6,7 +6,6 @@ Visit it at: [https://adrianulima.github.io/my-racing-planner/](https://adrianul
 
 ![image](https://github.com/user-attachments/assets/8284bc52-811c-495d-89d7-8da642154ff4)
 
-
 _This project is not affiliated with or endorsed by iRacing.com._
 
 ---
@@ -90,10 +89,18 @@ The project includes scripts to fetch data from iRacing's public API and parse i
    pnpm run fetch-data
    ```
 
+   ```bash
+   pnpm run fetch-past
+   ```
+
 3. Process the fetched data into parsed JSON files:
 
    ```bash
    pnpm run parse-data
+   ```
+
+   ```bash
+   pnpm run parse-past
    ```
 
 Copy the content of `ir-api/parsed/` folder into `src/ir-data/` folder. The generated JSON files will be used to populate the application's content.

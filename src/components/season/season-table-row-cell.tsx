@@ -43,7 +43,8 @@ function SeasonTableRowCell({
   } = useUi();
 
   const cars: number[] =
-    seriesDateMap[seriesId as keyof typeof seriesDateMap][`${date}_cars`] || [];
+    seriesDateMap?.[seriesId as keyof typeof seriesDateMap]?.[`${date}_cars`] ||
+    [];
   const color = {
     _dark: free
       ? "green.400"

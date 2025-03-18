@@ -40,7 +40,7 @@ function SeasonTableRow({
         each={filteredFavorites}
         children={(seriesId) => {
           const trackId =
-            seriesDateMap[seriesId as keyof typeof seriesDateMap][date];
+            seriesDateMap?.[seriesId as keyof typeof seriesDateMap]?.[date];
           const track = TRACKS_JSON[trackId as keyof typeof TRACKS_JSON];
           const wish =
             track &&

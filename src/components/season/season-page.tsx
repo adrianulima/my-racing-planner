@@ -22,8 +22,11 @@ function SeasonPage() {
         : favoriteSeries.filter(
             (seriesId: any) =>
               ECarCategories[
-                SERIES_JSON[seriesId.toString() as keyof typeof SERIES_JSON]
-                  .category as keyof typeof ECarCategories
+                (
+                  SERIES_JSON[
+                    seriesId.toString() as keyof typeof SERIES_JSON
+                  ] ?? {}
+                ).category as keyof typeof ECarCategories
               ] === seasonCategory,
           );
     setFilteredFavorites(filtered);

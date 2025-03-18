@@ -2,6 +2,23 @@
 
 All notable changes to the **"my-racing-planner"** project will be documented in this file.
 
+## 0.7.5
+
+- Fixed another issue caused by previously favorite series was removed in the new season
+
+## 0.7.4
+
+- Fixed an issue with the tracks not being found at the checkout page
+
+## 0.7.3
+
+- Fixed an issue caused by previously favorite series was removed in the new season
+
+## 0.7.2
+
+- Update with data of Season 2 of 2025
+- Added current season text to top bar
+
 ## 0.7.1
 
 - Replaced drag control by a swap button to reorder series columns at the season table

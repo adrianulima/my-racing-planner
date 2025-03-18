@@ -14,7 +14,7 @@ function SeasonHeader() {
             ...new Set(
               SERIES_JSON[
                 curr.toString() as keyof typeof SERIES_JSON
-              ].weeks.map((w) => w.track.id),
+              ]?.weeks.map((w) => w.track.id) ?? [],
             ),
           ].forEach((trackId) => {
             const track =
