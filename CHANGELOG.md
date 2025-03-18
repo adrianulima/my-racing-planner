@@ -2,6 +2,11 @@
 
 All notable changes to the **"my-racing-planner"** project will be documented in this file.
 
+## 0.7.6
+
+- New selector in settings popover to display track participation view
+- Track participation view shows if user has enough tracks to earn credits from a series
+
 ## 0.7.5
 
 - Fixed another issue caused by previously favorite series was removed in the new season
@@ -153,8 +158,3 @@ All notable changes to the **"my-racing-planner"** project will be documented in
 ## 0.1.0
 
 - Initial release.
-
-## [Unreleased]
-### Added
-- New selector in settings popover to display track participation view
-- Track participation view shows if user has enough tracks to earn credits from a series
