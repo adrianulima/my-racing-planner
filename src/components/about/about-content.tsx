@@ -6,6 +6,7 @@ import { Tooltip } from "../ui/tooltip";
 const contributors = [
   { name: "Adriano Lima", github: "adrianulima" },
   { name: "Juni Lima", github: "junilima" },
+  { name: "Daniel López", github: "raikwallace" },
 ];
 
 function AboutContent() {
