@@ -9,9 +9,14 @@ import { Tooltip } from "../ui/tooltip";
 function SeasonTableHeaderParticipation({
   seriesTracks,
 }: {
-  seriesTracks: { [key: number]: number };
+  seriesTracks: { [key: string]: number };
 }) {
   const { myTracks } = useIr();
+  Object.keys(seriesTracks).forEach((key) => {
+    if (key.includes("_cars")) {
+      delete seriesTracks[key];
+    }
+  });
   const tracks = Object.values(seriesTracks).map(
     (trackId) => TRACKS_JSON[trackId.toString() as keyof typeof TRACKS_JSON],
   );
@@ -36,9 +41,8 @@ function SeasonTableHeaderParticipation({
     <Tooltip
       lazyMount
       unmountOnExit
-      content={`Participation credit program: ${
-        enoughTracks ? "Yes" : "No"
-      } (${numberOfTracks}/${tracksNeeded})`}
+      content={`Participation credit program: ${enoughTracks ? "Yes" : "No"
+        } (${numberOfTracks}/${tracksNeeded})`}
       showArrow
       positioning={{ placement: "bottom" }}
       openDelay={200}

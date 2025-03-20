@@ -2,6 +2,10 @@
 
 All notable changes to the **"my-racing-planner"** project will be documented in this file.
 
+## 0.7.7
+
+- Fix problem with series like Ring Meister by Ricmotech when activate the option to show participation on the credit program
+
 ## 0.7.6
 
 - New selector in settings popover to display track participation view
