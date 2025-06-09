@@ -42,7 +42,7 @@ function NavBar({ ...props }: StackProps) {
         <Tooltip
           lazyMount
           unmountOnExit
-          content={`My Racing Planner v${APP_VERSION}`}
+          content={`Racing Planner v${APP_VERSION}`}
           showArrow
           positioning={{ placement: "bottom" }}
           openDelay={200}
@@ -53,7 +53,7 @@ function NavBar({ ...props }: StackProps) {
             draggable={false}
             w={"40px"}
             h={"40px"}
-            src="/my-racing-planner/my-racing-planner-icon.svg"
+            src="/my-racing-planner-icon.svg"
             alt="my=racing-planner-icon"
             mb={3}
           />

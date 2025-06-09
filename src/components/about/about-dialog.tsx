@@ -34,7 +34,7 @@ function AboutDialog({ children, ...rest }: DialogRootProps) {
 
       <DialogContent full={!width.md}>
         <DialogHeader textAlign={"center"}>
-          <DialogTitle>My Racing Planner (v{APP_VERSION})</DialogTitle>
+          <DialogTitle>Racing Planner (v{APP_VERSION})</DialogTitle>
         </DialogHeader>
         <DialogBody px={{ base: 4, md: 10 }} textAlign={"justify"}>
           <Suspense fallback={<LoadingContainer />}>

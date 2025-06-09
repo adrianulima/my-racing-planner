@@ -49,7 +49,7 @@ function HelpDialog({ children, ...rest }: DialogRootProps) {
 
       <DialogContent>
         <DialogHeader textAlign={"center"}>
-          <DialogTitle>Welcome to My Racing Planner</DialogTitle>
+          <DialogTitle>Welcome to Racing Planner</DialogTitle>
         </DialogHeader>
         <DialogBody px={{ base: 4, md: 10 }} textAlign={"justify"}>
           <Suspense fallback={<LoadingContainer />}>

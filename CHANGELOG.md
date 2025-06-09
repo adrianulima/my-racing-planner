@@ -1,6 +1,10 @@
-# My Racing Planner Change Log
+# Racing Planner Change Log
 
 All notable changes to the **"my-racing-planner"** project will be documented in this file.
+
+## 0.8.0
+
+- Renamed to Racing Planner and some configs to work on new domain
 
 ## 0.7.9
 
