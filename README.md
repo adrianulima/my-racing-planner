@@ -2,7 +2,7 @@
 
 This tool helps iRacing users efficiently navigate series, cars, and tracks, allowing them to make informed decisions about the best content to purchase based on usage in the current season. The project also includes wishlist functionality, allowing users to add items and navigate to iRacing's website for easy purchasing.
 
-Visit it at: [https://myracing.com](https://myracing.com)
+Visit it at: [https://racingplanner.com](https://racingplanner.com)
 
 ![image](https://github.com/user-attachments/assets/8284bc52-811c-495d-89d7-8da642154ff4)
 
