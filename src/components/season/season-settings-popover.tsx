@@ -6,9 +6,11 @@ import {
   setSeasonShowParticipation,
   setSeasonShowRain,
   setSeasonShowReorder,
+  setSeasonShowSchedules,
   setSeasonShowThisWeek,
   setSeasonShowTrackConfig,
   setSeasonShowWishlist,
+  setSeasonUseLocalTimezone,
   useUi,
 } from "@/store/ui";
 import { For, VStack } from "@chakra-ui/react";
@@ -27,6 +29,8 @@ function SeasonSettingsPopover() {
     seasonShowOwned,
     seasonShowParticipation,
     seasonShowRain,
+    seasonShowSchedules,
+    seasonUseLocalTimezone,
   } = useUi();
 
   const settingsList = [
@@ -100,6 +104,20 @@ function SeasonSettingsPopover() {
       tooltip: "Show rain indicators for tracks with chance of rain",
       checked: seasonShowRain,
       setChecked: setSeasonShowRain,
+    },
+    {
+      id: "schedules",
+      text: "Show series schedule",
+      tooltip: "Show race format and schedule information under series names",
+      checked: seasonShowSchedules,
+      setChecked: setSeasonShowSchedules,
+    },
+    {
+      id: "localTimezone",
+      text: "Convert schedule to local time zone",
+      tooltip: "Convert race times from UTC to your local time zone",
+      checked: seasonUseLocalTimezone,
+      setChecked: setSeasonUseLocalTimezone,
     },
   ];
 
