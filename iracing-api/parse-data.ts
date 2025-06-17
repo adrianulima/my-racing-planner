@@ -19,6 +19,12 @@ const isLegacy = (name: string) => {
   );
 };
 
+const NURB_COMBINED_IDS = [252, 262, 263, 264];
+
+const isNurbCombined = (id: number) => {
+  return NURB_COMBINED_IDS.includes(id);
+};
+
 (async () => {
   const classesById = CLASSES_JSON.reduce(
     (acc, curr) => ({
@@ -123,9 +129,9 @@ const isLegacy = (name: string) => {
 
   const parsedTracks = TRACKS_JSON.filter(
     (track) =>
-      !track.retired && (track.is_ps_purchasable || track.track_id === 252), // 252="Nürburgring Combined"
-  )
-  .map((track) => ({
+      !track.retired &&
+      (track.is_ps_purchasable || isNurbCombined(track.track_id)),
+  ).map((track) => ({
     id: track.track_id,
     name: track.track_name,
     config: track.config_name ?? "",

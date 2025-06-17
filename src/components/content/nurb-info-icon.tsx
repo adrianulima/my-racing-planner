@@ -1,5 +1,5 @@
 import {
-  NURB_COMBINED_ID,
+  NURB_COMBINED_IDS,
   ownNurbCombined,
   wishNurbCombined,
 } from "@/ir-data/utils/tracks";
@@ -22,8 +22,8 @@ function NurbInfoIcon({
 }: IconProps & { size?: "xs" | "sm" | "md" | "lg" }) {
   const px = sizes[size as keyof typeof sizes] ?? sizes["md"];
   const { myTracks, wishTracks } = useIr();
-  const owned = ownNurbCombined(NURB_COMBINED_ID, myTracks);
-  const wish = wishNurbCombined(NURB_COMBINED_ID, wishTracks, myTracks);
+  const owned = ownNurbCombined(NURB_COMBINED_IDS[0], myTracks);
+  const wish = wishNurbCombined(NURB_COMBINED_IDS[0], wishTracks, myTracks);
   return (
     <Tooltip
       lazyMount

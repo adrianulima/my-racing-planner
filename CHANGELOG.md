@@ -1,6 +1,14 @@
 # Racing Planner Change Log
 
-All notable changes to the **"my-racing-planner"** project will be documented in this file.
+All notable changes to the **"Racing Planner"** project will be documented in this file.
+
+## 0.8.2
+
+- Fixed some cases where Nürburgring Combined was not found and was showing empty at the season table
+
+## 0.8.1
+
+- Update with data of Season 3 of 2025
 
 ## 0.8.0
 
