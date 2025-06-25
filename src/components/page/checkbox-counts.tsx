@@ -11,9 +11,9 @@ function CheckboxCounts({
   ownedCount,
   wishCount,
 }: {
-  freeCount: number;
-  ownedCount: number;
-  wishCount: number;
+  freeCount: number | string;
+  ownedCount: number | string;
+  wishCount: number | string;
 }) {
   const { height } = useScreenSize();
   const ifNotSmall = (value: any) => (height.small ? undefined : value);
@@ -29,15 +29,17 @@ function CheckboxCounts({
         closeDelay={100}
       >
         <HStack gap={{ base: "4px", md: ifNotSmall("8px") }}>
-          <Badge
-            size={{ base: "xs", md: ifNotSmall("sm") }}
-            variant="solid"
-            minWidth={{ base: "24px", md: ifNotSmall("28px") }}
-            justifyContent={"center"}
-            colorPalette={"green"}
-          >
-            {freeCount}
-          </Badge>
+          <HStack justifyContent={"end"} minW={"65px"}>
+            <Badge
+              size={{ base: "xs", md: ifNotSmall("sm") }}
+              variant="solid"
+              minWidth={{ base: "24px", md: ifNotSmall("28px") }}
+              justifyContent={"center"}
+              colorPalette={"green"}
+            >
+              {freeCount}
+            </Badge>
+          </HStack>
           <Checkbox
             size={{ base: "sm", md: ifNotSmall("md") }}
             readOnly={true}
@@ -59,14 +61,16 @@ function CheckboxCounts({
         closeDelay={100}
       >
         <HStack gap={{ base: "4px", md: ifNotSmall("8px") }}>
-          <Badge
-            size={{ base: "xs", md: ifNotSmall("sm") }}
-            variant="solid"
-            minWidth={{ base: "24px", md: ifNotSmall("28px") }}
-            justifyContent={"center"}
-          >
-            {ownedCount}
-          </Badge>
+          <HStack justifyContent={"end"} minW={"65px"}>
+            <Badge
+              size={{ base: "xs", md: ifNotSmall("sm") }}
+              variant="solid"
+              minWidth={{ base: "24px", md: ifNotSmall("28px") }}
+              justifyContent={"center"}
+            >
+              {ownedCount}
+            </Badge>
+          </HStack>
           <Checkbox
             size={{ base: "sm", md: ifNotSmall("md") }}
             readOnly={true}
@@ -88,15 +92,17 @@ function CheckboxCounts({
         closeDelay={100}
       >
         <HStack gap={{ base: "4px", md: ifNotSmall("8px") }}>
-          <Badge
-            size={{ base: "xs", md: ifNotSmall("sm") }}
-            variant="solid"
-            minWidth={{ base: "24px", md: ifNotSmall("28px") }}
-            justifyContent={"center"}
-            colorPalette={"blue"}
-          >
-            {wishCount}
-          </Badge>
+          <HStack justifyContent={"end"} minW={"65px"}>
+            <Badge
+              size={{ base: "xs", md: ifNotSmall("sm") }}
+              variant="solid"
+              minWidth={{ base: "24px", md: ifNotSmall("28px") }}
+              justifyContent={"center"}
+              colorPalette={"blue"}
+            >
+              {wishCount}
+            </Badge>
+          </HStack>
           <Checkbox
             size={{ base: "sm", md: ifNotSmall("md") }}
             readOnly={true}

@@ -15,9 +15,9 @@ function PageHeader({
 }: PropsWithChildren<{
   title: string;
   description: string;
-  freeCount?: number;
-  ownedCount?: number;
-  wishCount?: number;
+  freeCount?: number | string;
+  ownedCount?: number | string;
+  wishCount?: number | string;
 }>) {
   const { scrolled } = useAppLayout();
   const { height } = useScreenSize();

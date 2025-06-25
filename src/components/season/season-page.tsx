@@ -34,7 +34,7 @@ function SeasonPage() {
 
   return (
     <Page>
-      <SeasonHeader />
+      <SeasonHeader filteredFavorites={filteredFavorites} />
       {favoriteSeries.length > 0 && <SeasonFilterPanel />}
       {favoriteSeries.length === 0 && <SeasonPageEmpty />}
       {favoriteSeries.length > 0 && filteredFavorites.length === 0 && (
