@@ -213,40 +213,56 @@ const isNurbCombined = (id: number) => {
   })).reduce((acc, curr) => ({ ...acc, [curr.id]: curr }), {});
 
   const seriesById = (SERIES_SEASON_JSON as any[])
-    .map((season) => ({
-      id: season.schedules[0].series_id,
-      name: season.schedules[0].series_name,
-      category: season.schedules[0].category,
-      laps: season.schedules[0].race_lap_limit,
-      duration: season.schedules[0].race_time_limit,
-      // season: { id: season.season_id, name: season.season_name },
-      switching: season.car_switching,
-      official: season.official,
-      fixed: season.fixed_setup,
-      multiclass: season.multiclass,
-      cars: seriesCarsTracksMaps.seriesCars[season.schedules[0].series_id],
-      license: licensesById[season.license_group as keyof typeof licensesById],
-      logo:
-        SERIES_ASSETS_JSON[
-          `${season.schedules[0].series_id}` as keyof typeof SERIES_ASSETS_JSON
-        ]?.logo ?? undefined,
-      weeks: season.schedules.map((week: any) => ({
-        weekNum: week.race_week_num,
-        date: week.start_date,
-        cars: season.car_switching
-          ? week.race_week_cars.map((c: any) => ({
-              id: c.car_id,
-              name: c.car_name,
-            }))
-          : undefined,
-        track: {
-          id: week.track.track_id,
-          name: week.track.track_name,
-          config: week.track.config_name,
-        },
-        rainChance: week.weather?.weather_summary?.precip_chance ?? 0,
-      })),
-    }))
+    .map((season) => {
+      const raceTimeDescriptors =
+        season.schedules[0].race_time_descriptors || [];
+
+      const raceSchedule = raceTimeDescriptors.map((descriptor: any) => ({
+        dayOffset: descriptor.day_offset,
+        firstSessionTime: descriptor.first_session_time,
+        repeatMinutes: descriptor.repeat_minutes,
+        repeating: descriptor.repeating,
+        sessionMinutes: descriptor.session_minutes,
+        startDate: descriptor.start_date,
+        superSession: descriptor.super_session,
+      }));
+
+      return {
+        id: season.schedules[0].series_id,
+        name: season.schedules[0].series_name,
+        category: season.schedules[0].category,
+        laps: season.schedules[0].race_lap_limit,
+        duration: season.schedules[0].race_time_limit,
+        switching: season.car_switching,
+        official: season.official,
+        fixed: season.fixed_setup,
+        multiclass: season.multiclass,
+        cars: seriesCarsTracksMaps.seriesCars[season.schedules[0].series_id],
+        license:
+          licensesById[season.license_group as keyof typeof licensesById],
+        logo:
+          SERIES_ASSETS_JSON[
+            `${season.schedules[0].series_id}` as keyof typeof SERIES_ASSETS_JSON
+          ]?.logo ?? undefined,
+        weeks: season.schedules.map((week: any) => ({
+          weekNum: week.race_week_num,
+          date: week.start_date,
+          cars: season.car_switching
+            ? week.race_week_cars.map((c: any) => ({
+                id: c.car_id,
+                name: c.car_name,
+              }))
+            : undefined,
+          track: {
+            id: week.track.track_id,
+            name: week.track.track_name,
+            config: week.track.config_name,
+          },
+          rainChance: week.weather?.weather_summary?.precip_chance ?? 0,
+        })),
+        raceSchedule,
+      };
+    })
     .reduce((acc, curr) => ({ ...acc, [curr.id]: curr }), {});
 
   await writeFile(

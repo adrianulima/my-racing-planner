@@ -9,11 +9,13 @@ import {
   setSeasonShowThisWeek,
   setSeasonShowTrackConfig,
   setSeasonShowWishlist,
+  setSeasonUseLocalTimezone,
   useUi,
 } from "@/store/ui";
 import { For, VStack } from "@chakra-ui/react";
 import { Switch } from "../ui/switch";
 import { Tooltip } from "../ui/tooltip";
+import { useMemo } from "react";
 
 function SeasonSettingsPopover() {
   const {
@@ -27,7 +29,13 @@ function SeasonSettingsPopover() {
     seasonShowOwned,
     seasonShowParticipation,
     seasonShowRain,
+    seasonUseLocalTimezone,
   } = useUi();
+
+  // Get the timezone name
+  const timezoneName = useMemo(() => {
+    return Intl.DateTimeFormat().resolvedOptions().timeZone || "Local";
+  }, [seasonUseLocalTimezone]);
 
   const settingsList = [
     {
@@ -100,6 +108,13 @@ function SeasonSettingsPopover() {
       tooltip: "Show rain indicators for tracks with chance of rain",
       checked: seasonShowRain,
       setChecked: setSeasonShowRain,
+    },
+    {
+      id: "localTimezone",
+      text: `Schedule with ${timezoneName} time`,
+      tooltip: "Convert race times from UTC to your local time zone",
+      checked: seasonUseLocalTimezone,
+      setChecked: setSeasonUseLocalTimezone,
     },
   ];
 
