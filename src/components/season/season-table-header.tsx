@@ -3,7 +3,15 @@ import { setFavoriteSeriesList, useIr } from "@/store/ir";
 import { useUi } from "@/store/ui";
 import { createSeriesScheduleDescription } from "@/utils/race-schedule";
 import { createSimpleScheduleDescription } from "@/utils/simple-schedule";
-import { Box, Collapsible, For, Image, Table, Text, VStack } from "@chakra-ui/react";
+import {
+  Box,
+  Collapsible,
+  For,
+  Image,
+  Table,
+  Text,
+  VStack,
+} from "@chakra-ui/react";
 import { arrayMove } from "@dnd-kit/sortable";
 import { useMemo } from "react";
 import SERIES_JSON from "../../ir-data/series.json";
@@ -20,12 +28,11 @@ function SeasonTableHeader({
   filteredFavorites: number[];
   seriesDateMap: { [key: number]: any };
 }) {
-  const { 
-    seasonShowReorder, 
-    seasonShowCarsDropdown, 
+  const {
+    seasonShowReorder,
+    seasonShowCarsDropdown,
     seasonShowParticipation,
-    seasonShowSchedules,
-    seasonUseLocalTimezone
+    seasonUseLocalTimezone,
   } = useUi();
   const { scrolled } = useAppLayout();
   const { favoriteSeries } = useIr();
@@ -37,18 +44,6 @@ function SeasonTableHeader({
     // Note: getTimezoneOffset() returns the offset in minutes, but with opposite sign
     // e.g., for UTC+2, it returns -120, so we need to negate it
     return -new Date().getTimezoneOffset();
-  }, [seasonUseLocalTimezone]);
-  
-  // Get the timezone name
-  const timezoneName = useMemo(() => {
-    if (!seasonUseLocalTimezone) {
-      return "UTC";
-    }
-    try {
-      return Intl.DateTimeFormat().resolvedOptions().timeZone || "Local time";
-    } catch (e) {
-      return "Local time";
-    }
   }, [seasonUseLocalTimezone]);
 
   const onClickSwap = (index: number) => {
@@ -73,22 +68,21 @@ function SeasonTableHeader({
           children={(seriesId, i) => {
             const series =
               SERIES_JSON[seriesId.toString() as keyof typeof SERIES_JSON];
-            
+
             // Generate race format description
-            const raceFormatDescription = series && seasonShowSchedules ? 
-              createSimpleScheduleDescription(series.laps, series.duration) : "";
-              
+            const raceFormatDescription =
+              series &&
+              createSimpleScheduleDescription(series.laps, series.duration);
+
             // Generate schedule description from actual race schedule data
             // Pass the timezone offset if using local timezone
-            const scheduleDescription = series && series.raceSchedule && Array.isArray(series.raceSchedule) && seasonShowSchedules ? 
-              createSeriesScheduleDescription(series.raceSchedule, timezoneOffsetMinutes) : "";
-              
-            // Check if any race time descriptor has repeatMinutes > 60
-            const hasLongRepeatInterval = series && series.raceSchedule ? 
-              series.raceSchedule.some((descriptor: any) => 
-                descriptor.repeatMinutes && descriptor.repeatMinutes > 60
-              ) : false;
-              
+            const scheduleDescription =
+              series?.raceSchedule &&
+              createSeriesScheduleDescription(
+                series.raceSchedule,
+                timezoneOffsetMinutes,
+              );
+
             return (
               series && (
                 <SortableColumnHeader
@@ -100,34 +94,69 @@ function SeasonTableHeader({
                   position={"relative"}
                   bgColor={"currentBg"}
                 >
-                  <VStack
-                    gap={1}
-                    pb={seasonShowParticipation && !scrolled ? "10px" : 0}
-                    width="100%"
-                  >
-                    {series.logo && (
-                      <Image
-                        loading="lazy"
-                        userSelect={"none"}
-                        draggable={false}
-                        h="40px"
-                        fit="contain"
-                        src={`${IR_URL.image}/img/logos/series/${series.logo}`}
-                      />
-                    )}
-
-                    <Collapsible.Root open={!scrolled}>
-                      <Collapsible.Content style={{ width: '100%' }}>
-                        <Box width="100%" px={1}>
-                          <Tooltip
-                            lazyMount
-                            unmountOnExit
-                            content={series.name}
-                            showArrow
-                            positioning={{ placement: "bottom" }}
-                            openDelay={200}
-                            closeDelay={100}
+                  <Tooltip
+                    lazyMount
+                    unmountOnExit
+                    content={
+                      <VStack>
+                        <Text
+                          textAlign={"center"}
+                          lineClamp="2"
+                          width="100%"
+                          whiteSpace="normal"
+                          wordBreak="break-word"
+                        >
+                          {series.name}
+                        </Text>
+                        {raceFormatDescription && (
+                          <Text
+                            textAlign="center"
+                            width="100%"
+                            whiteSpace="normal"
+                            wordBreak="break-word"
                           >
+                            {raceFormatDescription} race
+                          </Text>
+                        )}
+
+                        {scheduleDescription && (
+                          <VStack>
+                            <Text
+                              textAlign="center"
+                              width="100%"
+                              whiteSpace="normal"
+                              wordBreak="break-word"
+                            >
+                              {scheduleDescription}
+                            </Text>
+                          </VStack>
+                        )}
+                      </VStack>
+                    }
+                    showArrow
+                    positioning={{ placement: "bottom" }}
+                    openDelay={200}
+                    closeDelay={100}
+                  >
+                    <VStack
+                      gap={1}
+                      pb={seasonShowParticipation && !scrolled ? "12px" : 0}
+                      width="100%"
+                    >
+                      {series.logo && (
+                        <Image
+                          loading="lazy"
+                          userSelect={"none"}
+                          draggable={false}
+                          h="40px"
+                          fit="contain"
+                          src={`${IR_URL.image}/img/logos/series/${series.logo}`}
+                        />
+                      )}
+
+                      <Collapsible.Root open={!scrolled}>
+                        <Collapsible.Content style={{ width: "100%" }}>
+                          <Box width="100%" px={1}>
                             <Text
                               textAlign={"center"}
                               lineClamp="2"
@@ -135,52 +164,11 @@ function SeasonTableHeader({
                             >
                               {series.name}
                             </Text>
-                          </Tooltip>
-                          
-                          {raceFormatDescription && (
-                            <Text
-                              fontSize="xs"
-                              color="gray.500"
-                              textAlign="center"
-                              width="100%"
-                              whiteSpace="normal"
-                              wordBreak="break-word"
-                            >
-                              {raceFormatDescription}
-                            </Text>
-                          )}
-                          
-                          {scheduleDescription && (
-                            <VStack spacing="0" width="100%">
-                              <Text
-                                fontSize="xs"
-                                color="gray.400"
-                                textAlign="center"
-                                width="100%"
-                                mt="1px"
-                                whiteSpace="normal"
-                                wordBreak="break-word"
-                              >
-                                {scheduleDescription}
-                              </Text>
-                              
-                              {hasLongRepeatInterval && (
-                                <Text
-                                  fontSize="xs"
-                                  color="gray.400"
-                                  textAlign="center"
-                                  width="100%"
-                                  fontStyle="italic"
-                                >
-                                  {timezoneName === "UTC" ? "UTC" : `${timezoneName} time`}
-                                </Text>
-                              )}
-                            </VStack>
-                          )}
-                        </Box>
-                      </Collapsible.Content>
-                    </Collapsible.Root>
-                  </VStack>
+                          </Box>
+                        </Collapsible.Content>
+                      </Collapsible.Root>
+                    </VStack>
+                  </Tooltip>
 
                   {seasonShowParticipation && (
                     <SeasonTableHeaderParticipation

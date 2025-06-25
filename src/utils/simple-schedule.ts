@@ -6,14 +6,14 @@
  */
 export function createSimpleScheduleDescription(
   laps: number | null,
-  duration: number | null
+  duration: number | null,
 ): string {
   if (laps && duration) {
-    return `${laps} laps or ${duration} min race`;
+    return `${laps} laps or ${duration} min`;
   } else if (laps) {
-    return `${laps} lap race`;
+    return `${laps} laps`;
   } else if (duration) {
-    return `${duration} min race`;
+    return `${duration} min`;
   }
   return "";
 }

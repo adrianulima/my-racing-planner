@@ -2,6 +2,10 @@
 
 All notable changes to the **"Racing Planner"** project will be documented in this file.
 
+## 0.8.3
+
+- Added race length and repeating schedule to the series header tooltip
+
 ## 0.8.2
 
 - Fixed some cases where Nürburgring Combined was not found and was showing empty at the season table

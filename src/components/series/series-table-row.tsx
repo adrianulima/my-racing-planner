@@ -169,7 +169,7 @@ function SeriesTableRow({
           <CategoryIcon fontSize="16px" category={category} />
         </Tooltip>
       </Table.Cell>
-      <Table.Cell minWidth={"90px"} textAlign={"center"}>
+      <Table.Cell minWidth={"130px"} textAlign={"center"}>
         <DurationBadge duration={duration} laps={laps} />
       </Table.Cell>
       <Table.Cell minWidth={"40px"} textAlign={"center"}>
