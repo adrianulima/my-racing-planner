@@ -9,7 +9,7 @@ const dirname = path.dirname(fileURLToPath(import.meta.url));
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: "/my-racing-planner",
+  base: "",
   plugins: [react(), tsconfigPaths()],
   define: {
     APP_VERSION: JSON.stringify(process.env.npm_package_version),

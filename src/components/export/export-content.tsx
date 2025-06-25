@@ -43,7 +43,7 @@ function ExportContent() {
           title={"Export My Content"}
           marginSize={5}
           imageSettings={{
-            src: "/my-racing-planner/my-racing-planner-icon.svg",
+            src: "/my-racing-planner-icon.svg",
             width: 50,
             height: 50,
             excavate: true,

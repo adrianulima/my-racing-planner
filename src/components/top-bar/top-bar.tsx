@@ -36,7 +36,7 @@ function TopBar({ ...props }: StackProps) {
               fontWeight="bold"
               userSelect={"none"}
             >
-              2025 Season 2
+              2025 Season 3
             </Heading>
             <HStack>
               <AboutDialog ids={{ trigger: "about-dialog" }}>

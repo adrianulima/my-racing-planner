@@ -1,8 +1,8 @@
-# My Racing Planner
+# Racing Planner
 
 This tool helps iRacing users efficiently navigate series, cars, and tracks, allowing them to make informed decisions about the best content to purchase based on usage in the current season. The project also includes wishlist functionality, allowing users to add items and navigate to iRacing's website for easy purchasing.
 
-Visit it at: [https://adrianulima.github.io/my-racing-planner/](https://adrianulima.github.io/my-racing-planner/)
+Visit it at: [https://racingplanner.com](https://racingplanner.com)
 
 ![image](https://github.com/user-attachments/assets/8284bc52-811c-495d-89d7-8da642154ff4)
 
@@ -48,7 +48,7 @@ To start the development server:
 pnpm run dev
 ```
 
-The app will be available at [http://localhost:5173/my-racing-planner](http://localhost:5173/my-racing-planner).
+The app will be available at [http://localhost:5173](http://localhost:5173).
 
 ### Building for Production
 

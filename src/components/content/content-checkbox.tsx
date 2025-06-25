@@ -1,4 +1,4 @@
-import { NURB_COMBINED_ID } from "@/ir-data/utils/tracks";
+import { isNurbCombined } from "@/ir-data/utils/tracks";
 import { setMyCar, setMyTrack, setWishCar, setWishTrack } from "@/store/ir";
 import { faBookmark, faSackXmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -25,7 +25,7 @@ function ContentCheckbox({
 }) {
   const [setMy, setWish] =
     content === "cars" ? [setMyCar, setWishCar] : [setMyTrack, setWishTrack];
-  const isNurb = contentId === NURB_COMBINED_ID;
+  const isNurb = isNurbCombined(contentId);
   return isNurb ? (
     <NurbInfoIcon
       size={size}
