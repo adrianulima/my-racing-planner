@@ -5,6 +5,7 @@ All notable changes to the **"Racing Planner"** project will be documented in th
 ## 0.8.3
 
 - Added race length and repeating schedule to the Series header tooltip
+- Added series license to the Series header tooltip
 - Improved content count by unique and total at the Series Page
 
 ## 0.8.2

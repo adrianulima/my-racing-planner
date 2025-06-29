@@ -20,6 +20,7 @@ import { Tooltip } from "../ui/tooltip";
 import SeasonCarsPopover from "./season-cars-popover";
 import SeasonTableHeaderParticipation from "./season-table-header-participation";
 import SortableColumnHeader from "./sortable-column-header";
+import LicenseBadge from "../badges/license-badge";
 
 function SeasonTableHeader({
   filteredFavorites,
@@ -69,8 +70,7 @@ function SeasonTableHeader({
             const series =
               SERIES_JSON[seriesId.toString() as keyof typeof SERIES_JSON];
 
-            // Generate race format description
-            const raceFormatDescription =
+            const raceDuration =
               series &&
               createSimpleScheduleDescription(series.laps, series.duration);
 
@@ -105,19 +105,27 @@ function SeasonTableHeader({
                           width="100%"
                           whiteSpace="normal"
                           wordBreak="break-word"
+                          fontWeight="bold"
                         >
                           {series.name}
                         </Text>
-                        {raceFormatDescription && (
-                          <Text
-                            textAlign="center"
-                            width="100%"
-                            whiteSpace="normal"
-                            wordBreak="break-word"
+
+                        <Text
+                          textAlign="center"
+                          width="100%"
+                          whiteSpace="normal"
+                          wordBreak="break-word"
+                        >
+                          <LicenseBadge
+                            letter={series.license.letter}
+                            color={series.license.color}
+                            mr="1"
+                            themeInverted
                           >
-                            {raceFormatDescription} race
-                          </Text>
-                        )}
+                            {series.license.letter}
+                          </LicenseBadge>
+                          {raceDuration} race
+                        </Text>
 
                         {scheduleDescription && (
                           <VStack>
