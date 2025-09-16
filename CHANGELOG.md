@@ -2,6 +2,16 @@
 
 All notable changes to the **"Racing Planner"** project will be documented in this file.
 
+## 0.8.5
+
+- Updated history data
+- Added tooltip with schedule description to the race duration in the series table
+
+## 0.8.4
+
+- Update with data of Season 4 of 2025
+- Made chance of rain tooltip faster
+
 ## 0.8.3
 
 - Added race length and repeating schedule to the Series header tooltip

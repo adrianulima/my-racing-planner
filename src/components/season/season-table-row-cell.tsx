@@ -4,6 +4,7 @@ import React from "react";
 import ContentCheckbox from "../content/content-checkbox";
 import SeasonTableCarsPopover from "./season-table-cars-popover";
 import SortableColumnCell from "./sortable-column-cell";
+import { Tooltip } from "../ui/tooltip";
 
 function SeasonTableRowCell({
   seriesId,
@@ -111,18 +112,27 @@ function SeasonTableRowCell({
       color={color}
     >
       {seasonShowRain && rainChance > 0 && (
-        <Text
-          position="absolute"
-          top={1}
-          right={1}
-          fontSize="14px"
-          lineHeight="1"
-          zIndex="1"
-          title={`${rainChance}% chance of rain`}
-          userSelect={"none"}
+        <Tooltip
+          lazyMount
+          unmountOnExit
+          content={`${rainChance}% chance of rain`}
+          showArrow
+          positioning={{ placement: "left" }}
+          openDelay={200}
+          closeDelay={100}
         >
-          💧
-        </Text>
+          <Text
+            position="absolute"
+            top={1}
+            right={1}
+            fontSize="14px"
+            lineHeight="1"
+            zIndex="1"
+            userSelect={"none"}
+          >
+            💧
+          </Text>
+        </Tooltip>
       )}
       <Text
         userSelect={"none"}

@@ -1,7 +1,6 @@
 import { IR_URL } from "@/ir-data/utils/urls";
 import { setFavoriteSeriesList, useIr } from "@/store/ir";
 import { useUi } from "@/store/ui";
-import { createSeriesScheduleDescription } from "@/utils/race-schedule";
 import { createSimpleScheduleDescription } from "@/utils/simple-schedule";
 import {
   Box,
@@ -13,7 +12,7 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import { arrayMove } from "@dnd-kit/sortable";
-import { useMemo } from "react";
+
 import SERIES_JSON from "../../ir-data/series.json";
 import { useAppLayout } from "../app/useAppLayout";
 import { Tooltip } from "../ui/tooltip";
@@ -21,6 +20,7 @@ import SeasonCarsPopover from "./season-cars-popover";
 import SeasonTableHeaderParticipation from "./season-table-header-participation";
 import SortableColumnHeader from "./sortable-column-header";
 import LicenseBadge from "../badges/license-badge";
+import getScheduleDescription from "../series/getScheduleDescription";
 
 function SeasonTableHeader({
   filteredFavorites,
@@ -37,15 +37,6 @@ function SeasonTableHeader({
   } = useUi();
   const { scrolled } = useAppLayout();
   const { favoriteSeries } = useIr();
-
-  // Calculate the local timezone offset in minutes
-  const timezoneOffsetMinutes = useMemo(() => {
-    if (!seasonUseLocalTimezone) return 0;
-    // Get the local timezone offset in minutes
-    // Note: getTimezoneOffset() returns the offset in minutes, but with opposite sign
-    // e.g., for UTC+2, it returns -120, so we need to negate it
-    return -new Date().getTimezoneOffset();
-  }, [seasonUseLocalTimezone]);
 
   const onClickSwap = (index: number) => {
     setFavoriteSeriesList(arrayMove(favoriteSeries, index, index - 1));
@@ -74,14 +65,10 @@ function SeasonTableHeader({
               series &&
               createSimpleScheduleDescription(series.laps, series.duration);
 
-            // Generate schedule description from actual race schedule data
-            // Pass the timezone offset if using local timezone
-            const scheduleDescription =
-              series?.raceSchedule &&
-              createSeriesScheduleDescription(
-                series.raceSchedule,
-                timezoneOffsetMinutes,
-              );
+            const scheduleDescription = getScheduleDescription(
+              seriesId,
+              seasonUseLocalTimezone,
+            );
 
             return (
               series && (

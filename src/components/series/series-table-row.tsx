@@ -8,7 +8,7 @@ import { CategoryIcon } from "@/ir-data/utils/icons";
 import { Category } from "@/ir-data/utils/types";
 import { IR_URL } from "@/ir-data/utils/urls";
 import { setFavoriteSeriesItem } from "@/store/ir";
-import { Badge, Center, HStack, Image, Table } from "@chakra-ui/react";
+import { Badge, Box, Center, HStack, Image, Table } from "@chakra-ui/react";
 import {
   faCar,
   faCaretDown,
@@ -23,6 +23,8 @@ import ContentNameBadge from "../content/content-name-badge";
 import ContentPopover from "../content/content-popover";
 import { Tooltip } from "../ui/tooltip";
 import StarCheckbox from "./star-checkbox";
+import getScheduleDescription from "./getScheduleDescription";
+import { useUi } from "@/store/ui";
 
 function SeriesTableRow({
   id,
@@ -54,6 +56,11 @@ function SeriesTableRow({
   official: boolean;
 }) {
   const tracks = useMemo(() => [...new Set(weeks.map((w) => w.track.id))], []);
+  const { seasonUseLocalTimezone } = useUi();
+  const scheduleDescription = getScheduleDescription(
+    id,
+    seasonUseLocalTimezone,
+  );
   return (
     <Table.Row bgColor={"transparent"}>
       <Table.Cell minWidth={"40px"} textAlign={"center"}>
@@ -159,7 +166,6 @@ function SeriesTableRow({
         <Tooltip
           lazyMount
           unmountOnExit
-          key={`${category}`}
           content={Category[category as keyof typeof Category]}
           showArrow
           positioning={{ placement: "top" }}
@@ -170,7 +176,19 @@ function SeriesTableRow({
         </Tooltip>
       </Table.Cell>
       <Table.Cell minWidth={"130px"} textAlign={"center"}>
-        <DurationBadge duration={duration} laps={laps} />
+        <Tooltip
+          lazyMount
+          unmountOnExit
+          content={scheduleDescription}
+          showArrow
+          positioning={{ placement: "top" }}
+          openDelay={200}
+          closeDelay={100}
+        >
+          <Box>
+            <DurationBadge duration={duration} laps={laps} />
+          </Box>
+        </Tooltip>
       </Table.Cell>
       <Table.Cell minWidth={"40px"} textAlign={"center"}>
         <LicenseBadge letter={license} color={color}>

@@ -95,7 +95,7 @@ const getYears = (prev: { [key: string]: number }, yearString: string) => {
     });
 
     await writeFile(
-      path.join(dirname, "./parsed/stats.json"),
+      path.join(dirname, "../src/ir-data/stats.json"),
       JSON.stringify(tracksMap, null, 2),
     );
   }

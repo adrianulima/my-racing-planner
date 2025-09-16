@@ -91,26 +91,24 @@ function SeriesPage() {
           </Tooltip>
         }
         list={list}
-        rows={(item) => {
-          return (
-            <SeriesTableRow
-              key={item.id}
-              id={item.id}
-              name={item.name}
-              logo={item.logo}
-              category={item.category}
-              favorite={favoriteSeries.includes(item.id)}
-              fixed={item.fixed}
-              cars={item.cars}
-              weeks={item.weeks}
-              license={item.license.letter}
-              color={item.license.color}
-              duration={item.duration}
-              laps={item.laps}
-              official={item.official}
-            />
-          );
-        }}
+        rows={(item) => (
+          <SeriesTableRow
+            key={item.id}
+            id={item.id}
+            name={item.name}
+            logo={item.logo}
+            category={item.category}
+            favorite={favoriteSeries.includes(item.id)}
+            fixed={item.fixed}
+            cars={item.cars}
+            weeks={item.weeks}
+            license={item.license.letter}
+            color={item.license.color}
+            duration={item.duration}
+            laps={item.laps}
+            official={item.official}
+          />
+        )}
       />
     </Page>
   );

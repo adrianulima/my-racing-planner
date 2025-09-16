@@ -1,7 +1,6 @@
 import useScreenSize from "@/hooks/useScreenSize";
 import { Badge, HStack, Stack, Text } from "@chakra-ui/react";
-import { faBookmark } from "@fortawesome/free-regular-svg-icons";
-import { faSackXmark } from "@fortawesome/free-solid-svg-icons";
+import { faSackXmark, faBookmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Checkbox } from "../ui/checkbox";
 import { Tooltip } from "../ui/tooltip";

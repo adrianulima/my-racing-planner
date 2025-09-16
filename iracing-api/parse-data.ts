@@ -266,17 +266,17 @@ const isNurbCombined = (id: number) => {
     .reduce((acc, curr) => ({ ...acc, [curr.id]: curr }), {});
 
   await writeFile(
-    path.join(dirname, "./parsed/cars.json"),
+    path.join(dirname, "../src/ir-data/cars.json"),
     JSON.stringify(carsById, null, 2),
   );
 
   await writeFile(
-    path.join(dirname, "./parsed/tracks.json"),
+    path.join(dirname, "../src/ir-data/tracks.json"),
     JSON.stringify(tracksById, null, 2),
   );
 
   await writeFile(
-    path.join(dirname, "./parsed/series.json"),
+    path.join(dirname, "../src/ir-data/series.json"),
     JSON.stringify(seriesById, null, 2),
   );
 })();
