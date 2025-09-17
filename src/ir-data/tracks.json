@@ -5683,8 +5683,7 @@
       47,
       574,
       575,
-      413,
-      191
+      413
     ],
     "logo": "/img/logos/tracks/northwilkesborospeedway-logo.png",
     "skuGroup": {
@@ -5696,7 +5695,6 @@
       574,
       575,
       413,
-      191,
       593,
       33,
       440,
@@ -5711,7 +5709,8 @@
       416,
       524,
       131,
-      58
+      58,
+      191
     ]
   },
   "371": {
@@ -8586,7 +8585,7 @@
       "oval",
       "dirt_road"
     ],
-    "free": false,
+    "free": true,
     "price": 0,
     "sku": 10013,
     "series": [
@@ -8653,7 +8652,7 @@
     "categories": [
       "road"
     ],
-    "free": false,
+    "free": true,
     "price": 0,
     "sku": 10013,
     "logo": "/img/logos/tracks/charlottemotorspeedway-logo.png",
@@ -8666,7 +8665,7 @@
     "categories": [
       "road"
     ],
-    "free": false,
+    "free": true,
     "price": 0,
     "sku": 10013,
     "logo": "/img/logos/tracks/charlottemotorspeedway-logo.png",
@@ -8679,7 +8678,7 @@
     "categories": [
       "road"
     ],
-    "free": false,
+    "free": true,
     "price": 0,
     "sku": 10013,
     "logo": "/img/logos/tracks/charlottemotorspeedway-logo.png",
@@ -8692,7 +8691,7 @@
     "categories": [
       "road"
     ],
-    "free": false,
+    "free": true,
     "price": 0,
     "sku": 10013,
     "series": [
@@ -8729,7 +8728,7 @@
     "categories": [
       "road"
     ],
-    "free": false,
+    "free": true,
     "price": 0,
     "sku": 10013,
     "logo": "/img/logos/tracks/charlottemotorspeedway-logo.png",
@@ -8742,7 +8741,7 @@
     "categories": [
       "oval"
     ],
-    "free": false,
+    "free": true,
     "price": 0,
     "sku": 10013,
     "series": [
@@ -8767,7 +8766,7 @@
     "categories": [
       "oval"
     ],
-    "free": false,
+    "free": true,
     "price": 0,
     "sku": 10013,
     "series": [
@@ -8784,7 +8783,7 @@
     "categories": [
       "dirt_road"
     ],
-    "free": false,
+    "free": true,
     "price": 0,
     "sku": 10013,
     "series": [
@@ -8890,7 +8889,8 @@
       416,
       524,
       131,
-      58
+      58,
+      191
     ],
     "logo": "/img/logos/tracks/northwilkesborospeedway-logo.png",
     "group": 366

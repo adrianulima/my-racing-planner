@@ -2,6 +2,10 @@
 
 All notable changes to the **"Racing Planner"** project will be documented in this file.
 
+## 0.8.6
+
+- Fix for Charlotte Motor Speedway not being free from iRacing API
+
 ## 0.8.5
 
 - Updated history data

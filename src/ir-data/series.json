@@ -4440,9 +4440,9 @@
         "weekNum": 8,
         "date": "2025-11-11",
         "track": {
-          "id": 366,
+          "id": 562,
           "name": "North Wilkesboro Speedway",
-          "config": "Oval - 1987"
+          "config": "Oval"
         },
         "rainChance": 0
       },
@@ -6413,7 +6413,7 @@
       "letter": "A",
       "color": "0153db"
     },
-    "logo": "formulaagrandprixseries-logo.png",
+    "logo": "seriesid_260.png",
     "weeks": [
       {
         "weekNum": 0,
@@ -14645,7 +14645,7 @@
       "letter": "A",
       "color": "0153db"
     },
-    "logo": "formulaagrandprixsprint-logo.png",
+    "logo": "seriesid_484.png",
     "weeks": [
       {
         "weekNum": 0,

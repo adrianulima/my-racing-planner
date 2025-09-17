@@ -136,7 +136,9 @@ const isNurbCombined = (id: number) => {
     name: track.track_name,
     config: track.config_name ?? "",
     categories: [track.category],
-    free: track.free_with_subscription,
+    free:
+      track.free_with_subscription ||
+      (track.price === 0 && !isNurbCombined(track.track_id)),
     price: track.price,
     sku: track.sku,
     series: seriesCarsTracksMaps.trackSeries[track.track_id],
