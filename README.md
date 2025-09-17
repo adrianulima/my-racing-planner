@@ -93,7 +93,7 @@ The project includes scripts to fetch data from iRacing's public API and parse i
    pnpm run fetch-past
    ```
 
-3. Process the fetched data into parsed JSON files:
+3. Process the fetched data into src/ir-data/ JSON files:
 
    ```bash
    pnpm run parse-data
@@ -102,8 +102,6 @@ The project includes scripts to fetch data from iRacing's public API and parse i
    ```bash
    pnpm run parse-past
    ```
-
-Copy the content of `ir-api/parsed/` folder into `src/ir-data/` folder. The generated JSON files will be used to populate the application's content.
 
 ---
 
