@@ -15,55 +15,87 @@ function SeasonTableHeaderParticipation({
 }: {
   seriesTracks: { [key: string]: number };
 }) {
-  const { myTracks } = useIr();
+  const { myTracks, wishTracks } = useIr();
 
-  const { numberOfTracks, tracksNeeded, enoughTracks } = useMemo(() => {
+  const {
+    ownedTracks,
+    wishedTracks,
+    tracksNeeded,
+    enoughTracks,
+    enoughTracksWithWish,
+  } = useMemo(() => {
     const filteredTracks = Object.fromEntries(
       Object.entries(seriesTracks).filter(
-        ([key]) => !key.includes("_cars") && !key.includes("_rainChance")
+        ([key]) => !key.includes("_cars") && !key.includes("_rainChance"),
       ),
     );
 
-    const tracks = Object.values(filteredTracks).map(
-      (trackId) => {
-        const track = TRACKS_JSON[trackId.toString() as keyof typeof TRACKS_JSON];
+    const tracks = Object.values(filteredTracks)
+      .map((trackId) => {
+        const track =
+          TRACKS_JSON[trackId.toString() as keyof typeof TRACKS_JSON];
         return track;
-      }
-    ).filter(Boolean) as TContent[];
+      })
+      .filter(Boolean) as TContent[];
 
     const tracksNeeded = Math.ceil(tracks.length * PARTICIPATION_THRESHOLD);
 
-    const numberOfTracks = tracks.filter(
+    const ownedTracks = tracks.filter(
       (track) =>
         track.free ||
         myTracks.includes(track.sku) ||
         ownNurbCombined(track.id, myTracks),
     ).length;
 
+    const wishedTracks = tracks.filter(
+      (track) =>
+        wishTracks.includes(track.sku) || ownNurbCombined(track.id, wishTracks),
+    ).length;
+
     return {
-      numberOfTracks,
+      ownedTracks,
+      wishedTracks,
       tracksNeeded,
-      enoughTracks: numberOfTracks >= tracksNeeded,
+      enoughTracks: ownedTracks >= tracksNeeded,
+      enoughTracksWithWish:
+        ownedTracks < tracksNeeded &&
+        ownedTracks + wishedTracks >= tracksNeeded,
     };
-  }, [seriesTracks, myTracks]);
+  }, [seriesTracks, myTracks, wishTracks]);
 
   const color = {
-    base: enoughTracks ? "green.600" : "red.600",
-    _dark: enoughTracks ? "green.400" : "red.400",
+    base: enoughTracks
+      ? "green.600"
+      : enoughTracksWithWish
+      ? "blue.600"
+      : "red.600",
+    _dark: enoughTracks
+      ? "green.400"
+      : enoughTracksWithWish
+      ? "blue.400"
+      : "red.400",
   };
 
   const bgColor = {
-    base: enoughTracks ? "green.50" : "red.50",
-    _dark: enoughTracks ? "green.800" : "red.800",
+    base: enoughTracks
+      ? "green.50"
+      : enoughTracksWithWish
+      ? "blue.50"
+      : "red.50",
+    _dark: enoughTracks
+      ? "green.800"
+      : enoughTracksWithWish
+      ? "blue.800"
+      : "red.800",
   };
 
   return (
     <Tooltip
       lazyMount
       unmountOnExit
-      content={`Participation credit program: ${
-        enoughTracks ? "Yes" : "No"
-      } (${numberOfTracks}/${tracksNeeded})`}
+      content={`Participation credit program: ${enoughTracks ? "Yes" : "No"} (${
+        ownedTracks + wishedTracks
+      }/${tracksNeeded})`}
       showArrow
       positioning={{ placement: "bottom" }}
       openDelay={200}
@@ -81,12 +113,12 @@ function SeasonTableHeaderParticipation({
         px={2}
       >
         <Text>
-          {enoughTracks ? (
+          {enoughTracks || enoughTracksWithWish ? (
             <FontAwesomeIcon icon={faCheck} />
           ) : (
             <FontAwesomeIcon icon={faXmark} />
           )}{" "}
-          {numberOfTracks} / {tracksNeeded}
+          {ownedTracks + wishedTracks} / {tracksNeeded}
         </Text>
       </HStack>
     </Tooltip>

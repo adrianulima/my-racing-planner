@@ -2,6 +2,10 @@
 
 All notable changes to the **"Racing Planner"** project will be documented in this file.
 
+## 0.8.7
+
+- Improved participation credit program header to count with wish tracks
+
 ## 0.8.6
 
 - Fix for Charlotte Motor Speedway not being free from iRacing API
