@@ -23,6 +23,19 @@ export const setPrivacyPolicyRead = () =>
     privacyPolicy: newest.privacyPolicy,
   }));
 
+// Banner visibility state (not persisted - resets on page refresh)
+const useBannerStore = create<{
+  isVisible: boolean;
+  setVisible: (visible: boolean) => void;
+}>((set) => ({
+  isVisible: true,
+  setVisible: (visible: boolean) => set({ isVisible: visible }),
+}));
+
+export const useBannerVisibility = () => useBannerStore();
+export const showBanner = () => useBannerStore.setState({ isVisible: true });
+export const hideBanner = () => useBannerStore.setState({ isVisible: false });
+
 export const useNotifications = () => {
   const changelog = useNotificationsStorePersist((state) => state.changelog);
   const privacyPolicy = useNotificationsStorePersist(

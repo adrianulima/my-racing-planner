@@ -8,15 +8,24 @@ import SERIES_JSON from "./raw/all-series.json";
 const dirname = path.dirname(fileURLToPath(import.meta.url));
 
 (async () => {
-  const email = process.env.IRACING_USERNAME ?? "";
+  const username = process.env.IRACING_USERNAME ?? "";
   const password = process.env.IRACING_PASSWORD ?? "";
+  const clientId = process.env.IRACING_CLIENT_ID ?? "";
+  const clientSecret = process.env.IRACING_CLIENT_SECRET ?? "";
 
-  if (email === "" || password === "") {
-    console.error("Missing iRacing credentials");
+  if (
+    username === "" ||
+    password === "" ||
+    clientId === "" ||
+    clientSecret === ""
+  ) {
+    console.error(
+      "Missing iRacing credentials. Please set IRACING_USERNAME, IRACING_PASSWORD, IRACING_CLIENT_ID, and IRACING_CLIENT_SECRET in .env file",
+    );
     return;
   }
 
-  await authenticate(email, password);
+  await authenticate(username, password, clientId, clientSecret);
 
   const len = SERIES_JSON.length;
   console.log("Fetching all series past seasons");

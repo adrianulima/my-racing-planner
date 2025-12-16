@@ -72,36 +72,60 @@ pnpm run preview
 
 ## Scripts for Data Fetching
 
-The project includes scripts to fetch data from iRacing's public API and parse it into JSON files. These scripts require valid iRacing credentials in the `.env` file.
+The project includes scripts to fetch data from iRacing's public API and parse it into JSON files. These scripts use OAuth 2.1 authentication with the Password Limited Grant flow.
+
+### Prerequisites for Data Fetching
+
+1. **Register your application with iRacing:**
+
+   - Contact iRacing support to register your application and get OAuth credentials
+   - Request access to the Password Limited Grant flow
+   - You will receive a `client_id` and `client_secret`
+   - Your iRacing account (email) will be added to the access list for your client
+
+2. **Create a `.env` file** in the root directory with your credentials:
+
+   ```env
+   IRACING_USERNAME=your_email@example.com
+   IRACING_PASSWORD=your_iracing_password
+   IRACING_CLIENT_ID=your_client_id
+   IRACING_CLIENT_SECRET=your_client_secret
+   ```
+
+   > **Important:** The Password Limited Grant flow requires that your specific iRacing account is registered with your client application. This is a security feature to prevent credential harvesting.
 
 ### Fetching Data
 
-1. Create a `.env` file in the root directory and add your iRacing API credentials:
+Run the fetch script to download current season data:
 
-   ```env
-   IRACING_USERNAME=your_username
-   IRACING_PASSWORD=your_password
-   ```
+```bash
+pnpm run fetch-data
+```
 
-2. Run the fetch script:
+Run the fetch-past script to download historical season data:
 
-   ```bash
-   pnpm run fetch-data
-   ```
+```bash
+pnpm run fetch-past
+```
 
-   ```bash
-   pnpm run fetch-past
-   ```
+Process the fetched data into src/ir-data/ JSON files:
 
-3. Process the fetched data into src/ir-data/ JSON files:
+```bash
+pnpm run parse-data
+```
 
-   ```bash
-   pnpm run parse-data
-   ```
+```bash
+pnpm run parse-past
+```
 
-   ```bash
-   pnpm run parse-past
-   ```
+### Authentication Details
+
+The scripts use OAuth 2.1 Password Limited Grant, which:
+
+- Automatically handles token acquisition and refresh
+- Uses secure password masking (SHA-256 + Base64 encoding)
+- Includes rate limiting protection
+- Tokens are cached and reused until expiration
 
 ---
 
