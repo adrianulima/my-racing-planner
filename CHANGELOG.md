@@ -2,6 +2,11 @@
 
 All notable changes to the **"Racing Planner"** project will be documented in this file.
 
+## 0.8.9
+
+- Updated with data of Season 1 2026
+- Removed temporary banner that warned about the delay on the update
+
 ## 0.8.8
 
 - Added a banner to warn about the 2026 season 1 update delay

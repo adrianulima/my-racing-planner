@@ -1,16 +1,6 @@
 import useScreenSize from "@/hooks/useScreenSize";
-import {
-  showBanner,
-  useBannerVisibility,
-  useNotifications,
-} from "@/store/notifications";
-import {
-  Badge,
-  Collapsible,
-  Heading,
-  HStack,
-  StackProps,
-} from "@chakra-ui/react";
+import { useNotifications } from "@/store/notifications";
+import { Collapsible, Heading, HStack, StackProps } from "@chakra-ui/react";
 import {
   faCircleQuestion,
   faFileLines,
@@ -29,7 +19,6 @@ function TopBar({ ...props }: StackProps) {
   const { scrolled } = useAppLayout();
   const { height } = useScreenSize();
   const { changelog, privacyPolicy } = useNotifications();
-  const { isVisible: bannerVisible } = useBannerVisibility();
   return (
     !height.tiny && (
       <Collapsible.Root open={!scrolled}>
@@ -39,40 +28,16 @@ function TopBar({ ...props }: StackProps) {
             mb={scrolled ? 0 : 2}
             {...props}
           >
-            <HStack ml={2} gap={2}>
-              <Heading
-                color={"gray.500"}
-                size="2xl"
-                fontFamily="mono"
-                fontWeight="bold"
-                userSelect={"none"}
-              >
-                2025 Season 4
-              </Heading>
-              {!bannerVisible && (
-                <Badge
-                  bg="red.600"
-                  color="white"
-                  fontSize="xs"
-                  px={2}
-                  py={2}
-                  borderRadius="full"
-                  cursor="pointer"
-                  onClick={showBanner}
-                  title="Click to view update notice"
-                  _hover={{ transform: "scale(1.1)", bg: "red.700" }}
-                  transition="all 0.2s"
-                  fontWeight="bold"
-                  minW="24px"
-                  minH="24px"
-                  display="flex"
-                  alignItems="center"
-                  justifyContent="center"
-                >
-                  2026
-                </Badge>
-              )}
-            </HStack>
+            <Heading
+              ml={2}
+              color={"gray.500"}
+              size="2xl"
+              fontFamily="mono"
+              fontWeight="bold"
+              userSelect={"none"}
+            >
+              2026 Season 1
+            </Heading>
             <HStack>
               <AboutDialog ids={{ trigger: "about-dialog" }}>
                 <TopBarButton

@@ -9,7 +9,6 @@
     "price": 12.95,
     "sku": 10009,
     "series": [
-      526,
       34
     ],
     "logo": "/img/logos/partners/skipbarber-logo.png"
@@ -35,7 +34,6 @@
     "skuSeries": [
       45,
       441,
-      575,
       102,
       417
     ]
@@ -49,17 +47,13 @@
     "free": true,
     "price": 0,
     "sku": 10011,
-    "series": [
-      526
-    ],
+    "series": [],
     "logo": "/img/logos/partners/pontiac-logo.png",
     "skuGroup": {
       "3": "Pontiac Solstice",
       "10": "Pontiac Solstice - Rookie"
     },
-    "skuSeries": [
-      526
-    ]
+    "skuSeries": []
   },
   "4": {
     "id": 4,
@@ -70,7 +64,9 @@
     "free": false,
     "price": 3.25,
     "sku": 10006,
-    "series": [],
+    "series": [
+      526
+    ],
     "logo": "/img/logos/partners/promazda-logo.png"
   },
   "5": {
@@ -233,7 +229,7 @@
     "price": 12.95,
     "sku": 10110,
     "series": [
-      579,
+      526,
       65
     ],
     "logo": "/img/logos/partners/classicteamlotus-logo.png"
@@ -298,7 +294,7 @@
     "price": 12.95,
     "sku": 10210,
     "series": [
-      530
+      526
     ],
     "logo": "/img/logos/partners/ford-logo.png"
   },
@@ -312,7 +308,6 @@
     "price": 12.95,
     "sku": 10010,
     "series": [
-      575,
       102,
       417
     ],
@@ -371,7 +366,6 @@
     "price": 0,
     "sku": 10232,
     "series": [
-      526,
       182,
       190
     ],
@@ -427,7 +421,6 @@
     "price": 12.95,
     "sku": 10281,
     "series": [
-      526,
       432
     ],
     "logo": "/img/logos/partners/ford-logo.png",
@@ -436,7 +429,6 @@
       "59": "Ford GT GT3"
     },
     "skuSeries": [
-      526,
       432
     ]
   },
@@ -450,6 +442,7 @@
     "price": 0,
     "sku": 10306,
     "series": [
+      526,
       210
     ],
     "logo": "/img/logos/partners/cadillac-logo.png"
@@ -490,7 +483,6 @@
     "price": 0,
     "sku": 10341,
     "series": [
-      526,
       210
     ],
     "logo": "/img/logos/partners/kia-logo.png"
@@ -599,7 +591,6 @@
     "price": 12.95,
     "sku": 10360,
     "series": [
-      574,
       223,
       416
     ],
@@ -719,7 +710,9 @@
       139,
       112,
       584,
-      231
+      526,
+      231,
+      573
     ],
     "logo": "/img/logos/partners/mazda-logo.png"
   },
@@ -805,7 +798,6 @@
     "price": 12.95,
     "sku": 10410,
     "series": [
-      526,
       285
     ],
     "logo": "/img/logos/partners/audi-logo.png"
@@ -846,7 +838,7 @@
       291,
       306,
       517,
-      500,
+      570,
       308,
       369
     ]
@@ -888,7 +880,7 @@
       292,
       305,
       515,
-      501,
+      570,
       307,
       458
     ]
@@ -949,7 +941,7 @@
     "price": 12.95,
     "sku": 10412,
     "series": [
-      500,
+      570,
       308,
       369
     ],
@@ -982,7 +974,7 @@
     "price": 12.95,
     "sku": 10418,
     "series": [
-      501,
+      570,
       307,
       458
     ],
@@ -1129,7 +1121,8 @@
     "sku": 10436,
     "series": [
       327,
-      516
+      516,
+      426
     ]
   },
   "98": {
@@ -1154,7 +1147,6 @@
     "price": 12.95,
     "sku": 10440,
     "series": [
-      374,
       132,
       165,
       133
@@ -1258,7 +1250,6 @@
     "price": 12.95,
     "sku": 10452,
     "series": [
-      526,
       431,
       456
     ],
@@ -1315,9 +1306,9 @@
     "price": 12.95,
     "sku": 10459,
     "series": [
-      47,
       538,
-      164
+      164,
+      47
     ],
     "logo": "/img/logos/partners/chevrolet-logo.png"
   },
@@ -1331,10 +1322,10 @@
     "price": 12.95,
     "sku": 10461,
     "series": [
+      526,
       430,
       503,
-      492,
-      275
+      492
     ],
     "logo": "/img/logos/partners/audi-logo.png"
   },
@@ -1363,9 +1354,9 @@
     "price": 12.95,
     "sku": 10464,
     "series": [
-      62,
       538,
-      103
+      103,
+      62
     ],
     "logo": "/img/logos/partners/chevrolet-logo.png"
   },
@@ -1379,9 +1370,9 @@
     "price": 12.95,
     "sku": 10465,
     "series": [
-      62,
       538,
-      103
+      103,
+      62
     ],
     "logo": "/img/logos/partners/ford-logo.png"
   },
@@ -1395,9 +1386,9 @@
     "price": 12.95,
     "sku": 10466,
     "series": [
-      62,
       538,
-      103
+      103,
+      62
     ],
     "logo": "/img/logos/partners/toyota-logo.png"
   },
@@ -1439,9 +1430,7 @@
       491,
       502,
       492,
-      572,
-      275,
-      451
+      572
     ],
     "logo": "/img/logos/partners/porsche-logo.png"
   },
@@ -1493,9 +1482,9 @@
     "price": 12.95,
     "sku": 10481,
     "series": [
-      47,
       538,
-      164
+      164,
+      47
     ],
     "logo": "/img/logos/partners/ford-logo.png"
   },
@@ -1510,7 +1499,9 @@
     "sku": 10482,
     "series": [
       538,
-      413
+      413,
+      481,
+      482
     ],
     "logo": "/img/logos/partners/chevrolet-logo.png"
   },
@@ -1525,7 +1516,9 @@
     "sku": 10483,
     "series": [
       538,
-      413
+      413,
+      481,
+      482
     ],
     "logo": "/img/logos/partners/ford-logo.png"
   },
@@ -1553,6 +1546,7 @@
     "price": 12.95,
     "sku": 10488,
     "series": [
+      526,
       331,
       591,
       419,
@@ -1620,9 +1614,7 @@
       331,
       419,
       447,
-      539,
-      275,
-      451
+      539
     ],
     "logo": "/img/logos/partners/bmw-logo.png"
   },
@@ -1647,9 +1639,7 @@
       331,
       419,
       447,
-      539,
-      275,
-      451
+      539
     ],
     "logo": "/img/logos/partners/lamborghini-logo.png"
   },
@@ -1682,8 +1672,7 @@
       491,
       502,
       492,
-      572,
-      451
+      572
     ],
     "logo": "/img/logos/partners/mclaren-logo.png"
   },
@@ -1725,8 +1714,6 @@
     "price": 12.95,
     "sku": 10503,
     "series": [
-      229,
-      207,
       116,
       538,
       58,
@@ -1744,8 +1731,6 @@
     "price": 12.95,
     "sku": 10504,
     "series": [
-      229,
-      207,
       116,
       538,
       58,
@@ -1763,8 +1748,6 @@
     "price": 12.95,
     "sku": 10505,
     "series": [
-      229,
-      207,
       116,
       538,
       58,
@@ -1788,19 +1771,14 @@
   },
   "143": {
     "id": 143,
-    "name": "Porsche 911 GT3 Cup (992)",
+    "name": "[Legacy] Porsche 911 GT3 Cup (992.1)",
     "categories": [
       "sports_car"
     ],
     "free": false,
-    "price": 12.95,
+    "price": 3.25,
     "sku": 10509,
-    "series": [
-      299,
-      476,
-      275,
-      451
-    ],
+    "series": [],
     "logo": "/img/logos/partners/porsche-logo.png"
   },
   "144": {
@@ -1837,10 +1815,10 @@
     "price": 12.95,
     "sku": 10516,
     "series": [
+      526,
       430,
       503,
-      492,
-      275
+      492
     ],
     "logo": "/img/logos/partners/hyundai-logo.png"
   },
@@ -1854,10 +1832,10 @@
     "price": 12.95,
     "sku": 10517,
     "series": [
+      526,
       430,
       503,
-      492,
-      275
+      492
     ],
     "logo": "/img/logos/partners/honda-logo.png"
   },
@@ -1906,9 +1884,7 @@
       491,
       502,
       492,
-      572,
-      275,
-      451
+      572
     ],
     "logo": "/img/logos/partners/astonmartin-logo.png"
   },
@@ -1950,6 +1926,7 @@
     "price": 12.95,
     "sku": 10526,
     "series": [
+      526,
       430,
       503,
       492
@@ -1967,7 +1944,9 @@
     "sku": 10527,
     "series": [
       538,
-      413
+      413,
+      481,
+      482
     ],
     "logo": "/img/logos/partners/buicklesabre87-logo.png"
   },
@@ -1981,9 +1960,9 @@
     "price": 12.95,
     "sku": 10530,
     "series": [
-      47,
       538,
-      164
+      164,
+      47
     ],
     "logo": "/img/logos/partners/toyota-logo.png"
   },
@@ -2008,9 +1987,7 @@
       331,
       419,
       447,
-      539,
-      275,
-      451
+      539
     ],
     "logo": "/img/logos/partners/AMG-Logo.png"
   },
@@ -2028,9 +2005,7 @@
       491,
       502,
       492,
-      572,
-      275,
-      451
+      572
     ],
     "logo": "/img/logos/partners/AMG-Logo.png"
   },
@@ -2079,7 +2054,7 @@
       514,
       112,
       584,
-      526
+      573
     ],
     "logo": "/img/logos/partners/toyota-logo.png"
   },
@@ -2093,8 +2068,6 @@
     "price": 12.95,
     "sku": 10545,
     "series": [
-      496,
-      495,
       260,
       484
     ],
@@ -2112,7 +2085,8 @@
     "series": [
       519,
       112,
-      584
+      584,
+      573
     ],
     "logo": "/img/logos/partners/renault-logo.png"
   },
@@ -2156,7 +2130,6 @@
     "price": 12.95,
     "sku": 10552,
     "series": [
-      526,
       502,
       525,
       572
@@ -2215,9 +2188,7 @@
       331,
       419,
       447,
-      539,
-      275,
-      451
+      539
     ],
     "logo": "/img/logos/partners/porsche-logo.png"
   },
@@ -2299,9 +2270,7 @@
       331,
       419,
       447,
-      539,
-      275,
-      451
+      539
     ],
     "logo": "/img/logos/partners/ferrari-logo.png"
   },
@@ -2334,7 +2303,9 @@
     "sku": 10566,
     "series": [
       538,
-      413
+      413,
+      481,
+      482
     ],
     "logo": "/img/logos/partners/pontiac-logo.png"
   },
@@ -2355,9 +2326,7 @@
       444,
       594,
       595,
-      596,
-      275,
-      451
+      596
     ],
     "logo": "/img/logos/partners/audi-logo.png"
   },
@@ -2371,6 +2340,7 @@
     "price": 12.95,
     "sku": 10571,
     "series": [
+      526,
       551,
       552
     ],
@@ -2477,8 +2447,7 @@
       331,
       419,
       447,
-      539,
-      451
+      539
     ],
     "logo": "/img/logos/partners/chevrolet-logo.png"
   },
@@ -2503,9 +2472,7 @@
       331,
       419,
       447,
-      539,
-      275,
-      451
+      539
     ],
     "logo": "/img/logos/partners/ford-logo.png"
   },
@@ -2519,7 +2486,6 @@
     "price": 12.95,
     "sku": 10581,
     "series": [
-      526,
       182,
       190
     ],
@@ -2528,7 +2494,6 @@
       "187": "Street Stock - Eagle T3"
     },
     "skuSeries": [
-      526,
       182,
       190
     ]
@@ -2543,7 +2508,6 @@
     "price": 12.95,
     "sku": 10581,
     "series": [
-      526,
       182,
       190
     ],
@@ -2570,8 +2534,7 @@
       331,
       419,
       447,
-      539,
-      451
+      539
     ],
     "logo": "/img/logos/partners/mclaren-logo.png"
   },
@@ -2589,9 +2552,7 @@
       491,
       502,
       492,
-      572,
-      275,
-      451
+      572
     ],
     "logo": "/img/logos/partners/bmw-logo.png"
   },
@@ -2672,8 +2633,7 @@
       331,
       419,
       447,
-      539,
-      451
+      539
     ],
     "logo": "/img/logos/partners/acura-logo.png"
   },
@@ -2690,8 +2650,9 @@
       571,
       112,
       584,
+      526,
       557,
-      275
+      573
     ],
     "logo": "/img/logos/partners/bmw-logo.png"
   },
@@ -2809,12 +2770,12 @@
     "price": 12.95,
     "sku": 10606,
     "series": [
+      530,
       526,
       491,
       502,
       492,
-      572,
-      451
+      572
     ],
     "logo": "/img/logos/partners/ford-logo.png"
   },
@@ -2844,6 +2805,7 @@
     "price": 12.95,
     "sku": 10608,
     "series": [
+      526,
       237,
       228,
       444,
@@ -2856,5 +2818,34 @@
       539
     ],
     "logo": "/img/logos/partners/astonmartin-logo.png"
+  },
+  "207": {
+    "id": 207,
+    "name": "FIA Cross Car",
+    "categories": [
+      "dirt_road"
+    ],
+    "free": false,
+    "price": 0,
+    "sku": 10610,
+    "series": [
+      599
+    ],
+    "logo": "/img/logos/partners/crosscartn11-logo.png"
+  },
+  "208": {
+    "id": 208,
+    "name": "Porsche 911 Cup (992.2)",
+    "categories": [
+      "sports_car"
+    ],
+    "free": false,
+    "price": 12.95,
+    "sku": 10611,
+    "series": [
+      299,
+      476
+    ],
+    "logo": "/img/logos/partners/porsche-logo.png"
   }
 }
