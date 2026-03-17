@@ -9,12 +9,6 @@
     "free": true,
     "price": 0,
     "sku": 10030,
-    "series": [
-      139,
-      571,
-      455,
-      520
-    ],
     "logo": "/img/logos/tracks/summitpointraceway-logo.png",
     "skuGroup": {
       "8": "Jefferson Circuit",
@@ -26,26 +20,21 @@
     "skuSeries": [
       139,
       571,
-      455,
-      520,
-      514,
       519,
-      112,
-      584,
-      530,
+      505,
       559,
       557,
-      353,
-      430,
-      503,
+      63,
       493,
-      231,
+      237,
+      228,
+      444,
       595,
-      443,
-      498,
-      541,
+      455,
+      520,
+      521,
       34,
-      562
+      541
     ]
   },
   "9": {
@@ -61,23 +50,20 @@
     "series": [
       139,
       571,
-      514,
       519,
-      112,
-      584,
-      530,
+      505,
       559,
       557,
-      353,
-      430,
-      503,
+      63,
       493,
-      231,
+      237,
+      228,
+      444,
       595,
       455,
       520,
-      443,
-      498,
+      521,
+      34,
       541
     ],
     "logo": "/img/logos/tracks/summitpointraceway-logo.png",
@@ -95,7 +81,12 @@
     "sku": 10029,
     "series": [
       45,
-      441
+      441,
+      190,
+      102,
+      417,
+      575,
+      574
     ],
     "logo": "/img/logos/tracks/staffordmotorspeedway-logo.png"
   },
@@ -113,11 +104,14 @@
       483,
       564,
       182,
-      33,
-      440,
+      554,
+      45,
+      441,
+      102,
+      417,
       32,
-      223,
-      416
+      575,
+      574
     ],
     "logo": "/img/logos/tracks/oxfordplainsspeedway-logo.png"
   },
@@ -132,15 +126,26 @@
     "price": 0,
     "sku": 10028,
     "series": [
-      563,
       483,
       564,
       182,
+      33,
+      440,
+      167,
+      554,
       45,
       441,
       190,
+      102,
+      417,
       32,
-      131
+      223,
+      416,
+      53,
+      131,
+      575,
+      574,
+      563
     ],
     "logo": "/img/logos/tracks/southbostonspeedway-logo.png"
   },
@@ -155,15 +160,14 @@
     "price": 0,
     "sku": 10014,
     "series": [
-      563,
       483,
       564,
       182,
       33,
       440,
-      167,
-      45,
-      441
+      190,
+      575,
+      574
     ],
     "logo": "/img/logos/tracks/concordspeedway-logo.png"
   },
@@ -179,19 +183,22 @@
     "price": 0,
     "sku": 10019,
     "series": [
-      563,
-      593,
       483,
       564,
       182,
       33,
       440,
-      554,
+      45,
+      441,
+      190,
       102,
       417,
-      223,
-      416,
-      53
+      32,
+      131,
+      575,
+      574,
+      563,
+      593
     ],
     "logo": "/img/logos/tracks/usainternationalspeedway-logo.png",
     "skuGroup": {
@@ -199,34 +206,40 @@
       "275": "Dirt"
     },
     "skuSeries": [
-      563,
-      593,
       483,
       564,
       182,
       33,
       440,
-      554,
+      45,
+      441,
+      190,
       102,
       417,
-      223,
-      416,
-      53,
+      32,
+      131,
+      575,
+      574,
+      563,
+      593,
       567,
       446,
       315,
       292,
       291,
       466,
+      311,
       305,
       515,
-      428,
-      518,
-      307,
-      458,
-      308,
-      369,
-      462
+      310,
+      306,
+      517,
+      576,
+      442,
+      309,
+      462,
+      500,
+      501
     ]
   },
   "17": {
@@ -244,8 +257,8 @@
       483,
       564,
       182,
-      33,
-      440,
+      167,
+      554,
       45,
       441,
       102,
@@ -253,7 +266,10 @@
       32,
       223,
       416,
-      131
+      131,
+      575,
+      574,
+      563
     ],
     "logo": "/img/logos/tracks/laniernationalspeedway-logo.png",
     "skuGroup": {
@@ -264,8 +280,8 @@
       483,
       564,
       182,
-      33,
-      440,
+      167,
+      554,
       45,
       441,
       102,
@@ -274,7 +290,10 @@
       223,
       416,
       131,
-      554,
+      575,
+      574,
+      563,
+      190,
       567,
       446,
       550,
@@ -298,7 +317,9 @@
       307,
       458,
       309,
-      462
+      462,
+      500,
+      501
     ]
   },
   "18": {
@@ -312,27 +333,27 @@
     "price": 15.95,
     "sku": 10025,
     "series": [
+      554,
+      374,
+      616,
+      496,
+      495,
+      530,
       505,
-      210,
-      430,
-      503,
-      432,
+      231,
+      399,
+      405,
       595,
-      535,
+      331,
       591,
       457,
-      419,
       447,
       539,
-      541,
-      551,
-      552,
-      592,
-      65,
-      165,
-      133,
-      536,
-      537
+      34,
+      429,
+      431,
+      456,
+      201
     ],
     "logo": "/img/logos/tracks/roadamerica-logo.png",
     "skuGroup": {
@@ -340,27 +361,27 @@
       "50": "Bend"
     },
     "skuSeries": [
+      554,
+      374,
+      616,
+      496,
+      495,
+      530,
       505,
-      210,
-      430,
-      503,
-      432,
+      231,
+      399,
+      405,
       595,
-      535,
+      331,
       591,
       457,
-      419,
       447,
       539,
-      541,
-      551,
-      552,
-      592,
-      65,
-      165,
-      133,
-      536,
-      537
+      34,
+      429,
+      431,
+      456,
+      201
     ]
   },
   "19": {
@@ -374,9 +395,6 @@
     "free": false,
     "price": 12.95,
     "sku": 10017,
-    "series": [
-      32
-    ],
     "logo": "/img/logos/tracks/irwindalespeedway-logo.png",
     "skuGroup": {
       "19": "Inner",
@@ -386,9 +404,9 @@
       "388": "Figure Eight Jump"
     },
     "skuSeries": [
-      32,
-      223,
-      416
+      131,
+      575,
+      574
     ]
   },
   "20": {
@@ -403,15 +421,14 @@
     "price": 15.95,
     "sku": 10016,
     "series": [
-      429,
       471,
-      164,
-      524,
-      58,
-      191,
-      481,
-      482,
-      47
+      554,
+      413,
+      601,
+      47,
+      62,
+      229,
+      207
     ],
     "logo": "/img/logos/tracks/homestead-miamispeedway-logo.png",
     "skuGroup": {
@@ -421,15 +438,14 @@
       "362": "Open Wheel Oval"
     },
     "skuSeries": [
-      429,
       471,
-      164,
-      524,
-      58,
-      191,
-      481,
-      482,
+      554,
+      413,
+      601,
       47,
+      62,
+      229,
+      207,
       132
     ]
   },
@@ -470,8 +486,9 @@
     "price": 12.95,
     "sku": 10017,
     "series": [
-      223,
-      416
+      131,
+      575,
+      574
     ],
     "logo": "/img/logos/tracks/irwindalespeedway-logo.png",
     "group": 19
@@ -486,9 +503,6 @@
     "free": true,
     "price": 0,
     "sku": 10030,
-    "series": [
-      34
-    ],
     "logo": "/img/logos/tracks/summitpointraceway-logo.png",
     "group": 8
   },
@@ -517,49 +531,18 @@
     },
     "skuSeries": [
       259,
-      524,
       413,
-      481,
-      482,
       471,
       116,
-      167,
       538,
-      164,
-      103,
-      58,
-      191,
-      112,
-      584,
-      530,
-      559,
-      557,
-      353,
-      210,
-      430,
-      503,
-      491,
-      502,
-      525,
-      492,
-      74,
-      231,
-      299,
-      476,
+      601,
+      47,
+      62,
+      229,
+      207,
       432,
-      237,
-      228,
-      444,
-      595,
       535,
-      331,
-      591,
-      457,
-      447,
-      539,
-      429,
-      431,
-      456
+      32
     ]
   },
   "27": {
@@ -574,10 +557,7 @@
     "sku": 10299,
     "series": [
       259,
-      524,
-      413,
-      481,
-      482
+      413
     ],
     "logo": "/img/logos/tracks/daytonainternationalspeedway-logo.png",
     "group": 26
@@ -632,11 +612,20 @@
     "price": 15.95,
     "sku": 10022,
     "series": [
-      563,
-      190,
-      413,
-      481,
-      482
+      33,
+      440,
+      102,
+      417,
+      524,
+      103,
+      58,
+      191,
+      575,
+      574,
+      47,
+      62,
+      229,
+      207
     ],
     "logo": "/img/logos/tracks/martinsvillespeedway-logo.png"
   },
@@ -650,11 +639,6 @@
     "free": false,
     "price": 5.25,
     "sku": 10026,
-    "series": [
-      505,
-      431,
-      456
-    ],
     "logo": "/img/logos/tracks/silverstonecircuit-logo.png",
     "skuGroup": {
       "41": "Grand Prix",
@@ -663,14 +647,7 @@
       "44": "National",
       "45": "Southern"
     },
-    "skuSeries": [
-      505,
-      431,
-      456,
-      399,
-      405,
-      432
-    ]
+    "skuSeries": []
   },
   "42": {
     "id": 42,
@@ -682,11 +659,6 @@
     "free": false,
     "price": 5.25,
     "sku": 10026,
-    "series": [
-      399,
-      405,
-      432
-    ],
     "logo": "/img/logos/tracks/silverstonecircuit-logo.png",
     "group": 41
   },
@@ -729,31 +701,6 @@
     "logo": "/img/logos/tracks/silverstonecircuit-logo.png",
     "group": 41
   },
-  "46": {
-    "id": 46,
-    "name": "Barber Motorsports Park",
-    "config": "Full Course",
-    "categories": [
-      "road"
-    ],
-    "free": false,
-    "price": 15.95,
-    "sku": 10012,
-    "series": [
-      63,
-      595
-    ],
-    "logo": "/img/logos/tracks/barbermotorsportspark-logo.png",
-    "skuGroup": {
-      "46": "Full Course",
-      "99": "Short A",
-      "100": "Short B"
-    },
-    "skuSeries": [
-      63,
-      595
-    ]
-  },
   "47": {
     "id": 47,
     "name": "WeatherTech Raceway at Laguna Seca",
@@ -765,16 +712,28 @@
     "price": 15.95,
     "sku": 10018,
     "series": [
+      374,
+      616,
+      562,
       519,
+      530,
+      505,
+      430,
+      503,
+      491,
+      502,
+      525,
+      492,
+      74,
+      285,
       493,
-      231,
-      595,
-      521,
-      541,
-      551,
-      552,
-      65,
-      32
+      432,
+      591,
+      457,
+      419,
+      447,
+      539,
+      541
     ],
     "logo": "/img/logos/tracks/weathertechracewaylagunaseca-logo.png",
     "skuGroup": {
@@ -782,16 +741,28 @@
       "158": "School"
     },
     "skuSeries": [
+      374,
+      616,
+      562,
       519,
+      530,
+      505,
+      430,
+      503,
+      491,
+      502,
+      525,
+      492,
+      74,
+      285,
       493,
-      231,
-      595,
-      521,
-      541,
-      551,
-      552,
-      65,
-      32
+      432,
+      591,
+      457,
+      419,
+      447,
+      539,
+      541
     ]
   },
   "50": {
@@ -829,17 +800,15 @@
       "447": "Oval"
     },
     "skuSeries": [
-      132,
-      524,
-      103,
-      58,
-      191,
-      62,
+      413,
+      47,
+      460,
       325,
       461,
-      460,
       116,
-      164
+      62,
+      229,
+      207
     ]
   },
   "52": {
@@ -866,12 +835,8 @@
     "price": 15.95,
     "sku": 10039,
     "series": [
-      132,
-      524,
-      103,
-      58,
-      191,
-      62
+      413,
+      47
     ],
     "logo": "/img/logos/tracks/atlantamotorspeedway-logo.png",
     "group": 51
@@ -887,7 +852,12 @@
     "price": 15.95,
     "sku": 10041,
     "series": [
-      593
+      223,
+      416,
+      413,
+      374,
+      616,
+      47
     ],
     "logo": "/img/logos/tracks/themilwaukeemile-logo.png"
   },
@@ -902,22 +872,35 @@
     "price": 15.95,
     "sku": 10042,
     "series": [
-      74,
-      399,
-      405,
+      374,
+      616,
+      112,
+      584,
+      530,
+      559,
+      557,
+      353,
+      430,
+      503,
+      491,
+      502,
+      525,
+      492,
       299,
       476,
-      331,
+      237,
+      228,
+      444,
+      595,
+      535,
       591,
       457,
+      419,
       447,
       539,
-      34,
-      551,
-      552,
-      65,
-      165,
-      133
+      431,
+      456,
+      592
     ],
     "logo": "/img/logos/tracks/sebringinternationalraceway-logo.png",
     "skuGroup": {
@@ -926,23 +909,35 @@
       "97": "Club"
     },
     "skuSeries": [
-      74,
-      399,
-      405,
+      374,
+      616,
+      112,
+      584,
+      530,
+      559,
+      557,
+      353,
+      430,
+      503,
+      491,
+      502,
+      525,
+      492,
       299,
       476,
-      331,
+      237,
+      228,
+      444,
+      595,
+      535,
       591,
       457,
+      419,
       447,
       539,
-      34,
-      551,
-      552,
-      65,
-      165,
-      133,
-      521
+      431,
+      456,
+      592
     ]
   },
   "96": {
@@ -968,37 +963,8 @@
     "free": false,
     "price": 15.95,
     "sku": 10042,
-    "series": [
-      521
-    ],
     "logo": "/img/logos/tracks/sebringinternationalraceway-logo.png",
     "group": 95
-  },
-  "99": {
-    "id": 99,
-    "name": "Barber Motorsports Park",
-    "config": "Short A",
-    "categories": [
-      "road"
-    ],
-    "free": false,
-    "price": 15.95,
-    "sku": 10012,
-    "logo": "/img/logos/tracks/barbermotorsportspark-logo.png",
-    "group": 46
-  },
-  "100": {
-    "id": 100,
-    "name": "Barber Motorsports Park",
-    "config": "Short B",
-    "categories": [
-      "road"
-    ],
-    "free": false,
-    "price": 15.95,
-    "sku": 10012,
-    "logo": "/img/logos/tracks/barbermotorsportspark-logo.png",
-    "group": 46
   },
   "101": {
     "id": 101,
@@ -1012,11 +978,7 @@
     "price": 15.95,
     "sku": 10055,
     "series": [
-      33,
-      440,
-      32,
-      481,
-      482
+      413
     ],
     "logo": "/img/logos/tracks/bristolmotorspeedway-logo.png",
     "skuGroup": {
@@ -1026,21 +988,19 @@
       "442": "Dirt"
     },
     "skuSeries": [
-      33,
-      440,
-      32,
-      481,
-      482,
+      413,
+      164,
+      524,
+      103,
+      53,
       58,
       191,
-      292,
-      311,
-      576,
-      442,
-      428,
-      518,
-      308,
-      369
+      601,
+      47,
+      62,
+      229,
+      207,
+      466
     ]
   },
   "103": {
@@ -1055,8 +1015,15 @@
     "price": 15.95,
     "sku": 10058,
     "series": [
-      524,
-      413
+      132,
+      413,
+      58,
+      191,
+      601,
+      47,
+      62,
+      229,
+      207
     ],
     "logo": "/img/logos/tracks/lasvegasmotorspeedway-logo.png",
     "skuGroup": {
@@ -1068,8 +1035,16 @@
       "114": "Road Course Combined"
     },
     "skuSeries": [
-      524,
-      413
+      132,
+      413,
+      58,
+      191,
+      601,
+      47,
+      62,
+      229,
+      207,
+      32
     ]
   },
   "104": {
@@ -1085,12 +1060,11 @@
     "price": 0,
     "sku": 10059,
     "series": [
-      563,
       259,
-      190,
-      32,
-      481,
-      482
+      167,
+      443,
+      563,
+      593
     ],
     "logo": "/img/logos/tracks/phoenixinternationalraceway-logo.png",
     "skuGroup": {
@@ -1100,24 +1074,17 @@
       "472": "Dirt Road"
     },
     "skuSeries": [
-      563,
       259,
-      190,
-      32,
-      481,
-      482,
-      562,
-      112,
-      584,
-      530,
-      63,
+      167,
       443,
+      563,
+      593,
+      599,
       459,
       460,
-      462,
       325,
       461,
-      599
+      462
     ]
   },
   "105": {
@@ -1130,14 +1097,6 @@
     "free": true,
     "price": 0,
     "sku": 10059,
-    "series": [
-      562,
-      112,
-      584,
-      530,
-      63,
-      443
-    ],
     "logo": "/img/logos/tracks/phoenixinternationalraceway-logo.png",
     "group": 104
   },
@@ -1151,6 +1110,9 @@
     "free": false,
     "price": 15.95,
     "sku": 10058,
+    "series": [
+      32
+    ],
     "logo": "/img/logos/tracks/lasvegasmotorspeedway-logo.png",
     "group": 103
   },
@@ -1217,10 +1179,16 @@
     "price": 15.95,
     "sku": 10065,
     "series": [
-      524,
-      53,
-      481,
-      482
+      164,
+      103,
+      58,
+      191,
+      601,
+      47,
+      62,
+      229,
+      207,
+      593
     ],
     "logo": "/img/logos/tracks/darlingtonraceway-logo.png"
   },
@@ -1235,15 +1203,20 @@
     "price": 15.95,
     "sku": 10066,
     "series": [
-      132,
       471,
       116,
+      167,
       538,
       164,
+      524,
       413,
-      481,
-      482,
-      47
+      103,
+      58,
+      191,
+      47,
+      62,
+      229,
+      207
     ],
     "logo": "/img/logos/tracks/talladegasuperspeedway-logo.png"
   },
@@ -1268,12 +1241,8 @@
       "122": "Road Course Combined"
     },
     "skuSeries": [
-      132,
-      164,
       524,
-      103,
-      47,
-      62
+      413
     ]
   },
   "118": {
@@ -1326,12 +1295,8 @@
     "price": 5.25,
     "sku": 10067,
     "series": [
-      132,
-      164,
       524,
-      103,
-      47,
-      62
+      413
     ],
     "logo": "/img/logos/tracks/texasmotorspeedway-logo.png",
     "group": 117
@@ -1360,11 +1325,13 @@
     "price": 15.95,
     "sku": 10074,
     "series": [
-      132,
-      524,
-      413,
-      481,
-      482
+      167,
+      53,
+      601,
+      47,
+      62,
+      229,
+      207
     ],
     "logo": "/img/logos/tracks/chicagolandspeedway-logo.png"
   },
@@ -1379,10 +1346,7 @@
     "price": 5.25,
     "sku": 10075,
     "series": [
-      164,
-      103,
-      47,
-      62
+      524
     ],
     "logo": "/img/logos/tracks/michiganinternationalspeedway-logo.png"
   },
@@ -1403,17 +1367,22 @@
       "128": "Short"
     },
     "skuSeries": [
-      210,
-      299,
-      476,
-      432,
-      595,
+      65,
+      112,
+      584,
+      530,
+      285,
+      399,
+      405,
       535,
-      541,
-      592,
-      536,
-      537,
-      514
+      591,
+      457,
+      419,
+      447,
+      539,
+      551,
+      552,
+      443
     ]
   },
   "127": {
@@ -1427,16 +1396,21 @@
     "price": 15.95,
     "sku": 10082,
     "series": [
-      210,
-      299,
-      476,
-      432,
-      595,
+      65,
+      112,
+      584,
+      530,
+      285,
+      399,
+      405,
       535,
-      541,
-      592,
-      536,
-      537
+      591,
+      457,
+      419,
+      447,
+      539,
+      551,
+      552
     ],
     "logo": "/img/logos/tracks/roadatlanta-logo.png",
     "group": 126
@@ -1452,7 +1426,7 @@
     "price": 15.95,
     "sku": 10082,
     "series": [
-      514
+      443
     ],
     "logo": "/img/logos/tracks/roadatlanta-logo.png",
     "group": 126
@@ -1477,10 +1451,18 @@
       "222": "Legends"
     },
     "skuSeries": [
-      593,
+      429,
       471,
-      103,
-      62
+      102,
+      417,
+      413,
+      575,
+      574,
+      47,
+      62,
+      229,
+      207,
+      563
     ]
   },
   "130": {
@@ -1493,6 +1475,9 @@
     "free": false,
     "price": 15.95,
     "sku": 10106,
+    "series": [
+      429
+    ],
     "logo": "/img/logos/tracks/newhampshiremotorspeedway-logo.png",
     "group": 129
   },
@@ -1507,10 +1492,17 @@
     "price": 15.95,
     "sku": 10106,
     "series": [
-      593,
       471,
-      103,
-      62
+      102,
+      417,
+      413,
+      575,
+      574,
+      47,
+      62,
+      229,
+      207,
+      563
     ],
     "logo": "/img/logos/tracks/newhampshiremotorspeedway-logo.png",
     "group": 129
@@ -1550,11 +1542,24 @@
       "522": "NASCAR Oval"
     },
     "skuSeries": [
-      551,
-      552,
+      165,
+      133,
+      374,
+      616,
+      562,
+      63,
+      443,
+      431,
+      456,
+      592,
       132,
-      164,
-      47
+      53,
+      563,
+      429,
+      593,
+      62,
+      229,
+      207
     ]
   },
   "134": {
@@ -1595,7 +1600,8 @@
     "price": 5.25,
     "sku": 10108,
     "series": [
-      259
+      259,
+      524
     ],
     "logo": "/img/logos/tracks/poconoraceway-logo.png",
     "skuGroup": {
@@ -1607,7 +1613,7 @@
     },
     "skuSeries": [
       259,
-      285
+      524
     ]
   },
   "137": {
@@ -1659,9 +1665,6 @@
     "free": false,
     "price": 5.25,
     "sku": 10108,
-    "series": [
-      285
-    ],
     "logo": "/img/logos/tracks/poconoraceway-logo.png",
     "group": 136
   },
@@ -1675,9 +1678,6 @@
     "free": true,
     "price": 0,
     "sku": 10030,
-    "series": [
-      562
-    ],
     "logo": "/img/logos/tracks/summitpointraceway-logo.png",
     "group": 8
   },
@@ -1704,11 +1704,13 @@
     "price": 15.95,
     "sku": 10132,
     "series": [
-      399,
-      405,
+      65,
+      514,
+      210,
       595,
-      551,
-      552
+      521,
+      592,
+      201
     ],
     "logo": "/img/logos/tracks/canadiantiremotorsportspark-logo.png"
   },
@@ -1725,13 +1727,15 @@
     "sku": 10192,
     "series": [
       514,
-      112,
-      584,
-      530,
-      210,
-      430,
-      503,
+      559,
+      557,
       74,
+      399,
+      405,
+      237,
+      228,
+      444,
+      592,
       201
     ],
     "logo": "/img/logos/tracks/brandshatchcircuit-logo.png",
@@ -1742,15 +1746,16 @@
     },
     "skuSeries": [
       514,
-      112,
-      584,
-      530,
-      210,
-      430,
-      503,
+      559,
+      557,
       74,
+      399,
+      405,
+      237,
+      228,
+      444,
+      592,
       201,
-      429,
       460,
       325,
       461
@@ -1766,9 +1771,6 @@
     "free": false,
     "price": 15.95,
     "sku": 10192,
-    "series": [
-      429
-    ],
     "logo": "/img/logos/tracks/brandshatchcircuit-logo.png",
     "group": 145
   },
@@ -1795,18 +1797,16 @@
       "488": "Oostelijk"
     },
     "skuSeries": [
-      112,
-      584,
-      530,
+      536,
+      537,
+      496,
+      495,
+      231,
+      299,
+      476,
       542,
-      551,
-      552,
-      592,
-      65,
-      165,
-      133,
-      260,
-      484
+      431,
+      456
     ]
   },
   "148": {
@@ -1872,15 +1872,13 @@
     "price": 15.95,
     "sku": 10202,
     "series": [
+      496,
+      495,
+      353,
       594,
       521,
       34,
-      540,
-      431,
-      456,
-      65,
-      260,
-      484
+      540
     ],
     "logo": "/img/logos/tracks/phillipislandcircuit-logo.png"
   },
@@ -1896,8 +1894,15 @@
     "price": 15.95,
     "sku": 10212,
     "series": [
-      165,
-      133
+      374,
+      616,
+      210,
+      430,
+      503,
+      491,
+      502,
+      525,
+      492
     ],
     "logo": "/img/logos/tracks/midohiosportscarcourse-logo.png",
     "skuGroup": {
@@ -1908,8 +1913,16 @@
       "157": "Alt Oval"
     },
     "skuSeries": [
-      165,
-      133
+      374,
+      616,
+      210,
+      430,
+      503,
+      491,
+      502,
+      525,
+      492,
+      429
     ]
   },
   "154": {
@@ -1922,6 +1935,9 @@
     "free": false,
     "price": 15.95,
     "sku": 10212,
+    "series": [
+      429
+    ],
     "logo": "/img/logos/tracks/midohiosportscarcourse-logo.png",
     "group": 153
   },
@@ -2004,11 +2020,17 @@
       483,
       564,
       182,
-      554,
+      33,
+      440,
       45,
       441,
-      223,
-      416
+      190,
+      102,
+      417,
+      32,
+      575,
+      574,
+      563
     ],
     "logo": "/img/logos/tracks/thompsonspeedwaymotorsportspark-logo.png"
   },
@@ -2023,7 +2045,13 @@
     "price": 15.95,
     "sku": 10223,
     "series": [
-      413
+      164,
+      524,
+      103,
+      58,
+      191,
+      47,
+      62
     ],
     "logo": "/img/logos/tracks/doverinternationalspeedway-logo.png"
   },
@@ -2048,31 +2076,31 @@
       "526": "Bike"
     },
     "skuSeries": [
-      505,
-      559,
-      557,
-      353,
-      231,
-      299,
-      476,
-      596,
-      65,
-      165,
-      133,
-      536,
-      537,
       260,
       484,
-      429,
-      112,
-      584,
-      530,
-      491,
-      502,
-      525,
-      572,
-      551,
-      552
+      496,
+      495,
+      559,
+      557,
+      210,
+      74,
+      299,
+      476,
+      432,
+      237,
+      228,
+      444,
+      535,
+      331,
+      591,
+      457,
+      447,
+      539,
+      431,
+      456,
+      65,
+      285,
+      201
     ]
   },
   "164": {
@@ -2114,18 +2142,17 @@
     "series": [
       139,
       571,
-      562,
       519,
-      430,
-      503,
-      231,
+      530,
+      505,
+      353,
+      63,
       594,
       455,
       520,
-      443,
-      540,
-      429,
-      592
+      34,
+      498,
+      540
     ],
     "logo": "/img/logos/tracks/okayamainternationalcircuit-logo.png",
     "skuGroup": {
@@ -2135,20 +2162,19 @@
     "skuSeries": [
       139,
       571,
-      562,
       519,
-      430,
-      503,
-      231,
+      530,
+      505,
+      353,
+      63,
       594,
       455,
       520,
-      443,
+      34,
+      498,
       540,
-      429,
-      592,
-      514,
-      493
+      493,
+      443
     ]
   },
   "167": {
@@ -2162,8 +2188,8 @@
     "price": 0,
     "sku": 10267,
     "series": [
-      514,
-      493
+      493,
+      443
     ],
     "logo": "/img/logos/tracks/okayamainternationalcircuit-logo.png",
     "group": 166
@@ -2179,17 +2205,32 @@
     "price": 15.95,
     "sku": 10282,
     "series": [
-      399,
-      405,
-      432,
+      536,
+      537,
+      260,
+      484,
+      496,
+      495,
+      505,
+      559,
+      557,
+      353,
+      74,
+      231,
+      299,
+      476,
+      237,
+      228,
+      444,
       594,
-      535,
+      498,
       540,
+      429,
       431,
       456,
-      65,
-      260,
-      484
+      551,
+      552,
+      592
     ],
     "logo": "/img/logos/tracks/suzukainternationalracingcourse-logo.png",
     "skuGroup": {
@@ -2200,19 +2241,32 @@
       "176": "West w/chicane"
     },
     "skuSeries": [
-      399,
-      405,
-      432,
-      594,
-      535,
-      540,
-      431,
-      456,
-      65,
+      536,
+      537,
       260,
       484,
-      34,
-      498
+      496,
+      495,
+      505,
+      559,
+      557,
+      353,
+      74,
+      231,
+      299,
+      476,
+      237,
+      228,
+      444,
+      594,
+      498,
+      540,
+      429,
+      431,
+      456,
+      551,
+      552,
+      592
     ]
   },
   "169": {
@@ -2228,9 +2282,7 @@
     "price": 15.95,
     "sku": 10283,
     "series": [
-      563,
-      593,
-      131
+      132
     ],
     "logo": "/img/logos/tracks/iowaspeedway-logo.png",
     "skuGroup": {
@@ -2242,18 +2294,17 @@
       "559": "Oval"
     },
     "skuSeries": [
-      563,
-      593,
-      131,
+      132,
       460,
       325,
-      461,
-      132,
-      165,
-      133,
-      524,
-      413,
-      53
+      223,
+      416,
+      131,
+      47,
+      62,
+      229,
+      207,
+      593
     ]
   },
   "170": {
@@ -2318,10 +2369,6 @@
     "free": false,
     "price": 15.95,
     "sku": 10282,
-    "series": [
-      34,
-      498
-    ],
     "logo": "/img/logos/tracks/suzukainternationalracingcourse-logo.png",
     "group": 168
   },
@@ -2375,16 +2422,32 @@
     "price": 15.95,
     "sku": 10349,
     "series": [
-      430,
-      503,
-      491,
-      502,
-      525,
-      492,
-      74,
-      541,
-      201,
-      164
+      165,
+      133,
+      536,
+      537,
+      260,
+      484,
+      374,
+      616,
+      496,
+      495,
+      47,
+      210,
+      285,
+      399,
+      405,
+      299,
+      476,
+      591,
+      457,
+      419,
+      447,
+      539,
+      443,
+      431,
+      456,
+      592
     ],
     "logo": "/img/logos/tracks/longbeachstreetcircuit-logo.png"
   },
@@ -2399,14 +2462,18 @@
     "price": 0,
     "sku": 10290,
     "series": [
-      491,
-      502,
-      525,
-      572,
+      139,
+      571,
+      514,
+      519,
+      112,
+      584,
+      559,
+      557,
       596,
       455,
       520,
-      498
+      542
     ],
     "logo": "/img/logos/tracks/oultonparkcircuit-logo.png",
     "skuGroup": {
@@ -2420,25 +2487,25 @@
       "187": "Island Historic"
     },
     "skuSeries": [
-      491,
-      502,
-      525,
-      572,
+      139,
+      571,
+      514,
+      519,
+      112,
+      584,
+      559,
+      557,
       596,
       455,
       520,
-      498,
-      139,
-      571,
-      519,
-      559,
-      557,
-      353,
-      493,
+      542,
       562,
-      74,
-      399,
-      405
+      493,
+      521,
+      34,
+      505,
+      530,
+      201
     ]
   },
   "181": {
@@ -2453,11 +2520,7 @@
     "sku": 10290,
     "series": [
       139,
-      571,
-      519,
-      559,
-      557,
-      353,
+      562,
       493
     ],
     "logo": "/img/logos/tracks/oultonparkcircuit-logo.png",
@@ -2474,7 +2537,7 @@
     "price": 0,
     "sku": 10290,
     "series": [
-      562
+      521
     ],
     "logo": "/img/logos/tracks/oultonparkcircuit-logo.png",
     "group": 180
@@ -2489,6 +2552,9 @@
     "free": true,
     "price": 0,
     "sku": 10290,
+    "series": [
+      34
+    ],
     "logo": "/img/logos/tracks/oultonparkcircuit-logo.png",
     "group": 180
   },
@@ -2502,6 +2568,9 @@
     "free": true,
     "price": 0,
     "sku": 10290,
+    "series": [
+      505
+    ],
     "logo": "/img/logos/tracks/oultonparkcircuit-logo.png",
     "group": 180
   },
@@ -2516,9 +2585,8 @@
     "price": 0,
     "sku": 10290,
     "series": [
-      74,
-      399,
-      405
+      530,
+      201
     ],
     "logo": "/img/logos/tracks/oultonparkcircuit-logo.png",
     "group": 180
@@ -2559,18 +2627,13 @@
     "free": false,
     "price": 5.25,
     "sku": 10293,
-    "series": [
-      103,
-      62
-    ],
     "logo": "/img/logos/tracks/kentuckyspeedway-logo.png",
     "skuGroup": {
       "188": "Oval",
       "189": "Legends"
     },
     "skuSeries": [
-      103,
-      62
+      32
     ]
   },
   "189": {
@@ -2583,6 +2646,9 @@
     "free": false,
     "price": 5.25,
     "sku": 10293,
+    "series": [
+      32
+    ],
     "logo": "/img/logos/tracks/kentuckyspeedway-logo.png",
     "group": 188
   },
@@ -2597,13 +2663,11 @@
     "price": 12.95,
     "sku": 10298,
     "series": [
-      190,
-      102,
-      417,
-      223,
-      416,
-      53,
-      131
+      554,
+      45,
+      441,
+      575,
+      574
     ],
     "logo": "/img/logos/tracks/newsmyrnaspeedway-logo.png"
   },
@@ -2620,12 +2684,12 @@
     "series": [
       471,
       116,
-      167,
       538,
-      164,
-      103,
-      58,
-      191
+      601,
+      47,
+      62,
+      229,
+      207
     ],
     "logo": "/img/logos/tracks/daytonainternationalspeedway-logo.png",
     "group": 26
@@ -2641,37 +2705,8 @@
     "price": 15.95,
     "sku": 10299,
     "series": [
-      112,
-      584,
-      530,
-      559,
-      557,
-      353,
-      210,
-      430,
-      503,
-      491,
-      502,
-      525,
-      492,
-      74,
-      231,
-      299,
-      476,
       432,
-      237,
-      228,
-      444,
-      595,
-      535,
-      331,
-      591,
-      457,
-      447,
-      539,
-      429,
-      431,
-      456
+      535
     ],
     "logo": "/img/logos/tracks/daytonainternationalspeedway-logo.png",
     "group": 26
@@ -2699,6 +2734,9 @@
     "free": false,
     "price": 15.95,
     "sku": 10299,
+    "series": [
+      32
+    ],
     "logo": "/img/logos/tracks/daytonainternationalspeedway-logo.png",
     "group": 26
   },
@@ -2714,6 +2752,10 @@
     "price": 15.95,
     "sku": 10309,
     "series": [
+      536,
+      537,
+      353,
+      285,
       594,
       540
     ],
@@ -2725,10 +2767,16 @@
       "198": "Oval"
     },
     "skuSeries": [
+      536,
+      537,
+      353,
+      285,
       594,
       540,
-      593,
-      201
+      165,
+      133,
+      53,
+      593
     ]
   },
   "196": {
@@ -2768,8 +2816,10 @@
     "price": 15.95,
     "sku": 10309,
     "series": [
-      593,
-      201
+      165,
+      133,
+      53,
+      593
     ],
     "logo": "/img/logos/tracks/motegi-logo.png",
     "group": 195
@@ -2785,7 +2835,7 @@
     "price": 15.95,
     "sku": 10317,
     "series": [
-      542
+      498
     ],
     "logo": "/img/logos/tracks/circuitzolder-logo.png",
     "skuGroup": {
@@ -2793,7 +2843,8 @@
       "200": "Alternate"
     },
     "skuSeries": [
-      542
+      498,
+      65
     ]
   },
   "200": {
@@ -2806,6 +2857,9 @@
     "free": false,
     "price": 15.95,
     "sku": 10317,
+    "series": [
+      65
+    ],
     "logo": "/img/logos/tracks/circuitzolder-logo.png",
     "group": 199
   },
@@ -2823,13 +2877,14 @@
       483,
       564,
       182,
-      167,
-      554,
-      45,
-      441,
+      33,
+      440,
       190,
-      223,
-      416
+      102,
+      417,
+      32,
+      575,
+      574
     ],
     "logo": "/img/logos/tracks/langleyspeedway-logo.png"
   },
@@ -2844,10 +2899,13 @@
     "price": 0,
     "sku": 10319,
     "series": [
-      285,
+      519,
+      559,
+      557,
       594,
       455,
       520,
+      443,
       540
     ],
     "logo": "/img/logos/tracks/oranparkraceway-logo.png",
@@ -2860,11 +2918,15 @@
       "211": "Moto"
     },
     "skuSeries": [
-      285,
+      519,
+      559,
+      557,
       594,
       455,
       520,
-      540
+      443,
+      540,
+      562
     ]
   },
   "203": {
@@ -2878,18 +2940,6 @@
     "free": false,
     "price": 15.95,
     "sku": 10328,
-    "series": [
-      223,
-      416,
-      164,
-      524,
-      413,
-      58,
-      191,
-      481,
-      482,
-      47
-    ],
     "logo": "/img/logos/tracks/rockinghamspeedway-logo.png",
     "skuGroup": {
       "203": "Oval - 2012",
@@ -2899,16 +2949,14 @@
       "583": "Oval"
     },
     "skuSeries": [
-      223,
-      416,
+      167,
       164,
       524,
-      413,
-      58,
-      191,
-      481,
-      482,
-      47
+      103,
+      601,
+      47,
+      62,
+      563
     ]
   },
   "204": {
@@ -2973,6 +3021,9 @@
     "free": true,
     "price": 0,
     "sku": 10319,
+    "series": [
+      562
+    ],
     "logo": "/img/logos/tracks/oranparkraceway-logo.png",
     "group": 202
   },
@@ -3026,26 +3077,23 @@
     "price": 15.95,
     "sku": 10340,
     "series": [
-      559,
-      557,
-      353,
-      285,
-      231,
-      299,
-      476,
-      535,
-      331,
-      591,
-      457,
-      447,
-      539,
-      521,
-      592,
-      201,
+      65,
       536,
       537,
       260,
-      484
+      484,
+      496,
+      495,
+      514,
+      430,
+      503,
+      595,
+      535,
+      521,
+      541,
+      551,
+      552,
+      201
     ],
     "logo": "/img/logos/tracks/autodromojosecarlospace-logo.png",
     "skuGroup": {
@@ -3053,26 +3101,23 @@
       "213": "Moto"
     },
     "skuSeries": [
-      559,
-      557,
-      353,
-      285,
-      231,
-      299,
-      476,
-      535,
-      331,
-      591,
-      457,
-      447,
-      539,
-      521,
-      592,
-      201,
+      65,
       536,
       537,
       260,
-      484
+      484,
+      496,
+      495,
+      514,
+      430,
+      503,
+      595,
+      535,
+      521,
+      541,
+      551,
+      552,
+      201
     ]
   },
   "213": {
@@ -3100,7 +3145,15 @@
     "price": 15.95,
     "sku": 10350,
     "series": [
-      53
+      132,
+      167,
+      103,
+      58,
+      191,
+      47,
+      62,
+      229,
+      207
     ],
     "logo": "/img/logos/tracks/kansasspeedway-logo.png",
     "skuGroup": {
@@ -3109,7 +3162,15 @@
       "216": "Infield Road Course"
     },
     "skuSeries": [
-      53
+      132,
+      167,
+      103,
+      58,
+      191,
+      47,
+      62,
+      229,
+      207
     ]
   },
   "215": {
@@ -3162,13 +3223,20 @@
     "price": 15.95,
     "sku": 10352,
     "series": [
-      63,
-      491,
-      502,
-      525,
-      572,
-      399,
-      405
+      65,
+      260,
+      484,
+      374,
+      616,
+      496,
+      495,
+      74,
+      521,
+      34,
+      498,
+      431,
+      456,
+      592
     ],
     "logo": "/img/logos/tracks/circuitgillesvilleneuve-logo.png"
   },
@@ -3183,26 +3251,14 @@
     "price": 15.95,
     "sku": 10355,
     "series": [
-      112,
-      584,
-      530,
-      559,
-      557,
-      353,
-      491,
-      502,
-      525,
-      572,
-      74,
-      231,
-      237,
-      228,
-      444,
+      514,
+      285,
+      399,
+      405,
       594,
+      535,
       540,
-      429,
-      431,
-      456
+      201
     ],
     "logo": "/img/logos/tracks/mountpanoramacircuit-logo.png"
   },
@@ -3292,10 +3348,10 @@
       132,
       471,
       116,
-      103,
-      481,
-      482,
-      62
+      524,
+      53,
+      601,
+      47
     ],
     "logo": "/img/logos/tracks/autoclubspeedway-logo.png",
     "skuGroup": {
@@ -3308,11 +3364,10 @@
       132,
       471,
       116,
-      103,
-      481,
-      482,
-      62,
-      562
+      524,
+      53,
+      601,
+      47
     ]
   },
   "226": {
@@ -3351,9 +3406,6 @@
     "free": false,
     "price": 15.95,
     "sku": 10359,
-    "series": [
-      562
-    ],
     "logo": "/img/logos/tracks/autoclubspeedway-logo.png",
     "group": 225
   },
@@ -3368,10 +3420,17 @@
     "price": 15.95,
     "sku": 10361,
     "series": [
-      74,
-      498,
-      536,
-      537
+      260,
+      484,
+      496,
+      495,
+      353,
+      491,
+      502,
+      525,
+      572,
+      285,
+      231
     ],
     "logo": "/img/logos/tracks/circuitoftheamericas-logo.png",
     "skuGroup": {
@@ -3381,13 +3440,25 @@
       "579": "NASCAR West"
     },
     "skuSeries": [
-      74,
-      498,
-      536,
-      537,
-      103,
-      58,
-      191
+      260,
+      484,
+      496,
+      495,
+      353,
+      491,
+      502,
+      525,
+      572,
+      285,
+      231,
+      164,
+      47,
+      62,
+      229,
+      207,
+      63,
+      399,
+      405
     ]
   },
   "230": {
@@ -3428,14 +3499,20 @@
     "price": 12.95,
     "sku": 10365,
     "series": [
-      563,
-      593,
-      33,
-      440,
+      554,
       190,
-      102,
-      417,
-      131
+      223,
+      416,
+      413,
+      53,
+      131,
+      575,
+      574,
+      47,
+      62,
+      443,
+      563,
+      593
     ],
     "logo": "/img/logos/tracks/lucasoilraceway-logo.png",
     "skuGroup": {
@@ -3443,15 +3520,21 @@
       "304": "Rallycross"
     },
     "skuSeries": [
+      554,
+      190,
+      223,
+      416,
+      413,
+      53,
+      131,
+      575,
+      574,
+      47,
+      62,
+      443,
       563,
       593,
-      33,
-      440,
-      190,
-      102,
-      417,
-      131,
-      325,
+      460,
       461
     ]
   },
@@ -3467,9 +3550,8 @@
     "sku": 10371,
     "series": [
       596,
-      551,
-      552,
-      65
+      34,
+      542
     ],
     "logo": "/img/logos/tracks/doningtonparkracingcircuit-logo.png",
     "skuGroup": {
@@ -3478,10 +3560,17 @@
     },
     "skuSeries": [
       596,
-      551,
-      552,
-      65,
-      201
+      34,
+      542,
+      430,
+      503,
+      491,
+      502,
+      525,
+      492,
+      285,
+      299,
+      476
     ]
   },
   "234": {
@@ -3495,7 +3584,15 @@
     "price": 15.95,
     "sku": 10371,
     "series": [
-      201
+      430,
+      503,
+      491,
+      502,
+      525,
+      492,
+      285,
+      299,
+      476
     ],
     "logo": "/img/logos/tracks/doningtonparkracingcircuit-logo.png",
     "group": 233
@@ -3517,11 +3614,20 @@
       "560": "Oval"
     },
     "skuSeries": [
-      593,
       132,
+      165,
+      133,
       471,
-      167,
-      53
+      53,
+      131,
+      374,
+      616,
+      47,
+      62,
+      229,
+      207,
+      563,
+      593
     ]
   },
   "239": {
@@ -3536,22 +3642,13 @@
     "price": 15.95,
     "sku": 10383,
     "series": [
-      299,
-      476,
-      596,
-      535,
-      591,
-      457,
-      419,
-      447,
-      539,
-      542,
-      551,
-      552,
-      536,
-      537,
       260,
-      484
+      484,
+      496,
+      495,
+      530,
+      231,
+      34
     ],
     "logo": "/img/logos/tracks/autodromonazionalemonza-logo.png",
     "skuGroup": {
@@ -3566,36 +3663,19 @@
       "247": "Combined"
     },
     "skuSeries": [
-      299,
-      476,
-      596,
-      535,
-      591,
-      457,
-      419,
-      447,
-      539,
-      542,
-      551,
-      552,
-      536,
-      537,
       260,
       484,
-      429,
-      285,
+      496,
+      495,
+      530,
+      231,
+      34,
       201,
+      63,
+      210,
+      432,
       116,
-      430,
-      503,
-      491,
-      502,
-      525,
-      492,
-      74,
-      237,
-      228,
-      444
+      429
     ]
   },
   "240": {
@@ -3608,6 +3688,9 @@
     "free": false,
     "price": 15.95,
     "sku": 10383,
+    "series": [
+      201
+    ],
     "logo": "/img/logos/tracks/autodromonazionalemonza-logo.png",
     "group": 239
   },
@@ -3622,7 +3705,7 @@
     "price": 15.95,
     "sku": 10383,
     "series": [
-      429
+      63
     ],
     "logo": "/img/logos/tracks/autodromonazionalemonza-logo.png",
     "group": 239
@@ -3664,8 +3747,8 @@
     "price": 15.95,
     "sku": 10383,
     "series": [
-      285,
-      201
+      210,
+      432
     ],
     "logo": "/img/logos/tracks/autodromonazionalemonza-logo.png",
     "group": 239
@@ -3681,7 +3764,8 @@
     "price": 15.95,
     "sku": 10383,
     "series": [
-      116
+      116,
+      429
     ],
     "logo": "/img/logos/tracks/autodromonazionalemonza-logo.png",
     "group": 239
@@ -3709,18 +3793,6 @@
     "free": false,
     "price": 15.95,
     "sku": 10383,
-    "series": [
-      430,
-      503,
-      491,
-      502,
-      525,
-      492,
-      74,
-      237,
-      228,
-      444
-    ],
     "logo": "/img/logos/tracks/autodromonazionalemonza-logo.png",
     "group": 239
   },
@@ -3737,11 +3809,12 @@
     "series": [
       33,
       440,
-      45,
-      441,
-      102,
-      417,
-      131
+      223,
+      416,
+      131,
+      575,
+      574,
+      593
     ],
     "logo": "/img/logos/tracks/fiveflagsspeedway-logo.png"
   },
@@ -3756,14 +3829,11 @@
     "price": 15.95,
     "sku": 10395,
     "series": [
-      514,
-      505,
+      530,
       526,
       63,
       210,
-      231,
-      432,
-      65
+      74
     ],
     "logo": "/img/logos/tracks/nurburgring-logo.png",
     "skuGroup": {
@@ -3771,14 +3841,11 @@
       "253": "Touristenfahrten"
     },
     "skuSeries": [
-      514,
-      505,
+      530,
       526,
       63,
       210,
-      231,
-      432,
-      65
+      74
     ]
   },
   "250": {
@@ -3792,11 +3859,13 @@
     "price": 15.95,
     "sku": 10396,
     "series": [
-      237,
-      228,
-      444,
-      536,
-      537
+      260,
+      484,
+      496,
+      495,
+      210,
+      431,
+      456
     ],
     "logo": "/img/logos/tracks/nurburgring-logo.png",
     "skuGroup": {
@@ -3808,18 +3877,17 @@
       "261": "Müllenbachschleife"
     },
     "skuSeries": [
-      237,
-      228,
-      444,
-      536,
-      537,
-      430,
-      503,
-      491,
-      502,
-      525,
-      492,
-      432
+      260,
+      484,
+      496,
+      495,
+      210,
+      431,
+      456,
+      551,
+      552,
+      592,
+      542
     ]
   },
   "252": {
@@ -3833,9 +3901,20 @@
     "price": 0,
     "sku": 0,
     "series": [
-      285,
+      112,
+      584,
+      430,
+      503,
+      491,
+      502,
+      525,
+      492,
+      399,
+      405,
       299,
-      476
+      476,
+      432,
+      201
     ],
     "logo": "/img/logos/tracks/nurburgring-logo.png",
     "skuGroup": {
@@ -3845,14 +3924,28 @@
       "264": "Gesamtstrecke Long"
     },
     "skuSeries": [
-      285,
+      112,
+      584,
+      430,
+      503,
+      491,
+      502,
+      525,
+      492,
+      399,
+      405,
       299,
       476,
-      431,
-      456,
-      429,
-      521,
-      34
+      432,
+      201,
+      275,
+      505,
+      331,
+      591,
+      457,
+      447,
+      539,
+      521
     ]
   },
   "253": {
@@ -3879,13 +3972,9 @@
     "price": 15.95,
     "sku": 10396,
     "series": [
-      430,
-      503,
-      491,
-      502,
-      525,
-      492,
-      432
+      551,
+      552,
+      592
     ],
     "logo": "/img/logos/tracks/nurburgring-logo.png",
     "group": 250
@@ -3901,17 +3990,20 @@
     "price": 0,
     "sku": 10401,
     "series": [
-      563,
       564,
       182,
-      554,
+      33,
+      440,
       45,
       441,
-      190,
       102,
       417,
       32,
-      131
+      53,
+      131,
+      575,
+      574,
+      563
     ],
     "logo": "/img/logos/tracks/southernnationalmotorsportspark-logo.png"
   },
@@ -3925,6 +4017,9 @@
     "free": false,
     "price": 15.95,
     "sku": 10396,
+    "series": [
+      542
+    ],
     "logo": "/img/logos/tracks/nurburgring-logo.png",
     "group": 250
   },
@@ -3978,8 +4073,8 @@
     "price": 0,
     "sku": 0,
     "series": [
-      431,
-      456
+      275,
+      505
     ],
     "logo": "/img/logos/tracks/nurburgring-logo.png",
     "group": 252
@@ -3994,9 +4089,6 @@
     "free": false,
     "price": 0,
     "sku": 0,
-    "series": [
-      429
-    ],
     "logo": "/img/logos/tracks/nurburgring-logo.png",
     "group": 252
   },
@@ -4011,8 +4103,12 @@
     "price": 0,
     "sku": 0,
     "series": [
-      521,
-      34
+      331,
+      591,
+      457,
+      447,
+      539,
+      521
     ],
     "logo": "/img/logos/tracks/nurburgring-logo.png",
     "group": 252
@@ -4028,19 +4124,25 @@
     "price": 15.95,
     "sku": 10403,
     "series": [
-      559,
-      557,
-      353,
-      63,
-      285,
+      65,
+      536,
+      537,
+      260,
+      484,
+      496,
+      495,
       299,
       476,
-      237,
-      228,
-      444,
-      592,
-      260,
-      484
+      432,
+      596,
+      535,
+      331,
+      591,
+      457,
+      447,
+      539,
+      551,
+      552
     ],
     "logo": "/img/logos/tracks/autodromointernazionaleenzoedinoferrari-logo.png",
     "skuGroup": {
@@ -4048,19 +4150,25 @@
       "267": "Moto"
     },
     "skuSeries": [
-      559,
-      557,
-      353,
-      63,
-      285,
+      65,
+      536,
+      537,
+      260,
+      484,
+      496,
+      495,
       299,
       476,
-      237,
-      228,
-      444,
-      592,
-      260,
-      484
+      432,
+      596,
+      535,
+      331,
+      591,
+      457,
+      447,
+      539,
+      551,
+      552
     ]
   },
   "267": {
@@ -4088,15 +4196,9 @@
     "sku": 10407,
     "series": [
       505,
-      285,
-      299,
-      476,
-      535,
-      591,
-      457,
-      419,
-      447,
-      539
+      353,
+      210,
+      231
     ],
     "logo": "/img/logos/tracks/circuitdes24heuresdumans-logo.png",
     "skuGroup": {
@@ -4105,17 +4207,9 @@
     },
     "skuSeries": [
       505,
-      285,
-      299,
-      476,
-      535,
-      591,
-      457,
-      419,
-      447,
-      539,
-      432,
-      65
+      353,
+      210,
+      231
     ]
   },
   "269": {
@@ -4128,10 +4222,6 @@
     "free": false,
     "price": 15.95,
     "sku": 10407,
-    "series": [
-      432,
-      65
-    ],
     "logo": "/img/logos/tracks/circuitdes24heuresdumans-logo.png",
     "group": 268
   },
@@ -4148,11 +4238,10 @@
     "series": [
       33,
       440,
-      554,
-      45,
-      441,
-      102,
-      417
+      190,
+      32,
+      575,
+      574
     ],
     "logo": "/img/logos/tracks/thebullring-logo.png"
   },
@@ -4167,7 +4256,6 @@
     "price": 12.95,
     "sku": 10415,
     "series": [
-      570,
       315,
       292,
       291,
@@ -4188,7 +4276,9 @@
       458,
       309,
       308,
-      369
+      369,
+      500,
+      501
     ],
     "logo": "/img/logos/tracks/eldoraspeedway-logo.png"
   },
@@ -4203,10 +4293,17 @@
     "price": 12.95,
     "sku": 10416,
     "series": [
-      570,
-      292,
-      305,
-      515
+      554,
+      291,
+      466,
+      306,
+      517,
+      307,
+      458,
+      308,
+      369,
+      500,
+      501
     ],
     "logo": "/img/logos/tracks/williamsgrovespeedway-logo.png"
   },
@@ -4221,22 +4318,24 @@
     "price": 0,
     "sku": 10019,
     "series": [
-      554,
       567,
       446,
       315,
       292,
       291,
       466,
+      311,
       305,
       515,
-      428,
-      518,
-      307,
-      458,
-      308,
-      369,
-      462
+      310,
+      306,
+      517,
+      576,
+      442,
+      309,
+      462,
+      500,
+      501
     ],
     "logo": "/img/logos/tracks/usainternationalspeedway-logo.png",
     "group": 16
@@ -4252,11 +4351,18 @@
     "price": 15.95,
     "sku": 10422,
     "series": [
-      132,
-      165,
-      133,
       471,
-      116
+      116,
+      167,
+      164,
+      413,
+      58,
+      191,
+      601,
+      47,
+      62,
+      229,
+      207
     ],
     "logo": "/img/logos/tracks/michiganinternationalspeedway-logo.png"
   },
@@ -4271,15 +4377,15 @@
     "price": 15.95,
     "sku": 10423,
     "series": [
-      593,
-      165,
-      133,
+      132,
       471,
       167,
       164,
-      58,
-      191,
-      47
+      47,
+      62,
+      229,
+      207,
+      201
     ],
     "logo": "/img/logos/tracks/poconoraceway-logo.png"
   },
@@ -4294,23 +4400,20 @@
     "price": 12.95,
     "sku": 10427,
     "series": [
-      570,
+      292,
       291,
+      466,
       311,
-      305,
-      515,
-      310,
       306,
       517,
       576,
       442,
       428,
       518,
-      307,
-      458,
-      309,
       308,
-      369
+      369,
+      500,
+      501
     ],
     "logo": "/img/logos/tracks/volusiaspeedwaypark-logo.png"
   },
@@ -4325,15 +4428,13 @@
     "price": 12.95,
     "sku": 10430,
     "series": [
-      593,
       33,
       440,
-      167,
       190,
-      102,
-      417,
-      53,
-      131
+      223,
+      416,
+      575,
+      574
     ],
     "logo": "/img/logos/tracks/myrtlebeachspeedway-logo.png"
   },
@@ -4361,7 +4462,7 @@
     "price": 0,
     "sku": 10020,
     "series": [
-      554,
+      190,
       567,
       446,
       550,
@@ -4385,7 +4486,9 @@
       307,
       458,
       309,
-      462
+      462,
+      500,
+      501
     ],
     "logo": "/img/logos/tracks/laniernationalspeedway-logo.png",
     "group": 17
@@ -4419,12 +4522,11 @@
     "price": 0,
     "sku": 10015,
     "series": [
+      599,
       459,
       460,
-      462,
       325,
-      461,
-      599
+      461
     ],
     "logo": "/img/logos/tracks/daytonainternationalspeedway-logo.png",
     "skuGroup": {
@@ -4434,12 +4536,12 @@
       "471": "Dirt Road Short"
     },
     "skuSeries": [
+      599,
       459,
       460,
-      462,
       325,
       461,
-      599
+      462
     ]
   },
   "295": {
@@ -4454,8 +4556,7 @@
     "sku": 10283,
     "series": [
       460,
-      325,
-      461
+      325
     ],
     "logo": "/img/logos/tracks/iowaspeedway-logo.png",
     "group": 169
@@ -4471,11 +4572,11 @@
     "price": 0,
     "sku": 10015,
     "series": [
+      599,
       459,
       460,
       325,
-      461,
-      599
+      461
     ],
     "logo": "/img/logos/tracks/daytonainternationalspeedway-logo.png",
     "group": 293
@@ -4491,10 +4592,14 @@
     "price": 0,
     "sku": 10434,
     "series": [
-      521,
-      34,
-      542,
-      201
+      353,
+      430,
+      503,
+      491,
+      502,
+      525,
+      492,
+      498
     ],
     "logo": "/img/logos/tracks/snettertonnationalspeedway-logo.png",
     "skuGroup": {
@@ -4503,15 +4608,17 @@
       "299": "100"
     },
     "skuSeries": [
-      521,
-      34,
-      542,
-      201,
-      112,
-      584,
-      530,
-      505,
-      596
+      353,
+      430,
+      503,
+      491,
+      502,
+      525,
+      492,
+      498,
+      63,
+      596,
+      521
     ]
   },
   "298": {
@@ -4525,11 +4632,9 @@
     "price": 0,
     "sku": 10434,
     "series": [
-      112,
-      584,
-      530,
-      505,
-      596
+      63,
+      596,
+      521
     ],
     "logo": "/img/logos/tracks/snettertonnationalspeedway-logo.png",
     "group": 297
@@ -4558,7 +4663,6 @@
     "price": 0,
     "sku": 10435,
     "series": [
-      554,
       567,
       446,
       550,
@@ -4571,14 +4675,20 @@
       311,
       327,
       516,
+      305,
+      515,
       310,
       306,
       517,
       576,
       442,
-      307,
-      458,
-      309
+      428,
+      518,
+      309,
+      308,
+      369,
+      500,
+      501
     ],
     "logo": "/img/logos/tracks/limaland-logo.png"
   },
@@ -4593,7 +4703,7 @@
     "price": 12.95,
     "sku": 10365,
     "series": [
-      325,
+      460,
       461
     ],
     "logo": "/img/logos/tracks/lucasoilraceway-logo.png",
@@ -4614,8 +4724,6 @@
       291,
       466,
       311,
-      327,
-      516,
       305,
       515,
       310,
@@ -4623,13 +4731,13 @@
       517,
       576,
       442,
-      428,
-      518,
       307,
       458,
       309,
       308,
-      369
+      369,
+      500,
+      501
     ],
     "logo": "/img/logos/tracks/knoxvilleraceway-logo.png"
   },
@@ -4644,12 +4752,11 @@
     "price": 0,
     "sku": 10059,
     "series": [
+      599,
       459,
       460,
-      462,
       325,
-      461,
-      599
+      461
     ],
     "logo": "/img/logos/tracks/phoenixinternationalraceway-logo.png",
     "group": 104
@@ -4688,13 +4795,16 @@
       460,
       325,
       461,
-      432,
-      285,
       541,
-      167,
-      112,
-      584,
-      530
+      524,
+      62,
+      229,
+      207,
+      74,
+      491,
+      502,
+      525,
+      572
     ]
   },
   "314": {
@@ -4713,6 +4823,8 @@
       291,
       466,
       311,
+      327,
+      516,
       305,
       515,
       310,
@@ -4722,9 +4834,13 @@
       442,
       428,
       518,
+      307,
+      458,
       309,
       308,
-      369
+      369,
+      500,
+      501
     ],
     "logo": "/img/logos/tracks/thedirttrackatcharlotte-logo.png"
   },
@@ -4739,7 +4855,16 @@
     "price": 15.95,
     "sku": 10443,
     "series": [
-      210
+      165,
+      133,
+      374,
+      616,
+      591,
+      457,
+      419,
+      447,
+      539,
+      592
     ],
     "logo": "/img/logos/tracks/belleisle-logo.png"
   },
@@ -4754,13 +4879,13 @@
     "price": 12.95,
     "sku": 10446,
     "series": [
-      291,
+      292,
       310,
-      306,
-      517,
       307,
       458,
-      309
+      309,
+      500,
+      501
     ],
     "logo": "/img/logos/tracks/kokomospeedway-logo.png",
     "skuGroup": {
@@ -4768,14 +4893,13 @@
       "514": "Tires out"
     },
     "skuSeries": [
-      291,
+      292,
       310,
-      306,
-      517,
       307,
       458,
       309,
-      315,
+      500,
+      501,
       553,
       327,
       516
@@ -4792,8 +4916,7 @@
     "price": 15.95,
     "sku": 10039,
     "series": [
-      325,
-      461
+      460
     ],
     "logo": "/img/logos/tracks/atlantamotorspeedway-logo.png",
     "group": 51
@@ -4809,7 +4932,9 @@
     "price": 15.95,
     "sku": 10039,
     "series": [
-      460
+      460,
+      325,
+      461
     ],
     "logo": "/img/logos/tracks/atlantamotorspeedway-logo.png",
     "group": 51
@@ -4827,12 +4952,16 @@
     "series": [
       139,
       571,
+      514,
+      562,
       519,
+      112,
+      584,
       493,
       594,
-      521,
-      540,
-      201
+      455,
+      520,
+      540
     ],
     "logo": "/img/logos/tracks/tsukuba-logo.png",
     "skuGroup": {
@@ -4847,12 +4976,16 @@
     "skuSeries": [
       139,
       571,
+      514,
+      562,
       519,
+      112,
+      584,
       493,
       594,
-      521,
-      540,
-      201
+      455,
+      520,
+      540
     ]
   },
   "325": {
@@ -4934,8 +5067,7 @@
       315,
       553,
       327,
-      516,
-      426
+      516
     ],
     "logo": "/img/logos/tracks/chilibowl-logo.png"
   },
@@ -4998,15 +5130,24 @@
     "price": 15.95,
     "sku": 10424,
     "series": [
-      596,
-      535,
-      498,
-      551,
-      552,
+      65,
       536,
       537,
       260,
-      484
+      484,
+      496,
+      495,
+      353,
+      74,
+      432,
+      596,
+      535,
+      331,
+      591,
+      457,
+      447,
+      539,
+      542
     ],
     "logo": "/img/logos/tracks/silverstone-logo.png",
     "skuGroup": {
@@ -5015,16 +5156,27 @@
       "343": "National"
     },
     "skuSeries": [
-      596,
-      535,
-      498,
-      551,
-      552,
+      65,
       536,
       537,
       260,
       484,
-      521
+      496,
+      495,
+      353,
+      74,
+      432,
+      596,
+      535,
+      331,
+      591,
+      457,
+      447,
+      539,
+      542,
+      562,
+      430,
+      503
     ]
   },
   "342": {
@@ -5037,9 +5189,6 @@
     "free": false,
     "price": 15.95,
     "sku": 10424,
-    "series": [
-      521
-    ],
     "logo": "/img/logos/tracks/silverstone-logo.png",
     "group": 341
   },
@@ -5053,6 +5202,11 @@
     "free": false,
     "price": 15.95,
     "sku": 10424,
+    "series": [
+      562,
+      430,
+      503
+    ],
     "logo": "/img/logos/tracks/silverstone-logo.png",
     "group": 341
   },
@@ -5067,17 +5221,21 @@
     "price": 12.95,
     "sku": 10460,
     "series": [
-      570,
-      466,
-      311,
+      291,
       327,
       516,
+      305,
+      515,
       310,
-      576,
-      442,
+      306,
+      517,
+      428,
+      518,
       309,
       308,
-      369
+      369,
+      500,
+      501
     ],
     "logo": "/img/logos/tracks/fairburyspeedway-logo.png"
   },
@@ -5093,8 +5251,6 @@
     "price": 15.95,
     "sku": 10462,
     "series": [
-      399,
-      405,
       542
     ],
     "logo": "/img/logos/tracks/barcelona-logo.png",
@@ -5107,27 +5263,12 @@
       "386": "Rallycross"
     },
     "skuSeries": [
-      399,
-      405,
       542,
-      443,
-      562,
       63,
-      430,
-      503,
-      491,
-      502,
-      525,
-      492,
-      74,
-      431,
-      456,
-      551,
-      552,
-      592,
-      536,
-      537,
-      460
+      496,
+      495,
+      325,
+      461
     ]
   },
   "346": {
@@ -5141,7 +5282,7 @@
     "price": 15.95,
     "sku": 10462,
     "series": [
-      443
+      63
     ],
     "logo": "/img/logos/tracks/barcelona-logo.png",
     "group": 345
@@ -5183,22 +5324,8 @@
     "price": 15.95,
     "sku": 10462,
     "series": [
-      562,
-      63,
-      430,
-      503,
-      491,
-      502,
-      525,
-      492,
-      74,
-      431,
-      456,
-      551,
-      552,
-      592,
-      536,
-      537
+      496,
+      495
     ],
     "logo": "/img/logos/tracks/barcelona-logo.png",
     "group": 345
@@ -5214,12 +5341,12 @@
     "price": 12.95,
     "sku": 10468,
     "series": [
+      554,
       315,
       292,
+      291,
       466,
       311,
-      327,
-      516,
       305,
       515,
       310,
@@ -5229,11 +5356,11 @@
       442,
       428,
       518,
-      307,
-      458,
       309,
       308,
-      369
+      369,
+      500,
+      501
     ],
     "logo": "/img/logos/tracks/lernerville-logo.png"
   },
@@ -5248,11 +5375,16 @@
     "price": 0,
     "sku": 10469,
     "series": [
-      519,
-      430,
-      503,
-      102,
-      417
+      554,
+      223,
+      416,
+      47,
+      285,
+      399,
+      405,
+      443,
+      34,
+      541
     ],
     "logo": "/img/logos/tracks/limerockpark-logo.png",
     "skuGroup": {
@@ -5263,19 +5395,26 @@
       "508": "School"
     },
     "skuSeries": [
-      519,
-      430,
-      503,
-      102,
-      417,
+      554,
+      223,
+      416,
+      47,
+      285,
+      399,
+      405,
+      443,
+      34,
+      541,
       139,
       571,
+      519,
+      530,
       493,
       595,
       455,
       520,
-      541,
-      521
+      231,
+      514
     ]
   },
   "353": {
@@ -5291,6 +5430,8 @@
     "series": [
       139,
       571,
+      519,
+      530,
       493,
       595,
       455,
@@ -5310,6 +5451,9 @@
     "free": true,
     "price": 0,
     "sku": 10469,
+    "series": [
+      231
+    ],
     "logo": "/img/logos/tracks/limerockpark-logo.png",
     "group": 352
   },
@@ -5324,7 +5468,7 @@
     "price": 0,
     "sku": 10469,
     "series": [
-      521
+      514
     ],
     "logo": "/img/logos/tracks/limerockpark-logo.png",
     "group": 352
@@ -5340,9 +5484,19 @@
     "price": 15.95,
     "sku": 10474,
     "series": [
+      165,
+      133,
       471,
-      167,
-      53
+      164,
+      103,
+      58,
+      191,
+      601,
+      47,
+      62,
+      229,
+      207,
+      429
     ],
     "logo": "/img/logos/tracks/texasmotorspeedway-logo.png",
     "skuGroup": {
@@ -5350,9 +5504,19 @@
       "364": "Legends Oval"
     },
     "skuSeries": [
+      165,
+      133,
       471,
-      167,
-      53
+      164,
+      103,
+      58,
+      191,
+      601,
+      47,
+      62,
+      229,
+      207,
+      429
     ]
   },
   "358": {
@@ -5367,8 +5531,8 @@
     "price": 12.95,
     "sku": 10475,
     "series": [
-      325,
-      461
+      460,
+      325
     ],
     "logo": "/img/logos/tracks/lankebanenhellrx-logo.png",
     "skuGroup": {
@@ -5379,6 +5543,7 @@
       "363": "Road Long"
     },
     "skuSeries": [
+      460,
       325,
       461
     ]
@@ -5406,6 +5571,9 @@
     "free": false,
     "price": 12.95,
     "sku": 10475,
+    "series": [
+      461
+    ],
     "logo": "/img/logos/tracks/lankebanenhellrx-logo.png",
     "group": 358
   },
@@ -5474,6 +5642,19 @@
     "free": false,
     "price": 15.95,
     "sku": 10055,
+    "series": [
+      164,
+      524,
+      103,
+      53,
+      58,
+      191,
+      601,
+      47,
+      62,
+      229,
+      207
+    ],
     "logo": "/img/logos/tracks/bristolmotorspeedway-logo.png",
     "group": 101
   },
@@ -5488,9 +5669,10 @@
     "price": 15.95,
     "sku": 10476,
     "series": [
-      413,
-      481,
-      482
+      45,
+      441,
+      190,
+      593
     ],
     "logo": "/img/logos/tracks/northwilkesborospeedway-logo.png",
     "skuGroup": {
@@ -5498,17 +5680,18 @@
       "562": "Oval"
     },
     "skuSeries": [
-      413,
-      481,
-      482,
-      563,
-      593,
       45,
       441,
       190,
-      102,
-      417,
-      53
+      593,
+      223,
+      416,
+      131,
+      575,
+      574,
+      47,
+      229,
+      207
     ]
   },
   "371": {
@@ -5522,12 +5705,9 @@
     "price": 15.95,
     "sku": 10480,
     "series": [
-      165,
-      133,
+      132,
       471,
-      53,
-      58,
-      191
+      47
     ],
     "logo": "/img/logos/tracks/kentuckyspeedway-logo.png"
   },
@@ -5542,7 +5722,15 @@
     "price": 12.95,
     "sku": 10485,
     "series": [
-      466
+      311,
+      576,
+      442,
+      428,
+      518,
+      308,
+      369,
+      500,
+      501
     ],
     "logo": "/img/logos/tracks/weedsportspeedway-logo.png"
   },
@@ -5557,9 +5745,13 @@
     "price": 15.95,
     "sku": 10486,
     "series": [
-      33,
-      440,
-      53
+      167,
+      223,
+      416,
+      103,
+      575,
+      574,
+      62
     ],
     "logo": "/img/logos/tracks/nashvillefairgroundsspeedway-logo.png",
     "skuGroup": {
@@ -5567,9 +5759,15 @@
       "380": "Mini"
     },
     "skuSeries": [
-      33,
-      440,
-      53
+      167,
+      223,
+      416,
+      103,
+      575,
+      574,
+      62,
+      45,
+      441
     ]
   },
   "380": {
@@ -5582,6 +5780,10 @@
     "free": false,
     "price": 15.95,
     "sku": 10486,
+    "series": [
+      45,
+      441
+    ],
     "logo": "/img/logos/tracks/nashvillefairgroundsspeedway-logo.png",
     "group": 374
   },
@@ -5595,9 +5797,6 @@
     "free": false,
     "price": 15.95,
     "sku": 10299,
-    "series": [
-      524
-    ],
     "logo": "/img/logos/tracks/daytonainternationalspeedway-logo.png",
     "group": 26
   },
@@ -5656,7 +5855,6 @@
     "price": 15.95,
     "sku": 10493,
     "series": [
-      429,
       471,
       116
     ],
@@ -5673,7 +5871,8 @@
     "price": 15.95,
     "sku": 10462,
     "series": [
-      460
+      325,
+      461
     ],
     "logo": "/img/logos/tracks/barcelona-logo.png",
     "group": 345
@@ -5689,21 +5888,22 @@
     "price": 12.95,
     "sku": 10496,
     "series": [
-      570,
-      291,
+      315,
+      292,
+      466,
       311,
       327,
       516,
-      306,
-      517,
+      305,
+      515,
       576,
       442,
       428,
       518,
       307,
       458,
-      308,
-      369
+      500,
+      501
     ],
     "logo": "/img/logos/tracks/cedarlakespeedway-logo.png"
   },
@@ -5731,11 +5931,18 @@
     "price": 15.95,
     "sku": 10498,
     "series": [
-      299,
-      476,
-      542,
-      431,
-      456
+      536,
+      537,
+      496,
+      495,
+      591,
+      457,
+      419,
+      447,
+      539,
+      498,
+      551,
+      552
     ],
     "logo": "/img/logos/tracks/hockenheimringbadenwurttemberg-logo.png",
     "skuGroup": {
@@ -5751,12 +5958,18 @@
       "431": "Porsche Experience Center - Handling"
     },
     "skuSeries": [
-      299,
-      476,
-      542,
-      431,
-      456,
-      65
+      536,
+      537,
+      496,
+      495,
+      591,
+      457,
+      419,
+      447,
+      539,
+      498,
+      551,
+      552
     ]
   },
   "391": {
@@ -5821,9 +6034,6 @@
     "free": false,
     "price": 15.95,
     "sku": 10498,
-    "series": [
-      65
-    ],
     "logo": "/img/logos/tracks/hockenheimringbadenwurttemberg-logo.png",
     "group": 390
   },
@@ -5885,11 +6095,18 @@
     "price": 15.95,
     "sku": 10501,
     "series": [
-      167,
-      554,
+      132,
       164,
-      413,
-      47
+      103,
+      53,
+      58,
+      191,
+      374,
+      616,
+      47,
+      62,
+      229,
+      207
     ],
     "logo": "/img/logos/tracks/nashvilless-logo.png"
   },
@@ -5904,17 +6121,19 @@
     "price": 15.95,
     "sku": 10506,
     "series": [
-      210,
-      285,
-      231,
+      536,
+      537,
+      496,
+      495,
+      505,
+      353,
+      299,
+      476,
+      432,
       596,
-      591,
-      457,
-      419,
-      447,
-      539,
-      260,
-      484
+      34,
+      551,
+      552
     ],
     "logo": "/img/logos/tracks/redbullring-logo.png",
     "skuGroup": {
@@ -5923,18 +6142,19 @@
       "407": "North"
     },
     "skuSeries": [
-      210,
-      285,
-      231,
+      536,
+      537,
+      496,
+      495,
+      505,
+      353,
+      299,
+      476,
+      432,
       596,
-      591,
-      457,
-      419,
-      447,
-      539,
-      260,
-      484,
-      514
+      34,
+      551,
+      552
     ]
   },
   "404": {
@@ -5947,9 +6167,6 @@
     "free": false,
     "price": 15.95,
     "sku": 10506,
-    "series": [
-      514
-    ],
     "logo": "/img/logos/tracks/redbullring-logo.png",
     "group": 403
   },
@@ -5969,7 +6186,10 @@
       "483": "2023 Cup"
     },
     "skuSeries": [
-      63
+      374,
+      616,
+      399,
+      405
     ]
   },
   "407": {
@@ -5996,10 +6216,13 @@
     "price": 15.95,
     "sku": 10511,
     "series": [
-      285,
-      399,
-      405,
-      542
+      536,
+      537,
+      496,
+      495,
+      74,
+      551,
+      552
     ],
     "logo": "/img/logos/tracks/hungaroring-logo.png"
   },
@@ -6014,12 +6237,13 @@
     "price": 15.95,
     "sku": 10512,
     "series": [
-      45,
-      441,
-      190,
-      32,
+      33,
+      440,
+      167,
       223,
-      416
+      416,
+      575,
+      574
     ],
     "logo": "/img/logos/tracks/hickorymotorspeedway-logo.png"
   },
@@ -6034,12 +6258,9 @@
     "price": 15.95,
     "sku": 10519,
     "series": [
-      443,
-      593,
-      132,
-      165,
-      133,
-      471
+      471,
+      374,
+      616
     ],
     "logo": "/img/logos/tracks/phoenixraceway-logo.png",
     "skuGroup": {
@@ -6047,21 +6268,16 @@
       "419": "Oval w/open dogleg"
     },
     "skuSeries": [
-      443,
-      593,
-      132,
-      165,
-      133,
       471,
-      429,
-      167,
-      102,
-      417,
-      164,
-      524,
-      103,
-      58,
-      191
+      374,
+      616,
+      223,
+      416,
+      601,
+      47,
+      62,
+      229,
+      207
     ]
   },
   "419": {
@@ -6075,15 +6291,13 @@
     "price": 15.95,
     "sku": 10519,
     "series": [
-      429,
-      167,
-      102,
-      417,
-      164,
-      524,
-      103,
-      58,
-      191
+      223,
+      416,
+      601,
+      47,
+      62,
+      229,
+      207
     ],
     "logo": "/img/logos/tracks/phoenixraceway-logo.png",
     "group": 418
@@ -6110,7 +6324,8 @@
       "436": "Tri-Oval"
     },
     "skuSeries": [
-      460
+      325,
+      461
     ]
   },
   "424": {
@@ -6163,7 +6378,8 @@
     "price": 15.95,
     "sku": 10520,
     "series": [
-      460
+      325,
+      461
     ],
     "logo": "/img/logos/tracks/knockhillracingcircuit-logo.png",
     "group": 423
@@ -6230,13 +6446,6 @@
     "free": false,
     "price": 15.95,
     "sku": 10060,
-    "series": [
-      562,
-      34,
-      413,
-      481,
-      482
-    ],
     "logo": "/img/logos/tracks/watkinsgleninternational-logo.png",
     "skuGroup": {
       "432": "Classic",
@@ -6245,28 +6454,31 @@
       "435": "Classic Boot"
     },
     "skuSeries": [
-      562,
-      34,
-      413,
-      481,
-      482,
+      167,
+      164,
+      103,
+      53,
+      58,
+      191,
+      47,
+      62,
+      229,
+      207,
+      536,
+      537,
       514,
-      63,
-      399,
-      405,
-      210,
-      432,
+      530,
+      505,
+      430,
+      503,
       595,
       535,
-      591,
-      457,
-      419,
-      447,
-      539,
-      165,
-      133,
-      429,
-      592
+      443,
+      551,
+      552,
+      231,
+      432,
+      201
     ]
   },
   "433": {
@@ -6280,10 +6492,16 @@
     "price": 15.95,
     "sku": 10060,
     "series": [
-      514,
-      63,
-      399,
-      405
+      167,
+      164,
+      103,
+      53,
+      58,
+      191,
+      47,
+      62,
+      229,
+      207
     ],
     "logo": "/img/logos/tracks/watkinsgleninternational-logo.png",
     "group": 432
@@ -6299,17 +6517,18 @@
     "price": 15.95,
     "sku": 10060,
     "series": [
-      210,
-      432,
+      536,
+      537,
+      514,
+      530,
+      505,
+      430,
+      503,
       595,
       535,
-      591,
-      457,
-      419,
-      447,
-      539,
-      165,
-      133
+      443,
+      551,
+      552
     ],
     "logo": "/img/logos/tracks/watkinsgleninternational-logo.png",
     "group": 432
@@ -6325,8 +6544,9 @@
     "price": 15.95,
     "sku": 10060,
     "series": [
-      429,
-      592
+      231,
+      432,
+      201
     ],
     "logo": "/img/logos/tracks/watkinsgleninternational-logo.png",
     "group": 432
@@ -6355,7 +6575,8 @@
     "price": 15.95,
     "sku": 10521,
     "series": [
-      32
+      102,
+      417
     ],
     "logo": "/img/logos/tracks/lacoliseumraceway-logo.png"
   },
@@ -6370,18 +6591,20 @@
     "price": 12.95,
     "sku": 10528,
     "series": [
-      291,
-      466,
       327,
       516,
+      305,
+      515,
       310,
-      428,
-      518,
+      306,
+      517,
       307,
       458,
       309,
       308,
-      369
+      369,
+      500,
+      501
     ],
     "logo": "/img/logos/tracks/federatedautopartsraceway-logo.png"
   },
@@ -6398,11 +6621,13 @@
     "sku": 10529,
     "series": [
       139,
-      519,
+      571,
+      112,
+      584,
+      210,
+      594,
       455,
       520,
-      521,
-      498,
       540
     ],
     "logo": "/img/logos/tracks/wintonmotorraceway-logo.png",
@@ -6413,19 +6638,20 @@
     },
     "skuSeries": [
       139,
-      519,
+      571,
+      112,
+      584,
+      210,
+      594,
       455,
       520,
-      521,
-      498,
       540,
-      571,
-      594,
+      562,
+      599,
       459,
       460,
       325,
-      461,
-      599
+      461
     ]
   },
   "440": {
@@ -6439,8 +6665,7 @@
     "price": 0,
     "sku": 10529,
     "series": [
-      571,
-      594
+      562
     ],
     "logo": "/img/logos/tracks/wintonmotorraceway-logo.png",
     "group": 439
@@ -6456,16 +6681,7 @@
     "price": 15.95,
     "sku": 10055,
     "series": [
-      58,
-      191,
-      292,
-      311,
-      576,
-      442,
-      428,
-      518,
-      308,
-      369
+      466
     ],
     "logo": "/img/logos/tracks/bristolmotorspeedway-logo.png",
     "group": 101
@@ -6482,8 +6698,7 @@
     "sku": 10536,
     "series": [
       594,
-      540,
-      201
+      540
     ],
     "logo": "/img/logos/tracks/sandowninternationalmotorraceway-logo.png"
   },
@@ -6498,6 +6713,12 @@
     "price": 15.95,
     "sku": 10537,
     "series": [
+      496,
+      495,
+      432,
+      237,
+      228,
+      444,
       594,
       540
     ],
@@ -6507,10 +6728,20 @@
       "445": "No Chicane"
     },
     "skuSeries": [
+      496,
+      495,
+      432,
+      237,
+      228,
+      444,
       594,
       540,
-      285,
-      592
+      491,
+      502,
+      525,
+      572,
+      399,
+      405
     ]
   },
   "445": {
@@ -6524,8 +6755,12 @@
     "price": 15.95,
     "sku": 10537,
     "series": [
-      285,
-      592
+      491,
+      502,
+      525,
+      572,
+      399,
+      405
     ],
     "logo": "/img/logos/tracks/fujiinternationalspeedway-logo.png",
     "group": 444
@@ -6541,16 +6776,18 @@
     "price": 12.95,
     "sku": 10538,
     "series": [
+      554,
       292,
-      291,
-      466,
-      311,
       305,
       515,
-      576,
-      442,
       428,
-      518
+      518,
+      307,
+      458,
+      308,
+      369,
+      500,
+      501
     ],
     "logo": "/img/logos/tracks/portroyalspeedway-logo.png"
   },
@@ -6566,10 +6803,10 @@
     "sku": 10039,
     "series": [
       116,
-      164,
-      103,
-      58,
-      191
+      47,
+      62,
+      229,
+      207
     ],
     "logo": "/img/logos/tracks/atlantamotorspeedway-logo.png",
     "group": 51
@@ -6585,8 +6822,16 @@
     "price": 15.95,
     "sku": 10107,
     "series": [
-      551,
-      552
+      165,
+      133,
+      374,
+      616,
+      562,
+      63,
+      443,
+      431,
+      456,
+      592
     ],
     "logo": "/img/logos/tracks/indianapolismotorspeedway-logo.png",
     "group": 133
@@ -6605,16 +6850,16 @@
       139,
       571,
       519,
-      112,
-      584,
-      530,
+      491,
+      502,
+      525,
+      572,
       493,
+      231,
       596,
       455,
       520,
-      34,
-      542,
-      201
+      542
     ],
     "logo": "/img/logos/tracks/motorsportarenaoschersleben-logo.png",
     "skuGroup": {
@@ -6627,19 +6872,16 @@
       139,
       571,
       519,
-      112,
-      584,
-      530,
+      491,
+      502,
+      525,
+      572,
       493,
+      231,
       596,
       455,
       520,
-      34,
-      542,
-      201,
-      514,
-      63,
-      562
+      542
     ]
   },
   "451": {
@@ -6654,15 +6896,14 @@
     "sku": 10541,
     "series": [
       519,
-      505,
-      63,
-      210,
-      74,
+      112,
+      584,
+      430,
+      503,
       493,
       596,
       455,
       520,
-      443,
       542
     ],
     "logo": "/img/logos/tracks/rudskogenmotorsenter-logo.png"
@@ -6679,19 +6920,25 @@
     "price": 12.95,
     "sku": 10542,
     "series": [
-      292,
+      291,
+      466,
+      311,
       327,
       516,
-      305,
-      515,
       310,
       306,
       517,
+      576,
+      442,
       428,
       518,
+      307,
+      458,
       309,
       308,
-      369
+      369,
+      500,
+      501
     ],
     "logo": "/img/logos/tracks/lucasoilspeedway-logo.png",
     "skuGroup": {
@@ -6699,19 +6946,25 @@
       "581": "Dirt Road"
     },
     "skuSeries": [
-      292,
+      291,
+      466,
+      311,
       327,
       516,
-      305,
-      515,
       310,
       306,
       517,
+      576,
+      442,
       428,
       518,
+      307,
+      458,
       309,
       308,
       369,
+      500,
+      501,
       588,
       463,
       464
@@ -6728,7 +6981,14 @@
     "price": 15.95,
     "sku": 10107,
     "series": [
-      132
+      132,
+      165,
+      133,
+      53,
+      374,
+      563,
+      429,
+      593
     ],
     "logo": "/img/logos/tracks/indianapolismotorspeedway-logo.png",
     "group": 133
@@ -6756,10 +7016,6 @@
     "free": true,
     "price": 0,
     "sku": 10540,
-    "series": [
-      514,
-      63
-    ],
     "logo": "/img/logos/tracks/motorsportarenaoschersleben-logo.png",
     "group": 449
   },
@@ -6773,9 +7029,6 @@
     "free": true,
     "price": 0,
     "sku": 10540,
-    "series": [
-      562
-    ],
     "logo": "/img/logos/tracks/motorsportarenaoschersleben-logo.png",
     "group": 449
   },
@@ -6790,9 +7043,12 @@
     "price": 12.95,
     "sku": 10546,
     "series": [
-      570,
+      305,
+      515,
       307,
-      458
+      458,
+      500,
+      501
     ],
     "logo": "/img/logos/tracks/lincolnspeedway-logo.png"
   },
@@ -6807,7 +7063,14 @@
     "price": 15.95,
     "sku": 10547,
     "series": [
-      542
+      496,
+      495,
+      559,
+      557,
+      237,
+      228,
+      444,
+      498
     ],
     "logo": "/img/logos/tracks/circuitdeneversmagnycours-logo.png"
   },
@@ -6822,24 +7085,24 @@
     "price": 0,
     "sku": 10031,
     "series": [
-      514,
-      112,
-      584,
-      530,
+      65,
+      260,
+      484,
+      519,
       505,
-      430,
-      503,
+      210,
+      74,
       493,
-      237,
-      228,
-      444,
+      399,
+      405,
+      432,
       595,
       535,
-      443,
-      34,
+      521,
+      498,
       541,
-      431,
-      456
+      551,
+      552
     ],
     "logo": "/img/logos/tracks/virginiainternationalraceway-logo.png",
     "skuGroup": {
@@ -6850,32 +7113,30 @@
       "469": "Patriot Course"
     },
     "skuSeries": [
-      514,
-      112,
-      584,
-      530,
+      65,
+      260,
+      484,
+      519,
       505,
-      430,
-      503,
+      210,
+      74,
       493,
-      237,
-      228,
-      444,
+      399,
+      405,
+      432,
       595,
       535,
-      443,
-      34,
+      521,
+      498,
       541,
-      431,
-      456,
-      231,
-      573,
+      551,
+      552,
+      429,
       139,
       571,
-      519,
       455,
       520,
-      562
+      34
     ]
   },
   "466": {
@@ -6889,8 +7150,7 @@
     "price": 0,
     "sku": 10031,
     "series": [
-      231,
-      573
+      429
     ],
     "logo": "/img/logos/tracks/virginiainternationalraceway-logo.png",
     "group": 465
@@ -6908,10 +7168,9 @@
     "series": [
       139,
       571,
-      519,
       455,
       520,
-      541
+      34
     ],
     "logo": "/img/logos/tracks/virginiainternationalraceway-logo.png",
     "group": 465
@@ -6939,9 +7198,6 @@
     "free": true,
     "price": 0,
     "sku": 10031,
-    "series": [
-      562
-    ],
     "logo": "/img/logos/tracks/virginiainternationalraceway-logo.png",
     "group": 465
   },
@@ -6955,6 +7211,9 @@
     "free": true,
     "price": 0,
     "sku": 10015,
+    "series": [
+      462
+    ],
     "logo": "/img/logos/tracks/daytonainternationalspeedway-logo.png",
     "group": 293
   },
@@ -6968,9 +7227,6 @@
     "free": true,
     "price": 0,
     "sku": 10015,
-    "series": [
-      462
-    ],
     "logo": "/img/logos/tracks/daytonainternationalspeedway-logo.png",
     "group": 293
   },
@@ -7001,10 +7257,8 @@
     "price": 15.95,
     "sku": 10551,
     "series": [
-      559,
-      557,
-      353,
-      596
+      596,
+      542
     ],
     "logo": "/img/logos/tracks/circuitodejerezangelnieto-logo.png",
     "skuGroup": {
@@ -7012,15 +7266,10 @@
       "474": "Moto"
     },
     "skuSeries": [
-      559,
-      557,
-      353,
       596,
-      331,
-      591,
-      457,
-      447,
-      539
+      542,
+      536,
+      537
     ]
   },
   "474": {
@@ -7034,11 +7283,8 @@
     "price": 15.95,
     "sku": 10551,
     "series": [
-      331,
-      591,
-      457,
-      447,
-      539
+      536,
+      537
     ],
     "logo": "/img/logos/tracks/circuitodejerezangelnieto-logo.png",
     "group": 473
@@ -7054,7 +7300,8 @@
     "price": 15.95,
     "sku": 10556,
     "series": [
-      63,
+      496,
+      495,
       596,
       498
     ],
@@ -7069,14 +7316,11 @@
       "482": "Touring Car"
     },
     "skuSeries": [
-      63,
+      496,
+      495,
       596,
       498,
-      331,
-      591,
-      457,
-      447,
-      539
+      63
     ]
   },
   "476": {
@@ -7116,11 +7360,7 @@
     "price": 15.95,
     "sku": 10556,
     "series": [
-      331,
-      591,
-      457,
-      447,
-      539
+      63
     ],
     "logo": "/img/logos/tracks/motorlandaragon-logo.png",
     "group": 475
@@ -7162,8 +7402,7 @@
     "price": 15.95,
     "sku": 10557,
     "series": [
-      541,
-      201
+      231
     ],
     "logo": "/img/logos/tracks/willowspringsraceway-logo.png"
   },
@@ -7191,7 +7430,10 @@
     "price": 15.95,
     "sku": 10508,
     "series": [
-      63
+      374,
+      616,
+      399,
+      405
     ],
     "logo": "/img/logos/tracks/chicagostreetcourse-logo.png",
     "group": 405
@@ -7207,18 +7449,16 @@
     "price": 15.95,
     "sku": 10198,
     "series": [
-      112,
-      584,
-      530,
+      536,
+      537,
+      496,
+      495,
+      231,
+      299,
+      476,
       542,
-      551,
-      552,
-      592,
-      65,
-      165,
-      133,
-      260,
-      484
+      431,
+      456
     ],
     "logo": "/img/logos/tracks/circuitparkzandvoort-logo.png",
     "group": 147
@@ -7276,13 +7516,10 @@
       139,
       571,
       519,
-      63,
-      210,
       493,
       455,
       520,
-      34,
-      542
+      498
     ],
     "logo": "/img/logos/tracks/circuitdeledenon-logo.png"
   },
@@ -7298,12 +7535,11 @@
     "price": 12.95,
     "sku": 10562,
     "series": [
-      33,
-      440,
-      223,
-      416,
-      131,
-      576
+      45,
+      441,
+      53,
+      575,
+      574
     ],
     "logo": "/img/logos/tracks/kerncountyracewaypark-logo.png",
     "skuGroup": {
@@ -7313,24 +7549,21 @@
       "497": "Dirt Mini Oval"
     },
     "skuSeries": [
-      33,
-      440,
-      223,
-      416,
-      131,
-      576,
+      45,
+      441,
+      53,
+      575,
+      574,
       315,
-      466,
-      311,
       327,
       516,
-      305,
-      515,
       310,
-      306,
-      517,
-      442,
+      428,
+      518,
       309,
+      500,
+      501,
+      32,
       553
     ]
   },
@@ -7346,17 +7579,14 @@
     "sku": 10562,
     "series": [
       315,
-      466,
-      311,
       327,
       516,
-      305,
-      515,
       310,
-      306,
-      517,
-      442,
-      309
+      428,
+      518,
+      309,
+      500,
+      501
     ],
     "logo": "/img/logos/tracks/kerncountyracewaypark-logo.png",
     "group": 493
@@ -7371,6 +7601,9 @@
     "free": false,
     "price": 12.95,
     "sku": 10562,
+    "series": [
+      32
+    ],
     "logo": "/img/logos/tracks/kerncountyracewaypark-logo.png",
     "group": 493
   },
@@ -7401,13 +7634,20 @@
     "price": 15.95,
     "sku": 10568,
     "series": [
-      432,
-      535,
-      498,
-      536,
-      537,
-      260,
-      484
+      496,
+      495,
+      505,
+      559,
+      557,
+      353,
+      63,
+      74,
+      237,
+      228,
+      444,
+      542,
+      551,
+      552
     ],
     "logo": "/img/logos/tracks/mugello-logo.png",
     "skuGroup": {
@@ -7415,13 +7655,21 @@
       "499": "Short"
     },
     "skuSeries": [
-      432,
-      535,
-      498,
-      536,
-      537,
-      260,
-      484
+      496,
+      495,
+      505,
+      559,
+      557,
+      353,
+      63,
+      74,
+      237,
+      228,
+      444,
+      542,
+      551,
+      552,
+      562
     ]
   },
   "499": {
@@ -7434,6 +7682,9 @@
     "free": false,
     "price": 15.95,
     "sku": 10568,
+    "series": [
+      562
+    ],
     "logo": "/img/logos/tracks/mugello-logo.png",
     "group": 498
   },
@@ -7449,12 +7700,13 @@
     "price": 12.95,
     "sku": 10569,
     "series": [
-      33,
-      440,
-      32,
-      223,
-      416,
-      131
+      45,
+      441,
+      102,
+      417,
+      131,
+      575,
+      574
     ],
     "logo": "/img/logos/tracks/slinger-logo.png",
     "skuGroup": {
@@ -7462,12 +7714,13 @@
       "506": "Figure 8"
     },
     "skuSeries": [
-      33,
-      440,
-      32,
-      223,
-      416,
-      131
+      45,
+      441,
+      102,
+      417,
+      131,
+      575,
+      574
     ]
   },
   "501": {
@@ -7481,10 +7734,7 @@
     "price": 15.95,
     "sku": 10570,
     "series": [
-      237,
-      228,
-      444,
-      542
+      285
     ],
     "logo": "/img/logos/tracks/misano-logo.png",
     "skuGroup": {
@@ -7495,10 +7745,7 @@
       "505": "Truck"
     },
     "skuSeries": [
-      237,
-      228,
-      444,
-      542
+      285
     ]
   },
   "502": {
@@ -7590,17 +7837,18 @@
     "price": 15.95,
     "sku": 10574,
     "series": [
-      430,
-      503,
-      491,
-      502,
-      525,
-      492,
-      237,
-      228,
-      444,
-      596,
-      498
+      496,
+      495,
+      331,
+      591,
+      457,
+      447,
+      539,
+      431,
+      456,
+      551,
+      552,
+      592
     ],
     "logo": "/img/logos/tracks/algarve-logo.png",
     "skuGroup": {
@@ -7610,17 +7858,18 @@
       "512": "Moto - Chicanes"
     },
     "skuSeries": [
-      430,
-      503,
-      491,
-      502,
-      525,
-      492,
-      237,
-      228,
-      444,
-      596,
-      498
+      496,
+      495,
+      331,
+      591,
+      457,
+      447,
+      539,
+      431,
+      456,
+      551,
+      552,
+      592
     ]
   },
   "510": {
@@ -7688,7 +7937,6 @@
     "price": 12.95,
     "sku": 10446,
     "series": [
-      315,
       553,
       327,
       516
@@ -7709,12 +7957,11 @@
     "series": [
       139,
       571,
-      519,
-      210,
+      112,
+      584,
       493,
-      443,
-      34,
-      498
+      231,
+      542
     ],
     "logo": "/img/logos/tracks/navarra-logo.png",
     "skuGroup": {
@@ -7725,16 +7972,17 @@
     "skuSeries": [
       139,
       571,
-      519,
-      210,
+      112,
+      584,
       493,
-      443,
-      34,
-      498,
+      231,
+      542,
+      514,
+      562,
+      519,
       455,
       520,
-      521,
-      554
+      443
     ]
   },
   "516": {
@@ -7748,10 +7996,12 @@
     "price": 0,
     "sku": 10577,
     "series": [
+      514,
+      562,
+      519,
       455,
       520,
-      521,
-      554
+      443
     ],
     "logo": "/img/logos/tracks/navarra-logo.png",
     "group": 515
@@ -7781,11 +8031,11 @@
     "price": 12.95,
     "sku": 10578,
     "series": [
-      45,
-      441,
-      102,
-      417,
-      131
+      190,
+      131,
+      575,
+      574,
+      593
     ],
     "logo": "/img/logos/tracks/oswego-logo.png",
     "skuGroup": {
@@ -7794,16 +8044,18 @@
       "520": "Dirt"
     },
     "skuSeries": [
-      45,
-      441,
-      102,
-      417,
+      190,
       131,
-      570,
-      307,
-      458,
-      308,
-      369
+      575,
+      574,
+      593,
+      292,
+      291,
+      311,
+      576,
+      442,
+      500,
+      501
     ]
   },
   "519": {
@@ -7830,11 +8082,13 @@
     "price": 12.95,
     "sku": 10578,
     "series": [
-      570,
-      307,
-      458,
-      308,
-      369
+      292,
+      291,
+      311,
+      576,
+      442,
+      500,
+      501
     ],
     "logo": "/img/logos/tracks/oswego-logo.png",
     "group": 518
@@ -7850,9 +8104,8 @@
     "price": 15.95,
     "sku": 10579,
     "series": [
-      237,
-      228,
-      444
+      596,
+      498
     ],
     "logo": "/img/logos/tracks/sachsenring-logo.png"
   },
@@ -7867,8 +8120,9 @@
     "price": 15.95,
     "sku": 10107,
     "series": [
-      164,
-      47
+      62,
+      229,
+      207
     ],
     "logo": "/img/logos/tracks/indianapolismotorspeedway-logo.png",
     "group": 133
@@ -7884,21 +8138,28 @@
     "price": 15.95,
     "sku": 10228,
     "series": [
-      505,
+      260,
+      484,
+      496,
+      495,
       559,
       557,
-      353,
-      231,
+      210,
+      74,
       299,
       476,
-      596,
-      65,
-      165,
-      133,
-      536,
-      537,
-      260,
-      484
+      432,
+      237,
+      228,
+      444,
+      535,
+      331,
+      591,
+      457,
+      447,
+      539,
+      431,
+      456
     ],
     "logo": "/img/logos/tracks/circuitdespafrancorchamps-logo.png",
     "group": 163
@@ -7914,7 +8175,9 @@
     "price": 15.95,
     "sku": 10228,
     "series": [
-      429
+      65,
+      285,
+      201
     ],
     "logo": "/img/logos/tracks/circuitdespafrancorchamps-logo.png",
     "group": 163
@@ -7929,11 +8192,6 @@
     "free": false,
     "price": 15.95,
     "sku": 10228,
-    "series": [
-      112,
-      584,
-      530
-    ],
     "logo": "/img/logos/tracks/circuitdespafrancorchamps-logo.png",
     "group": 163
   },
@@ -7947,14 +8205,6 @@
     "free": false,
     "price": 15.95,
     "sku": 10228,
-    "series": [
-      491,
-      502,
-      525,
-      572,
-      551,
-      552
-    ],
     "logo": "/img/logos/tracks/circuitdespafrancorchamps-logo.png",
     "group": 163
   },
@@ -7968,9 +8218,6 @@
     "free": false,
     "price": 15.95,
     "sku": 10588,
-    "series": [
-      562
-    ],
     "logo": "/img/logos/tracks/cadwell-logo.png",
     "skuGroup": {
       "527": "Full",
@@ -7978,9 +8225,7 @@
       "529": "Moto",
       "530": "Woodlands"
     },
-    "skuSeries": [
-      562
-    ]
+    "skuSeries": []
   },
   "528": {
     "id": 528,
@@ -8032,13 +8277,12 @@
     "price": 12.95,
     "sku": 10593,
     "series": [
-      570,
-      292,
-      291,
-      305,
-      515,
-      306,
-      517
+      327,
+      516,
+      307,
+      458,
+      500,
+      501
     ],
     "logo": "/img/logos/tracks/husetsspeedway-logo.png"
   },
@@ -8053,7 +8297,14 @@
     "price": 15.95,
     "sku": 10594,
     "series": [
-      505
+      65,
+      430,
+      503,
+      237,
+      228,
+      444,
+      596,
+      542
     ],
     "logo": "/img/logos/tracks/thruxtoncircuit-logo.png"
   },
@@ -8077,43 +8328,22 @@
     },
     "skuSeries": [
       514,
-      112,
-      584,
-      530,
-      505,
+      65,
+      165,
+      133,
+      260,
+      484,
+      496,
+      495,
       559,
       557,
-      353,
-      491,
-      502,
-      525,
-      572,
-      231,
-      399,
-      405,
-      299,
-      476,
+      285,
       237,
       228,
       444,
-      595,
-      331,
-      591,
-      457,
-      447,
-      539,
-      443,
-      498,
       541,
       431,
-      456,
-      551,
-      552,
-      592,
-      536,
-      537,
-      260,
-      484
+      456
     ]
   },
   "534": {
@@ -8126,9 +8356,6 @@
     "free": false,
     "price": 15.95,
     "sku": 10596,
-    "series": [
-      514
-    ],
     "logo": "/img/logos/tracks/miami-logo.png",
     "group": 533
   },
@@ -8142,11 +8369,6 @@
     "free": false,
     "price": 15.95,
     "sku": 10596,
-    "series": [
-      112,
-      584,
-      530
-    ],
     "logo": "/img/logos/tracks/miami-logo.png",
     "group": 533
   },
@@ -8161,16 +8383,10 @@
     "price": 15.95,
     "sku": 10597,
     "series": [
-      559,
-      557,
-      353,
-      210,
-      491,
-      502,
-      525,
-      572,
-      521,
-      34
+      374,
+      616,
+      62,
+      541
     ],
     "logo": "/img/logos/tracks/portland-logo.png",
     "skuGroup": {
@@ -8178,16 +8394,11 @@
       "537": "No Chicane"
     },
     "skuSeries": [
-      559,
-      557,
-      353,
-      210,
-      491,
-      502,
-      525,
-      572,
-      521,
-      34
+      374,
+      616,
+      62,
+      541,
+      521
     ]
   },
   "537": {
@@ -8200,6 +8411,9 @@
     "free": false,
     "price": 15.95,
     "sku": 10597,
+    "series": [
+      521
+    ],
     "logo": "/img/logos/tracks/portland-logo.png",
     "group": 536
   },
@@ -8213,6 +8427,9 @@
     "free": false,
     "price": 15.95,
     "sku": 10596,
+    "series": [
+      514
+    ],
     "logo": "/img/logos/tracks/miami-logo.png",
     "group": 533
   },
@@ -8227,40 +8444,22 @@
     "price": 15.95,
     "sku": 10596,
     "series": [
-      505,
+      65,
+      165,
+      133,
+      260,
+      484,
+      496,
+      495,
       559,
       557,
-      353,
-      491,
-      502,
-      525,
-      572,
-      231,
-      399,
-      405,
-      299,
-      476,
+      285,
       237,
       228,
       444,
-      595,
-      331,
-      591,
-      457,
-      447,
-      539,
-      443,
-      498,
       541,
       431,
-      456,
-      551,
-      552,
-      592,
-      536,
-      537,
-      260,
-      484
+      456
     ],
     "logo": "/img/logos/tracks/miami-logo.png",
     "group": 533
@@ -8286,15 +8485,12 @@
       "546": "South West Circuit"
     },
     "skuSeries": [
-      399,
-      405,
-      237,
-      228,
-      444,
+      112,
+      584,
+      353,
+      210,
       594,
-      540,
-      431,
-      456
+      540
     ]
   },
   "541": {
@@ -8308,13 +8504,11 @@
     "price": 15.95,
     "sku": 10604,
     "series": [
-      399,
-      405,
-      237,
-      228,
-      444,
-      594,
-      540
+      112,
+      584,
+      353,
+      210,
+      594
     ],
     "logo": "/img/logos/tracks/thebendmotorsportpark-logo.png",
     "group": 540
@@ -8343,8 +8537,7 @@
     "price": 15.95,
     "sku": 10604,
     "series": [
-      431,
-      456
+      540
     ],
     "logo": "/img/logos/tracks/thebendmotorsportpark-logo.png",
     "group": 540
@@ -8413,13 +8606,21 @@
       "558": "Rallyx"
     },
     "skuSeries": [
-      74,
+      595,
+      530,
+      443,
+      521,
+      34,
       139,
       571,
-      505,
+      562,
+      63,
+      210,
+      430,
+      503,
       493,
-      554,
-      563,
+      399,
+      405,
       429,
       132,
       471,
@@ -8427,19 +8628,22 @@
       116,
       564,
       182,
-      167,
+      164,
+      524,
+      413,
       103,
-      481,
-      482,
+      58,
+      191,
+      47,
       62,
+      229,
+      207,
       483,
-      190,
-      32,
+      599,
       459,
       460,
       325,
-      461,
-      599
+      461
     ]
   },
   "551": {
@@ -8452,6 +8656,9 @@
     "free": true,
     "price": 0,
     "sku": 10013,
+    "series": [
+      595
+    ],
     "logo": "/img/logos/tracks/charlottemotorspeedway-logo.png",
     "group": 550
   },
@@ -8479,7 +8686,10 @@
     "price": 0,
     "sku": 10013,
     "series": [
-      74
+      530,
+      443,
+      521,
+      34
     ],
     "logo": "/img/logos/tracks/charlottemotorspeedway-logo.png",
     "group": 550
@@ -8497,8 +8707,14 @@
     "series": [
       139,
       571,
-      505,
-      493
+      562,
+      63,
+      210,
+      430,
+      503,
+      493,
+      399,
+      405
     ],
     "logo": "/img/logos/tracks/charlottemotorspeedway-logo.png",
     "group": 550
@@ -8514,7 +8730,7 @@
     "price": 0,
     "sku": 10013,
     "series": [
-      554
+      429
     ],
     "logo": "/img/logos/tracks/charlottemotorspeedway-logo.png",
     "group": 550
@@ -8530,19 +8746,22 @@
     "price": 0,
     "sku": 10013,
     "series": [
-      563,
-      429,
       132,
       471,
       259,
       116,
       564,
       182,
-      167,
+      164,
+      524,
+      413,
       103,
-      481,
-      482,
-      62
+      58,
+      191,
+      47,
+      62,
+      229,
+      207
     ],
     "logo": "/img/logos/tracks/charlottemotorspeedway-logo.png",
     "group": 550
@@ -8558,9 +8777,7 @@
     "price": 0,
     "sku": 10013,
     "series": [
-      483,
-      190,
-      32
+      483
     ],
     "logo": "/img/logos/tracks/charlottemotorspeedway-logo.png",
     "group": 550
@@ -8576,11 +8793,11 @@
     "price": 0,
     "sku": 10013,
     "series": [
+      599,
       459,
       460,
       325,
-      461,
-      599
+      461
     ],
     "logo": "/img/logos/tracks/charlottemotorspeedway-logo.png",
     "group": 550
@@ -8596,12 +8813,14 @@
     "price": 15.95,
     "sku": 10283,
     "series": [
-      132,
-      165,
-      133,
-      524,
-      413,
-      53
+      223,
+      416,
+      131,
+      47,
+      62,
+      229,
+      207,
+      593
     ],
     "logo": "/img/logos/tracks/iowaspeedway-logo.png",
     "group": 169
@@ -8617,11 +8836,20 @@
     "price": 12.95,
     "sku": 10376,
     "series": [
-      593,
       132,
+      165,
+      133,
       471,
-      167,
-      53
+      53,
+      131,
+      374,
+      616,
+      47,
+      62,
+      229,
+      207,
+      563,
+      593
     ],
     "logo": "/img/logos/tracks/worldwidetechnologyraceway-logo.png",
     "group": 238
@@ -8637,17 +8865,18 @@
     "price": 15.95,
     "sku": 10024,
     "series": [
-      563,
-      593,
-      190,
-      223,
-      416,
-      413,
-      103,
-      53,
-      58,
-      191,
-      62
+      132,
+      165,
+      133,
+      33,
+      440,
+      554,
+      524,
+      47,
+      62,
+      229,
+      207,
+      563
     ],
     "logo": "/img/logos/tracks/richmondraceway-logo.png"
   },
@@ -8662,14 +8891,14 @@
     "price": 15.95,
     "sku": 10476,
     "series": [
-      563,
-      593,
-      45,
-      441,
-      190,
-      102,
-      417,
-      53
+      223,
+      416,
+      131,
+      575,
+      574,
+      47,
+      229,
+      207
     ],
     "logo": "/img/logos/tracks/northwilkesborospeedway-logo.png",
     "group": 366
@@ -8710,9 +8939,6 @@
     "free": false,
     "price": 15.95,
     "sku": 10027,
-    "series": [
-      432
-    ],
     "logo": "/img/logos/tracks/sonomaraceway-logo.png",
     "group": 312
   },
@@ -8727,7 +8953,6 @@
     "price": 15.95,
     "sku": 10027,
     "series": [
-      285,
       541
     ],
     "logo": "/img/logos/tracks/sonomaraceway-logo.png",
@@ -8744,7 +8969,10 @@
     "price": 15.95,
     "sku": 10027,
     "series": [
-      167
+      524,
+      62,
+      229,
+      207
     ],
     "logo": "/img/logos/tracks/sonomaraceway-logo.png",
     "group": 312
@@ -8759,9 +8987,6 @@
     "free": false,
     "price": 15.95,
     "sku": 10027,
-    "series": [
-      167
-    ],
     "logo": "/img/logos/tracks/sonomaraceway-logo.png",
     "group": 312
   },
@@ -8788,6 +9013,9 @@
     "free": false,
     "price": 15.95,
     "sku": 10027,
+    "series": [
+      74
+    ],
     "logo": "/img/logos/tracks/sonomaraceway-logo.png",
     "group": 312
   },
@@ -8802,9 +9030,10 @@
     "price": 15.95,
     "sku": 10027,
     "series": [
-      112,
-      584,
-      530
+      491,
+      502,
+      525,
+      572
     ],
     "logo": "/img/logos/tracks/sonomaraceway-logo.png",
     "group": 312
@@ -8821,20 +9050,15 @@
     "price": 15.95,
     "sku": 10609,
     "series": [
-      74,
+      496,
+      495,
+      112,
+      584,
+      299,
+      476,
       595,
       535,
-      591,
-      457,
-      419,
-      447,
-      539,
-      541,
-      592,
-      165,
-      133,
-      260,
-      484
+      541
     ],
     "logo": "/img/logos/tracks/mexicocity-logo.png",
     "skuGroup": {
@@ -8847,39 +9071,18 @@
       "578": "Oval Stadium"
     },
     "skuSeries": [
-      74,
+      496,
+      495,
+      112,
+      584,
+      299,
+      476,
       595,
       535,
-      591,
-      457,
-      419,
-      447,
-      539,
       541,
-      592,
-      165,
-      133,
-      260,
-      484,
-      559,
-      557,
-      353,
-      432,
-      431,
-      456,
-      65,
-      505,
-      58,
-      191,
-      514,
-      285,
-      201,
-      562,
-      443,
-      563,
-      554,
-      524,
-      131
+      521,
+      429,
+      593
     ]
   },
   "573": {
@@ -8893,13 +9096,7 @@
     "price": 15.95,
     "sku": 10609,
     "series": [
-      559,
-      557,
-      353,
-      432,
-      431,
-      456,
-      65
+      521
     ],
     "logo": "/img/logos/tracks/mexicocity-logo.png",
     "group": 572
@@ -8914,11 +9111,6 @@
     "free": false,
     "price": 15.95,
     "sku": 10609,
-    "series": [
-      505,
-      58,
-      191
-    ],
     "logo": "/img/logos/tracks/mexicocity-logo.png",
     "group": 572
   },
@@ -8932,11 +9124,6 @@
     "free": false,
     "price": 15.95,
     "sku": 10609,
-    "series": [
-      514,
-      285,
-      201
-    ],
     "logo": "/img/logos/tracks/mexicocity-logo.png",
     "group": 572
   },
@@ -8950,9 +9137,6 @@
     "free": false,
     "price": 15.95,
     "sku": 10609,
-    "series": [
-      562
-    ],
     "logo": "/img/logos/tracks/mexicocity-logo.png",
     "group": 572
   },
@@ -8967,11 +9151,8 @@
     "price": 15.95,
     "sku": 10609,
     "series": [
-      443,
-      563,
-      554,
-      524,
-      131
+      429,
+      593
     ],
     "logo": "/img/logos/tracks/mexicocity-logo.png",
     "group": 572
@@ -8986,10 +9167,6 @@
     "free": false,
     "price": 15.95,
     "sku": 10609,
-    "series": [
-      562,
-      443
-    ],
     "logo": "/img/logos/tracks/mexicocity-logo.png",
     "group": 572
   },
@@ -9004,9 +9181,14 @@
     "price": 15.95,
     "sku": 10361,
     "series": [
-      103,
-      58,
-      191
+      164,
+      47,
+      62,
+      229,
+      207,
+      63,
+      399,
+      405
     ],
     "logo": "/img/logos/tracks/circuitoftheamericas-logo.png",
     "group": 229
@@ -9022,25 +9204,33 @@
     "price": 15.95,
     "sku": 10612,
     "series": [
+      65,
+      165,
+      133,
       514,
+      562,
+      112,
+      584,
       559,
       557,
-      353,
-      231,
-      399,
-      405,
+      491,
+      502,
+      525,
+      572,
+      74,
+      285,
       299,
       476,
       237,
       228,
       444,
       594,
-      443,
-      498,
+      535,
       540,
-      592,
-      536,
-      537
+      429,
+      431,
+      456,
+      201
     ],
     "logo": "/img/logos/tracks/adelaidestreetcircuit-logo.png"
   },
@@ -9073,11 +9263,11 @@
     "price": 0,
     "sku": 10529,
     "series": [
+      599,
       459,
       460,
       325,
-      461,
-      599
+      461
     ],
     "logo": "/img/logos/tracks/wintonmotorraceway-logo.png",
     "group": 439
@@ -9092,7 +9282,81 @@
     "free": false,
     "price": 15.95,
     "sku": 10328,
+    "series": [
+      167,
+      164,
+      524,
+      103,
+      601,
+      47,
+      62,
+      563
+    ],
     "logo": "/img/logos/tracks/rockinghamspeedway-logo.png",
     "group": 203
+  },
+  "584": {
+    "id": 584,
+    "name": "St. Petersburg Grand Prix",
+    "config": "Grand Prix",
+    "categories": [
+      "road"
+    ],
+    "free": false,
+    "price": 15.95,
+    "sku": 10613,
+    "series": [
+      165,
+      133,
+      374,
+      616,
+      514,
+      562,
+      112,
+      584,
+      530,
+      559,
+      557,
+      231,
+      299,
+      476,
+      432,
+      237,
+      228,
+      444,
+      595,
+      443,
+      498,
+      541,
+      429,
+      592
+    ],
+    "logo": "/img/logos/tracks/stpetersburg-logo.png"
+  },
+  "585": {
+    "id": 585,
+    "name": "Barber Motorsports Park",
+    "config": "",
+    "categories": [
+      "road"
+    ],
+    "free": false,
+    "price": 15.95,
+    "sku": 10012,
+    "series": [
+      165,
+      133,
+      374,
+      616,
+      63,
+      491,
+      502,
+      525,
+      572,
+      595,
+      541,
+      592
+    ],
+    "logo": "/img/logos/tracks/barbermotorsportspark-logo.png"
   }
 }

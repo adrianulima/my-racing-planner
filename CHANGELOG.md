@@ -2,6 +2,10 @@
 
 All notable changes to the **"Racing Planner"** project will be documented in this file.
 
+## 0.8.10
+
+- Updated with data of Season 2 2026
+
 ## 0.8.9
 
 - Updated with data of Season 1 2026
