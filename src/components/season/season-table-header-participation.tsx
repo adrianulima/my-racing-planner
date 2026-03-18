@@ -13,7 +13,7 @@ const PARTICIPATION_THRESHOLD = 0.66;
 function SeasonTableHeaderParticipation({
   seriesTracks,
 }: {
-  seriesTracks: { [key: string]: number };
+  seriesTracks: Record<string, number | number[]>;
 }) {
   const { myTracks, wishTracks } = useIr();
 
@@ -33,7 +33,7 @@ function SeasonTableHeaderParticipation({
     const tracks = Object.values(filteredTracks)
       .map((trackId) => {
         const track =
-          TRACKS_JSON[trackId.toString() as keyof typeof TRACKS_JSON];
+          TRACKS_JSON[(trackId as number).toString() as keyof typeof TRACKS_JSON];
         return track;
       })
       .filter(Boolean) as TContent[];

@@ -22,7 +22,8 @@ function ChangelogDialog({ children, ...rest }: DialogRootProps) {
       lazyMount
       open={open}
       onOpenChange={(e) => {
-        (document.activeElement as HTMLElement).blur();
+        if (document.activeElement instanceof HTMLElement)
+          document.activeElement.blur();
         setOpen(e.open);
       }}
       size={width.lg ? "xl" : width.md ? "lg" : "full"}

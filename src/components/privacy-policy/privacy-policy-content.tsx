@@ -9,7 +9,7 @@ export const PRIVACY_VERSION = "Wed 15 Jan, 2025";
 
 function PrivacyPolicyContent() {
   useDialogTracking(EDialogs.PrivacyPolicy);
-  useEffect(setPrivacyPolicyRead, []);
+  useEffect(() => { setPrivacyPolicyRead(); }, []);
   return (
     <>
       <Text textAlign={"center"} as="p">

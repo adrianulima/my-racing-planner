@@ -5,6 +5,20 @@ import ContentCheckbox from "../content/content-checkbox";
 import SeasonTableCarsPopover from "./season-table-cars-popover";
 import SortableColumnCell from "./sortable-column-cell";
 import { Tooltip } from "../ui/tooltip";
+import { TSeriesDateMap } from "./useSeason";
+
+function getColorScale(
+  free: boolean,
+  seasonShowOwned: boolean,
+  owned: boolean,
+  seasonShowWishlist: boolean,
+  wish: boolean,
+) {
+  if (free) return "green";
+  if (seasonShowOwned && owned) return "teal";
+  if (seasonShowWishlist && wish) return "blue";
+  return "red";
+}
 
 function SeasonTableRowCell({
   seriesId,
@@ -30,7 +44,7 @@ function SeasonTableRowCell({
   config: string;
   sku: number;
   date: string;
-  seriesDateMap: { [key: number]: any };
+  seriesDateMap: TSeriesDateMap;
   highlight: boolean;
   setHighlightTrack: (n: number) => void;
 }) {
@@ -44,67 +58,28 @@ function SeasonTableRowCell({
     seasonShowRain,
   } = useUi();
 
-  const cars: number[] =
-    seriesDateMap?.[seriesId as keyof typeof seriesDateMap]?.[`${date}_cars`] ||
+  const cars =
+    (seriesDateMap?.[seriesId as keyof typeof seriesDateMap]?.[`${date}_cars`] as number[]) ||
     [];
 
-  const rainChance: number =
-    seriesDateMap?.[seriesId as keyof typeof seriesDateMap]?.[
+  const rainChance =
+    (seriesDateMap?.[seriesId as keyof typeof seriesDateMap]?.[
       `${date}_rainChance`
-    ] || 0;
+    ] as number) || 0;
 
-  const color = {
-    _dark: free
-      ? "green.400"
-      : seasonShowOwned && owned
-      ? "teal.400"
-      : seasonShowWishlist && wish
-      ? "blue.400"
-      : "red.400",
-    base: free
-      ? "green.600"
-      : seasonShowOwned && owned
-      ? "teal.600"
-      : seasonShowWishlist && wish
-      ? "blue.600"
-      : "red.600",
-  };
-  const bgColor = {
-    base: free
-      ? "green.50"
-      : seasonShowOwned && owned
-      ? "teal.50"
-      : seasonShowWishlist && wish
-      ? "blue.50"
-      : "red.50",
-    _dark: free
-      ? "green.800"
-      : seasonShowOwned && owned
-      ? "teal.800"
-      : seasonShowWishlist && wish
-      ? "blue.800"
-      : "red.800",
-  };
-  const bgColorHighlight = {
-    _dark: free
-      ? "green.900"
-      : seasonShowOwned && owned
-      ? "teal.900"
-      : seasonShowWishlist && wish
-      ? "blue.900"
-      : "red.900",
-    base: free
-      ? "green.200"
-      : seasonShowOwned && owned
-      ? "teal.200"
-      : seasonShowWishlist && wish
-      ? "blue.200"
-      : "red.200",
-  };
+  const scale = getColorScale(
+    free,
+    seasonShowOwned,
+    owned,
+    seasonShowWishlist,
+    wish,
+  );
+  const color = { _dark: `${scale}.400`, base: `${scale}.600` };
+  const bgColor = { base: `${scale}.50`, _dark: `${scale}.800` };
+  const bgColorHighlight = { _dark: `${scale}.900`, base: `${scale}.200` };
   return (
     <SortableColumnCell
       dragId={seriesId}
-      width="(100/x)%"
       position={"relative"}
       onMouseEnter={() => seasonHighlight && setHighlightTrack(sku)}
       onMouseLeave={() => seasonHighlight && setHighlightTrack(-1)}

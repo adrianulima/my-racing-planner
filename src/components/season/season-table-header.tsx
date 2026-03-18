@@ -21,13 +21,14 @@ import SeasonTableHeaderParticipation from "./season-table-header-participation"
 import SortableColumnHeader from "./sortable-column-header";
 import LicenseBadge from "../badges/license-badge";
 import getScheduleDescription from "../series/getScheduleDescription";
+import { TSeriesDateMap } from "./useSeason";
 
 function SeasonTableHeader({
   filteredFavorites,
   seriesDateMap,
 }: {
   filteredFavorites: number[];
-  seriesDateMap: { [key: number]: any };
+  seriesDateMap: TSeriesDateMap;
 }) {
   const {
     seasonShowReorder,
@@ -77,7 +78,6 @@ function SeasonTableHeader({
                   showDragButton={seasonShowReorder}
                   onClickSwap={i !== 0 ? () => onClickSwap(i) : undefined}
                   key={seriesId}
-                  width="(100/x)%"
                   position={"relative"}
                   bgColor={"currentBg"}
                 >

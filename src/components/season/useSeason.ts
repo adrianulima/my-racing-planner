@@ -2,6 +2,8 @@ import { useIr } from "@/store/ir";
 import { useMemo } from "react";
 import SERIES_JSON from "../../ir-data/series.json";
 
+export type TSeriesDateMap = Record<number, Record<string, number | number[]>>;
+
 type TWeek = {
   weekNum: number;
   date: string;

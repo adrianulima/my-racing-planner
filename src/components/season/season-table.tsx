@@ -1,9 +1,5 @@
 import useScreenSize from "@/hooks/useScreenSize";
-import {
-  setFavoriteSeriesItem,
-  setFavoriteSeriesList,
-  useIr,
-} from "@/store/ir";
+import { setFavoriteSeriesList, useIr } from "@/store/ir";
 import { useUi } from "@/store/ui";
 import { For, Table } from "@chakra-ui/react";
 import {
@@ -40,7 +36,6 @@ function SeasonTable({ filteredFavorites }: { filteredFavorites: number[] }) {
     const { active, over } = event;
 
     if (over && active?.id !== over?.id) {
-      setFavoriteSeriesItem;
       const oldIndex = favoriteSeries.indexOf(active.id as number);
       const newIndex = favoriteSeries.indexOf(over.id as number);
       setFavoriteSeriesList(arrayMove(favoriteSeries, oldIndex, newIndex));

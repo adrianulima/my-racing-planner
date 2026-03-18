@@ -36,7 +36,8 @@ function HelpDialog({ children, ...rest }: DialogRootProps) {
       unmountOnExit
       open={isOpen}
       onOpenChange={(e) => {
-        (document.activeElement as HTMLElement).blur();
+        if (document.activeElement instanceof HTMLElement)
+          document.activeElement.blur();
         setIsOpen(e.open);
       }}
       size={width.lg ? "xl" : width.md ? "lg" : "full"}

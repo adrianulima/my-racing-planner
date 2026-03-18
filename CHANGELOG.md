@@ -5,6 +5,7 @@ All notable changes to the **"Racing Planner"** project will be documented in th
 ## 0.8.11
 
 - Fixed an issue with the weeks ordering when a series that doesn't have 12 weeks was added first
+- Some code clean up and performance improvements
 
 ## 0.8.10
 

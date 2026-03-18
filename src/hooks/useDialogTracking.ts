@@ -16,5 +16,5 @@ export const useDialogTracking = (dialog: EDialogs) => {
       page_hash: dialog,
       screen_name: getKeyFromValue(dialog),
     });
-  }, []);
+  }, [dialog]);
 };

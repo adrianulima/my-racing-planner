@@ -6,7 +6,9 @@ import React from "react";
 import TRACKS_JSON from "../../ir-data/tracks.json";
 import SeasonTableRowCell from "./season-table-row-cell";
 import SeasonTableRowDateCell from "./season-table-row-date-cell";
-import { formatDate, getPreviousTuesday } from "./useSeason";
+import { formatDate, getPreviousTuesday, TSeriesDateMap } from "./useSeason";
+
+const todayStartDate = getPreviousTuesday(formatDate(new Date()));
 
 function SeasonTableRow({
   date,
@@ -17,7 +19,7 @@ function SeasonTableRow({
   weekIndex,
 }: {
   date: string;
-  seriesDateMap: { [key: number]: any };
+  seriesDateMap: TSeriesDateMap;
   filteredFavorites: number[];
   highlightTrack: number;
   setHighlightTrack: (n: number) => void;
@@ -26,8 +28,7 @@ function SeasonTableRow({
   const { myTracks, wishTracks } = useIr();
   const { seasonShowThisWeek } = useUi();
 
-  const thisWeek =
-    seasonShowThisWeek && getPreviousTuesday(formatDate(new Date())) === date;
+  const thisWeek = seasonShowThisWeek && todayStartDate === date;
 
   return (
     <Table.Row
@@ -37,17 +38,17 @@ function SeasonTableRow({
       borderYWidth={thisWeek ? "2px" : undefined}
       borderColor={thisWeek ? "bg.inverted" : undefined}
     >
-      <SeasonTableRowDateCell 
-        date={date} 
-        thisWeek={thisWeek} 
-        weekNumber={weekIndex + 1} 
+      <SeasonTableRowDateCell
+        date={date}
+        thisWeek={thisWeek}
+        weekNumber={weekIndex + 1}
       />
       <For
         each={filteredFavorites}
         children={(seriesId) => {
           const trackId =
-            seriesDateMap?.[seriesId as keyof typeof seriesDateMap]?.[date];
-          const track = TRACKS_JSON[trackId as keyof typeof TRACKS_JSON];
+            seriesDateMap?.[seriesId as keyof typeof seriesDateMap]?.[date] as number;
+          const track = TRACKS_JSON[String(trackId) as keyof typeof TRACKS_JSON];
           const wish =
             track &&
             (wishTracks.includes(track.sku) ||
@@ -74,7 +75,7 @@ function SeasonTableRow({
               setHighlightTrack={setHighlightTrack}
             />
           ) : (
-            <Table.Cell key={seriesId} width="(100/x)%" />
+            <Table.Cell key={seriesId} />
           );
         }}
       />
