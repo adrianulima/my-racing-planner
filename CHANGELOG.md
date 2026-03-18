@@ -2,6 +2,10 @@
 
 All notable changes to the **"Racing Planner"** project will be documented in this file.
 
+## 0.8.11
+
+- Fixed an issue with the weeks ordering when a series that doesn't have 12 weeks was added first
+
 ## 0.8.10
 
 - Updated with data of Season 2 2026

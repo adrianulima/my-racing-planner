@@ -34,18 +34,19 @@ const useSeason = () => {
   const { favoriteSeries } = useIr();
 
   const weeksStartDates = useMemo(
-    () => [
-      ...new Set(
-        favoriteSeries
-          .map(
-            (seriesId) =>
-              SERIES_JSON[
-                seriesId.toString() as keyof typeof SERIES_JSON
-              ]?.weeks.map((w) => getPreviousTuesday(w.date)) ?? [],
-          )
-          .flat(),
-      ),
-    ],
+    () =>
+      [
+        ...new Set(
+          favoriteSeries
+            .map(
+              (seriesId) =>
+                SERIES_JSON[
+                  seriesId.toString() as keyof typeof SERIES_JSON
+                ]?.weeks.map((w) => getPreviousTuesday(w.date)) ?? [],
+            )
+            .flat(),
+        ),
+      ].sort(),
     [favoriteSeries],
   );
 
