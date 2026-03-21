@@ -1,10 +1,10 @@
 import { For, Table } from "@chakra-ui/react";
-import { PropsWithChildren, useEffect, useMemo, useRef, useState } from "react";
+import { PropsWithChildren, useEffect, useRef, useState } from "react";
 import { useAppLayout } from "../app/useAppLayout";
 import InfinityTableEmpty from "./infinity-table-empty";
 import InfinityTableLoading from "./infinity-table-loading";
 
-type Dict<T = any> = Record<string, T>;
+type Dict<T = unknown> = Record<string, T>;
 function InfinityTable<T extends string | number | Dict | undefined>({
   list,
   rows,
@@ -21,10 +21,7 @@ function InfinityTable<T extends string | number | Dict | undefined>({
 
   const pageSize = 20;
   const loading = page * pageSize < (list?.length ?? 0);
-  const each = useMemo(
-    () => list?.slice(0, Math.min(list.length, page * pageSize)),
-    [list, page],
-  );
+  const each = list?.slice(0, Math.min(list.length, page * pageSize));
 
   const handleScroll = (event: React.UIEvent<HTMLDivElement>) => {
     onScroll(event);

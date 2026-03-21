@@ -7,7 +7,9 @@ import { useEffect } from "react";
 
 function ChangelogContent() {
   useDialogTracking(EDialogs.Changelog);
-  useEffect(setChangelogRead, []);
+  useEffect(() => {
+    setChangelogRead();
+  }, []);
   return (
     <Markdown
       options={{

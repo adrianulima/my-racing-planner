@@ -7,7 +7,13 @@ export const CategoryIcon = ({
   if (category === "road")
     return (
       <Icon {...rest}>
-        <svg viewBox="0 0 16 16" focusable="false" className="chakra-icon">
+        <svg
+          width="1em"
+          height="1em"
+          viewBox="0 0 16 16"
+          focusable="false"
+          className="chakra-icon"
+        >
           <path
             fill="currentColor"
             d="M16 5C16 3.34315 14.6569 2 13 2V2H10V2C8.34315 2 7 3.34315 7 5V5V5.5H9V5V5C9 4.44772 9.44772 4 10 4H12.5C12.9659 4 13.1989 4 13.3827 4.07612C13.6277 4.17761 13.8224 4.37229 13.9239 4.61732C14 4.80109 14 5.03406 14 5.5V5.5C14 5.96594 14 6.19891 13.9239 6.38268C13.8224 6.62771 13.6277 6.82239 13.3827 6.92388C13.1989 7 12.9659 7 12.5 7H3V7C1.34315 7 0 8.34315 0 10V10V11V11C0 12.6569 1.34315 14 3 14V14H6V14C7.65685 14 9 12.6569 9 11V11V10.5H7V11V11C7 11.5523 6.55228 12 6 12H3.5C3.03406 12 2.80109 12 2.61732 11.9239C2.37229 11.8224 2.17761 11.6277 2.07612 11.3827C2 11.1989 2 10.9659 2 10.5V10.5C2 10.0341 2 9.80109 2.07612 9.61732C2.17761 9.37229 2.37229 9.17761 2.61732 9.07612C2.80109 9 3.03406 9 3.5 9H13V9C14.6569 9 16 7.65685 16 6V6V5V5Z"
@@ -19,7 +25,13 @@ export const CategoryIcon = ({
   if (category === "oval")
     return (
       <Icon {...rest}>
-        <svg viewBox="0 0 24 24" focusable="false" className="chakra-icon">
+        <svg
+          width="1em"
+          height="1em"
+          viewBox="0 0 24 24"
+          focusable="false"
+          className="chakra-icon"
+        >
           <path
             fillRule="evenodd"
             clipRule="evenodd"
@@ -33,7 +45,13 @@ export const CategoryIcon = ({
   if (category === "dirt_road")
     return (
       <Icon {...rest}>
-        <svg viewBox="0 0 24 24" focusable="false" className="chakra-icon">
+        <svg
+          width="1em"
+          height="1em"
+          viewBox="0 0 24 24"
+          focusable="false"
+          className="chakra-icon"
+        >
           <path
             fillRule="evenodd"
             clipRule="evenodd"
@@ -47,7 +65,13 @@ export const CategoryIcon = ({
   if (category === "dirt_oval")
     return (
       <Icon {...rest}>
-        <svg viewBox="0 0 24 24" focusable="false" className="chakra-icon">
+        <svg
+          width="1em"
+          height="1em"
+          viewBox="0 0 24 24"
+          focusable="false"
+          className="chakra-icon"
+        >
           <path
             fillRule="evenodd"
             clipRule="evenodd"
@@ -61,7 +85,13 @@ export const CategoryIcon = ({
   if (category === "formula_car")
     return (
       <Icon {...rest}>
-        <svg viewBox="0 0 24 24" focusable="false" className="chakra-icon">
+        <svg
+          width="1em"
+          height="1em"
+          viewBox="0 0 24 24"
+          focusable="false"
+          className="chakra-icon"
+        >
           <path
             fillRule="evenodd"
             clipRule="evenodd"
@@ -75,7 +105,13 @@ export const CategoryIcon = ({
   if (category === "sports_car")
     return (
       <Icon {...rest}>
-        <svg viewBox="0 0 24 24" focusable="false" className="chakra-icon">
+        <svg
+          width="1em"
+          height="1em"
+          viewBox="0 0 24 24"
+          focusable="false"
+          className="chakra-icon"
+        >
           <path
             fillRule="evenodd"
             clipRule="evenodd"

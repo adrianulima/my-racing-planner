@@ -16,7 +16,6 @@ import {
   faRoad,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React, { useMemo } from "react";
 import DurationBadge from "../badges/duration-badge";
 import LicenseBadge from "../badges/license-badge";
 import ContentNameBadge from "../content/content-name-badge";
@@ -55,7 +54,7 @@ function SeriesTableRow({
   laps: number | null;
   official: boolean;
 }) {
-  const tracks = useMemo(() => [...new Set(weeks.map((w) => w.track.id))], []);
+  const tracks = [...new Set(weeks.map((w) => w.track.id))];
   const { seasonUseLocalTimezone } = useUi();
   const scheduleDescription = getScheduleDescription(
     id,
@@ -199,4 +198,4 @@ function SeriesTableRow({
   );
 }
 
-export default React.memo(SeriesTableRow);
+export default SeriesTableRow;

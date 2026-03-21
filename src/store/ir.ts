@@ -1,4 +1,3 @@
-import { useMemo } from "react";
 import { create } from "zustand";
 import { persist } from "zustand/middleware";
 import SERIES_JSON from "../ir-data/series.json";
@@ -73,11 +72,9 @@ export const useIr = () => {
   const wishTracks = useIrStore((state) => state.wishTracks);
   const favoriteSeriesRaw = useIrStore((state) => state.favoriteSeries);
 
-  const favoriteSeries = useMemo(() => {
-    return favoriteSeriesRaw.filter(
-      (id) => !!SERIES_JSON[id.toString() as keyof typeof SERIES_JSON],
-    );
-  }, [favoriteSeriesRaw]);
+  const favoriteSeries = favoriteSeriesRaw.filter(
+    (id) => !!SERIES_JSON[id.toString() as keyof typeof SERIES_JSON],
+  );
 
   return {
     myCars,

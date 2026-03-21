@@ -4,7 +4,6 @@ import { useIr } from "@/store/ir";
 import { HStack, Text } from "@chakra-ui/react";
 import { faCheck, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useMemo } from "react";
 import TRACKS_JSON from "../../ir-data/tracks.json";
 import { Tooltip } from "../ui/tooltip";
 
@@ -23,7 +22,7 @@ function SeasonTableHeaderParticipation({
     tracksNeeded,
     enoughTracks,
     enoughTracksWithWish,
-  } = useMemo(() => {
+  } = (() => {
     const filteredTracks = Object.fromEntries(
       Object.entries(seriesTracks).filter(
         ([key]) => !key.includes("_cars") && !key.includes("_rainChance"),
@@ -33,7 +32,9 @@ function SeasonTableHeaderParticipation({
     const tracks = Object.values(filteredTracks)
       .map((trackId) => {
         const track =
-          TRACKS_JSON[(trackId as number).toString() as keyof typeof TRACKS_JSON];
+          TRACKS_JSON[
+            (trackId as number).toString() as keyof typeof TRACKS_JSON
+          ];
         return track;
       })
       .filter(Boolean) as TContent[];
@@ -61,32 +62,32 @@ function SeasonTableHeaderParticipation({
         ownedTracks < tracksNeeded &&
         ownedTracks + wishedTracks >= tracksNeeded,
     };
-  }, [seriesTracks, myTracks, wishTracks]);
+  })();
 
   const color = {
     base: enoughTracks
       ? "green.600"
       : enoughTracksWithWish
-      ? "blue.600"
-      : "red.600",
+        ? "blue.600"
+        : "red.600",
     _dark: enoughTracks
       ? "green.400"
       : enoughTracksWithWish
-      ? "blue.400"
-      : "red.400",
+        ? "blue.400"
+        : "red.400",
   };
 
   const bgColor = {
     base: enoughTracks
       ? "green.50"
       : enoughTracksWithWish
-      ? "blue.50"
-      : "red.50",
+        ? "blue.50"
+        : "red.50",
     _dark: enoughTracks
       ? "green.800"
       : enoughTracksWithWish
-      ? "blue.800"
-      : "red.800",
+        ? "blue.800"
+        : "red.800",
   };
 
   return (

@@ -1,5 +1,4 @@
 import { useIr } from "@/store/ir";
-import { useMemo } from "react";
 import SERIES_JSON from "../../ir-data/series.json";
 
 export type TSeriesDateMap = Record<number, Record<string, number | number[]>>;
@@ -35,44 +34,36 @@ export function formatDate(date: Date) {
 const useSeason = () => {
   const { favoriteSeries } = useIr();
 
-  const weeksStartDates = useMemo(
-    () =>
-      [
-        ...new Set(
-          favoriteSeries
-            .map(
-              (seriesId) =>
-                SERIES_JSON[
-                  seriesId.toString() as keyof typeof SERIES_JSON
-                ]?.weeks.map((w) => getPreviousTuesday(w.date)) ?? [],
-            )
-            .flat(),
-        ),
-      ].sort(),
-    [favoriteSeries],
-  );
+  const weeksStartDates = [
+    ...new Set(
+      favoriteSeries
+        .map(
+          (seriesId) =>
+            SERIES_JSON[
+              seriesId.toString() as keyof typeof SERIES_JSON
+            ]?.weeks.map((w) => getPreviousTuesday(w.date)) ?? [],
+        )
+        .flat(),
+    ),
+  ].sort();
 
-  const seriesDateMap = useMemo(
-    () =>
-      favoriteSeries.reduce((acc, curr) => {
-        const series = SERIES_JSON[curr.toString() as keyof typeof SERIES_JSON];
+  const seriesDateMap = favoriteSeries.reduce((acc, curr) => {
+    const series = SERIES_JSON[curr.toString() as keyof typeof SERIES_JSON];
+    return {
+      ...acc,
+      [curr]: series?.weeks.reduce((acc2, curr2: TWeek) => {
+        const date = getPreviousTuesday(curr2.date);
         return {
-          ...acc,
-          [curr]: series?.weeks.reduce((acc2, curr2: TWeek) => {
-            const date = getPreviousTuesday(curr2.date);
-            return {
-              ...acc2,
-              [date]: curr2.track.id,
-              [`${date}_rainChance`]: curr2.rainChance || 0,
-              ...(series.switching
-                ? { [`${date}_cars`]: curr2.cars?.map((c) => c.id) }
-                : {}),
-            };
-          }, {}),
+          ...acc2,
+          [date]: curr2.track.id,
+          [`${date}_rainChance`]: curr2.rainChance || 0,
+          ...(series.switching
+            ? { [`${date}_cars`]: curr2.cars?.map((c) => c.id) }
+            : {}),
         };
       }, {}),
-    [favoriteSeries],
-  );
+    };
+  }, {});
 
   return { weeksStartDates, seriesDateMap };
 };

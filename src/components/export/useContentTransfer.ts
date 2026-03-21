@@ -1,5 +1,4 @@
 import { setContentStore } from "@/store/ir";
-import { useMemo } from "react";
 import { useSearch } from "wouter";
 
 const removeQueryParams = () => {
@@ -10,10 +9,8 @@ const removeQueryParams = () => {
 function useContentTransfer() {
   const query = useSearch();
 
-  const params = useMemo(() => {
-    const urlSearchParams = new URLSearchParams(query);
-    return Object.fromEntries(urlSearchParams);
-  }, [query]);
+  const urlSearchParams = new URLSearchParams(query);
+  const params = Object.fromEntries(urlSearchParams);
 
   const hasNewData =
     !!query &&

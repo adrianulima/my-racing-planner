@@ -15,7 +15,6 @@ import {
 import { For, VStack } from "@chakra-ui/react";
 import { Switch } from "../ui/switch";
 import { Tooltip } from "../ui/tooltip";
-import { useMemo } from "react";
 
 function SeasonSettingsPopover() {
   const {
@@ -32,10 +31,8 @@ function SeasonSettingsPopover() {
     seasonUseLocalTimezone,
   } = useUi();
 
-  // Get the timezone name
-  const timezoneName = useMemo(() => {
-    return Intl.DateTimeFormat().resolvedOptions().timeZone || "Local";
-  }, [seasonUseLocalTimezone]);
+  const timezoneName =
+    Intl.DateTimeFormat().resolvedOptions().timeZone || "Local";
 
   const settingsList = [
     {

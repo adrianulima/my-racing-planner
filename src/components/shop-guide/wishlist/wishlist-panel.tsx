@@ -14,7 +14,7 @@ import {
   faRoad,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Fragment, useMemo } from "react";
+import { Fragment } from "react";
 import CARS_LIST from "../../../ir-data/utils/cars";
 import TRACKS_LIST from "../../../ir-data/utils/tracks";
 import { EmptyState } from "../../ui/empty-state";
@@ -24,18 +24,14 @@ import PriceDiscountPanel from "./price-discount-panel";
 
 function WishlistPanel() {
   const { wishCars, wishTracks } = useIr();
-  const wishList = useMemo(
-    () =>
-      TRACKS_LIST.filter((t) => wishTracks.includes(t.sku))
-        .map((c) => ({ ...c, isCar: false }))
-        .concat(
-          CARS_LIST.filter((c) => wishCars.includes(c.sku)).map((c) => ({
-            ...c,
-            isCar: true,
-          })),
-        ),
-    [wishTracks, wishCars],
-  );
+  const wishList = TRACKS_LIST.filter((t) => wishTracks.includes(t.sku))
+    .map((c) => ({ ...c, isCar: false }))
+    .concat(
+      CARS_LIST.filter((c) => wishCars.includes(c.sku)).map((c) => ({
+        ...c,
+        isCar: true,
+      })),
+    );
 
   return (
     <Stack

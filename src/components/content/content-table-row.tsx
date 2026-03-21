@@ -22,7 +22,6 @@ import {
   IconDefinition,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from "react";
 import PriceBadge from "../badges/price-badge";
 import SeriesPopover from "../series/series-popover";
 import { Tooltip } from "../ui/tooltip";
@@ -178,4 +177,4 @@ function ContentTableRow({
   );
 }
 
-export default React.memo(ContentTableRow);
+export default ContentTableRow;

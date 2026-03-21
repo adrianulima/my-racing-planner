@@ -23,7 +23,7 @@ _This project is not affiliated with or endorsed by iRacing.com._
 Before running the project, ensure you have the following installed:
 
 - Node.js (v20 or newer)
-- `pnpm` package manager
+- `npm` package manager
 
 ## Running the Project Locally
 
@@ -37,7 +37,7 @@ Before running the project, ensure you have the following installed:
 2. Install dependencies:
 
    ```bash
-   pnpm install
+   npm install
    ```
 
 ### Development Server
@@ -45,7 +45,7 @@ Before running the project, ensure you have the following installed:
 To start the development server:
 
 ```bash
-pnpm run dev
+npm run dev
 ```
 
 The app will be available at [http://localhost:5173](http://localhost:5173).
@@ -55,7 +55,7 @@ The app will be available at [http://localhost:5173](http://localhost:5173).
 To create a production build:
 
 ```bash
-pnpm run build
+npm run build
 ```
 
 The output will be located in the `dist` folder.
@@ -65,7 +65,7 @@ The output will be located in the `dist` folder.
 To preview the production build locally:
 
 ```bash
-pnpm run preview
+npm run preview
 ```
 
 ---
@@ -77,7 +77,6 @@ The project includes scripts to fetch data from iRacing's public API and parse i
 ### Prerequisites for Data Fetching
 
 1. **Register your application with iRacing:**
-
    - Contact iRacing support to register your application and get OAuth credentials
    - Request access to the Password Limited Grant flow
    - You will receive a `client_id` and `client_secret`
@@ -99,23 +98,23 @@ The project includes scripts to fetch data from iRacing's public API and parse i
 Run the fetch script to download current season data:
 
 ```bash
-pnpm run fetch-data
+npm run fetch-data
 ```
 
 Run the fetch-past script to download historical season data:
 
 ```bash
-pnpm run fetch-past
+npm run fetch-past
 ```
 
 Process the fetched data into src/ir-data/ JSON files:
 
 ```bash
-pnpm run parse-data
+npm run parse-data
 ```
 
 ```bash
-pnpm run parse-past
+npm run parse-past
 ```
 
 ### Authentication Details

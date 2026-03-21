@@ -55,15 +55,19 @@ function ContentCheckbox({
           />
         ) : undefined
       }
-      onClick={(e) => e.stopPropagation()}
-      onCheckedChange={() => {
-        if (owned) {
+      onClick={(e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        if (free) return;
+        if (wish) {
+          setWish(sku, false);
+          setMy(sku, false);
+        } else if (owned) {
           setMy(sku, false);
           setWish(sku, true);
-        } else if (wish) {
-          setWish(sku, false);
         } else {
           setMy(sku, true);
+          setWish(sku, false);
         }
       }}
       {...rest}

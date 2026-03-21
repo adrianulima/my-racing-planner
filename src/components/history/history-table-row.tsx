@@ -2,7 +2,6 @@ import { CategoryIcon } from "@/ir-data/utils/icons";
 import { Category } from "@/ir-data/utils/types";
 import { IR_URL } from "@/ir-data/utils/urls";
 import { Badge, Center, For, Image, Table, Text } from "@chakra-ui/react";
-import React from "react";
 import ContentCheckbox from "../content/content-checkbox";
 import ContentNameBadge from "../content/content-name-badge";
 import { Tooltip } from "../ui/tooltip";
@@ -120,4 +119,4 @@ function HistoryTableRow({
   );
 }
 
-export default React.memo(HistoryTableRow);
+export default HistoryTableRow;

@@ -1,6 +1,5 @@
 import { useUi } from "@/store/ui";
 import { Text } from "@chakra-ui/react";
-import React from "react";
 import ContentCheckbox from "../content/content-checkbox";
 import SeasonTableCarsPopover from "./season-table-cars-popover";
 import SortableColumnCell from "./sortable-column-cell";
@@ -59,8 +58,9 @@ function SeasonTableRowCell({
   } = useUi();
 
   const cars =
-    (seriesDateMap?.[seriesId as keyof typeof seriesDateMap]?.[`${date}_cars`] as number[]) ||
-    [];
+    (seriesDateMap?.[seriesId as keyof typeof seriesDateMap]?.[
+      `${date}_cars`
+    ] as number[]) || [];
 
   const rainChance =
     (seriesDateMap?.[seriesId as keyof typeof seriesDateMap]?.[
@@ -150,4 +150,4 @@ function SeasonTableRowCell({
   );
 }
 
-export default React.memo(SeasonTableRowCell);
+export default SeasonTableRowCell;

@@ -1,4 +1,4 @@
-import { createContext, PropsWithChildren, useCallback, useEffect, useState } from "react";
+import { createContext, PropsWithChildren, useEffect, useState } from "react";
 import { useLocation } from "wouter";
 
 type TAppLayoutContext = {
@@ -18,10 +18,10 @@ function AppLayoutContextProvider({ children }: PropsWithChildren) {
     setScrolled(false);
   }, [location]);
 
-  const onScroll = useCallback<React.UIEventHandler<HTMLDivElement>>((event) => {
+  const onScroll: React.UIEventHandler<HTMLDivElement> = (event) => {
     const scrollTop = event.currentTarget.scrollTop;
     setScrolled((prev) => (prev ? scrollTop > 0 : scrollTop > 200));
-  }, []);
+  };
 
   return (
     <AppLayoutContext.Provider value={{ scrolled, onScroll }}>

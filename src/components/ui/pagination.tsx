@@ -35,8 +35,10 @@ const [RootPropsProvider, useRootProps] = createContext<ButtonVariantContext>({
   name: "RootPropsProvider",
 });
 
-export interface PaginationRootProps
-  extends Omit<ChakraPagination.RootProps, "type"> {
+export interface PaginationRootProps extends Omit<
+  ChakraPagination.RootProps,
+  "type"
+> {
   size?: ButtonProps["size"];
   variant?: PaginationVariant;
   getHref?: (page: number) => string;
@@ -194,14 +196,12 @@ export const PaginationPageText = React.forwardRef<
 >(function PaginationPageText(props, ref) {
   const { format = "compact", ofText = "of", ...rest } = props;
   const { page, totalPages, pageRange, count } = usePaginationContext();
-  const content = React.useMemo(() => {
-    if (format === "short") return `${page} / ${totalPages}`;
-    if (format === "compact") return `${page} ${ofText} ${totalPages}`;
-    return `${pageRange.start + 1} - ${Math.min(
-      pageRange.end,
-      count,
-    )} ${ofText} ${count}`;
-  }, [format, page, totalPages, pageRange, count]);
+  const content =
+    format === "short"
+      ? `${page} / ${totalPages}`
+      : format === "compact"
+        ? `${page} ${ofText} ${totalPages}`
+        : `${pageRange.start + 1} - ${Math.min(pageRange.end, count)} ${ofText} ${count}`;
 
   return (
     <Text fontWeight="medium" ref={ref} {...rest}>

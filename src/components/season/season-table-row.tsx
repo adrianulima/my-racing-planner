@@ -2,7 +2,6 @@ import { ownNurbCombined, wishNurbCombined } from "@/ir-data/utils/tracks";
 import { useIr } from "@/store/ir";
 import { useUi } from "@/store/ui";
 import { For, Table } from "@chakra-ui/react";
-import React from "react";
 import TRACKS_JSON from "../../ir-data/tracks.json";
 import SeasonTableRowCell from "./season-table-row-cell";
 import SeasonTableRowDateCell from "./season-table-row-date-cell";
@@ -46,9 +45,11 @@ function SeasonTableRow({
       <For
         each={filteredFavorites}
         children={(seriesId) => {
-          const trackId =
-            seriesDateMap?.[seriesId as keyof typeof seriesDateMap]?.[date] as number;
-          const track = TRACKS_JSON[String(trackId) as keyof typeof TRACKS_JSON];
+          const trackId = seriesDateMap?.[
+            seriesId as keyof typeof seriesDateMap
+          ]?.[date] as number;
+          const track =
+            TRACKS_JSON[String(trackId) as keyof typeof TRACKS_JSON];
           const wish =
             track &&
             (wishTracks.includes(track.sku) ||
@@ -83,4 +84,4 @@ function SeasonTableRow({
   );
 }
 
-export default React.memo(SeasonTableRow);
+export default SeasonTableRow;

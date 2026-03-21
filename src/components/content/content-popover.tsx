@@ -37,7 +37,10 @@ function ContentPopover({
                         sku={contentItem.sku}
                         free={contentItem.free}
                         owned={myContent.includes(contentItem?.sku)}
-                        wish={wishes.includes(contentItem?.sku)}
+                        wish={
+                          !myContent.includes(contentItem?.sku) &&
+                          wishes.includes(contentItem?.sku)
+                        }
                       />
                     </Table.Cell>
                     <Table.Cell
