@@ -25,7 +25,7 @@ export default tseslint.config(
         "warn",
         {
           selector: "import",
-          format: ["camelCase", "PascalCase"],
+          format: ["camelCase", "PascalCase", "UPPER_CASE"],
         },
       ],
       "@typescript-eslint/no-unused-vars": [

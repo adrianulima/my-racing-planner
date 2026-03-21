@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { writeFile } from "fs/promises";
 import path from "path";
 import { fileURLToPath } from "url";
@@ -20,6 +21,11 @@ const isLegacy = (name: string) => {
 };
 
 const NURB_COMBINED_IDS = [252, 262, 263, 264];
+
+const TRACK_OVERRIDES: Record<number, Partial<{ free: boolean }>> = {
+  47: { free: true },
+  158: { free: true },
+};
 
 const isNurbCombined = (id: number) => {
   return NURB_COMBINED_IDS.includes(id);
@@ -97,115 +103,143 @@ const isNurbCombined = (id: number) => {
     }),
   );
 
-  const carsById = parsedCars.reduce((acc, curr) => {
-    const existing = Object.values(acc).find((item) => item.sku === curr.sku);
-    if (existing) {
-      acc[curr.id] = { ...curr, group: existing.id };
-    } else {
-      const skuGroup = parsedCars
-        .filter((item) => item.sku === curr.sku)
-        .reduce((acc, curr) => ({ ...acc, [curr.id]: curr.name }), {});
+  const carsById = parsedCars.reduce(
+    (acc, curr) => {
+      const existing = Object.values(acc).find((item) => item.sku === curr.sku);
+      if (existing) {
+        acc[curr.id] = { ...curr, group: existing.id };
+      } else {
+        const skuGroup = parsedCars
+          .filter((item) => item.sku === curr.sku)
+          .reduce((acc, curr) => ({ ...acc, [curr.id]: curr.name }), {});
 
-      const skuKeys = Object.keys(skuGroup);
-      acc[curr.id] = {
-        ...curr,
-        skuGroup: skuKeys.length > 1 ? skuGroup : undefined,
-        skuSeries:
-          skuKeys.length > 1
-            ? [
-                ...new Set(
-                  Object.keys(skuGroup)
-                    .map(
-                      (sk: string) => seriesCarsTracksMaps.carSeries[sk] ?? [],
-                    )
-                    .flat(),
-                ),
-              ]
-            : undefined,
-      };
-    }
-    return acc;
-  }, {} as Record<string, (typeof parsedCars)[0] & { skuGroup?: { [key: string]: string }; group?: number; skuSeries?: number[] }>);
+        const skuKeys = Object.keys(skuGroup);
+        acc[curr.id] = {
+          ...curr,
+          skuGroup: skuKeys.length > 1 ? skuGroup : undefined,
+          skuSeries:
+            skuKeys.length > 1
+              ? [
+                  ...new Set(
+                    Object.keys(skuGroup)
+                      .map(
+                        (sk: string) =>
+                          seriesCarsTracksMaps.carSeries[sk] ?? [],
+                      )
+                      .flat(),
+                  ),
+                ]
+              : undefined,
+        };
+      }
+      return acc;
+    },
+    {} as Record<
+      string,
+      (typeof parsedCars)[0] & {
+        skuGroup?: { [key: string]: string };
+        group?: number;
+        skuSeries?: number[];
+      }
+    >,
+  );
 
   const parsedTracks = TRACKS_JSON.filter(
     (track) =>
       !track.retired &&
       (track.is_ps_purchasable || isNurbCombined(track.track_id)),
-  ).map((track) => ({
-    id: track.track_id,
-    name: track.track_name,
-    config: track.config_name ?? "",
-    categories: [track.category],
-    free:
-      track.free_with_subscription ||
-      (track.price === 0 && !isNurbCombined(track.track_id)),
-    price: track.price,
-    sku: track.sku,
-    series: seriesCarsTracksMaps.trackSeries[track.track_id],
-    logo:
-      TRACK_ASSETS_JSON[`${track.track_id}` as keyof typeof TRACK_ASSETS_JSON]
-        ?.logo ?? undefined,
-  }));
+  ).map((track) => {
+    const parsedTrack = {
+      id: track.track_id,
+      name: track.track_name,
+      config: track.config_name ?? "",
+      categories: [track.category],
+      free:
+        track.free_with_subscription ||
+        (track.price === 0 && !isNurbCombined(track.track_id)),
+      price: track.price,
+      sku: track.sku,
+      series: seriesCarsTracksMaps.trackSeries[track.track_id],
+      logo:
+        TRACK_ASSETS_JSON[`${track.track_id}` as keyof typeof TRACK_ASSETS_JSON]
+          ?.logo ?? undefined,
+    };
 
-  const tracksById = parsedTracks.reduce((acc, curr) => {
-    const existing = Object.values(acc).find(
-      (item) => item.sku === curr.sku && !("group" in item),
-    );
-    if (existing) {
-      if (isLegacy(existing.name) && !isLegacy(curr.name)) {
+    return {
+      ...parsedTrack,
+      ...(TRACK_OVERRIDES[track.track_id] ?? {}),
+    };
+  });
+
+  const tracksById = parsedTracks.reduce(
+    (acc, curr) => {
+      const existing = Object.values(acc).find(
+        (item) => item.sku === curr.sku && !("group" in item),
+      );
+      if (existing) {
+        if (isLegacy(existing.name) && !isLegacy(curr.name)) {
+          acc[curr.id] = {
+            ...curr,
+            categories: existing.categories,
+            skuGroup: { ...(existing.skuGroup ?? {}) },
+            skuSeries: existing.skuSeries
+              ? [...(existing.skuSeries ?? [])]
+              : undefined,
+          };
+          Object.keys(existing.skuGroup || {}).forEach((each) => {
+            if (each !== curr.id.toString() && acc[each])
+              acc[each].group = curr.id;
+          });
+          delete existing.skuGroup;
+          delete existing.skuSeries;
+          acc[existing.id] = { ...existing, group: curr.id };
+        } else {
+          acc[curr.id] = { ...curr, group: existing.id };
+        }
+      } else {
+        const skuGroupItems = parsedTracks.filter(
+          (item) => item.sku === curr.sku,
+        );
+        const skuGroup = skuGroupItems.reduce(
+          (acc, curr) => ({ ...acc, [curr.id]: curr.config }),
+          {},
+        );
+
+        const categories = [
+          ...new Set(skuGroupItems.map((item) => item.categories[0])),
+        ];
+
+        const skuKeys = Object.keys(skuGroup);
         acc[curr.id] = {
           ...curr,
-          categories: existing.categories,
-          skuGroup: { ...(existing.skuGroup ?? {}) },
-          skuSeries: existing.skuSeries
-            ? [...(existing.skuSeries ?? [])]
-            : undefined,
+          categories,
+          skuGroup: skuKeys.length > 1 ? skuGroup : undefined,
+          skuSeries:
+            skuKeys.length > 1
+              ? [
+                  ...new Set(
+                    Object.keys(skuGroup)
+                      .map(
+                        (sk: string) =>
+                          seriesCarsTracksMaps.trackSeries[sk] ?? [],
+                      )
+                      .flat(),
+                  ),
+                ]
+              : undefined,
         };
-        Object.keys(existing.skuGroup || {}).forEach((each) => {
-          if (each !== curr.id.toString() && acc[each])
-            acc[each].group = curr.id;
-        });
-        delete existing.skuGroup;
-        delete existing.skuSeries;
-        acc[existing.id] = { ...existing, group: curr.id };
-      } else {
-        acc[curr.id] = { ...curr, group: existing.id };
       }
-    } else {
-      const skuGroupItems = parsedTracks.filter(
-        (item) => item.sku === curr.sku,
-      );
-      const skuGroup = skuGroupItems.reduce(
-        (acc, curr) => ({ ...acc, [curr.id]: curr.config }),
-        {},
-      );
-
-      const categories = [
-        ...new Set(skuGroupItems.map((item) => item.categories[0])),
-      ];
-
-      const skuKeys = Object.keys(skuGroup);
-      acc[curr.id] = {
-        ...curr,
-        categories,
-        skuGroup: skuKeys.length > 1 ? skuGroup : undefined,
-        skuSeries:
-          skuKeys.length > 1
-            ? [
-                ...new Set(
-                  Object.keys(skuGroup)
-                    .map(
-                      (sk: string) =>
-                        seriesCarsTracksMaps.trackSeries[sk] ?? [],
-                    )
-                    .flat(),
-                ),
-              ]
-            : undefined,
-      };
-    }
-    return acc;
-  }, {} as Record<string, (typeof parsedTracks)[0] & { skuGroup?: { [key: string]: string }; group?: number; skuSeries?: number[] }>);
+      return acc;
+    },
+    {} as Record<
+      string,
+      (typeof parsedTracks)[0] & {
+        skuGroup?: { [key: string]: string };
+        group?: number;
+        skuSeries?: number[];
+      }
+    >,
+  );
 
   const licensesById = LICENSES_JSON.map((group) => ({
     id: group.license_group,

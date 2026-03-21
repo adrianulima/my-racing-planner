@@ -4546,7 +4546,7 @@
           "name": "Brands Hatch Circuit",
           "config": "Grand Prix"
         },
-        "rainChance": 28
+        "rainChance": 29
       },
       {
         "weekNum": 3,
@@ -6554,6 +6554,61 @@
         "repeating": true,
         "sessionMinutes": 69,
         "startDate": "2026-03-17",
+        "superSession": false
+      }
+    ]
+  },
+  "271": {
+    "id": 271,
+    "name": "12 Hours of Sebring",
+    "category": "sports_car",
+    "laps": null,
+    "duration": 720,
+    "switching": false,
+    "official": true,
+    "fixed": false,
+    "multiclass": true,
+    "cars": [
+      128,
+      156,
+      188,
+      173,
+      206,
+      194,
+      132,
+      133,
+      184,
+      169,
+      185,
+      174,
+      159,
+      196,
+      168,
+      170
+    ],
+    "license": {
+      "id": 3,
+      "name": "Class C",
+      "letter": "C",
+      "color": "feec04"
+    },
+    "logo": "seriesid_271.png",
+    "weeks": [
+      {
+        "weekNum": 0,
+        "date": "2026-03-27",
+        "track": {
+          "id": 95,
+          "name": "Sebring International Raceway",
+          "config": "International"
+        },
+        "rainChance": 0
+      }
+    ],
+    "raceSchedule": [
+      {
+        "repeating": false,
+        "sessionMinutes": 761,
         "superSession": false
       }
     ]
@@ -22680,9 +22735,9 @@
         "weekNum": 6,
         "date": "2026-04-28",
         "track": {
-          "id": 180,
+          "id": 181,
           "name": "Oulton Park Circuit",
-          "config": "International"
+          "config": "Fosters"
         },
         "rainChance": 0
       },
