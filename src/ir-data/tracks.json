@@ -708,7 +708,7 @@
     "categories": [
       "road"
     ],
-    "free": true,
+    "free": false,
     "price": 15.95,
     "sku": 10018,
     "series": [
@@ -1989,7 +1989,7 @@
     "categories": [
       "road"
     ],
-    "free": true,
+    "free": false,
     "price": 15.95,
     "sku": 10018,
     "logo": "/img/logos/tracks/weathertechracewaylagunaseca-logo.png",

@@ -23,8 +23,8 @@ const isLegacy = (name: string) => {
 const NURB_COMBINED_IDS = [252, 262, 263, 264];
 
 const TRACK_OVERRIDES: Record<number, Partial<{ free: boolean }>> = {
-  47: { free: true },
-  158: { free: true },
+  // 47: { free: true }, Laguna Seca is not free for new users anymore
+  // 158: { free: true }, Laguna Seca is not free for new users anymore
 };
 
 const isNurbCombined = (id: number) => {

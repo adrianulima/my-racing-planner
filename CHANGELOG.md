@@ -2,6 +2,10 @@
 
 All notable changes to the **"Racing Planner"** project will be documented in this file.
 
+## 0.8.13
+
+- Reverted Laguna Seca forced to be free, I was old by u/StrykerVenom it's not been free for new subs since September 2025
+
 ## 0.8.12
 
 - Updated season data
