@@ -2,6 +2,12 @@
 
 All notable changes to the **"Racing Planner"** project will be documented in this file.
 
+## 0.8.12
+
+- Updated season data
+- Fixed Laguna Seca showing as not free, this is coming from iRacing API as this, I hardcoded it.
+- There were many updates behind the scenes upgrading libraries and cleaning up the code
+
 ## 0.8.11
 
 - Fixed an issue with the weeks ordering when a series that doesn't have 12 weeks was added first
