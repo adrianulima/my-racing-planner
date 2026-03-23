@@ -16,7 +16,7 @@ import { useLocation } from "wouter";
 import AboutDialog from "../about/about-dialog";
 import BMCIcon from "../bmc/icon";
 import ChangelogDialog from "../changelog/changelog-dialog";
-import ExportDialog from "../export/export-dialog";
+import { openExportDialog } from "../export/export-dialog-global";
 import HelpDialog from "../help/help-dialog";
 import PrivacyPolicyAnalog from "../privacy-policy/privacy-policy-dialog";
 import { useColorMode } from "../ui/color-mode";
@@ -76,9 +76,7 @@ function MoreMenuContent({ close }: { close: () => void }) {
         <BMCIcon />
       </MoreMenuItem>
       <Separator />
-      <ExportDialog>
-        <MoreMenuItem label="Export My Content" icon={faShareFromSquare} />
-      </ExportDialog>
+      <MoreMenuItem label="Export My Content" icon={faShareFromSquare} onClick={() => { close(); openExportDialog(); }} />
       <Separator />
       <MoreMenuItem label="Switch Language" icon={faLanguage} disabled />
       <Separator />

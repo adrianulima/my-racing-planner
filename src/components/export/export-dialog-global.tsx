@@ -5,39 +5,33 @@ import {
   DialogHeader,
   DialogRoot,
   DialogTitle,
-  DialogTrigger,
 } from "@/components/ui/dialog";
 import useScreenSize from "@/hooks/useScreenSize";
-import { DialogRootProps } from "@chakra-ui/react";
-import { lazy, Suspense, useEffect, useState } from "react";
+import { lazy, Suspense } from "react";
+import { create } from "zustand";
 import LoadingContainer from "../page/loading-container";
+
 const ExportContent = lazy(() => import("./export-content"));
 
-function ExportDialog({ children, ...rest }: DialogRootProps) {
-  const [isOpen, setIsOpen] = useState(false);
-  const { width } = useScreenSize();
+const useExportDialog = create<{ open: boolean }>(() => ({ open: false }));
 
-  useEffect(() => {
-    (document.activeElement as HTMLElement).blur();
-  }, [isOpen]);
+export const openExportDialog = () => useExportDialog.setState({ open: true });
+
+function ExportDialogGlobal() {
+  const { open } = useExportDialog();
+  const { width } = useScreenSize();
 
   return (
     <DialogRoot
       lazyMount
       unmountOnExit
-      open={isOpen}
-      onOpenChange={(e) => {
-        (document.activeElement as HTMLElement).blur();
-        setIsOpen(e.open);
-      }}
+      open={open}
+      onOpenChange={(e) => useExportDialog.setState({ open: e.open })}
       size={width.lg ? "xl" : width.md ? "lg" : "full"}
       scrollBehavior="inside"
       placement="center"
       motionPreset="slide-in-bottom"
-      {...rest}
     >
-      <DialogTrigger asChild>{children}</DialogTrigger>
-
       <DialogContent>
         <DialogHeader textAlign={"center"}>
           <DialogTitle>Export My Content</DialogTitle>
@@ -53,4 +47,4 @@ function ExportDialog({ children, ...rest }: DialogRootProps) {
   );
 }
 
-export default ExportDialog;
+export default ExportDialogGlobal;
