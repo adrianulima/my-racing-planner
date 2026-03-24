@@ -1,23 +1,12 @@
+import { useIr, toggleScheduleEntry } from "@/store/ir";
 import { useUi } from "@/store/ui";
 import { Text } from "@chakra-ui/react";
+import { getContentColorScale } from "@/utils/color";
 import ContentCheckbox from "../content/content-checkbox";
 import SeasonTableCarsPopover from "./season-table-cars-popover";
 import SortableColumnCell from "./sortable-column-cell";
 import { Tooltip } from "../ui/tooltip";
 import { TSeriesDateMap } from "./useSeason";
-
-function getColorScale(
-  free: boolean,
-  seasonShowOwned: boolean,
-  owned: boolean,
-  seasonShowWishlist: boolean,
-  wish: boolean,
-) {
-  if (free) return "green";
-  if (seasonShowOwned && owned) return "teal";
-  if (seasonShowWishlist && wish) return "blue";
-  return "red";
-}
 
 function SeasonTableRowCell({
   seriesId,
@@ -57,6 +46,16 @@ function SeasonTableRowCell({
     seasonShowRain,
   } = useUi();
 
+  const { mySchedule } = useIr();
+  const scheduled = mySchedule.includes(`${seriesId}_${date}`);
+
+  const handleCellClick = (e: React.MouseEvent) => {
+    // Don't toggle if clicking on interactive children (checkbox, popover button)
+    const target = e.target as HTMLElement;
+    if (target.closest("input, button, label, [role='checkbox']")) return;
+    toggleScheduleEntry(seriesId, date);
+  };
+
   const cars =
     (seriesDateMap?.[seriesId as keyof typeof seriesDateMap]?.[
       `${date}_cars`
@@ -67,12 +66,10 @@ function SeasonTableRowCell({
       `${date}_rainChance`
     ] as number) || 0;
 
-  const scale = getColorScale(
+  const scale = getContentColorScale(
     free,
-    seasonShowOwned,
-    owned,
-    seasonShowWishlist,
-    wish,
+    seasonShowOwned && owned,
+    seasonShowWishlist && wish,
   );
   const color = { _dark: `${scale}.400`, base: `${scale}.600` };
   const bgColor = { base: `${scale}.50`, _dark: `${scale}.800` };
@@ -85,6 +82,9 @@ function SeasonTableRowCell({
       onMouseLeave={() => seasonHighlight && setHighlightTrack(-1)}
       bgColor={seasonHighlight && highlight ? bgColorHighlight : bgColor}
       color={color}
+      onClick={handleCellClick}
+      cursor="pointer"
+      boxShadow={scheduled ? "inset 0 0 0 1.5px var(--chakra-colors-fg-muted)" : undefined}
     >
       {seasonShowRain && rainChance > 0 && (
         <Tooltip

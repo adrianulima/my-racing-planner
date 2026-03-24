@@ -18,7 +18,8 @@ function useContentTransfer() {
       "myTracks" in params ||
       "wishCars" in params ||
       "wishTracks" in params ||
-      "favoriteSeries" in params);
+      "favoriteSeries" in params ||
+      "mySchedule" in params);
 
   const applyData = () => {
     if (!hasNewData) return;
@@ -42,8 +43,11 @@ function useContentTransfer() {
       ?.split("-")
       .filter(Boolean)
       .map((n) => parseInt(n));
+    const mySchedule = params.mySchedule
+      ?.split(",")
+      .filter(Boolean) ?? [];
 
-    setContentStore({ myCars, myTracks, wishCars, wishTracks, favoriteSeries });
+    setContentStore({ myCars, myTracks, wishCars, wishTracks, favoriteSeries, mySchedule });
     removeQueryParams();
   };
 

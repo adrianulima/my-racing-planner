@@ -7,6 +7,7 @@ export enum ETabs {
   MySeries = "/series",
   MyCars = "/cars",
   MyTracks = "/tracks",
+  MySchedule = "/schedule",
   ShopGuide = "/checkout",
   History = "/history",
 }

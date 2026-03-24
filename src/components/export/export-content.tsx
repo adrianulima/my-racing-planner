@@ -6,13 +6,14 @@ import { QRCodeSVG } from "qrcode.react";
 import { Button } from "../ui/button";
 
 function ExportContent() {
-  const { myCars, myTracks, wishCars, wishTracks, favoriteSeries } = useIr();
+  const { myCars, myTracks, wishCars, wishTracks, favoriteSeries, mySchedule } = useIr();
   const queryParams = {
     myCars: myCars.join("-"),
     myTracks: myTracks.join("-"),
     wishCars: wishCars.join("-"),
     wishTracks: wishTracks.join("-"),
     favoriteSeries: favoriteSeries.join("-"),
+    mySchedule: mySchedule.join(","),
   };
 
   const params = new URLSearchParams(queryParams).toString();
@@ -40,7 +41,7 @@ function ExportContent() {
         <QRCodeSVG
           value={url}
           size={220}
-          title={"Export My Content"}
+          title={"Export My Data"}
           marginSize={5}
           imageSettings={{
             src: "/my-racing-planner-icon.svg",

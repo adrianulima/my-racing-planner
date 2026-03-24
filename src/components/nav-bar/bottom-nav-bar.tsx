@@ -2,6 +2,7 @@ import { ETabs } from "@/store/ui";
 import { For, HStack, StackProps } from "@chakra-ui/react";
 import {
   faCar,
+  faCalendarDays,
   faFlagCheckered,
   faRoad,
   faShoppingBag,
@@ -15,6 +16,7 @@ function BottomNavBar({ ...props }: StackProps) {
   const [location] = useLocation();
 
   const tabsAction = [
+    { label: "My Schedule", icon: faCalendarDays, index: ETabs.MySchedule },
     { label: "My Season", icon: faTableCellsLarge, index: ETabs.MySeason },
     { label: "My Series", icon: faFlagCheckered, index: ETabs.MySeries },
     location === ETabs.MyTracks

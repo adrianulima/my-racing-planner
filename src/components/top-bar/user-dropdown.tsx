@@ -35,11 +35,11 @@ function UserDropdown() {
           </MenuItem>
         )} */}
 
-        <MenuItem value="export" valueText="Export My Content" onClick={openExportDialog}>
+        <MenuItem value="export" valueText="Export My Data" onClick={openExportDialog}>
           <Flex justifyContent={"center"} w={"1rem"}>
             <FontAwesomeIcon icon={faShareFromSquare} />
           </Flex>
-          <Box flex="1">Export My Content</Box>
+          <Box flex="1">Export My Data</Box>
         </MenuItem>
 
         <MenuItem value="language" valueText="Language" disabled>

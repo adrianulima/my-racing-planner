@@ -34,7 +34,7 @@ function ExportDialogGlobal() {
     >
       <DialogContent>
         <DialogHeader textAlign={"center"}>
-          <DialogTitle>Export My Content</DialogTitle>
+          <DialogTitle>Export My Data</DialogTitle>
         </DialogHeader>
         <DialogBody px={{ base: 4, md: 10 }} textAlign={"justify"}>
           <Suspense fallback={<LoadingContainer />}>

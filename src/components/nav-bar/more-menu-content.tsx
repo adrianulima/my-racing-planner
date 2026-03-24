@@ -2,6 +2,7 @@ import { useNotifications } from "@/store/notifications";
 import { ETabs } from "@/store/ui";
 import { Group, Separator, Stack } from "@chakra-ui/react";
 import {
+  faCalendarDays,
   faChartLine,
   faCircleQuestion,
   faFileLines,
@@ -57,6 +58,15 @@ function MoreMenuContent({ close }: { close: () => void }) {
       </Group>
       <Separator />
       <MoreMenuItem
+        label="My Schedule"
+        icon={faCalendarDays}
+        onClick={() => {
+          close();
+          navigate(ETabs.MySchedule);
+        }}
+      />
+      <Separator />
+      <MoreMenuItem
         label="History"
         icon={faChartLine}
         onClick={() => {
@@ -76,7 +86,7 @@ function MoreMenuContent({ close }: { close: () => void }) {
         <BMCIcon />
       </MoreMenuItem>
       <Separator />
-      <MoreMenuItem label="Export My Content" icon={faShareFromSquare} onClick={() => { close(); openExportDialog(); }} />
+      <MoreMenuItem label="Export My Data" icon={faShareFromSquare} onClick={() => { close(); openExportDialog(); }} />
       <Separator />
       <MoreMenuItem label="Switch Language" icon={faLanguage} disabled />
       <Separator />

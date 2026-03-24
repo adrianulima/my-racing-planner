@@ -36,3 +36,12 @@ export function lightenHexColor(hex: string, percentage: number): string {
   const toHex = (value: number) => value.toString(16).padStart(2, "0");
   return `#${toHex(newR)}${toHex(newG)}${toHex(newB)}`;
 }
+
+export type ContentColorScale = "green" | "teal" | "blue" | "red";
+
+export function getContentColorScale(free: boolean, owned: boolean, wish: boolean): ContentColorScale {
+  if (free) return "green";
+  if (owned) return "teal";
+  if (wish) return "blue";
+  return "red";
+}
