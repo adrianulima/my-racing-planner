@@ -6,7 +6,7 @@ import {
   faSun,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import ExportDialog from "../export/export-dialog";
+import { openExportDialog } from "../export/export-dialog-global";
 import { Avatar } from "../ui/avatar";
 import { useColorMode } from "../ui/color-mode";
 import { MenuContent, MenuItem, MenuRoot, MenuTrigger } from "../ui/menu";
@@ -35,14 +35,12 @@ function UserDropdown() {
           </MenuItem>
         )} */}
 
-        <ExportDialog>
-          <MenuItem value="export" valueText="Export My Content">
-            <Flex justifyContent={"center"} w={"1rem"}>
-              <FontAwesomeIcon icon={faShareFromSquare} />
-            </Flex>
-            <Box flex="1">Export My Content</Box>
-          </MenuItem>
-        </ExportDialog>
+        <MenuItem value="export" valueText="Export My Content" onClick={openExportDialog}>
+          <Flex justifyContent={"center"} w={"1rem"}>
+            <FontAwesomeIcon icon={faShareFromSquare} />
+          </Flex>
+          <Box flex="1">Export My Content</Box>
+        </MenuItem>
 
         <MenuItem value="language" valueText="Language" disabled>
           <Flex justifyContent={"center"} w={"1rem"}>
