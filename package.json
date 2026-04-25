@@ -13,8 +13,7 @@
     "fetch-data": "tsx iracing-api/fetch-data.ts",
     "parse-data": "tsx iracing-api/parse-data.ts",
     "fetch-past": "tsx iracing-api/fetch-past.ts",
-    "parse-past": "tsx iracing-api/parse-past.ts",
-    "test": "jest"
+    "parse-past": "tsx iracing-api/parse-past.ts"
   },
   "dependencies": {
     "@chakra-ui/react": "^3.34.0",
@@ -44,7 +43,6 @@
     "@eslint/js": "^9.39.1",
     "@rolldown/plugin-babel": "^0.2.2",
     "@types/crypto-js": "^4.2.2",
-    "@types/jest": "^30.0.0",
     "@types/node": "^25.5.0",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
@@ -60,10 +58,8 @@
     "eslint-plugin-react-refresh": "^0.5.2",
     "gh-pages": "^6.3.0",
     "globals": "^17.4.0",
-    "jest": "^30.3.0",
     "tough-cookie": "^6.0.1",
     "tough-cookie-file-store": "^3.3.0",
-    "ts-jest": "^29.4.6",
     "tsx": "^4.21.0",
     "typescript": "~5.9.3",
     "typescript-eslint": "^8.57.1",
