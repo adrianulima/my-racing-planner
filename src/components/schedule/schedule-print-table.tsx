@@ -1,6 +1,7 @@
 import { Badge, Box, Grid, HStack, Text, VStack } from "@chakra-ui/react";
 
 import { useTranslation } from "react-i18next";
+import { createSimpleScheduleDescription } from "@/utils/simple-schedule";
 import SERIES_JSON from "../../ir-data/series.json";
 import getScheduleDescription from "../series/getScheduleDescription";
 import { getSeriesWeek } from "../season/useSeason";
@@ -61,6 +62,10 @@ function SchedulePrintTable({
                       week.rainChance > 0
                         ? t("content.rainChance", { chance: week.rainChance })
                         : "";
+                    const raceDuration = createSimpleScheduleDescription(
+                      series.laps,
+                      series.duration,
+                    );
 
                     return (
                       <Box
@@ -87,6 +92,9 @@ function SchedulePrintTable({
                             {week.track.config ? ` (${week.track.config})` : ""}
                           </Text>
                         )}
+                        <Text fontSize="xs" opacity={0.8}>
+                          Duration: {raceDuration}
+                        </Text>
                         {schedule && <Text fontSize="xs">{schedule}</Text>}
                         {!!rain && <Text fontSize="xs">{rain}</Text>}
                       </Box>

@@ -2,6 +2,13 @@
 
 All notable changes to the **"Racing Planner"** project will be documented in this file.
 
+## 0.9.1
+
+- Added My Schedule section on Help page
+- Added race duration to My schedule
+- Added missing translations of the Help page to some languages
+- Added missing analytics to print button
+
 ## 0.9.0
 
 - Added My Schedule page - thanks Chris Kent

@@ -13,6 +13,7 @@ import {
 import {
   faBookmark,
   faCar,
+  faCalendarDays,
   faChartLine,
   faFlagCheckered,
   faGears,
@@ -20,6 +21,7 @@ import {
   faMessage,
   faMoon,
   faMugHot,
+  faPrint,
   faRoad,
   faSackXmark,
   faShieldHalved,
@@ -74,7 +76,9 @@ function HelpContent() {
         <Heading mt={2} size={"md"}>
           {t("help.checkboxHeading")}
         </Heading>
-        <Text mb={2} as="p">{t("help.checkboxIntro")}</Text>
+        <Text mb={2} as="p">
+          {t("help.checkboxIntro")}
+        </Text>
         <List.Root variant="plain">
           <List.Item>
             <Checkbox
@@ -84,11 +88,17 @@ function HelpContent() {
               checked={false}
               controlProps={{ borderColor: "gray.400" }}
             />
-            <Trans i18nKey="help.unchecked" components={{ strong: <strong /> }} />
+            <Trans
+              i18nKey="help.unchecked"
+              components={{ strong: <strong /> }}
+            />
           </List.Item>
           <List.Item>
             <Checkbox mr={2} size={"sm"} readOnly={true} checked={true} />
-            <Trans i18nKey="help.checkedOwned" components={{ strong: <strong /> }} />
+            <Trans
+              i18nKey="help.checkedOwned"
+              components={{ strong: <strong /> }}
+            />
           </List.Item>
           <List.Item>
             <Checkbox
@@ -99,7 +109,10 @@ function HelpContent() {
               checked={true}
               icon={<FontAwesomeIcon size="xs" icon={faBookmark} />}
             />
-            <Trans i18nKey="help.checkedWishlist" components={{ strong: <strong /> }} />
+            <Trans
+              i18nKey="help.checkedWishlist"
+              components={{ strong: <strong /> }}
+            />
           </List.Item>
           <List.Item>
             <Checkbox
@@ -110,7 +123,10 @@ function HelpContent() {
               checked={true}
               icon={<FontAwesomeIcon size="xs" icon={faSackXmark} />}
             />
-            <Trans i18nKey="help.checkedFree" components={{ strong: <strong /> }} />
+            <Trans
+              i18nKey="help.checkedFree"
+              components={{ strong: <strong /> }}
+            />
           </List.Item>
         </List.Root>
         <Text my={2} as="p">
@@ -124,20 +140,34 @@ function HelpContent() {
           <FontAwesomeIcon size="xs" icon={faTableCellsLarge} /> Page
         </Heading>
         <Text as="p">{t("help.seasonText1")}</Text>
-        <Text my={2} as="p">{t("help.seasonText2")}</Text>
+        <Text my={2} as="p">
+          {t("help.seasonText2")}
+        </Text>
 
         <List.Root>
           <List.Item>
-            <Trans i18nKey="help.redCells" components={{ strong: <strong /> }} />
+            <Trans
+              i18nKey="help.redCells"
+              components={{ strong: <strong /> }}
+            />
           </List.Item>
           <List.Item>
-            <Trans i18nKey="help.greenCells" components={{ strong: <strong /> }} />
+            <Trans
+              i18nKey="help.greenCells"
+              components={{ strong: <strong /> }}
+            />
           </List.Item>
           <List.Item>
-            <Trans i18nKey="help.tealCells" components={{ strong: <strong /> }} />
+            <Trans
+              i18nKey="help.tealCells"
+              components={{ strong: <strong /> }}
+            />
           </List.Item>
           <List.Item>
-            <Trans i18nKey="help.blueCells" components={{ strong: <strong /> }} />
+            <Trans
+              i18nKey="help.blueCells"
+              components={{ strong: <strong /> }}
+            />
           </List.Item>
         </List.Root>
 
@@ -147,21 +177,44 @@ function HelpContent() {
 
         <List.Root>
           <List.Item>
-            <strong>{t("settings.showContentCheckboxes")}</strong>: {t("settings.showContentCheckboxesTooltip")}
+            <strong>{t("settings.showContentCheckboxes")}</strong>:{" "}
+            {t("settings.showContentCheckboxesTooltip")}
           </List.Item>
           <List.Item>
-            <strong>{t("settings.showCarsDropdown")}</strong>: {t("settings.showCarsDropdownTooltip")}
+            <strong>{t("settings.showCarsDropdown")}</strong>:{" "}
+            {t("settings.showCarsDropdownTooltip")}
           </List.Item>
           <List.Item>
-            <strong>{t("settings.highlightHover")}</strong>: {t("settings.highlightHoverTooltip")}
+            <strong>{t("settings.highlightHover")}</strong>:{" "}
+            {t("settings.highlightHoverTooltip")}
           </List.Item>
           <List.Item>
-            <strong>{t("settings.showWishlist")}</strong>: {t("settings.showWishlistTooltip")}
+            <strong>{t("settings.showWishlist")}</strong>:{" "}
+            {t("settings.showWishlistTooltip")}
           </List.Item>
           <List.Item>
-            <strong>{t("settings.showOwned")}</strong>: {t("settings.showOwnedTooltip")}
+            <strong>{t("settings.showOwned")}</strong>:{" "}
+            {t("settings.showOwnedTooltip")}
           </List.Item>
         </List.Root>
+      </section>
+      <Separator my={3} />
+      <section>
+        <Heading mt={2}>
+          <Trans
+            i18nKey="help.scheduleHeading"
+            components={{ schedule: <Em /> }}
+          />{" "}
+          <FontAwesomeIcon size="xs" icon={faCalendarDays} />
+        </Heading>
+        <Text as="p">{t("help.scheduleText1")}</Text>
+        <Text my={2} as="p">
+          {t("help.scheduleText2")}
+        </Text>
+        <Text my={2} as="p">
+          <Trans i18nKey="help.scheduleText3" components={{ print: <Em /> }} />{" "}
+          <FontAwesomeIcon size="xs" icon={faPrint} />
+        </Text>
       </section>
       <Separator my={3} />
       <section>
@@ -169,7 +222,9 @@ function HelpContent() {
           <Trans i18nKey="help.shopHeading" components={{ shop: <Em /> }} />{" "}
           <FontAwesomeIcon size="xs" icon={faShoppingBag} /> Page
         </Heading>
-        <Text mb={2} as="p">{t("help.shopText1")}</Text>
+        <Text mb={2} as="p">
+          {t("help.shopText1")}
+        </Text>
         <Text my={2} as="p">
           <Trans
             i18nKey="help.shopText2"
@@ -186,7 +241,8 @@ function HelpContent() {
         <List.Root>
           <List.Item>
             <strong>
-              {t("common.language")} <FontAwesomeIcon size="xs" icon={faLanguage} />
+              {t("common.language")}{" "}
+              <FontAwesomeIcon size="xs" icon={faLanguage} />
             </strong>
             : {t("help.languageText")}
           </List.Item>
@@ -198,19 +254,22 @@ function HelpContent() {
           </List.Item>
           <List.Item>
             <strong>
-              {t("common.history")} <FontAwesomeIcon size="xs" icon={faChartLine} />
+              {t("common.history")}{" "}
+              <FontAwesomeIcon size="xs" icon={faChartLine} />
             </strong>
             : {t("help.historyText")}
           </List.Item>
           <List.Item>
             <strong>
-              {t("menu.privacy")} <FontAwesomeIcon size="xs" icon={faShieldHalved} />
+              {t("menu.privacy")}{" "}
+              <FontAwesomeIcon size="xs" icon={faShieldHalved} />
             </strong>
             : {t("help.privacyText")}
           </List.Item>
           <List.Item>
             <strong>
-              {t("menu.buyMeCoffee")} <FontAwesomeIcon size="xs" icon={faMugHot} />
+              {t("menu.buyMeCoffee")}{" "}
+              <FontAwesomeIcon size="xs" icon={faMugHot} />
             </strong>
             :{" "}
             <Link
@@ -224,7 +283,8 @@ function HelpContent() {
           </List.Item>
           <List.Item>
             <strong>
-              {t("help.feedbackLabel")} <FontAwesomeIcon size="xs" icon={faMessage} />
+              {t("help.feedbackLabel")}{" "}
+              <FontAwesomeIcon size="xs" icon={faMessage} />
             </strong>
             :{" "}
             <Trans
@@ -262,7 +322,9 @@ function HelpContent() {
       <Separator my={3} />
       <section>
         <Heading mt={2}>{t("help.pwaHeading")}</Heading>
-        <Text mb={2} as="p">{t("help.pwaText")}</Text>
+        <Text mb={2} as="p">
+          {t("help.pwaText")}
+        </Text>
 
         <Heading mt={2} size={"md"}>
           {t("help.iosHeading")}
@@ -283,7 +345,9 @@ function HelpContent() {
           <List.Item>{t("help.androidStep3")}</List.Item>
           <List.Item>{t("help.androidStep4")}</List.Item>
         </List.Root>
-        <Text my={2} as="p">{t("help.pwaDone")}</Text>
+        <Text my={2} as="p">
+          {t("help.pwaDone")}
+        </Text>
       </section>
     </>
   );

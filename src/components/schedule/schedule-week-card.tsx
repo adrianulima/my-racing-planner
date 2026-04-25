@@ -3,6 +3,7 @@ import { TContent } from "@/ir-data/utils/types";
 import { toggleScheduleEntry, useIr } from "@/store/ir";
 import { useUi } from "@/store/ui";
 import { trackEvent } from "@/utils/analytics";
+import { createSimpleScheduleDescription } from "@/utils/simple-schedule";
 import { getContentColorScale } from "@/utils/color";
 import { Box, Grid, HStack, IconButton, Text, VStack } from "@chakra-ui/react";
 import { faCalendarWeek } from "@fortawesome/free-solid-svg-icons";
@@ -95,6 +96,11 @@ function ScheduleWeekCard({
               : false;
             const scale = getContentColorScale(free, owned, wish);
 
+            const raceDuration = createSimpleScheduleDescription(
+              series.laps,
+              series.duration,
+            );
+
             return (
               <Box
                 key={entry.seriesId}
@@ -153,12 +159,15 @@ function ScheduleWeekCard({
                       {week.track.config && ` (${week.track.config})`}
                     </Text>
                   )}
+                  <Text fontSize="xs" wordBreak="break-word">
+                    Duration: {raceDuration} {t("common.race")}
+                  </Text>
+                  {schedule && <Text fontSize="xs">{schedule}</Text>}
                   {series.switching && !!week?.cars?.length && (
                     <Text fontSize="sm">
                       🚗 {week.cars.map((c) => c.name).join(", ")}
                     </Text>
                   )}
-                  {schedule && <Text fontSize="xs">{schedule}</Text>}
                   {rainChance > 0 && (
                     <Text fontSize="xs">
                       💧 {t("content.rainChance", { chance: rainChance })}

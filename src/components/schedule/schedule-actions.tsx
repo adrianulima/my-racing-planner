@@ -2,6 +2,7 @@ import { Button, HStack, IconButton } from "@chakra-ui/react";
 import { faGears, faPrint } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useTranslation } from "react-i18next";
+import { trackEvent } from "@/utils/analytics";
 import { PopoverContent, PopoverRoot, PopoverTrigger } from "../ui/popover";
 import ScheduleSettingsPopover from "./schedule-settings-popover";
 
@@ -32,7 +33,10 @@ function ScheduleActions() {
         size="lg"
         bgColor={{ base: "bg.muted", _hover: "bg" }}
         borderRadius="md"
-        onClick={() => window.print()}
+        onClick={() => {
+          trackEvent("schedule_print");
+          window.print();
+        }}
       >
         <HStack gap={2}>
           <FontAwesomeIcon icon={faPrint} />
