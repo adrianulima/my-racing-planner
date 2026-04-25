@@ -1,3 +1,5 @@
+import i18n from "@/i18n";
+
 /**
  * Creates a simple human-readable race schedule description based on laps and duration
  * @param laps The number of laps for the race (can be null)
@@ -9,11 +11,11 @@ export function createSimpleScheduleDescription(
   duration: number | null,
 ): string {
   if (laps && duration) {
-    return `${laps} laps or ${duration} min`;
+    return i18n.t("schedule.lapsOrMinutes", { laps, duration });
   } else if (laps) {
-    return `${laps} laps`;
+    return i18n.t("schedule.laps", { laps });
   } else if (duration) {
-    return `${duration} min`;
+    return i18n.t("schedule.minutes", { duration });
   }
   return "";
 }

@@ -9,29 +9,30 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog";
 import { Button } from "@chakra-ui/react";
+import { useTranslation } from "react-i18next";
 import useContentTransfer from "./useContentTransfer";
 
 function TransferContentDialog() {
   const { hasNewData, applyData, ignoreData } = useContentTransfer();
+  const { t } = useTranslation();
   return (
     <DialogRoot role="alertdialog" open={hasNewData}>
       <DialogContent>
         <DialogHeader>
-          <DialogTitle>Replace Current Preferences</DialogTitle>
+          <DialogTitle>{t("dialogs.replacePreferences")}</DialogTitle>
         </DialogHeader>
         <DialogBody>
           <p>
-            Loading this transfer will replace all your current preferences with
-            the new ones. This action cannot be undone. Do you want to continue?
+            {t("export.replacePreferencesWarning")}
           </p>
         </DialogBody>
         <DialogFooter>
           <DialogActionTrigger asChild>
             <Button onClick={ignoreData} variant="outline">
-              Cancel
+              {t("common.cancel")}
             </Button>
           </DialogActionTrigger>
-          <Button onClick={applyData}>Apply</Button>
+          <Button onClick={applyData}>{t("common.apply")}</Button>
         </DialogFooter>
         <DialogCloseTrigger onClick={ignoreData} />
       </DialogContent>

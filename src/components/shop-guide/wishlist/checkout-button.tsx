@@ -1,9 +1,11 @@
 import { IR_URL } from "@/ir-data/utils/urls";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useTranslation } from "react-i18next";
 import { Button } from "../../ui/button";
 
 function CheckoutButton({ wishList }: { wishList: { sku: number }[] }) {
+  const { t } = useTranslation();
   return (
     <Button
       id="checkout"
@@ -19,7 +21,7 @@ function CheckoutButton({ wishList }: { wishList: { sku: number }[] }) {
       rel="noreferrer"
       colorPalette={"blue"}
     >
-      Checkout on iRacing.com store
+      {t("shop.checkout")}
       <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
     </Button>
   );

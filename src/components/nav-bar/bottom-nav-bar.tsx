@@ -8,19 +8,21 @@ import {
   faTableCellsLarge,
 } from "@fortawesome/free-solid-svg-icons";
 import { Link, useLocation } from "wouter";
+import { useTranslation } from "react-i18next";
 import MoreMenuButton from "./more-menu-button";
 import NavBarButton from "./nav-bar-button";
 
 function BottomNavBar({ ...props }: StackProps) {
   const [location] = useLocation();
+  const { t } = useTranslation();
 
   const tabsAction = [
-    { label: "My Season", icon: faTableCellsLarge, index: ETabs.MySeason },
-    { label: "My Series", icon: faFlagCheckered, index: ETabs.MySeries },
+    { label: t("nav.mySeason"), icon: faTableCellsLarge, index: ETabs.MySeason },
+    { label: t("nav.mySeries"), icon: faFlagCheckered, index: ETabs.MySeries },
     location === ETabs.MyTracks
-      ? { label: "My Content", icon: faRoad, index: ETabs.MyTracks }
-      : { label: "My Content", icon: faCar, index: ETabs.MyCars },
-    { label: "Shop Guide", icon: faShoppingBag, index: ETabs.ShopGuide },
+      ? { label: t("nav.myTracks"), icon: faRoad, index: ETabs.MyTracks }
+      : { label: t("nav.myCars"), icon: faCar, index: ETabs.MyCars },
+    { label: t("nav.shopGuide"), icon: faShoppingBag, index: ETabs.ShopGuide },
   ];
 
   return (

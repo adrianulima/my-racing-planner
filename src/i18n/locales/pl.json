@@ -1,0 +1,190 @@
+{
+  "common": {
+    "apply": "Zastosuj",
+    "cars": "Samochody",
+    "cancel": "Anuluj",
+    "category": "Kategoria",
+    "close": "Zamknij",
+    "contentLogo": "Logo zawartości",
+    "donate": "Wesprzyj",
+    "duration": "Czas trwania",
+    "fixed": "Stały",
+    "fixedSetup": "Stały setup",
+    "free": "Darmowe",
+    "history": "Historia",
+    "includes": "Zawiera",
+    "language": "Język",
+    "license": "Licencja",
+    "name": "Nazwa",
+    "owned": "Posiadane",
+    "ownedContent": "Posiadana zawartość",
+    "ownedContentCheckbox": "Pole posiadanej zawartości",
+    "price": "Cena",
+    "race": "wyścig",
+    "released": "Wydano",
+    "search": "Szukaj",
+    "series": "Serie",
+    "seriesLogo": "Logo serii",
+    "settings": "Ustawienia",
+    "setup": "Setup",
+    "tracks": "Tory",
+    "unranked": "Nierankingowa",
+    "used": "Użycia",
+    "usagePerYear": "Użycia/rok",
+    "week": "tydzień",
+    "wishlist": "Lista życzeń"
+  },
+  "categories": {
+    "all": "Wszystkie",
+    "oval": "Owal",
+    "road": "Tor drogowy",
+    "dirt_oval": "Owal szutrowy",
+    "dirt_road": "Szuter",
+    "sports_car": "Samochody sportowe",
+    "formula_car": "Formuła"
+  },
+  "languages": {
+    "dialogDescription": "Wybierz język używany w Racing Planner.",
+    "dialogTitle": "Język",
+    "de": "Niemiecki",
+    "en": "Angielski",
+    "es": "Hiszpański",
+    "fr": "Francuski",
+    "ko": "Koreański",
+    "pl": "Polski",
+    "pt-BR": "Portugalski (Brazylia)",
+    "ru": "Rosyjski",
+    "zh-CN": "Chiński (uproszczony)",
+    "switch": "Zmień język"
+  },
+  "menu": {
+    "about": "O aplikacji",
+    "buyMeCoffee": "Postaw mi kawę",
+    "changeLog": "Lista zmian",
+    "exportMyContent": "Eksportuj moją zawartość",
+    "help": "Pomoc",
+    "privacy": "Prywatność",
+    "theme": "Motyw",
+    "toggleColorMode": "Przełącz tryb kolorów",
+    "toggleTheme": "Przełącz motyw"
+  },
+  "nav": {
+    "mySeason": "Mój sezon",
+    "mySeries": "Moje serie",
+    "myCars": "Moje samochody",
+    "myTracks": "Moje tory",
+    "shopGuide": "Przewodnik zakupów"
+  },
+  "pages": {
+    "cars": {
+      "title": "Moje samochody",
+      "description": "Zaznacz samochody, które posiadasz, i wybierz ulubione. Użyj listy życzeń, aby podejrzeć zawartość przed zakupem."
+    },
+    "tracks": {
+      "title": "Moje tory",
+      "description": "Zaznacz tory, które posiadasz, i wybierz ulubione. Użyj listy życzeń, aby podejrzeć zawartość przed zakupem."
+    },
+    "season": {
+      "title": "Planer sezonu",
+      "description": "Planuj tygodnie sezonu na podstawie ulubionych serii i używaj ustawień, aby dostosować tabelę."
+    },
+    "series": {
+      "title": "Moje ulubione serie",
+      "description": "Wybierz serie, które chcesz widzieć w planerze sezonu"
+    },
+    "shop": {
+      "title": "Przewodnik zakupów",
+      "description": "Zobacz tory najczęściej używane przez ulubione serie. Kup elementy z listy życzeń na iracing.com",
+      "tracksUsed": "Używane tory"
+    },
+    "history": {
+      "title": "Historia użycia torów",
+      "description": "Zobacz najczęściej używane tory w historii iRacing"
+    }
+  },
+  "seasonLabel": {
+    "current": "{{year}} sezon {{season}}"
+  },
+  "filters": {
+    "checkboxState": "Filtruj zawartość według stanu checkboxa",
+    "favoriteOnly": "Filtruj tylko ulubione serie",
+    "historySince": {
+      "all": "Cały okres",
+      "this_year": "Ten rok",
+      "last_year": "Od zeszłego roku",
+      "three_years": "Ostatnie trzy lata",
+      "five_years": "Ostatnie pięć lat",
+      "ten_years": "Ostatnie dziesięć lat"
+    }
+  },
+  "settings": {
+    "showContentCheckboxes": "Pokaż checkboxy zawartości",
+    "showContentCheckboxesTooltip": "Pokaż checkboxy torów, aby szybko zmieniać posiadane tory",
+    "showCarsDropdown": "Pokaż listę samochodów",
+    "showCarsDropdownTooltip": "Pokaż listę samochodów, aby szybko zmieniać posiadane samochody",
+    "showTrackConfig": "Pokaż konfigurację toru",
+    "showTrackConfigTooltip": "Pokaż konfigurację toru używaną w danym tygodniu",
+    "highlightHover": "Podświetl przy najechaniu na tor",
+    "highlightHoverTooltip": "Podświetl wszystkie komórki z tym samym torem",
+    "reorderColumns": "Zmień kolejność kolumn",
+    "reorderColumnsTooltip": "Włącz zmianę kolejności kolumn serii",
+    "highlightCurrentWeek": "Podświetl bieżący tydzień",
+    "highlightCurrentWeekTooltip": "Podświetl wiersz bieżącego tygodnia",
+    "showWishlist": "Pokaż listę życzeń",
+    "showWishlistTooltip": "Określa, czy elementy listy życzeń mają być kolorowane",
+    "showOwned": "Pokaż posiadane",
+    "showOwnedTooltip": "Określa, czy posiadane elementy mają być kolorowane",
+    "showParticipation": "Pokaż program kredytów za udział",
+    "showParticipationTooltip": "Koloruj serie, w których masz wystarczająco torów do nagrody",
+    "showRain": "Pokaż szansę deszczu",
+    "showRainTooltip": "Pokaż wskaźniki deszczu dla torów z szansą opadów",
+    "localTimezone": "Harmonogram w czasie {{timezone}}",
+    "localTimezoneTooltip": "Konwertuj czasy wyścigów z UTC na lokalną strefę czasową",
+    "volumeDiscount": "Rabat ilościowy",
+    "volumeDiscountTooltip": "Zastosuj rabaty iRacing dla zakupów pakietowych",
+    "volumeDiscountLink": "Przejdź do oficjalnego wpisu iRacing o rabatach ilościowych",
+    "loyaltyDiscount": "Rabat lojalnościowy",
+    "loyaltyDiscountTooltip": "Zastosuj rabat lojalnościowy iRacing"
+  },
+  "empty": {
+    "noResults": "Nie znaleziono wyników",
+    "adjustSearch": "Spróbuj zmienić wyszukiwanie",
+    "removeFilters": "Spróbuj usunąć filtry",
+    "differentCategories": "Spróbuj innych kategorii",
+    "noSeriesSelected": "Nie wybrano serii",
+    "noFavoriteSeries": "Nie wybrano żadnych ulubionych serii",
+    "readHelp": "Przeczytaj instrukcje na stronie pomocy",
+    "goSeries": "Przejdź bezpośrednio do strony Moje serie",
+    "noSeriesFound": "Nie znaleziono serii",
+    "emptyWishlist": "Lista życzeń jest pusta",
+    "addWishlist": "Dodaj samochody lub tory do listy życzeń",
+    "noPaidTracksMissing": "Nie brakuje płatnych torów",
+    "ownAllFavoriteTracks": "Masz już wszystkie tory z ulubionych serii"
+  },
+  "shop": {
+    "checkout": "Kup w sklepie iRacing.com",
+    "total": "Razem",
+    "discount": "{{discount}}% rabatu",
+    "discountLoyalty": "lojalnościowy",
+    "discountItems": "{{count}} elementów"
+  },
+  "dialogs": {
+    "aboutTitle": "Racing Planner (v{{version}})",
+    "changeLogTitle": "Lista zmian",
+    "exportTitle": "Eksportuj moją zawartość",
+    "helpTitle": "Witamy w Racing Planner",
+    "privacyTitle": "Polityka prywatności",
+    "replacePreferences": "Zastąp bieżące preferencje"
+  },
+  "counts": {
+    "freeTooltip": "Dostępne za darmo z subskrypcją iRacing",
+    "ownedTooltip": "Zawartość, którą już kupiono",
+    "wishlistTooltip": "Zawartość, którą chcesz kupić; wybierz, aby podejrzeć ją w planerze sezonu"
+  },
+  "content": {
+    "rainChance": "{{chance}}% szansy na deszcz",
+    "participationCredit": "Program kredytów za udział: {{eligible}} ({{count}} torów)",
+    "yes": "Tak",
+    "no": "Nie"
+  }
+}

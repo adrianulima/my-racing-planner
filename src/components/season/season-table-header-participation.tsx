@@ -6,6 +6,7 @@ import { faCheck, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import TRACKS_JSON from "../../ir-data/tracks.json";
 import { Tooltip } from "../ui/tooltip";
+import { useTranslation } from "react-i18next";
 
 const PARTICIPATION_THRESHOLD = 0.66;
 
@@ -15,6 +16,7 @@ function SeasonTableHeaderParticipation({
   seriesTracks: Record<string, number | number[]>;
 }) {
   const { myTracks, wishTracks } = useIr();
+  const { t } = useTranslation();
 
   const {
     ownedTracks,
@@ -94,9 +96,10 @@ function SeasonTableHeaderParticipation({
     <Tooltip
       lazyMount
       unmountOnExit
-      content={`Participation credit program: ${enoughTracks ? "Yes" : "No"} (${
-        ownedTracks + wishedTracks
-      }/${tracksNeeded})`}
+      content={t("content.participationCredit", {
+        eligible: enoughTracks ? t("content.yes") : t("content.no"),
+        count: `${ownedTracks + wishedTracks}/${tracksNeeded}`,
+      })}
       showArrow
       positioning={{ placement: "bottom" }}
       openDelay={200}

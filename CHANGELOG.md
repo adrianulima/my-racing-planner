@@ -2,6 +2,12 @@
 
 All notable changes to the **"Racing Planner"** project will be documented in this file.
 
+## 0.9.0
+
+- Added language selection with persistent user preference
+- Added translations for English, Spanish, Brazilian Portuguese, German, French, Russian, Korean, Simplified Chinese, and Polish
+- Improved layout handling for longer translated labels in navigation, tabs, and dialogs
+
 ## 0.8.14
 
 - Fix for 'Export My Content' dialog immediately closing - thanks Chris Kent

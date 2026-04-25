@@ -3,6 +3,8 @@ import { CategoryIcon } from "@/ir-data/utils/icons";
 import { HStack, IconButton, Input, Tabs, Text } from "@chakra-ui/react";
 import { faCircleXmark, faSearch } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useTranslation } from "react-i18next";
+import { getCategoryTranslationKey } from "@/i18n/category";
 import { InputGroup } from "../ui/input-group";
 import { PopoverContent, PopoverRoot, PopoverTrigger } from "../ui/popover";
 
@@ -20,6 +22,7 @@ function ContentFilterPanel<T extends string>({
   onSearchChange: (value: string) => void;
 }) {
   const { width } = useScreenSize();
+  const { t } = useTranslation();
 
   const setSearchWrapper = (newValue: string) => {
     onSearchChange(newValue);
@@ -33,7 +36,7 @@ function ContentFilterPanel<T extends string>({
       >
         <PopoverTrigger asChild>
           <IconButton
-            aria-label="Search"
+            aria-label={t("common.search")}
             variant={"outline"}
             size={"lg"}
             bgColor={{ base: "bg.muted", _hover: "bg" }}
@@ -58,7 +61,7 @@ function ContentFilterPanel<T extends string>({
             }
           >
             <Input
-              placeholder="Search"
+              placeholder={t("common.search")}
               variant="subtle"
               value={search}
               onChange={(e) => setSearchWrapper(e.target.value)}
@@ -78,20 +81,26 @@ function ContentFilterPanel<T extends string>({
         <Tabs.List
           flex={{ md: "unset", base: 1 }}
           width={{ md: "unset", base: "100%" }}
+          minW={0}
         >
           {Object.entries(tabs).map(([k, tab]: [string, string]) => (
             <Tabs.Trigger
               value={tab}
               key={tab}
-              width={{ md: "unset", base: "100%" }}
+              width={{ md: "auto", base: "100%" }}
+              minW={0}
+              maxW={{ md: "150px", base: undefined }}
+              flexShrink={1}
             >
               <CategoryIcon category={k} />
               <Text
-                hideBelow={tab === "All" ? undefined : "md"}
+                hideBelow={tab === tabs.all ? undefined : "md"}
                 textWrap={"nowrap"}
                 userSelect={"none"}
+                minW={0}
+                truncate
               >
-                {tab}
+                {t(getCategoryTranslationKey(tab))}
               </Text>
             </Tabs.Trigger>
           ))}

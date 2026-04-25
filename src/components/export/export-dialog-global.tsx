@@ -8,6 +8,7 @@ import {
 } from "@/components/ui/dialog";
 import useScreenSize from "@/hooks/useScreenSize";
 import { lazy, Suspense } from "react";
+import { useTranslation } from "react-i18next";
 import { create } from "zustand";
 import LoadingContainer from "../page/loading-container";
 
@@ -20,6 +21,7 @@ export const openExportDialog = () => useExportDialog.setState({ open: true });
 function ExportDialogGlobal() {
   const { open } = useExportDialog();
   const { width } = useScreenSize();
+  const { t } = useTranslation();
 
   return (
     <DialogRoot
@@ -34,7 +36,7 @@ function ExportDialogGlobal() {
     >
       <DialogContent>
         <DialogHeader textAlign={"center"}>
-          <DialogTitle>Export My Content</DialogTitle>
+          <DialogTitle>{t("dialogs.exportTitle")}</DialogTitle>
         </DialogHeader>
         <DialogBody px={{ base: 4, md: 10 }} textAlign={"justify"}>
           <Suspense fallback={<LoadingContainer />}>

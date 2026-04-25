@@ -7,6 +7,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 import Page from "../page/page";
 import PageHeader from "../page/page-header";
 import { Checkbox } from "../ui/checkbox";
@@ -50,6 +51,7 @@ function ContentPage({
   const [search, setSearch] = useState<string>("");
   const [list, setList] = useState(contentListJson);
   const [filterChecks, setFilterChecks] = useState(EContentCheckState.None);
+  const { t } = useTranslation();
 
   const filterOwned = filterChecks === EContentCheckState.Owned;
   const filterWish = filterChecks === EContentCheckState.Wish;
@@ -121,7 +123,7 @@ function ContentPage({
           <Tooltip
             lazyMount
             unmountOnExit
-            content={"Filter content by checkbox state"}
+            content={t("filters.checkboxState")}
             showArrow
             openDelay={200}
             closeDelay={100}

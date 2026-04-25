@@ -10,12 +10,14 @@ import {
 import useScreenSize from "@/hooks/useScreenSize";
 import { DialogRootProps } from "@chakra-ui/react";
 import { lazy, Suspense, useState } from "react";
+import { useTranslation } from "react-i18next";
 import LoadingContainer from "../page/loading-container";
 const ChangelogContent = lazy(() => import("./changelog-content"));
 
 function ChangelogDialog({ children, ...rest }: DialogRootProps) {
   const [open, setOpen] = useState(false);
   const { width } = useScreenSize();
+  const { t } = useTranslation();
 
   return (
     <DialogRoot
@@ -36,7 +38,7 @@ function ChangelogDialog({ children, ...rest }: DialogRootProps) {
 
       <DialogContent>
         <DialogHeader textAlign={"center"}>
-          <DialogTitle>Change Log</DialogTitle>
+          <DialogTitle>{t("dialogs.changeLogTitle")}</DialogTitle>
         </DialogHeader>
         <DialogBody px={{ base: 4, md: 10 }} textAlign={"justify"}>
           <Suspense fallback={<LoadingContainer />}>

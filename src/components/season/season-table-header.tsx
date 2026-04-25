@@ -22,6 +22,7 @@ import SortableColumnHeader from "./sortable-column-header";
 import LicenseBadge from "../badges/license-badge";
 import getScheduleDescription from "../series/getScheduleDescription";
 import { TSeriesDateMap } from "./useSeason";
+import { useTranslation } from "react-i18next";
 
 function SeasonTableHeader({
   filteredFavorites,
@@ -38,6 +39,7 @@ function SeasonTableHeader({
   } = useUi();
   const { scrolled } = useAppLayout();
   const { favoriteSeries } = useIr();
+  const { t } = useTranslation();
 
   const onClickSwap = (index: number) => {
     setFavoriteSeriesList(arrayMove(favoriteSeries, index, index - 1));
@@ -53,7 +55,7 @@ function SeasonTableHeader({
           left={"0"}
           zIndex="sticky"
         >
-          Week
+          {t("common.week")}
         </Table.ColumnHeader>
 
         <For
@@ -111,7 +113,7 @@ function SeasonTableHeader({
                           >
                             {series.license.letter}
                           </LicenseBadge>
-                          {raceDuration} race
+                          {raceDuration} {t("common.race")}
                         </Text>
 
                         {scheduleDescription && (

@@ -5,6 +5,8 @@ import { Badge, Center, For, Image, Table, Text } from "@chakra-ui/react";
 import ContentCheckbox from "../content/content-checkbox";
 import ContentNameBadge from "../content/content-name-badge";
 import { Tooltip } from "../ui/tooltip";
+import { useTranslation } from "react-i18next";
+import { getCategoryTranslationKey } from "@/i18n/category";
 
 function HistoryTableRow({
   id,
@@ -31,6 +33,7 @@ function HistoryTableRow({
   released: number;
   usagePerYear: number;
 }) {
+  const { t } = useTranslation();
   return (
     <Table.Row bgColor={"transparent"}>
       <Table.Cell minWidth={"40px"} textAlign={"center"}>
@@ -89,7 +92,7 @@ function HistoryTableRow({
               lazyMount
               unmountOnExit
               key={`${category}`}
-              content={Category[category as keyof typeof Category]}
+              content={t(getCategoryTranslationKey(Category[category as keyof typeof Category]))}
               showArrow
               positioning={{ placement: "top" }}
               openDelay={200}

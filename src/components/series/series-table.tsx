@@ -1,5 +1,6 @@
 import { Table, VisuallyHidden } from "@chakra-ui/react";
 import { ReactNode } from "react";
+import { useTranslation } from "react-i18next";
 import InfinityTable from "../table/infinity-table";
 
 type Dict<T = any> = Record<string, T>;
@@ -12,6 +13,7 @@ function SeriesTable<T extends string | number | Dict | undefined>({
   rows: (item: Exclude<T, undefined>, index: number) => React.ReactNode;
   filterButton?: ReactNode;
 }) {
+  const { t } = useTranslation();
   return (
     <InfinityTable list={list} rows={rows} cols={9}>
       <Table.Row bgColor={"bg.muted"}>
@@ -19,26 +21,26 @@ function SeriesTable<T extends string | number | Dict | undefined>({
           {filterButton}
         </Table.ColumnHeader>
         <Table.ColumnHeader minWidth={"60px"} textAlign={"center"}>
-          <VisuallyHidden>Series Logo</VisuallyHidden>
+          <VisuallyHidden>{t("common.seriesLogo")}</VisuallyHidden>
         </Table.ColumnHeader>
-        <Table.ColumnHeader width={"100%"}>Name</Table.ColumnHeader>
+        <Table.ColumnHeader width={"100%"}>{t("common.name")}</Table.ColumnHeader>
         <Table.ColumnHeader minWidth={"90px"} textAlign={"center"}>
-          Setup
-        </Table.ColumnHeader>
-        <Table.ColumnHeader minWidth={"90px"} textAlign={"center"}>
-          Cars
+          {t("common.setup")}
         </Table.ColumnHeader>
         <Table.ColumnHeader minWidth={"90px"} textAlign={"center"}>
-          Tracks
+          {t("common.cars")}
         </Table.ColumnHeader>
         <Table.ColumnHeader minWidth={"90px"} textAlign={"center"}>
-          Category
+          {t("common.tracks")}
         </Table.ColumnHeader>
         <Table.ColumnHeader minWidth={"90px"} textAlign={"center"}>
-          Duration
+          {t("common.category")}
         </Table.ColumnHeader>
         <Table.ColumnHeader minWidth={"90px"} textAlign={"center"}>
-          License
+          {t("common.duration")}
+        </Table.ColumnHeader>
+        <Table.ColumnHeader minWidth={"90px"} textAlign={"center"}>
+          {t("common.license")}
         </Table.ColumnHeader>
       </Table.Row>
     </InfinityTable>

@@ -1,4 +1,5 @@
 import { ECarCategories } from "@/ir-data/utils/types";
+import { getStoredLanguage, type Language } from "@/i18n";
 import { create } from "zustand";
 import { persist } from "zustand/middleware";
 
@@ -36,6 +37,7 @@ export const useUiStorePersist = create(
       shopVolumeDiscount: true,
       shopLoyaltyDiscount: false,
       helpPresented: false,
+      language: getStoredLanguage(),
     }),
     {
       name: "ui-settings",
@@ -88,6 +90,9 @@ export const setShopLoyaltyDiscount = (value: boolean) =>
 export const setHelpPresented = (value: boolean) =>
   useUiStorePersist.setState(() => ({ helpPresented: value }));
 
+export const setLanguage = (value: Language) =>
+  useUiStorePersist.setState(() => ({ language: value }));
+
 export const useUi = () => {
   const seasonShowReorder = useUiStorePersist(
     (state) => state.seasonShowReorder,
@@ -124,6 +129,7 @@ export const useUi = () => {
     (state) => state.shopLoyaltyDiscount,
   );
   const helpPresented = useUiStorePersist((state) => state.helpPresented);
+  const language = useUiStorePersist((state) => state.language);
 
   return {
     seasonShowReorder,
@@ -141,5 +147,6 @@ export const useUi = () => {
     shopVolumeDiscount,
     shopLoyaltyDiscount,
     helpPresented,
+    language,
   };
 };

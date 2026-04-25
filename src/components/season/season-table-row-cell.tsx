@@ -5,6 +5,7 @@ import SeasonTableCarsPopover from "./season-table-cars-popover";
 import SortableColumnCell from "./sortable-column-cell";
 import { Tooltip } from "../ui/tooltip";
 import { TSeriesDateMap } from "./useSeason";
+import { useTranslation } from "react-i18next";
 
 function getColorScale(
   free: boolean,
@@ -56,6 +57,7 @@ function SeasonTableRowCell({
     seasonShowOwned,
     seasonShowRain,
   } = useUi();
+  const { t } = useTranslation();
 
   const cars =
     (seriesDateMap?.[seriesId as keyof typeof seriesDateMap]?.[
@@ -90,7 +92,7 @@ function SeasonTableRowCell({
         <Tooltip
           lazyMount
           unmountOnExit
-          content={`${rainChance}% chance of rain`}
+          content={t("content.rainChance", { chance: rainChance })}
           showArrow
           positioning={{ placement: "left" }}
           openDelay={200}

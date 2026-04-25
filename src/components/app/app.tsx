@@ -1,6 +1,7 @@
 import { Flex, Stack } from "@chakra-ui/react";
 import TransferContentDialog from "../export/tranfer-content-dialog";
 import ExportDialogGlobal from "../export/export-dialog-global";
+import LanguageDialogGlobal from "../language/language-dialog-global";
 import MainContainer from "../main-container/main-container";
 import BottomNavBar from "../nav-bar/bottom-nav-bar";
 import NavBar from "../nav-bar/nav-bar";
@@ -37,6 +38,7 @@ function App() {
 
       <TransferContentDialog />
       <ExportDialogGlobal />
+      <LanguageDialogGlobal />
     </Flex>
   );
 }

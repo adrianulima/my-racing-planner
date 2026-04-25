@@ -1,6 +1,7 @@
 import { useDialogTracking } from "@/hooks/useDialogTracking";
 import { EDialogs } from "@/store/ui";
 import { For, Heading, Link, List, Text } from "@chakra-ui/react";
+import { Trans, useTranslation } from "react-i18next";
 import { Tooltip } from "../ui/tooltip";
 
 const contributors = [
@@ -12,84 +13,74 @@ const contributors = [
 
 function AboutContent() {
   useDialogTracking(EDialogs.About);
+  const { t } = useTranslation();
   return (
     <>
       <section>
-        <Heading>Data Updates</Heading>
-        <Text as="p">
-          The content on this site is updated at the beginning of every iRacing
-          season. All data is fetched directly from the iRacing public API.
-        </Text>
+        <Heading>{t("about.dataUpdates")}</Heading>
+        <Text as="p">{t("about.dataUpdatesText")}</Text>
         <Text as="p" mt={2}>
-          For detailed update history, visit the Change Log.
+          {t("about.changeLogText")}
         </Text>
       </section>
 
       <section>
-        <Heading mt={2}>Feedback and Suggestions</Heading>
+        <Heading mt={2}>{t("about.feedback")}</Heading>
         <Text as="div">
-          Your feedback will be highly appreciated! If you have any suggestions
-          or encounter issues, please consider opening an issue at the{" "}
-          <Link
-            href="https://github.com/adrianulima/my-racing-planner"
-            target="_blank"
-            rel="noreferrer"
-          >
-            GitHub Repository
-          </Link>{" "}
-          or send me an{" "}
-          <Tooltip
-            lazyMount
-            unmountOnExit
-            content={"adrianulima@gmail.com"}
-            showArrow
-            positioning={{ placement: "bottom" }}
-            openDelay={200}
-            closeDelay={100}
-          >
-            <Link
-              href="mailto:adrianulima@gmail.com"
-              target="_blank"
-              rel="noreferrer"
-            >
-              email
-            </Link>
-          </Tooltip>
-          .
+          <Trans
+            i18nKey="about.feedbackText"
+            components={{
+              repo: (
+                <Link
+                  href="https://github.com/adrianulima/my-racing-planner"
+                  target="_blank"
+                  rel="noreferrer"
+                />
+              ),
+              email: (
+                <Tooltip
+                  lazyMount
+                  unmountOnExit
+                  content={"adrianulima@gmail.com"}
+                  showArrow
+                  positioning={{ placement: "bottom" }}
+                  openDelay={200}
+                  closeDelay={100}
+                >
+                  <Link
+                    href="mailto:adrianulima@gmail.com"
+                    target="_blank"
+                    rel="noreferrer"
+                  />
+                </Tooltip>
+              ),
+            }}
+          />
         </Text>
       </section>
 
       <section>
         <Text my={2} fontWeight={"bold"} as="p">
-          This project is not affiliated with or endorsed by iRacing.com.
+          {t("about.disclaimer")}
         </Text>
       </section>
 
       <section>
-        <Heading mt={2}>The Creator</Heading>
+        <Heading mt={2}>{t("about.creator")}</Heading>
         <Text as="p">
-          My name is <strong>Adriano Lima</strong>, I am from Brazil and have
-          been passionate about sim racing since 2010. I started with rFactor
-          and later explored other simulators until I finally gave iRacing a
-          chance in 2020. Sim racing has always been a hobby for me, but
-          recently, I've been working to improve my driving techniques.
+          <Trans
+            i18nKey="about.creatorText1"
+            components={{ strong: <strong /> }}
+          />
         </Text>
         <Text as="p" my={2}>
-          As a software developer, I've always enjoyed exploring iRacing APIs.
-          In the past, I created a Twitch bot and an Overlay prototype, and now
-          I'm excited to present this project. Every season, I find myself
-          wondering which tracks and cars to purchase. This tool was initially
-          designed to address my own needs, but I hope it will also be helpful
-          to the broader iRacing community.
+          {t("about.creatorText2")}
         </Text>
       </section>
 
       <section>
-        <Heading mt={2}>Contributors</Heading>
-        <Text as="p">
-          This project would not have been possible without the help and support
-          of the following contributors:
-        </Text>
+        <Heading mt={2}>{t("about.contributors")}</Heading>
+        <Text as="p">{t("about.contributorsText")}</Text>
         <List.Root>
           <For
             each={contributors}

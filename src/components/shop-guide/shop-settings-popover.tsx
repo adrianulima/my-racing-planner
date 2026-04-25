@@ -12,14 +12,16 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { PopoverContent, PopoverRoot, PopoverTrigger } from "../ui/popover";
 import { Switch } from "../ui/switch";
 import { Tooltip } from "../ui/tooltip";
+import { useTranslation } from "react-i18next";
 
 function ShopSettingsPopover() {
   const { shopLoyaltyDiscount, shopVolumeDiscount } = useUi();
+  const { t } = useTranslation();
   return (
     <PopoverRoot positioning={{ placement: "left-start" }}>
       <PopoverTrigger asChild>
         <IconButton
-          aria-label="Settings"
+          aria-label={t("common.settings")}
           variant={"outline"}
           size={"lg"}
           bgColor={{ base: "bg.muted", _hover: "bg" }}
@@ -34,7 +36,7 @@ function ShopSettingsPopover() {
             <Tooltip
               lazyMount
               unmountOnExit
-              content={"Apply iRacing discounts for bundle purchases"}
+              content={t("settings.volumeDiscountTooltip")}
               showArrow
               positioning={{ placement: "top" }}
               openDelay={200}
@@ -48,14 +50,14 @@ function ShopSettingsPopover() {
                   setShopVolumeDiscount(checked)
                 }
               >
-                Volume discount
+                {t("settings.volumeDiscount")}
               </Switch>
             </Tooltip>
 
             <Tooltip
               lazyMount
               unmountOnExit
-              content={"Go to iRacing's official Volume Discounts blog post"}
+              content={t("settings.volumeDiscountLink")}
               showArrow
               positioning={{ placement: "top" }}
               openDelay={200}
@@ -73,7 +75,7 @@ function ShopSettingsPopover() {
           <Tooltip
             lazyMount
             unmountOnExit
-            content={"Apply iRacing loyalty discount"}
+            content={t("settings.loyaltyDiscountTooltip")}
             showArrow
             positioning={{ placement: "top" }}
             openDelay={200}
@@ -85,7 +87,7 @@ function ShopSettingsPopover() {
               checked={shopLoyaltyDiscount}
               onCheckedChange={({ checked }) => setShopLoyaltyDiscount(checked)}
             >
-              Loyalty discount
+              {t("settings.loyaltyDiscount")}
             </Switch>
           </Tooltip>
         </VStack>
