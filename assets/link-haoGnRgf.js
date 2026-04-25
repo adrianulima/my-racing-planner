@@ -1,0 +1,1 @@
+import{h as e}from"./middleware-eKtsvnxl.js";var{withContext:t,PropsProvider:n}=e({key:`link`}),r=t(`a`);r.displayName=`Link`;export{r as t};
