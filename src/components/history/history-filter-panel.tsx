@@ -6,6 +6,7 @@ import { faClockRotateLeft } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useTranslation } from "react-i18next";
 import { getCategoryTranslationKey } from "@/i18n/category";
+import { trackEvent } from "@/utils/analytics";
 import { PopoverContent, PopoverRoot, PopoverTrigger } from "../ui/popover";
 import { Radio, RadioGroup } from "../ui/radio";
 
@@ -53,7 +54,13 @@ function HistoryFilterPanel<T extends string>({
         <PopoverContent>
           <RadioGroup
             value={since}
-            onValueChange={(e) => onSinceChange(e.value as EHistorySince)}
+            onValueChange={(e) => {
+              onSinceChange(e.value as EHistorySince);
+              trackEvent("history_filter_change", {
+                filter_type: "since",
+                value: e.value,
+              });
+            }}
           >
             <VStack alignItems={"start"} p={2}>
               <Radio value={EHistorySince.Ever}>
@@ -82,7 +89,13 @@ function HistoryFilterPanel<T extends string>({
       <Tabs.Root
         size={"sm"}
         value={tab}
-        onValueChange={(e) => onTabChange(e.value as T)}
+        onValueChange={(e) => {
+          onTabChange(e.value as T);
+          trackEvent("history_filter_change", {
+            filter_type: "category",
+            value: e.value,
+          });
+        }}
         variant={"enclosed"}
         width={{ md: "unset", base: "100%" }}
         flex={{ md: "unset", base: 1 }}

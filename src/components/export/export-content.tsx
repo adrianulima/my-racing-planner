@@ -1,4 +1,5 @@
 import { useIr } from "@/store/ir";
+import { trackEvent } from "@/utils/analytics";
 import { Heading, Stack, Text } from "@chakra-ui/react";
 import { faCopy } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -8,13 +9,15 @@ import { Button } from "../ui/button";
 
 function ExportContent() {
   const { t } = useTranslation();
-  const { myCars, myTracks, wishCars, wishTracks, favoriteSeries } = useIr();
+  const { myCars, myTracks, wishCars, wishTracks, favoriteSeries, mySchedule } =
+    useIr();
   const queryParams = {
     myCars: myCars.join("-"),
     myTracks: myTracks.join("-"),
     wishCars: wishCars.join("-"),
     wishTracks: wishTracks.join("-"),
     favoriteSeries: favoriteSeries.join("-"),
+    mySchedule: mySchedule.join(","),
   };
 
   const params = new URLSearchParams(queryParams).toString();
@@ -51,6 +54,13 @@ function ExportContent() {
           variant={"subtle"}
           onClick={() => {
             navigator.clipboard.writeText(url);
+            trackEvent("export_copy_url", {
+              cars_owned_count: myCars.length,
+              tracks_owned_count: myTracks.length,
+              wishlist_count: wishCars.length + wishTracks.length,
+              favorite_series_count: favoriteSeries.length,
+              schedule_count: mySchedule.length,
+            });
           }}
         >
           <span>

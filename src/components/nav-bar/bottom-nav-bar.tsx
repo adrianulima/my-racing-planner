@@ -2,9 +2,10 @@ import { ETabs } from "@/store/ui";
 import { For, HStack, StackProps } from "@chakra-ui/react";
 import {
   faCar,
+  faCalendarDays,
   faFlagCheckered,
   faRoad,
-  faShoppingBag,
+  // faShoppingBag,
   faTableCellsLarge,
 } from "@fortawesome/free-solid-svg-icons";
 import { Link, useLocation } from "wouter";
@@ -17,12 +18,13 @@ function BottomNavBar({ ...props }: StackProps) {
   const { t } = useTranslation();
 
   const tabsAction = [
+    { label: t("nav.mySchedule"), icon: faCalendarDays, index: ETabs.MySchedule },
     { label: t("nav.mySeason"), icon: faTableCellsLarge, index: ETabs.MySeason },
     { label: t("nav.mySeries"), icon: faFlagCheckered, index: ETabs.MySeries },
     location === ETabs.MyTracks
       ? { label: t("nav.myTracks"), icon: faRoad, index: ETabs.MyTracks }
       : { label: t("nav.myCars"), icon: faCar, index: ETabs.MyCars },
-    { label: t("nav.shopGuide"), icon: faShoppingBag, index: ETabs.ShopGuide },
+    // { label: t("nav.shopGuide"), icon: faShoppingBag, index: ETabs.ShopGuide },
   ];
 
   return (

@@ -19,6 +19,7 @@
     "owned": "Posiadane",
     "ownedContent": "Posiadana zawartość",
     "ownedContentCheckbox": "Pole posiadanej zawartości",
+    "print": "Drukuj",
     "price": "Cena",
     "race": "wyścig",
     "released": "Wydano",
@@ -73,7 +74,8 @@
     "mySeries": "Moje serie",
     "myCars": "Moje samochody",
     "myTracks": "Moje tory",
-    "shopGuide": "Przewodnik zakupów"
+    "shopGuide": "Przewodnik zakupów",
+    "mySchedule": "Mój harmonogram"
   },
   "pages": {
     "cars": {
@@ -85,7 +87,7 @@
       "description": "Zaznacz tory, które posiadasz, i wybierz ulubione. Użyj listy życzeń, aby podejrzeć zawartość przed zakupem."
     },
     "season": {
-      "title": "Planer sezonu",
+      "title": "Mój sezon",
       "description": "Planuj tygodnie sezonu na podstawie ulubionych serii i używaj ustawień, aby dostosować tabelę."
     },
     "series": {
@@ -100,6 +102,10 @@
     "history": {
       "title": "Historia użycia torów",
       "description": "Zobacz najczęściej używane tory w historii iRacing"
+    },
+    "schedule": {
+      "title": "Mój harmonogram",
+      "description": "Twoje zaplanowane wyścigi na każdy tydzień. Wybierz tory, na których chcesz jechać, na stronie Mój sezon."
     }
   },
   "seasonLabel": {
@@ -159,7 +165,9 @@
     "emptyWishlist": "Lista życzeń jest pusta",
     "addWishlist": "Dodaj samochody lub tory do listy życzeń",
     "noPaidTracksMissing": "Nie brakuje płatnych torów",
-    "ownAllFavoriteTracks": "Masz już wszystkie tory z ulubionych serii"
+    "ownAllFavoriteTracks": "Masz już wszystkie tory z ulubionych serii",
+    "selectSeriesSchedule": "Wybierz serie i zaplanuj wyścigi w tabeli Mój sezon",
+    "goSeasonSchedule": "Przejdź do Mój sezon, aby wybrać wyścigi"
   },
   "shop": {
     "checkout": "Kup w sklepie iRacing.com",
@@ -186,5 +194,9 @@
     "participationCredit": "Program kredytów za udział: {{eligible}} ({{count}} torów)",
     "yes": "Tak",
     "no": "Nie"
+  },
+  "schedule": {
+    "thisWeek": "Ten tydzień",
+    "noRacesSelected": "Brak wybranych wyścigów na ten tydzień"
   }
 }

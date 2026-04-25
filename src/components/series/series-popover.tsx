@@ -1,4 +1,6 @@
 import { setFavoriteSeriesItem, useIr } from "@/store/ir";
+import { trackEvent } from "@/utils/analytics";
+import { TContent } from "@/ir-data/utils/types";
 import { For, Table, Text } from "@chakra-ui/react";
 import CARS_JSON from "../../ir-data/cars.json";
 import SERIES_JSON from "../../ir-data/series.json";
@@ -13,15 +15,17 @@ function SeriesPopover({
   content: "cars" | "tracks";
   id: number;
 }) {
-  const contentItem: any =
+  const contentItem = (
     content === "cars"
       ? CARS_JSON[id.toString() as keyof typeof CARS_JSON]
-      : TRACKS_JSON[id.toString() as keyof typeof TRACKS_JSON];
+      : TRACKS_JSON[id.toString() as keyof typeof TRACKS_JSON]
+  ) as TContent | undefined;
 
   const { favoriteSeries } = useIr();
 
-  const listSeries =
-    (contentItem.skuSeries ? contentItem.skuSeries : contentItem.series) || [];
+  const listSeries = contentItem
+    ? (contentItem.skuSeries ? contentItem.skuSeries : contentItem.series) || []
+    : [];
 
   return (
     <Table.ScrollArea width="100%" maxH={"320px"}>
@@ -46,9 +50,14 @@ function SeriesPopover({
                         size={"xs"}
                         mt={"4px"}
                         checked={favoriteSeries.includes(item)}
-                        onCheckedChange={({ checked }) =>
-                          setFavoriteSeriesItem(series.id, !!checked)
-                        }
+                        onCheckedChange={({ checked }) => {
+                          setFavoriteSeriesItem(series.id, !!checked);
+                          trackEvent("favorite_series_change", {
+                            action: checked ? "add" : "remove",
+                            category: series.category,
+                            license: series.license.letter,
+                          });
+                        }}
                       />
                     </Table.Cell>
                     <Table.Cell

@@ -2,6 +2,7 @@ import { useIr } from "@/store/ir";
 import { For, Table, Text } from "@chakra-ui/react";
 import CARS_JSON from "../../ir-data/cars.json";
 import TRACKS_JSON from "../../ir-data/tracks.json";
+import { TContent } from "@/ir-data/utils/types";
 import ContentCheckbox from "./content-checkbox";
 
 function ContentPopover({
@@ -11,7 +12,10 @@ function ContentPopover({
   content: "cars" | "tracks";
   list: number[];
 }) {
-  const contentList: any = content === "cars" ? CARS_JSON : TRACKS_JSON;
+  const contentList = (content === "cars" ? CARS_JSON : TRACKS_JSON) as Record<
+    string,
+    TContent
+  >;
   const { wishCars, wishTracks, myCars, myTracks } = useIr();
   const [wishes, myContent] =
     content === "cars" ? [wishCars, myCars] : [wishTracks, myTracks];

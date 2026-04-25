@@ -1,24 +1,15 @@
+import { getScheduleEntryKey, toggleScheduleEntry, useIr } from "@/store/ir";
 import { useUi } from "@/store/ui";
+import { trackEvent } from "@/utils/analytics";
 import { Text } from "@chakra-ui/react";
+import { getContentColorScale } from "@/utils/color";
 import ContentCheckbox from "../content/content-checkbox";
 import SeasonTableCarsPopover from "./season-table-cars-popover";
 import SortableColumnCell from "./sortable-column-cell";
 import { Tooltip } from "../ui/tooltip";
 import { TSeriesDateMap } from "./useSeason";
 import { useTranslation } from "react-i18next";
-
-function getColorScale(
-  free: boolean,
-  seasonShowOwned: boolean,
-  owned: boolean,
-  seasonShowWishlist: boolean,
-  wish: boolean,
-) {
-  if (free) return "green";
-  if (seasonShowOwned && owned) return "teal";
-  if (seasonShowWishlist && wish) return "blue";
-  return "red";
-}
+import { KeyboardEvent, MouseEvent } from "react";
 
 function SeasonTableRowCell({
   seriesId,
@@ -59,6 +50,36 @@ function SeasonTableRowCell({
   } = useUi();
   const { t } = useTranslation();
 
+  const { mySchedule } = useIr();
+  const scheduled = mySchedule.includes(getScheduleEntryKey(seriesId, date));
+
+  const toggleScheduled = () => {
+    trackEvent("schedule_entry_change", {
+      action: scheduled ? "remove" : "add",
+      track_state: free
+        ? "free"
+        : owned
+          ? "owned"
+          : wish
+            ? "wishlist"
+            : "missing",
+    });
+    toggleScheduleEntry(seriesId, date);
+  };
+
+  const handleCellClick = (e: MouseEvent) => {
+    // Don't toggle if clicking on interactive children (checkbox, popover button)
+    const target = e.target as HTMLElement;
+    if (target.closest("input, button, label")) return;
+    toggleScheduled();
+  };
+
+  const handleCellKeyDown = (e: KeyboardEvent) => {
+    if (e.key !== "Enter" && e.key !== " ") return;
+    e.preventDefault();
+    toggleScheduled();
+  };
+
   const cars =
     (seriesDateMap?.[seriesId as keyof typeof seriesDateMap]?.[
       `${date}_cars`
@@ -69,12 +90,10 @@ function SeasonTableRowCell({
       `${date}_rainChance`
     ] as number) || 0;
 
-  const scale = getColorScale(
+  const scale = getContentColorScale(
     free,
-    seasonShowOwned,
-    owned,
-    seasonShowWishlist,
-    wish,
+    seasonShowOwned && owned,
+    seasonShowWishlist && wish,
   );
   const color = { _dark: `${scale}.400`, base: `${scale}.600` };
   const bgColor = { base: `${scale}.50`, _dark: `${scale}.800` };
@@ -87,6 +106,21 @@ function SeasonTableRowCell({
       onMouseLeave={() => seasonHighlight && setHighlightTrack(-1)}
       bgColor={seasonHighlight && highlight ? bgColorHighlight : bgColor}
       color={color}
+      onClick={handleCellClick}
+      onKeyDown={handleCellKeyDown}
+      cursor="pointer"
+      tabIndex={0}
+      role="checkbox"
+      aria-checked={scheduled}
+      aria-label={`${name} ${t("nav.mySchedule")}`}
+      boxShadow={
+        scheduled
+          ? {
+              base: `inset 0 0 0 2px var(--chakra-colors-${scale}-600)`,
+              _dark: `inset 0 0 0 2px var(--chakra-colors-${scale}-400)`,
+            }
+          : undefined
+      }
     >
       {seasonShowRain && rainChance > 0 && (
         <Tooltip

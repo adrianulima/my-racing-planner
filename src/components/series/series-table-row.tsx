@@ -8,6 +8,7 @@ import { CategoryIcon } from "@/ir-data/utils/icons";
 import { Category } from "@/ir-data/utils/types";
 import { IR_URL } from "@/ir-data/utils/urls";
 import { setFavoriteSeriesItem } from "@/store/ir";
+import { trackEvent } from "@/utils/analytics";
 import { Badge, Box, Center, HStack, Image, Table } from "@chakra-ui/react";
 import {
   faCar,
@@ -69,7 +70,14 @@ function SeriesTableRow({
         <StarCheckbox
           onClick={(e) => e.stopPropagation()}
           checked={favorite}
-          onCheckedChange={(e) => setFavoriteSeriesItem(id, !!e.checked)}
+          onCheckedChange={(e) => {
+            setFavoriteSeriesItem(id, !!e.checked);
+            trackEvent("favorite_series_change", {
+              action: e.checked ? "add" : "remove",
+              category,
+              license,
+            });
+          }}
         />
       </Table.Cell>
       <Table.Cell minWidth={"60px"} textAlign={"center"}>
@@ -168,7 +176,11 @@ function SeriesTableRow({
         <Tooltip
           lazyMount
           unmountOnExit
-          content={t(getCategoryTranslationKey(Category[category as keyof typeof Category]))}
+          content={t(
+            getCategoryTranslationKey(
+              Category[category as keyof typeof Category],
+            ),
+          )}
           showArrow
           positioning={{ placement: "top" }}
           openDelay={200}

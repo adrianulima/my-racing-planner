@@ -5,6 +5,7 @@ import {
 } from "@/ir-data/utils/history";
 import { ECarCategories } from "@/ir-data/utils/types";
 import { useIr } from "@/store/ir";
+import { trackEvent } from "@/utils/analytics";
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import TRACKS_JSON from "../../ir-data/tracks.json";
@@ -20,6 +21,11 @@ function HistoryPage() {
   );
   const [since, setSince] = useState<EHistorySince>(EHistorySince.Ever);
   const [sortBy, setSortBy] = useState<ESortHistory>(ESortHistory.Usage);
+
+  const handleSortChange = (v: ESortHistory) => {
+    setSortBy(v);
+    trackEvent("history_sort_change", { sort_by: v });
+  };
   const [list, setList] = useState(
     getSortedHistory(ECarCategories.all, EHistorySince.Ever),
   );
@@ -48,7 +54,7 @@ function HistoryPage() {
 
       <HistoryTable
         sortBy={sortBy}
-        setSortBy={setSortBy}
+        setSortBy={handleSortChange}
         list={list}
         rows={(item) => {
           const track =

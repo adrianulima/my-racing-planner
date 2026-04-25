@@ -24,6 +24,7 @@
     "owned": "Propio",
     "ownedContent": "Contenido propio",
     "ownedContentCheckbox": "Casilla de contenido propio",
+    "print": "Imprimir",
     "price": "Precio",
     "race": "carrera",
     "released": "Lanzamiento",
@@ -78,7 +79,8 @@
     "mySeries": "Mis series",
     "myCars": "Mis autos",
     "myTracks": "Mis pistas",
-    "shopGuide": "Guía de compra"
+    "shopGuide": "Guía de compra",
+    "mySchedule": "Mi calendario"
   },
   "pages": {
     "cars": {
@@ -90,7 +92,7 @@
       "description": "Marca las pistas que tienes y selecciona tus favoritas. Usa la lista de deseos para previsualizar el contenido antes de comprarlo."
     },
     "season": {
-      "title": "Planificador de temporada",
+      "title": "Mi temporada",
       "description": "Planifica las semanas de tu temporada a partir de tus series favoritas y usa las opciones de configuración para personalizar la tabla."
     },
     "series": {
@@ -105,6 +107,10 @@
     "history": {
       "title": "Historial de uso de pistas",
       "description": "Consulta las pistas más usadas de todos los tiempos en iRacing"
+    },
+    "schedule": {
+      "title": "Mi calendario",
+      "description": "Tus carreras planificadas para cada semana. Selecciona las pistas que quieres correr en la página Mi temporada."
     }
   },
   "seasonLabel": {
@@ -169,7 +175,9 @@
     "emptyWishlist": "Lista de deseos vacía",
     "addWishlist": "Agrega algunos autos o pistas a tu lista de deseos",
     "noPaidTracksMissing": "No faltan pistas pagas",
-    "ownAllFavoriteTracks": "Ya tienes todas las pistas de tus series favoritas"
+    "ownAllFavoriteTracks": "Ya tienes todas las pistas de tus series favoritas",
+    "selectSeriesSchedule": "Selecciona series y programa carreras desde la tabla Mi temporada",
+    "goSeasonSchedule": "Ir a Mi temporada para seleccionar carreras"
   },
   "shop": {
     "checkout": "Comprar en la tienda de iRacing.com",
@@ -316,6 +324,8 @@
     "listMany": "{{items}} y {{last}}",
     "lapsOrMinutes": "{{laps}} vueltas o {{duration}} min",
     "laps": "{{laps}} vueltas",
-    "minutes": "{{duration}} min"
+    "minutes": "{{duration}} min",
+    "thisWeek": "Esta semana",
+    "noRacesSelected": "No hay carreras seleccionadas para esta semana"
   }
 }

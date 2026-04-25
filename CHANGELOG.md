@@ -4,9 +4,13 @@ All notable changes to the **"Racing Planner"** project will be documented in th
 
 ## 0.9.0
 
+- Added My Schedule page - thanks Chris Kent
+- Added print option to My Schedule page
+- Removed the option to hide rain chance and reorder columns for more simplicity
+- Renamed "My Season Planner" page title to just "My Season"
 - Added language selection with persistent user preference
 - Added translations for English, Spanish, Brazilian Portuguese, German, French, Russian, Korean, Simplified Chinese, and Polish
-- Improved layout handling for longer translated labels in navigation, tabs, and dialogs
+- Add analytics tracking for various user interactions and events
 
 ## 0.8.14
 
@@ -14,7 +18,7 @@ All notable changes to the **"Racing Planner"** project will be documented in th
 
 ## 0.8.13
 
-- Reverted Laguna Seca forced to be free, I was old by u/StrykerVenom it's not been free for new subs since September 2025
+- Reverted Laguna Seca forced to be free, I was told by u/StrykerVenom it's not been free for new subs since September 2025
 
 ## 0.8.12
 

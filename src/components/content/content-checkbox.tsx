@@ -1,5 +1,6 @@
 import { isNurbCombined } from "@/ir-data/utils/tracks";
 import { setMyCar, setMyTrack, setWishCar, setWishTrack } from "@/store/ir";
+import { trackEvent } from "@/utils/analytics";
 import { faBookmark, faSackXmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Checkbox, CheckboxProps } from "../ui/checkbox";
@@ -60,12 +61,24 @@ function ContentCheckbox({
         e.stopPropagation();
         if (free) return;
         if (wish) {
+          trackEvent("content_state_change", {
+            content_type: content,
+            new_state: "none",
+          });
           setWish(sku, false);
           setMy(sku, false);
         } else if (owned) {
+          trackEvent("content_state_change", {
+            content_type: content,
+            new_state: "wishlist",
+          });
           setMy(sku, false);
           setWish(sku, true);
         } else {
+          trackEvent("content_state_change", {
+            content_type: content,
+            new_state: "owned",
+          });
           setMy(sku, true);
           setWish(sku, false);
         }

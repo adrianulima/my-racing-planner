@@ -3,6 +3,7 @@ import { ETabs } from "@/store/ui";
 import { For, Image, Stack, StackProps } from "@chakra-ui/react";
 import {
   faCar,
+  faCalendarDays,
   faChartLine,
   faFlagCheckered,
   faRoad,
@@ -17,6 +18,7 @@ import MoreMenuButton from "./more-menu-button";
 import NavBarButton from "./nav-bar-button";
 
 const tabsTop = [
+  { labelKey: "nav.mySchedule", icon: faCalendarDays, index: ETabs.MySchedule },
   { labelKey: "nav.mySeason", icon: faTableCellsLarge, index: ETabs.MySeason },
   { labelKey: "nav.mySeries", icon: faFlagCheckered, index: ETabs.MySeries },
   { labelKey: "nav.myCars", icon: faCar, index: ETabs.MyCars },

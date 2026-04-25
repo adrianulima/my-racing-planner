@@ -11,6 +11,7 @@ const SeriesPage = lazy(() => import("../series/series-page"));
 const ShopPage = lazy(() => import("../shop-guide/shop-page"));
 const TracksPage = lazy(() => import("../content/tracks-page"));
 const HistoryPage = lazy(() => import("../history/history-page"));
+const SchedulePage = lazy(() => import("../schedule/schedule-page"));
 
 function MainContainer() {
   usePageTracking();
@@ -35,6 +36,7 @@ function MainContainer() {
           <Route path={ETabs.MySeries} component={SeriesPage} />
           <Route path={ETabs.MyCars} component={CarsPage} />
           <Route path={ETabs.MyTracks} component={TracksPage} />
+          <Route path={ETabs.MySchedule} component={SchedulePage} />
           <Route path={ETabs.ShopGuide} component={ShopPage} />
           <Route path={ETabs.History} component={HistoryPage} />
 

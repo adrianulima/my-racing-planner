@@ -12,7 +12,7 @@ export const usePageTracking = () => {
   const search = useSearch();
 
   useEffect(() => {
-    window.gtag("event", "page_view", {
+    window.gtag?.("event", "page_view", {
       page_path: location + search,
       page_search: search,
       page_hash: location,

@@ -63,7 +63,7 @@ function ContentPage({
     const filteredContent =
       tabCategory === allTab
         ? contentListJson
-        : contentListJson.filter((content: any) =>
+        : contentListJson.filter((content) =>
             content.categories.some((v: string) => tabs[v] === tabCategory),
           );
 
@@ -85,7 +85,7 @@ function ContentPage({
       .toLowerCase()
       .normalize("NFD")
       .replace(/[\u0300-\u036f]/g, "");
-    const filteredContentWithSearch = !!trimmedSearch
+    const filteredContentWithSearch = trimmedSearch
       ? filteredContentWithCheck.filter((content) =>
           content.name
             .toLowerCase()

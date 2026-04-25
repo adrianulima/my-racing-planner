@@ -24,6 +24,7 @@
     "owned": "已拥有",
     "ownedContent": "已拥有内容",
     "ownedContentCheckbox": "已拥有内容复选框",
+    "print": "打印",
     "price": "价格",
     "race": "比赛",
     "released": "发布",
@@ -78,7 +79,8 @@
     "mySeries": "我的系列赛",
     "myCars": "我的赛车",
     "myTracks": "我的赛道",
-    "shopGuide": "购买指南"
+    "shopGuide": "购买指南",
+    "mySchedule": "我的赛程"
   },
   "pages": {
     "cars": {
@@ -90,7 +92,7 @@
       "description": "标记你拥有的赛道并选择收藏。购买前可用愿望清单预览内容。"
     },
     "season": {
-      "title": "赛季规划器",
+      "title": "我的赛季",
       "description": "根据收藏的系列赛规划赛季周次，并使用设置选项自定义表格。"
     },
     "series": {
@@ -105,6 +107,10 @@
     "history": {
       "title": "赛道使用历史",
       "description": "查看 iRacing 历史上最常用的赛道"
+    },
+    "schedule": {
+      "title": "我的赛程",
+      "description": "你每周计划参加的比赛。请在“我的赛季”页面选择要参加的赛道。"
     }
   },
   "seasonLabel": {
@@ -169,7 +175,9 @@
     "emptyWishlist": "愿望清单为空",
     "addWishlist": "向愿望清单添加赛车或赛道",
     "noPaidTracksMissing": "没有缺少的付费赛道",
-    "ownAllFavoriteTracks": "你已经拥有收藏系列赛的所有赛道"
+    "ownAllFavoriteTracks": "你已经拥有收藏系列赛的所有赛道",
+    "selectSeriesSchedule": "在“我的赛季”表格中选择系列赛并安排比赛",
+    "goSeasonSchedule": "前往“我的赛季”选择比赛"
   },
   "shop": {
     "checkout": "在 iRacing.com 商店购买",
@@ -316,6 +324,8 @@
     "listMany": "{{items}} 和 {{last}}",
     "lapsOrMinutes": "{{laps}} 圈或 {{duration}} 分钟",
     "laps": "{{laps}} 圈",
-    "minutes": "{{duration}} 分钟"
+    "minutes": "{{duration}} 分钟",
+    "thisWeek": "本周",
+    "noRacesSelected": "本周未选择比赛"
   }
 }

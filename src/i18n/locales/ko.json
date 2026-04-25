@@ -24,6 +24,7 @@
     "owned": "보유",
     "ownedContent": "보유 콘텐츠",
     "ownedContentCheckbox": "보유 콘텐츠 체크박스",
+    "print": "인쇄",
     "price": "가격",
     "race": "레이스",
     "released": "출시",
@@ -78,7 +79,8 @@
     "mySeries": "내 시리즈",
     "myCars": "내 차량",
     "myTracks": "내 트랙",
-    "shopGuide": "구매 가이드"
+    "shopGuide": "구매 가이드",
+    "mySchedule": "내 일정"
   },
   "pages": {
     "cars": {
@@ -90,7 +92,7 @@
       "description": "보유한 트랙을 표시하고 즐겨찾기를 선택하세요. 구매 전에 위시리스트로 콘텐츠를 미리 확인할 수 있습니다."
     },
     "season": {
-      "title": "시즌 플래너",
+      "title": "내 시즌",
       "description": "즐겨찾는 시리즈를 기준으로 시즌 주차를 계획하고 설정 옵션으로 표를 맞춤 설정하세요."
     },
     "series": {
@@ -105,6 +107,10 @@
     "history": {
       "title": "트랙 사용 기록",
       "description": "iRacing에서 역대 가장 많이 사용된 트랙을 확인하세요"
+    },
+    "schedule": {
+      "title": "내 일정",
+      "description": "매주 계획한 레이스입니다. 내 시즌 페이지에서 참가할 트랙을 선택하세요."
     }
   },
   "seasonLabel": {
@@ -169,7 +175,9 @@
     "emptyWishlist": "위시리스트가 비어 있습니다",
     "addWishlist": "차량이나 트랙을 위시리스트에 추가하세요",
     "noPaidTracksMissing": "누락된 유료 트랙이 없습니다",
-    "ownAllFavoriteTracks": "즐겨찾는 시리즈의 모든 트랙을 이미 보유하고 있습니다"
+    "ownAllFavoriteTracks": "즐겨찾는 시리즈의 모든 트랙을 이미 보유하고 있습니다",
+    "selectSeriesSchedule": "내 시즌 그리드에서 시리즈를 선택하고 레이스를 일정에 추가하세요",
+    "goSeasonSchedule": "내 시즌으로 이동해 레이스 선택"
   },
   "shop": {
     "checkout": "iRacing.com 스토어에서 구매",
@@ -316,6 +324,8 @@
     "listMany": "{{items}} 및 {{last}}",
     "lapsOrMinutes": "{{laps}}랩 또는 {{duration}}분",
     "laps": "{{laps}}랩",
-    "minutes": "{{duration}}분"
+    "minutes": "{{duration}}분",
+    "thisWeek": "이번 주",
+    "noRacesSelected": "이번 주에 선택된 레이스가 없습니다"
   }
 }

@@ -19,3 +19,55 @@ body {
   min-width: 320px;
   min-height: 100dvh;
 }
+
+.schedule-print-table {
+  display: none;
+}
+
+@page {
+  size: portrait;
+}
+
+@media print {
+  html,
+  body,
+  #root {
+    height: auto !important;
+    min-height: 0 !important;
+    overflow: visible !important;
+    background: #fff !important;
+  }
+
+  body {
+    display: block !important;
+  }
+
+  .schedule-screen-content,
+  .no-print {
+    display: none !important;
+  }
+
+  body * {
+    visibility: hidden !important;
+  }
+
+  .schedule-print-table,
+  .schedule-print-table * {
+    visibility: visible !important;
+    color: #000 !important;
+    opacity: 1 !important;
+    -webkit-text-fill-color: #000 !important;
+  }
+
+  .schedule-print-table {
+    display: block !important;
+    position: absolute;
+    inset: 0;
+    padding: 12px;
+  }
+
+  .schedule-print-week {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+}

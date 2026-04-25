@@ -3,6 +3,7 @@ import {
   setShopVolumeDiscount,
   useUi,
 } from "@/store/ui";
+import { trackEvent } from "@/utils/analytics";
 import { HStack, IconButton, Link, VStack } from "@chakra-ui/react";
 import {
   faArrowUpRightFromSquare,
@@ -46,9 +47,13 @@ function ShopSettingsPopover() {
               <Switch
                 ids={{ root: "volumeDiscount" }}
                 checked={shopVolumeDiscount}
-                onCheckedChange={({ checked }) =>
-                  setShopVolumeDiscount(checked)
-                }
+                onCheckedChange={({ checked }) => {
+                  setShopVolumeDiscount(checked);
+                  trackEvent("shop_discount_setting_change", {
+                    discount: "volume",
+                    value: checked,
+                  });
+                }}
               >
                 {t("settings.volumeDiscount")}
               </Switch>
@@ -85,7 +90,13 @@ function ShopSettingsPopover() {
             <Switch
               ids={{ root: "loyaltyDiscount" }}
               checked={shopLoyaltyDiscount}
-              onCheckedChange={({ checked }) => setShopLoyaltyDiscount(checked)}
+              onCheckedChange={({ checked }) => {
+                setShopLoyaltyDiscount(checked);
+                trackEvent("shop_discount_setting_change", {
+                  discount: "loyalty",
+                  value: checked,
+                });
+              }}
             >
               {t("settings.loyaltyDiscount")}
             </Switch>

@@ -17,7 +17,7 @@ function CheckboxCounts({
 }) {
   const { height } = useScreenSize();
   const { t } = useTranslation();
-  const ifNotSmall = (value: any) => (height.small ? undefined : value);
+  const ifNotSmall = <T,>(value: T) => (height.small ? undefined : value);
   return (
     <Stack gap={{ base: "4px", md: ifNotSmall("8px") }}>
       <Tooltip

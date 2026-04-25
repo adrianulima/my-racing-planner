@@ -21,9 +21,11 @@ function PageHeader({
 }>) {
   const { scrolled } = useAppLayout();
   const { height } = useScreenSize();
-  const ifNotSmall = (value: any) => (height.small ? undefined : value);
+  const ifNotSmall = <T,>(value: T) => (height.small ? undefined : value);
   const showCounts =
-    freeCount != undefined || ownedCount != undefined || wishCount != undefined;
+    freeCount !== undefined ||
+    ownedCount !== undefined ||
+    wishCount !== undefined;
   return (
     <Collapsible.Root open={!scrolled}>
       <Collapsible.Content>

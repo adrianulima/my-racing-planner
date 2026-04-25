@@ -19,6 +19,7 @@
     "owned": "Possédé",
     "ownedContent": "Contenu possédé",
     "ownedContentCheckbox": "Case du contenu possédé",
+    "print": "Imprimer",
     "price": "Prix",
     "race": "course",
     "released": "Sortie",
@@ -73,7 +74,8 @@
     "mySeries": "Mes séries",
     "myCars": "Mes voitures",
     "myTracks": "Mes circuits",
-    "shopGuide": "Guide d'achat"
+    "shopGuide": "Guide d'achat",
+    "mySchedule": "Mon calendrier"
   },
   "pages": {
     "cars": {
@@ -85,7 +87,7 @@
       "description": "Marquez les circuits que vous possédez et sélectionnez vos favoris. Utilisez la liste d'envies pour prévisualiser le contenu avant de l'acheter."
     },
     "season": {
-      "title": "Planificateur de saison",
+      "title": "Ma saison",
       "description": "Planifiez les semaines de votre saison à partir de vos séries favorites et personnalisez le tableau avec les options de réglage."
     },
     "series": {
@@ -100,6 +102,10 @@
     "history": {
       "title": "Historique d'utilisation des circuits",
       "description": "Consultez les circuits les plus utilisés de tous les temps sur iRacing"
+    },
+    "schedule": {
+      "title": "Mon calendrier",
+      "description": "Tes courses prévues pour chaque semaine. Sélectionne les circuits que tu veux courir depuis la page Ma saison."
     }
   },
   "seasonLabel": {
@@ -159,7 +165,9 @@
     "emptyWishlist": "Liste d'envies vide",
     "addWishlist": "Ajoutez des voitures ou circuits à votre liste d'envies",
     "noPaidTracksMissing": "Aucun circuit payant manquant",
-    "ownAllFavoriteTracks": "Vous possédez déjà tous les circuits de vos séries favorites"
+    "ownAllFavoriteTracks": "Vous possédez déjà tous les circuits de vos séries favorites",
+    "selectSeriesSchedule": "Sélectionne des séries et planifie des courses dans la grille Ma saison",
+    "goSeasonSchedule": "Aller à Ma saison pour sélectionner des courses"
   },
   "shop": {
     "checkout": "Acheter sur la boutique iRacing.com",
@@ -186,5 +194,9 @@
     "participationCredit": "Programme de crédits de participation : {{eligible}} ({{count}} circuits)",
     "yes": "Oui",
     "no": "Non"
+  },
+  "schedule": {
+    "thisWeek": "Cette semaine",
+    "noRacesSelected": "Aucune course sélectionnée pour cette semaine"
   }
 }

@@ -19,6 +19,7 @@
     "owned": "Besitzt",
     "ownedContent": "Eigener Inhalt",
     "ownedContentCheckbox": "Checkbox für eigenen Inhalt",
+    "print": "Drucken",
     "price": "Preis",
     "race": "Rennen",
     "released": "Veröffentlicht",
@@ -73,7 +74,8 @@
     "mySeries": "Meine Serien",
     "myCars": "Meine Autos",
     "myTracks": "Meine Strecken",
-    "shopGuide": "Kaufhilfe"
+    "shopGuide": "Kaufhilfe",
+    "mySchedule": "Mein Zeitplan"
   },
   "pages": {
     "cars": {
@@ -85,7 +87,7 @@
       "description": "Markiere die Strecken, die du besitzt, und wähle deine Favoriten. Nutze die Wunschliste, um Inhalte vor dem Kauf zu prüfen."
     },
     "season": {
-      "title": "Saisonplaner",
+      "title": "Meine Saison",
       "description": "Plane die Wochen deiner Saison anhand deiner Lieblingsserien und passe die Tabelle über die Einstellungen an."
     },
     "series": {
@@ -100,6 +102,10 @@
     "history": {
       "title": "Streckennutzungsverlauf",
       "description": "Sieh dir die meistgenutzten Strecken aller Zeiten in iRacing an"
+    },
+    "schedule": {
+      "title": "Mein Zeitplan",
+      "description": "Deine geplanten Rennen pro Woche. Wähle die Strecken, die du fahren möchtest, auf der Seite Meine Saison aus."
     }
   },
   "seasonLabel": {
@@ -159,7 +165,9 @@
     "emptyWishlist": "Wunschliste ist leer",
     "addWishlist": "Füge Autos oder Strecken zu deiner Wunschliste hinzu",
     "noPaidTracksMissing": "Keine kostenpflichtigen Strecken fehlen",
-    "ownAllFavoriteTracks": "Du besitzt bereits alle Strecken deiner Lieblingsserien"
+    "ownAllFavoriteTracks": "Du besitzt bereits alle Strecken deiner Lieblingsserien",
+    "selectSeriesSchedule": "Wähle Serien aus und plane Rennen in der Tabelle Meine Saison",
+    "goSeasonSchedule": "Zur Seite Meine Saison, um Rennen auszuwählen"
   },
   "shop": {
     "checkout": "Im iRacing.com-Shop kaufen",
@@ -186,5 +194,9 @@
     "participationCredit": "Teilnahme-Credit-Programm: {{eligible}} ({{count}} Strecken)",
     "yes": "Ja",
     "no": "Nein"
+  },
+  "schedule": {
+    "thisWeek": "Diese Woche",
+    "noRacesSelected": "Keine Rennen für diese Woche ausgewählt"
   }
 }

@@ -8,6 +8,7 @@ import {
 } from "@/components/ui/dialog";
 import i18n, { Language, supportedLanguages } from "@/i18n";
 import { setLanguage, useUi } from "@/store/ui";
+import { trackEvent } from "@/utils/analytics";
 import { Box, HStack, Stack, Text } from "@chakra-ui/react";
 import { useTranslation } from "react-i18next";
 import { create } from "zustand";
@@ -26,6 +27,7 @@ function LanguageDialogGlobal() {
   const changeLanguage = (value: Language) => {
     setLanguage(value);
     i18n.changeLanguage(value);
+    trackEvent("language_change", { language: value });
   };
 
   return (

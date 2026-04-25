@@ -3,7 +3,7 @@ import { ReactNode } from "react";
 import { useTranslation } from "react-i18next";
 import InfinityTable from "../table/infinity-table";
 
-type Dict<T = any> = Record<string, T>;
+type Dict<T = unknown> = Record<string, T>;
 function SeriesTable<T extends string | number | Dict | undefined>({
   list,
   rows,
@@ -23,7 +23,9 @@ function SeriesTable<T extends string | number | Dict | undefined>({
         <Table.ColumnHeader minWidth={"60px"} textAlign={"center"}>
           <VisuallyHidden>{t("common.seriesLogo")}</VisuallyHidden>
         </Table.ColumnHeader>
-        <Table.ColumnHeader width={"100%"}>{t("common.name")}</Table.ColumnHeader>
+        <Table.ColumnHeader width={"100%"}>
+          {t("common.name")}
+        </Table.ColumnHeader>
         <Table.ColumnHeader minWidth={"90px"} textAlign={"center"}>
           {t("common.setup")}
         </Table.ColumnHeader>

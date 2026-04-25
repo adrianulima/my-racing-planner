@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useTranslation } from "react-i18next";
 import InfinityTable from "../table/infinity-table";
 
-type Dict<T = any> = Record<string, T>;
+type Dict<T = unknown> = Record<string, T>;
 function HistoryTable<T extends string | number | Dict | undefined>({
   list,
   rows,
@@ -29,7 +29,9 @@ function HistoryTable<T extends string | number | Dict | undefined>({
         <Table.ColumnHeader minWidth={"60px"} textAlign={"center"}>
           <VisuallyHidden>{t("common.contentLogo")}</VisuallyHidden>
         </Table.ColumnHeader>
-        <Table.ColumnHeader width={"100%"}>{t("common.name")}</Table.ColumnHeader>
+        <Table.ColumnHeader width={"100%"}>
+          {t("common.name")}
+        </Table.ColumnHeader>
         <Table.ColumnHeader minWidth={"90px"} textAlign={"center"}>
           {t("common.category")}
         </Table.ColumnHeader>
@@ -70,7 +72,9 @@ function HistoryTable<T extends string | number | Dict | undefined>({
           onClick={() => setSortBy(ESortHistory.Usage)}
         >
           <HStack gap={1} justifyContent={"center"}>
-            <Text fontWeight={boldIf(ESortHistory.Usage)}>{t("common.used")}</Text>
+            <Text fontWeight={boldIf(ESortHistory.Usage)}>
+              {t("common.used")}
+            </Text>
             {sortBy === ESortHistory.Usage && (
               <FontAwesomeIcon icon={faArrowDownWideShort} />
             )}

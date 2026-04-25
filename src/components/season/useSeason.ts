@@ -3,10 +3,10 @@ import SERIES_JSON from "../../ir-data/series.json";
 
 export type TSeriesDateMap = Record<number, Record<string, number | number[]>>;
 
-type TWeek = {
+export type TWeek = {
   weekNum: number;
   date: string;
-  track: { id: number; name: string };
+  track: { id: number; name: string; config?: string };
   cars?: { id: number; name: string }[];
   rainChance?: number;
 };
@@ -30,6 +30,15 @@ export function formatDate(date: Date) {
 
   return `${year}-${month}-${day}`;
 }
+
+export const getSeriesWeek = (seriesId: number, date: string) => {
+  const series = SERIES_JSON[seriesId.toString() as keyof typeof SERIES_JSON];
+  return (
+    (series?.weeks as TWeek[] | undefined)?.find(
+      (week) => getPreviousTuesday(week.date) === date,
+    ) ?? null
+  );
+};
 
 const useSeason = () => {
   const { favoriteSeries } = useIr();

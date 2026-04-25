@@ -24,6 +24,7 @@
     "owned": "Owned",
     "ownedContent": "Owned content",
     "ownedContentCheckbox": "Owned Content Checkbox",
+    "print": "Print",
     "price": "Price",
     "race": "race",
     "released": "Released",
@@ -78,7 +79,8 @@
     "mySeries": "My Series",
     "myCars": "My Cars",
     "myTracks": "My Tracks",
-    "shopGuide": "Shop Guide"
+    "shopGuide": "Shop Guide",
+    "mySchedule": "My Schedule"
   },
   "pages": {
     "cars": {
@@ -90,7 +92,7 @@
       "description": "Mark the tracks you own and select your favorites. Use the wishlist to preview the content before you buy it."
     },
     "season": {
-      "title": "My Season Planner",
+      "title": "My Season",
       "description": "Plan your season weeks from your favorite series, use the settings dropdown options to customize the table."
     },
     "series": {
@@ -105,6 +107,10 @@
     "history": {
       "title": "Tracks Usage History",
       "description": "See the most used tracks of all time by iRacing"
+    },
+    "schedule": {
+      "title": "My Schedule",
+      "description": "Your planned races for each week. Select the tracks you plan to race from the My Season page."
     }
   },
   "seasonLabel": {
@@ -169,7 +175,9 @@
     "emptyWishlist": "Empty wishlist",
     "addWishlist": "Add some cars or tracks to your wishlist",
     "noPaidTracksMissing": "No paid tracks missing",
-    "ownAllFavoriteTracks": "You already own all tracks of your favorite series"
+    "ownAllFavoriteTracks": "You already own all tracks of your favorite series",
+    "selectSeriesSchedule": "Select series and schedule races from the My Season grid",
+    "goSeasonSchedule": "Go to My Season to select races"
   },
   "shop": {
     "checkout": "Checkout on iRacing.com store",
@@ -316,6 +324,8 @@
     "listMany": "{{items}}, and {{last}}",
     "lapsOrMinutes": "{{laps}} laps or {{duration}} min",
     "laps": "{{laps}} laps",
-    "minutes": "{{duration}} min"
+    "minutes": "{{duration}} min",
+    "thisWeek": "This week",
+    "noRacesSelected": "No races selected for this week"
   }
 }
