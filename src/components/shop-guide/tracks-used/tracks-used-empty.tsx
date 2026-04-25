@@ -2,10 +2,12 @@ import { useIr } from "@/store/ir";
 import { Flex, Table } from "@chakra-ui/react";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useTranslation } from "react-i18next";
 import { EmptyState } from "../../ui/empty-state";
 
 function TracksUsedEmpty() {
   const { favoriteSeries } = useIr();
+  const { t } = useTranslation();
 
   return (
     <Table.Row bgColor={"transparent"}>
@@ -15,13 +17,13 @@ function TracksUsedEmpty() {
             icon={<FontAwesomeIcon icon={faMagnifyingGlass} />}
             title={
               favoriteSeries.length > 0
-                ? "No paid tracks missing"
-                : "No series selected"
+                ? t("empty.noPaidTracksMissing")
+                : t("empty.noSeriesSelected")
             }
             description={
               favoriteSeries.length > 0
-                ? "You already own all tracks of your favorite series"
-                : "You didn't choose any favorite series"
+                ? t("empty.ownAllFavoriteTracks")
+                : t("empty.noFavoriteSeries")
             }
           />
         </Flex>

@@ -22,6 +22,8 @@ import {
   IconDefinition,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useTranslation } from "react-i18next";
+import { getCategoryTranslationKey } from "@/i18n/category";
 import PriceBadge from "../badges/price-badge";
 import SeriesPopover from "../series/series-popover";
 import { Tooltip } from "../ui/tooltip";
@@ -58,6 +60,7 @@ function ContentTableRow({
   skuIcon: IconDefinition;
 }) {
   const skuItems = skuGroup ? Object.values(skuGroup) : [];
+  const { t } = useTranslation();
   return (
     <Table.Row bgColor={"transparent"}>
       <Table.Cell minWidth={"40px"} textAlign={"center"}>
@@ -155,7 +158,7 @@ function ContentTableRow({
               lazyMount
               unmountOnExit
               key={`${category}`}
-              content={Category[category as keyof typeof Category]}
+              content={t(getCategoryTranslationKey(Category[category as keyof typeof Category]))}
               showArrow
               positioning={{ placement: "top" }}
               openDelay={200}

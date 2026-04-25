@@ -1,4 +1,5 @@
 import { Box, BoxProps, Tabs, Text } from "@chakra-ui/react";
+import { useTranslation } from "react-i18next";
 
 export enum EShopTab {
   TracksUsed = "TracksUsed",
@@ -13,6 +14,7 @@ function ShopSubPage({
   tab: EShopTab;
   setTab: (t: EShopTab) => void;
 }) {
+  const { t } = useTranslation();
   return (
     <Box {...rest}>
       <Tabs.Root
@@ -25,10 +27,10 @@ function ShopSubPage({
       >
         <Tabs.List flex={1} width={"100%"}>
           <Tabs.Trigger value={EShopTab.TracksUsed} width={"100%"}>
-            <Text textWrap={"nowrap"}>Tracks Used</Text>
+            <Text textWrap={"nowrap"}>{t("pages.shop.tracksUsed")}</Text>
           </Tabs.Trigger>
           <Tabs.Trigger value={EShopTab.WishlistPanel} width={"100%"}>
-            <Text textWrap={"nowrap"}>Wishlist</Text>
+            <Text textWrap={"nowrap"}>{t("common.wishlist")}</Text>
           </Tabs.Trigger>
         </Tabs.List>
       </Tabs.Root>

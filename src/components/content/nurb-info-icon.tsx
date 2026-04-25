@@ -6,6 +6,7 @@ import {
 import { useIr } from "@/store/ir";
 import { Box, Icon, IconProps, Text } from "@chakra-ui/react";
 import { BsInfoCircle, BsInfoCircleFill } from "react-icons/bs";
+import { useTranslation } from "react-i18next";
 
 import { Tooltip } from "../ui/tooltip";
 
@@ -22,6 +23,7 @@ function NurbInfoIcon({
 }: IconProps & { size?: "xs" | "sm" | "md" | "lg" }) {
   const px = sizes[size as keyof typeof sizes] ?? sizes["md"];
   const { myTracks, wishTracks } = useIr();
+  const { t } = useTranslation();
   const owned = ownNurbCombined(NURB_COMBINED_IDS[0], myTracks);
   const wish = wishNurbCombined(NURB_COMBINED_IDS[0], wishTracks, myTracks);
   return (
@@ -30,9 +32,7 @@ function NurbInfoIcon({
       unmountOnExit
       content={
         <Text textAlign={"center"} lineClamp="10" wordWrap={"break-word"}>
-          Nürburgring Combined is the combination of both the Nürburgring Grand
-          Prix Strecke and Nürburgring Nordschleife. In order to have access to
-          it you must own both tracks.
+          {t("content.nurbCombined")}
         </Text>
       }
       showArrow

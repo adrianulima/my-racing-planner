@@ -13,6 +13,7 @@ import {
   useUi,
 } from "@/store/ui";
 import { For, VStack } from "@chakra-ui/react";
+import { useTranslation } from "react-i18next";
 import { Switch } from "../ui/switch";
 import { Tooltip } from "../ui/tooltip";
 
@@ -30,6 +31,7 @@ function SeasonSettingsPopover() {
     seasonShowRain,
     seasonUseLocalTimezone,
   } = useUi();
+  const { t } = useTranslation();
 
   const timezoneName =
     Intl.DateTimeFormat().resolvedOptions().timeZone || "Local";
@@ -37,79 +39,78 @@ function SeasonSettingsPopover() {
   const settingsList = [
     {
       id: "checkboxes",
-      text: "Show content checkboxes",
-      tooltip: "Show track checkboxes to quickly switch tracks you own",
+      text: t("settings.showContentCheckboxes"),
+      tooltip: t("settings.showContentCheckboxesTooltip"),
       checked: seasonShowCheckboxes,
       setChecked: setSeasonShowCheckboxes,
     },
     {
       id: "cars",
-      text: "Show cars dropdown",
-      tooltip: "Show cars dropdown to quickly switch cars you own",
+      text: t("settings.showCarsDropdown"),
+      tooltip: t("settings.showCarsDropdownTooltip"),
       checked: seasonShowCarsDropdown,
       setChecked: setSeasonShowCarsDropdown,
     },
     {
       id: "config",
-      text: "Show track config",
-      tooltip: "Show track configuration used that week",
+      text: t("settings.showTrackConfig"),
+      tooltip: t("settings.showTrackConfigTooltip"),
       checked: seasonShowTrackConfig,
       setChecked: setSeasonShowTrackConfig,
     },
     {
       id: "hover",
-      text: "Highlight on track hover",
-      tooltip: "Highlight all cells with the same hovered track",
+      text: t("settings.highlightHover"),
+      tooltip: t("settings.highlightHoverTooltip"),
       checked: seasonHighlight,
       setChecked: setSeasonHighlight,
     },
     {
       id: "reorder",
-      text: "Reorder columns",
-      tooltip: "Enable series columns reordering",
+      text: t("settings.reorderColumns"),
+      tooltip: t("settings.reorderColumnsTooltip"),
       checked: seasonShowReorder,
       setChecked: setSeasonShowReorder,
     },
     {
       id: "thisWeek",
-      text: "Highlight current week",
-      tooltip: "Highlight current week row",
+      text: t("settings.highlightCurrentWeek"),
+      tooltip: t("settings.highlightCurrentWeekTooltip"),
       checked: seasonShowThisWeek,
       setChecked: setSeasonShowThisWeek,
     },
     {
       id: "wishlist",
-      text: "Show wishlist",
-      tooltip: "Either wishlist items should be colored",
+      text: t("settings.showWishlist"),
+      tooltip: t("settings.showWishlistTooltip"),
       checked: seasonShowWishlist,
       setChecked: setSeasonShowWishlist,
     },
     {
       id: "owned",
-      text: "Show owned",
-      tooltip: "Either owned items should be colored",
+      text: t("settings.showOwned"),
+      tooltip: t("settings.showOwnedTooltip"),
       checked: seasonShowOwned,
       setChecked: setSeasonShowOwned,
     },
     {
       id: "minParticipation",
-      text: "Show participation credit program",
-      tooltip:
-        "Either series you have enough tracks to get reward should be colored",
+      text: t("settings.showParticipation"),
+      tooltip: t("settings.showParticipationTooltip"),
       checked: seasonShowParticipation,
       setChecked: setSeasonShowParticipation,
     },
     {
       id: "rain",
-      text: "Show rain chance",
-      tooltip: "Show rain indicators for tracks with chance of rain",
+      text: t("settings.showRain"),
+      tooltip: t("settings.showRainTooltip"),
       checked: seasonShowRain,
       setChecked: setSeasonShowRain,
     },
     {
       id: "localTimezone",
-      text: `Schedule with ${timezoneName} time`,
-      tooltip: "Convert race times from UTC to your local time zone",
+      text: t("settings.localTimezone", { timezone: timezoneName }),
+      tooltip: t("settings.localTimezoneTooltip"),
       checked: seasonUseLocalTimezone,
       setChecked: setSeasonUseLocalTimezone,
     },

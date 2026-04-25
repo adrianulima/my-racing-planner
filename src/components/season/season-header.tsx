@@ -1,10 +1,12 @@
 import { useIr } from "@/store/ir";
 import SERIES_JSON from "../../ir-data/series.json";
 import TRACKS_JSON from "../../ir-data/tracks.json";
+import { useTranslation } from "react-i18next";
 import PageHeader from "../page/page-header";
 
 function SeasonHeader({ filteredFavorites }: { filteredFavorites: number[] }) {
   const { myTracks, wishTracks } = useIr();
+  const { t } = useTranslation();
   let free = 0,
     owned = 0,
     wish = 0,
@@ -39,8 +41,8 @@ function SeasonHeader({ filteredFavorites }: { filteredFavorites: number[] }) {
       freeCount={`${counts.uniqueFree} (${counts.free}x)`}
       ownedCount={`${counts.uniqueOwned} (${counts.owned}x)`}
       wishCount={`${counts.uniqueWish} (${counts.wish}x)`}
-      title="My Season Planner"
-      description="Plan your season weeks from your favorite series, use the settings dropdown options to customize the table."
+      title={t("pages.season.title")}
+      description={t("pages.season.description")}
     />
   );
 }

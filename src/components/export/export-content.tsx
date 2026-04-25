@@ -3,9 +3,11 @@ import { Heading, Stack, Text } from "@chakra-ui/react";
 import { faCopy } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { QRCodeSVG } from "qrcode.react";
+import { useTranslation } from "react-i18next";
 import { Button } from "../ui/button";
 
 function ExportContent() {
+  const { t } = useTranslation();
   const { myCars, myTracks, wishCars, wishTracks, favoriteSeries, mySchedule } = useIr();
   const queryParams = {
     myCars: myCars.join("-"),
@@ -23,12 +25,8 @@ function ExportContent() {
   return (
     <>
       <section>
-        <Heading mt={2}>Transfer Your Settings to Another Device</Heading>
-        <Text as="p">
-          Easily bring your site settings to another device! Just copy the link
-          or scan the QR code below to transfer all your preferences instantly.
-          No need to set everything up again—just load and go!
-        </Text>
+        <Heading mt={2}>{t("export.heading")}</Heading>
+        <Text as="p">{t("export.description")}</Text>
       </section>
 
       <Stack
@@ -41,7 +39,7 @@ function ExportContent() {
         <QRCodeSVG
           value={url}
           size={220}
-          title={"Export My Data"}
+          title={t("dialogs.exportTitle")}
           marginSize={5}
           imageSettings={{
             src: "/my-racing-planner-icon.svg",
@@ -57,7 +55,7 @@ function ExportContent() {
           }}
         >
           <span>
-            Copy URL
+            {t("export.copyUrl")}
             <FontAwesomeIcon icon={faCopy} />
           </span>
         </Button>

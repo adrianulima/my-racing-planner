@@ -15,6 +15,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Fragment } from "react";
+import { useTranslation } from "react-i18next";
 import CARS_LIST from "../../../ir-data/utils/cars";
 import TRACKS_LIST from "../../../ir-data/utils/tracks";
 import { EmptyState } from "../../ui/empty-state";
@@ -24,6 +25,7 @@ import PriceDiscountPanel from "./price-discount-panel";
 
 function WishlistPanel() {
   const { wishCars, wishTracks } = useIr();
+  const { t } = useTranslation();
   const wishList = TRACKS_LIST.filter((t) => wishTracks.includes(t.sku))
     .map((c) => ({ ...c, isCar: false }))
     .concat(
@@ -44,7 +46,7 @@ function WishlistPanel() {
       p={4}
     >
       <HStack justifyContent={"space-between"}>
-        <Text textStyle="3xl">Wishlist</Text>
+        <Text textStyle="3xl">{t("common.wishlist")}</Text>
         <ShopSettingsPopover />
       </HStack>
 
@@ -59,8 +61,8 @@ function WishlistPanel() {
           fallback={
             <EmptyState
               icon={<FontAwesomeIcon icon={faMagnifyingGlass} />}
-              title={"Empty wishlist"}
-              description={"Add some cars or tracks to your wishlist"}
+              title={t("empty.emptyWishlist")}
+              description={t("empty.addWishlist")}
             />
           }
           each={wishList}

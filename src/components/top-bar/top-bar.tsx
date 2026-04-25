@@ -7,6 +7,7 @@ import {
   faInfoCircle,
   faShieldHalved,
 } from "@fortawesome/free-solid-svg-icons";
+import { useTranslation } from "react-i18next";
 import AboutDialog from "../about/about-dialog";
 import { useAppLayout } from "../app/useAppLayout";
 import ChangelogDialog from "../changelog/changelog-dialog";
@@ -19,6 +20,7 @@ function TopBar({ ...props }: StackProps) {
   const { scrolled } = useAppLayout();
   const { height } = useScreenSize();
   const { changelog, privacyPolicy } = useNotifications();
+  const { t } = useTranslation();
   return (
     !height.tiny && (
       <Collapsible.Root open={!scrolled}>
@@ -36,12 +38,12 @@ function TopBar({ ...props }: StackProps) {
               fontWeight="bold"
               userSelect={"none"}
             >
-              2026 Season 2
+              {t("seasonLabel.current", { year: 2026, season: 2 })}
             </Heading>
             <HStack>
               <AboutDialog ids={{ trigger: "about-dialog" }}>
                 <TopBarButton
-                  tooltip={"About"}
+                  tooltip={t("menu.about")}
                   icon={faInfoCircle}
                   trigger={"about-dialog"}
                 />
@@ -49,7 +51,7 @@ function TopBar({ ...props }: StackProps) {
 
               <HelpDialog ids={{ trigger: "help-dialog" }}>
                 <TopBarButton
-                  tooltip={"Help"}
+                  tooltip={t("menu.help")}
                   icon={faCircleQuestion}
                   trigger={"help-dialog"}
                 />
@@ -57,7 +59,7 @@ function TopBar({ ...props }: StackProps) {
 
               <PrivacyPolicyAnalog ids={{ trigger: "privacy-policy" }}>
                 <TopBarButton
-                  tooltip={"Privacy Policy"}
+                  tooltip={t("dialogs.privacyTitle")}
                   icon={faShieldHalved}
                   trigger={"privacy-policy"}
                   notification={privacyPolicy}
@@ -66,7 +68,7 @@ function TopBar({ ...props }: StackProps) {
 
               <ChangelogDialog ids={{ trigger: "changelog-dialog" }}>
                 <TopBarButton
-                  tooltip={"Change Log"}
+                  tooltip={t("dialogs.changeLogTitle")}
                   icon={faFileLines}
                   trigger={"changelog-dialog"}
                   notification={changelog}

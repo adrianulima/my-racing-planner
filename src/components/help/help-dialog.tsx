@@ -11,6 +11,7 @@ import useScreenSize from "@/hooks/useScreenSize";
 import { ETabs, setHelpPresented, useUi } from "@/store/ui";
 import { DialogRootProps } from "@chakra-ui/react";
 import { lazy, Suspense, useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 import { useLocation, useSearch } from "wouter";
 import LoadingContainer from "../page/loading-container";
 const HelpContent = lazy(() => import("./help-content"));
@@ -20,6 +21,7 @@ function HelpDialog({ children, ...rest }: DialogRootProps) {
   const { helpPresented } = useUi();
   const [isOpen, setIsOpen] = useState(!query && !helpPresented);
   const { width } = useScreenSize();
+  const { t } = useTranslation();
   const [_, navigate] = useLocation();
 
   useEffect(() => {
@@ -50,7 +52,7 @@ function HelpDialog({ children, ...rest }: DialogRootProps) {
 
       <DialogContent>
         <DialogHeader textAlign={"center"}>
-          <DialogTitle>Welcome to Racing Planner</DialogTitle>
+          <DialogTitle>{t("dialogs.helpTitle")}</DialogTitle>
         </DialogHeader>
         <DialogBody px={{ base: 4, md: 10 }} textAlign={"justify"}>
           <Suspense fallback={<LoadingContainer />}>

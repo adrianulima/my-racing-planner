@@ -8,7 +8,6 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 npm run dev          # Start Vite dev server (http://localhost:5173)
 npm run build        # TypeScript check + production build
 npm run lint         # Run ESLint
-npm run test         # Run Jest tests
 npm run preview      # Preview production build
 
 # iRacing data management
@@ -64,4 +63,4 @@ Static iRacing data lives in `src/ir-data/` (cars, tracks, series as JSON). The 
 
 ### TypeScript Config
 
-Three tsconfig files: `tsconfig.app.json` (app, strict), `tsconfig.node.json` (Vite tooling), `tsconfig.test.json` (Jest). Referenced from the root `tsconfig.json`.
+Two tsconfig files: `tsconfig.app.json` (app, strict) and `tsconfig.node.json` (Vite tooling). Referenced from the root `tsconfig.json`.

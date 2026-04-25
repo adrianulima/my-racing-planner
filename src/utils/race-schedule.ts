@@ -1,3 +1,5 @@
+import i18n from "@/i18n";
+
 /**
  * Utilities for creating human-readable race schedule descriptions
  * from iRacing API race_time_descriptors objects
@@ -25,7 +27,7 @@ export function createReadableSchedule(
 ): string {
   // Check if descriptor has required properties
   if (!descriptor || !descriptor.firstSessionTime) {
-    return "Schedule information unavailable";
+    return i18n.t("schedule.unavailable");
   }
 
   // Get the start time in a readable format and adjust for timezone
@@ -49,10 +51,10 @@ export function createReadableSchedule(
     return createWeeklyScheduleDescription(hours, minutes, repeatMinutes);
   } else if (descriptor.dayOffset.length === 1) {
     // Single day races
-    return `Races on ${formatDate(
-      descriptor.startDate,
-      descriptor.dayOffset[0],
-    )}, ${createTimePattern(hours, minutes, repeatMinutes)}`;
+    return i18n.t("schedule.onDate", {
+      date: formatDate(descriptor.startDate, descriptor.dayOffset[0]),
+      pattern: createTimePattern(hours, minutes, repeatMinutes),
+    });
   } else {
     // Multiple specific days
     return createMultipleDaysScheduleDescription(
@@ -100,24 +102,26 @@ function createDailyScheduleDescription(
 ): string {
   // Handle common intervals
   if (repeatMinutes === 15) {
-    return `Races every 15 minutes`;
+    return i18n.t("schedule.every15");
   } else if (repeatMinutes === 30) {
     if (minutes === 0) {
-      return `Races every 30 minutes at :00 and :30`;
+      return i18n.t("schedule.every30At00");
     } else if (minutes === 15) {
-      return `Races every 30 minutes at :15 and :45`;
+      return i18n.t("schedule.every30At15");
     } else {
-      return `Races every 30 minutes starting at ${formatMinutesStr(
-        minutes,
-      )} past the hour`;
+      return i18n.t("schedule.every30StartingMinutes", {
+        minutes: formatMinutesStr(minutes),
+      });
     }
   } else if (repeatMinutes === 60) {
     if (minutes === 0) {
-      return `Races every hour at :00`;
+      return i18n.t("schedule.everyHourAt", { minutes: "00" });
     } else if (minutes === 45) {
-      return `Races every hour at :45`;
+      return i18n.t("schedule.everyHourAt", { minutes: "45" });
     } else {
-      return `Races every hour at :${formatMinutesStr(minutes)}`;
+      return i18n.t("schedule.everyHourAt", {
+        minutes: formatMinutesStr(minutes),
+      });
     }
   } else if (repeatMinutes === 120) {
     // Even/odd hour patterns - this is where timezone offset matters
@@ -125,24 +129,28 @@ function createDailyScheduleDescription(
 
     if (isEvenHour) {
       if (minutes === 0) {
-        return `Races every even 2 hours at :00`;
+        return i18n.t("schedule.everyEven2At", { minutes: "00" });
       } else if (minutes === 45) {
-        return `Races every even 2 hours at :45`;
+        return i18n.t("schedule.everyEven2At", { minutes: "45" });
       } else {
-        return `Races every even 2 hours at :${formatMinutesStr(minutes)}`;
+        return i18n.t("schedule.everyEven2At", {
+          minutes: formatMinutesStr(minutes),
+        });
       }
     } else {
       if (minutes === 0) {
-        return `Races every odd 2 hours at :00`;
+        return i18n.t("schedule.everyOdd2At", { minutes: "00" });
       } else if (minutes === 45) {
-        return `Races every odd 2 hours at :45`;
+        return i18n.t("schedule.everyOdd2At", { minutes: "45" });
       } else {
-        return `Races every odd 2 hours at :${formatMinutesStr(minutes)}`;
+        return i18n.t("schedule.everyOdd2At", {
+          minutes: formatMinutesStr(minutes),
+        });
       }
     }
   } else {
     // Generic case
-    return `Races every ${repeatMinutes} minutes`;
+    return i18n.t("schedule.everyMinutes", { minutes: repeatMinutes });
   }
 }
 
@@ -158,22 +166,22 @@ function createWeeklyScheduleDescription(
   // In a real implementation, you'd determine the day of week
 
   if (repeatMinutes === 0) {
-    return `Races weekly at ${formatTimeString(hours, minutes)}`;
+    return i18n.t("schedule.weeklyAt", {
+      time: formatTimeString(hours, minutes),
+    });
   } else if (repeatMinutes === 60) {
-    return `Races weekly every hour starting at ${formatTimeString(
-      hours,
-      minutes,
-    )}`;
+    return i18n.t("schedule.weeklyEveryHour", {
+      time: formatTimeString(hours, minutes),
+    });
   } else if (repeatMinutes === 120) {
-    return `Races weekly every 2 hours starting at ${formatTimeString(
-      hours,
-      minutes,
-    )}`;
+    return i18n.t("schedule.weeklyEvery2", {
+      time: formatTimeString(hours, minutes),
+    });
   } else {
-    return `Races weekly every ${repeatMinutes} minutes starting at ${formatTimeString(
-      hours,
-      minutes,
-    )}`;
+    return i18n.t("schedule.weeklyEveryMinutes", {
+      minutes: repeatMinutes,
+      time: formatTimeString(hours, minutes),
+    });
   }
 }
 
@@ -209,26 +217,33 @@ function createMultipleDaysScheduleDescription(
       date.setMinutes(date.getMinutes() + timezoneOffsetMinutes);
     }
 
-    return date.toLocaleDateString("en-US", { weekday: "long" });
+    return date.toLocaleDateString(i18n.language, { weekday: "long" });
   });
 
   // Format time
   const timeStr = formatTimeString(hours, minutes);
 
   if (repeatMinutes === 0) {
-    return `Races at ${timeStr} on ${formatList(daysOfWeek)}`;
+    return i18n.t("schedule.racesAtOn", {
+      time: timeStr,
+      days: formatList(daysOfWeek),
+    });
   } else if (repeatMinutes === 60) {
-    return `Races every hour on ${formatList(
-      daysOfWeek,
-    )} starting at ${timeStr}`;
+    return i18n.t("schedule.racesEveryHourOn", {
+      days: formatList(daysOfWeek),
+      time: timeStr,
+    });
   } else if (repeatMinutes === 120) {
-    return `Races every 2 hours on ${formatList(
-      daysOfWeek,
-    )} starting at ${timeStr}`;
+    return i18n.t("schedule.racesEvery2On", {
+      days: formatList(daysOfWeek),
+      time: timeStr,
+    });
   } else {
-    return `Races every ${repeatMinutes} minutes on ${formatList(
-      daysOfWeek,
-    )} starting at ${timeStr}`;
+    return i18n.t("schedule.racesEveryMinutesOn", {
+      minutes: repeatMinutes,
+      days: formatList(daysOfWeek),
+      time: timeStr,
+    });
   }
 }
 
@@ -243,41 +258,50 @@ function createTimePattern(
   const timeStr = formatTimeString(hours, minutes);
 
   if (repeatMinutes === 0) {
-    return `at ${timeStr}`;
+    return i18n.t("schedule.atTime", { time: timeStr });
   } else if (repeatMinutes === 60) {
     if (minutes === 0) {
-      return `every hour at :00`;
+      return i18n.t("schedule.patternEveryHourAt", { minutes: "00" });
     } else if (minutes === 45) {
-      return `every hour at :45`;
+      return i18n.t("schedule.patternEveryHourAt", { minutes: "45" });
     } else {
-      return `every hour at :${formatMinutesStr(minutes)}`;
+      return i18n.t("schedule.patternEveryHourAt", {
+        minutes: formatMinutesStr(minutes),
+      });
     }
   } else if (repeatMinutes === 120) {
     const isEvenHour = hours % 2 === 0;
 
     if (isEvenHour) {
       if (minutes === 45) {
-        return `every even 2 hours at :45`;
+        return i18n.t("schedule.patternEveryEven2At");
       } else {
-        return `every even 2 hours starting at ${timeStr}`;
+        return i18n.t("schedule.patternEveryEven2Starting", {
+          time: timeStr,
+        });
       }
     } else {
       if (minutes === 45) {
-        return `every odd 2 hours at :45`;
+        return i18n.t("schedule.patternEveryOdd2At");
       } else {
-        return `every odd 2 hours starting at ${timeStr}`;
+        return i18n.t("schedule.patternEveryOdd2Starting", {
+          time: timeStr,
+        });
       }
     }
   } else if (repeatMinutes === 30) {
     if (minutes === 0) {
-      return `every 30 minutes at :00 and :30 past`;
+      return i18n.t("schedule.patternEvery30At00");
     } else if (minutes === 15) {
-      return `every 30 minutes at :15 and :45`;
+      return i18n.t("schedule.patternEvery30At15");
     } else {
-      return `every 30 minutes starting at ${timeStr}`;
+      return i18n.t("schedule.patternEvery30Starting", { time: timeStr });
     }
   } else {
-    return `every ${repeatMinutes} minutes starting at ${timeStr}`;
+    return i18n.t("schedule.patternEveryMinutesStarting", {
+      minutes: repeatMinutes,
+      time: timeStr,
+    });
   }
 }
 
@@ -308,11 +332,12 @@ function formatMinutesStr(minutes: number): string {
 function formatList(items: string[]): string {
   if (items.length === 0) return "";
   if (items.length === 1) return items[0];
-  if (items.length === 2) return `${items[0]} and ${items[1]}`;
+  if (items.length === 2)
+    return i18n.t("schedule.listTwo", { first: items[0], second: items[1] });
 
   const lastItem = items[items.length - 1];
   const otherItems = items.slice(0, -1).join(", ");
-  return `${otherItems}, and ${lastItem}`;
+  return i18n.t("schedule.listMany", { items: otherItems, last: lastItem });
 }
 
 /**
@@ -321,7 +346,7 @@ function formatList(items: string[]): string {
 function formatDate(startDate: string, offset: number): string {
   const date = new Date(startDate);
   date.setDate(date.getDate() + offset);
-  return date.toLocaleDateString("en-US", {
+  return date.toLocaleDateString(i18n.language, {
     month: "short",
     day: "numeric",
     year: "numeric",
@@ -339,7 +364,7 @@ export function createSeriesScheduleDescription(
   timezoneOffsetMinutes: number = 0,
 ): string {
   if (!descriptors || descriptors.length === 0) {
-    return "No scheduled races";
+    return i18n.t("schedule.noScheduled");
   }
 
   // Filter out invalid descriptors
@@ -352,7 +377,7 @@ export function createSeriesScheduleDescription(
   );
 
   if (validDescriptors.length === 0) {
-    return "Schedule information unavailable";
+    return i18n.t("schedule.unavailable");
   }
 
   // Handle single descriptor case
@@ -366,10 +391,13 @@ export function createSeriesScheduleDescription(
   // Handle multiple descriptors
   return validDescriptors
     .map((descriptor, index) => {
-      return `Schedule ${index + 1}: ${createReadableSchedule(
-        descriptor as RaceTimeDescriptor,
-        timezoneOffsetMinutes,
-      )}`;
+      return i18n.t("schedule.scheduleN", {
+        number: index + 1,
+        schedule: createReadableSchedule(
+          descriptor as RaceTimeDescriptor,
+          timezoneOffsetMinutes,
+        ),
+      });
     })
     .join("\n");
 }

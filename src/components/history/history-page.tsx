@@ -6,6 +6,7 @@ import {
 import { ECarCategories } from "@/ir-data/utils/types";
 import { useIr } from "@/store/ir";
 import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 import TRACKS_JSON from "../../ir-data/tracks.json";
 import Page from "../page/page";
 import PageHeader from "../page/page-header";
@@ -29,12 +30,13 @@ function HistoryPage() {
   }, [tabCategory, since, sortBy]);
 
   const { wishTracks, myTracks } = useIr();
+  const { t } = useTranslation();
 
   return (
     <Page>
       <PageHeader
-        title="Tracks Usage History"
-        description="See the most used tracks of all time by iRacing"
+        title={t("pages.history.title")}
+        description={t("pages.history.description")}
       />
       <HistoryFilterPanel
         tabs={ECarCategories}

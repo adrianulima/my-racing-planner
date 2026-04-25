@@ -1,7 +1,7 @@
 {
   "name": "my-racing",
   "private": true,
-  "version": "0.8.13",
+  "version": "0.8.14",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -13,8 +13,7 @@
     "fetch-data": "tsx iracing-api/fetch-data.ts",
     "parse-data": "tsx iracing-api/parse-data.ts",
     "fetch-past": "tsx iracing-api/fetch-past.ts",
-    "parse-past": "tsx iracing-api/parse-past.ts",
-    "test": "jest"
+    "parse-past": "tsx iracing-api/parse-past.ts"
   },
   "dependencies": {
     "@chakra-ui/react": "^3.34.0",
@@ -29,11 +28,13 @@
     "@fortawesome/react-fontawesome": "^3.3.0",
     "@types/gtag.js": "^0.0.20",
     "dotenv": "^17.3.1",
+    "i18next": "^26.0.8",
     "markdown-to-jsx": "^9.7.12",
     "next-themes": "^0.4.6",
     "qrcode.react": "^4.2.0",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
+    "react-i18next": "^17.0.4",
     "react-icons": "^5.6.0",
     "wouter": "^3.9.0",
     "zustand": "^5.0.12"
@@ -42,7 +43,6 @@
     "@eslint/js": "^9.39.1",
     "@rolldown/plugin-babel": "^0.2.2",
     "@types/crypto-js": "^4.2.2",
-    "@types/jest": "^30.0.0",
     "@types/node": "^25.5.0",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
@@ -58,10 +58,8 @@
     "eslint-plugin-react-refresh": "^0.5.2",
     "gh-pages": "^6.3.0",
     "globals": "^17.4.0",
-    "jest": "^30.3.0",
     "tough-cookie": "^6.0.1",
     "tough-cookie-file-store": "^3.3.0",
-    "ts-jest": "^29.4.6",
     "tsx": "^4.21.0",
     "typescript": "~5.9.3",
     "typescript-eslint": "^8.57.1",

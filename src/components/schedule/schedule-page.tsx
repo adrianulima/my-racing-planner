@@ -2,9 +2,11 @@ import { toggleScheduleEntry, useIr } from "@/store/ir";
 import { useUi } from "@/store/ui";
 import { ETabs } from "@/store/ui";
 import { ownNurbCombined, wishNurbCombined } from "@/ir-data/utils/tracks";
+import { TContent } from "@/ir-data/utils/types";
 import { Box, Flex, Grid, HStack, IconButton, Link, List, Text, VStack } from "@chakra-ui/react";
 import { faCalendarDays, faGears, faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useTranslation } from "react-i18next";
 import { useLocation } from "wouter";
 import SERIES_JSON from "../../ir-data/series.json";
 import TRACKS_JSON from "../../ir-data/tracks.json";
@@ -24,6 +26,21 @@ type WeekEntry = {
   date: string;
 };
 
+type ScheduleWeek = {
+  weekNum: number;
+  date: string;
+  track: {
+    id: number;
+    name: string;
+    config?: string;
+  };
+  cars?: {
+    id: number;
+    name: string;
+  }[];
+  rainChance?: number;
+};
+
 function parseScheduleKey(key: string): WeekEntry {
   const idx = key.indexOf("_");
   return {
@@ -38,7 +55,9 @@ function getWeekNumber(date: string, allSeasonDates: string[]): number {
 }
 
 function getTrackForWeek(seriesId: number, date: string) {
-  const series = SERIES_JSON[seriesId.toString() as keyof typeof SERIES_JSON];
+  const series = SERIES_JSON[
+    seriesId.toString() as keyof typeof SERIES_JSON
+  ] as { weeks: ScheduleWeek[] } | undefined;
   if (!series) return null;
   const week = series.weeks.find(
     (w) => getPreviousTuesday(w.date) === date,
@@ -53,6 +72,7 @@ function SchedulePage() {
   const { seasonUseLocalTimezone, seasonShowThisWeek } = useUi();
   const { weeksStartDates } = useSeason();
   const [_, navigate] = useLocation();
+  const { t } = useTranslation();
 
   // Parse and filter to only entries whose series is still in favorites
   const entries = mySchedule
@@ -65,8 +85,6 @@ function SchedulePage() {
     return acc;
   }, {});
 
-  const sortedDates = Object.keys(byDate).sort();
-
   const shortFormat: Intl.DateTimeFormatOptions = { month: "short", day: "numeric" };
 
   // Use all season weeks so every week gets a row
@@ -75,14 +93,14 @@ function SchedulePage() {
   return (
     <Page>
       <PageHeader
-        title="My Schedule"
-        description="Your planned races for each week of the season"
+        title={t("pages.schedule.title")}
+        description={t("pages.schedule.description")}
       />
       <HStack mb={2}>
         <PopoverRoot positioning={{ placement: "right-start" }}>
           <PopoverTrigger asChild>
             <IconButton
-              aria-label="Settings"
+              aria-label={t("common.settings")}
               variant={"outline"}
               size={"lg"}
               bgColor={{ base: "bg.muted", _hover: "bg" }}
@@ -100,13 +118,13 @@ function SchedulePage() {
         <Flex flex={1} borderRadius="md" bgColor="bg.muted" p={4} justifyContent="center">
           <EmptyState
             icon={<FontAwesomeIcon icon={faMagnifyingGlass} />}
-            title="No series selected"
-            description="Select series and schedule races from the My Season grid"
+            title={t("empty.noSeriesSelected")}
+            description={t("empty.selectSeriesSchedule")}
           >
             <List.Root variant="marker">
               <List.Item>
                 <Link onClick={() => navigate(ETabs.MySeason)}>
-                  Go to My Season to select races
+                  {t("empty.goSeasonSchedule")}
                 </Link>
               </List.Item>
             </List.Root>
@@ -138,17 +156,17 @@ function SchedulePage() {
                     {weekEnd.toLocaleDateString("en-US", shortFormat)}
                   </Text>
                   <Text fontSize="xs" opacity={0.7}>
-                    (week {getWeekNumber(date, weeksStartDates)})
+                    ({t("common.week")} {getWeekNumber(date, weeksStartDates)})
                   </Text>
                   {thisWeek && (
                     <Text fontSize="xs" fontWeight="bold" color="green.500">
-                      This week
+                      {t("schedule.thisWeek")}
                     </Text>
                   )}
                 </HStack>
                 {weekEntries.length === 0 ? (
                   <Text fontSize="sm" color="fg.muted" mt={1}>
-                    No races selected for this week
+                    {t("schedule.noRacesSelected")}
                   </Text>
                 ) : (
                 <Grid gap={3} templateColumns="repeat(auto-fill, minmax(350px, 1fr))">
@@ -162,20 +180,22 @@ function SchedulePage() {
                       entry.seriesId,
                       seasonUseLocalTimezone,
                     );
-                    const rainChance = (week as any)?.rainChance ?? 0;
+                    const rainChance = week?.rainChance ?? 0;
 
-                    const trackId = (week as any)?.track?.id;
+                    const trackId = week?.track.id;
                     const track = trackId
-                      ? TRACKS_JSON[String(trackId) as keyof typeof TRACKS_JSON]
+                      ? TRACKS_JSON[
+                          String(trackId) as keyof typeof TRACKS_JSON
+                        ] as TContent
                       : null;
-                    const free = !!(track as any)?.free;
+                    const free = !!track?.free;
                     const owned = track
-                      ? myTracks.includes((track as any).sku) ||
-                        ownNurbCombined((track as any).id, myTracks)
+                      ? myTracks.includes(track.sku) ||
+                        ownNurbCombined(track.id, myTracks)
                       : false;
                     const wish = track
-                      ? wishTracks.includes((track as any).sku) ||
-                        wishNurbCombined((track as any).id, wishTracks, myTracks)
+                      ? wishTracks.includes(track.sku) ||
+                        wishNurbCombined(track.id, wishTracks, myTracks)
                       : false;
                     const scale = getContentColorScale(free, owned, wish);
 
@@ -214,13 +234,13 @@ function SchedulePage() {
                           </HStack>
                           {week && (
                             <Text fontSize="sm">
-                              {(week as any).track.name}
-                              {(week as any).track.config && ` (${(week as any).track.config})`}
+                              {week.track.name}
+                              {week.track.config && ` (${week.track.config})`}
                             </Text>
                           )}
-                          {series.switching && (week as any)?.cars?.length > 0 && (
+                          {series.switching && !!week?.cars?.length && (
                             <Text fontSize="sm">
-                              🚗 {(week as any).cars.map((c: any) => c.name).join(", ")}
+                              🚗 {week.cars.map((c) => c.name).join(", ")}
                             </Text>
                           )}
                           {schedule && (
@@ -230,7 +250,7 @@ function SchedulePage() {
                           )}
                           {rainChance > 0 && (
                             <Text fontSize="xs">
-                              💧 {rainChance}% chance of rain
+                              {t("content.rainChance", { chance: rainChance })}
                             </Text>
                           )}
                         </VStack>

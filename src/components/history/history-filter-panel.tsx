@@ -4,6 +4,8 @@ import { CategoryIcon } from "@/ir-data/utils/icons";
 import { HStack, IconButton, Tabs, Text, VStack } from "@chakra-ui/react";
 import { faClockRotateLeft } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useTranslation } from "react-i18next";
+import { getCategoryTranslationKey } from "@/i18n/category";
 import { PopoverContent, PopoverRoot, PopoverTrigger } from "../ui/popover";
 import { Radio, RadioGroup } from "../ui/radio";
 
@@ -21,13 +23,14 @@ function HistoryFilterPanel<T extends string>({
   onSinceChange: (value: EHistorySince) => void;
 }) {
   const { width } = useScreenSize();
+  const { t } = useTranslation();
   const labels = {
-    [EHistorySince.Ever]: "All Time",
-    [EHistorySince.ThisYear]: "This Year",
-    [EHistorySince.LastYear]: "Since Last Year",
-    [EHistorySince.ThreeYears]: "Past Three Years",
-    [EHistorySince.FiveYears]: "Past Five Years",
-    [EHistorySince.TenYears]: "Past Ten Years",
+    [EHistorySince.Ever]: t("filters.historySince.all"),
+    [EHistorySince.ThisYear]: t("filters.historySince.this_year"),
+    [EHistorySince.LastYear]: t("filters.historySince.last_year"),
+    [EHistorySince.ThreeYears]: t("filters.historySince.three_years"),
+    [EHistorySince.FiveYears]: t("filters.historySince.five_years"),
+    [EHistorySince.TenYears]: t("filters.historySince.ten_years"),
   };
   return (
     <HStack justifyContent={{ md: "space-between", base: "center" }} mb={2}>
@@ -36,7 +39,7 @@ function HistoryFilterPanel<T extends string>({
       >
         <PopoverTrigger asChild>
           <IconButton
-            aria-label="Settings"
+            aria-label={t("common.settings")}
             variant={"outline"}
             size={"lg"}
             bgColor={{ base: "bg.muted", _hover: "bg" }}
@@ -87,20 +90,26 @@ function HistoryFilterPanel<T extends string>({
         <Tabs.List
           flex={{ md: "unset", base: 1 }}
           width={{ md: "unset", base: "100%" }}
+          minW={0}
         >
           {Object.entries(tabs).map(([k, tab]: [string, string]) => (
             <Tabs.Trigger
               value={tab}
               key={tab}
-              width={{ md: "unset", base: "100%" }}
+              width={{ md: "auto", base: "100%" }}
+              minW={0}
+              maxW={{ md: "150px", base: undefined }}
+              flexShrink={1}
             >
               <CategoryIcon category={k} />
               <Text
-                hideBelow={tab === "All" ? undefined : "md"}
+                hideBelow={tab === tabs.all ? undefined : "md"}
                 textWrap={"nowrap"}
                 userSelect={"none"}
+                minW={0}
+                truncate
               >
-                {tab}
+                {t(getCategoryTranslationKey(tab))}
               </Text>
             </Tabs.Trigger>
           ))}

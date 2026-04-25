@@ -1,5 +1,6 @@
 import { ETabs } from "@/store/ui";
 import { Stack, StackProps, Tabs, Text } from "@chakra-ui/react";
+import { useTranslation } from "react-i18next";
 import { useLocation } from "wouter";
 
 enum ETabContent {
@@ -9,6 +10,7 @@ enum ETabContent {
 
 function ContentSubPage({ ...props }: StackProps) {
   const [location, navigate] = useLocation();
+  const { t } = useTranslation();
   const page =
     location === ETabs.MyCars ? ETabContent.Cars : ETabContent.Tracks;
   return (
@@ -25,13 +27,13 @@ function ContentSubPage({ ...props }: StackProps) {
       >
         <Tabs.List flex={1} width={"100%"}>
           <Tabs.Trigger value={ETabContent.Cars} width={"100%"}>
-            <Text textWrap={"nowrap"} userSelect={"none"}>
-              Cars
+            <Text textWrap={"nowrap"} userSelect={"none"} truncate>
+              {t("common.cars")}
             </Text>
           </Tabs.Trigger>
           <Tabs.Trigger value={ETabContent.Tracks} width={"100%"}>
-            <Text textWrap={"nowrap"} userSelect={"none"}>
-              Tracks
+            <Text textWrap={"nowrap"} userSelect={"none"} truncate>
+              {t("common.tracks")}
             </Text>
           </Tabs.Trigger>
         </Tabs.List>

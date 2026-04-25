@@ -1,4 +1,6 @@
 import { Table, Text, VStack } from "@chakra-ui/react";
+import i18n from "@/i18n";
+import { useTranslation } from "react-i18next";
 import { Tooltip } from "../ui/tooltip";
 
 function SeasonTableRowDateCell({
@@ -10,7 +12,8 @@ function SeasonTableRowDateCell({
   thisWeek: boolean;
   weekNumber: number;
 }) {
-  const locale = "en-US";
+  const locale = i18n.language;
+  const { t } = useTranslation();
   const longFormat: Intl.DateTimeFormatOptions = {
     year: "numeric",
     month: "long",
@@ -51,7 +54,7 @@ function SeasonTableRowDateCell({
             {weekStart.toLocaleDateString("en-US", shortFormat)}
           </Text>
           <Text fontSize="xs" textAlign="center" opacity="0.8">
-            (week {weekNumber})
+            ({t("common.week")} {weekNumber})
           </Text>
         </VStack>
       </Tooltip>

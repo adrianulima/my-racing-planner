@@ -72,7 +72,16 @@ function NavBarButton({
         )}
       </Box>
       {label && (
-        <Text userSelect={"none"} textAlign={"center"} fontSize="10px">
+        <Text
+          userSelect={"none"}
+          textAlign={"center"}
+          fontSize="10px"
+          lineHeight="1.15"
+          maxW="76px"
+          whiteSpace="normal"
+          overflowWrap="anywhere"
+          lineClamp={2}
+        >
           {label}
         </Text>
       )}

@@ -4,11 +4,13 @@ import {
   useUi,
 } from "@/store/ui";
 import { For, VStack } from "@chakra-ui/react";
+import { useTranslation } from "react-i18next";
 import { Switch } from "../ui/switch";
 import { Tooltip } from "../ui/tooltip";
 
 function ScheduleSettingsPopover() {
   const { seasonShowThisWeek, seasonUseLocalTimezone } = useUi();
+  const { t } = useTranslation();
 
   const timezoneName =
     Intl.DateTimeFormat().resolvedOptions().timeZone || "Local";
@@ -16,15 +18,15 @@ function ScheduleSettingsPopover() {
   const settingsList = [
     {
       id: "scheduleThisWeek",
-      text: "Highlight current week",
-      tooltip: "Highlight current week row",
+      text: t("settings.highlightCurrentWeek"),
+      tooltip: t("settings.highlightCurrentWeekTooltip"),
       checked: seasonShowThisWeek,
       setChecked: setSeasonShowThisWeek,
     },
     {
       id: "scheduleLocalTimezone",
-      text: `Schedule with ${timezoneName} time`,
-      tooltip: "Convert race times from UTC to your local time zone",
+      text: t("settings.localTimezone", { timezone: timezoneName }),
+      tooltip: t("settings.localTimezoneTooltip"),
       checked: seasonUseLocalTimezone,
       setChecked: setSeasonUseLocalTimezone,
     },

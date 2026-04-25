@@ -24,6 +24,8 @@ import { Tooltip } from "../ui/tooltip";
 import StarCheckbox from "./star-checkbox";
 import getScheduleDescription from "./getScheduleDescription";
 import { useUi } from "@/store/ui";
+import { useTranslation } from "react-i18next";
+import { getCategoryTranslationKey } from "@/i18n/category";
 
 function SeriesTableRow({
   id,
@@ -56,6 +58,7 @@ function SeriesTableRow({
 }) {
   const tracks = [...new Set(weeks.map((w) => w.track.id))];
   const { seasonUseLocalTimezone } = useUi();
+  const { t } = useTranslation();
   const scheduleDescription = getScheduleDescription(
     id,
     seasonUseLocalTimezone,
@@ -108,7 +111,7 @@ function SeriesTableRow({
         <ContentNameBadge name={name}>
           {!official && (
             <Badge colorPalette="yellow" mr={1}>
-              Unranked
+              {t("common.unranked")}
             </Badge>
           )}
         </ContentNameBadge>
@@ -118,7 +121,7 @@ function SeriesTableRow({
           <Tooltip
             lazyMount
             unmountOnExit
-            content={"Fixed Setup"}
+            content={t("common.fixedSetup")}
             showArrow
             positioning={{ placement: "top" }}
             openDelay={200}
@@ -126,7 +129,7 @@ function SeriesTableRow({
           >
             <Badge variant={"solid"} _light={{ bg: "gray.600" }}>
               <FontAwesomeIcon icon={faLock} size="sm" />
-              Fixed
+              {t("common.fixed")}
             </Badge>
           </Tooltip>
         )}
@@ -165,7 +168,7 @@ function SeriesTableRow({
         <Tooltip
           lazyMount
           unmountOnExit
-          content={Category[category as keyof typeof Category]}
+          content={t(getCategoryTranslationKey(Category[category as keyof typeof Category]))}
           showArrow
           positioning={{ placement: "top" }}
           openDelay={200}

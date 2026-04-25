@@ -1,8 +1,10 @@
 import { useUi } from "@/store/ui";
 import { FormatNumber, HStack, Separator, Stack, Text } from "@chakra-ui/react";
+import { useTranslation } from "react-i18next";
 
 function PriceDiscountPanel({ wishList }: { wishList: { price: number }[] }) {
   const { shopLoyaltyDiscount, shopVolumeDiscount } = useUi();
+  const { t } = useTranslation();
   const totalPrice = wishList.reduce((acc, curr) => acc + curr.price, 0);
 
   const discountEligibleCount = wishList.filter(
@@ -30,7 +32,7 @@ function PriceDiscountPanel({ wishList }: { wishList: { price: number }[] }) {
       fontWeight={"bold"}
       alignItems={"end"}
     >
-      <Text textStyle="4xl">Total</Text>
+      <Text textStyle="4xl">{t("shop.total")}</Text>
       <Stack alignItems={"end"} gap={0}>
         {(shopVolumeDiscount || shopLoyaltyDiscount) && (
           <>
@@ -53,10 +55,10 @@ function PriceDiscountPanel({ wishList }: { wishList: { price: number }[] }) {
               textStyle="xs"
               fontWeight={"normal"}
             >
-              {discount}% discount (
+              {t("shop.discount", { discount })} (
               {shopLoyaltyDiscount
-                ? "loyalty"
-                : `${discountEligibleCount} items`}
+                ? t("shop.discountLoyalty")
+                : t("shop.discountItems", { count: discountEligibleCount })}
               )
             </Text>
             <Separator mt={1} />

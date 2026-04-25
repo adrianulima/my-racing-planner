@@ -3,6 +3,7 @@ import SORTED_SERIES from "@/ir-data/utils/series";
 import { ECarCategories } from "@/ir-data/utils/types";
 import { useIr } from "@/store/ir";
 import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 import ContentFilterPanel from "../content/content-filter-panel";
 import Page from "../page/page";
 import PageHeader from "../page/page-header";
@@ -22,6 +23,7 @@ function SeriesPage() {
   const debouncedSearch = useDebounce(search, 500);
 
   const { favoriteSeries } = useIr();
+  const { t } = useTranslation();
 
   useEffect(() => {
     const filteredContent =
@@ -59,8 +61,8 @@ function SeriesPage() {
   return (
     <Page>
       <PageHeader
-        title="My Favorite Series"
-        description="Select the series you wanna see in your season planner"
+        title={t("pages.series.title")}
+        description={t("pages.series.description")}
       />
       <ContentFilterPanel
         tabs={ECarCategories}
@@ -75,7 +77,7 @@ function SeriesPage() {
           <Tooltip
             lazyMount
             unmountOnExit
-            content={"Filter favorite series only"}
+            content={t("filters.favoriteOnly")}
             showArrow
             openDelay={200}
             closeDelay={100}

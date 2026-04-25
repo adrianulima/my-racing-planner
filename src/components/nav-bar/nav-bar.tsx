@@ -11,23 +11,25 @@ import {
   faTableCellsLarge,
 } from "@fortawesome/free-solid-svg-icons";
 import { Link, useLocation } from "wouter";
+import { useTranslation } from "react-i18next";
 import BMCIcon from "../bmc/icon";
 import { Tooltip } from "../ui/tooltip";
 import MoreMenuButton from "./more-menu-button";
 import NavBarButton from "./nav-bar-button";
 
 const tabsTop = [
-  { label: "My Schedule", icon: faCalendarDays, index: ETabs.MySchedule },
-  { label: "My Season", icon: faTableCellsLarge, index: ETabs.MySeason },
-  { label: "My Series", icon: faFlagCheckered, index: ETabs.MySeries },
-  { label: "My Cars", icon: faCar, index: ETabs.MyCars },
-  { label: "My Tracks", icon: faRoad, index: ETabs.MyTracks },
-  { label: "Shop Guide", icon: faShoppingBag, index: ETabs.ShopGuide },
+  { labelKey: "nav.mySchedule", icon: faCalendarDays, index: ETabs.MySchedule },
+  { labelKey: "nav.mySeason", icon: faTableCellsLarge, index: ETabs.MySeason },
+  { labelKey: "nav.mySeries", icon: faFlagCheckered, index: ETabs.MySeries },
+  { labelKey: "nav.myCars", icon: faCar, index: ETabs.MyCars },
+  { labelKey: "nav.myTracks", icon: faRoad, index: ETabs.MyTracks },
+  { labelKey: "nav.shopGuide", icon: faShoppingBag, index: ETabs.ShopGuide },
 ];
 
 function NavBar({ ...props }: StackProps) {
   const { height } = useScreenSize();
   const [location] = useLocation();
+  const { t } = useTranslation();
   return (
     <Stack
       {...props}
@@ -44,7 +46,7 @@ function NavBar({ ...props }: StackProps) {
         <Tooltip
           lazyMount
           unmountOnExit
-          content={`Racing Planner v${APP_VERSION}`}
+          content={t("app.version", { version: APP_VERSION })}
           showArrow
           positioning={{ placement: "bottom" }}
           openDelay={200}
@@ -65,7 +67,7 @@ function NavBar({ ...props }: StackProps) {
           children={(tab) => (
             <NavBarButton
               key={tab.index}
-              label={tab.label}
+              label={t(tab.labelKey)}
               icon={tab.icon}
               selected={location === tab.index}
               as={Link}
@@ -87,7 +89,7 @@ function NavBar({ ...props }: StackProps) {
         >
           <NavBarButton
             key={"tracks-history"}
-            label={"History"}
+            label={t("common.history")}
             icon={faChartLine}
             selected={location === ETabs.History}
             as={Link}
@@ -96,7 +98,7 @@ function NavBar({ ...props }: StackProps) {
 
           <NavBarButton
             key={"buy-me-a-coffee"}
-            label="Donate"
+            label={t("common.donate")}
             selected={false}
             as="a"
             href="https://buymeacoffee.com/adrianulima"

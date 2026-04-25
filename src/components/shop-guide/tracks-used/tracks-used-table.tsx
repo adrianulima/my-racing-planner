@@ -5,12 +5,14 @@ import SERIES_JSON from "../../../ir-data/series.json";
 import TRACKS_JSON from "../../../ir-data/tracks.json";
 import TRACKS_LIST from "../../../ir-data/utils/tracks";
 import { useAppLayout } from "../../app/useAppLayout";
+import { useTranslation } from "react-i18next";
 import TracksUsedEmpty from "./tracks-used-empty";
 import TracksUsedRow from "./tracks-used-row";
 
 function TracksUsedTable() {
   const { wishTracks, favoriteSeries } = useIr();
   const { onScroll } = useAppLayout();
+  const { t } = useTranslation();
   const tracksMap = favoriteSeries.reduce(
     (acc, curr) => {
       const series = SERIES_JSON[curr.toString() as keyof typeof SERIES_JSON];
@@ -87,10 +89,10 @@ function TracksUsedTable() {
         <Table.Header>
           <Table.Row bgColor={"bg.muted"}>
             <Table.ColumnHeader textAlign={"center"}>
-              <VisuallyHidden>Owned content</VisuallyHidden>
+              <VisuallyHidden>{t("common.ownedContent")}</VisuallyHidden>
             </Table.ColumnHeader>
-            <Table.ColumnHeader width="100%">Name</Table.ColumnHeader>
-            <Table.ColumnHeader textAlign={"center"}>Used</Table.ColumnHeader>
+            <Table.ColumnHeader width="100%">{t("common.name")}</Table.ColumnHeader>
+            <Table.ColumnHeader textAlign={"center"}>{t("common.used")}</Table.ColumnHeader>
           </Table.Row>
         </Table.Header>
         <Table.Body>
