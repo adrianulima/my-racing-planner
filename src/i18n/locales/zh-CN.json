@@ -79,7 +79,7 @@
     "myCars": "我的赛车",
     "myTracks": "我的赛道",
     "shopGuide": "购买指南",
-    "mySchedule": "My Schedule"
+    "mySchedule": "我的赛程"
   },
   "pages": {
     "cars": {
@@ -91,7 +91,7 @@
       "description": "标记你拥有的赛道并选择收藏。购买前可用愿望清单预览内容。"
     },
     "season": {
-      "title": "赛季规划器",
+      "title": "我的赛季",
       "description": "根据收藏的系列赛规划赛季周次，并使用设置选项自定义表格。"
     },
     "series": {
@@ -108,8 +108,8 @@
       "description": "查看 iRacing 历史上最常用的赛道"
     },
     "schedule": {
-      "title": "My Schedule",
-      "description": "Your planned races for each week of the season"
+      "title": "我的赛程",
+      "description": "你每周计划参加的比赛。请在“我的赛季”页面选择要参加的赛道。"
     }
   },
   "seasonLabel": {
@@ -175,8 +175,8 @@
     "addWishlist": "向愿望清单添加赛车或赛道",
     "noPaidTracksMissing": "没有缺少的付费赛道",
     "ownAllFavoriteTracks": "你已经拥有收藏系列赛的所有赛道",
-    "selectSeriesSchedule": "Select series and schedule races from the My Season grid",
-    "goSeasonSchedule": "Go to My Season to select races"
+    "selectSeriesSchedule": "在“我的赛季”表格中选择系列赛并安排比赛",
+    "goSeasonSchedule": "前往“我的赛季”选择比赛"
   },
   "shop": {
     "checkout": "在 iRacing.com 商店购买",
@@ -324,7 +324,7 @@
     "lapsOrMinutes": "{{laps}} 圈或 {{duration}} 分钟",
     "laps": "{{laps}} 圈",
     "minutes": "{{duration}} 分钟",
-    "thisWeek": "This week",
-    "noRacesSelected": "No races selected for this week"
+    "thisWeek": "本周",
+    "noRacesSelected": "本周未选择比赛"
   }
 }

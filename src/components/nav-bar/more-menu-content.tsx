@@ -2,7 +2,7 @@ import { useNotifications } from "@/store/notifications";
 import { ETabs } from "@/store/ui";
 import { Group, Separator, Stack } from "@chakra-ui/react";
 import {
-  faCalendarDays,
+  faShoppingBag,
   faChartLine,
   faCircleQuestion,
   faFileLines,
@@ -61,11 +61,11 @@ function MoreMenuContent({ close }: { close: () => void }) {
       </Group>
       <Separator />
       <MoreMenuItem
-        label={t("nav.mySchedule")}
-        icon={faCalendarDays}
+        label={t("nav.shopGuide")}
+        icon={faShoppingBag}
         onClick={() => {
           close();
-          navigate(ETabs.MySchedule);
+          navigate(ETabs.ShopGuide);
         }}
       />
       <Separator />
@@ -89,9 +89,23 @@ function MoreMenuContent({ close }: { close: () => void }) {
         <BMCIcon />
       </MoreMenuItem>
       <Separator />
-      <MoreMenuItem label={t("menu.exportMyContent")} icon={faShareFromSquare} onClick={() => { close(); openExportDialog(); }} />
+      <MoreMenuItem
+        label={t("menu.exportMyContent")}
+        icon={faShareFromSquare}
+        onClick={() => {
+          close();
+          openExportDialog();
+        }}
+      />
       <Separator />
-      <MoreMenuItem label={t("languages.switch")} icon={faLanguage} onClick={() => { close(); openLanguageDialog(); }} />
+      <MoreMenuItem
+        label={t("languages.switch")}
+        icon={faLanguage}
+        onClick={() => {
+          close();
+          openLanguageDialog();
+        }}
+      />
       <Separator />
       <MoreMenuItem
         label={t("menu.toggleColorMode")}

@@ -2,7 +2,7 @@ import { create } from "zustand";
 import { persist } from "zustand/middleware";
 import SERIES_JSON from "../ir-data/series.json";
 
-interface IMyContentStore {
+export interface IMyContentStore {
   myCars: number[];
   myTracks: number[];
   wishCars: number[];
@@ -67,8 +67,31 @@ export const setFavoriteSeriesItem = (id: number, enabled: boolean) =>
 export const setFavoriteSeriesList = (list: number[]) =>
   useIrStore.setState(() => ({ favoriteSeries: list }));
 
+export const getScheduleEntryKey = (seriesId: number, date: string) =>
+  `${seriesId}_${date}`;
+
+export const parseScheduleEntryKey = (key: string) => {
+  const idx = key.indexOf("_");
+  const seriesId = Number(key.substring(0, idx));
+  const date = key.substring(idx + 1);
+
+  if (
+    idx <= 0 ||
+    !Number.isInteger(seriesId) ||
+    seriesId <= 0 ||
+    !/^\d{4}-\d{2}-\d{2}$/.test(date)
+  ) {
+    return null;
+  }
+
+  return {
+    seriesId,
+    date,
+  };
+};
+
 export const toggleScheduleEntry = (seriesId: number, date: string) => {
-  const key = `${seriesId}_${date}`;
+  const key = getScheduleEntryKey(seriesId, date);
   useIrStore.setState((state: IMyContentStore) => ({
     mySchedule: state.mySchedule.includes(key)
       ? state.mySchedule.filter((k) => k !== key)

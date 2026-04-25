@@ -31,7 +31,7 @@ function ContentFilterPanel<T extends string>({
   return (
     <HStack justifyContent={{ md: "space-between", base: "center" }} mb={2}>
       <PopoverRoot
-        open={!!search?.trim() ? true : undefined}
+        open={search?.trim() ? true : undefined}
         positioning={{ placement: width.md ? "right" : "top-start" }}
       >
         <PopoverTrigger asChild>
@@ -51,7 +51,7 @@ function ContentFilterPanel<T extends string>({
             maxWidth={"100%"}
             startElement={<FontAwesomeIcon icon={faSearch} />}
             endElement={
-              !!search?.trim() ? (
+              search?.trim() ? (
                 <FontAwesomeIcon
                   onClick={() => setSearchWrapper("")}
                   cursor={"pointer"}

@@ -74,7 +74,7 @@
     "myCars": "Mes voitures",
     "myTracks": "Mes circuits",
     "shopGuide": "Guide d'achat",
-    "mySchedule": "My Schedule"
+    "mySchedule": "Mon calendrier"
   },
   "pages": {
     "cars": {
@@ -86,7 +86,7 @@
       "description": "Marquez les circuits que vous possédez et sélectionnez vos favoris. Utilisez la liste d'envies pour prévisualiser le contenu avant de l'acheter."
     },
     "season": {
-      "title": "Planificateur de saison",
+      "title": "Ma saison",
       "description": "Planifiez les semaines de votre saison à partir de vos séries favorites et personnalisez le tableau avec les options de réglage."
     },
     "series": {
@@ -103,8 +103,8 @@
       "description": "Consultez les circuits les plus utilisés de tous les temps sur iRacing"
     },
     "schedule": {
-      "title": "My Schedule",
-      "description": "Your planned races for each week of the season"
+      "title": "Mon calendrier",
+      "description": "Tes courses prévues pour chaque semaine. Sélectionne les circuits que tu veux courir depuis la page Ma saison."
     }
   },
   "seasonLabel": {
@@ -165,8 +165,8 @@
     "addWishlist": "Ajoutez des voitures ou circuits à votre liste d'envies",
     "noPaidTracksMissing": "Aucun circuit payant manquant",
     "ownAllFavoriteTracks": "Vous possédez déjà tous les circuits de vos séries favorites",
-    "selectSeriesSchedule": "Select series and schedule races from the My Season grid",
-    "goSeasonSchedule": "Go to My Season to select races"
+    "selectSeriesSchedule": "Sélectionne des séries et planifie des courses dans la grille Ma saison",
+    "goSeasonSchedule": "Aller à Ma saison pour sélectionner des courses"
   },
   "shop": {
     "checkout": "Acheter sur la boutique iRacing.com",
@@ -195,7 +195,7 @@
     "no": "Non"
   },
   "schedule": {
-    "thisWeek": "This week",
-    "noRacesSelected": "No races selected for this week"
+    "thisWeek": "Cette semaine",
+    "noRacesSelected": "Aucune course sélectionnée pour cette semaine"
   }
 }

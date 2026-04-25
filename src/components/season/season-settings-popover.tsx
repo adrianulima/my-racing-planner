@@ -4,8 +4,6 @@ import {
   setSeasonShowCheckboxes,
   setSeasonShowOwned,
   setSeasonShowParticipation,
-  setSeasonShowRain,
-  setSeasonShowReorder,
   setSeasonShowThisWeek,
   setSeasonShowTrackConfig,
   setSeasonShowWishlist,
@@ -19,7 +17,6 @@ import { Tooltip } from "../ui/tooltip";
 
 function SeasonSettingsPopover() {
   const {
-    seasonShowReorder,
     seasonShowCheckboxes,
     seasonShowCarsDropdown,
     seasonShowTrackConfig,
@@ -28,7 +25,6 @@ function SeasonSettingsPopover() {
     seasonShowWishlist,
     seasonShowOwned,
     seasonShowParticipation,
-    seasonShowRain,
     seasonUseLocalTimezone,
   } = useUi();
   const { t } = useTranslation();
@@ -66,13 +62,6 @@ function SeasonSettingsPopover() {
       setChecked: setSeasonHighlight,
     },
     {
-      id: "reorder",
-      text: t("settings.reorderColumns"),
-      tooltip: t("settings.reorderColumnsTooltip"),
-      checked: seasonShowReorder,
-      setChecked: setSeasonShowReorder,
-    },
-    {
       id: "thisWeek",
       text: t("settings.highlightCurrentWeek"),
       tooltip: t("settings.highlightCurrentWeekTooltip"),
@@ -99,13 +88,6 @@ function SeasonSettingsPopover() {
       tooltip: t("settings.showParticipationTooltip"),
       checked: seasonShowParticipation,
       setChecked: setSeasonShowParticipation,
-    },
-    {
-      id: "rain",
-      text: t("settings.showRain"),
-      tooltip: t("settings.showRainTooltip"),
-      checked: seasonShowRain,
-      setChecked: setSeasonShowRain,
     },
     {
       id: "localTimezone",

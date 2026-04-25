@@ -74,7 +74,7 @@
     "myCars": "Мои автомобили",
     "myTracks": "Мои трассы",
     "shopGuide": "Гид покупок",
-    "mySchedule": "My Schedule"
+    "mySchedule": "Моё расписание"
   },
   "pages": {
     "cars": {
@@ -86,7 +86,7 @@
       "description": "Отметьте трассы, которыми вы владеете, и выберите избранные. Используйте список желаний, чтобы предварительно оценить контент перед покупкой."
     },
     "season": {
-      "title": "Планировщик сезона",
+      "title": "Мой сезон",
       "description": "Планируйте недели сезона по избранным сериям и настраивайте таблицу через меню настроек."
     },
     "series": {
@@ -103,8 +103,8 @@
       "description": "Смотрите самые используемые трассы за всё время в iRacing"
     },
     "schedule": {
-      "title": "My Schedule",
-      "description": "Your planned races for each week of the season"
+      "title": "Моё расписание",
+      "description": "Запланированные гонки на каждую неделю. Выбирай трассы для участия на странице Мой сезон."
     }
   },
   "seasonLabel": {
@@ -165,8 +165,8 @@
     "addWishlist": "Добавьте автомобили или трассы в список желаний",
     "noPaidTracksMissing": "Платные трассы не отсутствуют",
     "ownAllFavoriteTracks": "У вас уже есть все трассы из избранных серий",
-    "selectSeriesSchedule": "Select series and schedule races from the My Season grid",
-    "goSeasonSchedule": "Go to My Season to select races"
+    "selectSeriesSchedule": "Выбери серии и запланируй гонки в таблице Мой сезон",
+    "goSeasonSchedule": "Перейти в Мой сезон, чтобы выбрать гонки"
   },
   "shop": {
     "checkout": "Купить в магазине iRacing.com",
@@ -195,7 +195,7 @@
     "no": "Нет"
   },
   "schedule": {
-    "thisWeek": "This week",
-    "noRacesSelected": "No races selected for this week"
+    "thisWeek": "Эта неделя",
+    "noRacesSelected": "На эту неделю гонки не выбраны"
   }
 }

@@ -1,4 +1,4 @@
-import { useIr, toggleScheduleEntry } from "@/store/ir";
+import { getScheduleEntryKey, toggleScheduleEntry, useIr } from "@/store/ir";
 import { useUi } from "@/store/ui";
 import { Text } from "@chakra-ui/react";
 import { getContentColorScale } from "@/utils/color";
@@ -8,6 +8,7 @@ import SortableColumnCell from "./sortable-column-cell";
 import { Tooltip } from "../ui/tooltip";
 import { TSeriesDateMap } from "./useSeason";
 import { useTranslation } from "react-i18next";
+import { KeyboardEvent, MouseEvent } from "react";
 
 function SeasonTableRowCell({
   seriesId,
@@ -49,13 +50,21 @@ function SeasonTableRowCell({
   const { t } = useTranslation();
 
   const { mySchedule } = useIr();
-  const scheduled = mySchedule.includes(`${seriesId}_${date}`);
+  const scheduled = mySchedule.includes(getScheduleEntryKey(seriesId, date));
 
-  const handleCellClick = (e: React.MouseEvent) => {
+  const toggleScheduled = () => toggleScheduleEntry(seriesId, date);
+
+  const handleCellClick = (e: MouseEvent) => {
     // Don't toggle if clicking on interactive children (checkbox, popover button)
     const target = e.target as HTMLElement;
-    if (target.closest("input, button, label, [role='checkbox']")) return;
-    toggleScheduleEntry(seriesId, date);
+    if (target.closest("input, button, label")) return;
+    toggleScheduled();
+  };
+
+  const handleCellKeyDown = (e: KeyboardEvent) => {
+    if (e.key !== "Enter" && e.key !== " ") return;
+    e.preventDefault();
+    toggleScheduled();
   };
 
   const cars =
@@ -85,8 +94,20 @@ function SeasonTableRowCell({
       bgColor={seasonHighlight && highlight ? bgColorHighlight : bgColor}
       color={color}
       onClick={handleCellClick}
+      onKeyDown={handleCellKeyDown}
       cursor="pointer"
-      boxShadow={scheduled ? "inset 0 0 0 1.5px var(--chakra-colors-fg-muted)" : undefined}
+      tabIndex={0}
+      role="checkbox"
+      aria-checked={scheduled}
+      aria-label={`${name} ${t("nav.mySchedule")}`}
+      boxShadow={
+        scheduled
+          ? {
+              base: `inset 0 0 0 2px var(--chakra-colors-${scale}-600)`,
+              _dark: `inset 0 0 0 2px var(--chakra-colors-${scale}-400)`,
+            }
+          : undefined
+      }
     >
       {seasonShowRain && rainChance > 0 && (
         <Tooltip

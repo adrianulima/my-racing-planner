@@ -91,7 +91,7 @@
       "description": "Mark the tracks you own and select your favorites. Use the wishlist to preview the content before you buy it."
     },
     "season": {
-      "title": "My Season Planner",
+      "title": "My Season",
       "description": "Plan your season weeks from your favorite series, use the settings dropdown options to customize the table."
     },
     "series": {
@@ -109,7 +109,7 @@
     },
     "schedule": {
       "title": "My Schedule",
-      "description": "Your planned races for each week of the season"
+      "description": "Your planned races for each week. Select the tracks you plan to race from the My Season page."
     }
   },
   "seasonLabel": {

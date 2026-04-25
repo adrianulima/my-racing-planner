@@ -20,7 +20,7 @@ function SeasonPage() {
       seasonCategory === ECarCategories.all
         ? favoriteSeries
         : favoriteSeries.filter(
-            (seriesId: any) =>
+            (seriesId) =>
               ECarCategories[
                 (
                   SERIES_JSON[

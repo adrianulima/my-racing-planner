@@ -79,7 +79,7 @@
     "myCars": "Meus carros",
     "myTracks": "Minhas pistas",
     "shopGuide": "Guia de compra",
-    "mySchedule": "My Schedule"
+    "mySchedule": "Minha agenda"
   },
   "pages": {
     "cars": {
@@ -91,7 +91,7 @@
       "description": "Marque as pistas que você possui e selecione suas favoritas. Use a lista de desejos para pré-visualizar o conteúdo antes de comprar."
     },
     "season": {
-      "title": "Planejador da temporada",
+      "title": "Minha temporada",
       "description": "Planeje as semanas da sua temporada a partir das suas séries favoritas e use as opções de configuração para personalizar a tabela."
     },
     "series": {
@@ -108,8 +108,8 @@
       "description": "Veja as pistas mais usadas de todos os tempos no iRacing"
     },
     "schedule": {
-      "title": "My Schedule",
-      "description": "Your planned races for each week of the season"
+      "title": "Minha agenda",
+      "description": "Suas corridas planejadas por semana. Selecione as pistas que você pretende correr na página Minha temporada."
     }
   },
   "seasonLabel": {
@@ -175,8 +175,8 @@
     "addWishlist": "Adicione alguns carros ou pistas à sua lista de desejos",
     "noPaidTracksMissing": "Nenhuma pista paga faltando",
     "ownAllFavoriteTracks": "Você já possui todas as pistas das suas séries favoritas",
-    "selectSeriesSchedule": "Select series and schedule races from the My Season grid",
-    "goSeasonSchedule": "Go to My Season to select races"
+    "selectSeriesSchedule": "Selecione séries e agende corridas na grade Minha temporada",
+    "goSeasonSchedule": "Ir para Minha temporada para selecionar corridas"
   },
   "shop": {
     "checkout": "Comprar na loja do iRacing.com",
@@ -324,7 +324,7 @@
     "lapsOrMinutes": "{{laps}} voltas ou {{duration}} min",
     "laps": "{{laps}} voltas",
     "minutes": "{{duration}} min",
-    "thisWeek": "This week",
-    "noRacesSelected": "No races selected for this week"
+    "thisWeek": "Esta semana",
+    "noRacesSelected": "Nenhuma corrida selecionada para esta semana"
   }
 }

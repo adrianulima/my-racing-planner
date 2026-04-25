@@ -5,7 +5,7 @@ import {
   faCalendarDays,
   faFlagCheckered,
   faRoad,
-  faShoppingBag,
+  // faShoppingBag,
   faTableCellsLarge,
 } from "@fortawesome/free-solid-svg-icons";
 import { Link, useLocation } from "wouter";
@@ -24,7 +24,7 @@ function BottomNavBar({ ...props }: StackProps) {
     location === ETabs.MyTracks
       ? { label: t("nav.myTracks"), icon: faRoad, index: ETabs.MyTracks }
       : { label: t("nav.myCars"), icon: faCar, index: ETabs.MyCars },
-    { label: t("nav.shopGuide"), icon: faShoppingBag, index: ETabs.ShopGuide },
+    // { label: t("nav.shopGuide"), icon: faShoppingBag, index: ETabs.ShopGuide },
   ];
 
   return (

@@ -10,7 +10,7 @@ function PageTitle({
   description: string;
 }) {
   const { height } = useScreenSize();
-  const ifNotSmall = (value: any) => (height.small ? undefined : value);
+  const ifNotSmall = <T,>(value: T) => (height.small ? undefined : value);
   return (
     <Stack pl={{ base: "0.5rem", md: ifNotSmall("unset") }} gap={0} {...rest}>
       <Heading

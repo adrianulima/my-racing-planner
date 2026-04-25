@@ -74,7 +74,7 @@
     "myCars": "Moje samochody",
     "myTracks": "Moje tory",
     "shopGuide": "Przewodnik zakupów",
-    "mySchedule": "My Schedule"
+    "mySchedule": "Mój harmonogram"
   },
   "pages": {
     "cars": {
@@ -86,7 +86,7 @@
       "description": "Zaznacz tory, które posiadasz, i wybierz ulubione. Użyj listy życzeń, aby podejrzeć zawartość przed zakupem."
     },
     "season": {
-      "title": "Planer sezonu",
+      "title": "Mój sezon",
       "description": "Planuj tygodnie sezonu na podstawie ulubionych serii i używaj ustawień, aby dostosować tabelę."
     },
     "series": {
@@ -103,8 +103,8 @@
       "description": "Zobacz najczęściej używane tory w historii iRacing"
     },
     "schedule": {
-      "title": "My Schedule",
-      "description": "Your planned races for each week of the season"
+      "title": "Mój harmonogram",
+      "description": "Twoje zaplanowane wyścigi na każdy tydzień. Wybierz tory, na których chcesz jechać, na stronie Mój sezon."
     }
   },
   "seasonLabel": {
@@ -165,8 +165,8 @@
     "addWishlist": "Dodaj samochody lub tory do listy życzeń",
     "noPaidTracksMissing": "Nie brakuje płatnych torów",
     "ownAllFavoriteTracks": "Masz już wszystkie tory z ulubionych serii",
-    "selectSeriesSchedule": "Select series and schedule races from the My Season grid",
-    "goSeasonSchedule": "Go to My Season to select races"
+    "selectSeriesSchedule": "Wybierz serie i zaplanuj wyścigi w tabeli Mój sezon",
+    "goSeasonSchedule": "Przejdź do Mój sezon, aby wybrać wyścigi"
   },
   "shop": {
     "checkout": "Kup w sklepie iRacing.com",
@@ -195,7 +195,7 @@
     "no": "Nie"
   },
   "schedule": {
-    "thisWeek": "This week",
-    "noRacesSelected": "No races selected for this week"
+    "thisWeek": "Ten tydzień",
+    "noRacesSelected": "Brak wybranych wyścigów na ten tydzień"
   }
 }

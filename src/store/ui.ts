@@ -26,13 +26,11 @@ export const useUiStorePersist = create(
       seasonShowCheckboxes: false,
       seasonShowCarsDropdown: false,
       seasonShowTrackConfig: false,
-      seasonShowReorder: true,
       seasonHighlight: true,
       seasonShowWishlist: true,
       seasonShowOwned: true,
       seasonShowParticipation: false,
       seasonShowThisWeek: true,
-      seasonShowRain: true,
       seasonUseLocalTimezone: true,
       seasonCategory: ECarCategories.all,
       shopVolumeDiscount: true,
@@ -45,9 +43,6 @@ export const useUiStorePersist = create(
     },
   ),
 );
-
-export const setSeasonShowReorder = (value: boolean) =>
-  useUiStorePersist.setState(() => ({ seasonShowReorder: value }));
 
 export const setSeasonShowCheckboxes = (value: boolean) =>
   useUiStorePersist.setState(() => ({ seasonShowCheckboxes: value }));
@@ -73,9 +68,6 @@ export const setSeasonShowParticipation = (value: boolean) =>
 export const setSeasonShowThisWeek = (value: boolean) =>
   useUiStorePersist.setState(() => ({ seasonShowThisWeek: value }));
 
-export const setSeasonShowRain = (value: boolean) =>
-  useUiStorePersist.setState(() => ({ seasonShowRain: value }));
-
 export const setSeasonUseLocalTimezone = (value: boolean) =>
   useUiStorePersist.setState(() => ({ seasonUseLocalTimezone: value }));
 
@@ -95,9 +87,6 @@ export const setLanguage = (value: Language) =>
   useUiStorePersist.setState(() => ({ language: value }));
 
 export const useUi = () => {
-  const seasonShowReorder = useUiStorePersist(
-    (state) => state.seasonShowReorder,
-  );
   const seasonShowCheckboxes = useUiStorePersist(
     (state) => state.seasonShowCheckboxes,
   );
@@ -118,7 +107,6 @@ export const useUi = () => {
   const seasonShowThisWeek = useUiStorePersist(
     (state) => state.seasonShowThisWeek,
   );
-  const seasonShowRain = useUiStorePersist((state) => state.seasonShowRain);
   const seasonUseLocalTimezone = useUiStorePersist(
     (state) => state.seasonUseLocalTimezone,
   );
@@ -133,7 +121,7 @@ export const useUi = () => {
   const language = useUiStorePersist((state) => state.language);
 
   return {
-    seasonShowReorder,
+    seasonShowReorder: true,
     seasonShowCheckboxes,
     seasonShowCarsDropdown,
     seasonShowTrackConfig,
@@ -142,7 +130,7 @@ export const useUi = () => {
     seasonShowOwned,
     seasonShowParticipation,
     seasonShowThisWeek,
-    seasonShowRain,
+    seasonShowRain: true,
     seasonUseLocalTimezone,
     seasonCategory,
     shopVolumeDiscount,

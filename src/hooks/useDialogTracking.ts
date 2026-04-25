@@ -10,7 +10,7 @@ function getKeyFromValue(value: string): string | undefined {
 export const useDialogTracking = (dialog: EDialogs) => {
   const search = useSearch();
   useEffect(() => {
-    window.gtag("event", "page_view", {
+    window.gtag?.("event", "page_view", {
       page_path: dialog,
       page_search: search,
       page_hash: dialog,

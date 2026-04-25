@@ -16,11 +16,20 @@ export enum ESortHistory {
   Usage,
 }
 
-function getKeyFromValue(value: ECarCategories): string | undefined {
+type TCountsBySince = Partial<Record<EHistorySince, number>>;
+type TStatsItem = {
+  sku: number;
+  id: number;
+  released: number;
+} & Partial<Record<keyof typeof ECarCategories, TCountsBySince>>;
+
+function getKeyFromValue(
+  value: ECarCategories,
+): keyof typeof ECarCategories | undefined {
   const entry = Object.entries(ECarCategories).find(
     ([_, val]) => val === value,
   );
-  return entry ? entry[0] : undefined;
+  return entry ? (entry[0] as keyof typeof ECarCategories) : undefined;
 }
 
 const thisYear = new Date().getUTCFullYear();
@@ -42,23 +51,30 @@ export const getSortedHistory = (
   since: EHistorySince = EHistorySince.Ever,
   sortBy: ESortHistory = ESortHistory.Usage,
 ) => {
-  const k = getKeyFromValue(category) ?? "_";
+  const k = getKeyFromValue(category);
   return Object.values(STATS_JSON)
-    .map((item: any) => ({
-      sku: item.sku,
-      id: item.id,
-      released: item.released,
-      usagePerYear: item[k]?.[since]
-        ? item[k]?.[since] /
-          Math.max(
-            thisYear +
-              1 -
-              Math.max(item.released, years[since as keyof typeof years] ?? 0),
-            1,
-          )
-        : 0,
-      count: item[k]?.[since] ?? 0,
-    }))
+    .map((item: TStatsItem) => {
+      const categoryStats = k ? item[k] : undefined;
+      const count = categoryStats?.[since] ?? 0;
+      return {
+        sku: item.sku,
+        id: item.id,
+        released: item.released,
+        usagePerYear: count
+          ? count /
+            Math.max(
+              thisYear +
+                1 -
+                Math.max(
+                  item.released,
+                  years[since as keyof typeof years] ?? 0,
+                ),
+              1,
+            )
+          : 0,
+        count,
+      };
+    })
     .sort((a, b) => {
       if (sortBy === ESortHistory.Usage) {
         return a.count < b.count ? 1 : -1;

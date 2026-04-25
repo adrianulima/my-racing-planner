@@ -119,7 +119,11 @@ export const PaginationPrevTrigger = React.forwardRef<
   if (getHref) {
     return (
       <LinkButton
-        href={previousPage != null ? getHref(previousPage) : undefined}
+        href={
+          previousPage !== null && previousPage !== undefined
+            ? getHref(previousPage)
+            : undefined
+        }
         variant={variantMap.default}
         size={size}
       >
@@ -147,7 +151,11 @@ export const PaginationNextTrigger = React.forwardRef<
   if (getHref) {
     return (
       <LinkButton
-        href={nextPage != null ? getHref(nextPage) : undefined}
+        href={
+          nextPage !== null && nextPage !== undefined
+            ? getHref(nextPage)
+            : undefined
+        }
         variant={variantMap.default}
         size={size}
       >

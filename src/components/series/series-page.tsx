@@ -30,13 +30,13 @@ function SeriesPage() {
       tabCategory === ECarCategories.all
         ? SORTED_SERIES
         : SORTED_SERIES.filter(
-            (content: any) =>
+            (content) =>
               ECarCategories[
                 content.category as keyof typeof ECarCategories
               ] === tabCategory,
           );
 
-    const filteredContentWithFavs = !!filterFavs
+    const filteredContentWithFavs = filterFavs
       ? filteredContent.filter((content) => favoriteSeries.includes(content.id))
       : filteredContent;
 
@@ -45,7 +45,7 @@ function SeriesPage() {
       .toLowerCase()
       .normalize("NFD")
       .replace(/[\u0300-\u036f]/g, "");
-    const filteredContentWithSearch = !!trimmedSearch
+    const filteredContentWithSearch = trimmedSearch
       ? filteredContentWithFavs.filter((content) =>
           content.name
             .toLowerCase()

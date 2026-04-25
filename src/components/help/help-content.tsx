@@ -147,9 +147,6 @@ function HelpContent() {
 
         <List.Root>
           <List.Item>
-            <strong>{t("settings.reorderColumns")}</strong>: {t("settings.reorderColumnsTooltip")}
-          </List.Item>
-          <List.Item>
             <strong>{t("settings.showContentCheckboxes")}</strong>: {t("settings.showContentCheckboxesTooltip")}
           </List.Item>
           <List.Item>
