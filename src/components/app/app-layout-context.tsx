@@ -20,7 +20,7 @@ function AppLayoutContextProvider({ children }: PropsWithChildren) {
 
   const onScroll: React.UIEventHandler<HTMLDivElement> = (event) => {
     const scrollTop = event.currentTarget.scrollTop;
-    setScrolled((prev) => (prev ? scrollTop > 0 : scrollTop > 200));
+    setScrolled((prev) => (prev ? scrollTop > 0 : scrollTop > 250));
   };
 
   return (
