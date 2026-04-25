@@ -4572,8 +4572,9 @@
         "weekNum": 5,
         "date": "2026-04-21",
         "track": {
-          "id": 277,
-          "name": "Pocono Raceway"
+          "id": 136,
+          "name": "[Legacy] Pocono Raceway - 2009",
+          "config": "Oval"
         },
         "rainChance": 0
       },
@@ -6558,61 +6559,6 @@
       }
     ]
   },
-  "271": {
-    "id": 271,
-    "name": "12 Hours of Sebring",
-    "category": "sports_car",
-    "laps": null,
-    "duration": 720,
-    "switching": false,
-    "official": true,
-    "fixed": false,
-    "multiclass": true,
-    "cars": [
-      128,
-      156,
-      188,
-      173,
-      206,
-      194,
-      132,
-      133,
-      184,
-      169,
-      185,
-      174,
-      159,
-      196,
-      168,
-      170
-    ],
-    "license": {
-      "id": 3,
-      "name": "Class C",
-      "letter": "C",
-      "color": "feec04"
-    },
-    "logo": "seriesid_271.png",
-    "weeks": [
-      {
-        "weekNum": 0,
-        "date": "2026-03-27",
-        "track": {
-          "id": 95,
-          "name": "Sebring International Raceway",
-          "config": "International"
-        },
-        "rainChance": 0
-      }
-    ],
-    "raceSchedule": [
-      {
-        "repeating": false,
-        "sessionMinutes": 761,
-        "superSession": false
-      }
-    ]
-  },
   "275": {
     "id": 275,
     "name": "Nurburgring Endurance Championship",
@@ -6754,6 +6700,61 @@
       {
         "repeating": false,
         "sessionMinutes": 283,
+        "superSession": false
+      }
+    ]
+  },
+  "279": {
+    "id": 279,
+    "name": "24 Hours of Nurburgring",
+    "category": "sports_car",
+    "laps": null,
+    "duration": 1440,
+    "switching": false,
+    "official": true,
+    "fixed": false,
+    "multiclass": true,
+    "cars": [
+      156,
+      173,
+      206,
+      132,
+      133,
+      169,
+      185,
+      208,
+      157,
+      189,
+      150,
+      119,
+      146,
+      210,
+      147,
+      195
+    ],
+    "license": {
+      "id": 3,
+      "name": "Class C",
+      "letter": "C",
+      "color": "feec04"
+    },
+    "logo": "seriesid_279.png",
+    "weeks": [
+      {
+        "weekNum": 0,
+        "date": "2026-05-01",
+        "track": {
+          "id": 252,
+          "name": "Nürburgring Combined",
+          "config": "Gesamtstrecke 24h"
+        },
+        "rainChance": 31
+      }
+    ],
+    "raceSchedule": [
+      {
+        "repeating": false,
+        "sessionMinutes": 1488,
         "superSession": false
       }
     ]
@@ -9564,7 +9565,7 @@
       "letter": "C",
       "color": "feec04"
     },
-    "logo": "supercars-logo.png",
+    "logo": "seriesid_399.png",
     "weeks": [
       {
         "weekNum": 0,
@@ -9725,7 +9726,7 @@
       "letter": "C",
       "color": "feec04"
     },
-    "logo": "supercars-logo.png",
+    "logo": "seriesid_405.png",
     "weeks": [
       {
         "weekNum": 0,
@@ -15341,7 +15342,7 @@
       },
       {
         "weekNum": 13,
-        "date": "2026-08-14",
+        "date": "2026-08-21",
         "track": {
           "id": 485,
           "name": "Circuit Zandvoort",
@@ -15351,7 +15352,7 @@
       },
       {
         "weekNum": 14,
-        "date": "2026-08-28",
+        "date": "2026-09-04",
         "track": {
           "id": 239,
           "name": "Autodromo Nazionale Monza",
@@ -15607,7 +15608,7 @@
       },
       {
         "weekNum": 13,
-        "date": "2026-08-13",
+        "date": "2026-08-20",
         "track": {
           "id": 485,
           "name": "Circuit Zandvoort",
@@ -15617,7 +15618,7 @@
       },
       {
         "weekNum": 14,
-        "date": "2026-08-27",
+        "date": "2026-09-03",
         "track": {
           "id": 239,
           "name": "Autodromo Nazionale Monza",
@@ -23624,6 +23625,193 @@
       }
     ]
   },
+  "579": {
+    "id": 579,
+    "name": "Vintage Grand Prix Tour",
+    "category": "formula_car",
+    "laps": 74,
+    "duration": null,
+    "switching": false,
+    "official": true,
+    "fixed": false,
+    "multiclass": false,
+    "cars": [
+      25
+    ],
+    "license": {
+      "id": 3,
+      "name": "Class C",
+      "letter": "C",
+      "color": "feec04"
+    },
+    "logo": "seriesid_579.png",
+    "weeks": [
+      {
+        "weekNum": 0,
+        "date": "2026-04-08",
+        "track": {
+          "id": 212,
+          "name": "Autódromo José Carlos Pace",
+          "config": "Grand Prix"
+        },
+        "rainChance": 0
+      },
+      {
+        "weekNum": 1,
+        "date": "2026-04-22",
+        "track": {
+          "id": 218,
+          "name": "Circuit Gilles Villeneuve"
+        },
+        "rainChance": 0
+      },
+      {
+        "weekNum": 2,
+        "date": "2026-05-06",
+        "track": {
+          "id": 524,
+          "name": "Circuit de Spa-Francorchamps",
+          "config": "Classic Pits"
+        },
+        "rainChance": 0
+      },
+      {
+        "weekNum": 3,
+        "date": "2026-05-20",
+        "track": {
+          "id": 144,
+          "name": "Canadian Tire Motorsports Park"
+        },
+        "rainChance": 33
+      },
+      {
+        "weekNum": 4,
+        "date": "2026-06-03",
+        "track": {
+          "id": 200,
+          "name": "Circuit Zolder",
+          "config": "Alternate"
+        },
+        "rainChance": 0
+      },
+      {
+        "weekNum": 5,
+        "date": "2026-06-24",
+        "track": {
+          "id": 42,
+          "name": "[Legacy] Silverstone Circuit - 2008",
+          "config": "Historical Grand Prix"
+        },
+        "rainChance": 0
+      },
+      {
+        "weekNum": 6,
+        "date": "2026-07-08",
+        "track": {
+          "id": 249,
+          "name": "Nürburgring Nordschleife",
+          "config": "Industriefahrten"
+        },
+        "rainChance": 0
+      },
+      {
+        "weekNum": 7,
+        "date": "2026-07-22",
+        "track": {
+          "id": 403,
+          "name": "Red Bull Ring",
+          "config": "Grand Prix"
+        },
+        "rainChance": 0
+      },
+      {
+        "weekNum": 8,
+        "date": "2026-08-05",
+        "track": {
+          "id": 485,
+          "name": "Circuit Zandvoort",
+          "config": "Grand Prix"
+        },
+        "rainChance": 29
+      },
+      {
+        "weekNum": 9,
+        "date": "2026-08-19",
+        "track": {
+          "id": 244,
+          "name": "Autodromo Nazionale Monza",
+          "config": "GP without first chicane"
+        },
+        "rainChance": 0
+      },
+      {
+        "weekNum": 10,
+        "date": "2026-09-02",
+        "track": {
+          "id": 168,
+          "name": "Suzuka International Racing Course",
+          "config": "Grand Prix"
+        },
+        "rainChance": 0
+      },
+      {
+        "weekNum": 11,
+        "date": "2026-09-23",
+        "track": {
+          "id": 509,
+          "name": "Algarve International Circuit",
+          "config": "Grand Prix"
+        },
+        "rainChance": 0
+      },
+      {
+        "weekNum": 12,
+        "date": "2026-10-07",
+        "track": {
+          "id": 266,
+          "name": "Autodromo Internazionale Enzo e Dino Ferrari",
+          "config": "Grand Prix"
+        },
+        "rainChance": 0
+      },
+      {
+        "weekNum": 13,
+        "date": "2026-10-21",
+        "track": {
+          "id": 580,
+          "name": "Adelaide Street Circuit"
+        },
+        "rainChance": 0
+      },
+      {
+        "weekNum": 14,
+        "date": "2026-11-04",
+        "track": {
+          "id": 573,
+          "name": "Autódromo Hermanos Rodríguez",
+          "config": "Grand Prix Historic"
+        },
+        "rainChance": 27
+      },
+      {
+        "weekNum": 15,
+        "date": "2026-11-18",
+        "track": {
+          "id": 435,
+          "name": "Watkins Glen International",
+          "config": "Classic Boot"
+        },
+        "rainChance": 0
+      }
+    ],
+    "raceSchedule": [
+      {
+        "repeating": false,
+        "sessionMinutes": 137,
+        "superSession": false
+      }
+    ]
+  },
   "584": {
     "id": 584,
     "name": "Production Endurance Challenge",
@@ -25576,6 +25764,125 @@
       {
         "repeating": false,
         "sessionMinutes": 57,
+        "superSession": false
+      }
+    ]
+  },
+  "619": {
+    "id": 619,
+    "name": "iRacing DTM Series ",
+    "category": "sports_car",
+    "laps": null,
+    "duration": 55,
+    "switching": false,
+    "official": true,
+    "fixed": false,
+    "multiclass": false,
+    "cars": [
+      156,
+      188,
+      173,
+      206,
+      176,
+      194,
+      132,
+      133,
+      184,
+      169,
+      185
+    ],
+    "license": {
+      "id": 4,
+      "name": "Class B",
+      "letter": "B",
+      "color": "00c702"
+    },
+    "logo": "seriesid_619.png",
+    "weeks": [
+      {
+        "weekNum": 0,
+        "date": "2026-04-23",
+        "track": {
+          "id": 403,
+          "name": "Red Bull Ring",
+          "config": "Grand Prix"
+        },
+        "rainChance": 0
+      },
+      {
+        "weekNum": 1,
+        "date": "2026-05-21",
+        "track": {
+          "id": 485,
+          "name": "Circuit Zandvoort",
+          "config": "Grand Prix"
+        },
+        "rainChance": 13
+      },
+      {
+        "weekNum": 2,
+        "date": "2026-06-18",
+        "track": {
+          "id": 523,
+          "name": "Circuit de Spa-Francorchamps",
+          "config": "Grand Prix Pits"
+        },
+        "rainChance": 0
+      },
+      {
+        "weekNum": 3,
+        "date": "2026-07-02",
+        "track": {
+          "id": 145,
+          "name": "Brands Hatch Circuit",
+          "config": "Grand Prix"
+        },
+        "rainChance": 34
+      },
+      {
+        "weekNum": 4,
+        "date": "2026-07-23",
+        "track": {
+          "id": 449,
+          "name": "Motorsport Arena Oschersleben",
+          "config": "Grand Prix"
+        },
+        "rainChance": 0
+      },
+      {
+        "weekNum": 5,
+        "date": "2026-08-13",
+        "track": {
+          "id": 259,
+          "name": "Nürburgring Grand-Prix-Strecke",
+          "config": "Sprintstrecke"
+        },
+        "rainChance": 0
+      },
+      {
+        "weekNum": 6,
+        "date": "2026-09-10",
+        "track": {
+          "id": 521,
+          "name": "Sachsenring"
+        },
+        "rainChance": 0
+      },
+      {
+        "weekNum": 7,
+        "date": "2026-10-08",
+        "track": {
+          "id": 390,
+          "name": "Hockenheimring Baden-Württemberg",
+          "config": "Grand Prix"
+        },
+        "rainChance": 13
+      }
+    ],
+    "raceSchedule": [
+      {
+        "repeating": false,
+        "sessionMinutes": 69,
         "superSession": false
       }
     ]
