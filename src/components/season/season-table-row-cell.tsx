@@ -1,5 +1,6 @@
 import { getScheduleEntryKey, toggleScheduleEntry, useIr } from "@/store/ir";
 import { useUi } from "@/store/ui";
+import { trackEvent } from "@/utils/analytics";
 import { Text } from "@chakra-ui/react";
 import { getContentColorScale } from "@/utils/color";
 import ContentCheckbox from "../content/content-checkbox";
@@ -52,7 +53,19 @@ function SeasonTableRowCell({
   const { mySchedule } = useIr();
   const scheduled = mySchedule.includes(getScheduleEntryKey(seriesId, date));
 
-  const toggleScheduled = () => toggleScheduleEntry(seriesId, date);
+  const toggleScheduled = () => {
+    trackEvent("schedule_entry_change", {
+      action: scheduled ? "remove" : "add",
+      track_state: free
+        ? "free"
+        : owned
+          ? "owned"
+          : wish
+            ? "wishlist"
+            : "missing",
+    });
+    toggleScheduleEntry(seriesId, date);
+  };
 
   const handleCellClick = (e: MouseEvent) => {
     // Don't toggle if clicking on interactive children (checkbox, popover button)

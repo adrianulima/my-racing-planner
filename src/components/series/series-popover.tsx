@@ -1,4 +1,5 @@
 import { setFavoriteSeriesItem, useIr } from "@/store/ir";
+import { trackEvent } from "@/utils/analytics";
 import { TContent } from "@/ir-data/utils/types";
 import { For, Table, Text } from "@chakra-ui/react";
 import CARS_JSON from "../../ir-data/cars.json";
@@ -49,9 +50,14 @@ function SeriesPopover({
                         size={"xs"}
                         mt={"4px"}
                         checked={favoriteSeries.includes(item)}
-                        onCheckedChange={({ checked }) =>
-                          setFavoriteSeriesItem(series.id, !!checked)
-                        }
+                        onCheckedChange={({ checked }) => {
+                          setFavoriteSeriesItem(series.id, !!checked);
+                          trackEvent("favorite_series_change", {
+                            action: checked ? "add" : "remove",
+                            category: series.category,
+                            license: series.license.letter,
+                          });
+                        }}
                       />
                     </Table.Cell>
                     <Table.Cell

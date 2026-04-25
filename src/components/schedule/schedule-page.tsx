@@ -2,6 +2,7 @@ import { ownNurbCombined, wishNurbCombined } from "@/ir-data/utils/tracks";
 import { TContent } from "@/ir-data/utils/types";
 import { parseScheduleEntryKey, toggleScheduleEntry, useIr } from "@/store/ir";
 import { ETabs, useUi } from "@/store/ui";
+import { trackEvent } from "@/utils/analytics";
 import { getContentColorScale } from "@/utils/color";
 import {
   Box,
@@ -216,9 +217,19 @@ function SchedulePage() {
                             position="absolute"
                             top={1}
                             right={1}
-                            onClick={() =>
-                              toggleScheduleEntry(entry.seriesId, date)
-                            }
+                            onClick={() => {
+                              trackEvent("schedule_entry_change", {
+                                action: "remove",
+                                track_state: free
+                                  ? "free"
+                                  : owned
+                                    ? "owned"
+                                    : wish
+                                      ? "wishlist"
+                                      : "missing",
+                              });
+                              toggleScheduleEntry(entry.seriesId, date);
+                            }}
                           />
                           <VStack align="start" gap={1} pr={5}>
                             <HStack gap={2} align="start">

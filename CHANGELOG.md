@@ -10,6 +10,7 @@ All notable changes to the **"Racing Planner"** project will be documented in th
 - Added language selection with persistent user preference
 - Added translations for English, Spanish, Brazilian Portuguese, German, French, Russian, Korean, Simplified Chinese, and Polish
 - Improved layout handling for longer translated labels in navigation, tabs, and dialogs
+- Add analytics tracking for various user interactions and events
 
 ## 0.8.14
 

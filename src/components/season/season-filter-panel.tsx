@@ -1,6 +1,7 @@
 import { CategoryIcon } from "@/ir-data/utils/icons";
 import { ECarCategories } from "@/ir-data/utils/types";
 import { setSeasonCategory, useUi } from "@/store/ui";
+import { trackEvent } from "@/utils/analytics";
 import { HStack, IconButton, Tabs, Text } from "@chakra-ui/react";
 import { faGears } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -35,7 +36,10 @@ function SeasonFilterPanel() {
       <Tabs.Root
         size={"sm"}
         value={seasonCategory}
-        onValueChange={(e) => setSeasonCategory(e.value as ECarCategories)}
+        onValueChange={(e) => {
+          setSeasonCategory(e.value as ECarCategories);
+          trackEvent("season_category_change", { category: e.value });
+        }}
         variant={"enclosed"}
         width={{ md: "unset", base: "100%" }}
         flex={{ md: "unset", base: 1 }}

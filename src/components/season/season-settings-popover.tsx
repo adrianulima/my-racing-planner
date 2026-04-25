@@ -10,6 +10,7 @@ import {
   setSeasonUseLocalTimezone,
   useUi,
 } from "@/store/ui";
+import { trackEvent } from "@/utils/analytics";
 import { For, VStack } from "@chakra-ui/react";
 import { useTranslation } from "react-i18next";
 import { Switch } from "../ui/switch";
@@ -117,7 +118,13 @@ function SeasonSettingsPopover() {
             <Switch
               ids={{ root: settings.id }}
               checked={settings.checked}
-              onCheckedChange={({ checked }) => settings.setChecked(checked)}
+              onCheckedChange={({ checked }) => {
+                settings.setChecked(checked);
+                trackEvent("season_setting_change", {
+                  setting: settings.id,
+                  value: checked,
+                });
+              }}
             >
               {settings.text}
             </Switch>

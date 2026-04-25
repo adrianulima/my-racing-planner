@@ -1,4 +1,5 @@
 import { IR_URL } from "@/ir-data/utils/urls";
+import { trackEvent } from "@/utils/analytics";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useTranslation } from "react-i18next";
@@ -20,6 +21,9 @@ function CheckoutButton({ wishList }: { wishList: { sku: number }[] }) {
       target="_blank"
       rel="noreferrer"
       colorPalette={"blue"}
+      onClick={() =>
+        trackEvent("checkout_click", { wishlist_count: wishList.length })
+      }
     >
       {t("shop.checkout")}
       <FontAwesomeIcon icon={faArrowUpRightFromSquare} />

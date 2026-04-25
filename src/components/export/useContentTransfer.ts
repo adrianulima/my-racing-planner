@@ -1,4 +1,6 @@
 import { parseScheduleEntryKey, setContentStore } from "@/store/ir";
+import { trackEvent } from "@/utils/analytics";
+import { useEffect, useRef } from "react";
 import { useSearch } from "wouter";
 
 const removeQueryParams = () => {
@@ -31,6 +33,14 @@ function useContentTransfer() {
       "favoriteSeries" in params ||
       "mySchedule" in params);
 
+  const detectedRef = useRef(false);
+  useEffect(() => {
+    if (hasNewData && !detectedRef.current) {
+      detectedRef.current = true;
+      trackEvent("content_transfer_detected");
+    }
+  }, [hasNewData]);
+
   const applyData = () => {
     if (!hasNewData) return;
     const myCars = parseNumberList(params.myCars);
@@ -39,6 +49,14 @@ function useContentTransfer() {
     const wishTracks = parseNumberList(params.wishTracks);
     const favoriteSeries = parseNumberList(params.favoriteSeries);
     const mySchedule = parseScheduleList(params.mySchedule);
+
+    trackEvent("content_transfer_apply", {
+      cars_owned_count: myCars.length,
+      tracks_owned_count: myTracks.length,
+      wishlist_count: wishCars.length + wishTracks.length,
+      favorite_series_count: favoriteSeries.length,
+      schedule_count: mySchedule.length,
+    });
 
     setContentStore({
       myCars,
@@ -53,6 +71,7 @@ function useContentTransfer() {
 
   const ignoreData = () => {
     if (!hasNewData) return;
+    trackEvent("content_transfer_ignore");
     removeQueryParams();
   };
 
