@@ -14,7 +14,8 @@
     "fetch-data": "tsx iracing-api/fetch-data.ts",
     "parse-data": "tsx iracing-api/parse-data.ts",
     "fetch-past": "tsx iracing-api/fetch-past.ts",
-    "parse-past": "tsx iracing-api/parse-past.ts"
+    "parse-past": "tsx iracing-api/parse-past.ts",
+    "bump:release:data": "npm version patch --no-git-tag-version && tsx scripts/bump-release-from-package.ts"
   },
   "dependencies": {
     "@chakra-ui/react": "^3.34.0",

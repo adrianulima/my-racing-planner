@@ -117,6 +117,38 @@ npm run parse-data
 npm run parse-past
 ```
 
+### Manual GitHub Action (Run Workflow Button)
+
+You can refresh data from GitHub without running scripts locally.
+
+1. Add these repository secrets in GitHub: Settings > Secrets and variables > Actions.
+   - `IRACING_USERNAME`
+   - `IRACING_PASSWORD`
+   - `IRACING_CLIENT_ID`
+   - `IRACING_CLIENT_SECRET`
+2. Go to the **Actions** tab.
+3. Open **Update iRacing Data**.
+4. Click **Run workflow**.
+
+The workflow runs the full pipeline (`fetch-data`, `fetch-past`, `parse-data`, `parse-past`) and then runs `npm run build` as a validation gate before committing.
+
+If data changed, it bumps the patch version with `npm version patch --no-git-tag-version` (updating `package.json` and `package-lock.json`) and prepends a matching changelog entry with:
+
+- `[actions] Refresh iRacing data`
+
+If everything passes, it commits and pushes changes directly to `main` only when data files change.
+
+### Manual GitHub Pages Deploy (Run Workflow Button)
+
+You can deploy to GitHub Pages from GitHub with a separate manual action.
+
+1. Go to the **Actions** tab.
+2. Open **Deploy to GitHub Pages**.
+3. Ensure branch is `main`.
+4. Click **Run workflow**.
+
+This workflow runs `npm run deploy` (which includes the build step via `predeploy`).
+
 ### Authentication Details
 
 The scripts use OAuth 2.1 Password Limited Grant, which:
