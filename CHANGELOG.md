@@ -2,6 +2,10 @@
 
 All notable changes to the **"Racing Planner"** project will be documented in this file.
 
+## 0.10.0
+
+- Added swap-axis control to My Season table
+
 ## 0.9.1
 
 - Added My Schedule section on Help page

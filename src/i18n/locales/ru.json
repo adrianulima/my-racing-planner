@@ -146,6 +146,7 @@
     "showRainTooltip": "Показывать индикаторы дождя для трасс с шансом дождя",
     "localTimezone": "Расписание в {{timezone}}",
     "localTimezoneTooltip": "Конвертировать время гонок из UTC в ваш локальный часовой пояс",
+    "invertAxis": "Поменять оси",
     "volumeDiscount": "Скидка за объём",
     "volumeDiscountTooltip": "Применять скидки iRacing за пакетные покупки",
     "volumeDiscountLink": "Открыть официальный пост iRacing о скидках за объём",

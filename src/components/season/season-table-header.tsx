@@ -1,6 +1,6 @@
 import { IR_URL } from "@/ir-data/utils/urls";
 import { setFavoriteSeriesList, useIr } from "@/store/ir";
-import { useUi } from "@/store/ui";
+import { setSeasonAxisInverted, useUi } from "@/store/ui";
 import { createSimpleScheduleDescription } from "@/utils/simple-schedule";
 import {
   Box,
@@ -12,6 +12,8 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import { arrayMove } from "@dnd-kit/sortable";
+import { faArrowDownUpAcrossLine } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import SERIES_JSON from "../../ir-data/series.json";
 import { useAppLayout } from "../app/useAppLayout";
@@ -55,7 +57,30 @@ function SeasonTableHeader({
           left={"0"}
           zIndex="sticky"
         >
-          {t("common.week")}
+          <Tooltip
+            lazyMount
+            unmountOnExit
+            content={t("settings.invertAxis")}
+            showArrow
+            positioning={{ placement: "bottom" }}
+            openDelay={200}
+            closeDelay={100}
+          >
+            <Box
+              as="button"
+              display={"flex"}
+              alignItems={"center"}
+              justifyContent={"center"}
+              width="100%"
+              height="100%"
+              cursor={"pointer"}
+              onClick={() => setSeasonAxisInverted(true)}
+              color={"fg.muted"}
+              _hover={{ color: "fg" }}
+            >
+              <FontAwesomeIcon icon={faArrowDownUpAcrossLine} />
+            </Box>
+          </Tooltip>
         </Table.ColumnHeader>
 
         <For

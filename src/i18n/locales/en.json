@@ -151,6 +151,7 @@
     "showRainTooltip": "Show rain indicators for tracks with chance of rain",
     "localTimezone": "Schedule with {{timezone}} time",
     "localTimezoneTooltip": "Convert race times from UTC to your local time zone",
+    "invertAxis": "Swap axis",
     "volumeDiscount": "Volume discount",
     "volumeDiscountTooltip": "Apply iRacing discounts for bundle purchases",
     "volumeDiscountLink": "Go to iRacing's official Volume Discounts blog post",

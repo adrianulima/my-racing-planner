@@ -146,6 +146,7 @@
     "showRainTooltip": "Pokaż wskaźniki deszczu dla torów z szansą opadów",
     "localTimezone": "Harmonogram w czasie {{timezone}}",
     "localTimezoneTooltip": "Konwertuj czasy wyścigów z UTC na lokalną strefę czasową",
+    "invertAxis": "Zamień osie",
     "volumeDiscount": "Rabat ilościowy",
     "volumeDiscountTooltip": "Zastosuj rabaty iRacing dla zakupów pakietowych",
     "volumeDiscountLink": "Przejdź do oficjalnego wpisu iRacing o rabatach ilościowych",

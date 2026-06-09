@@ -151,6 +151,7 @@
     "showRainTooltip": "비 확률이 있는 트랙에 비 표시를 보여줍니다",
     "localTimezone": "{{timezone}} 시간으로 일정 표시",
     "localTimezoneTooltip": "레이스 시간을 UTC에서 현지 시간대로 변환합니다",
+    "invertAxis": "축 바꾸기",
     "volumeDiscount": "볼륨 할인",
     "volumeDiscountTooltip": "묶음 구매에 대한 iRacing 할인을 적용합니다",
     "volumeDiscountLink": "iRacing 공식 볼륨 할인 게시글로 이동",

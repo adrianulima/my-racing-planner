@@ -146,6 +146,7 @@
     "showRainTooltip": "Regenindikatoren für Strecken mit Regenchance anzeigen",
     "localTimezone": "Zeitplan in {{timezone}}",
     "localTimezoneTooltip": "Rennzeiten von UTC in deine lokale Zeitzone umrechnen",
+    "invertAxis": "Achsen tauschen",
     "volumeDiscount": "Mengenrabatt",
     "volumeDiscountTooltip": "iRacing-Rabatte für Paketkäufe anwenden",
     "volumeDiscountLink": "Offiziellen iRacing-Beitrag zu Mengenrabatten öffnen",

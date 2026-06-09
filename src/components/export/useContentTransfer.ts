@@ -1,4 +1,8 @@
-import { parseScheduleEntryKey, setContentStore } from "@/store/ir";
+import {
+  parseScheduleEntryKey,
+  sanitizeScheduleEntries,
+  setContentStore,
+} from "@/store/ir";
 import { trackEvent } from "@/utils/analytics";
 import { useEffect, useRef } from "react";
 import { useSearch } from "wouter";
@@ -15,8 +19,11 @@ const parseNumberList = (value?: string) =>
     .map((n) => parseInt(n, 10))
     .filter(Number.isInteger) ?? [];
 
-const parseScheduleList = (value?: string) =>
-  value?.split(",").filter((key) => !!parseScheduleEntryKey(key)) ?? [];
+const parseScheduleList = (value?: string, allowedSeries?: number[]) =>
+  sanitizeScheduleEntries(
+    value?.split(",").filter((key) => !!parseScheduleEntryKey(key)) ?? [],
+    allowedSeries,
+  );
 
 function useContentTransfer() {
   const query = useSearch();
@@ -48,7 +55,7 @@ function useContentTransfer() {
     const wishCars = parseNumberList(params.wishCars);
     const wishTracks = parseNumberList(params.wishTracks);
     const favoriteSeries = parseNumberList(params.favoriteSeries);
-    const mySchedule = parseScheduleList(params.mySchedule);
+    const mySchedule = parseScheduleList(params.mySchedule, favoriteSeries);
 
     trackEvent("content_transfer_apply", {
       cars_owned_count: myCars.length,

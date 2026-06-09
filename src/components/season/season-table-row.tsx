@@ -66,7 +66,7 @@ function SeasonTableRow({
               wish={wish}
               owned={owned}
               free={track.free}
-              id={track.id}
+              trackContentId={track.id}
               name={track.name}
               config={track.config}
               sku={track.sku}

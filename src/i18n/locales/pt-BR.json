@@ -151,6 +151,7 @@
     "showRainTooltip": "Mostra indicadores de chuva em pistas com chance de chuva",
     "localTimezone": "Horários em {{timezone}}",
     "localTimezoneTooltip": "Converte os horários das corridas de UTC para o seu fuso horário local",
+    "invertAxis": "Trocar eixos",
     "volumeDiscount": "Desconto por volume",
     "volumeDiscountTooltip": "Aplica descontos do iRacing para compras em pacote",
     "volumeDiscountLink": "Ir para o post oficial do iRacing sobre descontos por volume",

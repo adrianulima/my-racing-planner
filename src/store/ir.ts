@@ -11,22 +11,136 @@ export interface IMyContentStore {
   mySchedule: string[];
 }
 
+const getPreviousTuesday = (date: string): string => {
+  const inputDate = new Date(date);
+  const utcDay = inputDate.getUTCDay();
+
+  if (utcDay !== 2) {
+    const offset = utcDay - 2 >= 0 ? utcDay - 2 : utcDay - 2 + 7;
+    inputDate.setUTCDate(inputDate.getUTCDate() - offset);
+  }
+
+  const year = inputDate.getUTCFullYear();
+  const month = String(inputDate.getUTCMonth() + 1).padStart(2, "0");
+  const day = String(inputDate.getUTCDate()).padStart(2, "0");
+
+  return `${year}-${month}-${day}`;
+};
+
+const sanitizeFavoriteSeries = (list: number[] = []) => {
+  const unique = new Set<number>();
+
+  for (const id of list) {
+    if (
+      Number.isInteger(id) &&
+      id > 0 &&
+      !!SERIES_JSON[id.toString() as keyof typeof SERIES_JSON]
+    ) {
+      unique.add(id);
+    }
+  }
+
+  return [...unique];
+};
+
+const DEFAULT_CONTENT_STORE: IMyContentStore = {
+  myCars: [],
+  myTracks: [],
+  wishCars: [],
+  wishTracks: [],
+  favoriteSeries: [],
+  mySchedule: [],
+};
+
+export const getScheduleEntryKey = (seriesId: number, date: string) =>
+  `${seriesId}_${date}`;
+
+export function parseScheduleEntryKey(key: string) {
+  const idx = key.indexOf("_");
+  const seriesId = Number(key.substring(0, idx));
+  const date = key.substring(idx + 1);
+
+  if (
+    idx <= 0 ||
+    !Number.isInteger(seriesId) ||
+    seriesId <= 0 ||
+    !/^\d{4}-\d{2}-\d{2}$/.test(date)
+  ) {
+    return null;
+  }
+
+  return {
+    seriesId,
+    date,
+  };
+}
+
+export function sanitizeScheduleEntries(
+  keys: string[] = [],
+  allowedSeries?: number[],
+) {
+  const allowedSet = allowedSeries ? new Set(allowedSeries) : null;
+  const seriesWeeksCache = new Map<number, Set<string>>();
+  const sanitized = new Set<string>();
+
+  for (const key of keys) {
+    const parsed = parseScheduleEntryKey(key);
+    if (!parsed) continue;
+
+    const { seriesId, date } = parsed;
+    if (allowedSet && !allowedSet.has(seriesId)) continue;
+
+    const series = SERIES_JSON[seriesId.toString() as keyof typeof SERIES_JSON];
+    if (!series) continue;
+
+    if (!seriesWeeksCache.has(seriesId)) {
+      const validDates = new Set<string>(
+        ((series.weeks as { date: string }[] | undefined) ?? []).map((week) =>
+          getPreviousTuesday(week.date),
+        ),
+      );
+      seriesWeeksCache.set(seriesId, validDates);
+    }
+
+    const validDates = seriesWeeksCache.get(seriesId);
+    if (!validDates?.has(date)) continue;
+
+    sanitized.add(key);
+  }
+
+  return [...sanitized];
+}
+
 export const useIrStore = create(
-  persist<IMyContentStore>(
-    () => ({
-      myCars: [],
-      myTracks: [],
-      wishCars: [],
-      wishTracks: [],
-      favoriteSeries: [],
-      mySchedule: [],
-    }),
-    { name: "my-content" },
-  ),
+  persist<IMyContentStore>(() => DEFAULT_CONTENT_STORE, {
+    name: "my-content",
+    merge: (persistedState, currentState) => {
+      const persisted = (persistedState ?? {}) as Partial<IMyContentStore>;
+      const favoriteSeries = sanitizeFavoriteSeries(
+        persisted.favoriteSeries ?? currentState.favoriteSeries,
+      );
+
+      return {
+        ...currentState,
+        ...persisted,
+        favoriteSeries,
+        mySchedule: sanitizeScheduleEntries(
+          persisted.mySchedule ?? currentState.mySchedule,
+          favoriteSeries,
+        ),
+      };
+    },
+  }),
 );
 
 export const setContentStore = (store: IMyContentStore) => {
-  useIrStore.setState(store);
+  const favoriteSeries = sanitizeFavoriteSeries(store.favoriteSeries);
+
+  useIrStore.setState({
+    ...store,
+    favoriteSeries,
+    mySchedule: sanitizeScheduleEntries(store.mySchedule, favoriteSeries),
+  });
 };
 
 export const setMyCar = (id: number, enabled: boolean) =>
@@ -58,37 +172,27 @@ export const setWishTrack = (id: number, enabled: boolean) =>
   }));
 
 export const setFavoriteSeriesItem = (id: number, enabled: boolean) =>
-  useIrStore.setState((state: IMyContentStore) => ({
-    favoriteSeries: enabled
-      ? [...state.favoriteSeries, id]
-      : state.favoriteSeries.filter((series: number) => series !== id),
-  }));
+  useIrStore.setState((state: IMyContentStore) => {
+    const favoriteSeries = sanitizeFavoriteSeries(
+      enabled
+        ? [...state.favoriteSeries, id]
+        : state.favoriteSeries.filter((series: number) => series !== id),
+    );
+
+    return {
+      favoriteSeries,
+      mySchedule: sanitizeScheduleEntries(state.mySchedule, favoriteSeries),
+    };
+  });
 
 export const setFavoriteSeriesList = (list: number[]) =>
-  useIrStore.setState(() => ({ favoriteSeries: list }));
-
-export const getScheduleEntryKey = (seriesId: number, date: string) =>
-  `${seriesId}_${date}`;
-
-export const parseScheduleEntryKey = (key: string) => {
-  const idx = key.indexOf("_");
-  const seriesId = Number(key.substring(0, idx));
-  const date = key.substring(idx + 1);
-
-  if (
-    idx <= 0 ||
-    !Number.isInteger(seriesId) ||
-    seriesId <= 0 ||
-    !/^\d{4}-\d{2}-\d{2}$/.test(date)
-  ) {
-    return null;
-  }
-
-  return {
-    seriesId,
-    date,
-  };
-};
+  useIrStore.setState((state: IMyContentStore) => {
+    const favoriteSeries = sanitizeFavoriteSeries(list);
+    return {
+      favoriteSeries,
+      mySchedule: sanitizeScheduleEntries(state.mySchedule, favoriteSeries),
+    };
+  });
 
 export const toggleScheduleEntry = (seriesId: number, date: string) => {
   const key = getScheduleEntryKey(seriesId, date);

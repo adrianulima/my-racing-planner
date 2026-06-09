@@ -1,7 +1,7 @@
 import { getScheduleEntryKey, toggleScheduleEntry, useIr } from "@/store/ir";
 import { useUi } from "@/store/ui";
 import { trackEvent } from "@/utils/analytics";
-import { Text } from "@chakra-ui/react";
+import { Table, TableCellProps, Text } from "@chakra-ui/react";
 import { getContentColorScale } from "@/utils/color";
 import ContentCheckbox from "../content/content-checkbox";
 import SeasonTableCarsPopover from "./season-table-cars-popover";
@@ -16,7 +16,7 @@ function SeasonTableRowCell({
   wish,
   owned,
   free,
-  id,
+  trackContentId,
   name,
   config,
   sku,
@@ -24,13 +24,15 @@ function SeasonTableRowCell({
   seriesDateMap,
   highlight,
   setHighlightTrack,
+  noSortableWrapper,
+  ...extraCellProps
 }: {
   seriesId: number;
   trackId: number;
   wish: boolean;
   owned: boolean;
   free: boolean;
-  id: number;
+  trackContentId: number;
   name: string;
   config: string;
   sku: number;
@@ -38,7 +40,8 @@ function SeasonTableRowCell({
   seriesDateMap: TSeriesDateMap;
   highlight: boolean;
   setHighlightTrack: (n: number) => void;
-}) {
+  noSortableWrapper?: boolean;
+} & Omit<TableCellProps, "color" | "id">) {
   const {
     seasonShowCheckboxes,
     seasonShowCarsDropdown,
@@ -98,30 +101,31 @@ function SeasonTableRowCell({
   const color = { _dark: `${scale}.400`, base: `${scale}.600` };
   const bgColor = { base: `${scale}.50`, _dark: `${scale}.800` };
   const bgColorHighlight = { _dark: `${scale}.900`, base: `${scale}.200` };
-  return (
-    <SortableColumnCell
-      dragId={seriesId}
-      position={"relative"}
-      onMouseEnter={() => seasonHighlight && setHighlightTrack(sku)}
-      onMouseLeave={() => seasonHighlight && setHighlightTrack(-1)}
-      bgColor={seasonHighlight && highlight ? bgColorHighlight : bgColor}
-      color={color}
-      onClick={handleCellClick}
-      onKeyDown={handleCellKeyDown}
-      cursor="pointer"
-      tabIndex={0}
-      role="checkbox"
-      aria-checked={scheduled}
-      aria-label={`${name} ${t("nav.mySchedule")}`}
-      boxShadow={
-        scheduled
-          ? {
-              base: `inset 0 0 0 2px var(--chakra-colors-${scale}-600)`,
-              _dark: `inset 0 0 0 2px var(--chakra-colors-${scale}-400)`,
-            }
-          : undefined
-      }
-    >
+
+  const cellProps = {
+    position: "relative" as const,
+    ...extraCellProps,
+    onMouseEnter: () => seasonHighlight && setHighlightTrack(sku),
+    onMouseLeave: () => seasonHighlight && setHighlightTrack(-1),
+    bgColor: seasonHighlight && highlight ? bgColorHighlight : bgColor,
+    color,
+    onClick: handleCellClick,
+    onKeyDown: handleCellKeyDown,
+    cursor: "pointer" as const,
+    tabIndex: 0,
+    role: "checkbox",
+    "aria-checked": scheduled,
+    "aria-label": `${name} ${t("nav.mySchedule")}`,
+    boxShadow: scheduled
+      ? {
+          base: `inset 0 0 0 2px var(--chakra-colors-${scale}-600)`,
+          _dark: `inset 0 0 0 2px var(--chakra-colors-${scale}-400)`,
+        }
+      : undefined,
+  };
+
+  const cellContent = (
+    <>
       {seasonShowRain && rainChance > 0 && (
         <Tooltip
           lazyMount
@@ -176,12 +180,20 @@ function SeasonTableRowCell({
           top={1}
           content={"tracks"}
           sku={sku}
-          contentId={id}
+          contentId={trackContentId}
           free={free}
           owned={owned}
           wish={wish}
         />
       )}
+    </>
+  );
+
+  return noSortableWrapper ? (
+    <Table.Cell {...cellProps}>{cellContent}</Table.Cell>
+  ) : (
+    <SortableColumnCell dragId={seriesId} {...cellProps}>
+      {cellContent}
     </SortableColumnCell>
   );
 }
