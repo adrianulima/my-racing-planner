@@ -11,13 +11,11 @@ import { setLanguage, useUi } from "@/store/ui";
 import { trackEvent } from "@/utils/analytics";
 import { Box, HStack, Stack, Text } from "@chakra-ui/react";
 import { useTranslation } from "react-i18next";
-import { create } from "zustand";
+import {
+  setLanguageDialogOpen,
+  useLanguageDialog,
+} from "./language-dialog-store";
 import { Radio, RadioGroup } from "../ui/radio";
-
-const useLanguageDialog = create<{ open: boolean }>(() => ({ open: false }));
-
-export const openLanguageDialog = () =>
-  useLanguageDialog.setState({ open: true });
 
 function LanguageDialogGlobal() {
   const { open } = useLanguageDialog();
@@ -34,7 +32,7 @@ function LanguageDialogGlobal() {
     <DialogRoot
       lazyMount
       open={open}
-      onOpenChange={(event) => useLanguageDialog.setState({ open: event.open })}
+      onOpenChange={(event) => setLanguageDialogOpen(event.open)}
       size="sm"
       scrollBehavior="inside"
       placement="center"

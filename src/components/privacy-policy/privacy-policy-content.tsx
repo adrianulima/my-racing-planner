@@ -4,14 +4,15 @@ import { EDialogs } from "@/store/ui";
 import { Heading, Link, List, Text } from "@chakra-ui/react";
 import { useEffect } from "react";
 import { Trans, useTranslation } from "react-i18next";
+import { PRIVACY_VERSION } from "./privacy-policy-version";
 import { Tooltip } from "../ui/tooltip";
-
-export const PRIVACY_VERSION = "Wed 15 Jan, 2025";
 
 function PrivacyPolicyContent() {
   useDialogTracking(EDialogs.PrivacyPolicy);
   const { t } = useTranslation();
-  useEffect(() => { setPrivacyPolicyRead(); }, []);
+  useEffect(() => {
+    setPrivacyPolicyRead();
+  }, []);
   return (
     <>
       <Text textAlign={"center"} as="p">
@@ -36,10 +37,12 @@ function PrivacyPolicyContent() {
 
         <List.Root>
           <List.Item>
-            <strong>{t("privacy.pageVisits")}</strong> ({t("privacy.pageVisitsText")})
+            <strong>{t("privacy.pageVisits")}</strong> (
+            {t("privacy.pageVisitsText")})
           </List.Item>
           <List.Item>
-            <strong>{t("privacy.outboundClicks")}</strong> ({t("privacy.outboundClicksText")})
+            <strong>{t("privacy.outboundClicks")}</strong> (
+            {t("privacy.outboundClicksText")})
           </List.Item>
         </List.Root>
         <Text my={2} as="p">

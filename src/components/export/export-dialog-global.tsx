@@ -9,14 +9,10 @@ import {
 import useScreenSize from "@/hooks/useScreenSize";
 import { lazy, Suspense } from "react";
 import { useTranslation } from "react-i18next";
-import { create } from "zustand";
+import { setExportDialogOpen, useExportDialog } from "./export-dialog-store";
 import LoadingContainer from "../page/loading-container";
 
 const ExportContent = lazy(() => import("./export-content"));
-
-const useExportDialog = create<{ open: boolean }>(() => ({ open: false }));
-
-export const openExportDialog = () => useExportDialog.setState({ open: true });
 
 function ExportDialogGlobal() {
   const { open } = useExportDialog();
@@ -28,7 +24,7 @@ function ExportDialogGlobal() {
       lazyMount
       unmountOnExit
       open={open}
-      onOpenChange={(e) => useExportDialog.setState({ open: e.open })}
+      onOpenChange={(e) => setExportDialogOpen(e.open)}
       size={width.lg ? "xl" : width.md ? "lg" : "full"}
       scrollBehavior="inside"
       placement="center"

@@ -1,12 +1,11 @@
 import { Flex, Stack } from "@chakra-ui/react";
 import TransferContentDialog from "../export/tranfer-content-dialog";
-import ExportDialogGlobal from "../export/export-dialog-global";
-import LanguageDialogGlobal from "../language/language-dialog-global";
 import MainContainer from "../main-container/main-container";
 import BottomNavBar from "../nav-bar/bottom-nav-bar";
 import NavBar from "../nav-bar/nav-bar";
 import TopBar from "../top-bar/top-bar";
 import AppLayoutContextProvider from "./app-layout-context";
+import GlobalDialogs from "./global-dialogs";
 
 function App() {
   return (
@@ -37,8 +36,7 @@ function App() {
       <BottomNavBar hideFrom="md" />
 
       <TransferContentDialog />
-      <ExportDialogGlobal />
-      <LanguageDialogGlobal />
+      <GlobalDialogs />
     </Flex>
   );
 }

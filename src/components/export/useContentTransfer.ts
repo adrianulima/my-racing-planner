@@ -38,7 +38,8 @@ function useContentTransfer() {
       "wishCars" in params ||
       "wishTracks" in params ||
       "favoriteSeries" in params ||
-      "mySchedule" in params);
+      "mySchedule" in params ||
+      "cartExcludes" in params);
 
   const detectedRef = useRef(false);
   useEffect(() => {
@@ -56,6 +57,7 @@ function useContentTransfer() {
     const wishTracks = parseNumberList(params.wishTracks);
     const favoriteSeries = parseNumberList(params.favoriteSeries);
     const mySchedule = parseScheduleList(params.mySchedule, favoriteSeries);
+    const cartExcludes = parseNumberList(params.cartExcludes);
 
     trackEvent("content_transfer_apply", {
       cars_owned_count: myCars.length,
@@ -72,6 +74,7 @@ function useContentTransfer() {
       wishTracks,
       favoriteSeries,
       mySchedule,
+      cartExcludes,
     });
     removeQueryParams();
   };

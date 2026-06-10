@@ -7,8 +7,8 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useTranslation } from "react-i18next";
-import { openExportDialog } from "../export/export-dialog-global";
-import { openLanguageDialog } from "../language/language-dialog-global";
+import { openExportDialog } from "../export/export-dialog-store";
+import { openLanguageDialog } from "../language/language-dialog-store";
 import { Avatar } from "../ui/avatar";
 import { useColorMode } from "../ui/color-mode";
 import { MenuContent, MenuItem, MenuRoot, MenuTrigger } from "../ui/menu";

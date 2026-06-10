@@ -1,4 +1,4 @@
-import { PRIVACY_VERSION } from "@/components/privacy-policy/privacy-policy-content";
+import { PRIVACY_VERSION } from "@/components/privacy-policy/privacy-policy-version";
 import { create } from "zustand";
 import { persist } from "zustand/middleware";
 
