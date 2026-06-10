@@ -2,6 +2,10 @@
 
 All notable changes to the **"Racing Planner"** project will be documented in this file.
 
+## 0.10.1
+
+- Added option to remove/add wished items from the "cart" at the shop page
+
 ## 0.10.0
 
 - Added swap-axis control to My Season table

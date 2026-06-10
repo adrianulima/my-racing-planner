@@ -223,6 +223,8 @@
   },
   "shop": {
     "checkout": "Kup w sklepie iRacing.com",
+    "addToCart": "Dodaj do koszyka",
+    "removeFromCart": "Usuń z koszyka",
     "total": "Razem",
     "discount": "{{discount}}% rabatu",
     "discountLoyalty": "lojalnościowy",

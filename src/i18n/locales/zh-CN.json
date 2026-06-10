@@ -182,6 +182,8 @@
   },
   "shop": {
     "checkout": "在 iRacing.com 商店购买",
+    "addToCart": "加入购物车",
+    "removeFromCart": "从购物车移除",
     "total": "总计",
     "discount": "{{discount}}% 折扣",
     "discountLoyalty": "忠诚",

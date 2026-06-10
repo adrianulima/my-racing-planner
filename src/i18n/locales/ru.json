@@ -223,6 +223,8 @@
   },
   "shop": {
     "checkout": "Купить в магазине iRacing.com",
+    "addToCart": "Добавить в корзину",
+    "removeFromCart": "Удалить из корзины",
     "total": "Итого",
     "discount": "Скидка {{discount}}%",
     "discountLoyalty": "лояльность",

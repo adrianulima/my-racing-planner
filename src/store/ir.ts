@@ -9,6 +9,7 @@ export interface IMyContentStore {
   wishTracks: number[];
   favoriteSeries: number[];
   mySchedule: string[];
+  cartExcludes: number[];
 }
 
 const getPreviousTuesday = (date: string): string => {
@@ -50,6 +51,7 @@ const DEFAULT_CONTENT_STORE: IMyContentStore = {
   wishTracks: [],
   favoriteSeries: [],
   mySchedule: [],
+  cartExcludes: [],
 };
 
 export const getScheduleEntryKey = (seriesId: number, date: string) =>
@@ -194,6 +196,13 @@ export const setFavoriteSeriesList = (list: number[]) =>
     };
   });
 
+export const setCartExclude = (sku: number, excluded: boolean) =>
+  useIrStore.setState((state: IMyContentStore) => ({
+    cartExcludes: excluded
+      ? [...(state.cartExcludes ?? []), sku]
+      : (state.cartExcludes ?? []).filter((s: number) => s !== sku),
+  }));
+
 export const toggleScheduleEntry = (seriesId: number, date: string) => {
   const key = getScheduleEntryKey(seriesId, date);
   useIrStore.setState((state: IMyContentStore) => ({
@@ -210,6 +219,7 @@ export const useIr = () => {
   const wishTracks = useIrStore((state) => state.wishTracks);
   const favoriteSeriesRaw = useIrStore((state) => state.favoriteSeries);
   const mySchedule = useIrStore((state) => state.mySchedule ?? []);
+  const cartExcludes = useIrStore((state) => state.cartExcludes ?? []);
 
   const favoriteSeries = favoriteSeriesRaw.filter(
     (id) => !!SERIES_JSON[id.toString() as keyof typeof SERIES_JSON],
@@ -222,5 +232,6 @@ export const useIr = () => {
     wishTracks,
     favoriteSeries,
     mySchedule,
+    cartExcludes,
   };
 };

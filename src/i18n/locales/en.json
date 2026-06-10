@@ -182,6 +182,8 @@
   },
   "shop": {
     "checkout": "Checkout on iRacing.com store",
+    "addToCart": "Add to cart",
+    "removeFromCart": "Remove from cart",
     "total": "Total",
     "discount": "{{discount}}% discount",
     "discountLoyalty": "loyalty",

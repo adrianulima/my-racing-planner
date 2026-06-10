@@ -182,6 +182,8 @@
   },
   "shop": {
     "checkout": "iRacing.com 스토어에서 구매",
+    "addToCart": "장바구니에 추가",
+    "removeFromCart": "장바구니에서 제거",
     "total": "합계",
     "discount": "{{discount}}% 할인",
     "discountLoyalty": "충성도",

@@ -1,9 +1,10 @@
-import { useIr } from "@/store/ir";
+import { setCartExclude, useIr } from "@/store/ir";
 import {
   Flex,
   For,
   FormatNumber,
   HStack,
+  IconButton,
   Separator,
   Stack,
   Text,
@@ -11,20 +12,57 @@ import {
 import {
   faCar,
   faMagnifyingGlass,
+  faMinus,
+  faPlus,
   faRoad,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Fragment } from "react";
+import { Fragment, useState } from "react";
 import { useTranslation } from "react-i18next";
 import CARS_LIST from "../../../ir-data/utils/cars";
 import TRACKS_LIST from "../../../ir-data/utils/tracks";
 import { EmptyState } from "../../ui/empty-state";
+import { Tooltip } from "../../ui/tooltip";
 import ShopSettingsPopover from "../shop-settings-popover";
 import CheckoutButton from "./checkout-button";
 import PriceDiscountPanel from "./price-discount-panel";
 
+function CartToggleButton({
+  sku,
+  isExcluded,
+}: {
+  sku: number;
+  isExcluded: boolean;
+}) {
+  const { t } = useTranslation();
+  const [tooltipOpen, setTooltipOpen] = useState(false);
+
+  return (
+    <Tooltip
+      key={isExcluded ? "excluded" : "included"}
+      content={isExcluded ? t("shop.addToCart") : t("shop.removeFromCart")}
+      open={tooltipOpen}
+      onOpenChange={(e) => setTooltipOpen(e.open)}
+      portalled
+    >
+      <IconButton
+        aria-label={isExcluded ? t("shop.addToCart") : t("shop.removeFromCart")}
+        size="2xs"
+        variant="ghost"
+        colorPalette={isExcluded ? "green" : "red"}
+        onClick={() => {
+          setTooltipOpen(false);
+          setCartExclude(sku, !isExcluded);
+        }}
+      >
+        <FontAwesomeIcon icon={isExcluded ? faPlus : faMinus} />
+      </IconButton>
+    </Tooltip>
+  );
+}
+
 function WishlistPanel() {
-  const { wishCars, wishTracks } = useIr();
+  const { wishCars, wishTracks, cartExcludes } = useIr();
   const { t } = useTranslation();
   const wishList = TRACKS_LIST.filter((t) => wishTracks.includes(t.sku))
     .map((c) => ({ ...c, isCar: false }))
@@ -34,6 +72,18 @@ function WishlistPanel() {
         isCar: true,
       })),
     );
+
+  const wishSkus = new Set(wishList.map((item) => item.sku));
+  const effectiveExcludes = new Set(
+    cartExcludes.filter((sku) => wishSkus.has(sku)),
+  );
+
+  const sortedWishList = [
+    ...wishList.filter((item) => !effectiveExcludes.has(item.sku)),
+    ...wishList.filter((item) => effectiveExcludes.has(item.sku)),
+  ];
+
+  const cartList = wishList.filter((item) => !effectiveExcludes.has(item.sku));
 
   return (
     <Stack
@@ -65,25 +115,32 @@ function WishlistPanel() {
               description={t("empty.addWishlist")}
             />
           }
-          each={wishList}
-          children={(item) => (
-            <Fragment key={item.id}>
-              <HStack>
-                <FontAwesomeIcon icon={item.isCar ? faCar : faRoad} size="sm" />
-                <Flex flex={1}>{item.name}</Flex>
-                <FormatNumber
-                  style="currency"
-                  currency="USD"
-                  value={item.price}
-                />
-              </HStack>
-              <Separator />
-            </Fragment>
-          )}
+          each={sortedWishList}
+          children={(item) => {
+            const isExcluded = effectiveExcludes.has(item.sku);
+            return (
+              <Fragment key={item.id}>
+                <HStack opacity={isExcluded ? 0.4 : 1}>
+                  <FontAwesomeIcon
+                    icon={item.isCar ? faCar : faRoad}
+                    size="sm"
+                  />
+                  <Flex flex={1}>{item.name}</Flex>
+                  <FormatNumber
+                    style="currency"
+                    currency="USD"
+                    value={item.price}
+                  />
+                  <CartToggleButton sku={item.sku} isExcluded={isExcluded} />
+                </HStack>
+                <Separator />
+              </Fragment>
+            );
+          }}
         />
       </Stack>
-      <PriceDiscountPanel wishList={wishList} />
-      <CheckoutButton wishList={wishList} />
+      <PriceDiscountPanel wishList={cartList} />
+      <CheckoutButton wishList={cartList} />
     </Stack>
   );
 }

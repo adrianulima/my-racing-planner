@@ -2,7 +2,7 @@ import { IR_URL } from "@/ir-data/utils/urls";
 import { ownNurbCombined, wishNurbCombined } from "@/ir-data/utils/tracks";
 import { useIr } from "@/store/ir";
 import { useUi } from "@/store/ui";
-import { Box, Collapsible, Image, Table, Text, VStack } from "@chakra-ui/react";
+import { Box, Image, Table, Text, VStack } from "@chakra-ui/react";
 import {
   faArrowRightArrowLeft,
   faGripLines,
@@ -22,8 +22,6 @@ import SeasonCarsPopover from "./season-cars-popover";
 import SeasonTableHeaderParticipation from "./season-table-header-participation";
 import SeasonTableRowCell from "./season-table-row-cell";
 import { formatDate, getPreviousTuesday, TSeriesDateMap } from "./useSeason";
-import { useAppLayout } from "../app/useAppLayout";
-
 const todayStartDate = getPreviousTuesday(formatDate(new Date()));
 
 function SeasonTableInvertedRow({
@@ -51,7 +49,6 @@ function SeasonTableInvertedRow({
     seasonShowThisWeek,
   } = useUi();
   const { myTracks, wishTracks } = useIr();
-  const { scrolled } = useAppLayout();
   const { width } = useScreenSize();
   const { t } = useTranslation();
 
@@ -151,7 +148,7 @@ function SeasonTableInvertedRow({
         >
           <VStack
             gap={1}
-            pb={seasonShowParticipation && !scrolled ? "12px" : 0}
+            pb={seasonShowParticipation ? "12px" : 0}
             width="100%"
             position={"relative"}
           >
@@ -197,15 +194,11 @@ function SeasonTableInvertedRow({
                 src={`${IR_URL.image}/img/logos/series/${series.logo}`}
               />
             )}
-            <Collapsible.Root open={!scrolled}>
-              <Collapsible.Content style={{ width: "100%" }}>
-                <Box width="100%" px={1}>
-                  <Text textAlign={"center"} lineClamp="2" width="100%">
-                    {series.name}
-                  </Text>
-                </Box>
-              </Collapsible.Content>
-            </Collapsible.Root>
+            <Box width="100%" px={1}>
+              <Text textAlign={"center"} lineClamp="2" width="100%">
+                {series.name}
+              </Text>
+            </Box>
           </VStack>
         </Tooltip>
 
