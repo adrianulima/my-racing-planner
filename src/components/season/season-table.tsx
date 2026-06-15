@@ -33,19 +33,17 @@ const todayStartDate = getPreviousTuesday(formatDate(new Date()));
 function SeasonTable({ filteredFavorites }: { filteredFavorites: number[] }) {
   const { weeksStartDates: allWeeks, seriesDateMap } = useSeason();
   const { favoriteSeries } = useIr();
-  const { seasonShowReorder, seasonAxisInverted, seasonHidePastWeeks } =
-    useUi();
-  const weeksStartDates = seasonHidePastWeeks
-    ? allWeeks.filter((date) => date >= todayStartDate)
-    : allWeeks;
+  const { seasonShowReorder, seasonAxisInverted, seasonHidePastWeeks } = useUi();
+  const weeksStartDates = seasonHidePastWeeks ? allWeeks.filter((date) => date >= todayStartDate) : allWeeks;
 
   const weekIndexMap = useMemo(() => {
     const map: Record<string, number> = {};
-    allWeeks.forEach((date, index) => {
-      map[date] = index + 1;
+		allWeeks.forEach((date, index) => {
+			map[date] = index + 1;
     });
     return map;
   }, [allWeeks]);
+  
   const [highlightTrack, setHighlightTrack] = useState<number>(-1);
   const { onScroll } = useAppLayout();
   const { width } = useScreenSize();
