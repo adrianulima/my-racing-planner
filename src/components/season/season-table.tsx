@@ -52,6 +52,7 @@ function SeasonTable({ filteredFavorites }: { filteredFavorites: number[] }) {
     });
     return map;
   }, [allWeeks]);
+  
   const [highlightTrack, setHighlightTrack] = useState<number>(-1);
   const { onScroll } = useAppLayout();
   const { width } = useScreenSize();
