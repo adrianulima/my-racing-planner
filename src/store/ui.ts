@@ -34,6 +34,7 @@ export const useUiStorePersist = create(
       seasonUseLocalTimezone: true,
       seasonCategory: ECarCategories.all,
       seasonAxisInverted: false,
+      seasonHidePastWeeks: false,
       shopVolumeDiscount: true,
       shopLoyaltyDiscount: false,
       helpPresented: false,
@@ -74,6 +75,9 @@ export const setSeasonUseLocalTimezone = (value: boolean) =>
 
 export const setSeasonAxisInverted = (value: boolean) =>
   useUiStorePersist.setState(() => ({ seasonAxisInverted: value }));
+
+export const setSeasonHidePastWeeks = (value: boolean) =>
+  useUiStorePersist.setState(() => ({ seasonHidePastWeeks: value }));
 
 export const setSeasonCategory = (value: ECarCategories) =>
   useUiStorePersist.setState(() => ({ seasonCategory: value }));
@@ -117,6 +121,9 @@ export const useUi = () => {
   const seasonAxisInverted = useUiStorePersist(
     (state) => state.seasonAxisInverted,
   );
+  const seasonHidePastWeeks = useUiStorePersist(
+    (state) => state.seasonHidePastWeeks,
+  );
   const seasonCategory = useUiStorePersist((state) => state.seasonCategory);
   const shopVolumeDiscount = useUiStorePersist(
     (state) => state.shopVolumeDiscount,
@@ -140,6 +147,7 @@ export const useUi = () => {
     seasonShowRain: true,
     seasonUseLocalTimezone,
     seasonAxisInverted,
+    seasonHidePastWeeks,
     seasonCategory,
     shopVolumeDiscount,
     shopLoyaltyDiscount,

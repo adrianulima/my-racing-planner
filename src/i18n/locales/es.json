@@ -152,6 +152,8 @@
     "localTimezone": "Horarios en {{timezone}}",
     "localTimezoneTooltip": "Convierte horarios de carreras de UTC a tu zona horaria local",
     "invertAxis": "Intercambiar ejes",
+    "hidePastWeeks": "Ocultar semanas pasadas",
+    "hidePastWeeksTooltip": "Ocultar las semanas que ya han pasado",
     "volumeDiscount": "Descuento por volumen",
     "volumeDiscountTooltip": "Aplica descuentos de iRacing por compras en paquete",
     "volumeDiscountLink": "Ir al artículo oficial de iRacing sobre descuentos por volumen",

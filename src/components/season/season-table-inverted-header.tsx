@@ -12,9 +12,11 @@ const todayStartDate = getPreviousTuesday(formatDate(new Date()));
 function SeasonTableInvertedHeader({
   weeksStartDates,
   seriesDateMap: _seriesDateMap,
+  weekIndexMap,
 }: {
   weeksStartDates: string[];
   seriesDateMap: TSeriesDateMap;
+  weekIndexMap: Record<string, number>;
 }) {
   const { t } = useTranslation();
   const locale = i18n.language;
@@ -65,7 +67,7 @@ function SeasonTableInvertedHeader({
           </Tooltip>
         </Table.ColumnHeader>
 
-        {weeksStartDates.map((date, index) => {
+        {weeksStartDates.map((date) => {
           const thisWeek = todayStartDate === date;
           const weekStart = new Date(date);
           const weekEndDay = new Date(
@@ -93,7 +95,7 @@ function SeasonTableInvertedHeader({
                     {weekStart.toLocaleDateString("en-US", shortFormat)}
                   </Text>
                   <Text fontSize="xs" textAlign="center" opacity="0.8">
-                    ({t("common.week")} {index + 1})
+                    ({t("common.week")} {weekIndexMap[date]})
                   </Text>
                 </VStack>
               </Tooltip>

@@ -147,6 +147,8 @@
     "localTimezone": "Harmonogram w czasie {{timezone}}",
     "localTimezoneTooltip": "Konwertuj czasy wyścigów z UTC na lokalną strefę czasową",
     "invertAxis": "Zamień osie",
+    "hidePastWeeks": "Ukryj minione tygodnie",
+    "hidePastWeeksTooltip": "Ukryj tygodnie, które już minęły",
     "volumeDiscount": "Rabat ilościowy",
     "volumeDiscountTooltip": "Zastosuj rabaty iRacing dla zakupów pakietowych",
     "volumeDiscountLink": "Przejdź do oficjalnego wpisu iRacing o rabatach ilościowych",

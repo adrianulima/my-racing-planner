@@ -152,6 +152,8 @@
     "localTimezone": "Schedule with {{timezone}} time",
     "localTimezoneTooltip": "Convert race times from UTC to your local time zone",
     "invertAxis": "Swap axis",
+    "hidePastWeeks": "Hide past weeks",
+    "hidePastWeeksTooltip": "Hide weeks that have already passed",
     "volumeDiscount": "Volume discount",
     "volumeDiscountTooltip": "Apply iRacing discounts for bundle purchases",
     "volumeDiscountLink": "Go to iRacing's official Volume Discounts blog post",

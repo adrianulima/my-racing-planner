@@ -15,14 +15,14 @@ function SeasonTableRow({
   filteredFavorites,
   highlightTrack,
   setHighlightTrack,
-  weekIndex,
+  weekNumber,
 }: {
   date: string;
   seriesDateMap: TSeriesDateMap;
   filteredFavorites: number[];
   highlightTrack: number;
   setHighlightTrack: (n: number) => void;
-  weekIndex: number;
+  weekNumber: number;
 }) {
   const { myTracks, wishTracks } = useIr();
   const { seasonShowThisWeek } = useUi();
@@ -40,7 +40,7 @@ function SeasonTableRow({
       <SeasonTableRowDateCell
         date={date}
         thisWeek={thisWeek}
-        weekNumber={weekIndex + 1}
+        weekNumber={weekNumber}
       />
       <For
         each={filteredFavorites}
