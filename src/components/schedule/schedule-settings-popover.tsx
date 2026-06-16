@@ -1,4 +1,5 @@
 import {
+  setSeasonHidePastWeeks,
   setSeasonShowThisWeek,
   setSeasonUseLocalTimezone,
   useUi,
@@ -9,7 +10,11 @@ import { Switch } from "../ui/switch";
 import { Tooltip } from "../ui/tooltip";
 
 function ScheduleSettingsPopover() {
-  const { seasonShowThisWeek, seasonUseLocalTimezone } = useUi();
+  const {
+    seasonHidePastWeeks,
+    seasonShowThisWeek,
+    seasonUseLocalTimezone,
+  } = useUi();
   const { t } = useTranslation();
 
   const timezoneName =
@@ -29,6 +34,13 @@ function ScheduleSettingsPopover() {
       tooltip: t("settings.localTimezoneTooltip"),
       checked: seasonUseLocalTimezone,
       setChecked: setSeasonUseLocalTimezone,
+    },
+    {
+      id: "schedulePastWeeks",
+      text: t("settings.hidePastWeeks"),
+      tooltip: t("settings.hidePastWeeksTooltip"),
+      checked: seasonHidePastWeeks,
+      setChecked: setSeasonHidePastWeeks,
     },
   ];
 

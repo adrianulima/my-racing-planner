@@ -24,14 +24,14 @@ import {
 
 type ScheduleWeekCardProps = {
   date: string;
-  weeksStartDates: string[];
+  allSeasonDates: string[];
   weekEntries: WeekEntry[];
   locale: string;
 };
 
 function ScheduleWeekCard({
   date,
-  weeksStartDates,
+  allSeasonDates,
   weekEntries,
   locale,
 }: ScheduleWeekCardProps) {
@@ -53,7 +53,7 @@ function ScheduleWeekCard({
         <FontAwesomeIcon icon={faCalendarWeek} />
         <Text fontWeight="bold">{getWeekRangeLabel(date, locale)}</Text>
         <Text fontSize="xs" opacity={0.7}>
-          ({t("common.week")} {getWeekNumber(date, weeksStartDates)})
+          ({t("common.week")} {getWeekNumber(date, allSeasonDates)})
         </Text>
         {thisWeek && (
           <Text fontSize="xs" fontWeight="bold" color="green.500">

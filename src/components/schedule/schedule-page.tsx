@@ -11,12 +11,16 @@ import ScheduleActions from "./schedule-actions";
 import ScheduleEmptyState from "./schedule-empty-state";
 import SchedulePrintTable from "./schedule-print-table";
 import ScheduleScreenContent from "./schedule-screen-content";
-import { groupEntriesByDate } from "./schedule-utils";
+import {
+  groupEntriesByDate,
+  todayStartDate,
+} from "./schedule-utils";
 
 function SchedulePage() {
   const { mySchedule, favoriteSeries } = useIr();
-  const { seasonUseLocalTimezone } = useUi();
-  const { weeksStartDates } = useSeason();
+  const { seasonHidePastWeeks, seasonUseLocalTimezone } = useUi();
+  const { weeksStartDates: allWeeks } = useSeason();
+  const weeksStartDates = seasonHidePastWeeks ? allWeeks.filter((date) => date >= todayStartDate) : allWeeks;
   const [, navigate] = useLocation();
   const { t } = useTranslation();
   const locale = i18n.language;
@@ -42,11 +46,13 @@ function SchedulePage() {
         <>
           <ScheduleScreenContent
             weeksStartDates={weeksStartDates}
+            allSeasonDates={allWeeks}
             entriesByDate={entriesByDate}
             locale={locale}
           />
           <SchedulePrintTable
             weeksStartDates={weeksStartDates}
+            allSeasonDates={allWeeks}
             entriesByDate={entriesByDate}
             locale={locale}
             seasonUseLocalTimezone={seasonUseLocalTimezone}

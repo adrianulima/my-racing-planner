@@ -9,6 +9,7 @@ import { getWeekNumber, getWeekRangeLabel, WeekEntry } from "./schedule-utils";
 
 type SchedulePrintTableProps = {
   weeksStartDates: string[];
+  allSeasonDates: string[];
   entriesByDate: Record<string, WeekEntry[]>;
   locale: string;
   seasonUseLocalTimezone: boolean;
@@ -16,6 +17,7 @@ type SchedulePrintTableProps = {
 
 function SchedulePrintTable({
   weeksStartDates,
+  allSeasonDates,
   entriesByDate,
   locale,
   seasonUseLocalTimezone,
@@ -27,7 +29,7 @@ function SchedulePrintTable({
       <VStack align="stretch" gap={2}>
         {weeksStartDates.map((date) => {
           const weekEntries = entriesByDate[date] ?? [];
-          const weekNumber = getWeekNumber(date, weeksStartDates);
+          const weekNumber = getWeekNumber(date, allSeasonDates);
           const weekLabel = getWeekRangeLabel(date, locale);
 
           return (
