@@ -4,28 +4,28 @@
     "id": 99,
     "released": 2009,
     "all": {
-      "ever": 189,
-      "tenYears": 147,
-      "fiveYears": 98,
-      "threeYears": 65,
-      "lastYear": 32,
-      "thisYear": 14
+      "ever": 200,
+      "tenYears": 158,
+      "fiveYears": 109,
+      "threeYears": 76,
+      "lastYear": 43,
+      "thisYear": 25
     },
     "sports_car": {
-      "ever": 95,
-      "tenYears": 80,
-      "fiveYears": 51,
-      "threeYears": 32,
-      "lastYear": 14,
-      "thisYear": 8
+      "ever": 97,
+      "tenYears": 82,
+      "fiveYears": 53,
+      "threeYears": 34,
+      "lastYear": 16,
+      "thisYear": 10
     },
     "formula_car": {
-      "ever": 94,
-      "tenYears": 67,
-      "fiveYears": 47,
-      "threeYears": 33,
-      "lastYear": 18,
-      "thisYear": 6
+      "ever": 103,
+      "tenYears": 76,
+      "fiveYears": 56,
+      "threeYears": 42,
+      "lastYear": 27,
+      "thisYear": 15
     }
   },
   "10013": {
@@ -33,44 +33,44 @@
     "id": 554,
     "released": 2008,
     "all": {
-      "ever": 775,
-      "tenYears": 381,
-      "fiveYears": 142,
-      "threeYears": 132,
-      "lastYear": 118,
-      "thisYear": 73
+      "ever": 805,
+      "tenYears": 411,
+      "fiveYears": 172,
+      "threeYears": 162,
+      "lastYear": 148,
+      "thisYear": 103
     },
     "sports_car": {
-      "ever": 140,
-      "tenYears": 74,
-      "fiveYears": 35,
-      "threeYears": 33,
-      "lastYear": 32,
-      "thisYear": 17
+      "ever": 148,
+      "tenYears": 82,
+      "fiveYears": 43,
+      "threeYears": 41,
+      "lastYear": 40,
+      "thisYear": 25
     },
     "formula_car": {
-      "ever": 31,
-      "tenYears": 15,
-      "fiveYears": 8,
-      "threeYears": 7,
-      "lastYear": 6,
-      "thisYear": 5
+      "ever": 34,
+      "tenYears": 18,
+      "fiveYears": 11,
+      "threeYears": 10,
+      "lastYear": 9,
+      "thisYear": 8
     },
     "oval": {
-      "ever": 582,
-      "tenYears": 270,
-      "fiveYears": 77,
-      "threeYears": 70,
-      "lastYear": 58,
-      "thisYear": 35
+      "ever": 590,
+      "tenYears": 278,
+      "fiveYears": 85,
+      "threeYears": 78,
+      "lastYear": 66,
+      "thisYear": 43
     },
     "dirt_road": {
-      "ever": 22,
-      "tenYears": 22,
-      "fiveYears": 22,
-      "threeYears": 22,
-      "lastYear": 22,
-      "thisYear": 16
+      "ever": 33,
+      "tenYears": 33,
+      "fiveYears": 33,
+      "threeYears": 33,
+      "lastYear": 33,
+      "thisYear": 27
     }
   },
   "10014": {
@@ -78,20 +78,20 @@
     "id": 15,
     "released": 2008,
     "all": {
-      "ever": 303,
-      "tenYears": 221,
-      "fiveYears": 134,
-      "threeYears": 99,
-      "lastYear": 52,
-      "thisYear": 17
+      "ever": 312,
+      "tenYears": 230,
+      "fiveYears": 143,
+      "threeYears": 108,
+      "lastYear": 61,
+      "thisYear": 26
     },
     "oval": {
-      "ever": 302,
-      "tenYears": 220,
-      "fiveYears": 134,
-      "threeYears": 99,
-      "lastYear": 52,
-      "thisYear": 17
+      "ever": 311,
+      "tenYears": 229,
+      "fiveYears": 143,
+      "threeYears": 108,
+      "lastYear": 61,
+      "thisYear": 26
     },
     "sports_car": {
       "ever": 1,
@@ -103,20 +103,20 @@
     "id": 296,
     "released": 2018,
     "all": {
-      "ever": 316,
-      "tenYears": 316,
-      "fiveYears": 280,
-      "threeYears": 194,
-      "lastYear": 91,
-      "thisYear": 32
+      "ever": 332,
+      "tenYears": 332,
+      "fiveYears": 296,
+      "threeYears": 210,
+      "lastYear": 107,
+      "thisYear": 48
     },
     "dirt_road": {
-      "ever": 316,
-      "tenYears": 316,
-      "fiveYears": 280,
-      "threeYears": 194,
-      "lastYear": 91,
-      "thisYear": 32
+      "ever": 332,
+      "tenYears": 332,
+      "fiveYears": 296,
+      "threeYears": 210,
+      "lastYear": 107,
+      "thisYear": 48
     }
   },
   "10016": {
@@ -132,19 +132,20 @@
       "thisYear": 19
     },
     "oval": {
-      "ever": 287,
-      "tenYears": 174,
-      "fiveYears": 102,
-      "threeYears": 73,
-      "lastYear": 40,
-      "thisYear": 18
+      "ever": 286,
+      "tenYears": 173,
+      "fiveYears": 101,
+      "threeYears": 72,
+      "lastYear": 39,
+      "thisYear": 17
     },
     "sports_car": {
-      "ever": 35,
-      "tenYears": 33,
-      "fiveYears": 29,
-      "threeYears": 16,
-      "lastYear": 7
+      "ever": 36,
+      "tenYears": 34,
+      "fiveYears": 30,
+      "threeYears": 17,
+      "lastYear": 8,
+      "thisYear": 1
     },
     "formula_car": {
       "ever": 68,
@@ -160,49 +161,49 @@
     "id": 19,
     "released": 2008,
     "all": {
-      "ever": 296,
-      "tenYears": 154,
-      "fiveYears": 89,
-      "threeYears": 49,
-      "lastYear": 20,
-      "thisYear": 6
+      "ever": 300,
+      "tenYears": 158,
+      "fiveYears": 93,
+      "threeYears": 53,
+      "lastYear": 24,
+      "thisYear": 10
     },
     "oval": {
-      "ever": 296,
-      "tenYears": 154,
-      "fiveYears": 89,
-      "threeYears": 49,
-      "lastYear": 20,
-      "thisYear": 6
+      "ever": 300,
+      "tenYears": 158,
+      "fiveYears": 93,
+      "threeYears": 53,
+      "lastYear": 24,
+      "thisYear": 10
     }
   },
   "10018": {
     "sku": 10018,
-    "id": 47,
+    "id": 586,
     "released": 2008,
     "all": {
-      "ever": 666,
-      "tenYears": 505,
-      "fiveYears": 355,
-      "threeYears": 248,
-      "lastYear": 107,
-      "thisYear": 32
+      "ever": 676,
+      "tenYears": 515,
+      "fiveYears": 365,
+      "threeYears": 258,
+      "lastYear": 117,
+      "thisYear": 42
     },
     "sports_car": {
-      "ever": 471,
-      "tenYears": 364,
-      "fiveYears": 246,
-      "threeYears": 169,
-      "lastYear": 73,
-      "thisYear": 23
+      "ever": 476,
+      "tenYears": 369,
+      "fiveYears": 251,
+      "threeYears": 174,
+      "lastYear": 78,
+      "thisYear": 28
     },
     "formula_car": {
-      "ever": 192,
-      "tenYears": 138,
-      "fiveYears": 107,
-      "threeYears": 78,
-      "lastYear": 33,
-      "thisYear": 8
+      "ever": 197,
+      "tenYears": 143,
+      "fiveYears": 112,
+      "threeYears": 83,
+      "lastYear": 38,
+      "thisYear": 13
     },
     "oval": {
       "ever": 3,
@@ -218,81 +219,40 @@
     "id": 275,
     "released": 2008,
     "all": {
-      "ever": 1377,
-      "tenYears": 1108,
-      "fiveYears": 616,
-      "threeYears": 415,
-      "lastYear": 221,
-      "thisYear": 83
+      "ever": 1412,
+      "tenYears": 1143,
+      "fiveYears": 651,
+      "threeYears": 450,
+      "lastYear": 256,
+      "thisYear": 118
     },
     "dirt_oval": {
-      "ever": 509,
-      "tenYears": 509,
-      "fiveYears": 313,
-      "threeYears": 220,
-      "lastYear": 119,
-      "thisYear": 45
+      "ever": 529,
+      "tenYears": 529,
+      "fiveYears": 333,
+      "threeYears": 240,
+      "lastYear": 139,
+      "thisYear": 65
     },
     "oval": {
-      "ever": 855,
-      "tenYears": 586,
-      "fiveYears": 292,
-      "threeYears": 186,
-      "lastYear": 97,
-      "thisYear": 36
+      "ever": 868,
+      "tenYears": 599,
+      "fiveYears": 305,
+      "threeYears": 199,
+      "lastYear": 110,
+      "thisYear": 49
     },
     "sports_car": {
       "ever": 1,
       "tenYears": 1
     },
     "formula_car": {
-      "ever": 9,
-      "tenYears": 9,
-      "fiveYears": 8,
-      "threeYears": 6,
-      "lastYear": 2
-    },
-    "dirt_road": {
-      "ever": 3,
-      "tenYears": 3,
-      "fiveYears": 3,
-      "threeYears": 3,
+      "ever": 10,
+      "tenYears": 10,
+      "fiveYears": 9,
+      "threeYears": 7,
       "lastYear": 3,
-      "thisYear": 2
-    }
-  },
-  "10020": {
-    "sku": 10020,
-    "id": 288,
-    "released": 2008,
-    "all": {
-      "ever": 1326,
-      "tenYears": 1145,
-      "fiveYears": 784,
-      "threeYears": 575,
-      "lastYear": 316,
-      "thisYear": 119
-    },
-    "dirt_oval": {
-      "ever": 744,
-      "tenYears": 744,
-      "fiveYears": 533,
-      "threeYears": 405,
-      "lastYear": 227,
-      "thisYear": 84
-    },
-    "oval": {
-      "ever": 577,
-      "tenYears": 396,
-      "fiveYears": 246,
-      "threeYears": 166,
-      "lastYear": 85,
-      "thisYear": 33
-    },
-    "formula_car": {
-      "ever": 1,
-      "tenYears": 1,
-      "fiveYears": 1
+      "thisYear": 1
     },
     "dirt_road": {
       "ever": 4,
@@ -300,7 +260,49 @@
       "fiveYears": 4,
       "threeYears": 4,
       "lastYear": 4,
-      "thisYear": 2
+      "thisYear": 3
+    }
+  },
+  "10020": {
+    "sku": 10020,
+    "id": 288,
+    "released": 2008,
+    "all": {
+      "ever": 1385,
+      "tenYears": 1204,
+      "fiveYears": 843,
+      "threeYears": 634,
+      "lastYear": 375,
+      "thisYear": 178
+    },
+    "dirt_oval": {
+      "ever": 788,
+      "tenYears": 788,
+      "fiveYears": 577,
+      "threeYears": 449,
+      "lastYear": 271,
+      "thisYear": 128
+    },
+    "oval": {
+      "ever": 591,
+      "tenYears": 410,
+      "fiveYears": 260,
+      "threeYears": 180,
+      "lastYear": 99,
+      "thisYear": 47
+    },
+    "formula_car": {
+      "ever": 1,
+      "tenYears": 1,
+      "fiveYears": 1
+    },
+    "dirt_road": {
+      "ever": 5,
+      "tenYears": 5,
+      "fiveYears": 5,
+      "threeYears": 5,
+      "lastYear": 5,
+      "thisYear": 3
     }
   },
   "10022": {
@@ -308,20 +310,20 @@
     "id": 33,
     "released": 2008,
     "all": {
-      "ever": 543,
-      "tenYears": 376,
-      "fiveYears": 198,
-      "threeYears": 120,
-      "lastYear": 49,
-      "thisYear": 20
+      "ever": 547,
+      "tenYears": 380,
+      "fiveYears": 202,
+      "threeYears": 124,
+      "lastYear": 53,
+      "thisYear": 24
     },
     "oval": {
-      "ever": 543,
-      "tenYears": 376,
-      "fiveYears": 198,
-      "threeYears": 120,
-      "lastYear": 49,
-      "thisYear": 20
+      "ever": 547,
+      "tenYears": 380,
+      "fiveYears": 202,
+      "threeYears": 124,
+      "lastYear": 53,
+      "thisYear": 24
     }
   },
   "10023": {
@@ -329,20 +331,20 @@
     "id": 12,
     "released": 2008,
     "all": {
-      "ever": 343,
-      "tenYears": 220,
-      "fiveYears": 155,
-      "threeYears": 119,
-      "lastYear": 64,
-      "thisYear": 21
+      "ever": 356,
+      "tenYears": 233,
+      "fiveYears": 168,
+      "threeYears": 132,
+      "lastYear": 77,
+      "thisYear": 34
     },
     "oval": {
-      "ever": 343,
-      "tenYears": 220,
-      "fiveYears": 155,
-      "threeYears": 119,
-      "lastYear": 64,
-      "thisYear": 21
+      "ever": 356,
+      "tenYears": 233,
+      "fiveYears": 168,
+      "threeYears": 132,
+      "lastYear": 77,
+      "thisYear": 34
     }
   },
   "10024": {
@@ -350,20 +352,20 @@
     "id": 561,
     "released": 2008,
     "all": {
-      "ever": 545,
-      "tenYears": 336,
-      "fiveYears": 178,
-      "threeYears": 116,
-      "lastYear": 55,
-      "thisYear": 23
+      "ever": 556,
+      "tenYears": 347,
+      "fiveYears": 189,
+      "threeYears": 127,
+      "lastYear": 66,
+      "thisYear": 34
     },
     "oval": {
-      "ever": 501,
-      "tenYears": 308,
-      "fiveYears": 164,
-      "threeYears": 108,
-      "lastYear": 52,
-      "thisYear": 21
+      "ever": 512,
+      "tenYears": 319,
+      "fiveYears": 175,
+      "threeYears": 119,
+      "lastYear": 63,
+      "thisYear": 32
     },
     "formula_car": {
       "ever": 44,
@@ -379,28 +381,28 @@
     "id": 18,
     "released": 2009,
     "all": {
-      "ever": 673,
-      "tenYears": 582,
-      "fiveYears": 425,
-      "threeYears": 288,
-      "lastYear": 122,
-      "thisYear": 42
+      "ever": 706,
+      "tenYears": 615,
+      "fiveYears": 458,
+      "threeYears": 321,
+      "lastYear": 155,
+      "thisYear": 75
     },
     "sports_car": {
-      "ever": 386,
-      "tenYears": 361,
-      "fiveYears": 268,
-      "threeYears": 184,
-      "lastYear": 75,
-      "thisYear": 23
+      "ever": 406,
+      "tenYears": 381,
+      "fiveYears": 288,
+      "threeYears": 204,
+      "lastYear": 95,
+      "thisYear": 43
     },
     "formula_car": {
-      "ever": 242,
-      "tenYears": 186,
-      "fiveYears": 136,
-      "threeYears": 97,
-      "lastYear": 46,
-      "thisYear": 18
+      "ever": 255,
+      "tenYears": 199,
+      "fiveYears": 149,
+      "threeYears": 110,
+      "lastYear": 59,
+      "thisYear": 31
     },
     "oval": {
       "ever": 45,
@@ -416,28 +418,28 @@
     "id": 41,
     "released": 2009,
     "all": {
-      "ever": 210,
-      "tenYears": 140,
-      "fiveYears": 51,
-      "threeYears": 28,
-      "lastYear": 9,
-      "thisYear": 7
+      "ever": 213,
+      "tenYears": 143,
+      "fiveYears": 54,
+      "threeYears": 31,
+      "lastYear": 12,
+      "thisYear": 10
     },
     "formula_car": {
-      "ever": 95,
-      "tenYears": 57,
-      "fiveYears": 19,
-      "threeYears": 11,
-      "lastYear": 4,
-      "thisYear": 3
-    },
-    "sports_car": {
-      "ever": 113,
-      "tenYears": 81,
-      "fiveYears": 31,
-      "threeYears": 17,
+      "ever": 96,
+      "tenYears": 58,
+      "fiveYears": 20,
+      "threeYears": 12,
       "lastYear": 5,
       "thisYear": 4
+    },
+    "sports_car": {
+      "ever": 115,
+      "tenYears": 83,
+      "fiveYears": 33,
+      "threeYears": 19,
+      "lastYear": 7,
+      "thisYear": 6
     },
     "oval": {
       "ever": 2,
@@ -450,12 +452,12 @@
     "id": 98,
     "released": 2008,
     "all": {
-      "ever": 349,
-      "tenYears": 278,
-      "fiveYears": 193,
-      "threeYears": 130,
-      "lastYear": 67,
-      "thisYear": 24
+      "ever": 358,
+      "tenYears": 287,
+      "fiveYears": 202,
+      "threeYears": 139,
+      "lastYear": 76,
+      "thisYear": 33
     },
     "formula_car": {
       "ever": 95,
@@ -466,28 +468,28 @@
       "thisYear": 2
     },
     "oval": {
-      "ever": 72,
-      "tenYears": 61,
-      "fiveYears": 37,
-      "threeYears": 25,
-      "lastYear": 14,
-      "thisYear": 6
+      "ever": 78,
+      "tenYears": 67,
+      "fiveYears": 43,
+      "threeYears": 31,
+      "lastYear": 20,
+      "thisYear": 12
     },
     "sports_car": {
-      "ever": 100,
-      "tenYears": 82,
-      "fiveYears": 61,
-      "threeYears": 43,
-      "lastYear": 23,
-      "thisYear": 10
+      "ever": 101,
+      "tenYears": 83,
+      "fiveYears": 62,
+      "threeYears": 44,
+      "lastYear": 24,
+      "thisYear": 11
     },
     "dirt_road": {
-      "ever": 82,
-      "tenYears": 82,
-      "fiveYears": 61,
-      "threeYears": 41,
-      "lastYear": 18,
-      "thisYear": 6
+      "ever": 84,
+      "tenYears": 84,
+      "fiveYears": 63,
+      "threeYears": 43,
+      "lastYear": 20,
+      "thisYear": 8
     }
   },
   "10028": {
@@ -495,20 +497,28 @@
     "id": 14,
     "released": 2008,
     "all": {
-      "ever": 608,
-      "tenYears": 428,
-      "fiveYears": 258,
-      "threeYears": 175,
-      "lastYear": 87,
-      "thisYear": 30
+      "ever": 623,
+      "tenYears": 443,
+      "fiveYears": 273,
+      "threeYears": 190,
+      "lastYear": 102,
+      "thisYear": 45
     },
     "oval": {
-      "ever": 608,
-      "tenYears": 428,
-      "fiveYears": 258,
-      "threeYears": 175,
-      "lastYear": 87,
-      "thisYear": 30
+      "ever": 622,
+      "tenYears": 442,
+      "fiveYears": 272,
+      "threeYears": 189,
+      "lastYear": 101,
+      "thisYear": 44
+    },
+    "formula_car": {
+      "ever": 1,
+      "tenYears": 1,
+      "fiveYears": 1,
+      "threeYears": 1,
+      "lastYear": 1,
+      "thisYear": 1
     }
   },
   "10029": {
@@ -516,20 +526,20 @@
     "id": 11,
     "released": 2008,
     "all": {
-      "ever": 364,
-      "tenYears": 224,
-      "fiveYears": 145,
-      "threeYears": 101,
-      "lastYear": 41,
-      "thisYear": 10
+      "ever": 373,
+      "tenYears": 233,
+      "fiveYears": 154,
+      "threeYears": 110,
+      "lastYear": 50,
+      "thisYear": 19
     },
     "oval": {
-      "ever": 364,
-      "tenYears": 224,
-      "fiveYears": 145,
-      "threeYears": 101,
-      "lastYear": 41,
-      "thisYear": 10
+      "ever": 373,
+      "tenYears": 233,
+      "fiveYears": 154,
+      "threeYears": 110,
+      "lastYear": 50,
+      "thisYear": 19
     }
   },
   "10030": {
@@ -537,28 +547,28 @@
     "id": 9,
     "released": 2008,
     "all": {
-      "ever": 627,
-      "tenYears": 419,
-      "fiveYears": 251,
-      "threeYears": 174,
-      "lastYear": 98,
-      "thisYear": 43
+      "ever": 640,
+      "tenYears": 432,
+      "fiveYears": 264,
+      "threeYears": 187,
+      "lastYear": 111,
+      "thisYear": 56
     },
     "sports_car": {
-      "ever": 487,
-      "tenYears": 320,
-      "fiveYears": 164,
-      "threeYears": 105,
-      "lastYear": 61,
-      "thisYear": 30
+      "ever": 494,
+      "tenYears": 327,
+      "fiveYears": 171,
+      "threeYears": 112,
+      "lastYear": 68,
+      "thisYear": 37
     },
     "formula_car": {
-      "ever": 136,
-      "tenYears": 95,
-      "fiveYears": 83,
-      "threeYears": 66,
-      "lastYear": 35,
-      "thisYear": 13
+      "ever": 142,
+      "tenYears": 101,
+      "fiveYears": 89,
+      "threeYears": 72,
+      "lastYear": 41,
+      "thisYear": 19
     },
     "oval": {
       "ever": 4,
@@ -570,31 +580,31 @@
   },
   "10031": {
     "sku": 10031,
-    "id": 465,
+    "id": 467,
     "released": 2008,
     "all": {
-      "ever": 459,
-      "tenYears": 388,
-      "fiveYears": 340,
-      "threeYears": 307,
-      "lastYear": 143,
-      "thisYear": 50
+      "ever": 498,
+      "tenYears": 427,
+      "fiveYears": 379,
+      "threeYears": 346,
+      "lastYear": 181,
+      "thisYear": 88
     },
     "sports_car": {
-      "ever": 271,
-      "tenYears": 253,
-      "fiveYears": 222,
-      "threeYears": 200,
-      "lastYear": 91,
-      "thisYear": 30
+      "ever": 303,
+      "tenYears": 285,
+      "fiveYears": 254,
+      "threeYears": 232,
+      "lastYear": 122,
+      "thisYear": 61
     },
     "formula_car": {
-      "ever": 187,
-      "tenYears": 134,
-      "fiveYears": 117,
-      "threeYears": 106,
-      "lastYear": 52,
-      "thisYear": 20
+      "ever": 194,
+      "tenYears": 141,
+      "fiveYears": 124,
+      "threeYears": 113,
+      "lastYear": 59,
+      "thisYear": 27
     },
     "oval": {
       "ever": 1,
@@ -608,38 +618,40 @@
     "id": 53,
     "released": 2008,
     "all": {
-      "ever": 453,
-      "tenYears": 362,
-      "fiveYears": 263,
-      "threeYears": 182,
-      "lastYear": 79,
-      "thisYear": 26
+      "ever": 465,
+      "tenYears": 374,
+      "fiveYears": 275,
+      "threeYears": 194,
+      "lastYear": 91,
+      "thisYear": 38
     },
     "oval": {
-      "ever": 324,
-      "tenYears": 235,
-      "fiveYears": 166,
-      "threeYears": 121,
-      "lastYear": 58,
-      "thisYear": 19
+      "ever": 330,
+      "tenYears": 241,
+      "fiveYears": 172,
+      "threeYears": 127,
+      "lastYear": 64,
+      "thisYear": 25
     },
     "dirt_road": {
-      "ever": 107,
-      "tenYears": 107,
-      "fiveYears": 85,
-      "threeYears": 53,
-      "lastYear": 21,
-      "thisYear": 7
+      "ever": 111,
+      "tenYears": 111,
+      "fiveYears": 89,
+      "threeYears": 57,
+      "lastYear": 25,
+      "thisYear": 11
     },
     "sports_car": {
       "ever": 2,
       "tenYears": 2
     },
     "formula_car": {
-      "ever": 20,
-      "tenYears": 18,
-      "fiveYears": 12,
-      "threeYears": 8
+      "ever": 22,
+      "tenYears": 20,
+      "fiveYears": 14,
+      "threeYears": 10,
+      "lastYear": 2,
+      "thisYear": 2
     }
   },
   "10041": {
@@ -647,28 +659,28 @@
     "id": 94,
     "released": 2008,
     "all": {
-      "ever": 243,
-      "tenYears": 139,
-      "fiveYears": 91,
-      "threeYears": 62,
-      "lastYear": 30,
-      "thisYear": 7
+      "ever": 251,
+      "tenYears": 147,
+      "fiveYears": 99,
+      "threeYears": 70,
+      "lastYear": 38,
+      "thisYear": 15
     },
     "oval": {
-      "ever": 195,
-      "tenYears": 104,
-      "fiveYears": 70,
-      "threeYears": 47,
-      "lastYear": 23,
-      "thisYear": 5
+      "ever": 201,
+      "tenYears": 110,
+      "fiveYears": 76,
+      "threeYears": 53,
+      "lastYear": 29,
+      "thisYear": 11
     },
     "formula_car": {
-      "ever": 48,
-      "tenYears": 35,
-      "fiveYears": 21,
-      "threeYears": 15,
-      "lastYear": 7,
-      "thisYear": 2
+      "ever": 50,
+      "tenYears": 37,
+      "fiveYears": 23,
+      "threeYears": 17,
+      "lastYear": 9,
+      "thisYear": 4
     }
   },
   "10042": {
@@ -676,28 +688,28 @@
     "id": 95,
     "released": 2009,
     "all": {
-      "ever": 555,
-      "tenYears": 468,
-      "fiveYears": 357,
-      "threeYears": 268,
-      "lastYear": 118,
-      "thisYear": 46
+      "ever": 563,
+      "tenYears": 476,
+      "fiveYears": 365,
+      "threeYears": 274,
+      "lastYear": 124,
+      "thisYear": 52
     },
     "sports_car": {
-      "ever": 379,
-      "tenYears": 349,
-      "fiveYears": 267,
-      "threeYears": 196,
-      "lastYear": 87,
-      "thisYear": 34
+      "ever": 385,
+      "tenYears": 355,
+      "fiveYears": 273,
+      "threeYears": 200,
+      "lastYear": 91,
+      "thisYear": 38
     },
     "formula_car": {
-      "ever": 174,
-      "tenYears": 119,
-      "fiveYears": 90,
-      "threeYears": 72,
-      "lastYear": 31,
-      "thisYear": 12
+      "ever": 176,
+      "tenYears": 121,
+      "fiveYears": 92,
+      "threeYears": 74,
+      "lastYear": 33,
+      "thisYear": 14
     },
     "oval": {
       "ever": 2
@@ -708,12 +720,12 @@
     "id": 442,
     "released": 2008,
     "all": {
-      "ever": 660,
-      "tenYears": 436,
-      "fiveYears": 265,
-      "threeYears": 161,
-      "lastYear": 75,
-      "thisYear": 30
+      "ever": 663,
+      "tenYears": 439,
+      "fiveYears": 268,
+      "threeYears": 164,
+      "lastYear": 78,
+      "thisYear": 33
     },
     "dirt_oval": {
       "ever": 96,
@@ -724,12 +736,12 @@
       "thisYear": 9
     },
     "oval": {
-      "ever": 563,
-      "tenYears": 339,
-      "fiveYears": 168,
-      "threeYears": 114,
-      "lastYear": 54,
-      "thisYear": 21
+      "ever": 566,
+      "tenYears": 342,
+      "fiveYears": 171,
+      "threeYears": 117,
+      "lastYear": 57,
+      "thisYear": 24
     },
     "formula_car": {
       "ever": 1,
@@ -771,12 +783,12 @@
     "id": 105,
     "released": 2008,
     "all": {
-      "ever": 578,
-      "tenYears": 418,
-      "fiveYears": 305,
-      "threeYears": 202,
-      "lastYear": 92,
-      "thisYear": 33
+      "ever": 590,
+      "tenYears": 430,
+      "fiveYears": 317,
+      "threeYears": 214,
+      "lastYear": 104,
+      "thisYear": 45
     },
     "formula_car": {
       "ever": 42,
@@ -787,12 +799,12 @@
       "thisYear": 2
     },
     "oval": {
-      "ever": 273,
-      "tenYears": 125,
-      "fiveYears": 69,
-      "threeYears": 45,
-      "lastYear": 28,
-      "thisYear": 6
+      "ever": 277,
+      "tenYears": 129,
+      "fiveYears": 73,
+      "threeYears": 49,
+      "lastYear": 32,
+      "thisYear": 10
     },
     "sports_car": {
       "ever": 45,
@@ -803,12 +815,12 @@
       "thisYear": 5
     },
     "dirt_road": {
-      "ever": 218,
-      "tenYears": 218,
-      "fiveYears": 199,
-      "threeYears": 131,
-      "lastYear": 52,
-      "thisYear": 20
+      "ever": 226,
+      "tenYears": 226,
+      "fiveYears": 207,
+      "threeYears": 139,
+      "lastYear": 60,
+      "thisYear": 28
     }
   },
   "10060": {
@@ -816,36 +828,36 @@
     "id": 434,
     "released": 2009,
     "all": {
-      "ever": 872,
-      "tenYears": 710,
-      "fiveYears": 496,
-      "threeYears": 335,
-      "lastYear": 157,
-      "thisYear": 46
+      "ever": 911,
+      "tenYears": 749,
+      "fiveYears": 532,
+      "threeYears": 368,
+      "lastYear": 186,
+      "thisYear": 74
     },
     "sports_car": {
-      "ever": 463,
-      "tenYears": 400,
-      "fiveYears": 293,
-      "threeYears": 200,
-      "lastYear": 92,
-      "thisYear": 23
+      "ever": 499,
+      "tenYears": 436,
+      "fiveYears": 326,
+      "threeYears": 230,
+      "lastYear": 118,
+      "thisYear": 48
     },
     "formula_car": {
-      "ever": 249,
-      "tenYears": 183,
-      "fiveYears": 126,
-      "threeYears": 88,
-      "lastYear": 42,
-      "thisYear": 12
+      "ever": 251,
+      "tenYears": 185,
+      "fiveYears": 128,
+      "threeYears": 90,
+      "lastYear": 44,
+      "thisYear": 14
     },
     "oval": {
-      "ever": 160,
-      "tenYears": 127,
-      "fiveYears": 77,
-      "threeYears": 47,
-      "lastYear": 23,
-      "thisYear": 11
+      "ever": 161,
+      "tenYears": 128,
+      "fiveYears": 78,
+      "threeYears": 48,
+      "lastYear": 24,
+      "thisYear": 12
     }
   },
   "10065": {
@@ -853,20 +865,20 @@
     "id": 115,
     "released": 2009,
     "all": {
-      "ever": 281,
-      "tenYears": 214,
-      "fiveYears": 138,
-      "threeYears": 91,
-      "lastYear": 35,
-      "thisYear": 16
+      "ever": 287,
+      "tenYears": 220,
+      "fiveYears": 144,
+      "threeYears": 97,
+      "lastYear": 41,
+      "thisYear": 22
     },
     "oval": {
-      "ever": 276,
-      "tenYears": 210,
-      "fiveYears": 136,
-      "threeYears": 90,
-      "lastYear": 35,
-      "thisYear": 16
+      "ever": 282,
+      "tenYears": 216,
+      "fiveYears": 142,
+      "threeYears": 96,
+      "lastYear": 41,
+      "thisYear": 22
     },
     "formula_car": {
       "ever": 5,
@@ -880,27 +892,28 @@
     "id": 116,
     "released": 2009,
     "all": {
-      "ever": 410,
-      "tenYears": 327,
-      "fiveYears": 212,
-      "threeYears": 167,
-      "lastYear": 81,
-      "thisYear": 31
+      "ever": 419,
+      "tenYears": 336,
+      "fiveYears": 221,
+      "threeYears": 176,
+      "lastYear": 90,
+      "thisYear": 40
     },
     "oval": {
-      "ever": 398,
-      "tenYears": 316,
-      "fiveYears": 204,
-      "threeYears": 161,
-      "lastYear": 80,
-      "thisYear": 31
+      "ever": 405,
+      "tenYears": 323,
+      "fiveYears": 211,
+      "threeYears": 168,
+      "lastYear": 87,
+      "thisYear": 38
     },
     "formula_car": {
-      "ever": 12,
-      "tenYears": 11,
-      "fiveYears": 8,
-      "threeYears": 6,
-      "lastYear": 1
+      "ever": 14,
+      "tenYears": 13,
+      "fiveYears": 10,
+      "threeYears": 8,
+      "lastYear": 3,
+      "thisYear": 2
     }
   },
   "10067": {
@@ -938,20 +951,20 @@
     "id": 123,
     "released": 2009,
     "all": {
-      "ever": 285,
-      "tenYears": 184,
-      "fiveYears": 93,
-      "threeYears": 63,
-      "lastYear": 28,
-      "thisYear": 10
+      "ever": 290,
+      "tenYears": 189,
+      "fiveYears": 98,
+      "threeYears": 68,
+      "lastYear": 33,
+      "thisYear": 15
     },
     "oval": {
-      "ever": 262,
-      "tenYears": 164,
-      "fiveYears": 86,
-      "threeYears": 59,
-      "lastYear": 26,
-      "thisYear": 10
+      "ever": 267,
+      "tenYears": 169,
+      "fiveYears": 91,
+      "threeYears": 64,
+      "lastYear": 31,
+      "thisYear": 15
     },
     "formula_car": {
       "ever": 23,
@@ -966,20 +979,20 @@
     "id": 124,
     "released": 2009,
     "all": {
-      "ever": 276,
-      "tenYears": 137,
-      "fiveYears": 46,
-      "threeYears": 31,
-      "lastYear": 12,
-      "thisYear": 5
+      "ever": 277,
+      "tenYears": 138,
+      "fiveYears": 47,
+      "threeYears": 32,
+      "lastYear": 13,
+      "thisYear": 6
     },
     "oval": {
-      "ever": 238,
-      "tenYears": 112,
-      "fiveYears": 39,
-      "threeYears": 29,
-      "lastYear": 12,
-      "thisYear": 5
+      "ever": 239,
+      "tenYears": 113,
+      "fiveYears": 40,
+      "threeYears": 30,
+      "lastYear": 13,
+      "thisYear": 6
     },
     "formula_car": {
       "ever": 38,
@@ -993,28 +1006,28 @@
     "id": 128,
     "released": 2009,
     "all": {
-      "ever": 546,
-      "tenYears": 461,
-      "fiveYears": 347,
-      "threeYears": 246,
-      "lastYear": 108,
-      "thisYear": 27
+      "ever": 565,
+      "tenYears": 480,
+      "fiveYears": 366,
+      "threeYears": 264,
+      "lastYear": 126,
+      "thisYear": 45
     },
     "sports_car": {
-      "ever": 381,
-      "tenYears": 341,
-      "fiveYears": 257,
-      "threeYears": 182,
-      "lastYear": 80,
-      "thisYear": 19
+      "ever": 398,
+      "tenYears": 358,
+      "fiveYears": 274,
+      "threeYears": 198,
+      "lastYear": 96,
+      "thisYear": 35
     },
     "formula_car": {
-      "ever": 163,
-      "tenYears": 118,
-      "fiveYears": 88,
-      "threeYears": 63,
-      "lastYear": 28,
-      "thisYear": 8
+      "ever": 165,
+      "tenYears": 120,
+      "fiveYears": 90,
+      "threeYears": 65,
+      "lastYear": 30,
+      "thisYear": 10
     },
     "oval": {
       "ever": 2,
@@ -1028,20 +1041,20 @@
     "id": 131,
     "released": 2009,
     "all": {
-      "ever": 443,
-      "tenYears": 262,
-      "fiveYears": 148,
-      "threeYears": 102,
-      "lastYear": 49,
-      "thisYear": 14
+      "ever": 456,
+      "tenYears": 275,
+      "fiveYears": 161,
+      "threeYears": 115,
+      "lastYear": 62,
+      "thisYear": 27
     },
     "oval": {
-      "ever": 383,
-      "tenYears": 215,
-      "fiveYears": 115,
-      "threeYears": 81,
-      "lastYear": 41,
-      "thisYear": 13
+      "ever": 396,
+      "tenYears": 228,
+      "fiveYears": 128,
+      "threeYears": 94,
+      "lastYear": 54,
+      "thisYear": 26
     },
     "formula_car": {
       "ever": 53,
@@ -1064,36 +1077,36 @@
     "id": 448,
     "released": 2009,
     "all": {
-      "ever": 523,
-      "tenYears": 403,
-      "fiveYears": 276,
-      "threeYears": 206,
-      "lastYear": 91,
-      "thisYear": 26
+      "ever": 535,
+      "tenYears": 415,
+      "fiveYears": 288,
+      "threeYears": 218,
+      "lastYear": 103,
+      "thisYear": 38
     },
     "sports_car": {
-      "ever": 102,
-      "tenYears": 100,
-      "fiveYears": 88,
-      "threeYears": 73,
-      "lastYear": 30,
-      "thisYear": 2
+      "ever": 106,
+      "tenYears": 104,
+      "fiveYears": 92,
+      "threeYears": 77,
+      "lastYear": 34,
+      "thisYear": 6
     },
     "formula_car": {
-      "ever": 202,
-      "tenYears": 160,
-      "fiveYears": 101,
-      "threeYears": 68,
-      "lastYear": 35,
-      "thisYear": 14
+      "ever": 203,
+      "tenYears": 161,
+      "fiveYears": 102,
+      "threeYears": 69,
+      "lastYear": 36,
+      "thisYear": 15
     },
     "oval": {
-      "ever": 219,
-      "tenYears": 143,
-      "fiveYears": 87,
-      "threeYears": 65,
-      "lastYear": 26,
-      "thisYear": 10
+      "ever": 226,
+      "tenYears": 150,
+      "fiveYears": 94,
+      "threeYears": 72,
+      "lastYear": 33,
+      "thisYear": 17
     }
   },
   "10108": {
@@ -1138,28 +1151,28 @@
     "id": 144,
     "released": 2009,
     "all": {
-      "ever": 383,
-      "tenYears": 287,
-      "fiveYears": 184,
-      "threeYears": 129,
-      "lastYear": 55,
-      "thisYear": 13
+      "ever": 398,
+      "tenYears": 302,
+      "fiveYears": 199,
+      "threeYears": 144,
+      "lastYear": 70,
+      "thisYear": 28
     },
     "sports_car": {
-      "ever": 228,
-      "tenYears": 187,
-      "fiveYears": 131,
-      "threeYears": 94,
-      "lastYear": 42,
-      "thisYear": 6
+      "ever": 242,
+      "tenYears": 201,
+      "fiveYears": 145,
+      "threeYears": 108,
+      "lastYear": 56,
+      "thisYear": 20
     },
     "formula_car": {
-      "ever": 131,
-      "tenYears": 82,
-      "fiveYears": 48,
-      "threeYears": 32,
-      "lastYear": 13,
-      "thisYear": 7
+      "ever": 132,
+      "tenYears": 83,
+      "fiveYears": 49,
+      "threeYears": 33,
+      "lastYear": 14,
+      "thisYear": 8
     },
     "oval": {
       "ever": 24,
@@ -1173,36 +1186,36 @@
     "id": 145,
     "released": 2010,
     "all": {
-      "ever": 406,
-      "tenYears": 335,
-      "fiveYears": 245,
-      "threeYears": 180,
-      "lastYear": 79,
-      "thisYear": 28
+      "ever": 417,
+      "tenYears": 346,
+      "fiveYears": 256,
+      "threeYears": 191,
+      "lastYear": 90,
+      "thisYear": 39
     },
     "sports_car": {
-      "ever": 216,
-      "tenYears": 182,
-      "fiveYears": 124,
-      "threeYears": 92,
-      "lastYear": 42,
-      "thisYear": 18
+      "ever": 221,
+      "tenYears": 187,
+      "fiveYears": 129,
+      "threeYears": 97,
+      "lastYear": 47,
+      "thisYear": 23
     },
     "formula_car": {
-      "ever": 127,
-      "tenYears": 90,
-      "fiveYears": 59,
-      "threeYears": 47,
-      "lastYear": 19,
-      "thisYear": 4
+      "ever": 130,
+      "tenYears": 93,
+      "fiveYears": 62,
+      "threeYears": 50,
+      "lastYear": 22,
+      "thisYear": 7
     },
     "dirt_road": {
-      "ever": 62,
-      "tenYears": 62,
-      "fiveYears": 62,
-      "threeYears": 41,
-      "lastYear": 18,
-      "thisYear": 6
+      "ever": 65,
+      "tenYears": 65,
+      "fiveYears": 65,
+      "threeYears": 44,
+      "lastYear": 21,
+      "thisYear": 9
     },
     "oval": {
       "ever": 1,
@@ -1211,31 +1224,31 @@
   },
   "10198": {
     "sku": 10198,
-    "id": 485,
+    "id": 487,
     "released": 2010,
     "all": {
-      "ever": 324,
-      "tenYears": 266,
-      "fiveYears": 199,
-      "threeYears": 161,
-      "lastYear": 70,
-      "thisYear": 24
+      "ever": 334,
+      "tenYears": 276,
+      "fiveYears": 209,
+      "threeYears": 171,
+      "lastYear": 80,
+      "thisYear": 34
     },
     "sports_car": {
-      "ever": 147,
-      "tenYears": 131,
-      "fiveYears": 91,
-      "threeYears": 73,
-      "lastYear": 29,
-      "thisYear": 7
+      "ever": 151,
+      "tenYears": 135,
+      "fiveYears": 95,
+      "threeYears": 77,
+      "lastYear": 33,
+      "thisYear": 11
     },
     "formula_car": {
-      "ever": 177,
-      "tenYears": 135,
-      "fiveYears": 108,
-      "threeYears": 88,
-      "lastYear": 41,
-      "thisYear": 17
+      "ever": 183,
+      "tenYears": 141,
+      "fiveYears": 114,
+      "threeYears": 94,
+      "lastYear": 47,
+      "thisYear": 23
     }
   },
   "10202": {
@@ -1243,28 +1256,28 @@
     "id": 152,
     "released": 2010,
     "all": {
-      "ever": 284,
-      "tenYears": 227,
-      "fiveYears": 151,
-      "threeYears": 99,
-      "lastYear": 50,
-      "thisYear": 16
+      "ever": 292,
+      "tenYears": 235,
+      "fiveYears": 159,
+      "threeYears": 107,
+      "lastYear": 58,
+      "thisYear": 24
     },
     "sports_car": {
-      "ever": 153,
-      "tenYears": 123,
-      "fiveYears": 74,
-      "threeYears": 42,
-      "lastYear": 17,
-      "thisYear": 3
+      "ever": 160,
+      "tenYears": 130,
+      "fiveYears": 81,
+      "threeYears": 49,
+      "lastYear": 24,
+      "thisYear": 10
     },
     "formula_car": {
-      "ever": 131,
-      "tenYears": 104,
-      "fiveYears": 77,
-      "threeYears": 57,
-      "lastYear": 33,
-      "thisYear": 13
+      "ever": 132,
+      "tenYears": 105,
+      "fiveYears": 78,
+      "threeYears": 58,
+      "lastYear": 34,
+      "thisYear": 14
     }
   },
   "10212": {
@@ -1272,28 +1285,28 @@
     "id": 154,
     "released": 2010,
     "all": {
-      "ever": 289,
-      "tenYears": 203,
-      "fiveYears": 124,
-      "threeYears": 85,
-      "lastYear": 42,
-      "thisYear": 12
+      "ever": 296,
+      "tenYears": 210,
+      "fiveYears": 131,
+      "threeYears": 92,
+      "lastYear": 49,
+      "thisYear": 19
     },
     "formula_car": {
-      "ever": 107,
-      "tenYears": 64,
-      "fiveYears": 39,
-      "threeYears": 27,
-      "lastYear": 14,
-      "thisYear": 5
+      "ever": 112,
+      "tenYears": 69,
+      "fiveYears": 44,
+      "threeYears": 32,
+      "lastYear": 19,
+      "thisYear": 10
     },
     "sports_car": {
-      "ever": 152,
-      "tenYears": 115,
-      "fiveYears": 74,
-      "threeYears": 51,
-      "lastYear": 26,
-      "thisYear": 7
+      "ever": 154,
+      "tenYears": 117,
+      "fiveYears": 76,
+      "threeYears": 53,
+      "lastYear": 28,
+      "thisYear": 9
     },
     "oval": {
       "ever": 30,
@@ -1308,20 +1321,20 @@
     "id": 161,
     "released": 2010,
     "all": {
-      "ever": 430,
-      "tenYears": 292,
-      "fiveYears": 164,
-      "threeYears": 129,
-      "lastYear": 66,
-      "thisYear": 24
+      "ever": 439,
+      "tenYears": 301,
+      "fiveYears": 173,
+      "threeYears": 138,
+      "lastYear": 75,
+      "thisYear": 33
     },
     "oval": {
-      "ever": 430,
-      "tenYears": 292,
-      "fiveYears": 164,
-      "threeYears": 129,
-      "lastYear": 66,
-      "thisYear": 24
+      "ever": 439,
+      "tenYears": 301,
+      "fiveYears": 173,
+      "threeYears": 138,
+      "lastYear": 75,
+      "thisYear": 33
     }
   },
   "10223": {
@@ -1329,20 +1342,20 @@
     "id": 162,
     "released": 2010,
     "all": {
-      "ever": 341,
-      "tenYears": 229,
-      "fiveYears": 111,
-      "threeYears": 72,
-      "lastYear": 29,
-      "thisYear": 8
+      "ever": 342,
+      "tenYears": 230,
+      "fiveYears": 112,
+      "threeYears": 73,
+      "lastYear": 30,
+      "thisYear": 9
     },
     "oval": {
-      "ever": 333,
-      "tenYears": 224,
-      "fiveYears": 108,
-      "threeYears": 70,
-      "lastYear": 29,
-      "thisYear": 8
+      "ever": 334,
+      "tenYears": 225,
+      "fiveYears": 109,
+      "threeYears": 71,
+      "lastYear": 30,
+      "thisYear": 9
     },
     "formula_car": {
       "ever": 8,
@@ -1353,31 +1366,31 @@
   },
   "10228": {
     "sku": 10228,
-    "id": 524,
+    "id": 523,
     "released": 2010,
     "all": {
-      "ever": 683,
-      "tenYears": 603,
-      "fiveYears": 442,
-      "threeYears": 318,
-      "lastYear": 138,
-      "thisYear": 52
+      "ever": 721,
+      "tenYears": 641,
+      "fiveYears": 480,
+      "threeYears": 354,
+      "lastYear": 172,
+      "thisYear": 85
     },
     "sports_car": {
-      "ever": 423,
-      "tenYears": 390,
-      "fiveYears": 284,
-      "threeYears": 203,
-      "lastYear": 89,
-      "thisYear": 33
+      "ever": 451,
+      "tenYears": 418,
+      "fiveYears": 312,
+      "threeYears": 229,
+      "lastYear": 113,
+      "thisYear": 56
     },
     "formula_car": {
-      "ever": 258,
-      "tenYears": 211,
-      "fiveYears": 156,
-      "threeYears": 113,
-      "lastYear": 49,
-      "thisYear": 19
+      "ever": 268,
+      "tenYears": 221,
+      "fiveYears": 166,
+      "threeYears": 123,
+      "lastYear": 59,
+      "thisYear": 29
     },
     "oval": {
       "ever": 2,
@@ -1388,31 +1401,31 @@
   },
   "10267": {
     "sku": 10267,
-    "id": 167,
+    "id": 166,
     "released": 2011,
     "all": {
-      "ever": 665,
-      "tenYears": 498,
-      "fiveYears": 325,
-      "threeYears": 246,
-      "lastYear": 107,
-      "thisYear": 31
+      "ever": 694,
+      "tenYears": 527,
+      "fiveYears": 354,
+      "threeYears": 275,
+      "lastYear": 136,
+      "thisYear": 60
     },
     "sports_car": {
-      "ever": 501,
-      "tenYears": 360,
-      "fiveYears": 205,
-      "threeYears": 148,
-      "lastYear": 67,
-      "thisYear": 19
+      "ever": 523,
+      "tenYears": 382,
+      "fiveYears": 227,
+      "threeYears": 170,
+      "lastYear": 89,
+      "thisYear": 41
     },
     "formula_car": {
-      "ever": 163,
-      "tenYears": 137,
-      "fiveYears": 119,
-      "threeYears": 97,
-      "lastYear": 40,
-      "thisYear": 12
+      "ever": 170,
+      "tenYears": 144,
+      "fiveYears": 126,
+      "threeYears": 104,
+      "lastYear": 47,
+      "thisYear": 19
     },
     "oval": {
       "ever": 1,
@@ -1426,28 +1439,28 @@
     "id": 168,
     "released": 2011,
     "all": {
-      "ever": 495,
-      "tenYears": 429,
-      "fiveYears": 323,
-      "threeYears": 233,
-      "lastYear": 105,
-      "thisYear": 40
+      "ever": 518,
+      "tenYears": 452,
+      "fiveYears": 346,
+      "threeYears": 256,
+      "lastYear": 128,
+      "thisYear": 63
     },
     "sports_car": {
-      "ever": 255,
-      "tenYears": 229,
-      "fiveYears": 166,
-      "threeYears": 115,
-      "lastYear": 52,
-      "thisYear": 17
+      "ever": 271,
+      "tenYears": 245,
+      "fiveYears": 182,
+      "threeYears": 131,
+      "lastYear": 68,
+      "thisYear": 33
     },
     "formula_car": {
-      "ever": 240,
-      "tenYears": 200,
-      "fiveYears": 157,
-      "threeYears": 118,
-      "lastYear": 53,
-      "thisYear": 23
+      "ever": 247,
+      "tenYears": 207,
+      "fiveYears": 164,
+      "threeYears": 125,
+      "lastYear": 60,
+      "thisYear": 30
     }
   },
   "10283": {
@@ -1455,20 +1468,20 @@
     "id": 559,
     "released": 2011,
     "all": {
-      "ever": 591,
-      "tenYears": 404,
-      "fiveYears": 229,
-      "threeYears": 155,
-      "lastYear": 75,
-      "thisYear": 23
+      "ever": 600,
+      "tenYears": 413,
+      "fiveYears": 238,
+      "threeYears": 164,
+      "lastYear": 84,
+      "thisYear": 32
     },
     "oval": {
-      "ever": 447,
-      "tenYears": 276,
-      "fiveYears": 145,
-      "threeYears": 100,
-      "lastYear": 50,
-      "thisYear": 16
+      "ever": 453,
+      "tenYears": 282,
+      "fiveYears": 151,
+      "threeYears": 106,
+      "lastYear": 56,
+      "thisYear": 22
     },
     "sports_car": {
       "ever": 1,
@@ -1478,12 +1491,12 @@
       "lastYear": 1
     },
     "dirt_road": {
-      "ever": 80,
-      "tenYears": 80,
-      "fiveYears": 59,
-      "threeYears": 39,
-      "lastYear": 15,
-      "thisYear": 5
+      "ever": 83,
+      "tenYears": 83,
+      "fiveYears": 62,
+      "threeYears": 42,
+      "lastYear": 18,
+      "thisYear": 8
     },
     "formula_car": {
       "ever": 63,
@@ -1499,28 +1512,28 @@
     "id": 180,
     "released": 2011,
     "all": {
-      "ever": 451,
-      "tenYears": 395,
-      "fiveYears": 327,
-      "threeYears": 236,
-      "lastYear": 110,
-      "thisYear": 40
+      "ever": 476,
+      "tenYears": 420,
+      "fiveYears": 352,
+      "threeYears": 261,
+      "lastYear": 135,
+      "thisYear": 65
     },
     "sports_car": {
-      "ever": 283,
-      "tenYears": 256,
-      "fiveYears": 211,
-      "threeYears": 156,
-      "lastYear": 72,
-      "thisYear": 31
+      "ever": 302,
+      "tenYears": 275,
+      "fiveYears": 230,
+      "threeYears": 175,
+      "lastYear": 91,
+      "thisYear": 50
     },
     "formula_car": {
-      "ever": 167,
-      "tenYears": 138,
-      "fiveYears": 115,
-      "threeYears": 80,
-      "lastYear": 38,
-      "thisYear": 9
+      "ever": 173,
+      "tenYears": 144,
+      "fiveYears": 121,
+      "threeYears": 86,
+      "lastYear": 44,
+      "thisYear": 15
     },
     "oval": {
       "ever": 1,
@@ -1533,20 +1546,20 @@
     "id": 188,
     "released": 2011,
     "all": {
-      "ever": 220,
-      "tenYears": 106,
-      "fiveYears": 29,
-      "threeYears": 21,
-      "lastYear": 7,
-      "thisYear": 3
+      "ever": 222,
+      "tenYears": 108,
+      "fiveYears": 31,
+      "threeYears": 23,
+      "lastYear": 9,
+      "thisYear": 5
     },
     "oval": {
-      "ever": 189,
-      "tenYears": 89,
-      "fiveYears": 26,
-      "threeYears": 20,
-      "lastYear": 7,
-      "thisYear": 3
+      "ever": 191,
+      "tenYears": 91,
+      "fiveYears": 28,
+      "threeYears": 22,
+      "lastYear": 9,
+      "thisYear": 5
     },
     "formula_car": {
       "ever": 31,
@@ -1560,20 +1573,20 @@
     "id": 190,
     "released": 2012,
     "all": {
-      "ever": 310,
-      "tenYears": 228,
-      "fiveYears": 128,
-      "threeYears": 77,
-      "lastYear": 33,
-      "thisYear": 12
+      "ever": 311,
+      "tenYears": 229,
+      "fiveYears": 129,
+      "threeYears": 78,
+      "lastYear": 34,
+      "thisYear": 13
     },
     "oval": {
-      "ever": 310,
-      "tenYears": 228,
-      "fiveYears": 128,
-      "threeYears": 77,
-      "lastYear": 33,
-      "thisYear": 12
+      "ever": 311,
+      "tenYears": 229,
+      "fiveYears": 129,
+      "threeYears": 78,
+      "lastYear": 34,
+      "thisYear": 13
     }
   },
   "10299": {
@@ -1581,36 +1594,36 @@
     "id": 192,
     "released": 2008,
     "all": {
-      "ever": 779,
-      "tenYears": 650,
-      "fiveYears": 454,
-      "threeYears": 346,
-      "lastYear": 174,
-      "thisYear": 64
+      "ever": 801,
+      "tenYears": 672,
+      "fiveYears": 476,
+      "threeYears": 368,
+      "lastYear": 196,
+      "thisYear": 86
     },
     "sports_car": {
-      "ever": 301,
-      "tenYears": 289,
-      "fiveYears": 216,
-      "threeYears": 166,
-      "lastYear": 79,
-      "thisYear": 30
+      "ever": 310,
+      "tenYears": 298,
+      "fiveYears": 225,
+      "threeYears": 175,
+      "lastYear": 88,
+      "thisYear": 39
     },
     "oval": {
-      "ever": 438,
-      "tenYears": 327,
-      "fiveYears": 217,
-      "threeYears": 164,
-      "lastYear": 84,
-      "thisYear": 31
+      "ever": 450,
+      "tenYears": 339,
+      "fiveYears": 229,
+      "threeYears": 176,
+      "lastYear": 96,
+      "thisYear": 43
     },
     "formula_car": {
-      "ever": 40,
-      "tenYears": 34,
-      "fiveYears": 21,
-      "threeYears": 16,
-      "lastYear": 11,
-      "thisYear": 3
+      "ever": 41,
+      "tenYears": 35,
+      "fiveYears": 22,
+      "threeYears": 17,
+      "lastYear": 12,
+      "thisYear": 4
     }
   },
   "10309": {
@@ -1618,36 +1631,36 @@
     "id": 195,
     "released": 2012,
     "all": {
-      "ever": 267,
-      "tenYears": 201,
-      "fiveYears": 138,
-      "threeYears": 104,
-      "lastYear": 47,
-      "thisYear": 14
+      "ever": 279,
+      "tenYears": 213,
+      "fiveYears": 150,
+      "threeYears": 116,
+      "lastYear": 59,
+      "thisYear": 26
     },
     "sports_car": {
-      "ever": 86,
-      "tenYears": 73,
-      "fiveYears": 55,
-      "threeYears": 36,
-      "lastYear": 19,
-      "thisYear": 4
+      "ever": 93,
+      "tenYears": 80,
+      "fiveYears": 62,
+      "threeYears": 43,
+      "lastYear": 26,
+      "thisYear": 11
     },
     "formula_car": {
-      "ever": 114,
-      "tenYears": 95,
-      "fiveYears": 59,
-      "threeYears": 51,
-      "lastYear": 20,
-      "thisYear": 7
+      "ever": 117,
+      "tenYears": 98,
+      "fiveYears": 62,
+      "threeYears": 54,
+      "lastYear": 23,
+      "thisYear": 10
     },
     "oval": {
-      "ever": 67,
-      "tenYears": 33,
-      "fiveYears": 24,
-      "threeYears": 17,
-      "lastYear": 8,
-      "thisYear": 3
+      "ever": 69,
+      "tenYears": 35,
+      "fiveYears": 26,
+      "threeYears": 19,
+      "lastYear": 10,
+      "thisYear": 5
     }
   },
   "10317": {
@@ -1655,27 +1668,28 @@
     "id": 199,
     "released": 2012,
     "all": {
-      "ever": 174,
-      "tenYears": 142,
-      "fiveYears": 95,
-      "threeYears": 72,
-      "lastYear": 27,
-      "thisYear": 4
+      "ever": 177,
+      "tenYears": 145,
+      "fiveYears": 98,
+      "threeYears": 75,
+      "lastYear": 30,
+      "thisYear": 7
     },
     "sports_car": {
-      "ever": 113,
-      "tenYears": 99,
-      "fiveYears": 66,
-      "threeYears": 54,
-      "lastYear": 17
+      "ever": 115,
+      "tenYears": 101,
+      "fiveYears": 68,
+      "threeYears": 56,
+      "lastYear": 19,
+      "thisYear": 2
     },
     "formula_car": {
-      "ever": 61,
-      "tenYears": 43,
-      "fiveYears": 29,
-      "threeYears": 18,
-      "lastYear": 10,
-      "thisYear": 4
+      "ever": 62,
+      "tenYears": 44,
+      "fiveYears": 30,
+      "threeYears": 19,
+      "lastYear": 11,
+      "thisYear": 5
     }
   },
   "10318": {
@@ -1683,20 +1697,20 @@
     "id": 201,
     "released": 2012,
     "all": {
-      "ever": 350,
-      "tenYears": 276,
-      "fiveYears": 225,
-      "threeYears": 159,
-      "lastYear": 73,
-      "thisYear": 25
+      "ever": 361,
+      "tenYears": 287,
+      "fiveYears": 236,
+      "threeYears": 170,
+      "lastYear": 84,
+      "thisYear": 36
     },
     "oval": {
-      "ever": 350,
-      "tenYears": 276,
-      "fiveYears": 225,
-      "threeYears": 159,
-      "lastYear": 73,
-      "thisYear": 25
+      "ever": 361,
+      "tenYears": 287,
+      "fiveYears": 236,
+      "threeYears": 170,
+      "lastYear": 84,
+      "thisYear": 36
     }
   },
   "10319": {
@@ -1704,28 +1718,28 @@
     "id": 202,
     "released": 2012,
     "all": {
-      "ever": 180,
-      "tenYears": 165,
-      "fiveYears": 146,
-      "threeYears": 91,
-      "lastYear": 38,
-      "thisYear": 14
+      "ever": 199,
+      "tenYears": 184,
+      "fiveYears": 165,
+      "threeYears": 110,
+      "lastYear": 57,
+      "thisYear": 33
     },
     "sports_car": {
-      "ever": 103,
-      "tenYears": 97,
-      "fiveYears": 85,
-      "threeYears": 43,
-      "lastYear": 17,
-      "thisYear": 7
+      "ever": 116,
+      "tenYears": 110,
+      "fiveYears": 98,
+      "threeYears": 56,
+      "lastYear": 30,
+      "thisYear": 20
     },
     "formula_car": {
-      "ever": 76,
-      "tenYears": 67,
-      "fiveYears": 60,
-      "threeYears": 47,
-      "lastYear": 21,
-      "thisYear": 7
+      "ever": 82,
+      "tenYears": 73,
+      "fiveYears": 66,
+      "threeYears": 53,
+      "lastYear": 27,
+      "thisYear": 13
     },
     "oval": {
       "ever": 1,
@@ -1739,20 +1753,20 @@
     "id": 583,
     "released": 2012,
     "all": {
-      "ever": 221,
-      "tenYears": 160,
-      "fiveYears": 89,
-      "threeYears": 65,
-      "lastYear": 33,
-      "thisYear": 16
+      "ever": 222,
+      "tenYears": 161,
+      "fiveYears": 90,
+      "threeYears": 66,
+      "lastYear": 34,
+      "thisYear": 17
     },
     "oval": {
-      "ever": 221,
-      "tenYears": 160,
-      "fiveYears": 89,
-      "threeYears": 65,
-      "lastYear": 33,
-      "thisYear": 16
+      "ever": 222,
+      "tenYears": 161,
+      "fiveYears": 90,
+      "threeYears": 66,
+      "lastYear": 34,
+      "thisYear": 17
     }
   },
   "10340": {
@@ -1760,28 +1774,28 @@
     "id": 212,
     "released": 2013,
     "all": {
-      "ever": 494,
-      "tenYears": 432,
-      "fiveYears": 313,
-      "threeYears": 228,
-      "lastYear": 105,
-      "thisYear": 38
+      "ever": 507,
+      "tenYears": 445,
+      "fiveYears": 326,
+      "threeYears": 241,
+      "lastYear": 118,
+      "thisYear": 51
     },
     "sports_car": {
-      "ever": 282,
-      "tenYears": 250,
-      "fiveYears": 178,
-      "threeYears": 130,
-      "lastYear": 57,
-      "thisYear": 18
+      "ever": 292,
+      "tenYears": 260,
+      "fiveYears": 188,
+      "threeYears": 140,
+      "lastYear": 67,
+      "thisYear": 28
     },
     "formula_car": {
-      "ever": 212,
-      "tenYears": 182,
-      "fiveYears": 135,
-      "threeYears": 98,
-      "lastYear": 48,
-      "thisYear": 20
+      "ever": 215,
+      "tenYears": 185,
+      "fiveYears": 138,
+      "threeYears": 101,
+      "lastYear": 51,
+      "thisYear": 23
     }
   },
   "10349": {
@@ -1789,28 +1803,28 @@
     "id": 179,
     "released": 2021,
     "all": {
-      "ever": 271,
-      "tenYears": 271,
-      "fiveYears": 271,
-      "threeYears": 193,
-      "lastYear": 98,
-      "thisYear": 36
+      "ever": 279,
+      "tenYears": 279,
+      "fiveYears": 279,
+      "threeYears": 200,
+      "lastYear": 105,
+      "thisYear": 43
     },
     "sports_car": {
-      "ever": 155,
-      "tenYears": 155,
-      "fiveYears": 155,
-      "threeYears": 110,
-      "lastYear": 56,
-      "thisYear": 18
+      "ever": 162,
+      "tenYears": 162,
+      "fiveYears": 162,
+      "threeYears": 116,
+      "lastYear": 62,
+      "thisYear": 24
     },
     "formula_car": {
-      "ever": 111,
-      "tenYears": 111,
-      "fiveYears": 111,
-      "threeYears": 78,
-      "lastYear": 39,
-      "thisYear": 16
+      "ever": 112,
+      "tenYears": 112,
+      "fiveYears": 112,
+      "threeYears": 79,
+      "lastYear": 40,
+      "thisYear": 17
     },
     "oval": {
       "ever": 5,
@@ -1861,20 +1875,20 @@
     "id": 218,
     "released": 2013,
     "all": {
-      "ever": 314,
-      "tenYears": 281,
-      "fiveYears": 193,
-      "threeYears": 133,
-      "lastYear": 63,
-      "thisYear": 22
+      "ever": 324,
+      "tenYears": 291,
+      "fiveYears": 203,
+      "threeYears": 143,
+      "lastYear": 73,
+      "thisYear": 32
     },
     "formula_car": {
-      "ever": 164,
-      "tenYears": 149,
-      "fiveYears": 107,
-      "threeYears": 78,
-      "lastYear": 40,
-      "thisYear": 14
+      "ever": 170,
+      "tenYears": 155,
+      "fiveYears": 113,
+      "threeYears": 84,
+      "lastYear": 46,
+      "thisYear": 20
     },
     "oval": {
       "ever": 4,
@@ -1883,12 +1897,12 @@
       "threeYears": 2
     },
     "sports_car": {
-      "ever": 146,
-      "tenYears": 128,
-      "fiveYears": 82,
-      "threeYears": 53,
-      "lastYear": 23,
-      "thisYear": 8
+      "ever": 150,
+      "tenYears": 132,
+      "fiveYears": 86,
+      "threeYears": 57,
+      "lastYear": 27,
+      "thisYear": 12
     }
   },
   "10355": {
@@ -1896,28 +1910,28 @@
     "id": 219,
     "released": 2013,
     "all": {
-      "ever": 408,
-      "tenYears": 365,
-      "fiveYears": 255,
-      "threeYears": 189,
-      "lastYear": 88,
-      "thisYear": 28
+      "ever": 425,
+      "tenYears": 382,
+      "fiveYears": 272,
+      "threeYears": 206,
+      "lastYear": 105,
+      "thisYear": 45
     },
     "sports_car": {
-      "ever": 293,
-      "tenYears": 267,
-      "fiveYears": 185,
-      "threeYears": 136,
-      "lastYear": 62,
-      "thisYear": 22
+      "ever": 306,
+      "tenYears": 280,
+      "fiveYears": 198,
+      "threeYears": 149,
+      "lastYear": 75,
+      "thisYear": 35
     },
     "formula_car": {
-      "ever": 115,
-      "tenYears": 98,
-      "fiveYears": 70,
-      "threeYears": 53,
-      "lastYear": 26,
-      "thisYear": 6
+      "ever": 119,
+      "tenYears": 102,
+      "fiveYears": 74,
+      "threeYears": 57,
+      "lastYear": 30,
+      "thisYear": 10
     }
   },
   "10359": {
@@ -1925,20 +1939,20 @@
     "id": 225,
     "released": 2014,
     "all": {
-      "ever": 240,
-      "tenYears": 206,
-      "fiveYears": 119,
-      "threeYears": 93,
-      "lastYear": 37,
-      "thisYear": 9
+      "ever": 246,
+      "tenYears": 212,
+      "fiveYears": 125,
+      "threeYears": 99,
+      "lastYear": 43,
+      "thisYear": 15
     },
     "oval": {
-      "ever": 178,
-      "tenYears": 150,
-      "fiveYears": 88,
-      "threeYears": 69,
-      "lastYear": 27,
-      "thisYear": 8
+      "ever": 181,
+      "tenYears": 153,
+      "fiveYears": 91,
+      "threeYears": 72,
+      "lastYear": 30,
+      "thisYear": 11
     },
     "sports_car": {
       "ever": 5,
@@ -1949,11 +1963,12 @@
       "thisYear": 1
     },
     "formula_car": {
-      "ever": 57,
-      "tenYears": 51,
-      "fiveYears": 26,
-      "threeYears": 19,
-      "lastYear": 6
+      "ever": 60,
+      "tenYears": 54,
+      "fiveYears": 29,
+      "threeYears": 22,
+      "lastYear": 9,
+      "thisYear": 3
     }
   },
   "10361": {
@@ -1961,12 +1976,12 @@
     "id": 229,
     "released": 2014,
     "all": {
-      "ever": 248,
-      "tenYears": 227,
-      "fiveYears": 169,
-      "threeYears": 122,
-      "lastYear": 52,
-      "thisYear": 26
+      "ever": 250,
+      "tenYears": 229,
+      "fiveYears": 171,
+      "threeYears": 124,
+      "lastYear": 54,
+      "thisYear": 28
     },
     "formula_car": {
       "ever": 103,
@@ -1977,12 +1992,12 @@
       "thisYear": 7
     },
     "sports_car": {
-      "ever": 94,
-      "tenYears": 84,
-      "fiveYears": 56,
-      "threeYears": 39,
-      "lastYear": 16,
-      "thisYear": 11
+      "ever": 96,
+      "tenYears": 86,
+      "fiveYears": 58,
+      "threeYears": 41,
+      "lastYear": 18,
+      "thisYear": 13
     },
     "oval": {
       "ever": 51,
@@ -1998,28 +2013,28 @@
     "id": 232,
     "released": 2014,
     "all": {
-      "ever": 369,
-      "tenYears": 309,
-      "fiveYears": 184,
-      "threeYears": 125,
-      "lastYear": 59,
-      "thisYear": 26
+      "ever": 379,
+      "tenYears": 319,
+      "fiveYears": 194,
+      "threeYears": 135,
+      "lastYear": 69,
+      "thisYear": 36
     },
     "oval": {
-      "ever": 286,
-      "tenYears": 227,
-      "fiveYears": 122,
-      "threeYears": 83,
-      "lastYear": 42,
-      "thisYear": 21
+      "ever": 293,
+      "tenYears": 234,
+      "fiveYears": 129,
+      "threeYears": 90,
+      "lastYear": 49,
+      "thisYear": 28
     },
     "dirt_road": {
-      "ever": 78,
-      "tenYears": 78,
-      "fiveYears": 58,
-      "threeYears": 39,
-      "lastYear": 15,
-      "thisYear": 4
+      "ever": 81,
+      "tenYears": 81,
+      "fiveYears": 61,
+      "threeYears": 42,
+      "lastYear": 18,
+      "thisYear": 7
     },
     "formula_car": {
       "ever": 5,
@@ -2035,28 +2050,28 @@
     "id": 233,
     "released": 2014,
     "all": {
-      "ever": 236,
-      "tenYears": 208,
-      "fiveYears": 136,
-      "threeYears": 98,
-      "lastYear": 44,
-      "thisYear": 17
+      "ever": 241,
+      "tenYears": 213,
+      "fiveYears": 141,
+      "threeYears": 103,
+      "lastYear": 49,
+      "thisYear": 22
     },
     "formula_car": {
-      "ever": 81,
-      "tenYears": 69,
-      "fiveYears": 45,
-      "threeYears": 33,
-      "lastYear": 17,
-      "thisYear": 6
+      "ever": 83,
+      "tenYears": 71,
+      "fiveYears": 47,
+      "threeYears": 35,
+      "lastYear": 19,
+      "thisYear": 8
     },
     "sports_car": {
-      "ever": 155,
-      "tenYears": 139,
-      "fiveYears": 91,
-      "threeYears": 65,
-      "lastYear": 27,
-      "thisYear": 11
+      "ever": 158,
+      "tenYears": 142,
+      "fiveYears": 94,
+      "threeYears": 68,
+      "lastYear": 30,
+      "thisYear": 14
     }
   },
   "10376": {
@@ -2064,20 +2079,28 @@
     "id": 237,
     "released": 2014,
     "all": {
-      "ever": 191,
-      "tenYears": 156,
-      "fiveYears": 94,
-      "threeYears": 64,
-      "lastYear": 37,
-      "thisYear": 17
+      "ever": 194,
+      "tenYears": 159,
+      "fiveYears": 97,
+      "threeYears": 67,
+      "lastYear": 40,
+      "thisYear": 20
     },
     "oval": {
-      "ever": 141,
-      "tenYears": 109,
-      "fiveYears": 66,
-      "threeYears": 47,
-      "lastYear": 27,
-      "thisYear": 13
+      "ever": 142,
+      "tenYears": 110,
+      "fiveYears": 67,
+      "threeYears": 48,
+      "lastYear": 28,
+      "thisYear": 14
+    },
+    "sports_car": {
+      "ever": 2,
+      "tenYears": 2,
+      "fiveYears": 2,
+      "threeYears": 2,
+      "lastYear": 2,
+      "thisYear": 2
     },
     "formula_car": {
       "ever": 50,
@@ -2093,28 +2116,28 @@
     "id": 239,
     "released": 2015,
     "all": {
-      "ever": 480,
-      "tenYears": 457,
-      "fiveYears": 322,
-      "threeYears": 232,
-      "lastYear": 119,
-      "thisYear": 42
+      "ever": 502,
+      "tenYears": 479,
+      "fiveYears": 344,
+      "threeYears": 254,
+      "lastYear": 140,
+      "thisYear": 63
     },
     "sports_car": {
-      "ever": 280,
-      "tenYears": 270,
-      "fiveYears": 192,
-      "threeYears": 141,
-      "lastYear": 76,
-      "thisYear": 25
+      "ever": 291,
+      "tenYears": 281,
+      "fiveYears": 203,
+      "threeYears": 152,
+      "lastYear": 86,
+      "thisYear": 35
     },
     "formula_car": {
-      "ever": 186,
-      "tenYears": 176,
-      "fiveYears": 125,
-      "threeYears": 86,
-      "lastYear": 41,
-      "thisYear": 17
+      "ever": 197,
+      "tenYears": 187,
+      "fiveYears": 136,
+      "threeYears": 97,
+      "lastYear": 52,
+      "thisYear": 28
     },
     "oval": {
       "ever": 14,
@@ -2129,20 +2152,20 @@
     "id": 248,
     "released": 2015,
     "all": {
-      "ever": 288,
-      "tenYears": 275,
-      "fiveYears": 155,
-      "threeYears": 97,
-      "lastYear": 47,
-      "thisYear": 16
+      "ever": 295,
+      "tenYears": 282,
+      "fiveYears": 162,
+      "threeYears": 104,
+      "lastYear": 54,
+      "thisYear": 23
     },
     "oval": {
-      "ever": 287,
-      "tenYears": 274,
-      "fiveYears": 154,
-      "threeYears": 96,
-      "lastYear": 46,
-      "thisYear": 16
+      "ever": 294,
+      "tenYears": 281,
+      "fiveYears": 161,
+      "threeYears": 103,
+      "lastYear": 53,
+      "thisYear": 23
     },
     "formula_car": {
       "ever": 1,
@@ -2157,28 +2180,28 @@
     "id": 249,
     "released": 2016,
     "all": {
-      "ever": 329,
-      "tenYears": 329,
-      "fiveYears": 264,
-      "threeYears": 227,
-      "lastYear": 107,
-      "thisYear": 36
+      "ever": 346,
+      "tenYears": 346,
+      "fiveYears": 281,
+      "threeYears": 244,
+      "lastYear": 124,
+      "thisYear": 53
     },
     "sports_car": {
-      "ever": 267,
-      "tenYears": 267,
-      "fiveYears": 231,
-      "threeYears": 206,
-      "lastYear": 98,
-      "thisYear": 34
+      "ever": 282,
+      "tenYears": 282,
+      "fiveYears": 246,
+      "threeYears": 221,
+      "lastYear": 113,
+      "thisYear": 49
     },
     "formula_car": {
-      "ever": 62,
-      "tenYears": 62,
-      "fiveYears": 33,
-      "threeYears": 21,
-      "lastYear": 9,
-      "thisYear": 2
+      "ever": 64,
+      "tenYears": 64,
+      "fiveYears": 35,
+      "threeYears": 23,
+      "lastYear": 11,
+      "thisYear": 4
     }
   },
   "10396": {
@@ -2186,28 +2209,28 @@
     "id": 250,
     "released": 2016,
     "all": {
-      "ever": 258,
-      "tenYears": 258,
-      "fiveYears": 183,
-      "threeYears": 133,
-      "lastYear": 65,
-      "thisYear": 24
+      "ever": 275,
+      "tenYears": 275,
+      "fiveYears": 200,
+      "threeYears": 148,
+      "lastYear": 78,
+      "thisYear": 37
     },
     "formula_car": {
-      "ever": 104,
-      "tenYears": 104,
-      "fiveYears": 78,
-      "threeYears": 56,
-      "lastYear": 26,
-      "thisYear": 12
+      "ever": 107,
+      "tenYears": 107,
+      "fiveYears": 81,
+      "threeYears": 59,
+      "lastYear": 29,
+      "thisYear": 15
     },
     "sports_car": {
-      "ever": 154,
-      "tenYears": 154,
-      "fiveYears": 105,
-      "threeYears": 77,
-      "lastYear": 39,
-      "thisYear": 12
+      "ever": 168,
+      "tenYears": 168,
+      "fiveYears": 119,
+      "threeYears": 89,
+      "lastYear": 49,
+      "thisYear": 22
     }
   },
   "10401": {
@@ -2215,20 +2238,20 @@
     "id": 256,
     "released": 2016,
     "all": {
-      "ever": 360,
-      "tenYears": 360,
-      "fiveYears": 268,
-      "threeYears": 175,
-      "lastYear": 74,
-      "thisYear": 25
+      "ever": 371,
+      "tenYears": 371,
+      "fiveYears": 279,
+      "threeYears": 186,
+      "lastYear": 85,
+      "thisYear": 36
     },
     "oval": {
-      "ever": 359,
-      "tenYears": 359,
-      "fiveYears": 267,
-      "threeYears": 174,
-      "lastYear": 73,
-      "thisYear": 25
+      "ever": 370,
+      "tenYears": 370,
+      "fiveYears": 278,
+      "threeYears": 185,
+      "lastYear": 84,
+      "thisYear": 36
     },
     "formula_car": {
       "ever": 1,
@@ -2243,28 +2266,28 @@
     "id": 266,
     "released": 2016,
     "all": {
-      "ever": 352,
-      "tenYears": 352,
-      "fiveYears": 259,
-      "threeYears": 183,
-      "lastYear": 90,
-      "thisYear": 33
+      "ever": 368,
+      "tenYears": 368,
+      "fiveYears": 275,
+      "threeYears": 197,
+      "lastYear": 102,
+      "thisYear": 45
     },
     "sports_car": {
-      "ever": 217,
-      "tenYears": 217,
-      "fiveYears": 160,
-      "threeYears": 108,
-      "lastYear": 56,
-      "thisYear": 20
+      "ever": 232,
+      "tenYears": 232,
+      "fiveYears": 175,
+      "threeYears": 121,
+      "lastYear": 67,
+      "thisYear": 31
     },
     "formula_car": {
-      "ever": 135,
-      "tenYears": 135,
-      "fiveYears": 99,
-      "threeYears": 75,
-      "lastYear": 34,
-      "thisYear": 13
+      "ever": 136,
+      "tenYears": 136,
+      "fiveYears": 100,
+      "threeYears": 76,
+      "lastYear": 35,
+      "thisYear": 14
     }
   },
   "10407": {
@@ -2272,28 +2295,28 @@
     "id": 268,
     "released": 2016,
     "all": {
-      "ever": 245,
-      "tenYears": 245,
-      "fiveYears": 173,
-      "threeYears": 134,
-      "lastYear": 67,
-      "thisYear": 16
+      "ever": 261,
+      "tenYears": 261,
+      "fiveYears": 189,
+      "threeYears": 150,
+      "lastYear": 83,
+      "thisYear": 32
     },
     "formula_car": {
-      "ever": 47,
-      "tenYears": 47,
-      "fiveYears": 25,
-      "threeYears": 18,
-      "lastYear": 7,
-      "thisYear": 1
+      "ever": 48,
+      "tenYears": 48,
+      "fiveYears": 26,
+      "threeYears": 19,
+      "lastYear": 8,
+      "thisYear": 2
     },
     "sports_car": {
-      "ever": 198,
-      "tenYears": 198,
-      "fiveYears": 148,
-      "threeYears": 116,
-      "lastYear": 60,
-      "thisYear": 15
+      "ever": 213,
+      "tenYears": 213,
+      "fiveYears": 163,
+      "threeYears": 131,
+      "lastYear": 75,
+      "thisYear": 30
     }
   },
   "10413": {
@@ -2301,20 +2324,20 @@
     "id": 271,
     "released": 2017,
     "all": {
-      "ever": 161,
-      "tenYears": 161,
-      "fiveYears": 95,
-      "threeYears": 61,
-      "lastYear": 30,
-      "thisYear": 13
+      "ever": 166,
+      "tenYears": 166,
+      "fiveYears": 100,
+      "threeYears": 66,
+      "lastYear": 35,
+      "thisYear": 18
     },
     "oval": {
-      "ever": 161,
-      "tenYears": 161,
-      "fiveYears": 95,
-      "threeYears": 61,
-      "lastYear": 30,
-      "thisYear": 13
+      "ever": 166,
+      "tenYears": 166,
+      "fiveYears": 100,
+      "threeYears": 66,
+      "lastYear": 35,
+      "thisYear": 18
     }
   },
   "10415": {
@@ -2322,20 +2345,20 @@
     "id": 273,
     "released": 2017,
     "all": {
-      "ever": 673,
-      "tenYears": 673,
-      "fiveYears": 389,
-      "threeYears": 276,
-      "lastYear": 134,
-      "thisYear": 49
+      "ever": 694,
+      "tenYears": 694,
+      "fiveYears": 410,
+      "threeYears": 297,
+      "lastYear": 155,
+      "thisYear": 70
     },
     "dirt_oval": {
-      "ever": 650,
-      "tenYears": 650,
-      "fiveYears": 381,
-      "threeYears": 270,
-      "lastYear": 132,
-      "thisYear": 49
+      "ever": 671,
+      "tenYears": 671,
+      "fiveYears": 402,
+      "threeYears": 291,
+      "lastYear": 153,
+      "thisYear": 70
     },
     "oval": {
       "ever": 23,
@@ -2350,20 +2373,20 @@
     "id": 274,
     "released": 2017,
     "all": {
-      "ever": 462,
-      "tenYears": 462,
-      "fiveYears": 250,
-      "threeYears": 155,
-      "lastYear": 58,
-      "thisYear": 16
+      "ever": 471,
+      "tenYears": 471,
+      "fiveYears": 259,
+      "threeYears": 164,
+      "lastYear": 67,
+      "thisYear": 25
     },
     "dirt_oval": {
-      "ever": 461,
-      "tenYears": 461,
-      "fiveYears": 249,
-      "threeYears": 154,
-      "lastYear": 57,
-      "thisYear": 15
+      "ever": 470,
+      "tenYears": 470,
+      "fiveYears": 258,
+      "threeYears": 163,
+      "lastYear": 66,
+      "thisYear": 24
     },
     "oval": {
       "ever": 1,
@@ -2379,20 +2402,20 @@
     "id": 276,
     "released": 2018,
     "all": {
-      "ever": 138,
-      "tenYears": 138,
-      "fiveYears": 95,
-      "threeYears": 65,
-      "lastYear": 35,
-      "thisYear": 13
+      "ever": 140,
+      "tenYears": 140,
+      "fiveYears": 97,
+      "threeYears": 67,
+      "lastYear": 37,
+      "thisYear": 15
     },
     "oval": {
-      "ever": 115,
-      "tenYears": 115,
-      "fiveYears": 77,
-      "threeYears": 55,
-      "lastYear": 31,
-      "thisYear": 11
+      "ever": 117,
+      "tenYears": 117,
+      "fiveYears": 79,
+      "threeYears": 57,
+      "lastYear": 33,
+      "thisYear": 13
     },
     "formula_car": {
       "ever": 23,
@@ -2408,28 +2431,28 @@
     "id": 277,
     "released": 2018,
     "all": {
-      "ever": 161,
-      "tenYears": 161,
-      "fiveYears": 101,
-      "threeYears": 72,
-      "lastYear": 36,
-      "thisYear": 15
+      "ever": 166,
+      "tenYears": 166,
+      "fiveYears": 106,
+      "threeYears": 77,
+      "lastYear": 41,
+      "thisYear": 20
     },
     "oval": {
-      "ever": 123,
-      "tenYears": 123,
-      "fiveYears": 76,
-      "threeYears": 53,
-      "lastYear": 28,
-      "thisYear": 13
+      "ever": 126,
+      "tenYears": 126,
+      "fiveYears": 79,
+      "threeYears": 56,
+      "lastYear": 31,
+      "thisYear": 16
     },
     "formula_car": {
-      "ever": 38,
-      "tenYears": 38,
-      "fiveYears": 25,
-      "threeYears": 19,
-      "lastYear": 8,
-      "thisYear": 2
+      "ever": 40,
+      "tenYears": 40,
+      "fiveYears": 27,
+      "threeYears": 21,
+      "lastYear": 10,
+      "thisYear": 4
     }
   },
   "10424": {
@@ -2437,28 +2460,28 @@
     "id": 343,
     "released": 2019,
     "all": {
-      "ever": 260,
-      "tenYears": 260,
-      "fiveYears": 227,
-      "threeYears": 175,
-      "lastYear": 73,
-      "thisYear": 31
+      "ever": 277,
+      "tenYears": 277,
+      "fiveYears": 244,
+      "threeYears": 191,
+      "lastYear": 87,
+      "thisYear": 45
     },
     "sports_car": {
-      "ever": 131,
-      "tenYears": 131,
-      "fiveYears": 109,
-      "threeYears": 86,
-      "lastYear": 36,
-      "thisYear": 15
+      "ever": 138,
+      "tenYears": 138,
+      "fiveYears": 116,
+      "threeYears": 92,
+      "lastYear": 40,
+      "thisYear": 19
     },
     "formula_car": {
-      "ever": 129,
-      "tenYears": 129,
-      "fiveYears": 118,
-      "threeYears": 89,
-      "lastYear": 37,
-      "thisYear": 16
+      "ever": 139,
+      "tenYears": 139,
+      "fiveYears": 128,
+      "threeYears": 99,
+      "lastYear": 47,
+      "thisYear": 26
     }
   },
   "10427": {
@@ -2466,20 +2489,20 @@
     "id": 279,
     "released": 2017,
     "all": {
-      "ever": 592,
-      "tenYears": 592,
-      "fiveYears": 353,
-      "threeYears": 249,
-      "lastYear": 101,
-      "thisYear": 33
+      "ever": 608,
+      "tenYears": 608,
+      "fiveYears": 369,
+      "threeYears": 265,
+      "lastYear": 117,
+      "thisYear": 49
     },
     "dirt_oval": {
-      "ever": 590,
-      "tenYears": 590,
-      "fiveYears": 351,
-      "threeYears": 247,
-      "lastYear": 101,
-      "thisYear": 33
+      "ever": 606,
+      "tenYears": 606,
+      "fiveYears": 367,
+      "threeYears": 263,
+      "lastYear": 117,
+      "thisYear": 49
     },
     "oval": {
       "ever": 2,
@@ -2493,20 +2516,20 @@
     "id": 286,
     "released": 2017,
     "all": {
-      "ever": 201,
-      "tenYears": 201,
-      "fiveYears": 134,
-      "threeYears": 84,
-      "lastYear": 43,
-      "thisYear": 16
+      "ever": 207,
+      "tenYears": 207,
+      "fiveYears": 140,
+      "threeYears": 90,
+      "lastYear": 49,
+      "thisYear": 22
     },
     "oval": {
-      "ever": 201,
-      "tenYears": 201,
-      "fiveYears": 134,
-      "threeYears": 84,
-      "lastYear": 43,
-      "thisYear": 16
+      "ever": 207,
+      "tenYears": 207,
+      "fiveYears": 140,
+      "threeYears": 90,
+      "lastYear": 49,
+      "thisYear": 22
     }
   },
   "10434": {
@@ -2514,28 +2537,28 @@
     "id": 297,
     "released": 2017,
     "all": {
-      "ever": 130,
-      "tenYears": 130,
-      "fiveYears": 101,
-      "threeYears": 78,
-      "lastYear": 50,
-      "thisYear": 20
+      "ever": 136,
+      "tenYears": 136,
+      "fiveYears": 107,
+      "threeYears": 84,
+      "lastYear": 56,
+      "thisYear": 26
     },
     "sports_car": {
-      "ever": 83,
-      "tenYears": 83,
-      "fiveYears": 63,
-      "threeYears": 50,
-      "lastYear": 32,
-      "thisYear": 14
+      "ever": 88,
+      "tenYears": 88,
+      "fiveYears": 68,
+      "threeYears": 55,
+      "lastYear": 37,
+      "thisYear": 19
     },
     "formula_car": {
-      "ever": 47,
-      "tenYears": 47,
-      "fiveYears": 38,
-      "threeYears": 28,
-      "lastYear": 18,
-      "thisYear": 6
+      "ever": 48,
+      "tenYears": 48,
+      "fiveYears": 39,
+      "threeYears": 29,
+      "lastYear": 19,
+      "thisYear": 7
     }
   },
   "10435": {
@@ -2543,20 +2566,20 @@
     "id": 303,
     "released": 2018,
     "all": {
-      "ever": 801,
-      "tenYears": 801,
-      "fiveYears": 608,
-      "threeYears": 439,
-      "lastYear": 234,
-      "thisYear": 84
+      "ever": 843,
+      "tenYears": 843,
+      "fiveYears": 650,
+      "threeYears": 481,
+      "lastYear": 276,
+      "thisYear": 126
     },
     "dirt_oval": {
-      "ever": 796,
-      "tenYears": 796,
-      "fiveYears": 603,
-      "threeYears": 434,
-      "lastYear": 230,
-      "thisYear": 83
+      "ever": 838,
+      "tenYears": 838,
+      "fiveYears": 645,
+      "threeYears": 476,
+      "lastYear": 272,
+      "thisYear": 125
     },
     "oval": {
       "ever": 4,
@@ -2579,27 +2602,28 @@
     "id": 305,
     "released": 2018,
     "all": {
-      "ever": 557,
-      "tenYears": 557,
-      "fiveYears": 374,
-      "threeYears": 251,
-      "lastYear": 116,
-      "thisYear": 43
+      "ever": 572,
+      "tenYears": 572,
+      "fiveYears": 389,
+      "threeYears": 266,
+      "lastYear": 131,
+      "thisYear": 58
     },
     "dirt_oval": {
-      "ever": 546,
-      "tenYears": 546,
-      "fiveYears": 363,
-      "threeYears": 245,
-      "lastYear": 114,
-      "thisYear": 43
+      "ever": 560,
+      "tenYears": 560,
+      "fiveYears": 377,
+      "threeYears": 259,
+      "lastYear": 128,
+      "thisYear": 57
     },
     "oval": {
-      "ever": 11,
-      "tenYears": 11,
-      "fiveYears": 11,
-      "threeYears": 6,
-      "lastYear": 2
+      "ever": 12,
+      "tenYears": 12,
+      "fiveYears": 12,
+      "threeYears": 7,
+      "lastYear": 3,
+      "thisYear": 1
     }
   },
   "10441": {
@@ -2607,20 +2631,20 @@
     "id": 314,
     "released": 2018,
     "all": {
-      "ever": 571,
-      "tenYears": 571,
-      "fiveYears": 392,
-      "threeYears": 271,
-      "lastYear": 119,
-      "thisYear": 43
+      "ever": 588,
+      "tenYears": 588,
+      "fiveYears": 409,
+      "threeYears": 288,
+      "lastYear": 136,
+      "thisYear": 60
     },
     "dirt_oval": {
-      "ever": 570,
-      "tenYears": 570,
-      "fiveYears": 391,
-      "threeYears": 270,
-      "lastYear": 119,
-      "thisYear": 43
+      "ever": 587,
+      "tenYears": 587,
+      "fiveYears": 408,
+      "threeYears": 287,
+      "lastYear": 136,
+      "thisYear": 60
     },
     "oval": {
       "ever": 1,
@@ -2634,12 +2658,12 @@
     "id": 319,
     "released": 2018,
     "all": {
-      "ever": 190,
-      "tenYears": 190,
-      "fiveYears": 138,
-      "threeYears": 94,
-      "lastYear": 34,
-      "thisYear": 11
+      "ever": 193,
+      "tenYears": 193,
+      "fiveYears": 141,
+      "threeYears": 97,
+      "lastYear": 37,
+      "thisYear": 14
     },
     "formula_car": {
       "ever": 81,
@@ -2650,12 +2674,12 @@
       "thisYear": 5
     },
     "sports_car": {
-      "ever": 109,
-      "tenYears": 109,
-      "fiveYears": 81,
-      "threeYears": 56,
-      "lastYear": 23,
-      "thisYear": 6
+      "ever": 112,
+      "tenYears": 112,
+      "fiveYears": 84,
+      "threeYears": 59,
+      "lastYear": 26,
+      "thisYear": 9
     }
   },
   "10446": {
@@ -2663,20 +2687,20 @@
     "id": 320,
     "released": 2018,
     "all": {
-      "ever": 400,
-      "tenYears": 400,
-      "fiveYears": 272,
-      "threeYears": 172,
-      "lastYear": 77,
-      "thisYear": 23
+      "ever": 410,
+      "tenYears": 410,
+      "fiveYears": 282,
+      "threeYears": 182,
+      "lastYear": 87,
+      "thisYear": 33
     },
     "dirt_oval": {
-      "ever": 400,
-      "tenYears": 400,
-      "fiveYears": 272,
-      "threeYears": 172,
-      "lastYear": 77,
-      "thisYear": 23
+      "ever": 410,
+      "tenYears": 410,
+      "fiveYears": 282,
+      "threeYears": 182,
+      "lastYear": 87,
+      "thisYear": 33
     }
   },
   "10448": {
@@ -2684,28 +2708,28 @@
     "id": 324,
     "released": 2019,
     "all": {
-      "ever": 210,
-      "tenYears": 210,
-      "fiveYears": 162,
-      "threeYears": 115,
-      "lastYear": 56,
-      "thisYear": 20
+      "ever": 224,
+      "tenYears": 224,
+      "fiveYears": 176,
+      "threeYears": 129,
+      "lastYear": 70,
+      "thisYear": 34
     },
     "sports_car": {
-      "ever": 142,
-      "tenYears": 142,
-      "fiveYears": 99,
-      "threeYears": 70,
-      "lastYear": 41,
-      "thisYear": 14
+      "ever": 150,
+      "tenYears": 150,
+      "fiveYears": 107,
+      "threeYears": 78,
+      "lastYear": 49,
+      "thisYear": 22
     },
     "formula_car": {
-      "ever": 65,
-      "tenYears": 65,
-      "fiveYears": 60,
-      "threeYears": 42,
-      "lastYear": 14,
-      "thisYear": 6
+      "ever": 71,
+      "tenYears": 71,
+      "fiveYears": 66,
+      "threeYears": 48,
+      "lastYear": 20,
+      "thisYear": 12
     },
     "oval": {
       "ever": 3,
@@ -2720,20 +2744,20 @@
     "id": 331,
     "released": 2019,
     "all": {
-      "ever": 92,
-      "tenYears": 92,
-      "fiveYears": 72,
-      "threeYears": 56,
-      "lastYear": 30,
-      "thisYear": 10
+      "ever": 99,
+      "tenYears": 99,
+      "fiveYears": 79,
+      "threeYears": 63,
+      "lastYear": 37,
+      "thisYear": 17
     },
     "dirt_oval": {
-      "ever": 92,
-      "tenYears": 92,
-      "fiveYears": 72,
-      "threeYears": 56,
-      "lastYear": 30,
-      "thisYear": 10
+      "ever": 99,
+      "tenYears": 99,
+      "fiveYears": 79,
+      "threeYears": 63,
+      "lastYear": 37,
+      "thisYear": 17
     }
   },
   "10454": {
@@ -2741,20 +2765,20 @@
     "id": 332,
     "released": 2021,
     "all": {
-      "ever": 181,
-      "tenYears": 181,
-      "fiveYears": 181,
-      "threeYears": 157,
-      "lastYear": 83,
-      "thisYear": 30
+      "ever": 196,
+      "tenYears": 196,
+      "fiveYears": 196,
+      "threeYears": 172,
+      "lastYear": 98,
+      "thisYear": 45
     },
     "dirt_road": {
-      "ever": 181,
-      "tenYears": 181,
-      "fiveYears": 181,
-      "threeYears": 157,
-      "lastYear": 83,
-      "thisYear": 30
+      "ever": 196,
+      "tenYears": 196,
+      "fiveYears": 196,
+      "threeYears": 172,
+      "lastYear": 98,
+      "thisYear": 45
     }
   },
   "10456": {
@@ -2762,20 +2786,20 @@
     "id": 334,
     "released": 2021,
     "all": {
-      "ever": 92,
-      "tenYears": 92,
-      "fiveYears": 92,
-      "threeYears": 64,
-      "lastYear": 27,
-      "thisYear": 6
+      "ever": 98,
+      "tenYears": 98,
+      "fiveYears": 98,
+      "threeYears": 70,
+      "lastYear": 33,
+      "thisYear": 12
     },
     "dirt_road": {
-      "ever": 92,
-      "tenYears": 92,
-      "fiveYears": 92,
-      "threeYears": 64,
-      "lastYear": 27,
-      "thisYear": 6
+      "ever": 98,
+      "tenYears": 98,
+      "fiveYears": 98,
+      "threeYears": 70,
+      "lastYear": 33,
+      "thisYear": 12
     }
   },
   "10460": {
@@ -2783,20 +2807,20 @@
     "id": 344,
     "released": 2019,
     "all": {
-      "ever": 365,
-      "tenYears": 365,
-      "fiveYears": 281,
-      "threeYears": 187,
-      "lastYear": 72,
-      "thisYear": 27
+      "ever": 375,
+      "tenYears": 375,
+      "fiveYears": 291,
+      "threeYears": 197,
+      "lastYear": 82,
+      "thisYear": 37
     },
     "dirt_oval": {
-      "ever": 365,
-      "tenYears": 365,
-      "fiveYears": 281,
-      "threeYears": 187,
-      "lastYear": 72,
-      "thisYear": 27
+      "ever": 375,
+      "tenYears": 375,
+      "fiveYears": 291,
+      "threeYears": 197,
+      "lastYear": 82,
+      "thisYear": 37
     }
   },
   "10462": {
@@ -2804,36 +2828,36 @@
     "id": 349,
     "released": 2019,
     "all": {
-      "ever": 279,
-      "tenYears": 279,
-      "fiveYears": 243,
-      "threeYears": 177,
-      "lastYear": 80,
-      "thisYear": 27
+      "ever": 301,
+      "tenYears": 301,
+      "fiveYears": 265,
+      "threeYears": 197,
+      "lastYear": 99,
+      "thisYear": 45
     },
     "formula_car": {
-      "ever": 108,
-      "tenYears": 108,
-      "fiveYears": 94,
-      "threeYears": 70,
-      "lastYear": 36,
-      "thisYear": 12
-    },
-    "sports_car": {
       "ever": 117,
       "tenYears": 117,
-      "fiveYears": 95,
-      "threeYears": 69,
-      "lastYear": 31,
-      "thisYear": 12
+      "fiveYears": 103,
+      "threeYears": 79,
+      "lastYear": 45,
+      "thisYear": 21
+    },
+    "sports_car": {
+      "ever": 127,
+      "tenYears": 127,
+      "fiveYears": 105,
+      "threeYears": 77,
+      "lastYear": 38,
+      "thisYear": 18
     },
     "dirt_road": {
-      "ever": 54,
-      "tenYears": 54,
-      "fiveYears": 54,
-      "threeYears": 38,
-      "lastYear": 13,
-      "thisYear": 3
+      "ever": 57,
+      "tenYears": 57,
+      "fiveYears": 57,
+      "threeYears": 41,
+      "lastYear": 16,
+      "thisYear": 6
     }
   },
   "10468": {
@@ -2841,20 +2865,20 @@
     "id": 351,
     "released": 2020,
     "all": {
-      "ever": 362,
-      "tenYears": 362,
-      "fiveYears": 290,
-      "threeYears": 190,
-      "lastYear": 105,
-      "thisYear": 42
+      "ever": 383,
+      "tenYears": 383,
+      "fiveYears": 311,
+      "threeYears": 211,
+      "lastYear": 126,
+      "thisYear": 63
     },
     "dirt_oval": {
-      "ever": 360,
-      "tenYears": 360,
-      "fiveYears": 288,
-      "threeYears": 188,
-      "lastYear": 104,
-      "thisYear": 41
+      "ever": 381,
+      "tenYears": 381,
+      "fiveYears": 309,
+      "threeYears": 209,
+      "lastYear": 125,
+      "thisYear": 62
     },
     "oval": {
       "ever": 2,
@@ -2870,36 +2894,36 @@
     "id": 355,
     "released": 2020,
     "all": {
-      "ever": 299,
-      "tenYears": 299,
-      "fiveYears": 270,
-      "threeYears": 191,
-      "lastYear": 93,
-      "thisYear": 34
+      "ever": 314,
+      "tenYears": 314,
+      "fiveYears": 285,
+      "threeYears": 206,
+      "lastYear": 108,
+      "thisYear": 49
     },
     "sports_car": {
-      "ever": 177,
-      "tenYears": 177,
-      "fiveYears": 153,
-      "threeYears": 101,
-      "lastYear": 49,
-      "thisYear": 18
+      "ever": 185,
+      "tenYears": 185,
+      "fiveYears": 161,
+      "threeYears": 109,
+      "lastYear": 57,
+      "thisYear": 26
     },
     "formula_car": {
-      "ever": 98,
-      "tenYears": 98,
-      "fiveYears": 95,
-      "threeYears": 72,
-      "lastYear": 30,
-      "thisYear": 10
+      "ever": 103,
+      "tenYears": 103,
+      "fiveYears": 100,
+      "threeYears": 77,
+      "lastYear": 35,
+      "thisYear": 15
     },
     "oval": {
-      "ever": 24,
-      "tenYears": 24,
-      "fiveYears": 22,
-      "threeYears": 18,
-      "lastYear": 14,
-      "thisYear": 6
+      "ever": 26,
+      "tenYears": 26,
+      "fiveYears": 24,
+      "threeYears": 20,
+      "lastYear": 16,
+      "thisYear": 8
     }
   },
   "10474": {
@@ -2907,20 +2931,20 @@
     "id": 364,
     "released": 2020,
     "all": {
-      "ever": 136,
-      "tenYears": 136,
-      "fiveYears": 113,
-      "threeYears": 68,
-      "lastYear": 30,
-      "thisYear": 14
+      "ever": 137,
+      "tenYears": 137,
+      "fiveYears": 114,
+      "threeYears": 69,
+      "lastYear": 31,
+      "thisYear": 15
     },
     "oval": {
-      "ever": 107,
-      "tenYears": 107,
-      "fiveYears": 89,
-      "threeYears": 54,
-      "lastYear": 24,
-      "thisYear": 11
+      "ever": 108,
+      "tenYears": 108,
+      "fiveYears": 90,
+      "threeYears": 55,
+      "lastYear": 25,
+      "thisYear": 12
     },
     "formula_car": {
       "ever": 29,
@@ -2933,23 +2957,23 @@
   },
   "10475": {
     "sku": 10475,
-    "id": 358,
+    "id": 360,
     "released": 2020,
     "all": {
-      "ever": 79,
-      "tenYears": 79,
-      "fiveYears": 73,
-      "threeYears": 53,
-      "lastYear": 22,
-      "thisYear": 5
+      "ever": 82,
+      "tenYears": 82,
+      "fiveYears": 76,
+      "threeYears": 56,
+      "lastYear": 25,
+      "thisYear": 8
     },
     "dirt_road": {
-      "ever": 79,
-      "tenYears": 79,
-      "fiveYears": 73,
-      "threeYears": 53,
-      "lastYear": 22,
-      "thisYear": 5
+      "ever": 82,
+      "tenYears": 82,
+      "fiveYears": 76,
+      "threeYears": 56,
+      "lastYear": 25,
+      "thisYear": 8
     }
   },
   "10476": {
@@ -2957,20 +2981,20 @@
     "id": 562,
     "released": 2020,
     "all": {
-      "ever": 240,
-      "tenYears": 240,
-      "fiveYears": 212,
-      "threeYears": 140,
-      "lastYear": 64,
-      "thisYear": 21
+      "ever": 250,
+      "tenYears": 250,
+      "fiveYears": 222,
+      "threeYears": 150,
+      "lastYear": 74,
+      "thisYear": 31
     },
     "oval": {
-      "ever": 239,
-      "tenYears": 239,
-      "fiveYears": 211,
-      "threeYears": 139,
-      "lastYear": 64,
-      "thisYear": 21
+      "ever": 249,
+      "tenYears": 249,
+      "fiveYears": 221,
+      "threeYears": 149,
+      "lastYear": 74,
+      "thisYear": 31
     },
     "formula_car": {
       "ever": 1,
@@ -2984,20 +3008,20 @@
     "id": 371,
     "released": 2020,
     "all": {
-      "ever": 52,
-      "tenYears": 52,
-      "fiveYears": 41,
-      "threeYears": 32,
-      "lastYear": 15,
-      "thisYear": 7
+      "ever": 53,
+      "tenYears": 53,
+      "fiveYears": 42,
+      "threeYears": 33,
+      "lastYear": 16,
+      "thisYear": 8
     },
     "oval": {
-      "ever": 43,
-      "tenYears": 43,
-      "fiveYears": 34,
-      "threeYears": 28,
-      "lastYear": 13,
-      "thisYear": 5
+      "ever": 44,
+      "tenYears": 44,
+      "fiveYears": 35,
+      "threeYears": 29,
+      "lastYear": 14,
+      "thisYear": 6
     },
     "formula_car": {
       "ever": 9,
@@ -3013,20 +3037,20 @@
     "id": 373,
     "released": 2020,
     "all": {
-      "ever": 234,
-      "tenYears": 234,
-      "fiveYears": 219,
-      "threeYears": 127,
-      "lastYear": 36,
-      "thisYear": 10
+      "ever": 243,
+      "tenYears": 243,
+      "fiveYears": 228,
+      "threeYears": 136,
+      "lastYear": 45,
+      "thisYear": 19
     },
     "dirt_oval": {
-      "ever": 234,
-      "tenYears": 234,
-      "fiveYears": 219,
-      "threeYears": 127,
-      "lastYear": 36,
-      "thisYear": 10
+      "ever": 243,
+      "tenYears": 243,
+      "fiveYears": 228,
+      "threeYears": 136,
+      "lastYear": 45,
+      "thisYear": 19
     }
   },
   "10486": {
@@ -3034,20 +3058,20 @@
     "id": 380,
     "released": 2020,
     "all": {
-      "ever": 176,
-      "tenYears": 176,
-      "fiveYears": 160,
-      "threeYears": 96,
-      "lastYear": 40,
-      "thisYear": 13
+      "ever": 180,
+      "tenYears": 180,
+      "fiveYears": 164,
+      "threeYears": 100,
+      "lastYear": 44,
+      "thisYear": 17
     },
     "oval": {
-      "ever": 176,
-      "tenYears": 176,
-      "fiveYears": 160,
-      "threeYears": 96,
-      "lastYear": 40,
-      "thisYear": 13
+      "ever": 180,
+      "tenYears": 180,
+      "fiveYears": 164,
+      "threeYears": 100,
+      "lastYear": 44,
+      "thisYear": 17
     }
   },
   "10491": {
@@ -3055,20 +3079,20 @@
     "id": 382,
     "released": 2021,
     "all": {
-      "ever": 183,
-      "tenYears": 183,
-      "fiveYears": 183,
-      "threeYears": 133,
-      "lastYear": 59,
-      "thisYear": 18
+      "ever": 192,
+      "tenYears": 192,
+      "fiveYears": 192,
+      "threeYears": 142,
+      "lastYear": 68,
+      "thisYear": 27
     },
     "dirt_road": {
-      "ever": 183,
-      "tenYears": 183,
-      "fiveYears": 183,
-      "threeYears": 133,
-      "lastYear": 59,
-      "thisYear": 18
+      "ever": 192,
+      "tenYears": 192,
+      "fiveYears": 192,
+      "threeYears": 142,
+      "lastYear": 68,
+      "thisYear": 27
     }
   },
   "10493": {
@@ -3104,20 +3128,20 @@
     "id": 387,
     "released": 2021,
     "all": {
-      "ever": 324,
-      "tenYears": 324,
-      "fiveYears": 324,
-      "threeYears": 212,
-      "lastYear": 84,
-      "thisYear": 31
+      "ever": 342,
+      "tenYears": 342,
+      "fiveYears": 342,
+      "threeYears": 230,
+      "lastYear": 102,
+      "thisYear": 49
     },
     "dirt_oval": {
-      "ever": 322,
-      "tenYears": 322,
-      "fiveYears": 322,
-      "threeYears": 210,
-      "lastYear": 83,
-      "thisYear": 31
+      "ever": 340,
+      "tenYears": 340,
+      "fiveYears": 340,
+      "threeYears": 228,
+      "lastYear": 101,
+      "thisYear": 49
     },
     "oval": {
       "ever": 2,
@@ -3132,28 +3156,28 @@
     "id": 390,
     "released": 2021,
     "all": {
-      "ever": 256,
-      "tenYears": 256,
-      "fiveYears": 256,
-      "threeYears": 164,
-      "lastYear": 75,
-      "thisYear": 19
+      "ever": 274,
+      "tenYears": 274,
+      "fiveYears": 274,
+      "threeYears": 178,
+      "lastYear": 87,
+      "thisYear": 31
     },
     "formula_car": {
-      "ever": 107,
-      "tenYears": 107,
-      "fiveYears": 107,
-      "threeYears": 71,
-      "lastYear": 30,
-      "thisYear": 11
+      "ever": 111,
+      "tenYears": 111,
+      "fiveYears": 111,
+      "threeYears": 75,
+      "lastYear": 34,
+      "thisYear": 15
     },
     "sports_car": {
-      "ever": 149,
-      "tenYears": 149,
-      "fiveYears": 149,
-      "threeYears": 93,
-      "lastYear": 45,
-      "thisYear": 8
+      "ever": 163,
+      "tenYears": 163,
+      "fiveYears": 163,
+      "threeYears": 103,
+      "lastYear": 53,
+      "thisYear": 16
     }
   },
   "10499": {
@@ -3161,20 +3185,20 @@
     "id": 396,
     "released": 2021,
     "all": {
-      "ever": 133,
-      "tenYears": 133,
-      "fiveYears": 133,
-      "threeYears": 91,
-      "lastYear": 41,
-      "thisYear": 12
+      "ever": 139,
+      "tenYears": 139,
+      "fiveYears": 139,
+      "threeYears": 97,
+      "lastYear": 47,
+      "thisYear": 18
     },
     "dirt_road": {
-      "ever": 133,
-      "tenYears": 133,
-      "fiveYears": 133,
-      "threeYears": 91,
-      "lastYear": 41,
-      "thisYear": 12
+      "ever": 139,
+      "tenYears": 139,
+      "fiveYears": 139,
+      "threeYears": 97,
+      "lastYear": 47,
+      "thisYear": 18
     }
   },
   "10501": {
@@ -3182,28 +3206,28 @@
     "id": 400,
     "released": 2021,
     "all": {
-      "ever": 107,
-      "tenYears": 107,
-      "fiveYears": 107,
-      "threeYears": 75,
-      "lastYear": 36,
-      "thisYear": 17
+      "ever": 113,
+      "tenYears": 113,
+      "fiveYears": 113,
+      "threeYears": 81,
+      "lastYear": 42,
+      "thisYear": 23
     },
     "oval": {
-      "ever": 93,
-      "tenYears": 93,
-      "fiveYears": 93,
-      "threeYears": 64,
-      "lastYear": 30,
-      "thisYear": 15
+      "ever": 97,
+      "tenYears": 97,
+      "fiveYears": 97,
+      "threeYears": 68,
+      "lastYear": 34,
+      "thisYear": 19
     },
     "formula_car": {
-      "ever": 14,
-      "tenYears": 14,
-      "fiveYears": 14,
-      "threeYears": 11,
-      "lastYear": 6,
-      "thisYear": 2
+      "ever": 16,
+      "tenYears": 16,
+      "fiveYears": 16,
+      "threeYears": 13,
+      "lastYear": 8,
+      "thisYear": 4
     }
   },
   "10506": {
@@ -3211,28 +3235,28 @@
     "id": 404,
     "released": 2021,
     "all": {
-      "ever": 296,
-      "tenYears": 296,
-      "fiveYears": 296,
-      "threeYears": 201,
-      "lastYear": 94,
-      "thisYear": 27
+      "ever": 316,
+      "tenYears": 316,
+      "fiveYears": 316,
+      "threeYears": 219,
+      "lastYear": 110,
+      "thisYear": 43
     },
     "sports_car": {
-      "ever": 168,
-      "tenYears": 168,
-      "fiveYears": 168,
-      "threeYears": 109,
-      "lastYear": 47,
-      "thisYear": 17
+      "ever": 181,
+      "tenYears": 181,
+      "fiveYears": 181,
+      "threeYears": 120,
+      "lastYear": 56,
+      "thisYear": 26
     },
     "formula_car": {
-      "ever": 128,
-      "tenYears": 128,
-      "fiveYears": 128,
-      "threeYears": 92,
-      "lastYear": 47,
-      "thisYear": 10
+      "ever": 135,
+      "tenYears": 135,
+      "fiveYears": 135,
+      "threeYears": 99,
+      "lastYear": 54,
+      "thisYear": 17
     }
   },
   "10508": {
@@ -3240,28 +3264,28 @@
     "id": 405,
     "released": 2021,
     "all": {
-      "ever": 59,
-      "tenYears": 59,
-      "fiveYears": 59,
-      "threeYears": 48,
-      "lastYear": 20,
-      "thisYear": 5
+      "ever": 64,
+      "tenYears": 64,
+      "fiveYears": 64,
+      "threeYears": 53,
+      "lastYear": 25,
+      "thisYear": 10
     },
     "formula_car": {
-      "ever": 14,
-      "tenYears": 14,
-      "fiveYears": 14,
-      "threeYears": 10,
-      "lastYear": 3,
-      "thisYear": 2
+      "ever": 17,
+      "tenYears": 17,
+      "fiveYears": 17,
+      "threeYears": 13,
+      "lastYear": 6,
+      "thisYear": 5
     },
     "sports_car": {
-      "ever": 23,
-      "tenYears": 23,
-      "fiveYears": 23,
-      "threeYears": 16,
-      "lastYear": 8,
-      "thisYear": 3
+      "ever": 25,
+      "tenYears": 25,
+      "fiveYears": 25,
+      "threeYears": 18,
+      "lastYear": 10,
+      "thisYear": 5
     },
     "oval": {
       "ever": 22,
@@ -3276,28 +3300,28 @@
     "id": 413,
     "released": 2021,
     "all": {
-      "ever": 149,
-      "tenYears": 149,
-      "fiveYears": 149,
-      "threeYears": 95,
-      "lastYear": 42,
-      "thisYear": 11
+      "ever": 155,
+      "tenYears": 155,
+      "fiveYears": 155,
+      "threeYears": 101,
+      "lastYear": 48,
+      "thisYear": 17
     },
     "formula_car": {
-      "ever": 76,
-      "tenYears": 76,
-      "fiveYears": 76,
-      "threeYears": 51,
-      "lastYear": 23,
-      "thisYear": 7
+      "ever": 81,
+      "tenYears": 81,
+      "fiveYears": 81,
+      "threeYears": 56,
+      "lastYear": 28,
+      "thisYear": 12
     },
     "sports_car": {
-      "ever": 73,
-      "tenYears": 73,
-      "fiveYears": 73,
-      "threeYears": 44,
-      "lastYear": 19,
-      "thisYear": 4
+      "ever": 74,
+      "tenYears": 74,
+      "fiveYears": 74,
+      "threeYears": 45,
+      "lastYear": 20,
+      "thisYear": 5
     }
   },
   "10512": {
@@ -3305,20 +3329,20 @@
     "id": 414,
     "released": 2021,
     "all": {
-      "ever": 134,
-      "tenYears": 134,
-      "fiveYears": 134,
-      "threeYears": 94,
-      "lastYear": 41,
-      "thisYear": 14
+      "ever": 141,
+      "tenYears": 141,
+      "fiveYears": 141,
+      "threeYears": 101,
+      "lastYear": 48,
+      "thisYear": 21
     },
     "oval": {
-      "ever": 133,
-      "tenYears": 133,
-      "fiveYears": 133,
-      "threeYears": 94,
-      "lastYear": 41,
-      "thisYear": 14
+      "ever": 140,
+      "tenYears": 140,
+      "fiveYears": 140,
+      "threeYears": 101,
+      "lastYear": 48,
+      "thisYear": 21
     },
     "formula_car": {
       "ever": 1,
@@ -3360,12 +3384,12 @@
     "id": 423,
     "released": 2022,
     "all": {
-      "ever": 108,
-      "tenYears": 108,
-      "fiveYears": 108,
-      "threeYears": 66,
-      "lastYear": 22,
-      "thisYear": 3
+      "ever": 111,
+      "tenYears": 111,
+      "fiveYears": 111,
+      "threeYears": 69,
+      "lastYear": 25,
+      "thisYear": 6
     },
     "sports_car": {
       "ever": 41,
@@ -3375,19 +3399,20 @@
       "lastYear": 4
     },
     "formula_car": {
-      "ever": 17,
-      "tenYears": 17,
-      "fiveYears": 17,
-      "threeYears": 10,
-      "lastYear": 4
+      "ever": 18,
+      "tenYears": 18,
+      "fiveYears": 18,
+      "threeYears": 11,
+      "lastYear": 5,
+      "thisYear": 1
     },
     "dirt_road": {
-      "ever": 50,
-      "tenYears": 50,
-      "fiveYears": 50,
-      "threeYears": 38,
-      "lastYear": 14,
-      "thisYear": 3
+      "ever": 52,
+      "tenYears": 52,
+      "fiveYears": 52,
+      "threeYears": 40,
+      "lastYear": 16,
+      "thisYear": 5
     }
   },
   "10521": {
@@ -3416,27 +3441,28 @@
     "id": 438,
     "released": 2022,
     "all": {
-      "ever": 244,
-      "tenYears": 244,
-      "fiveYears": 244,
-      "threeYears": 197,
-      "lastYear": 74,
-      "thisYear": 28
+      "ever": 257,
+      "tenYears": 257,
+      "fiveYears": 257,
+      "threeYears": 210,
+      "lastYear": 87,
+      "thisYear": 41
     },
     "dirt_oval": {
-      "ever": 242,
-      "tenYears": 242,
-      "fiveYears": 242,
-      "threeYears": 195,
-      "lastYear": 73,
-      "thisYear": 28
+      "ever": 254,
+      "tenYears": 254,
+      "fiveYears": 254,
+      "threeYears": 207,
+      "lastYear": 85,
+      "thisYear": 40
     },
     "oval": {
-      "ever": 2,
-      "tenYears": 2,
-      "fiveYears": 2,
-      "threeYears": 2,
-      "lastYear": 1
+      "ever": 3,
+      "tenYears": 3,
+      "fiveYears": 3,
+      "threeYears": 3,
+      "lastYear": 2,
+      "thisYear": 1
     }
   },
   "10529": {
@@ -3444,36 +3470,36 @@
     "id": 439,
     "released": 2022,
     "all": {
-      "ever": 124,
-      "tenYears": 124,
-      "fiveYears": 124,
-      "threeYears": 102,
-      "lastYear": 71,
-      "thisYear": 40
+      "ever": 141,
+      "tenYears": 141,
+      "fiveYears": 141,
+      "threeYears": 119,
+      "lastYear": 88,
+      "thisYear": 57
     },
     "sports_car": {
-      "ever": 64,
-      "tenYears": 64,
-      "fiveYears": 64,
-      "threeYears": 44,
-      "lastYear": 28,
-      "thisYear": 11
+      "ever": 70,
+      "tenYears": 70,
+      "fiveYears": 70,
+      "threeYears": 50,
+      "lastYear": 34,
+      "thisYear": 17
     },
     "formula_car": {
-      "ever": 38,
-      "tenYears": 38,
-      "fiveYears": 38,
-      "threeYears": 36,
-      "lastYear": 22,
-      "thisYear": 8
+      "ever": 43,
+      "tenYears": 43,
+      "fiveYears": 43,
+      "threeYears": 41,
+      "lastYear": 27,
+      "thisYear": 13
     },
     "dirt_road": {
-      "ever": 21,
-      "tenYears": 21,
-      "fiveYears": 21,
-      "threeYears": 21,
-      "lastYear": 21,
-      "thisYear": 21
+      "ever": 27,
+      "tenYears": 27,
+      "fiveYears": 27,
+      "threeYears": 27,
+      "lastYear": 27,
+      "thisYear": 27
     },
     "oval": {
       "ever": 1,
@@ -3487,28 +3513,28 @@
     "id": 443,
     "released": 2022,
     "all": {
-      "ever": 60,
-      "tenYears": 60,
-      "fiveYears": 60,
-      "threeYears": 43,
-      "lastYear": 13,
-      "thisYear": 5
+      "ever": 64,
+      "tenYears": 64,
+      "fiveYears": 64,
+      "threeYears": 47,
+      "lastYear": 17,
+      "thisYear": 9
     },
     "sports_car": {
-      "ever": 44,
-      "tenYears": 44,
-      "fiveYears": 44,
-      "threeYears": 27,
-      "lastYear": 7,
-      "thisYear": 2
+      "ever": 47,
+      "tenYears": 47,
+      "fiveYears": 47,
+      "threeYears": 30,
+      "lastYear": 10,
+      "thisYear": 5
     },
     "formula_car": {
-      "ever": 16,
-      "tenYears": 16,
-      "fiveYears": 16,
-      "threeYears": 16,
-      "lastYear": 6,
-      "thisYear": 3
+      "ever": 17,
+      "tenYears": 17,
+      "fiveYears": 17,
+      "threeYears": 17,
+      "lastYear": 7,
+      "thisYear": 4
     }
   },
   "10537": {
@@ -3516,28 +3542,28 @@
     "id": 444,
     "released": 2022,
     "all": {
-      "ever": 181,
-      "tenYears": 181,
-      "fiveYears": 181,
-      "threeYears": 142,
-      "lastYear": 58,
-      "thisYear": 18
+      "ever": 199,
+      "tenYears": 199,
+      "fiveYears": 199,
+      "threeYears": 160,
+      "lastYear": 76,
+      "thisYear": 36
     },
     "sports_car": {
-      "ever": 106,
-      "tenYears": 106,
-      "fiveYears": 106,
-      "threeYears": 78,
-      "lastYear": 30,
-      "thisYear": 13
+      "ever": 117,
+      "tenYears": 117,
+      "fiveYears": 117,
+      "threeYears": 89,
+      "lastYear": 41,
+      "thisYear": 24
     },
     "formula_car": {
-      "ever": 75,
-      "tenYears": 75,
-      "fiveYears": 75,
-      "threeYears": 64,
-      "lastYear": 28,
-      "thisYear": 5
+      "ever": 82,
+      "tenYears": 82,
+      "fiveYears": 82,
+      "threeYears": 71,
+      "lastYear": 35,
+      "thisYear": 12
     }
   },
   "10538": {
@@ -3545,20 +3571,20 @@
     "id": 446,
     "released": 2022,
     "all": {
-      "ever": 177,
-      "tenYears": 177,
-      "fiveYears": 177,
-      "threeYears": 148,
-      "lastYear": 58,
-      "thisYear": 24
+      "ever": 184,
+      "tenYears": 184,
+      "fiveYears": 184,
+      "threeYears": 155,
+      "lastYear": 65,
+      "thisYear": 31
     },
     "dirt_oval": {
-      "ever": 176,
-      "tenYears": 176,
-      "fiveYears": 176,
-      "threeYears": 147,
-      "lastYear": 57,
-      "thisYear": 23
+      "ever": 183,
+      "tenYears": 183,
+      "fiveYears": 183,
+      "threeYears": 154,
+      "lastYear": 64,
+      "thisYear": 30
     },
     "oval": {
       "ever": 1,
@@ -3571,31 +3597,31 @@
   },
   "10540": {
     "sku": 10540,
-    "id": 455,
+    "id": 449,
     "released": 2022,
     "all": {
-      "ever": 150,
-      "tenYears": 150,
-      "fiveYears": 150,
-      "threeYears": 138,
-      "lastYear": 80,
-      "thisYear": 30
+      "ever": 166,
+      "tenYears": 166,
+      "fiveYears": 166,
+      "threeYears": 154,
+      "lastYear": 96,
+      "thisYear": 46
     },
     "sports_car": {
-      "ever": 108,
-      "tenYears": 108,
-      "fiveYears": 108,
-      "threeYears": 96,
-      "lastYear": 55,
-      "thisYear": 22
+      "ever": 119,
+      "tenYears": 119,
+      "fiveYears": 119,
+      "threeYears": 107,
+      "lastYear": 66,
+      "thisYear": 33
     },
     "formula_car": {
-      "ever": 42,
-      "tenYears": 42,
-      "fiveYears": 42,
-      "threeYears": 42,
-      "lastYear": 25,
-      "thisYear": 8
+      "ever": 47,
+      "tenYears": 47,
+      "fiveYears": 47,
+      "threeYears": 47,
+      "lastYear": 30,
+      "thisYear": 13
     }
   },
   "10541": {
@@ -3603,28 +3629,28 @@
     "id": 451,
     "released": 2022,
     "all": {
-      "ever": 165,
-      "tenYears": 165,
-      "fiveYears": 165,
-      "threeYears": 150,
-      "lastYear": 54,
-      "thisYear": 21
+      "ever": 174,
+      "tenYears": 174,
+      "fiveYears": 174,
+      "threeYears": 159,
+      "lastYear": 63,
+      "thisYear": 30
     },
     "sports_car": {
-      "ever": 104,
-      "tenYears": 104,
-      "fiveYears": 104,
-      "threeYears": 92,
-      "lastYear": 32,
-      "thisYear": 14
+      "ever": 108,
+      "tenYears": 108,
+      "fiveYears": 108,
+      "threeYears": 96,
+      "lastYear": 36,
+      "thisYear": 18
     },
     "formula_car": {
-      "ever": 60,
-      "tenYears": 60,
-      "fiveYears": 60,
-      "threeYears": 57,
-      "lastYear": 22,
-      "thisYear": 7
+      "ever": 65,
+      "tenYears": 65,
+      "fiveYears": 65,
+      "threeYears": 62,
+      "lastYear": 27,
+      "thisYear": 12
     },
     "oval": {
       "ever": 1,
@@ -3638,35 +3664,36 @@
     "id": 452,
     "released": 2022,
     "all": {
-      "ever": 270,
-      "tenYears": 270,
-      "fiveYears": 270,
-      "threeYears": 253,
-      "lastYear": 109,
-      "thisYear": 53
+      "ever": 290,
+      "tenYears": 290,
+      "fiveYears": 290,
+      "threeYears": 273,
+      "lastYear": 129,
+      "thisYear": 73
     },
     "dirt_oval": {
-      "ever": 249,
-      "tenYears": 249,
-      "fiveYears": 249,
-      "threeYears": 232,
-      "lastYear": 90,
-      "thisYear": 35
+      "ever": 262,
+      "tenYears": 262,
+      "fiveYears": 262,
+      "threeYears": 245,
+      "lastYear": 103,
+      "thisYear": 48
     },
     "oval": {
-      "ever": 3,
-      "tenYears": 3,
-      "fiveYears": 3,
-      "threeYears": 3,
-      "lastYear": 1
+      "ever": 4,
+      "tenYears": 4,
+      "fiveYears": 4,
+      "threeYears": 4,
+      "lastYear": 2,
+      "thisYear": 1
     },
     "dirt_road": {
-      "ever": 18,
-      "tenYears": 18,
-      "fiveYears": 18,
-      "threeYears": 18,
-      "lastYear": 18,
-      "thisYear": 18
+      "ever": 24,
+      "tenYears": 24,
+      "fiveYears": 24,
+      "threeYears": 24,
+      "lastYear": 24,
+      "thisYear": 24
     }
   },
   "10546": {
@@ -3674,20 +3701,20 @@
     "id": 462,
     "released": 2023,
     "all": {
-      "ever": 208,
-      "tenYears": 208,
-      "fiveYears": 208,
-      "threeYears": 208,
-      "lastYear": 51,
-      "thisYear": 9
+      "ever": 210,
+      "tenYears": 210,
+      "fiveYears": 210,
+      "threeYears": 210,
+      "lastYear": 53,
+      "thisYear": 11
     },
     "dirt_oval": {
-      "ever": 208,
-      "tenYears": 208,
-      "fiveYears": 208,
-      "threeYears": 208,
-      "lastYear": 51,
-      "thisYear": 9
+      "ever": 210,
+      "tenYears": 210,
+      "fiveYears": 210,
+      "threeYears": 210,
+      "lastYear": 53,
+      "thisYear": 11
     }
   },
   "10547": {
@@ -3695,20 +3722,20 @@
     "id": 463,
     "released": 2023,
     "all": {
-      "ever": 110,
-      "tenYears": 110,
-      "fiveYears": 110,
-      "threeYears": 110,
-      "lastYear": 44,
-      "thisYear": 9
+      "ever": 113,
+      "tenYears": 113,
+      "fiveYears": 113,
+      "threeYears": 113,
+      "lastYear": 47,
+      "thisYear": 11
     },
     "sports_car": {
-      "ever": 56,
-      "tenYears": 56,
-      "fiveYears": 56,
-      "threeYears": 56,
-      "lastYear": 18,
-      "thisYear": 5
+      "ever": 59,
+      "tenYears": 59,
+      "fiveYears": 59,
+      "threeYears": 59,
+      "lastYear": 21,
+      "thisYear": 7
     },
     "formula_car": {
       "ever": 54,
@@ -3724,28 +3751,28 @@
     "id": 474,
     "released": 2023,
     "all": {
-      "ever": 113,
-      "tenYears": 113,
-      "fiveYears": 113,
-      "threeYears": 113,
-      "lastYear": 36,
-      "thisYear": 13
+      "ever": 115,
+      "tenYears": 115,
+      "fiveYears": 115,
+      "threeYears": 115,
+      "lastYear": 38,
+      "thisYear": 15
     },
     "sports_car": {
-      "ever": 66,
-      "tenYears": 66,
-      "fiveYears": 66,
-      "threeYears": 66,
-      "lastYear": 19,
-      "thisYear": 10
+      "ever": 67,
+      "tenYears": 67,
+      "fiveYears": 67,
+      "threeYears": 67,
+      "lastYear": 20,
+      "thisYear": 11
     },
     "formula_car": {
-      "ever": 47,
-      "tenYears": 47,
-      "fiveYears": 47,
-      "threeYears": 47,
-      "lastYear": 17,
-      "thisYear": 3
+      "ever": 48,
+      "tenYears": 48,
+      "fiveYears": 48,
+      "threeYears": 48,
+      "lastYear": 18,
+      "thisYear": 4
     }
   },
   "10556": {
@@ -3753,12 +3780,12 @@
     "id": 475,
     "released": 2023,
     "all": {
-      "ever": 84,
-      "tenYears": 84,
-      "fiveYears": 84,
-      "threeYears": 84,
-      "lastYear": 32,
-      "thisYear": 13
+      "ever": 86,
+      "tenYears": 86,
+      "fiveYears": 86,
+      "threeYears": 86,
+      "lastYear": 34,
+      "thisYear": 15
     },
     "formula_car": {
       "ever": 32,
@@ -3769,12 +3796,12 @@
       "thisYear": 4
     },
     "sports_car": {
-      "ever": 52,
-      "tenYears": 52,
-      "fiveYears": 52,
-      "threeYears": 52,
-      "lastYear": 17,
-      "thisYear": 9
+      "ever": 54,
+      "tenYears": 54,
+      "fiveYears": 54,
+      "threeYears": 54,
+      "lastYear": 19,
+      "thisYear": 11
     }
   },
   "10557": {
@@ -3782,20 +3809,20 @@
     "id": 481,
     "released": 2023,
     "all": {
-      "ever": 45,
-      "tenYears": 45,
-      "fiveYears": 45,
-      "threeYears": 45,
-      "lastYear": 11,
-      "thisYear": 3
+      "ever": 49,
+      "tenYears": 49,
+      "fiveYears": 49,
+      "threeYears": 49,
+      "lastYear": 15,
+      "thisYear": 7
     },
     "sports_car": {
-      "ever": 26,
-      "tenYears": 26,
-      "fiveYears": 26,
-      "threeYears": 26,
-      "lastYear": 6,
-      "thisYear": 1
+      "ever": 29,
+      "tenYears": 29,
+      "fiveYears": 29,
+      "threeYears": 29,
+      "lastYear": 9,
+      "thisYear": 4
     },
     "formula_car": {
       "ever": 16,
@@ -3806,10 +3833,12 @@
       "thisYear": 2
     },
     "oval": {
-      "ever": 3,
-      "tenYears": 3,
-      "fiveYears": 3,
-      "threeYears": 3
+      "ever": 4,
+      "tenYears": 4,
+      "fiveYears": 4,
+      "threeYears": 4,
+      "lastYear": 1,
+      "thisYear": 1
     }
   },
   "10561": {
@@ -3817,28 +3846,28 @@
     "id": 489,
     "released": 2023,
     "all": {
-      "ever": 79,
-      "tenYears": 79,
-      "fiveYears": 79,
-      "threeYears": 79,
-      "lastYear": 45,
-      "thisYear": 17
+      "ever": 89,
+      "tenYears": 89,
+      "fiveYears": 89,
+      "threeYears": 89,
+      "lastYear": 55,
+      "thisYear": 27
     },
     "sports_car": {
-      "ever": 47,
-      "tenYears": 47,
-      "fiveYears": 47,
-      "threeYears": 47,
-      "lastYear": 25,
-      "thisYear": 10
+      "ever": 52,
+      "tenYears": 52,
+      "fiveYears": 52,
+      "threeYears": 52,
+      "lastYear": 30,
+      "thisYear": 15
     },
     "formula_car": {
-      "ever": 32,
-      "tenYears": 32,
-      "fiveYears": 32,
-      "threeYears": 32,
-      "lastYear": 20,
-      "thisYear": 7
+      "ever": 37,
+      "tenYears": 37,
+      "fiveYears": 37,
+      "threeYears": 37,
+      "lastYear": 25,
+      "thisYear": 12
     }
   },
   "10562": {
@@ -3846,28 +3875,28 @@
     "id": 494,
     "released": 2023,
     "all": {
-      "ever": 234,
-      "tenYears": 234,
-      "fiveYears": 234,
-      "threeYears": 234,
-      "lastYear": 104,
-      "thisYear": 37
+      "ever": 244,
+      "tenYears": 244,
+      "fiveYears": 244,
+      "threeYears": 244,
+      "lastYear": 114,
+      "thisYear": 47
     },
     "dirt_oval": {
-      "ever": 156,
-      "tenYears": 156,
-      "fiveYears": 156,
-      "threeYears": 156,
-      "lastYear": 71,
-      "thisYear": 26
+      "ever": 161,
+      "tenYears": 161,
+      "fiveYears": 161,
+      "threeYears": 161,
+      "lastYear": 76,
+      "thisYear": 31
     },
     "oval": {
-      "ever": 77,
-      "tenYears": 77,
-      "fiveYears": 77,
-      "threeYears": 77,
-      "lastYear": 33,
-      "thisYear": 11
+      "ever": 82,
+      "tenYears": 82,
+      "fiveYears": 82,
+      "threeYears": 82,
+      "lastYear": 38,
+      "thisYear": 16
     },
     "formula_car": {
       "ever": 1,
@@ -3881,28 +3910,28 @@
     "id": 498,
     "released": 2024,
     "all": {
-      "ever": 152,
-      "tenYears": 152,
-      "fiveYears": 152,
-      "threeYears": 152,
-      "lastYear": 76,
-      "thisYear": 22
+      "ever": 168,
+      "tenYears": 168,
+      "fiveYears": 168,
+      "threeYears": 168,
+      "lastYear": 91,
+      "thisYear": 36
     },
     "sports_car": {
-      "ever": 88,
-      "tenYears": 88,
-      "fiveYears": 88,
-      "threeYears": 88,
-      "lastYear": 41,
-      "thisYear": 12
+      "ever": 97,
+      "tenYears": 97,
+      "fiveYears": 97,
+      "threeYears": 97,
+      "lastYear": 49,
+      "thisYear": 19
     },
     "formula_car": {
-      "ever": 64,
-      "tenYears": 64,
-      "fiveYears": 64,
-      "threeYears": 64,
-      "lastYear": 35,
-      "thisYear": 10
+      "ever": 71,
+      "tenYears": 71,
+      "fiveYears": 71,
+      "threeYears": 71,
+      "lastYear": 42,
+      "thisYear": 17
     }
   },
   "10569": {
@@ -3910,20 +3939,20 @@
     "id": 500,
     "released": 2024,
     "all": {
-      "ever": 62,
-      "tenYears": 62,
-      "fiveYears": 62,
-      "threeYears": 62,
-      "lastYear": 32,
-      "thisYear": 13
+      "ever": 69,
+      "tenYears": 69,
+      "fiveYears": 69,
+      "threeYears": 69,
+      "lastYear": 39,
+      "thisYear": 20
     },
     "oval": {
-      "ever": 62,
-      "tenYears": 62,
-      "fiveYears": 62,
-      "threeYears": 62,
-      "lastYear": 32,
-      "thisYear": 13
+      "ever": 69,
+      "tenYears": 69,
+      "fiveYears": 69,
+      "threeYears": 69,
+      "lastYear": 39,
+      "thisYear": 20
     }
   },
   "10570": {
@@ -3931,12 +3960,12 @@
     "id": 501,
     "released": 2024,
     "all": {
-      "ever": 48,
-      "tenYears": 48,
-      "fiveYears": 48,
-      "threeYears": 48,
-      "lastYear": 22,
-      "thisYear": 5
+      "ever": 53,
+      "tenYears": 53,
+      "fiveYears": 53,
+      "threeYears": 53,
+      "lastYear": 26,
+      "thisYear": 8
     },
     "formula_car": {
       "ever": 17,
@@ -3947,12 +3976,12 @@
       "thisYear": 1
     },
     "sports_car": {
-      "ever": 31,
-      "tenYears": 31,
-      "fiveYears": 31,
-      "threeYears": 31,
-      "lastYear": 16,
-      "thisYear": 4
+      "ever": 36,
+      "tenYears": 36,
+      "fiveYears": 36,
+      "threeYears": 36,
+      "lastYear": 20,
+      "thisYear": 7
     }
   },
   "10574": {
@@ -3960,28 +3989,28 @@
     "id": 509,
     "released": 2024,
     "all": {
-      "ever": 154,
-      "tenYears": 154,
-      "fiveYears": 154,
-      "threeYears": 154,
-      "lastYear": 92,
-      "thisYear": 24
+      "ever": 163,
+      "tenYears": 163,
+      "fiveYears": 163,
+      "threeYears": 163,
+      "lastYear": 100,
+      "thisYear": 32
     },
     "formula_car": {
-      "ever": 56,
-      "tenYears": 56,
-      "fiveYears": 56,
-      "threeYears": 56,
-      "lastYear": 34,
-      "thisYear": 9
+      "ever": 61,
+      "tenYears": 61,
+      "fiveYears": 61,
+      "threeYears": 61,
+      "lastYear": 39,
+      "thisYear": 14
     },
     "sports_car": {
-      "ever": 98,
-      "tenYears": 98,
-      "fiveYears": 98,
-      "threeYears": 98,
-      "lastYear": 58,
-      "thisYear": 15
+      "ever": 102,
+      "tenYears": 102,
+      "fiveYears": 102,
+      "threeYears": 102,
+      "lastYear": 61,
+      "thisYear": 18
     }
   },
   "10575": {
@@ -3989,20 +4018,20 @@
     "id": 513,
     "released": 2024,
     "all": {
-      "ever": 64,
-      "tenYears": 64,
-      "fiveYears": 64,
-      "threeYears": 64,
-      "lastYear": 33,
-      "thisYear": 8
+      "ever": 66,
+      "tenYears": 66,
+      "fiveYears": 66,
+      "threeYears": 66,
+      "lastYear": 35,
+      "thisYear": 10
     },
     "dirt_oval": {
-      "ever": 64,
-      "tenYears": 64,
-      "fiveYears": 64,
-      "threeYears": 64,
-      "lastYear": 33,
-      "thisYear": 8
+      "ever": 66,
+      "tenYears": 66,
+      "fiveYears": 66,
+      "threeYears": 66,
+      "lastYear": 35,
+      "thisYear": 10
     }
   },
   "10577": {
@@ -4010,28 +4039,28 @@
     "id": 516,
     "released": 2024,
     "all": {
-      "ever": 104,
-      "tenYears": 104,
-      "fiveYears": 104,
-      "threeYears": 104,
-      "lastYear": 69,
-      "thisYear": 25
+      "ever": 110,
+      "tenYears": 110,
+      "fiveYears": 110,
+      "threeYears": 110,
+      "lastYear": 75,
+      "thisYear": 31
     },
     "sports_car": {
-      "ever": 64,
-      "tenYears": 64,
-      "fiveYears": 64,
-      "threeYears": 64,
-      "lastYear": 41,
-      "thisYear": 14
+      "ever": 68,
+      "tenYears": 68,
+      "fiveYears": 68,
+      "threeYears": 68,
+      "lastYear": 45,
+      "thisYear": 18
     },
     "formula_car": {
-      "ever": 38,
-      "tenYears": 38,
-      "fiveYears": 38,
-      "threeYears": 38,
-      "lastYear": 26,
-      "thisYear": 10
+      "ever": 40,
+      "tenYears": 40,
+      "fiveYears": 40,
+      "threeYears": 40,
+      "lastYear": 28,
+      "thisYear": 12
     },
     "oval": {
       "ever": 2,
@@ -4047,28 +4076,28 @@
     "id": 520,
     "released": 2024,
     "all": {
-      "ever": 116,
-      "tenYears": 116,
-      "fiveYears": 116,
-      "threeYears": 116,
-      "lastYear": 74,
-      "thisYear": 21
+      "ever": 126,
+      "tenYears": 126,
+      "fiveYears": 126,
+      "threeYears": 126,
+      "lastYear": 84,
+      "thisYear": 31
     },
     "dirt_oval": {
-      "ever": 64,
-      "tenYears": 64,
-      "fiveYears": 64,
-      "threeYears": 64,
-      "lastYear": 45,
-      "thisYear": 11
+      "ever": 69,
+      "tenYears": 69,
+      "fiveYears": 69,
+      "threeYears": 69,
+      "lastYear": 50,
+      "thisYear": 16
     },
     "oval": {
-      "ever": 51,
-      "tenYears": 51,
-      "fiveYears": 51,
-      "threeYears": 51,
-      "lastYear": 29,
-      "thisYear": 10
+      "ever": 56,
+      "tenYears": 56,
+      "fiveYears": 56,
+      "threeYears": 56,
+      "lastYear": 34,
+      "thisYear": 15
     },
     "formula_car": {
       "ever": 1,
@@ -4082,12 +4111,12 @@
     "id": 521,
     "released": 2024,
     "all": {
-      "ever": 28,
-      "tenYears": 28,
-      "fiveYears": 28,
-      "threeYears": 28,
-      "lastYear": 18,
-      "thisYear": 6
+      "ever": 29,
+      "tenYears": 29,
+      "fiveYears": 29,
+      "threeYears": 29,
+      "lastYear": 19,
+      "thisYear": 7
     },
     "sports_car": {
       "ever": 18,
@@ -4098,12 +4127,12 @@
       "thisYear": 5
     },
     "formula_car": {
-      "ever": 10,
-      "tenYears": 10,
-      "fiveYears": 10,
-      "threeYears": 10,
-      "lastYear": 7,
-      "thisYear": 1
+      "ever": 11,
+      "tenYears": 11,
+      "fiveYears": 11,
+      "threeYears": 11,
+      "lastYear": 8,
+      "thisYear": 2
     }
   },
   "10588": {
@@ -4139,20 +4168,20 @@
     "id": 531,
     "released": 2025,
     "all": {
-      "ever": 71,
-      "tenYears": 71,
-      "fiveYears": 71,
-      "threeYears": 71,
-      "lastYear": 71,
-      "thisYear": 14
+      "ever": 79,
+      "tenYears": 79,
+      "fiveYears": 79,
+      "threeYears": 79,
+      "lastYear": 79,
+      "thisYear": 22
     },
     "dirt_oval": {
-      "ever": 70,
-      "tenYears": 70,
-      "fiveYears": 70,
-      "threeYears": 70,
-      "lastYear": 70,
-      "thisYear": 14
+      "ever": 78,
+      "tenYears": 78,
+      "fiveYears": 78,
+      "threeYears": 78,
+      "lastYear": 78,
+      "thisYear": 22
     },
     "oval": {
       "ever": 1,
@@ -4167,12 +4196,12 @@
     "id": 532,
     "released": 2025,
     "all": {
-      "ever": 43,
-      "tenYears": 43,
-      "fiveYears": 43,
-      "threeYears": 43,
-      "lastYear": 43,
-      "thisYear": 9
+      "ever": 44,
+      "tenYears": 44,
+      "fiveYears": 44,
+      "threeYears": 44,
+      "lastYear": 44,
+      "thisYear": 10
     },
     "sports_car": {
       "ever": 32,
@@ -4183,12 +4212,12 @@
       "thisYear": 7
     },
     "formula_car": {
-      "ever": 11,
-      "tenYears": 11,
-      "fiveYears": 11,
-      "threeYears": 11,
-      "lastYear": 11,
-      "thisYear": 2
+      "ever": 12,
+      "tenYears": 12,
+      "fiveYears": 12,
+      "threeYears": 12,
+      "lastYear": 12,
+      "thisYear": 3
     }
   },
   "10596": {
@@ -4196,20 +4225,152 @@
     "id": 538,
     "released": 2026,
     "all": {
-      "ever": 55,
-      "tenYears": 55,
-      "fiveYears": 55,
-      "threeYears": 55,
-      "lastYear": 55,
+      "ever": 59,
+      "tenYears": 59,
+      "fiveYears": 59,
+      "threeYears": 59,
+      "lastYear": 59,
+      "thisYear": 59
+    },
+    "sports_car": {
+      "ever": 36,
+      "tenYears": 36,
+      "fiveYears": 36,
+      "threeYears": 36,
+      "lastYear": 36,
+      "thisYear": 36
+    },
+    "formula_car": {
+      "ever": 23,
+      "tenYears": 23,
+      "fiveYears": 23,
+      "threeYears": 23,
+      "lastYear": 23,
+      "thisYear": 23
+    }
+  },
+  "10597": {
+    "sku": 10597,
+    "id": 537,
+    "released": 2025,
+    "all": {
+      "ever": 59,
+      "tenYears": 59,
+      "fiveYears": 59,
+      "threeYears": 59,
+      "lastYear": 59,
+      "thisYear": 22
+    },
+    "formula_car": {
+      "ever": 25,
+      "tenYears": 25,
+      "fiveYears": 25,
+      "threeYears": 25,
+      "lastYear": 25,
+      "thisYear": 11
+    },
+    "sports_car": {
+      "ever": 30,
+      "tenYears": 30,
+      "fiveYears": 30,
+      "threeYears": 30,
+      "lastYear": 30,
+      "thisYear": 9
+    },
+    "oval": {
+      "ever": 4,
+      "tenYears": 4,
+      "fiveYears": 4,
+      "threeYears": 4,
+      "lastYear": 4,
+      "thisYear": 2
+    }
+  },
+  "10604": {
+    "sku": 10604,
+    "id": 541,
+    "released": 2025,
+    "all": {
+      "ever": 54,
+      "tenYears": 54,
+      "fiveYears": 54,
+      "threeYears": 54,
+      "lastYear": 54,
+      "thisYear": 21
+    },
+    "sports_car": {
+      "ever": 44,
+      "tenYears": 44,
+      "fiveYears": 44,
+      "threeYears": 44,
+      "lastYear": 44,
+      "thisYear": 16
+    },
+    "formula_car": {
+      "ever": 10,
+      "tenYears": 10,
+      "fiveYears": 10,
+      "threeYears": 10,
+      "lastYear": 10,
+      "thisYear": 5
+    }
+  },
+  "10609": {
+    "sku": 10609,
+    "id": 575,
+    "released": 2025,
+    "all": {
+      "ever": 94,
+      "tenYears": 94,
+      "fiveYears": 94,
+      "threeYears": 94,
+      "lastYear": 94,
       "thisYear": 55
     },
     "sports_car": {
-      "ever": 33,
-      "tenYears": 33,
-      "fiveYears": 33,
-      "threeYears": 33,
-      "lastYear": 33,
-      "thisYear": 33
+      "ever": 49,
+      "tenYears": 49,
+      "fiveYears": 49,
+      "threeYears": 49,
+      "lastYear": 49,
+      "thisYear": 24
+    },
+    "formula_car": {
+      "ever": 37,
+      "tenYears": 37,
+      "fiveYears": 37,
+      "threeYears": 37,
+      "lastYear": 37,
+      "thisYear": 23
+    },
+    "oval": {
+      "ever": 8,
+      "tenYears": 8,
+      "fiveYears": 8,
+      "threeYears": 8,
+      "lastYear": 8,
+      "thisYear": 8
+    }
+  },
+  "10612": {
+    "sku": 10612,
+    "id": 580,
+    "released": 2026,
+    "all": {
+      "ever": 62,
+      "tenYears": 62,
+      "fiveYears": 62,
+      "threeYears": 62,
+      "lastYear": 62,
+      "thisYear": 62
+    },
+    "sports_car": {
+      "ever": 40,
+      "tenYears": 40,
+      "fiveYears": 40,
+      "threeYears": 40,
+      "lastYear": 40,
+      "thisYear": 40
     },
     "formula_car": {
       "ever": 22,
@@ -4220,165 +4381,70 @@
       "thisYear": 22
     }
   },
-  "10597": {
-    "sku": 10597,
-    "id": 537,
-    "released": 2025,
-    "all": {
-      "ever": 52,
-      "tenYears": 52,
-      "fiveYears": 52,
-      "threeYears": 52,
-      "lastYear": 52,
-      "thisYear": 15
-    },
-    "formula_car": {
-      "ever": 20,
-      "tenYears": 20,
-      "fiveYears": 20,
-      "threeYears": 20,
-      "lastYear": 20,
-      "thisYear": 6
-    },
-    "sports_car": {
-      "ever": 29,
-      "tenYears": 29,
-      "fiveYears": 29,
-      "threeYears": 29,
-      "lastYear": 29,
-      "thisYear": 8
-    },
-    "oval": {
-      "ever": 3,
-      "tenYears": 3,
-      "fiveYears": 3,
-      "threeYears": 3,
-      "lastYear": 3,
-      "thisYear": 1
-    }
-  },
-  "10604": {
-    "sku": 10604,
-    "id": 541,
-    "released": 2025,
-    "all": {
-      "ever": 48,
-      "tenYears": 48,
-      "fiveYears": 48,
-      "threeYears": 48,
-      "lastYear": 48,
-      "thisYear": 15
-    },
-    "sports_car": {
-      "ever": 39,
-      "tenYears": 39,
-      "fiveYears": 39,
-      "threeYears": 39,
-      "lastYear": 39,
-      "thisYear": 11
-    },
-    "formula_car": {
-      "ever": 9,
-      "tenYears": 9,
-      "fiveYears": 9,
-      "threeYears": 9,
-      "lastYear": 9,
-      "thisYear": 4
-    }
-  },
-  "10609": {
-    "sku": 10609,
-    "id": 575,
-    "released": 2025,
-    "all": {
-      "ever": 87,
-      "tenYears": 87,
-      "fiveYears": 87,
-      "threeYears": 87,
-      "lastYear": 87,
-      "thisYear": 48
-    },
-    "sports_car": {
-      "ever": 48,
-      "tenYears": 48,
-      "fiveYears": 48,
-      "threeYears": 48,
-      "lastYear": 48,
-      "thisYear": 23
-    },
-    "formula_car": {
-      "ever": 32,
-      "tenYears": 32,
-      "fiveYears": 32,
-      "threeYears": 32,
-      "lastYear": 32,
-      "thisYear": 18
-    },
-    "oval": {
-      "ever": 7,
-      "tenYears": 7,
-      "fiveYears": 7,
-      "threeYears": 7,
-      "lastYear": 7,
-      "thisYear": 7
-    }
-  },
-  "10612": {
-    "sku": 10612,
-    "id": 580,
-    "released": 2026,
-    "all": {
-      "ever": 47,
-      "tenYears": 47,
-      "fiveYears": 47,
-      "threeYears": 47,
-      "lastYear": 47,
-      "thisYear": 47
-    },
-    "sports_car": {
-      "ever": 32,
-      "tenYears": 32,
-      "fiveYears": 32,
-      "threeYears": 32,
-      "lastYear": 32,
-      "thisYear": 32
-    },
-    "formula_car": {
-      "ever": 15,
-      "tenYears": 15,
-      "fiveYears": 15,
-      "threeYears": 15,
-      "lastYear": 15,
-      "thisYear": 15
-    }
-  },
   "10613": {
     "sku": 10613,
     "id": 584,
     "released": 2026,
     "all": {
-      "ever": 24,
-      "tenYears": 24,
-      "fiveYears": 24,
-      "threeYears": 24,
-      "lastYear": 24,
-      "thisYear": 24
+      "ever": 38,
+      "tenYears": 38,
+      "fiveYears": 38,
+      "threeYears": 38,
+      "lastYear": 38,
+      "thisYear": 38
     },
     "sports_car": {
-      "ever": 15,
-      "tenYears": 15,
-      "fiveYears": 15,
-      "threeYears": 15,
-      "lastYear": 15,
-      "thisYear": 15
+      "ever": 27,
+      "tenYears": 27,
+      "fiveYears": 27,
+      "threeYears": 27,
+      "lastYear": 27,
+      "thisYear": 27
     },
     "formula_car": {
-      "ever": 9,
-      "tenYears": 9,
-      "fiveYears": 9,
-      "threeYears": 9,
-      "lastYear": 9,
-      "thisYear": 9
+      "ever": 11,
+      "tenYears": 11,
+      "fiveYears": 11,
+      "threeYears": 11,
+      "lastYear": 11,
+      "thisYear": 11
+    }
+  },
+  "10616": {
+    "sku": 10616,
+    "id": 589,
+    "released": 2026,
+    "all": {
+      "ever": 14,
+      "tenYears": 14,
+      "fiveYears": 14,
+      "threeYears": 14,
+      "lastYear": 14,
+      "thisYear": 14
+    },
+    "formula_car": {
+      "ever": 1,
+      "tenYears": 1,
+      "fiveYears": 1,
+      "threeYears": 1,
+      "lastYear": 1,
+      "thisYear": 1
+    },
+    "sports_car": {
+      "ever": 5,
+      "tenYears": 5,
+      "fiveYears": 5,
+      "threeYears": 5,
+      "lastYear": 5,
+      "thisYear": 5
+    },
+    "oval": {
+      "ever": 8,
+      "tenYears": 8,
+      "fiveYears": 8,
+      "threeYears": 8,
+      "lastYear": 8,
+      "thisYear": 8
     }
   }
 }

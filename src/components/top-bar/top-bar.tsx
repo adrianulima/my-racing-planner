@@ -38,7 +38,7 @@ function TopBar({ ...props }: StackProps) {
               fontWeight="bold"
               userSelect={"none"}
             >
-              {t("seasonLabel.current", { year: 2026, season: 2 })}
+              {t("seasonLabel.current", { year: 2026, season: 3 })}
             </Heading>
             <HStack>
               <AboutDialog ids={{ trigger: "about-dialog" }}>
