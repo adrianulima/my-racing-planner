@@ -5,6 +5,7 @@ import {
   setSeasonShowOwned,
   setSeasonShowParticipation,
   setSeasonHidePastWeeks,
+  setSeasonHideEmptyWeeks,
   setSeasonShowThisWeek,
   setSeasonShowTrackConfig,
   setSeasonShowWishlist,
@@ -29,6 +30,7 @@ function SeasonSettingsPopover() {
     seasonShowParticipation,
     seasonHidePastWeeks,
     seasonUseLocalTimezone,
+    seasonHideEmptyWeeks,
   } = useUi();
   const { t } = useTranslation();
 
@@ -70,6 +72,13 @@ function SeasonSettingsPopover() {
       tooltip: t("settings.highlightCurrentWeekTooltip"),
       checked: seasonShowThisWeek,
       setChecked: setSeasonShowThisWeek,
+    },
+    {
+      id: "emptyWeeks",
+      text: t("settings.hideEmptyWeeks"),
+      tooltip: t("settings.hideEmptyWeeksTooltip"),
+      checked: seasonHideEmptyWeeks,
+      setChecked: setSeasonHideEmptyWeeks,
     },
     {
       id: "pastWeeks",

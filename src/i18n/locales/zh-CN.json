@@ -5,6 +5,8 @@
   },
   "common": {
     "apply": "应用",
+    "backTo": "返回",
+    "calendar": "日历",
     "cars": "赛车",
     "cancel": "取消",
     "category": "类别",
@@ -34,10 +36,14 @@
     "settings": "设置",
     "setup": "调校",
     "tracks": "赛道",
+    "type": "类型",
     "unranked": "非排名",
     "used": "使用次数",
     "usagePerYear": "每年使用",
     "week": "周",
+    "weeks": "周",
+    "weeksRaced": "已比赛周",
+    "weeksUsed": "已使用周",
     "wishlist": "愿望清单"
   },
   "categories": {
@@ -152,6 +158,8 @@
     "localTimezone": "使用 {{timezone}} 时间显示赛程",
     "localTimezoneTooltip": "将比赛时间从 UTC 转换为本地时区",
     "invertAxis": "切换坐标轴",
+    "hideEmptyWeeks": "隐藏空周",
+    "hideEmptyWeeksTooltip": "隐藏没有系列赛使用此内容的周次",
     "hidePastWeeks": "隐藏已过去周",
     "hidePastWeeksTooltip": "隐藏已经过去的周次",
     "volumeDiscount": "批量折扣",
@@ -159,6 +167,11 @@
     "volumeDiscountLink": "前往 iRacing 官方批量折扣文章",
     "loyaltyDiscount": "忠诚折扣",
     "loyaltyDiscountTooltip": "应用 iRacing 忠诚折扣"
+  },
+  "detail": {
+    "noSeries": "未找到此内容的系列赛",
+    "notFound": "未找到内容",
+    "notFoundDescription": "找不到所请求的内容。"
   },
   "counts": {
     "freeTooltip": "iRacing 订阅免费包含",

@@ -5,6 +5,8 @@
   },
   "common": {
     "apply": "적용",
+    "backTo": "돌아가기",
+    "calendar": "달력",
     "cars": "차량",
     "cancel": "취소",
     "category": "카테고리",
@@ -34,10 +36,14 @@
     "settings": "설정",
     "setup": "셋업",
     "tracks": "트랙",
+    "type": "유형",
     "unranked": "비랭크",
     "used": "사용",
     "usagePerYear": "연간 사용",
     "week": "주차",
+    "weeks": "주",
+    "weeksRaced": "레이스 주",
+    "weeksUsed": "사용된 주",
     "wishlist": "위시리스트"
   },
   "categories": {
@@ -152,6 +158,8 @@
     "localTimezone": "{{timezone}} 시간으로 일정 표시",
     "localTimezoneTooltip": "레이스 시간을 UTC에서 현지 시간대로 변환합니다",
     "invertAxis": "축 바꾸기",
+    "hideEmptyWeeks": "빈 주 숨기기",
+    "hideEmptyWeeksTooltip": "어떤 시리즈도 이 콘텐츠를 사용하지 않는 주를 숨깁니다",
     "hidePastWeeks": "지난 주 숨기기",
     "hidePastWeeksTooltip": "이미 지난 주를 숨깁니다",
     "volumeDiscount": "볼륨 할인",
@@ -159,6 +167,11 @@
     "volumeDiscountLink": "iRacing 공식 볼륨 할인 게시글로 이동",
     "loyaltyDiscount": "충성도 할인",
     "loyaltyDiscountTooltip": "iRacing 충성도 할인을 적용합니다"
+  },
+  "detail": {
+    "noSeries": "이 콘텐츠에 대한 시리즈를 찾을 수 없습니다",
+    "notFound": "콘텐츠를 찾을 수 없습니다",
+    "notFoundDescription": "요청한 콘텐츠를 찾을 수 없습니다."
   },
   "counts": {
     "freeTooltip": "iRacing 구독에 무료로 포함됩니다",

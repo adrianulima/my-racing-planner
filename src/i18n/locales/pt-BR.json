@@ -5,6 +5,8 @@
   },
   "common": {
     "apply": "Aplicar",
+    "backTo": "Voltar para",
+    "calendar": "Calendário",
     "cars": "Carros",
     "cancel": "Cancelar",
     "category": "Categoria",
@@ -34,10 +36,14 @@
     "settings": "Configurações",
     "setup": "Setup",
     "tracks": "Pistas",
+    "type": "Tipo",
     "unranked": "Não ranqueada",
     "used": "Usado",
     "usagePerYear": "Uso/ano",
     "week": "semana",
+    "weeks": "Semanas",
+    "weeksRaced": "semanas corridas",
+    "weeksUsed": "semanas usadas",
     "wishlist": "Lista de desejos"
   },
   "categories": {
@@ -152,6 +158,8 @@
     "localTimezone": "Horários em {{timezone}}",
     "localTimezoneTooltip": "Converte os horários das corridas de UTC para o seu fuso horário local",
     "invertAxis": "Trocar eixos",
+    "hideEmptyWeeks": "Ocultar semanas vazias",
+    "hideEmptyWeeksTooltip": "Ocultar semanas onde nenhuma série usa este conteúdo",
     "hidePastWeeks": "Ocultar semanas passadas",
     "hidePastWeeksTooltip": "Ocultar semanas que já passaram",
     "volumeDiscount": "Desconto por volume",
@@ -159,6 +167,11 @@
     "volumeDiscountLink": "Ir para o post oficial do iRacing sobre descontos por volume",
     "loyaltyDiscount": "Desconto de fidelidade",
     "loyaltyDiscountTooltip": "Aplica o desconto de fidelidade do iRacing"
+  },
+  "detail": {
+    "noSeries": "Nenhuma série encontrada para este conteúdo",
+    "notFound": "Conteúdo não encontrado",
+    "notFoundDescription": "O conteúdo solicitado não pôde ser encontrado."
   },
   "counts": {
     "freeTooltip": "Disponível grátis com uma assinatura do iRacing",

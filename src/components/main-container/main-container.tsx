@@ -6,10 +6,12 @@ import { Redirect, Route, Switch } from "wouter";
 import LoadingContainer from "../page/loading-container";
 
 const CarsPage = lazy(() => import("../content/cars-page"));
+const CarDetailPage = lazy(() => import("../content/car-detail-page"));
 const SeasonPage = lazy(() => import("../season/season-page"));
 const SeriesPage = lazy(() => import("../series/series-page"));
 const ShopPage = lazy(() => import("../shop-guide/shop-page"));
 const TracksPage = lazy(() => import("../content/tracks-page"));
+const TrackDetailPage = lazy(() => import("../content/track-detail-page"));
 const HistoryPage = lazy(() => import("../history/history-page"));
 const SchedulePage = lazy(() => import("../schedule/schedule-page"));
 
@@ -32,6 +34,8 @@ function MainContainer() {
     >
       <Suspense fallback={<LoadingContainer />}>
         <Switch>
+          <Route path="/cars/:id" component={CarDetailPage} />
+          <Route path="/tracks/:id" component={TrackDetailPage} />
           <Route path={ETabs.MySeason} component={SeasonPage} />
           <Route path={ETabs.MySeries} component={SeriesPage} />
           <Route path={ETabs.MyCars} component={CarsPage} />

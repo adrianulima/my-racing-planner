@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
   PopoverArrow,
   PopoverContent,
@@ -44,6 +45,7 @@ function ContentTableRow({
   skuIcon,
   owned,
   wish,
+  onDetail,
 }: {
   content: "cars" | "tracks";
   id: number;
@@ -58,7 +60,9 @@ function ContentTableRow({
   skuGroup?: { [key: string]: string };
   series?: number[];
   skuIcon: IconDefinition;
+  onDetail?: (id: number) => void;
 }) {
+  const [logoError, setLogoError] = useState(false);
   const skuItems = skuGroup ? Object.values(skuGroup) : [];
   const { t } = useTranslation();
   return (
@@ -74,7 +78,7 @@ function ContentTableRow({
         />
       </Table.Cell>
       <Table.Cell minWidth={"60px"} textAlign={"center"}>
-        {logo && (
+        {logo && !logoError && (
           <Center>
             <Tooltip
               lazyMount
@@ -103,13 +107,19 @@ function ContentTableRow({
                 h="24px"
                 fit="contain"
                 src={`${IR_URL.image}${logo}`}
+                onError={() => setLogoError(true)}
               />
             </Tooltip>
           </Center>
         )}
       </Table.Cell>
       <Table.Cell width={"100%"}>
-        <ContentNameBadge name={name} />
+        <ContentNameBadge
+          name={name}
+          cursor={onDetail ? "pointer" : undefined}
+          _hover={onDetail ? { color: "blue.500", textDecoration: "underline" } : undefined}
+          onClick={() => onDetail?.(id)}
+        />
       </Table.Cell>
       <Table.Cell minWidth={"90px"} textAlign={"center"}>
         {skuGroup && (

@@ -1,6 +1,8 @@
 {
   "common": {
     "apply": "Anwenden",
+    "backTo": "Zurück zu",
+    "calendar": "Kalender",
     "cars": "Autos",
     "cancel": "Abbrechen",
     "category": "Kategorie",
@@ -29,10 +31,14 @@
     "settings": "Einstellungen",
     "setup": "Setup",
     "tracks": "Strecken",
+    "type": "Typ",
     "unranked": "Nicht gewertet",
     "used": "Genutzt",
     "usagePerYear": "Nutzung/Jahr",
     "week": "Woche",
+    "weeks": "Wochen",
+    "weeksRaced": "Wochen gefahren",
+    "weeksUsed": "Wochen genutzt",
     "wishlist": "Wunschliste"
   },
   "categories": {
@@ -147,6 +153,8 @@
     "localTimezone": "Zeitplan in {{timezone}}",
     "localTimezoneTooltip": "Rennzeiten von UTC in deine lokale Zeitzone umrechnen",
     "invertAxis": "Achsen tauschen",
+    "hideEmptyWeeks": "Leere Wochen ausblenden",
+    "hideEmptyWeeksTooltip": "Wochen ausblenden, in denen keine Serie diesen Inhalt nutzt",
     "hidePastWeeks": "Vergangene Wochen ausblenden",
     "hidePastWeeksTooltip": "Bereits vergangene Wochen ausblenden",
     "volumeDiscount": "Mengenrabatt",
@@ -154,6 +162,11 @@
     "volumeDiscountLink": "Offiziellen iRacing-Beitrag zu Mengenrabatten öffnen",
     "loyaltyDiscount": "Treuerabatt",
     "loyaltyDiscountTooltip": "iRacing-Treuerabatt anwenden"
+  },
+  "detail": {
+    "noSeries": "Keine Serien für diesen Inhalt gefunden",
+    "notFound": "Inhalt nicht gefunden",
+    "notFoundDescription": "Der angeforderte Inhalt konnte nicht gefunden werden."
   },
   "help": {
     "seriesHeading": "Beginne mit der Seite <series>Meine Serien</series>",
