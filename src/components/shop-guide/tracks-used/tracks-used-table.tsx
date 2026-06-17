@@ -10,13 +10,15 @@ import TracksUsedEmpty from "./tracks-used-empty";
 import TracksUsedRow from "./tracks-used-row";
 
 function TracksUsedTable() {
-  const { wishTracks, favoriteSeries } = useIr();
+  const { wishTracks, favoriteSeries, weekOffWeeks } = useIr();
   const { onScroll } = useAppLayout();
   const { t } = useTranslation();
   const tracksMap = favoriteSeries.reduce(
     (acc, curr) => {
       const series = SERIES_JSON[curr.toString() as keyof typeof SERIES_JSON];
       series?.weeks.forEach((week) => {
+        const weekDate = getPreviousTuesday(week.date);
+        if (weekOffWeeks.includes(week.weekNum)) return;
         const track =
           TRACKS_JSON[week.track.id.toString() as keyof typeof TRACKS_JSON];
         if (!track || track.free) {
@@ -30,7 +32,6 @@ function TracksUsedTable() {
           weeks: {},
           used: 0,
         };
-        const weekDate = getPreviousTuesday(week.date);
         acc[skuId].weeks[series.id] = acc[skuId].weeks[series.id] ?? [];
         acc[skuId].weeks[series.id].push(weekDate);
         acc[skuId].used++;
