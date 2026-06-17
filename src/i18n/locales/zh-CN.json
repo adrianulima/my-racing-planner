@@ -156,7 +156,9 @@
     "volumeDiscountTooltip": "应用 iRacing 批量购买折扣",
     "volumeDiscountLink": "前往 iRacing 官方批量折扣文章",
     "loyaltyDiscount": "忠诚折扣",
-    "loyaltyDiscountTooltip": "应用 iRacing 忠诚折扣"
+    "loyaltyDiscountTooltip": "应用 iRacing 忠诚折扣",
+    "markWeekOff": "Week off",
+    "markWeekOffTooltip": "When unchecked, this week's tracks won't count toward your Shop Guide"
   },
   "counts": {
     "freeTooltip": "iRacing 订阅免费包含",

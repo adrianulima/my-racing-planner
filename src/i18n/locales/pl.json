@@ -151,7 +151,9 @@
     "volumeDiscountTooltip": "Zastosuj rabaty iRacing dla zakupów pakietowych",
     "volumeDiscountLink": "Przejdź do oficjalnego wpisu iRacing o rabatach ilościowych",
     "loyaltyDiscount": "Rabat lojalnościowy",
-    "loyaltyDiscountTooltip": "Zastosuj rabat lojalnościowy iRacing"
+    "loyaltyDiscountTooltip": "Zastosuj rabat lojalnościowy iRacing",
+    "markWeekOff": "Week off",
+    "markWeekOffTooltip": "When unchecked, this week's tracks won't count toward your Shop Guide"
   },
   "help": {
     "seriesHeading": "Zacznij od strony <series>Moje serie</series>",

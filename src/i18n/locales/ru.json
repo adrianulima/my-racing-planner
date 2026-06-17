@@ -151,7 +151,9 @@
     "volumeDiscountTooltip": "Применять скидки iRacing за пакетные покупки",
     "volumeDiscountLink": "Открыть официальный пост iRacing о скидках за объём",
     "loyaltyDiscount": "Скидка лояльности",
-    "loyaltyDiscountTooltip": "Применять скидку лояльности iRacing"
+    "loyaltyDiscountTooltip": "Применять скидку лояльности iRacing",
+    "markWeekOff": "Week off",
+    "markWeekOffTooltip": "When unchecked, this week's tracks won't count toward your Shop Guide"
   },
   "help": {
     "seriesHeading": "Начните со страницы <series>Мои серии</series>",

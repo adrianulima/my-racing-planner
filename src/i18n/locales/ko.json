@@ -156,7 +156,9 @@
     "volumeDiscountTooltip": "묶음 구매에 대한 iRacing 할인을 적용합니다",
     "volumeDiscountLink": "iRacing 공식 볼륨 할인 게시글로 이동",
     "loyaltyDiscount": "충성도 할인",
-    "loyaltyDiscountTooltip": "iRacing 충성도 할인을 적용합니다"
+    "loyaltyDiscountTooltip": "iRacing 충성도 할인을 적용합니다",
+    "markWeekOff": "Week off",
+    "markWeekOffTooltip": "When unchecked, this week's tracks won't count toward your Shop Guide"
   },
   "counts": {
     "freeTooltip": "iRacing 구독에 무료로 포함됩니다",

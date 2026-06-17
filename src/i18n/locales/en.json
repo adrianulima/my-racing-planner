@@ -156,7 +156,9 @@
     "volumeDiscountTooltip": "Apply iRacing discounts for bundle purchases",
     "volumeDiscountLink": "Go to iRacing's official Volume Discounts blog post",
     "loyaltyDiscount": "Loyalty discount",
-    "loyaltyDiscountTooltip": "Apply iRacing loyalty discount"
+    "loyaltyDiscountTooltip": "Apply iRacing loyalty discount",
+    "markWeekOff": "Week off",
+    "markWeekOffTooltip": "When unchecked, this week's tracks won't count toward your Shop Guide"
   },
   "counts": {
     "freeTooltip": "Available for free with an iRacing subscription",

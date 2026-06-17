@@ -151,7 +151,9 @@
     "volumeDiscountTooltip": "Appliquer les remises iRacing pour les achats groupés",
     "volumeDiscountLink": "Voir l'article officiel iRacing sur les remises de volume",
     "loyaltyDiscount": "Remise fidélité",
-    "loyaltyDiscountTooltip": "Appliquer la remise fidélité iRacing"
+    "loyaltyDiscountTooltip": "Appliquer la remise fidélité iRacing",
+    "markWeekOff": "Week off",
+    "markWeekOffTooltip": "When unchecked, this week's tracks won't count toward your Shop Guide"
   },
   "help": {
     "seriesHeading": "Commencez par la page <series>Mes séries</series>",
