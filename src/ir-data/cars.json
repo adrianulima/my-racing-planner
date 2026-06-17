@@ -9,7 +9,6 @@
     "price": 12.95,
     "sku": 10009,
     "series": [
-      526,
       34
     ],
     "logo": "/img/logos/partners/skipbarber-logo.png"
@@ -35,9 +34,9 @@
     "skuSeries": [
       45,
       441,
+      575,
       102,
-      417,
-      575
+      417
     ]
   },
   "3": {
@@ -83,9 +82,9 @@
     "price": 0,
     "sku": 10008,
     "series": [
+      562,
       483,
-      32,
-      562
+      32
     ],
     "logo": "/img/logos/partners/legends-logo.png",
     "skuGroup": {
@@ -94,9 +93,9 @@
       "82": "Dirt Legends Ford '34 Coupe"
     },
     "skuSeries": [
+      562,
       483,
       32,
-      562,
       315
     ]
   },
@@ -135,7 +134,9 @@
     "free": true,
     "price": 0,
     "sku": 10040,
-    "series": [],
+    "series": [
+      526
+    ],
     "logo": "/img/logos/partners/radical-logo.png"
   },
   "18": {
@@ -233,8 +234,8 @@
     "price": 12.95,
     "sku": 10110,
     "series": [
-      65,
-      579
+      579,
+      65
     ],
     "logo": "/img/logos/partners/classicteamlotus-logo.png"
   },
@@ -248,6 +249,7 @@
     "price": 12.95,
     "sku": 10113,
     "series": [
+      526,
       432
     ],
     "logo": "/img/logos/partners/chevrolet-logo.png"
@@ -297,7 +299,9 @@
     "free": false,
     "price": 12.95,
     "sku": 10210,
-    "series": [],
+    "series": [
+      526
+    ],
     "logo": "/img/logos/partners/ford-logo.png"
   },
   "31": {
@@ -310,9 +314,9 @@
     "price": 12.95,
     "sku": 10010,
     "series": [
+      575,
       102,
-      417,
-      575
+      417
     ],
     "logo": "/img/logos/brand/iracingnotext-logo.png",
     "group": 2
@@ -370,8 +374,7 @@
     "sku": 10232,
     "series": [
       182,
-      190,
-      526
+      190
     ],
     "logo": "/img/logos/partners/jrmotorsports-logo.png"
   },
@@ -425,7 +428,6 @@
     "price": 12.95,
     "sku": 10281,
     "series": [
-      526,
       432
     ],
     "logo": "/img/logos/partners/ford-logo.png",
@@ -434,7 +436,6 @@
       "59": "Ford GT GT3"
     },
     "skuSeries": [
-      526,
       432
     ]
   },
@@ -488,7 +489,6 @@
     "price": 0,
     "sku": 10341,
     "series": [
-      526,
       210
     ],
     "logo": "/img/logos/partners/kia-logo.png"
@@ -597,9 +597,9 @@
     "price": 12.95,
     "sku": 10360,
     "series": [
+      574,
       223,
-      416,
-      574
+      416
     ],
     "logo": "/img/logos/brand/iracingnotext-logo.png"
   },
@@ -700,6 +700,7 @@
     "price": 12.95,
     "sku": 10389,
     "series": [
+      526,
       432
     ],
     "logo": "/img/logos/partners/astonmartin-logo.png"
@@ -803,7 +804,6 @@
     "price": 12.95,
     "sku": 10410,
     "series": [
-      526,
       285
     ],
     "logo": "/img/logos/partners/audi-logo.png"
@@ -844,9 +844,9 @@
       291,
       306,
       517,
+      500,
       308,
-      369,
-      500
+      369
     ]
   },
   "79": {
@@ -886,9 +886,9 @@
       292,
       305,
       515,
+      501,
       307,
-      458,
-      501
+      458
     ]
   },
   "81": {
@@ -947,9 +947,9 @@
     "price": 12.95,
     "sku": 10412,
     "series": [
+      500,
       308,
-      369,
-      500
+      369
     ],
     "logo": "/img/logos/series/woolatemodelseries-logo.png",
     "group": 78
@@ -980,9 +980,9 @@
     "price": 12.95,
     "sku": 10418,
     "series": [
+      501,
       307,
-      458,
-      501
+      458
     ],
     "logo": "/img/logos/partners/wooscseries-logo.png",
     "group": 80
@@ -1152,10 +1152,10 @@
     "price": 12.95,
     "sku": 10440,
     "series": [
+      374,
       132,
       165,
-      133,
-      374
+      133
     ],
     "logo": "/img/logos/partners/dallara-logo.png"
   },
@@ -1256,7 +1256,6 @@
     "price": 12.95,
     "sku": 10452,
     "series": [
-      526,
       431,
       456
     ],
@@ -1313,10 +1312,9 @@
     "price": 12.95,
     "sku": 10459,
     "series": [
+      47,
       538,
-      164,
-      601,
-      47
+      164
     ],
     "logo": "/img/logos/partners/chevrolet-logo.png"
   },
@@ -1357,10 +1355,9 @@
     "price": 12.95,
     "sku": 10464,
     "series": [
+      62,
       538,
-      103,
-      601,
-      62
+      103
     ],
     "logo": "/img/logos/partners/chevrolet-logo.png"
   },
@@ -1374,10 +1371,9 @@
     "price": 12.95,
     "sku": 10465,
     "series": [
+      62,
       538,
-      103,
-      601,
-      62
+      103
     ],
     "logo": "/img/logos/partners/ford-logo.png"
   },
@@ -1391,10 +1387,9 @@
     "price": 12.95,
     "sku": 10466,
     "series": [
+      62,
       538,
-      103,
-      601,
-      62
+      103
     ],
     "logo": "/img/logos/partners/toyota-logo.png"
   },
@@ -1432,7 +1427,7 @@
     "price": 12.95,
     "sku": 10473,
     "series": [
-      279,
+      451,
       275,
       526,
       491,
@@ -1490,10 +1485,9 @@
     "price": 12.95,
     "sku": 10481,
     "series": [
+      47,
       538,
-      164,
-      601,
-      47
+      164
     ],
     "logo": "/img/logos/partners/ford-logo.png"
   },
@@ -1551,6 +1545,7 @@
     "price": 12.95,
     "sku": 10488,
     "series": [
+      280,
       331,
       591,
       419,
@@ -1607,7 +1602,8 @@
     "price": 12.95,
     "sku": 10494,
     "series": [
-      279,
+      451,
+      280,
       275,
       619,
       526,
@@ -1635,7 +1631,8 @@
     "price": 12.95,
     "sku": 10495,
     "series": [
-      279,
+      451,
+      280,
       275,
       619,
       526,
@@ -1678,6 +1675,7 @@
     "price": 12.95,
     "sku": 10497,
     "series": [
+      451,
       526,
       491,
       502,
@@ -1724,13 +1722,12 @@
     "price": 12.95,
     "sku": 10503,
     "series": [
+      229,
+      207,
       116,
       538,
       58,
-      191,
-      601,
-      229,
-      207
+      191
     ],
     "logo": "/img/logos/partners/chevrolet-logo.png"
   },
@@ -1744,13 +1741,12 @@
     "price": 12.95,
     "sku": 10504,
     "series": [
+      229,
+      207,
       116,
       538,
       58,
-      191,
-      601,
-      229,
-      207
+      191
     ],
     "logo": "/img/logos/partners/ford-logo.png"
   },
@@ -1764,19 +1760,18 @@
     "price": 12.95,
     "sku": 10505,
     "series": [
+      229,
+      207,
       116,
       538,
       58,
-      191,
-      601,
-      229,
-      207
+      191
     ],
     "logo": "/img/logos/partners/toyota-logo.png"
   },
   "142": {
     "id": 142,
-    "name": "Formula Vee",
+    "name": "Formula Vee - Classic",
     "categories": [
       "formula_car"
     ],
@@ -1834,7 +1829,6 @@
     "price": 12.95,
     "sku": 10516,
     "series": [
-      279,
       275,
       430,
       503,
@@ -1852,7 +1846,6 @@
     "price": 12.95,
     "sku": 10517,
     "series": [
-      279,
       275,
       430,
       503,
@@ -1901,7 +1894,7 @@
     "price": 12.95,
     "sku": 10523,
     "series": [
-      279,
+      451,
       275,
       526,
       491,
@@ -1980,10 +1973,9 @@
     "price": 12.95,
     "sku": 10530,
     "series": [
+      47,
       538,
-      164,
-      601,
-      47
+      164
     ],
     "logo": "/img/logos/partners/toyota-logo.png"
   },
@@ -1997,7 +1989,8 @@
     "price": 12.95,
     "sku": 10532,
     "series": [
-      279,
+      451,
+      280,
       275,
       619,
       526,
@@ -2025,7 +2018,7 @@
     "price": 12.95,
     "sku": 10533,
     "series": [
-      279,
+      451,
       275,
       526,
       491,
@@ -2045,7 +2038,8 @@
     "price": 12.95,
     "sku": 10539,
     "series": [
-      505
+      505,
+      526
     ],
     "logo": "/img/logos/partners/porsche-logo.png"
   },
@@ -2059,6 +2053,7 @@
     "price": 12.95,
     "sku": 10543,
     "series": [
+      280,
       331,
       457,
       419,
@@ -2079,8 +2074,7 @@
     "series": [
       514,
       112,
-      584,
-      526
+      584
     ],
     "logo": "/img/logos/partners/toyota-logo.png"
   },
@@ -2094,10 +2088,10 @@
     "price": 12.95,
     "sku": 10545,
     "series": [
-      260,
-      484,
       496,
-      495
+      495,
+      260,
+      484
     ],
     "logo": "/img/logos/partners/mercedes-logo.png"
   },
@@ -2113,7 +2107,8 @@
     "series": [
       519,
       112,
-      584
+      584,
+      526
     ],
     "logo": "/img/logos/partners/renault-logo.png"
   },
@@ -2187,6 +2182,7 @@
     "price": 12.95,
     "sku": 10554,
     "series": [
+      280,
       331,
       457,
       419,
@@ -2205,7 +2201,8 @@
     "price": 12.95,
     "sku": 10555,
     "series": [
-      279,
+      451,
+      280,
       275,
       619,
       526,
@@ -2233,6 +2230,7 @@
     "price": 12.95,
     "sku": 10558,
     "series": [
+      280,
       331,
       457,
       419,
@@ -2290,7 +2288,8 @@
     "price": 12.95,
     "sku": 10563,
     "series": [
-      279,
+      451,
+      280,
       275,
       619,
       526,
@@ -2318,6 +2317,7 @@
     "price": 12.95,
     "sku": 10564,
     "series": [
+      280,
       331,
       457,
       419,
@@ -2351,6 +2351,7 @@
     "price": 12.95,
     "sku": 10567,
     "series": [
+      451,
       619,
       526,
       559,
@@ -2468,6 +2469,8 @@
     "price": 12.95,
     "sku": 10576,
     "series": [
+      451,
+      280,
       619,
       526,
       559,
@@ -2494,7 +2497,8 @@
     "price": 12.95,
     "sku": 10580,
     "series": [
-      279,
+      451,
+      280,
       275,
       619,
       526,
@@ -2523,8 +2527,7 @@
     "sku": 10581,
     "series": [
       182,
-      190,
-      526
+      190
     ],
     "skuGroup": {
       "186": "Street Stock - Casino M2",
@@ -2532,8 +2535,7 @@
     },
     "skuSeries": [
       182,
-      190,
-      526
+      190
     ]
   },
   "187": {
@@ -2547,8 +2549,7 @@
     "sku": 10581,
     "series": [
       182,
-      190,
-      526
+      190
     ],
     "group": 186
   },
@@ -2562,6 +2563,7 @@
     "price": 12.95,
     "sku": 10583,
     "series": [
+      280,
       619,
       526,
       559,
@@ -2588,7 +2590,7 @@
     "price": 12.95,
     "sku": 10584,
     "series": [
-      279,
+      451,
       275,
       526,
       491,
@@ -2664,6 +2666,7 @@
     "price": 12.95,
     "sku": 10590,
     "series": [
+      280,
       619,
       526,
       559,
@@ -2682,21 +2685,14 @@
   },
   "195": {
     "id": 195,
-    "name": "BMW M2 CS Racing",
+    "name": "BMW M2 CS Racing (F87) - 2020",
     "categories": [
       "sports_car"
     ],
     "free": true,
     "price": 0,
     "sku": 10591,
-    "series": [
-      279,
-      275,
-      571,
-      112,
-      584,
-      557
-    ],
+    "series": [],
     "logo": "/img/logos/partners/bmw-logo.png"
   },
   "196": {
@@ -2709,6 +2705,7 @@
     "price": 12.95,
     "sku": 10592,
     "series": [
+      280,
       331,
       457,
       419,
@@ -2813,6 +2810,7 @@
     "price": 12.95,
     "sku": 10606,
     "series": [
+      451,
       530,
       526,
       491,
@@ -2849,7 +2847,8 @@
     "price": 12.95,
     "sku": 10608,
     "series": [
-      279,
+      451,
+      280,
       275,
       619,
       526,
@@ -2891,8 +2890,10 @@
     "price": 12.95,
     "sku": 10611,
     "series": [
-      279,
+      451,
       275,
+      472,
+      526,
       299,
       476
     ],
@@ -2908,7 +2909,6 @@
     "price": 12.95,
     "sku": 10614,
     "series": [
-      279,
       275,
       430,
       503,
@@ -2926,11 +2926,79 @@
     "price": 12.95,
     "sku": 10615,
     "series": [
+      47,
       538,
-      164,
-      601,
-      47
+      164
     ],
     "logo": "/img/logos/partners/dodgeram-logo.png"
+  },
+  "213": {
+    "id": 213,
+    "name": "EURO NASCAR V8GP",
+    "categories": [
+      "oval"
+    ],
+    "free": false,
+    "price": 12.95,
+    "sku": 10618,
+    "series": [
+      620,
+      526
+    ],
+    "logo": "/img/logos/partners/teamfj-logo.png"
+  },
+  "214": {
+    "id": 214,
+    "name": "Formula Vee - Cutlass",
+    "categories": [
+      "formula_car"
+    ],
+    "free": false,
+    "price": 12.95,
+    "sku": 10619,
+    "series": [
+      455
+    ],
+    "logo": "/img/logos/partners/formulavee-logo.png",
+    "skuGroup": {
+      "214": "Formula Vee - Cutlass",
+      "215": "Formula Vee - Conqueror"
+    },
+    "skuSeries": [
+      455
+    ]
+  },
+  "215": {
+    "id": 215,
+    "name": "Formula Vee - Conqueror",
+    "categories": [
+      "formula_car"
+    ],
+    "free": false,
+    "price": 12.95,
+    "sku": 10619,
+    "series": [
+      455
+    ],
+    "logo": "/img/logos/partners/formulavee-logo.png",
+    "group": 214
+  },
+  "216": {
+    "id": 216,
+    "name": "BMW M2 Racing (G87)",
+    "categories": [
+      "sports_car"
+    ],
+    "free": true,
+    "price": 0,
+    "sku": 10620,
+    "series": [
+      275,
+      571,
+      112,
+      584,
+      557
+    ],
+    "logo": "/img/logos/partners/bmw-logo.png"
   }
 }
