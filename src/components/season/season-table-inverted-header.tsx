@@ -1,11 +1,13 @@
+import { setWeekOffWeek, useIr } from "@/store/ir";
 import { setSeasonAxisInverted } from "@/store/ui";
-import { Box, Table, Text, VStack } from "@chakra-ui/react";
+import { Box, HStack, Table, Text, VStack } from "@chakra-ui/react";
 import { faArrowDownUpAcrossLine } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import i18n from "@/i18n";
 import { useTranslation } from "react-i18next";
+import { Checkbox } from "../ui/checkbox";
 import { Tooltip } from "../ui/tooltip";
-import { formatDate, getPreviousTuesday, TSeriesDateMap } from "./useSeason";
+import { formatDate, getPreviousTuesday, TSeriesDateMap, WEEK_OFF_OPACITY } from "./useSeason";
 
 const todayStartDate = getPreviousTuesday(formatDate(new Date()));
 
@@ -17,6 +19,7 @@ function SeasonTableInvertedHeader({
   seriesDateMap: TSeriesDateMap;
 }) {
   const { t } = useTranslation();
+  const { weekOffWeeks } = useIr();
   const locale = i18n.language;
   const shortFormat: Intl.DateTimeFormatOptions = {
     month: "short",
@@ -67,6 +70,7 @@ function SeasonTableInvertedHeader({
 
         {weeksStartDates.map((date, index) => {
           const thisWeek = todayStartDate === date;
+          const isWeekOff = weekOffWeeks.includes(index);
           const weekStart = new Date(date);
           const weekEndDay = new Date(
             new Date(weekStart).setUTCDate(weekStart.getUTCDate() + 7),
@@ -88,7 +92,7 @@ function SeasonTableInvertedHeader({
                 openDelay={200}
                 closeDelay={100}
               >
-                <VStack alignItems="center" gap={0}>
+                <VStack alignItems="center" gap={0} opacity={isWeekOff ? WEEK_OFF_OPACITY : 1}>
                   <Text textAlign={"center"} fontSize="xs">
                     {weekStart.toLocaleDateString("en-US", shortFormat)}
                   </Text>
@@ -97,6 +101,26 @@ function SeasonTableInvertedHeader({
                   </Text>
                 </VStack>
               </Tooltip>
+              <HStack justifyContent={"center"} mt={1}>
+                <Tooltip
+                  lazyMount
+                  unmountOnExit
+                  content={t("settings.markWeekOffTooltip")}
+                  showArrow
+                  positioning={{ placement: "bottom" }}
+                  openDelay={200}
+                  closeDelay={100}
+                >
+                  <Box>
+                    <Checkbox
+                      size="xs"
+                      aria-label={t("settings.markWeekOff")}
+                      checked={!isWeekOff}
+                      onCheckedChange={({ checked }) => setWeekOffWeek(index, !checked)}
+                    />
+                  </Box>
+                </Tooltip>
+              </HStack>
             </Table.ColumnHeader>
           );
         })}

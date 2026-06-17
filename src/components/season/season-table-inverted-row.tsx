@@ -21,7 +21,7 @@ import { Tooltip } from "../ui/tooltip";
 import SeasonCarsPopover from "./season-cars-popover";
 import SeasonTableHeaderParticipation from "./season-table-header-participation";
 import SeasonTableRowCell from "./season-table-row-cell";
-import { formatDate, getPreviousTuesday, TSeriesDateMap } from "./useSeason";
+import { formatDate, getPreviousTuesday, TSeriesDateMap, WEEK_OFF_OPACITY } from "./useSeason";
 const todayStartDate = getPreviousTuesday(formatDate(new Date()));
 
 function SeasonTableInvertedRow({
@@ -48,7 +48,7 @@ function SeasonTableInvertedRow({
     seasonUseLocalTimezone,
     seasonShowThisWeek,
   } = useUi();
-  const { myTracks, wishTracks } = useIr();
+  const { myTracks, wishTracks, weekOffWeeks } = useIr();
   const { width } = useScreenSize();
   const { t } = useTranslation();
 
@@ -212,7 +212,7 @@ function SeasonTableInvertedRow({
       </Table.Cell>
 
       {/* One cell per week */}
-      {weeksStartDates.map((date) => {
+      {weeksStartDates.map((date, idx) => {
         const trackId = seriesDateMap?.[
           seriesId as keyof typeof seriesDateMap
         ]?.[date] as number;
@@ -226,6 +226,7 @@ function SeasonTableInvertedRow({
           (myTracks.includes(track.sku) || ownNurbCombined(track.id, myTracks));
 
         const thisWeek = seasonShowThisWeek && todayStartDate === date;
+        const isWeekOff = weekOffWeeks.includes(idx);
 
         return track ? (
           <SeasonTableRowCell
@@ -247,6 +248,7 @@ function SeasonTableInvertedRow({
             borderTopWidth={thisWeek ? "2px" : undefined}
             borderBottomWidth={thisWeek ? "2px" : undefined}
             borderColor={thisWeek ? "bg.inverted" : undefined}
+            opacity={isWeekOff ? WEEK_OFF_OPACITY : undefined}
           />
         ) : (
           <Table.Cell
@@ -254,6 +256,7 @@ function SeasonTableInvertedRow({
             borderTopWidth={thisWeek ? "2px" : undefined}
             borderBottomWidth={thisWeek ? "2px" : undefined}
             borderColor={thisWeek ? "bg.inverted" : undefined}
+            opacity={isWeekOff ? WEEK_OFF_OPACITY : undefined}
           />
         );
       })}
