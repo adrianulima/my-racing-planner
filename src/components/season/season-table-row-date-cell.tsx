@@ -1,16 +1,21 @@
-import { Table, Text, VStack } from "@chakra-ui/react";
+import { setWeekOffWeek } from "@/store/ir";
+import { Box, HStack, Table, Text, VStack } from "@chakra-ui/react";
 import i18n from "@/i18n";
 import { useTranslation } from "react-i18next";
+import { Checkbox } from "../ui/checkbox";
 import { Tooltip } from "../ui/tooltip";
+import { WEEK_OFF_OPACITY } from "./useSeason";
 
 function SeasonTableRowDateCell({
   date,
   thisWeek,
   weekNumber,
+  isWeekOff,
 }: {
   date: string;
   thisWeek: boolean;
   weekNumber: number;
+  isWeekOff: boolean;
 }) {
   const locale = i18n.language;
   const { t } = useTranslation();
@@ -49,15 +54,35 @@ function SeasonTableRowDateCell({
         openDelay={200}
         closeDelay={100}
       >
-        <VStack alignItems="center" gap={0}>
+        <VStack alignItems="center" gap={0} opacity={isWeekOff ? WEEK_OFF_OPACITY : 1}>
           <Text textAlign={"center"}>
             {weekStart.toLocaleDateString("en-US", shortFormat)}
           </Text>
           <Text fontSize="xs" textAlign="center" opacity="0.8">
-            ({t("common.week")} {weekNumber})
+            ({t("common.week")} {weekNumber + 1})
           </Text>
         </VStack>
       </Tooltip>
+      <HStack justifyContent={"center"} mt={1}>
+        <Tooltip
+          lazyMount
+          unmountOnExit
+          content={t("settings.markWeekOffTooltip")}
+          showArrow
+          positioning={{ placement: "top" }}
+          openDelay={200}
+          closeDelay={100}
+        >
+          <Box>
+            <Checkbox
+              size="xs"
+              aria-label={t("settings.markWeekOff")}
+              checked={!isWeekOff}
+              onCheckedChange={({ checked }) => setWeekOffWeek(weekNumber, !checked)}
+            />
+          </Box>
+        </Tooltip>
+      </HStack>
     </Table.Cell>
   );
 }

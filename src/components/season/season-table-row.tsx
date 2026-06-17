@@ -5,7 +5,7 @@ import { For, Table } from "@chakra-ui/react";
 import TRACKS_JSON from "../../ir-data/tracks.json";
 import SeasonTableRowCell from "./season-table-row-cell";
 import SeasonTableRowDateCell from "./season-table-row-date-cell";
-import { formatDate, getPreviousTuesday, TSeriesDateMap } from "./useSeason";
+import { formatDate, getPreviousTuesday, TSeriesDateMap, WEEK_OFF_OPACITY } from "./useSeason";
 
 const todayStartDate = getPreviousTuesday(formatDate(new Date()));
 
@@ -24,10 +24,11 @@ function SeasonTableRow({
   setHighlightTrack: (n: number) => void;
   weekIndex: number;
 }) {
-  const { myTracks, wishTracks } = useIr();
+  const { myTracks, wishTracks, weekOffWeeks } = useIr();
   const { seasonShowThisWeek } = useUi();
 
   const thisWeek = seasonShowThisWeek && todayStartDate === date;
+  const isWeekOff = weekOffWeeks.includes(weekIndex);
 
   return (
     <Table.Row
@@ -40,7 +41,8 @@ function SeasonTableRow({
       <SeasonTableRowDateCell
         date={date}
         thisWeek={thisWeek}
-        weekNumber={weekIndex + 1}
+        weekNumber={weekIndex}
+        isWeekOff={isWeekOff}
       />
       <For
         each={filteredFavorites}
@@ -74,9 +76,10 @@ function SeasonTableRow({
               seriesDateMap={seriesDateMap}
               highlight={highlightTrack === track?.sku}
               setHighlightTrack={setHighlightTrack}
+              opacity={isWeekOff ? WEEK_OFF_OPACITY : undefined}
             />
           ) : (
-            <Table.Cell key={seriesId} />
+            <Table.Cell key={seriesId} opacity={isWeekOff ? WEEK_OFF_OPACITY : undefined} />
           );
         }}
       />
