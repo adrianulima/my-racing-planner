@@ -47,6 +47,7 @@ function SeasonTableInvertedRow({
     seasonShowCarsDropdown,
     seasonUseLocalTimezone,
     seasonShowThisWeek,
+    seasonShowWeekOff,
   } = useUi();
   const { myTracks, wishTracks, weekOffWeeks } = useIr();
   const { width } = useScreenSize();
@@ -248,7 +249,7 @@ function SeasonTableInvertedRow({
             borderTopWidth={thisWeek ? "2px" : undefined}
             borderBottomWidth={thisWeek ? "2px" : undefined}
             borderColor={thisWeek ? "bg.inverted" : undefined}
-            opacity={isWeekOff ? WEEK_OFF_OPACITY : undefined}
+            opacity={isWeekOff && seasonShowWeekOff ? WEEK_OFF_OPACITY : undefined}
           />
         ) : (
           <Table.Cell
@@ -256,7 +257,7 @@ function SeasonTableInvertedRow({
             borderTopWidth={thisWeek ? "2px" : undefined}
             borderBottomWidth={thisWeek ? "2px" : undefined}
             borderColor={thisWeek ? "bg.inverted" : undefined}
-            opacity={isWeekOff ? WEEK_OFF_OPACITY : undefined}
+            opacity={isWeekOff && seasonShowWeekOff ? WEEK_OFF_OPACITY : undefined}
           />
         );
       })}

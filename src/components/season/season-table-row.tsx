@@ -25,7 +25,7 @@ function SeasonTableRow({
   weekIndex: number;
 }) {
   const { myTracks, wishTracks, weekOffWeeks } = useIr();
-  const { seasonShowThisWeek } = useUi();
+  const { seasonShowThisWeek, seasonShowWeekOff } = useUi();
 
   const thisWeek = seasonShowThisWeek && todayStartDate === date;
   const isWeekOff = weekOffWeeks.includes(weekIndex);
@@ -76,10 +76,10 @@ function SeasonTableRow({
               seriesDateMap={seriesDateMap}
               highlight={highlightTrack === track?.sku}
               setHighlightTrack={setHighlightTrack}
-              opacity={isWeekOff ? WEEK_OFF_OPACITY : undefined}
+              opacity={isWeekOff && seasonShowWeekOff ? WEEK_OFF_OPACITY : undefined}
             />
           ) : (
-            <Table.Cell key={seriesId} opacity={isWeekOff ? WEEK_OFF_OPACITY : undefined} />
+            <Table.Cell key={seriesId} opacity={isWeekOff && seasonShowWeekOff ? WEEK_OFF_OPACITY : undefined} />
           );
         }}
       />

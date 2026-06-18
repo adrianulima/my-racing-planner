@@ -1,4 +1,5 @@
 import { setWeekOffWeek } from "@/store/ir";
+import { useUi } from "@/store/ui";
 import { Box, HStack, Table, Text, VStack } from "@chakra-ui/react";
 import i18n from "@/i18n";
 import { useTranslation } from "react-i18next";
@@ -19,6 +20,7 @@ function SeasonTableRowDateCell({
 }) {
   const locale = i18n.language;
   const { t } = useTranslation();
+  const { seasonShowWeekOff } = useUi();
   const longFormat: Intl.DateTimeFormatOptions = {
     year: "numeric",
     month: "long",
@@ -54,7 +56,7 @@ function SeasonTableRowDateCell({
         openDelay={200}
         closeDelay={100}
       >
-        <VStack alignItems="center" gap={0} opacity={isWeekOff ? WEEK_OFF_OPACITY : 1}>
+        <VStack alignItems="center" gap={0} opacity={isWeekOff && seasonShowWeekOff ? WEEK_OFF_OPACITY : 1}>
           <Text textAlign={"center"}>
             {weekStart.toLocaleDateString("en-US", shortFormat)}
           </Text>
@@ -63,26 +65,28 @@ function SeasonTableRowDateCell({
           </Text>
         </VStack>
       </Tooltip>
-      <HStack justifyContent={"center"} mt={1}>
-        <Tooltip
-          lazyMount
-          unmountOnExit
-          content={t("settings.markWeekOffTooltip")}
-          showArrow
-          positioning={{ placement: "top" }}
-          openDelay={200}
-          closeDelay={100}
-        >
-          <Box>
-            <Checkbox
-              size="xs"
-              aria-label={t("settings.markWeekOff")}
-              checked={!isWeekOff}
-              onCheckedChange={({ checked }) => setWeekOffWeek(weekNumber, !checked)}
-            />
-          </Box>
-        </Tooltip>
-      </HStack>
+      {seasonShowWeekOff && (
+        <HStack justifyContent={"center"} mt={1}>
+          <Tooltip
+            lazyMount
+            unmountOnExit
+            content={t("settings.markWeekOffTooltip")}
+            showArrow
+            positioning={{ placement: "top" }}
+            openDelay={200}
+            closeDelay={100}
+          >
+            <Box>
+              <Checkbox
+                size="xs"
+                aria-label={t("settings.markWeekOff")}
+                checked={!isWeekOff}
+                onCheckedChange={({ checked }) => setWeekOffWeek(weekNumber, !checked)}
+              />
+            </Box>
+          </Tooltip>
+        </HStack>
+      )}
     </Table.Cell>
   );
 }
