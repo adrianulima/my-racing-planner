@@ -6,6 +6,7 @@ import {
   setSeasonShowParticipation,
   setSeasonShowThisWeek,
   setSeasonShowTrackConfig,
+  setSeasonShowWeekOff,
   setSeasonShowWishlist,
   setSeasonUseLocalTimezone,
   useUi,
@@ -26,6 +27,7 @@ function SeasonSettingsPopover() {
     seasonShowWishlist,
     seasonShowOwned,
     seasonShowParticipation,
+    seasonShowWeekOff,
     seasonUseLocalTimezone,
   } = useUi();
   const { t } = useTranslation();
@@ -89,6 +91,13 @@ function SeasonSettingsPopover() {
       tooltip: t("settings.showParticipationTooltip"),
       checked: seasonShowParticipation,
       setChecked: setSeasonShowParticipation,
+    },
+    {
+      id: "weekOff",
+      text: t("settings.showWeekOff"),
+      tooltip: t("settings.showWeekOffTooltip"),
+      checked: seasonShowWeekOff,
+      setChecked: setSeasonShowWeekOff,
     },
     {
       id: "localTimezone",
