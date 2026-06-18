@@ -158,7 +158,9 @@
     "loyaltyDiscount": "Desconto de fidelidade",
     "loyaltyDiscountTooltip": "Aplica o desconto de fidelidade do iRacing",
     "markWeekOff": "Week off",
-    "markWeekOffTooltip": "When unchecked, this week's tracks won't count toward your Shop Guide"
+    "markWeekOffTooltip": "When unchecked, this week's tracks won't count toward your Shop Guide",
+    "showWeekOff": "Enable week-off toggles",
+    "showWeekOffTooltip": "Show checkboxes on each week to mark them as off, excluding their tracks from the Shop Guide"
   },
   "counts": {
     "freeTooltip": "Disponível grátis com uma assinatura do iRacing",

@@ -158,7 +158,9 @@
     "loyaltyDiscount": "충성도 할인",
     "loyaltyDiscountTooltip": "iRacing 충성도 할인을 적용합니다",
     "markWeekOff": "Week off",
-    "markWeekOffTooltip": "When unchecked, this week's tracks won't count toward your Shop Guide"
+    "markWeekOffTooltip": "When unchecked, this week's tracks won't count toward your Shop Guide",
+    "showWeekOff": "Enable week-off toggles",
+    "showWeekOffTooltip": "Show checkboxes on each week to mark them as off, excluding their tracks from the Shop Guide"
   },
   "counts": {
     "freeTooltip": "iRacing 구독에 무료로 포함됩니다",

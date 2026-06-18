@@ -153,7 +153,9 @@
     "loyaltyDiscount": "Remise fidélité",
     "loyaltyDiscountTooltip": "Appliquer la remise fidélité iRacing",
     "markWeekOff": "Week off",
-    "markWeekOffTooltip": "When unchecked, this week's tracks won't count toward your Shop Guide"
+    "markWeekOffTooltip": "When unchecked, this week's tracks won't count toward your Shop Guide",
+    "showWeekOff": "Enable week-off toggles",
+    "showWeekOffTooltip": "Show checkboxes on each week to mark them as off, excluding their tracks from the Shop Guide"
   },
   "help": {
     "seriesHeading": "Commencez par la page <series>Mes séries</series>",
