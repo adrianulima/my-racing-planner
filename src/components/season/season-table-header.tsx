@@ -1,6 +1,11 @@
 import { IR_URL } from "@/ir-data/utils/urls";
-import { setFavoriteSeriesList, useIr } from "@/store/ir";
+import {
+  setFavoriteSeriesItem,
+  setFavoriteSeriesList,
+  useIr,
+} from "@/store/ir";
 import { setSeasonAxisInverted, useUi } from "@/store/ui";
+import { trackEvent } from "@/utils/analytics";
 import { createSimpleScheduleDescription } from "@/utils/simple-schedule";
 import {
   Box,
@@ -23,8 +28,10 @@ import SeasonTableHeaderParticipation from "./season-table-header-participation"
 import SortableColumnHeader from "./sortable-column-header";
 import LicenseBadge from "../badges/license-badge";
 import getScheduleDescription from "../series/getScheduleDescription";
+import StarCheckbox from "../series/star-checkbox";
 import { TSeriesDateMap } from "./useSeason";
 import { useTranslation } from "react-i18next";
+import useDelayedHoverId from "./useDelayedHoverId";
 
 function SeasonTableHeader({
   filteredFavorites,
@@ -42,6 +49,11 @@ function SeasonTableHeader({
   const { scrolled } = useAppLayout();
   const { favoriteSeries } = useIr();
   const { t } = useTranslation();
+  const {
+    activeId: visibleStarSeriesId,
+    onHoverStart,
+    onHoverEnd,
+  } = useDelayedHoverId<number>(150);
 
   const onClickSwap = (index: number) => {
     setFavoriteSeriesList(arrayMove(favoriteSeries, index, index - 1));
@@ -107,6 +119,8 @@ function SeasonTableHeader({
                   key={seriesId}
                   position={"relative"}
                   bgColor={"currentBg"}
+                  onMouseEnter={() => onHoverStart(series.id)}
+                  onMouseLeave={() => onHoverEnd(series.id)}
                 >
                   <Tooltip
                     lazyMount
@@ -197,6 +211,34 @@ function SeasonTableHeader({
                       seriesTracks={seriesDateMap[seriesId]}
                     />
                   )}
+
+                  <Box
+                    position="absolute"
+                    top={1}
+                    right={seasonShowCarsDropdown ? "84px" : 1}
+                    zIndex={2}
+                    opacity={visibleStarSeriesId === series.id ? 1 : 0}
+                    pointerEvents={
+                      visibleStarSeriesId === series.id ? "auto" : "none"
+                    }
+                    transition="opacity 0.15s ease"
+                    onClick={(e) => e.stopPropagation()}
+                    onMouseDown={(e) => e.stopPropagation()}
+                  >
+                    <StarCheckbox
+                      size="sm"
+                      aria-label={`Unfavorite ${series.name}`}
+                      checked={true}
+                      onCheckedChange={() => {
+                        setFavoriteSeriesItem(series.id, false);
+                        trackEvent("favorite_series_change", {
+                          action: "remove",
+                          category: series.category,
+                          license: series.license.letter,
+                        });
+                      }}
+                    />
+                  </Box>
 
                   {seasonShowCarsDropdown && (
                     <SeasonCarsPopover cars={series.cars} />

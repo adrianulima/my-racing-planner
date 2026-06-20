@@ -19,7 +19,7 @@ function SeasonTableInvertedHeader({
 }) {
   const { t } = useTranslation();
   const { weekOffDates } = useIr();
-  const { seasonShowWeekOff } = useUi();
+  const { seasonShowThisWeek, seasonShowWeekOff } = useUi();
 
   return (
     <Table.Header>
@@ -59,7 +59,7 @@ function SeasonTableInvertedHeader({
         </Table.ColumnHeader>
 
         {weeksStartDates.map((date) => {
-          const thisWeek = todayStartDate === date;
+          const thisWeek = seasonShowThisWeek && todayStartDate === date;
           const weekIndex = weekIndexMap[date];
           const isWeekOff = weekOffDates.includes(date);
 
@@ -69,6 +69,10 @@ function SeasonTableInvertedHeader({
               minWidth="80px"
               bgColor={thisWeek ? "bg.inverted" : "bg.muted"}
               color={thisWeek ? "bg" : undefined}
+              borderLeftWidth={thisWeek ? "2px" : undefined}
+              borderRightWidth={thisWeek ? "2px" : undefined}
+              borderLeftColor={thisWeek ? "bg.inverted" : undefined}
+              borderRightColor={thisWeek ? "bg.inverted" : undefined}
               position={"relative"}
             >
               <SeasonWeekDateLabel
