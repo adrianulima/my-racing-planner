@@ -20275,9 +20275,9 @@
         "weekNum": 7,
         "date": "2026-08-04",
         "track": {
-          "id": 444,
+          "id": 445,
           "name": "Fuji International Speedway",
-          "config": "Grand Prix"
+          "config": "No Chicane"
         },
         "rainChance": 0
       },
