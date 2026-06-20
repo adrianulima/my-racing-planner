@@ -152,6 +152,8 @@
     "localTimezone": "Schedule with {{timezone}} time",
     "localTimezoneTooltip": "Convert race times from UTC to your local time zone",
     "invertAxis": "Swap axis",
+    "hidePastWeeks": "Hide past weeks",
+    "hidePastWeeksTooltip": "Hide weeks that have already passed",
     "volumeDiscount": "Volume discount",
     "volumeDiscountTooltip": "Apply iRacing discounts for bundle purchases",
     "volumeDiscountLink": "Go to iRacing's official Volume Discounts blog post",
@@ -178,7 +180,9 @@
     "noPaidTracksMissing": "No paid tracks missing",
     "ownAllFavoriteTracks": "You already own all tracks of your favorite series",
     "selectSeriesSchedule": "Select series and schedule races from the My Season grid",
-    "goSeasonSchedule": "Go to My Season to select races"
+    "goSeasonSchedule": "Go to My Season to select races",
+    "noVisibleWeeks": "No visible weeks",
+    "disableHidePastWeeks": "All weeks are currently in the past. Disable Hide past weeks to see them."
   },
   "shop": {
     "checkout": "Checkout on iRacing.com store",

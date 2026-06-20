@@ -152,6 +152,8 @@
     "localTimezone": "{{timezone}} 시간으로 일정 표시",
     "localTimezoneTooltip": "레이스 시간을 UTC에서 현지 시간대로 변환합니다",
     "invertAxis": "축 바꾸기",
+    "hidePastWeeks": "지난 주 숨기기",
+    "hidePastWeeksTooltip": "이미 지난 주를 숨깁니다",
     "volumeDiscount": "볼륨 할인",
     "volumeDiscountTooltip": "묶음 구매에 대한 iRacing 할인을 적용합니다",
     "volumeDiscountLink": "iRacing 공식 볼륨 할인 게시글로 이동",
@@ -178,7 +180,9 @@
     "noPaidTracksMissing": "누락된 유료 트랙이 없습니다",
     "ownAllFavoriteTracks": "즐겨찾는 시리즈의 모든 트랙을 이미 보유하고 있습니다",
     "selectSeriesSchedule": "내 시즌 그리드에서 시리즈를 선택하고 레이스를 일정에 추가하세요",
-    "goSeasonSchedule": "내 시즌으로 이동해 레이스 선택"
+    "goSeasonSchedule": "내 시즌으로 이동해 레이스 선택",
+    "noVisibleWeeks": "표시할 주차가 없습니다",
+    "disableHidePastWeeks": "모든 주차가 이미 지난 상태입니다. 지난 주 숨기기를 끄면 다시 볼 수 있습니다."
   },
   "shop": {
     "checkout": "iRacing.com 스토어에서 구매",
