@@ -1,6 +1,13 @@
-import{n as e}from"./rolldown-runtime-Bh1tDfsg.js";import{h as t}from"./dnd-BrDrxPvD.js";import{_ as n,g as r}from"./react-vendor-BDyMIk60.js";import{Sn as i,bn as a,lt as o,ut as s}from"./ui-C58GVIEq.js";import{t as c}from"./vendor-DeQ8Uz_t.js";import{l,m as u}from"./index-CIshkH3U.js";import{t as d}from"./useDialogTracking-CrGf7l6j.js";var f=n(),p=e(t(),1),m=r();function h(){let e=(0,f.c)(3);d(u.Changelog);let t;e[0]===Symbol.for(`react.memo_cache_sentinel`)?(t=[],e[0]=t):t=e[0],(0,p.useEffect)(g,t);let n;e[1]===Symbol.for(`react.memo_cache_sentinel`)?(n={component:`h1`,props:{hidden:!0}},e[1]=n):n=e[1];let r;return e[2]===Symbol.for(`react.memo_cache_sentinel`)?(r=(0,m.jsx)(c,{options:{overrides:{h1:n,h2:{component:i,props:{size:`md`,mt:2}},p:{component:a},ul:{component:s},li:{component:o}}},children:`# Racing Planner Change Log
+import{n as e}from"./rolldown-runtime-Bh1tDfsg.js";import{h as t}from"./dnd-BrDrxPvD.js";import{_ as n,g as r}from"./react-vendor-BDyMIk60.js";import{Sn as i,bn as a,lt as o,ut as s}from"./ui-C58GVIEq.js";import{t as c}from"./vendor-DeQ8Uz_t.js";import{l,m as u}from"./index-Hj2son8i.js";import{t as d}from"./useDialogTracking-YvBto_oc.js";var f=n(),p=e(t(),1),m=r();function h(){let e=(0,f.c)(3);d(u.Changelog);let t;e[0]===Symbol.for(`react.memo_cache_sentinel`)?(t=[],e[0]=t):t=e[0],(0,p.useEffect)(g,t);let n;e[1]===Symbol.for(`react.memo_cache_sentinel`)?(n={component:`h1`,props:{hidden:!0}},e[1]=n):n=e[1];let r;return e[2]===Symbol.for(`react.memo_cache_sentinel`)?(r=(0,m.jsx)(c,{options:{overrides:{h1:n,h2:{component:i,props:{size:`md`,mt:2}},p:{component:a},ul:{component:s},li:{component:o}}},children:`# Racing Planner Change Log
 
 All notable changes to the **"Racing Planner"** project will be documented in this file.
+
+## 0.11.0
+
+- Added "Hide past weeks" toggle to My Season and My Schedule
+- Added week-off checkboxes to let you exclude specific weeks from the Shop Guide
+- Added car names on Ring Meister series Season page cells
+- Added option to unfavorite series directly from Season page
 
 ## 0.10.3
 
