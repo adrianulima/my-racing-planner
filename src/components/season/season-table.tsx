@@ -1,7 +1,10 @@
 import useScreenSize from "@/hooks/useScreenSize";
+import useTodayStartDate from "@/hooks/useTodayStartDate";
 import { setFavoriteSeriesList, useIr } from "@/store/ir";
 import { useUi } from "@/store/ui";
-import { For, Table } from "@chakra-ui/react";
+import { Flex, For, Table } from "@chakra-ui/react";
+import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   closestCenter,
   DndContext,
@@ -20,8 +23,10 @@ import {
   verticalListSortingStrategy,
   SortableContext,
 } from "@dnd-kit/sortable";
-import { useState } from "react";
+import { useMemo, useState } from "react";
+import { useTranslation } from "react-i18next";
 import { useAppLayout } from "../app/useAppLayout";
+import { EmptyState } from "../ui/empty-state";
 import SeasonTableHeader from "./season-table-header";
 import SeasonTableRow from "./season-table-row";
 import SeasonTableInvertedHeader from "./season-table-inverted-header";
@@ -29,14 +34,41 @@ import SeasonTableInvertedRow from "./season-table-inverted-row";
 import useSeason from "./useSeason";
 
 function SeasonTable({ filteredFavorites }: { filteredFavorites: number[] }) {
-  const { weeksStartDates, seriesDateMap } = useSeason();
+  const todayStartDate = useTodayStartDate();
+  const { t } = useTranslation();
+  const { weeksStartDates: allWeeks, seriesDateMap } = useSeason();
   const { favoriteSeries } = useIr();
-  const { seasonShowReorder, seasonAxisInverted } = useUi();
+  const { seasonShowReorder, seasonAxisInverted, seasonHidePastWeeks } =
+    useUi();
+  const weeksStartDates = seasonHidePastWeeks
+    ? allWeeks.filter((date) => date >= todayStartDate)
+    : allWeeks;
+  const isFilteredEmpty = seasonHidePastWeeks && allWeeks.length > 0;
+
+  const weekIndexMap = useMemo(() => {
+    const map: Record<string, number> = {};
+    allWeeks.forEach((date, index) => {
+      map[date] = index;
+    });
+    return map;
+  }, [allWeeks]);
   const [highlightTrack, setHighlightTrack] = useState<number>(-1);
   const { onScroll } = useAppLayout();
   const { width } = useScreenSize();
 
   const sensors = useSensors(useSensor(PointerSensor));
+
+  if (weeksStartDates.length === 0 && isFilteredEmpty) {
+    return (
+      <Flex flex={1} borderRadius={"md"} bgColor={"bg.muted"} p={4}>
+        <EmptyState
+          icon={<FontAwesomeIcon icon={faMagnifyingGlass} />}
+          title={t("empty.noVisibleWeeks")}
+          description={t("empty.disableHidePastWeeks")}
+        />
+      </Flex>
+    );
+  }
 
   function handleDragEnd(event: DragEndEvent) {
     const { active, over } = event;
@@ -77,6 +109,8 @@ function SeasonTable({ filteredFavorites }: { filteredFavorites: number[] }) {
                 <SeasonTableInvertedHeader
                   weeksStartDates={weeksStartDates}
                   seriesDateMap={seriesDateMap}
+                  todayStartDate={todayStartDate}
+                  weekIndexMap={weekIndexMap}
                 />
                 <Table.Body>
                   <For
@@ -88,6 +122,8 @@ function SeasonTable({ filteredFavorites }: { filteredFavorites: number[] }) {
                         seriesIndex={index}
                         weeksStartDates={weeksStartDates}
                         seriesDateMap={seriesDateMap}
+                        todayStartDate={todayStartDate}
+                        weekIndexMap={weekIndexMap}
                         highlightTrack={highlightTrack}
                         setHighlightTrack={setHighlightTrack}
                         onClickSwap={
@@ -113,9 +149,10 @@ function SeasonTable({ filteredFavorites }: { filteredFavorites: number[] }) {
                         key={date}
                         date={date}
                         filteredFavorites={filteredFavorites}
+                        todayStartDate={todayStartDate}
                         highlightTrack={highlightTrack}
                         setHighlightTrack={setHighlightTrack}
-                        weekIndex={index}
+                        weekIndex={weekIndexMap[date] ?? index}
                       />
                     )}
                   />
