@@ -58,6 +58,7 @@ function SchedulePage() {
           />
           <SchedulePrintTable
             weeksStartDates={weeksStartDates}
+            allSeasonDates={allWeeks}
             entriesByDate={entriesByDate}
             locale={locale}
             seasonUseLocalTimezone={seasonUseLocalTimezone}
