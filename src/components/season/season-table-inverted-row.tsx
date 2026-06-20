@@ -21,14 +21,14 @@ import { Tooltip } from "../ui/tooltip";
 import SeasonCarsPopover from "./season-cars-popover";
 import SeasonTableHeaderParticipation from "./season-table-header-participation";
 import SeasonTableRowCell from "./season-table-row-cell";
-import { formatDate, getPreviousTuesday, TSeriesDateMap } from "./useSeason";
-const todayStartDate = getPreviousTuesday(formatDate(new Date()));
+import { TSeriesDateMap } from "./useSeason";
 
 function SeasonTableInvertedRow({
   seriesId,
   seriesIndex: _seriesIndex,
   weeksStartDates,
   seriesDateMap,
+  todayStartDate,
   highlightTrack,
   setHighlightTrack,
   onClickSwap,
@@ -37,6 +37,7 @@ function SeasonTableInvertedRow({
   seriesIndex: number;
   weeksStartDates: string[];
   seriesDateMap: TSeriesDateMap;
+  todayStartDate: string;
   highlightTrack: number;
   setHighlightTrack: (n: number) => void;
   onClickSwap?: () => void;

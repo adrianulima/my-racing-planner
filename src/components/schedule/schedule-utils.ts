@@ -1,5 +1,3 @@
-import { formatDate, getPreviousTuesday } from "../season/useSeason";
-
 export type WeekEntry = {
   seriesId: number;
   date: string;
@@ -9,8 +7,6 @@ export const shortFormat: Intl.DateTimeFormatOptions = {
   month: "short",
   day: "numeric",
 };
-
-export const todayStartDate = getPreviousTuesday(formatDate(new Date()));
 
 export function groupEntriesByDate(entries: WeekEntry[]) {
   return entries.reduce<Record<string, WeekEntry[]>>((acc, entry) => {

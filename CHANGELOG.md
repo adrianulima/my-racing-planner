@@ -2,6 +2,19 @@
 
 All notable changes to the **"Racing Planner"** project will be documented in this file.
 
+## 0.11.0
+
+- Added "Hide past weeks" toggle to My Season and My Schedule
+- Made week filtering and current-week highlight update automatically after week rollover
+
+## 0.10.3
+
+- Updated removing week 13 series
+
+## 0.10.2
+
+- Updated with data of Season 3 2026
+
 ## 0.10.1
 
 - Added option to remove/add wished items from the "cart" at the shop page

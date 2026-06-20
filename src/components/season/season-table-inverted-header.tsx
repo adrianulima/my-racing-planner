@@ -5,17 +5,17 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import i18n from "@/i18n";
 import { useTranslation } from "react-i18next";
 import { Tooltip } from "../ui/tooltip";
-import { formatDate, getPreviousTuesday, TSeriesDateMap } from "./useSeason";
-
-const todayStartDate = getPreviousTuesday(formatDate(new Date()));
+import { TSeriesDateMap } from "./useSeason";
 
 function SeasonTableInvertedHeader({
   weeksStartDates,
   seriesDateMap: _seriesDateMap,
+  todayStartDate,
   weekIndexMap,
 }: {
   weeksStartDates: string[];
   seriesDateMap: TSeriesDateMap;
+  todayStartDate: string;
   weekIndexMap: Record<string, number>;
 }) {
   const { t } = useTranslation();

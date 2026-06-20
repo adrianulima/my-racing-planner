@@ -15,16 +15,12 @@ import SERIES_JSON from "../../ir-data/series.json";
 import getScheduleDescription from "../series/getScheduleDescription";
 import { getSeriesWeek } from "../season/useSeason";
 import LicenseBadge from "../badges/license-badge";
-import {
-  getWeekNumber,
-  getWeekRangeLabel,
-  todayStartDate,
-  WeekEntry,
-} from "./schedule-utils";
+import { getWeekNumber, getWeekRangeLabel, WeekEntry } from "./schedule-utils";
 
 type ScheduleWeekCardProps = {
   date: string;
   allSeasonDates: string[];
+  todayStartDate: string;
   weekEntries: WeekEntry[];
   locale: string;
 };
@@ -32,6 +28,7 @@ type ScheduleWeekCardProps = {
 function ScheduleWeekCard({
   date,
   allSeasonDates,
+  todayStartDate,
   weekEntries,
   locale,
 }: ScheduleWeekCardProps) {

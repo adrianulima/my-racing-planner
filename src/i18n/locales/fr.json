@@ -221,7 +221,9 @@
     "noPaidTracksMissing": "Aucun circuit payant manquant",
     "ownAllFavoriteTracks": "Vous possédez déjà tous les circuits de vos séries favorites",
     "selectSeriesSchedule": "Sélectionne des séries et planifie des courses dans la grille Ma saison",
-    "goSeasonSchedule": "Aller à Ma saison pour sélectionner des courses"
+    "goSeasonSchedule": "Aller à Ma saison pour sélectionner des courses",
+    "noVisibleWeeks": "Aucune semaine visible",
+    "disableHidePastWeeks": "Toutes les semaines sont déjà passées. Désactive Masquer les semaines passées pour les afficher."
   },
   "shop": {
     "checkout": "Acheter sur la boutique iRacing.com",

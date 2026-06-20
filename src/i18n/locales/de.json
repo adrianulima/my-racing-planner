@@ -221,7 +221,9 @@
     "noPaidTracksMissing": "Keine kostenpflichtigen Strecken fehlen",
     "ownAllFavoriteTracks": "Du besitzt bereits alle Strecken deiner Lieblingsserien",
     "selectSeriesSchedule": "Wähle Serien aus und plane Rennen in der Tabelle Meine Saison",
-    "goSeasonSchedule": "Zur Seite Meine Saison, um Rennen auszuwählen"
+    "goSeasonSchedule": "Zur Seite Meine Saison, um Rennen auszuwählen",
+    "noVisibleWeeks": "Keine sichtbaren Wochen",
+    "disableHidePastWeeks": "Alle Wochen liegen aktuell in der Vergangenheit. Deaktiviere \"Vergangene Wochen ausblenden\", um sie zu sehen."
   },
   "shop": {
     "checkout": "Im iRacing.com-Shop kaufen",

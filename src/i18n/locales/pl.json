@@ -221,7 +221,9 @@
     "noPaidTracksMissing": "Nie brakuje płatnych torów",
     "ownAllFavoriteTracks": "Masz już wszystkie tory z ulubionych serii",
     "selectSeriesSchedule": "Wybierz serie i zaplanuj wyścigi w tabeli Mój sezon",
-    "goSeasonSchedule": "Przejdź do Mój sezon, aby wybrać wyścigi"
+    "goSeasonSchedule": "Przejdź do Mój sezon, aby wybrać wyścigi",
+    "noVisibleWeeks": "Brak widocznych tygodni",
+    "disableHidePastWeeks": "Wszystkie tygodnie są już przeszłe. Wyłącz Ukryj minione tygodnie, aby je zobaczyć."
   },
   "shop": {
     "checkout": "Kup w sklepie iRacing.com",

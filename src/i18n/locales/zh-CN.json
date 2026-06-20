@@ -180,7 +180,9 @@
     "noPaidTracksMissing": "没有缺少的付费赛道",
     "ownAllFavoriteTracks": "你已经拥有收藏系列赛的所有赛道",
     "selectSeriesSchedule": "在“我的赛季”表格中选择系列赛并安排比赛",
-    "goSeasonSchedule": "前往“我的赛季”选择比赛"
+    "goSeasonSchedule": "前往“我的赛季”选择比赛",
+    "noVisibleWeeks": "没有可见周次",
+    "disableHidePastWeeks": "当前所有周次都已过去。关闭隐藏已过去周即可查看。"
   },
   "shop": {
     "checkout": "在 iRacing.com 商店购买",
