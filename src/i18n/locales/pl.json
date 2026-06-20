@@ -153,7 +153,11 @@
     "volumeDiscountTooltip": "Zastosuj rabaty iRacing dla zakupów pakietowych",
     "volumeDiscountLink": "Przejdź do oficjalnego wpisu iRacing o rabatach ilościowych",
     "loyaltyDiscount": "Rabat lojalnościowy",
-    "loyaltyDiscountTooltip": "Zastosuj rabat lojalnościowy iRacing"
+    "loyaltyDiscountTooltip": "Zastosuj rabat lojalnościowy iRacing",
+    "markWeekOff": "Tydzień wolny",
+    "markWeekOffTooltip": "Gdy odznaczone, tory z tego tygodnia nie będą liczone do Shop Guide",
+    "showWeekOff": "Pokaż pola wyboru tygodnia wolnego",
+    "showWeekOffTooltip": "Pokaż pola wyboru przy każdym tygodniu, aby oznaczyć go jako tydzień wolny i wykluczyć jego tory z Shop Guide"
   },
   "help": {
     "seriesHeading": "Zacznij od strony <series>Moje serie</series>",

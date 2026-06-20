@@ -5,7 +5,7 @@ All notable changes to the **"Racing Planner"** project will be documented in th
 ## 0.11.0
 
 - Added "Hide past weeks" toggle to My Season and My Schedule
-- Made week filtering and current-week highlight update automatically after week rollover
+- Added week-off checkboxes to let you exclude specific weeks from the Shop Guide
 
 ## 0.10.3
 

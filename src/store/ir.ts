@@ -10,6 +10,7 @@ export interface IMyContentStore {
   favoriteSeries: number[];
   mySchedule: string[];
   cartExcludes: number[];
+  weekOffDates: string[];
 }
 
 const getPreviousTuesday = (date: string): string => {
@@ -52,6 +53,7 @@ const DEFAULT_CONTENT_STORE: IMyContentStore = {
   favoriteSeries: [],
   mySchedule: [],
   cartExcludes: [],
+  weekOffDates: [],
 };
 
 export const getScheduleEntryKey = (seriesId: number, date: string) =>
@@ -126,6 +128,7 @@ export const useIrStore = create(
         ...currentState,
         ...persisted,
         favoriteSeries,
+        weekOffDates: persisted.weekOffDates ?? currentState.weekOffDates,
         mySchedule: sanitizeScheduleEntries(
           persisted.mySchedule ?? currentState.mySchedule,
           favoriteSeries,
@@ -135,12 +138,16 @@ export const useIrStore = create(
   }),
 );
 
-export const setContentStore = (store: IMyContentStore) => {
+type TContentStoreInput = Omit<IMyContentStore, "weekOffDates"> &
+  Partial<Pick<IMyContentStore, "weekOffDates">>;
+
+export const setContentStore = (store: TContentStoreInput) => {
   const favoriteSeries = sanitizeFavoriteSeries(store.favoriteSeries);
 
   useIrStore.setState({
     ...store,
     favoriteSeries,
+    weekOffDates: store.weekOffDates ?? [],
     mySchedule: sanitizeScheduleEntries(store.mySchedule, favoriteSeries),
   });
 };
@@ -203,6 +210,13 @@ export const setCartExclude = (sku: number, excluded: boolean) =>
       : (state.cartExcludes ?? []).filter((s: number) => s !== sku),
   }));
 
+export const setWeekOffDate = (date: string, weekOff: boolean) =>
+  useIrStore.setState((state: IMyContentStore) => ({
+    weekOffDates: weekOff
+      ? [...new Set([...(state.weekOffDates ?? []), date])]
+      : (state.weekOffDates ?? []).filter((d) => d !== date),
+  }));
+
 export const toggleScheduleEntry = (seriesId: number, date: string) => {
   const key = getScheduleEntryKey(seriesId, date);
   useIrStore.setState((state: IMyContentStore) => ({
@@ -220,6 +234,7 @@ export const useIr = () => {
   const favoriteSeriesRaw = useIrStore((state) => state.favoriteSeries);
   const mySchedule = useIrStore((state) => state.mySchedule ?? []);
   const cartExcludes = useIrStore((state) => state.cartExcludes ?? []);
+  const weekOffDates = useIrStore((state) => state.weekOffDates ?? []);
 
   const favoriteSeries = favoriteSeriesRaw.filter(
     (id) => !!SERIES_JSON[id.toString() as keyof typeof SERIES_JSON],
@@ -233,5 +248,6 @@ export const useIr = () => {
     favoriteSeries,
     mySchedule,
     cartExcludes,
+    weekOffDates,
   };
 };

@@ -153,7 +153,11 @@
     "volumeDiscountTooltip": "iRacing-Rabatte für Paketkäufe anwenden",
     "volumeDiscountLink": "Offiziellen iRacing-Beitrag zu Mengenrabatten öffnen",
     "loyaltyDiscount": "Treuerabatt",
-    "loyaltyDiscountTooltip": "iRacing-Treuerabatt anwenden"
+    "loyaltyDiscountTooltip": "iRacing-Treuerabatt anwenden",
+    "markWeekOff": "Woche frei",
+    "markWeekOffTooltip": "Wenn deaktiviert, werden die Strecken dieser Woche nicht für deinen Shop Guide gezählt",
+    "showWeekOff": "Week-off-Checkboxen anzeigen",
+    "showWeekOffTooltip": "Checkboxen für jede Woche anzeigen, um sie als week-off zu markieren und ihre Strecken aus dem Shop Guide auszuschließen"
   },
   "help": {
     "seriesHeading": "Beginne mit der Seite <series>Meine Serien</series>",

@@ -1,34 +1,25 @@
-import { setSeasonAxisInverted } from "@/store/ui";
-import { Box, Table, Text, VStack } from "@chakra-ui/react";
+import { useIr } from "@/store/ir";
+import { setSeasonAxisInverted, useUi } from "@/store/ui";
+import { Box, Table } from "@chakra-ui/react";
 import { faArrowDownUpAcrossLine } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import i18n from "@/i18n";
 import { useTranslation } from "react-i18next";
 import { Tooltip } from "../ui/tooltip";
-import { TSeriesDateMap } from "./useSeason";
+import SeasonWeekDateLabel from "./season-week-date-label";
+import SeasonWeekIncludedCheckbox from "./season-week-included-checkbox";
 
 function SeasonTableInvertedHeader({
   weeksStartDates,
-  seriesDateMap: _seriesDateMap,
   todayStartDate,
   weekIndexMap,
 }: {
   weeksStartDates: string[];
-  seriesDateMap: TSeriesDateMap;
   todayStartDate: string;
   weekIndexMap: Record<string, number>;
 }) {
   const { t } = useTranslation();
-  const locale = i18n.language;
-  const shortFormat: Intl.DateTimeFormatOptions = {
-    month: "short",
-    day: "numeric",
-  };
-  const longFormat: Intl.DateTimeFormatOptions = {
-    year: "numeric",
-    month: "long",
-    day: "numeric",
-  };
+  const { weekOffDates } = useIr();
+  const { seasonShowWeekOff } = useUi();
 
   return (
     <Table.Header>
@@ -69,10 +60,8 @@ function SeasonTableInvertedHeader({
 
         {weeksStartDates.map((date) => {
           const thisWeek = todayStartDate === date;
-          const weekStart = new Date(date);
-          const weekEndDay = new Date(
-            new Date(weekStart).setUTCDate(weekStart.getUTCDate() + 7),
-          );
+          const weekIndex = weekIndexMap[date];
+          const isWeekOff = weekOffDates.includes(date);
 
           return (
             <Table.ColumnHeader
@@ -80,25 +69,22 @@ function SeasonTableInvertedHeader({
               minWidth="80px"
               bgColor={thisWeek ? "bg.inverted" : "bg.muted"}
               color={thisWeek ? "bg" : undefined}
+              position={"relative"}
             >
-              <Tooltip
-                lazyMount
-                unmountOnExit
-                content={`${weekStart.toLocaleDateString(locale, longFormat)} - ${weekEndDay.toLocaleDateString(locale, longFormat)}`}
-                showArrow
-                positioning={{ placement: "bottom" }}
-                openDelay={200}
-                closeDelay={100}
-              >
-                <VStack alignItems="center" gap={0}>
-                  <Text textAlign={"center"} fontSize="xs">
-                    {weekStart.toLocaleDateString("en-US", shortFormat)}
-                  </Text>
-                  <Text fontSize="xs" textAlign="center" opacity="0.8">
-                    ({t("common.week")} {weekIndexMap[date]})
-                  </Text>
-                </VStack>
-              </Tooltip>
+              <SeasonWeekDateLabel
+                date={date}
+                dateFontSize="xs"
+                isWeekOff={isWeekOff}
+                weekIndex={weekIndex}
+                tooltipPlacement="bottom"
+              />
+              {seasonShowWeekOff && (
+                <SeasonWeekIncludedCheckbox
+                  isWeekIncluded={!isWeekOff}
+                  weekDate={date}
+                  tooltipPlacement="bottom"
+                />
+              )}
             </Table.ColumnHeader>
           );
         })}
