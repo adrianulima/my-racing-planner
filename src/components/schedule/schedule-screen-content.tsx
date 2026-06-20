@@ -5,16 +5,12 @@ import { WeekEntry } from "./schedule-utils";
 
 type ScheduleScreenContentProps = {
   weeksStartDates: string[];
-  allSeasonDates: string[];
-  todayStartDate: string;
   entriesByDate: Record<string, WeekEntry[]>;
   locale: string;
 };
 
 function ScheduleScreenContent({
   weeksStartDates,
-  allSeasonDates,
-  todayStartDate,
   entriesByDate,
   locale,
 }: ScheduleScreenContentProps) {
@@ -32,8 +28,7 @@ function ScheduleScreenContent({
         <ScheduleWeekCard
           key={date}
           date={date}
-          allSeasonDates={allSeasonDates}
-          todayStartDate={todayStartDate}
+          weeksStartDates={weeksStartDates}
           weekEntries={entriesByDate[date] ?? []}
           locale={locale}
         />

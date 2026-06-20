@@ -2,11 +2,6 @@
 
 All notable changes to the **"Racing Planner"** project will be documented in this file.
 
-## 0.11.0
-
-- Added "Hide past weeks" toggle to My Season and My Schedule
-- Made week filtering and current-week highlight update automatically after week rollover
-
 ## 0.10.3
 
 - Updated removing week 13 series

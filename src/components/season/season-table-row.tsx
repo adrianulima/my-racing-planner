@@ -5,13 +5,14 @@ import { For, Table } from "@chakra-ui/react";
 import TRACKS_JSON from "../../ir-data/tracks.json";
 import SeasonTableRowCell from "./season-table-row-cell";
 import SeasonTableRowDateCell from "./season-table-row-date-cell";
-import { TSeriesDateMap, WEEK_OFF_OPACITY } from "./useSeason";
+import { formatDate, getPreviousTuesday, TSeriesDateMap, WEEK_OFF_OPACITY } from "./useSeason";
+
+const todayStartDate = getPreviousTuesday(formatDate(new Date()));
 
 function SeasonTableRow({
   date,
   seriesDateMap,
   filteredFavorites,
-  todayStartDate,
   highlightTrack,
   setHighlightTrack,
   weekIndex,
@@ -19,7 +20,6 @@ function SeasonTableRow({
   date: string;
   seriesDateMap: TSeriesDateMap;
   filteredFavorites: number[];
-  todayStartDate: string;
   highlightTrack: number;
   setHighlightTrack: (n: number) => void;
   weekIndex: number;

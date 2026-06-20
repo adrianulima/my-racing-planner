@@ -21,15 +21,14 @@ import { Tooltip } from "../ui/tooltip";
 import SeasonCarsPopover from "./season-cars-popover";
 import SeasonTableHeaderParticipation from "./season-table-header-participation";
 import SeasonTableRowCell from "./season-table-row-cell";
-import { TSeriesDateMap, WEEK_OFF_OPACITY } from "./useSeason";
+import { formatDate, getPreviousTuesday, TSeriesDateMap, WEEK_OFF_OPACITY } from "./useSeason";
+const todayStartDate = getPreviousTuesday(formatDate(new Date()));
 
 function SeasonTableInvertedRow({
   seriesId,
   seriesIndex: _seriesIndex,
   weeksStartDates,
   seriesDateMap,
-  todayStartDate,
-  weekIndexMap,
   highlightTrack,
   setHighlightTrack,
   onClickSwap,
@@ -38,8 +37,6 @@ function SeasonTableInvertedRow({
   seriesIndex: number;
   weeksStartDates: string[];
   seriesDateMap: TSeriesDateMap;
-  todayStartDate: string;
-  weekIndexMap: Record<string, number>;
   highlightTrack: number;
   setHighlightTrack: (n: number) => void;
   onClickSwap?: () => void;
@@ -216,8 +213,7 @@ function SeasonTableInvertedRow({
       </Table.Cell>
 
       {/* One cell per week */}
-      {weeksStartDates.map((date) => {
-        const weekIndex = weekIndexMap[date] ?? 0;
+      {weeksStartDates.map((date, idx) => {
         const trackId = seriesDateMap?.[
           seriesId as keyof typeof seriesDateMap
         ]?.[date] as number;
@@ -231,7 +227,7 @@ function SeasonTableInvertedRow({
           (myTracks.includes(track.sku) || ownNurbCombined(track.id, myTracks));
 
         const thisWeek = seasonShowThisWeek && todayStartDate === date;
-  const isWeekOff = weekOffWeeks.includes(weekIndex);
+        const isWeekOff = weekOffWeeks.includes(idx);
 
         return track ? (
           <SeasonTableRowCell

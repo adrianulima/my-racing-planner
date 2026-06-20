@@ -7,13 +7,9 @@ import { EmptyState } from "../ui/empty-state";
 
 type ScheduleEmptyStateProps = {
   navigate: (path: string) => void;
-  filteredByPastWeeks?: boolean;
 };
 
-function ScheduleEmptyState({
-  navigate,
-  filteredByPastWeeks = false,
-}: ScheduleEmptyStateProps) {
+function ScheduleEmptyState({ navigate }: ScheduleEmptyStateProps) {
   const { t } = useTranslation();
 
   return (
@@ -26,16 +22,8 @@ function ScheduleEmptyState({
     >
       <EmptyState
         icon={<FontAwesomeIcon icon={faMagnifyingGlass} />}
-        title={
-          filteredByPastWeeks
-            ? t("empty.noVisibleWeeks")
-            : t("empty.noSeriesSelected")
-        }
-        description={
-          filteredByPastWeeks
-            ? t("empty.disableHidePastWeeks")
-            : t("empty.selectSeriesSchedule")
-        }
+        title={t("empty.noSeriesSelected")}
+        description={t("empty.selectSeriesSchedule")}
       >
         <List.Root variant="marker">
           <List.Item>

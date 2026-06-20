@@ -182,9 +182,7 @@
     "noPaidTracksMissing": "Nenhuma pista paga faltando",
     "ownAllFavoriteTracks": "Você já possui todas as pistas das suas séries favoritas",
     "selectSeriesSchedule": "Selecione séries e agende corridas na grade Minha temporada",
-    "goSeasonSchedule": "Ir para Minha temporada para selecionar corridas",
-    "noVisibleWeeks": "Nenhuma semana visível",
-    "disableHidePastWeeks": "Todas as semanas já passaram. Desative Ocultar semanas passadas para visualizá-las."
+    "goSeasonSchedule": "Ir para Minha temporada para selecionar corridas"
   },
   "shop": {
     "checkout": "Comprar na loja do iRacing.com",
