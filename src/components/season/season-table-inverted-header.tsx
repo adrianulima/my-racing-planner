@@ -7,16 +7,18 @@ import i18n from "@/i18n";
 import { useTranslation } from "react-i18next";
 import { Checkbox } from "../ui/checkbox";
 import { Tooltip } from "../ui/tooltip";
-import { formatDate, getPreviousTuesday, TSeriesDateMap, WEEK_OFF_OPACITY } from "./useSeason";
-
-const todayStartDate = getPreviousTuesday(formatDate(new Date()));
+import { TSeriesDateMap, WEEK_OFF_OPACITY } from "./useSeason";
 
 function SeasonTableInvertedHeader({
   weeksStartDates,
   seriesDateMap: _seriesDateMap,
+  todayStartDate,
+  weekIndexMap,
 }: {
   weeksStartDates: string[];
   seriesDateMap: TSeriesDateMap;
+  todayStartDate: string;
+  weekIndexMap: Record<string, number>;
 }) {
   const { t } = useTranslation();
   const { weekOffWeeks } = useIr();
@@ -69,9 +71,10 @@ function SeasonTableInvertedHeader({
           </Tooltip>
         </Table.ColumnHeader>
 
-        {weeksStartDates.map((date, index) => {
+        {weeksStartDates.map((date) => {
           const thisWeek = todayStartDate === date;
-          const isWeekOff = weekOffWeeks.includes(index);
+          const weekNumber = weekIndexMap[date];
+          const isWeekOff = weekOffWeeks.includes(weekNumber);
           const weekStart = new Date(date);
           const weekEndDay = new Date(
             new Date(weekStart).setUTCDate(weekStart.getUTCDate() + 7),
@@ -98,7 +101,7 @@ function SeasonTableInvertedHeader({
                     {weekStart.toLocaleDateString("en-US", shortFormat)}
                   </Text>
                   <Text fontSize="xs" textAlign="center" opacity="0.8">
-                    ({t("common.week")} {index + 1})
+                    ({t("common.week")} {weekIndexMap[date]})
                   </Text>
                 </VStack>
               </Tooltip>
@@ -118,7 +121,9 @@ function SeasonTableInvertedHeader({
                         size="xs"
                         aria-label={t("settings.markWeekOff")}
                         checked={!isWeekOff}
-                        onCheckedChange={({ checked }) => setWeekOffWeek(index, !checked)}
+                        onCheckedChange={({ checked }) =>
+                          setWeekOffWeek(weekNumber, !checked)
+                        }
                       />
                     </Box>
                   </Tooltip>

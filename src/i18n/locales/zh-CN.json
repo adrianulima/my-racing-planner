@@ -152,6 +152,8 @@
     "localTimezone": "使用 {{timezone}} 时间显示赛程",
     "localTimezoneTooltip": "将比赛时间从 UTC 转换为本地时区",
     "invertAxis": "切换坐标轴",
+    "hidePastWeeks": "隐藏已过去周",
+    "hidePastWeeksTooltip": "隐藏已经过去的周次",
     "volumeDiscount": "批量折扣",
     "volumeDiscountTooltip": "应用 iRacing 批量购买折扣",
     "volumeDiscountLink": "前往 iRacing 官方批量折扣文章",
@@ -182,7 +184,9 @@
     "noPaidTracksMissing": "没有缺少的付费赛道",
     "ownAllFavoriteTracks": "你已经拥有收藏系列赛的所有赛道",
     "selectSeriesSchedule": "在“我的赛季”表格中选择系列赛并安排比赛",
-    "goSeasonSchedule": "前往“我的赛季”选择比赛"
+    "goSeasonSchedule": "前往“我的赛季”选择比赛",
+    "noVisibleWeeks": "没有可见周次",
+    "disableHidePastWeeks": "当前所有周次都已过去。关闭隐藏已过去周即可查看。"
   },
   "shop": {
     "checkout": "在 iRacing.com 商店购买",

@@ -61,7 +61,7 @@ function SeasonTableRowDateCell({
             {weekStart.toLocaleDateString("en-US", shortFormat)}
           </Text>
           <Text fontSize="xs" textAlign="center" opacity="0.8">
-            ({t("common.week")} {weekNumber + 1})
+            ({t("common.week")} {weekNumber})
           </Text>
         </VStack>
       </Tooltip>
@@ -81,7 +81,9 @@ function SeasonTableRowDateCell({
                 size="xs"
                 aria-label={t("settings.markWeekOff")}
                 checked={!isWeekOff}
-                onCheckedChange={({ checked }) => setWeekOffWeek(weekNumber, !checked)}
+                onCheckedChange={({ checked }) =>
+                  setWeekOffWeek(weekNumber, !checked)
+                }
               />
             </Box>
           </Tooltip>
