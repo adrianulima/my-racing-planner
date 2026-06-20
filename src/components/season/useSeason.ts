@@ -1,9 +1,6 @@
 import { useIr } from "@/store/ir";
 import SERIES_JSON from "../../ir-data/series.json";
 
-/** Opacity applied to week-off rows/cells in the season table */
-export const WEEK_OFF_OPACITY = 0.4;
-
 export type TSeriesDateMap = Record<number, Record<string, number | number[]>>;
 
 export type TWeek = {

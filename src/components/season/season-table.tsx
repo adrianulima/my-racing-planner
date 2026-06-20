@@ -48,7 +48,7 @@ function SeasonTable({ filteredFavorites }: { filteredFavorites: number[] }) {
   const weekIndexMap = useMemo(() => {
     const map: Record<string, number> = {};
     allWeeks.forEach((date, index) => {
-      map[date] = index + 1;
+      map[date] = index;
     });
     return map;
   }, [allWeeks]);
@@ -109,7 +109,6 @@ function SeasonTable({ filteredFavorites }: { filteredFavorites: number[] }) {
               <>
                 <SeasonTableInvertedHeader
                   weeksStartDates={weeksStartDates}
-                  seriesDateMap={seriesDateMap}
                   todayStartDate={todayStartDate}
                   weekIndexMap={weekIndexMap}
                 />
@@ -124,7 +123,6 @@ function SeasonTable({ filteredFavorites }: { filteredFavorites: number[] }) {
                         weeksStartDates={weeksStartDates}
                         seriesDateMap={seriesDateMap}
                         todayStartDate={todayStartDate}
-                        weekIndexMap={weekIndexMap}
                         highlightTrack={highlightTrack}
                         setHighlightTrack={setHighlightTrack}
                         onClickSwap={
@@ -153,7 +151,7 @@ function SeasonTable({ filteredFavorites }: { filteredFavorites: number[] }) {
                         todayStartDate={todayStartDate}
                         highlightTrack={highlightTrack}
                         setHighlightTrack={setHighlightTrack}
-                        weekNumber={weekIndexMap[date]}
+                        weekIndex={weekIndexMap[date]}
                       />
                     )}
                   />

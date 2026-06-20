@@ -159,10 +159,10 @@
     "volumeDiscountLink": "Ir al artículo oficial de iRacing sobre descuentos por volumen",
     "loyaltyDiscount": "Descuento de lealtad",
     "loyaltyDiscountTooltip": "Aplica el descuento de lealtad de iRacing",
-    "markWeekOff": "Week off",
-    "markWeekOffTooltip": "When unchecked, this week's tracks won't count toward your Shop Guide",
-    "showWeekOff": "Enable week-off toggles",
-    "showWeekOffTooltip": "Show checkboxes on each week to mark them as off, excluding their tracks from the Shop Guide"
+    "markWeekOff": "Semana libre",
+    "markWeekOffTooltip": "Cuando está desactivado, las pistas de esta semana no contarán para tu Shop Guide",
+    "showWeekOff": "Mostrar casillas de semana libre",
+    "showWeekOffTooltip": "Muestra casillas en cada semana para marcarla como semana libre y excluir sus pistas del Shop Guide"
   },
   "counts": {
     "freeTooltip": "Disponible gratis con una suscripción de iRacing",

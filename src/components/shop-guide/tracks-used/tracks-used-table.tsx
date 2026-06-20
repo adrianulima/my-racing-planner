@@ -11,7 +11,7 @@ import TracksUsedEmpty from "./tracks-used-empty";
 import TracksUsedRow from "./tracks-used-row";
 
 function TracksUsedTable() {
-  const { wishTracks, favoriteSeries, weekOffWeeks } = useIr();
+  const { wishTracks, favoriteSeries, weekOffDates } = useIr();
   const { seasonShowWeekOff } = useUi();
   const { onScroll } = useAppLayout();
   const { t } = useTranslation();
@@ -20,7 +20,7 @@ function TracksUsedTable() {
       const series = SERIES_JSON[curr.toString() as keyof typeof SERIES_JSON];
       series?.weeks.forEach((week) => {
         const weekDate = getPreviousTuesday(week.date);
-        if (seasonShowWeekOff && weekOffWeeks.includes(week.weekNum)) return;
+        if (seasonShowWeekOff && weekOffDates.includes(weekDate)) return;
         const track =
           TRACKS_JSON[week.track.id.toString() as keyof typeof TRACKS_JSON];
         if (!track || track.free) {

@@ -21,7 +21,8 @@ import { Tooltip } from "../ui/tooltip";
 import SeasonCarsPopover from "./season-cars-popover";
 import SeasonTableHeaderParticipation from "./season-table-header-participation";
 import SeasonTableRowCell from "./season-table-row-cell";
-import { TSeriesDateMap, WEEK_OFF_OPACITY } from "./useSeason";
+import { getWeekOffOpacity } from "./season-table-constants";
+import { TSeriesDateMap } from "./useSeason";
 
 function SeasonTableInvertedRow({
   seriesId,
@@ -29,7 +30,6 @@ function SeasonTableInvertedRow({
   weeksStartDates,
   seriesDateMap,
   todayStartDate,
-  weekIndexMap,
   highlightTrack,
   setHighlightTrack,
   onClickSwap,
@@ -39,7 +39,6 @@ function SeasonTableInvertedRow({
   weeksStartDates: string[];
   seriesDateMap: TSeriesDateMap;
   todayStartDate: string;
-  weekIndexMap: Record<string, number>;
   highlightTrack: number;
   setHighlightTrack: (n: number) => void;
   onClickSwap?: () => void;
@@ -52,7 +51,7 @@ function SeasonTableInvertedRow({
     seasonShowThisWeek,
     seasonShowWeekOff,
   } = useUi();
-  const { myTracks, wishTracks, weekOffWeeks } = useIr();
+  const { myTracks, wishTracks, weekOffDates } = useIr();
   const { width } = useScreenSize();
   const { t } = useTranslation();
 
@@ -230,7 +229,8 @@ function SeasonTableInvertedRow({
           (myTracks.includes(track.sku) || ownNurbCombined(track.id, myTracks));
 
         const thisWeek = seasonShowThisWeek && todayStartDate === date;
-        const isWeekOff = weekOffWeeks.includes(weekIndexMap[date]);
+        const isWeekOff = weekOffDates.includes(date);
+        const weekOffOpacity = getWeekOffOpacity(isWeekOff, seasonShowWeekOff);
 
         return track ? (
           <SeasonTableRowCell
@@ -252,9 +252,7 @@ function SeasonTableInvertedRow({
             borderTopWidth={thisWeek ? "2px" : undefined}
             borderBottomWidth={thisWeek ? "2px" : undefined}
             borderColor={thisWeek ? "bg.inverted" : undefined}
-            opacity={
-              isWeekOff && seasonShowWeekOff ? WEEK_OFF_OPACITY : undefined
-            }
+            opacity={weekOffOpacity}
           />
         ) : (
           <Table.Cell
@@ -262,9 +260,7 @@ function SeasonTableInvertedRow({
             borderTopWidth={thisWeek ? "2px" : undefined}
             borderBottomWidth={thisWeek ? "2px" : undefined}
             borderColor={thisWeek ? "bg.inverted" : undefined}
-            opacity={
-              isWeekOff && seasonShowWeekOff ? WEEK_OFF_OPACITY : undefined
-            }
+            opacity={weekOffOpacity}
           />
         );
       })}

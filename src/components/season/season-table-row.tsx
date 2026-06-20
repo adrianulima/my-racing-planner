@@ -5,7 +5,8 @@ import { For, Table } from "@chakra-ui/react";
 import TRACKS_JSON from "../../ir-data/tracks.json";
 import SeasonTableRowCell from "./season-table-row-cell";
 import SeasonTableRowDateCell from "./season-table-row-date-cell";
-import { TSeriesDateMap, WEEK_OFF_OPACITY } from "./useSeason";
+import { getWeekOffOpacity } from "./season-table-constants";
+import { TSeriesDateMap } from "./useSeason";
 
 function SeasonTableRow({
   date,
@@ -14,7 +15,7 @@ function SeasonTableRow({
   todayStartDate,
   highlightTrack,
   setHighlightTrack,
-  weekNumber,
+  weekIndex,
 }: {
   date: string;
   seriesDateMap: TSeriesDateMap;
@@ -22,13 +23,14 @@ function SeasonTableRow({
   todayStartDate: string;
   highlightTrack: number;
   setHighlightTrack: (n: number) => void;
-  weekNumber: number;
+  weekIndex: number;
 }) {
-  const { myTracks, wishTracks, weekOffWeeks } = useIr();
+  const { myTracks, wishTracks, weekOffDates } = useIr();
   const { seasonShowThisWeek, seasonShowWeekOff } = useUi();
 
   const thisWeek = seasonShowThisWeek && todayStartDate === date;
-  const isWeekOff = weekOffWeeks.includes(weekNumber);
+  const isWeekOff = weekOffDates.includes(date);
+  const weekOffOpacity = getWeekOffOpacity(isWeekOff, seasonShowWeekOff);
 
   return (
     <Table.Row
@@ -42,7 +44,7 @@ function SeasonTableRow({
         date={date}
         thisWeek={thisWeek}
         isWeekOff={isWeekOff}
-        weekNumber={weekNumber}
+        weekIndex={weekIndex}
       />
       <For
         each={filteredFavorites}
@@ -76,17 +78,10 @@ function SeasonTableRow({
               seriesDateMap={seriesDateMap}
               highlight={highlightTrack === track?.sku}
               setHighlightTrack={setHighlightTrack}
-              opacity={
-                isWeekOff && seasonShowWeekOff ? WEEK_OFF_OPACITY : undefined
-              }
+              opacity={weekOffOpacity}
             />
           ) : (
-            <Table.Cell
-              key={seriesId}
-              opacity={
-                isWeekOff && seasonShowWeekOff ? WEEK_OFF_OPACITY : undefined
-              }
-            />
+            <Table.Cell key={seriesId} opacity={weekOffOpacity} />
           );
         }}
       />

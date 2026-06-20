@@ -31,7 +31,7 @@ export const useUiStorePersist = create(
       seasonShowOwned: true,
       seasonShowParticipation: false,
       seasonShowThisWeek: true,
-      seasonShowWeekOff: true,
+      seasonShowWeekOff: false,
       seasonUseLocalTimezone: true,
       seasonCategory: ECarCategories.all,
       seasonAxisInverted: false,

@@ -159,10 +159,10 @@
     "volumeDiscountLink": "iRacing 공식 볼륨 할인 게시글로 이동",
     "loyaltyDiscount": "충성도 할인",
     "loyaltyDiscountTooltip": "iRacing 충성도 할인을 적용합니다",
-    "markWeekOff": "Week off",
-    "markWeekOffTooltip": "When unchecked, this week's tracks won't count toward your Shop Guide",
-    "showWeekOff": "Enable week-off toggles",
-    "showWeekOffTooltip": "Show checkboxes on each week to mark them as off, excluding their tracks from the Shop Guide"
+    "markWeekOff": "주차 제외",
+    "markWeekOffTooltip": "체크를 해제하면 이 주의 트랙은 Shop Guide에 포함되지 않습니다",
+    "showWeekOff": "주차 제외 체크박스 표시",
+    "showWeekOffTooltip": "각 주에 체크박스를 표시해 주차 제외로 만들고 해당 트랙을 Shop Guide에서 제외합니다"
   },
   "counts": {
     "freeTooltip": "iRacing 구독에 무료로 포함됩니다",
