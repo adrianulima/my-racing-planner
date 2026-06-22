@@ -6,7 +6,7 @@ import {
 import { ECarCategories } from "@/ir-data/utils/types";
 import { useIr } from "@/store/ir";
 import { trackEvent } from "@/utils/analytics";
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
 import TRACKS_JSON from "../../ir-data/tracks.json";
 import Page from "../page/page";
@@ -21,6 +21,7 @@ function HistoryPage() {
   );
   const [since, setSince] = useState<EHistorySince>(EHistorySince.Ever);
   const [sortBy, setSortBy] = useState<ESortHistory>(ESortHistory.Usage);
+  const [ownershipFilter, setOwnershipFilter] = useState<string[]>([]);
 
   const handleSortChange = (v: ESortHistory) => {
     setSortBy(v);
@@ -30,12 +31,25 @@ function HistoryPage() {
     getSortedHistory(ECarCategories.all, EHistorySince.Ever),
   );
 
+  const { wishTracks, myTracks } = useIr();
+
   useEffect(() => {
     const filteredContent = getSortedHistory(tabCategory, since, sortBy);
     setList(filteredContent);
   }, [tabCategory, since, sortBy]);
 
-  const { wishTracks, myTracks } = useIr();
+  const filteredList = useMemo(() => {
+    if (ownershipFilter.length === 0) return list;
+    return list.filter((item) => {
+      const track = TRACKS_JSON[item.id.toString() as keyof typeof TRACKS_JSON];
+      if (!track) return false;
+      const owned = myTracks.includes(item.sku);
+      if (ownershipFilter.includes("owned") && owned) return true;
+      if (ownershipFilter.includes("not_owned") && !owned && !track.free) return true;
+      if (ownershipFilter.includes("free") && track.free) return true;
+      return false;
+    });
+  }, [list, ownershipFilter, myTracks]);
   const { t } = useTranslation();
 
   return (
@@ -55,7 +69,9 @@ function HistoryPage() {
       <HistoryTable
         sortBy={sortBy}
         setSortBy={handleSortChange}
-        list={list}
+        list={filteredList}
+        ownershipFilter={ownershipFilter}
+        onOwnershipFilterChange={setOwnershipFilter}
         rows={(item) => {
           const track =
             TRACKS_JSON[item.id.toString() as keyof typeof TRACKS_JSON];

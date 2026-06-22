@@ -22,6 +22,7 @@
     "license": "Licencia",
     "name": "Nombre",
     "owned": "Propio",
+    "notOwned": "No propio",
     "ownedContent": "Contenido propio",
     "ownedContentCheckbox": "Casilla de contenido propio",
     "print": "Imprimir",
@@ -126,7 +127,8 @@
       "three_years": "Últimos tres años",
       "five_years": "Últimos cinco años",
       "ten_years": "Últimos diez años"
-    }
+    },
+    "ownership": "Filtrar por estado"
   },
   "settings": {
     "showContentCheckboxes": "Mostrar casillas de contenido",

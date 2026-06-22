@@ -22,6 +22,7 @@
     "license": "라이선스",
     "name": "이름",
     "owned": "보유",
+    "notOwned": "미보유",
     "ownedContent": "보유 콘텐츠",
     "ownedContentCheckbox": "보유 콘텐츠 체크박스",
     "print": "인쇄",
@@ -126,7 +127,8 @@
       "three_years": "최근 3년",
       "five_years": "최근 5년",
       "ten_years": "최근 10년"
-    }
+    },
+    "ownership": "상태별 필터"
   },
   "settings": {
     "showContentCheckboxes": "콘텐츠 체크박스 표시",

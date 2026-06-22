@@ -17,6 +17,7 @@
     "license": "Licencja",
     "name": "Nazwa",
     "owned": "Posiadane",
+    "notOwned": "Nieposiadane",
     "ownedContent": "Posiadana zawartość",
     "ownedContentCheckbox": "Pole posiadanej zawartości",
     "print": "Drukuj",
@@ -121,7 +122,8 @@
       "three_years": "Ostatnie trzy lata",
       "five_years": "Ostatnie pięć lat",
       "ten_years": "Ostatnie dziesięć lat"
-    }
+    },
+    "ownership": "Filtruj według stanu"
   },
   "settings": {
     "showContentCheckboxes": "Pokaż checkboxy zawartości",

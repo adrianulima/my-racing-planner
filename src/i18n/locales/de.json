@@ -17,6 +17,7 @@
     "license": "Lizenz",
     "name": "Name",
     "owned": "Besitzt",
+    "notOwned": "Nicht besessen",
     "ownedContent": "Eigener Inhalt",
     "ownedContentCheckbox": "Checkbox für eigenen Inhalt",
     "print": "Drucken",
@@ -121,7 +122,8 @@
       "three_years": "Letzte drei Jahre",
       "five_years": "Letzte fünf Jahre",
       "ten_years": "Letzte zehn Jahre"
-    }
+    },
+    "ownership": "Nach Status filtern"
   },
   "settings": {
     "showContentCheckboxes": "Inhalts-Checkboxen anzeigen",
