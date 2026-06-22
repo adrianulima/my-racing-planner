@@ -98,7 +98,7 @@ function ContentPage({
       : filteredContentWithCheck;
 
     setList(filteredContentWithSearch);
-  }, [debouncedSearch, tabCategory, filterChecks]);
+  }, [debouncedSearch, tabCategory, filterChecks, allTab, contentListJson, tabs, wish, myContent]);
 
   return (
     <Page>

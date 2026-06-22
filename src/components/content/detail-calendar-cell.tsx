@@ -16,6 +16,7 @@ function CalendarCell({
   showOwned,
   showWishlist,
   showCheckbox,
+  thisWeek,
 }: {
   week: DetailWeek | undefined;
   trackOwnershipMap: Map<number, { owned: boolean; wish: boolean }>;
@@ -26,6 +27,7 @@ function CalendarCell({
   showOwned: boolean;
   showWishlist: boolean;
   showCheckbox: boolean;
+  thisWeek?: boolean;
 }) {
   const { t } = useTranslation();
   const track = week
@@ -61,6 +63,10 @@ function CalendarCell({
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
       position={"relative"}
+      borderLeftWidth={thisWeek ? "2px" : undefined}
+      borderRightWidth={thisWeek ? "2px" : undefined}
+      borderLeftColor={thisWeek ? "bg.inverted" : undefined}
+      borderRightColor={thisWeek ? "bg.inverted" : undefined}
     >
       {week ? (
         <>

@@ -1,6 +1,7 @@
 import {
   Badge,
   Button,
+  Field,
   For,
   HStack,
   Input,
@@ -50,6 +51,8 @@ function DetailSeriesTable({
   const [filterUnranked, setFilterUnranked] = useState(false);
   const [filterFixed, setFilterFixed] = useState(false);
   const [filterFavs, setFilterFavs] = useState(false);
+  const [durationMin, setDurationMin] = useState("");
+  const [durationMax, setDurationMax] = useState("");
   const debouncedSeries = useDebounce(seriesFilter, 300);
 
   const filteredEntries = useMemo(() => {
@@ -84,8 +87,18 @@ function DetailSeriesTable({
     if (filterFavs) {
       result = result.filter((e) => favoriteSeries.includes(e.seriesId));
     }
+    const min = durationMin ? Number(durationMin) : undefined;
+    const max = durationMax ? Number(durationMax) : undefined;
+    if (min !== undefined || max !== undefined) {
+      result = result.filter((e) => {
+        if (e.duration === null) return false;
+        if (min !== undefined && e.duration < min) return false;
+        if (max !== undefined && e.duration > max) return false;
+        return true;
+      });
+    }
     return result;
-  }, [entries, debouncedSeries, licenseFilter, categoryFilter, filterUnranked, filterFixed, filterFavs, favoriteSeries, type]);
+  }, [entries, debouncedSeries, licenseFilter, categoryFilter, filterUnranked, filterFixed, filterFavs, favoriteSeries, type, durationMin, durationMax]);
 
   const toggleLicense = (letter: string) => {
     setLicenseFilter((prev) =>
@@ -215,8 +228,62 @@ function DetailSeriesTable({
             <Table.ColumnHeader minWidth={"80px"} textAlign={"center"}>
               {t("common.weeks")}
             </Table.ColumnHeader>
-            <Table.ColumnHeader minWidth={"70px"} textAlign={"center"}>
-              {t("common.duration")}
+            <Table.ColumnHeader minWidth={"80px"} textAlign={"center"}>
+              <PopoverRoot>
+                <PopoverTrigger asChild>
+                  <HStack gap={1} justify={"center"} cursor={"pointer"}>
+                    <Text>
+                      {durationMin || durationMax
+                        ? `${durationMin || "0"}-${durationMax || "∞"}m`
+                        : t("common.duration")}
+                    </Text>
+                    <FontAwesomeIcon icon={faChevronDown} size="2xs" />
+                  </HStack>
+                </PopoverTrigger>
+                <PopoverContent width={"200px"}>
+                  <PopoverBody>
+                    <VStack gap={3}>
+                      <Field.Root>
+                        <Field.Label fontSize={"xs"}>
+                          {t("common.min")}
+                        </Field.Label>
+                        <Input
+                          size={"xs"}
+                          type={"number"}
+                          placeholder={"0"}
+                          value={durationMin}
+                          onChange={(e) => setDurationMin(e.target.value)}
+                        />
+                      </Field.Root>
+                      <Field.Root>
+                        <Field.Label fontSize={"xs"}>
+                          {t("common.max")}
+                        </Field.Label>
+                        <Input
+                          size={"xs"}
+                          type={"number"}
+                          placeholder={"∞"}
+                          value={durationMax}
+                          onChange={(e) => setDurationMax(e.target.value)}
+                        />
+                      </Field.Root>
+                      {(durationMin || durationMax) && (
+                        <Button
+                          size={"xs"}
+                          width={"100%"}
+                          variant={"ghost"}
+                          onClick={() => {
+                            setDurationMin("");
+                            setDurationMax("");
+                          }}
+                        >
+                          {t("common.clear")}
+                        </Button>
+                      )}
+                    </VStack>
+                  </PopoverBody>
+                </PopoverContent>
+              </PopoverRoot>
             </Table.ColumnHeader>
             <Table.ColumnHeader minWidth={"60px"} textAlign={"center"}>
               <PopoverRoot>

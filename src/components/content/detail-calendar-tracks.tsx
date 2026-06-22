@@ -9,6 +9,7 @@ import {
   buildDateEntryMap,
   buildTrackOwnershipMap,
   getTodayStartDate,
+  getSeasonStartDate,
 } from "./detail-constants";
 
 function DetailCalendarTracks({ entries }: { entries: DetailSeriesEntry[] }) {
@@ -32,37 +33,29 @@ function DetailCalendarTracks({ entries }: { entries: DetailSeriesEntry[] }) {
 
   const { weeksStartDates, weekIndexMap, trackOwnershipMap, dateEntryMap } = useMemo(() => {
     const dateSet = new Set<string>();
-    const wnMap: Record<string, number> = {};
     entries.forEach((e) =>
       e.weeks.forEach((w) => {
         if (!w.date) return;
         dateSet.add(w.date);
-        if (wnMap[w.date] === undefined) {
-          wnMap[w.date] = w.weekNum;
-        }
       }),
     );
+
     const knownSorted = [...dateSet].sort();
-    const seasonStartRef = knownSorted.length > 0
-      ? new Date(knownSorted[0])
-      : null;
-    if (seasonStartRef) {
-      const minRaw = Math.min(...knownSorted.map((d) => wnMap[d]));
-      seasonStartRef.setUTCDate(seasonStartRef.getUTCDate() - 7 * (minRaw % 13));
-    }
+    const seasonStartDate = new Date(getSeasonStartDate());
+
     let sorted: string[];
     if (seasonHideEmptyWeeks) {
       sorted = seasonHidePastWeeks
         ? knownSorted.filter((d) => d >= todayStartDate)
         : knownSorted;
     } else {
-      if (seasonStartRef && knownSorted.length > 0) {
-        const maxEnd = new Date(seasonStartRef);
+      if (knownSorted.length > 0) {
+        const maxEnd = new Date(seasonStartDate);
         maxEnd.setUTCDate(maxEnd.getUTCDate() + 7 * 12);
         const lastKnown = new Date(knownSorted[knownSorted.length - 1]);
         const seasonEnd = lastKnown > maxEnd ? lastKnown : maxEnd;
         sorted = [];
-        const cur = new Date(seasonStartRef);
+        const cur = new Date(seasonStartDate);
         while (cur <= seasonEnd) {
           sorted.push(cur.toISOString().split("T")[0]);
           cur.setUTCDate(cur.getUTCDate() + 7);
@@ -75,15 +68,13 @@ function DetailCalendarTracks({ entries }: { entries: DetailSeriesEntry[] }) {
       }
     }
 
+    const msPerWeek = 7 * 86400000;
     const idxMap: Record<string, number> = {};
-    if (seasonStartRef && sorted.length > 0) {
-      const msPerWeek = 7 * 86400000;
-      sorted.forEach((date) => {
-        idxMap[date] = Math.round(
-          (new Date(date).getTime() - seasonStartRef.getTime()) / msPerWeek,
-        );
-      });
-    }
+    sorted.forEach((date) => {
+      idxMap[date] = Math.round(
+        (new Date(date).getTime() - seasonStartDate.getTime()) / msPerWeek,
+      );
+    });
 
     const ownMap = buildTrackOwnershipMap(myTracks, wishTracks);
     const dem = buildDateEntryMap(entries);

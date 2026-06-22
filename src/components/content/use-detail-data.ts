@@ -1,11 +1,13 @@
 import { useMemo } from "react";
 import { useIr } from "@/store/ir";
+import { useUi } from "@/store/ui";
 import CARS_JSON from "@/ir-data/cars.json";
 import TRACKS_JSON from "@/ir-data/tracks.json";
 import SERIES_JSON from "@/ir-data/series.json";
 import { TContent } from "@/ir-data/utils/types";
 import { getPreviousTuesday } from "@/components/season/useSeason";
 import { isNurbCombined, ownNurbCombined, wishNurbCombined } from "@/ir-data/utils/tracks";
+import { getTodayStartDate, getSeasonStartDate } from "./detail-constants";
 
 type RawWeek = {
   weekNum: number;
@@ -53,6 +55,9 @@ export type DetailData = {
 
 function useDetailData(type: "cars" | "tracks", id: number): DetailData | null {
   const { myCars, myTracks, wishCars, wishTracks, favoriteSeries } = useIr();
+  const { seasonHidePastWeeks } = useUi();
+  const todayStartDate = useMemo(() => getTodayStartDate(), []);
+  const seasonStartDate = useMemo(() => getSeasonStartDate(), []);
 
   return useMemo(() => {
     const item = (
@@ -94,44 +99,50 @@ function useDetailData(type: "cars" | "tracks", id: number): DetailData | null {
         SERIES_JSON[seriesId.toString() as keyof typeof SERIES_JSON];
       if (!series) continue;
 
-      const weeks = (series.weeks as RawWeek[] | undefined) ?? [];
+      const rawWeeks = (series.weeks as RawWeek[] | undefined) ?? [];
       const matchingWeeks: DetailWeek[] = [];
-      let weekCount = 0;
 
-      for (const week of weeks) {
-        if (type === "cars") {
-          if (
-            !week.cars ||
-            week.cars.some((c) => c.id === item.id)
-          ) {
-            matchingWeeks.push({
-              weekNum: week.weekNum,
-              date: getPreviousTuesday(week.date),
-              trackId: week.track?.id,
-              trackName: week.track?.name,
-              trackConfig: week.track?.config,
-              cars: week.cars,
-              rainChance: week.rainChance,
-            });
-            weekCount++;
-          }
-        } else {
-          if (week.track && validConfigIds.has(week.track.id)) {
-            matchingWeeks.push({
-              weekNum: week.weekNum,
-              date: getPreviousTuesday(week.date),
-              trackId: week.track.id,
-              trackName: week.track.name,
-              trackConfig: week.track.config,
-              cars: week.cars,
-              rainChance: week.rainChance,
-            });
-            weekCount++;
-          }
-        }
+      for (const week of rawWeeks) {
+        const match =
+          type === "cars"
+            ? !week.cars || week.cars.some((c) => c.id === item.id)
+            : week.track && validConfigIds.has(week.track.id);
+
+        if (!match) continue;
+
+        matchingWeeks.push({
+          weekNum: week.weekNum,
+          date: getPreviousTuesday(week.date),
+          trackId: week.track?.id ?? 0,
+          trackName: week.track?.name ?? "",
+          trackConfig: week.track?.config,
+          cars: week.cars,
+          rainChance: week.rainChance,
+        });
       }
 
-      if (weekCount > 0) {
+      // Filter out weeks from completely finished seasons.
+      // iRacing seasons are 13-week cycles (12 race weeks + 1 build week).
+      let seriesWeeks = matchingWeeks;
+      if (matchingWeeks.length > 0) {
+        const firstFutureIdx = matchingWeeks.findIndex(
+          (w) => w.date >= todayStartDate,
+        );
+        if (firstFutureIdx === -1) {
+          // All weeks are from finished seasons → skip series entirely
+          continue;
+        }
+        const currentSeason = Math.floor(
+          matchingWeeks[firstFutureIdx].weekNum / 13,
+        );
+        seriesWeeks = matchingWeeks.filter(
+          (w) =>
+            Math.floor(w.weekNum / 13) >= currentSeason &&
+            w.date >= seasonStartDate,
+        );
+      }
+
+      if (seriesWeeks.length > 0) {
         seriesMap.set(series.id, {
           seriesId: series.id,
           seriesName: series.name,
@@ -143,8 +154,8 @@ function useDetailData(type: "cars" | "tracks", id: number): DetailData | null {
           duration: series.duration,
           multiclass: series.multiclass,
           logo: series.logo,
-          weeks: matchingWeeks,
-          weekCount,
+          weeks: seriesWeeks,
+          weekCount: seriesWeeks.length,
         });
       }
     }
@@ -155,13 +166,20 @@ function useDetailData(type: "cars" | "tracks", id: number): DetailData | null {
     const unfavoritedEntries = entries.filter((e) => !favoriteSet.has(e.seriesId));
     const unlockSeriesCount = unfavoritedEntries.length;
 
-    const allWeekNums = new Set<number>();
-    entries.forEach((e) => e.weeks.forEach((w) => allWeekNums.add(w.weekNum)));
-    const totalWeekCount = allWeekNums.size;
+    const filterDate = (date: string) =>
+      !seasonHidePastWeeks || date >= todayStartDate;
 
-    const unlockWeekNums = new Set<number>();
-    unfavoritedEntries.forEach((e) => e.weeks.forEach((w) => unlockWeekNums.add(w.weekNum)));
-    const unlockWeekCount = unlockWeekNums.size;
+    const allDates = new Set<string>();
+    entries.forEach((e) => e.weeks.forEach((w) => {
+      if (filterDate(w.date)) allDates.add(w.date);
+    }));
+    const totalWeekCount = allDates.size;
+
+    const unlockDates = new Set<string>();
+    unfavoritedEntries.forEach((e) => e.weeks.forEach((w) => {
+      if (filterDate(w.date)) unlockDates.add(w.date);
+    }));
+    const unlockWeekCount = unlockDates.size;
 
     return {
       item,
@@ -173,7 +191,7 @@ function useDetailData(type: "cars" | "tracks", id: number): DetailData | null {
       unlockWeekCount,
       totalWeekCount,
     };
-  }, [type, id, myCars, myTracks, wishCars, wishTracks, favoriteSeries]);
+  }, [type, id, myCars, myTracks, wishCars, wishTracks, favoriteSeries, seasonHidePastWeeks, todayStartDate, seasonStartDate]);
 }
 
 export default useDetailData;
