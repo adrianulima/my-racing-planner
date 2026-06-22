@@ -166,7 +166,11 @@
     "volumeDiscountTooltip": "Apply iRacing discounts for bundle purchases",
     "volumeDiscountLink": "Go to iRacing's official Volume Discounts blog post",
     "loyaltyDiscount": "Loyalty discount",
-    "loyaltyDiscountTooltip": "Apply iRacing loyalty discount"
+    "loyaltyDiscountTooltip": "Apply iRacing loyalty discount",
+    "markWeekOff": "Week off",
+    "markWeekOffTooltip": "When unchecked, this week's tracks won't count toward your Shop Guide",
+    "showWeekOff": "Show week-off checkboxes",
+    "showWeekOffTooltip": "Show week-off checkboxes on each week to exclude their tracks from the Shop Guide"
   },
   "detail": {
     "noSeries": "No series found for this content",
@@ -193,7 +197,9 @@
     "noPaidTracksMissing": "No paid tracks missing",
     "ownAllFavoriteTracks": "You already own all tracks of your favorite series",
     "selectSeriesSchedule": "Select series and schedule races from the My Season grid",
-    "goSeasonSchedule": "Go to My Season to select races"
+    "goSeasonSchedule": "Go to My Season to select races",
+    "noVisibleWeeks": "No visible weeks",
+    "disableHidePastWeeks": "All weeks are currently in the past. Disable Hide past weeks to see them."
   },
   "shop": {
     "checkout": "Checkout on iRacing.com store",

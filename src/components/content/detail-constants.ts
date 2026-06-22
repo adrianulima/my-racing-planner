@@ -29,12 +29,14 @@ export const CATEGORY_OPTIONS = [
 
 export function getTodayStartDate(): string {
   const now = new Date();
-  const day = now.getUTCDay();
-  const diff = (day + 6) % 7;
+  const day = now.getDay();
+  const diff = (day + 5) % 7;
   const tuesday = new Date(now);
-  tuesday.setUTCDate(now.getUTCDate() - diff);
-  tuesday.setUTCHours(0, 0, 0, 0);
-  return tuesday.toISOString().split("T")[0];
+  tuesday.setDate(now.getDate() - diff);
+  const y = tuesday.getFullYear();
+  const m = String(tuesday.getMonth() + 1).padStart(2, "0");
+  const d = String(tuesday.getDate()).padStart(2, "0");
+  return `${y}-${m}-${d}`;
 }
 
 export function buildTrackOwnershipMap(

@@ -10,6 +10,7 @@ import { Tooltip } from "../ui/tooltip";
 import { TSeriesDateMap } from "./useSeason";
 import { useTranslation } from "react-i18next";
 import { KeyboardEvent, MouseEvent } from "react";
+import CARS_JSON from "../../ir-data/cars.json";
 
 function SeasonTableRowCell({
   seriesId,
@@ -87,6 +88,13 @@ function SeasonTableRowCell({
     (seriesDateMap?.[seriesId as keyof typeof seriesDateMap]?.[
       `${date}_cars`
     ] as number[]) || [];
+  const carLabel =
+    cars.length === 1
+      ? CARS_JSON[cars[0].toString() as keyof typeof CARS_JSON]?.name ||
+        `1 ${t("common.cars").toLowerCase()}`
+      : cars.length > 1
+        ? `${cars.length} ${t("common.cars").toLowerCase()}`
+        : undefined;
 
   const rainChance =
     (seriesDateMap?.[seriesId as keyof typeof seriesDateMap]?.[
@@ -157,6 +165,19 @@ function SeasonTableRowCell({
       >
         {name}
       </Text>
+      {carLabel && (
+        <Text
+          userSelect={"none"}
+          textAlign={"center"}
+          lineClamp="2"
+          lineHeight={"12px"}
+          fontSize={"12px"}
+          fontStyle={"italic"}
+          pt="3px"
+        >
+          {carLabel}
+        </Text>
+      )}
       {seasonShowTrackConfig && config && (
         <Text
           userSelect={"none"}

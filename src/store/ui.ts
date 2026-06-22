@@ -31,6 +31,7 @@ export const useUiStorePersist = create(
       seasonShowOwned: true,
       seasonShowParticipation: false,
       seasonShowThisWeek: true,
+      seasonShowWeekOff: false,
       seasonUseLocalTimezone: true,
       seasonCategory: ECarCategories.all,
       seasonAxisInverted: false,
@@ -70,6 +71,9 @@ export const setSeasonShowParticipation = (value: boolean) =>
 
 export const setSeasonShowThisWeek = (value: boolean) =>
   useUiStorePersist.setState(() => ({ seasonShowThisWeek: value }));
+
+export const setSeasonShowWeekOff = (value: boolean) =>
+  useUiStorePersist.setState(() => ({ seasonShowWeekOff: value }));
 
 export const setSeasonUseLocalTimezone = (value: boolean) =>
   useUiStorePersist.setState(() => ({ seasonUseLocalTimezone: value }));
@@ -119,6 +123,9 @@ export const useUi = () => {
   const seasonShowThisWeek = useUiStorePersist(
     (state) => state.seasonShowThisWeek,
   );
+  const seasonShowWeekOff = useUiStorePersist(
+    (state) => state.seasonShowWeekOff,
+  );
   const seasonUseLocalTimezone = useUiStorePersist(
     (state) => state.seasonUseLocalTimezone,
   );
@@ -151,6 +158,7 @@ export const useUi = () => {
     seasonShowOwned,
     seasonShowParticipation,
     seasonShowThisWeek,
+    seasonShowWeekOff,
     seasonShowRain: true,
     seasonUseLocalTimezone,
     seasonAxisInverted,

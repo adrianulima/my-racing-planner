@@ -1,5 +1,6 @@
 import { getPreviousTuesday } from "@/components/season/useSeason";
 import { useIr } from "@/store/ir";
+import { useUi } from "@/store/ui";
 import { Flex, For, Table, VisuallyHidden } from "@chakra-ui/react";
 import SERIES_JSON from "../../../ir-data/series.json";
 import TRACKS_JSON from "../../../ir-data/tracks.json";
@@ -10,13 +11,16 @@ import TracksUsedEmpty from "./tracks-used-empty";
 import TracksUsedRow from "./tracks-used-row";
 
 function TracksUsedTable() {
-  const { wishTracks, favoriteSeries } = useIr();
+  const { wishTracks, favoriteSeries, weekOffDates } = useIr();
+  const { seasonShowWeekOff } = useUi();
   const { onScroll } = useAppLayout();
   const { t } = useTranslation();
   const tracksMap = favoriteSeries.reduce(
     (acc, curr) => {
       const series = SERIES_JSON[curr.toString() as keyof typeof SERIES_JSON];
       series?.weeks.forEach((week) => {
+        const weekDate = getPreviousTuesday(week.date);
+        if (seasonShowWeekOff && weekOffDates.includes(weekDate)) return;
         const track =
           TRACKS_JSON[week.track.id.toString() as keyof typeof TRACKS_JSON];
         if (!track || track.free) {
@@ -30,7 +34,6 @@ function TracksUsedTable() {
           weeks: {},
           used: 0,
         };
-        const weekDate = getPreviousTuesday(week.date);
         acc[skuId].weeks[series.id] = acc[skuId].weeks[series.id] ?? [];
         acc[skuId].weeks[series.id].push(weekDate);
         acc[skuId].used++;

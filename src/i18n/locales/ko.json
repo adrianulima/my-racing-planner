@@ -166,7 +166,11 @@
     "volumeDiscountTooltip": "묶음 구매에 대한 iRacing 할인을 적용합니다",
     "volumeDiscountLink": "iRacing 공식 볼륨 할인 게시글로 이동",
     "loyaltyDiscount": "충성도 할인",
-    "loyaltyDiscountTooltip": "iRacing 충성도 할인을 적용합니다"
+    "loyaltyDiscountTooltip": "iRacing 충성도 할인을 적용합니다",
+    "markWeekOff": "주차 제외",
+    "markWeekOffTooltip": "체크를 해제하면 이 주의 트랙은 Shop Guide에 포함되지 않습니다",
+    "showWeekOff": "주차 제외 체크박스 표시",
+    "showWeekOffTooltip": "각 주에 체크박스를 표시해 주차 제외로 만들고 해당 트랙을 Shop Guide에서 제외합니다"
   },
   "detail": {
     "noSeries": "이 콘텐츠에 대한 시리즈를 찾을 수 없습니다",
@@ -193,7 +197,9 @@
     "noPaidTracksMissing": "누락된 유료 트랙이 없습니다",
     "ownAllFavoriteTracks": "즐겨찾는 시리즈의 모든 트랙을 이미 보유하고 있습니다",
     "selectSeriesSchedule": "내 시즌 그리드에서 시리즈를 선택하고 레이스를 일정에 추가하세요",
-    "goSeasonSchedule": "내 시즌으로 이동해 레이스 선택"
+    "goSeasonSchedule": "내 시즌으로 이동해 레이스 선택",
+    "noVisibleWeeks": "표시할 주차가 없습니다",
+    "disableHidePastWeeks": "모든 주차가 이미 지난 상태입니다. 지난 주 숨기기를 끄면 다시 볼 수 있습니다."
   },
   "shop": {
     "checkout": "iRacing.com 스토어에서 구매",

@@ -15,23 +15,20 @@ import SERIES_JSON from "../../ir-data/series.json";
 import getScheduleDescription from "../series/getScheduleDescription";
 import { getSeriesWeek } from "../season/useSeason";
 import LicenseBadge from "../badges/license-badge";
-import {
-  getWeekNumber,
-  getWeekRangeLabel,
-  todayStartDate,
-  WeekEntry,
-} from "./schedule-utils";
+import { getWeekNumber, getWeekRangeLabel, WeekEntry } from "./schedule-utils";
 
 type ScheduleWeekCardProps = {
   date: string;
-  weeksStartDates: string[];
+  allSeasonDates: string[];
+  todayStartDate: string;
   weekEntries: WeekEntry[];
   locale: string;
 };
 
 function ScheduleWeekCard({
   date,
-  weeksStartDates,
+  allSeasonDates,
+  todayStartDate,
   weekEntries,
   locale,
 }: ScheduleWeekCardProps) {
@@ -53,7 +50,7 @@ function ScheduleWeekCard({
         <FontAwesomeIcon icon={faCalendarWeek} />
         <Text fontWeight="bold">{getWeekRangeLabel(date, locale)}</Text>
         <Text fontSize="xs" opacity={0.7}>
-          ({t("common.week")} {getWeekNumber(date, weeksStartDates)})
+          ({t("common.week")} {getWeekNumber(date, allSeasonDates)})
         </Text>
         {thisWeek && (
           <Text fontSize="xs" fontWeight="bold" color="green.500">

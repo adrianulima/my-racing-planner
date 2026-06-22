@@ -166,7 +166,11 @@
     "volumeDiscountTooltip": "Aplica descontos do iRacing para compras em pacote",
     "volumeDiscountLink": "Ir para o post oficial do iRacing sobre descontos por volume",
     "loyaltyDiscount": "Desconto de fidelidade",
-    "loyaltyDiscountTooltip": "Aplica o desconto de fidelidade do iRacing"
+    "loyaltyDiscountTooltip": "Aplica o desconto de fidelidade do iRacing",
+    "markWeekOff": "Semana livre",
+    "markWeekOffTooltip": "Quando desmarcado, as pistas desta semana não contarão para o seu Shop Guide",
+    "showWeekOff": "Mostrar checkboxes de semana livre",
+    "showWeekOffTooltip": "Mostra checkboxes em cada semana para marcá-la como semana livre e excluir suas pistas do Shop Guide"
   },
   "detail": {
     "noSeries": "Nenhuma série encontrada para este conteúdo",
@@ -193,7 +197,9 @@
     "noPaidTracksMissing": "Nenhuma pista paga faltando",
     "ownAllFavoriteTracks": "Você já possui todas as pistas das suas séries favoritas",
     "selectSeriesSchedule": "Selecione séries e agende corridas na grade Minha temporada",
-    "goSeasonSchedule": "Ir para Minha temporada para selecionar corridas"
+    "goSeasonSchedule": "Ir para Minha temporada para selecionar corridas",
+    "noVisibleWeeks": "Nenhuma semana visível",
+    "disableHidePastWeeks": "Todas as semanas já passaram. Desative Ocultar semanas passadas para visualizá-las."
   },
   "shop": {
     "checkout": "Comprar na loja do iRacing.com",

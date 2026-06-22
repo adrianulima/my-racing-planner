@@ -1,7 +1,8 @@
 import { IR_URL } from "@/ir-data/utils/urls";
 import { ownNurbCombined, wishNurbCombined } from "@/ir-data/utils/tracks";
-import { useIr } from "@/store/ir";
+import { setFavoriteSeriesItem, useIr } from "@/store/ir";
 import { useUi } from "@/store/ui";
+import { trackEvent } from "@/utils/analytics";
 import { Box, Image, Table, Text, VStack } from "@chakra-ui/react";
 import {
   faArrowRightArrowLeft,
@@ -21,14 +22,17 @@ import { Tooltip } from "../ui/tooltip";
 import SeasonCarsPopover from "./season-cars-popover";
 import SeasonTableHeaderParticipation from "./season-table-header-participation";
 import SeasonTableRowCell from "./season-table-row-cell";
-import { formatDate, getPreviousTuesday, TSeriesDateMap } from "./useSeason";
-const todayStartDate = getPreviousTuesday(formatDate(new Date()));
+import { getWeekOffOpacity } from "./season-table-constants";
+import { TSeriesDateMap } from "./useSeason";
+import StarCheckbox from "../series/star-checkbox";
+import useDelayedHoverId from "./useDelayedHoverId";
 
 function SeasonTableInvertedRow({
   seriesId,
   seriesIndex: _seriesIndex,
   weeksStartDates,
   seriesDateMap,
+  todayStartDate,
   highlightTrack,
   setHighlightTrack,
   onClickSwap,
@@ -37,6 +41,7 @@ function SeasonTableInvertedRow({
   seriesIndex: number;
   weeksStartDates: string[];
   seriesDateMap: TSeriesDateMap;
+  todayStartDate: string;
   highlightTrack: number;
   setHighlightTrack: (n: number) => void;
   onClickSwap?: () => void;
@@ -47,10 +52,16 @@ function SeasonTableInvertedRow({
     seasonShowCarsDropdown,
     seasonUseLocalTimezone,
     seasonShowThisWeek,
+    seasonShowWeekOff,
   } = useUi();
-  const { myTracks, wishTracks } = useIr();
+  const { myTracks, wishTracks, weekOffDates } = useIr();
   const { width } = useScreenSize();
   const { t } = useTranslation();
+  const {
+    activeId: visibleStarSeriesId,
+    onHoverStart,
+    onHoverEnd,
+  } = useDelayedHoverId<number>(150);
 
   const {
     attributes,
@@ -95,6 +106,8 @@ function SeasonTableInvertedRow({
         bgColor={"bg.muted"}
         width="150px"
         minWidth="150px"
+        onMouseEnter={() => onHoverStart(seriesId)}
+        onMouseLeave={() => onHoverEnd(seriesId)}
       >
         <Tooltip
           lazyMount
@@ -208,6 +221,32 @@ function SeasonTableInvertedRow({
           />
         )}
 
+        <Box
+          position="absolute"
+          top={1}
+          right={seasonShowCarsDropdown ? "84px" : 1}
+          zIndex={2}
+          opacity={visibleStarSeriesId === seriesId ? 1 : 0}
+          pointerEvents={visibleStarSeriesId === seriesId ? "auto" : "none"}
+          transition="opacity 0.15s ease"
+          onClick={(e) => e.stopPropagation()}
+          onMouseDown={(e) => e.stopPropagation()}
+        >
+          <StarCheckbox
+            size="sm"
+            aria-label={`Unfavorite ${series.name}`}
+            checked={true}
+            onCheckedChange={() => {
+              setFavoriteSeriesItem(series.id, false);
+              trackEvent("favorite_series_change", {
+                action: "remove",
+                category: series.category,
+                license: series.license.letter,
+              });
+            }}
+          />
+        </Box>
+
         {seasonShowCarsDropdown && <SeasonCarsPopover cars={series.cars} />}
       </Table.Cell>
 
@@ -226,6 +265,8 @@ function SeasonTableInvertedRow({
           (myTracks.includes(track.sku) || ownNurbCombined(track.id, myTracks));
 
         const thisWeek = seasonShowThisWeek && todayStartDate === date;
+        const isWeekOff = weekOffDates.includes(date);
+        const weekOffOpacity = getWeekOffOpacity(isWeekOff, seasonShowWeekOff);
 
         return track ? (
           <SeasonTableRowCell
@@ -244,16 +285,20 @@ function SeasonTableInvertedRow({
             highlight={highlightTrack === track?.sku}
             setHighlightTrack={setHighlightTrack}
             noSortableWrapper
-            borderTopWidth={thisWeek ? "2px" : undefined}
-            borderBottomWidth={thisWeek ? "2px" : undefined}
-            borderColor={thisWeek ? "bg.inverted" : undefined}
+            borderLeftWidth={thisWeek ? "2px" : undefined}
+            borderRightWidth={thisWeek ? "2px" : undefined}
+            borderLeftColor={thisWeek ? "bg.inverted" : undefined}
+            borderRightColor={thisWeek ? "bg.inverted" : undefined}
+            opacity={weekOffOpacity}
           />
         ) : (
           <Table.Cell
             key={date}
-            borderTopWidth={thisWeek ? "2px" : undefined}
-            borderBottomWidth={thisWeek ? "2px" : undefined}
-            borderColor={thisWeek ? "bg.inverted" : undefined}
+            borderLeftWidth={thisWeek ? "2px" : undefined}
+            borderRightWidth={thisWeek ? "2px" : undefined}
+            borderLeftColor={thisWeek ? "bg.inverted" : undefined}
+            borderRightColor={thisWeek ? "bg.inverted" : undefined}
+            opacity={weekOffOpacity}
           />
         );
       })}
