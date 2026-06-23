@@ -8,6 +8,7 @@ import ContentFilterPanel from "../content/content-filter-panel";
 import Page from "../page/page";
 import PageHeader from "../page/page-header";
 import { Tooltip } from "../ui/tooltip";
+import SeriesSettingsPopover from "./series-settings-popover";
 import SeriesTable from "./series-table";
 import SeriesTableRow from "./series-table-row";
 import StarCheckbox from "./star-checkbox";
@@ -70,6 +71,7 @@ function SeriesPage() {
         onTabChange={setTabCategory}
         search={search}
         onSearchChange={setSearch}
+        leftContent={<SeriesSettingsPopover />}
       />
 
       <SeriesTable

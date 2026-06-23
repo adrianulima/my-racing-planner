@@ -157,7 +157,11 @@
     "markWeekOff": "Semaine libre",
     "markWeekOffTooltip": "Lorsque décoché, les circuits de cette semaine ne seront pas comptés dans votre Shop Guide",
     "showWeekOff": "Afficher les cases de semaine libre",
-    "showWeekOffTooltip": "Afficher des cases pour chaque semaine afin de la marquer comme semaine libre et exclure ses circuits du Shop Guide"
+    "showWeekOffTooltip": "Afficher des cases pour chaque semaine afin de la marquer comme semaine libre et exclure ses circuits du Shop Guide",
+    "seriesShowCarCounts": "Afficher les voitures possédées",
+    "seriesShowCarCountsTooltip": "Affiche (possédé + souhait) / total pour les voitures. Devient bleu quand des éléments sont dans la liste de souhaits",
+    "seriesShowTrackCounts": "Afficher les circuits possédés",
+    "seriesShowTrackCountsTooltip": "Affiche (possédé + souhait) / total pour les circuits. Devient bleu quand des éléments sont dans la liste de souhaits"
   },
   "help": {
     "seriesHeading": "Commencez par la page <series>Mes séries</series>",

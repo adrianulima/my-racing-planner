@@ -162,7 +162,11 @@
     "markWeekOff": "周休",
     "markWeekOffTooltip": "取消勾选后，这一周的赛道将不会计入你的 Shop Guide",
     "showWeekOff": "显示周休复选框",
-    "showWeekOffTooltip": "在每周显示复选框，将其标记为周休，并把该周的赛道从 Shop Guide 中排除"
+    "showWeekOffTooltip": "在每周显示复选框，将其标记为周休，并把该周的赛道从 Shop Guide 中排除",
+    "seriesShowCarCounts": "显示拥有的车辆",
+    "seriesShowCarCountsTooltip": "显示车辆的（拥有 + 心愿单）/ 总计。有心愿单项目时变为蓝色",
+    "seriesShowTrackCounts": "显示拥有的赛道",
+    "seriesShowTrackCountsTooltip": "显示赛道的（拥有 + 心愿单）/ 总计。有心愿单项目时变为蓝色"
   },
   "counts": {
     "freeTooltip": "iRacing 订阅免费包含",
