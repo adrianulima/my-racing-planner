@@ -162,11 +162,7 @@
     "markWeekOff": "Semana livre",
     "markWeekOffTooltip": "Quando desmarcado, as pistas desta semana não contarão para o seu Shop Guide",
     "showWeekOff": "Mostrar checkboxes de semana livre",
-    "showWeekOffTooltip": "Mostra checkboxes em cada semana para marcá-la como semana livre e excluir suas pistas do Shop Guide",
-    "seriesShowCarCounts": "Mostrar carros que possuo",
-    "seriesShowCarCountsTooltip": "Mostra (possui + desejados) / total para carros. Fica azul quando há itens na lista de desejos",
-    "seriesShowTrackCounts": "Mostrar pistas que possuo",
-    "seriesShowTrackCountsTooltip": "Mostra (possui + desejados) / total para pistas. Fica azul quando há itens na lista de desejos"
+    "showWeekOffTooltip": "Mostra checkboxes em cada semana para marcá-la como semana livre e excluir suas pistas do Shop Guide"
   },
   "counts": {
     "freeTooltip": "Disponível grátis com uma assinatura do iRacing",

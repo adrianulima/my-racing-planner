@@ -1,4 +1,3 @@
-import { ReactNode } from "react";
 import useScreenSize from "@/hooks/useScreenSize";
 import { CategoryIcon } from "@/ir-data/utils/icons";
 import { HStack, IconButton, Input, Tabs, Text } from "@chakra-ui/react";
@@ -15,14 +14,12 @@ function ContentFilterPanel<T extends string>({
   search,
   onTabChange,
   onSearchChange,
-  leftContent,
 }: {
   tabs: { [key: string]: string };
   tab: T;
   search: string;
   onTabChange: (value: T) => void;
   onSearchChange: (value: string) => void;
-  leftContent?: ReactNode;
 }) {
   const { width } = useScreenSize();
   const { t } = useTranslation();
@@ -33,48 +30,45 @@ function ContentFilterPanel<T extends string>({
 
   return (
     <HStack justifyContent={{ md: "space-between", base: "center" }} mb={2}>
-      <HStack gap={1}>
-        {leftContent}
-        <PopoverRoot
-          open={search?.trim() ? true : undefined}
-          positioning={{ placement: width.md ? "right" : "top-start" }}
-        >
-          <PopoverTrigger asChild>
-            <IconButton
-              aria-label={t("common.search")}
-              variant={"outline"}
-              size={"lg"}
-              bgColor={{ base: "bg.muted", _hover: "bg" }}
-              borderRadius={"md"}
-            >
-              <FontAwesomeIcon icon={faSearch} />
-            </IconButton>
-          </PopoverTrigger>
-          <PopoverContent>
-            <InputGroup
-              width={"360px"}
-              maxWidth={"100%"}
-              startElement={<FontAwesomeIcon icon={faSearch} />}
-              endElement={
-                search?.trim() ? (
-                  <FontAwesomeIcon
-                    onClick={() => setSearchWrapper("")}
-                    cursor={"pointer"}
-                    icon={faCircleXmark}
-                  />
-                ) : undefined
-              }
-            >
-              <Input
-                placeholder={t("common.search")}
-                variant="subtle"
-                value={search}
-                onChange={(e) => setSearchWrapper(e.target.value)}
-              />
-            </InputGroup>
-          </PopoverContent>
-        </PopoverRoot>
-      </HStack>
+      <PopoverRoot
+        open={search?.trim() ? true : undefined}
+        positioning={{ placement: width.md ? "right" : "top-start" }}
+      >
+        <PopoverTrigger asChild>
+          <IconButton
+            aria-label={t("common.search")}
+            variant={"outline"}
+            size={"lg"}
+            bgColor={{ base: "bg.muted", _hover: "bg" }}
+            borderRadius={"md"}
+          >
+            <FontAwesomeIcon icon={faSearch} />
+          </IconButton>
+        </PopoverTrigger>
+        <PopoverContent>
+          <InputGroup
+            width={"360px"}
+            maxWidth={"100%"}
+            startElement={<FontAwesomeIcon icon={faSearch} />}
+            endElement={
+              search?.trim() ? (
+                <FontAwesomeIcon
+                  onClick={() => setSearchWrapper("")}
+                  cursor={"pointer"}
+                  icon={faCircleXmark}
+                />
+              ) : undefined
+            }
+          >
+            <Input
+              placeholder={t("common.search")}
+              variant="subtle"
+              value={search}
+              onChange={(e) => setSearchWrapper(e.target.value)}
+            />
+          </InputGroup>
+        </PopoverContent>
+      </PopoverRoot>
 
       <Tabs.Root
         size={"sm"}

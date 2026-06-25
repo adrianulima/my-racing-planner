@@ -157,11 +157,7 @@
     "markWeekOff": "Tydzień wolny",
     "markWeekOffTooltip": "Gdy odznaczone, tory z tego tygodnia nie będą liczone do Shop Guide",
     "showWeekOff": "Pokaż pola wyboru tygodnia wolnego",
-    "showWeekOffTooltip": "Pokaż pola wyboru przy każdym tygodniu, aby oznaczyć go jako tydzień wolny i wykluczyć jego tory z Shop Guide",
-    "seriesShowCarCounts": "Pokaż posiadane samochody",
-    "seriesShowCarCountsTooltip": "Pokazuje (posiadane + życzenia) / całkowita dla samochodów. Zmienia kolor na niebieski, gdy są elementy na liście życzeń",
-    "seriesShowTrackCounts": "Pokaż posiadane tory",
-    "seriesShowTrackCountsTooltip": "Pokazuje (posiadane + życzenia) / całkowita dla torów. Zmienia kolor na niebieski, gdy są elementy na liście życzeń"
+    "showWeekOffTooltip": "Pokaż pola wyboru przy każdym tygodniu, aby oznaczyć go jako tydzień wolny i wykluczyć jego tory z Shop Guide"
   },
   "help": {
     "seriesHeading": "Zacznij od strony <series>Moje serie</series>",

@@ -157,11 +157,7 @@
     "markWeekOff": "Woche frei",
     "markWeekOffTooltip": "Wenn deaktiviert, werden die Strecken dieser Woche nicht für deinen Shop Guide gezählt",
     "showWeekOff": "Week-off-Checkboxen anzeigen",
-    "showWeekOffTooltip": "Checkboxen für jede Woche anzeigen, um sie als week-off zu markieren und ihre Strecken aus dem Shop Guide auszuschließen",
-    "seriesShowCarCounts": "Besitzte Autos anzeigen",
-    "seriesShowCarCountsTooltip": "Zeigt (besitze + wunschliste) / gesamt für Autos. Wird blau, wenn Wunschlistenelemente vorhanden sind",
-    "seriesShowTrackCounts": "Besitzte Strecken anzeigen",
-    "seriesShowTrackCountsTooltip": "Zeigt (besitze + wunschliste) / gesamt für Strecken. Wird blau, wenn Wunschlistenelemente vorhanden sind"
+    "showWeekOffTooltip": "Checkboxen für jede Woche anzeigen, um sie als week-off zu markieren und ihre Strecken aus dem Shop Guide auszuschließen"
   },
   "help": {
     "seriesHeading": "Beginne mit der Seite <series>Meine Serien</series>",

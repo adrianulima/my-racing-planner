@@ -2,6 +2,10 @@
 
 All notable changes to the **"Racing Planner"** project will be documented in this file.
 
+## 0.11.1
+
+- Added content owned count to series page rows
+
 ## 0.11.0
 
 - Added "Hide past weeks" toggle to My Season and My Schedule

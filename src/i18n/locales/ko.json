@@ -162,11 +162,7 @@
     "markWeekOff": "주차 제외",
     "markWeekOffTooltip": "체크를 해제하면 이 주의 트랙은 Shop Guide에 포함되지 않습니다",
     "showWeekOff": "주차 제외 체크박스 표시",
-    "showWeekOffTooltip": "각 주에 체크박스를 표시해 주차 제외로 만들고 해당 트랙을 Shop Guide에서 제외합니다",
-    "seriesShowCarCounts": "보유한 자동차 표시",
-    "seriesShowCarCountsTooltip": "자동차의 (보유 + 위시리스트) / 전체를 표시합니다. 위시리스트 항목이 있으면 파란색으로 변합니다",
-    "seriesShowTrackCounts": "보유한 트랙 표시",
-    "seriesShowTrackCountsTooltip": "트랙의 (보유 + 위시리스트) / 전체를 표시합니다. 위시리스트 항목이 있으면 파란색으로 변합니다"
+    "showWeekOffTooltip": "각 주에 체크박스를 표시해 주차 제외로 만들고 해당 트랙을 Shop Guide에서 제외합니다"
   },
   "counts": {
     "freeTooltip": "iRacing 구독에 무료로 포함됩니다",

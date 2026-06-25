@@ -36,8 +36,6 @@ export const useUiStorePersist = create(
       seasonCategory: ECarCategories.all,
       seasonAxisInverted: false,
       seasonHidePastWeeks: false,
-      seriesShowCarCounts: true,
-      seriesShowTrackCounts: true,
       shopVolumeDiscount: true,
       shopLoyaltyDiscount: false,
       helpPresented: false,
@@ -88,12 +86,6 @@ export const setSeasonHidePastWeeks = (value: boolean) =>
 export const setSeasonCategory = (value: ECarCategories) =>
   useUiStorePersist.setState(() => ({ seasonCategory: value }));
 
-export const setSeriesShowCarCounts = (value: boolean) =>
-  useUiStorePersist.setState(() => ({ seriesShowCarCounts: value }));
-
-export const setSeriesShowTrackCounts = (value: boolean) =>
-  useUiStorePersist.setState(() => ({ seriesShowTrackCounts: value }));
-
 export const setShopVolumeDiscount = (value: boolean) =>
   useUiStorePersist.setState(() => ({ shopVolumeDiscount: value }));
 
@@ -140,12 +132,6 @@ export const useUi = () => {
     (state) => state.seasonHidePastWeeks,
   );
   const seasonCategory = useUiStorePersist((state) => state.seasonCategory);
-  const seriesShowCarCounts = useUiStorePersist(
-    (state) => state.seriesShowCarCounts,
-  );
-  const seriesShowTrackCounts = useUiStorePersist(
-    (state) => state.seriesShowTrackCounts,
-  );
   const shopVolumeDiscount = useUiStorePersist(
     (state) => state.shopVolumeDiscount,
   );
@@ -171,8 +157,6 @@ export const useUi = () => {
     seasonAxisInverted,
     seasonHidePastWeeks,
     seasonCategory,
-    seriesShowCarCounts,
-    seriesShowTrackCounts,
     shopVolumeDiscount,
     shopLoyaltyDiscount,
     helpPresented,

@@ -162,11 +162,7 @@
     "markWeekOff": "Week off",
     "markWeekOffTooltip": "When unchecked, this week's tracks won't count toward your Shop Guide",
     "showWeekOff": "Show week-off checkboxes",
-    "showWeekOffTooltip": "Show week-off checkboxes on each week to exclude their tracks from the Shop Guide",
-    "seriesShowCarCounts": "Show cars owned",
-    "seriesShowCarCountsTooltip": "Show (owned + wishlist) / total for cars. Turns blue when wishlist items are present",
-    "seriesShowTrackCounts": "Show tracks owned",
-    "seriesShowTrackCountsTooltip": "Show (owned + wishlist) / total for tracks. Turns blue when wishlist items are present"
+    "showWeekOffTooltip": "Show week-off checkboxes on each week to exclude their tracks from the Shop Guide"
   },
   "counts": {
     "freeTooltip": "Available for free with an iRacing subscription",
