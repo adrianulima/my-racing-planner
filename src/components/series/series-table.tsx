@@ -29,10 +29,10 @@ function SeriesTable<T extends string | number | Dict | undefined>({
         <Table.ColumnHeader minWidth={"90px"} textAlign={"center"}>
           {t("common.setup")}
         </Table.ColumnHeader>
-        <Table.ColumnHeader minWidth={"90px"} textAlign={"center"}>
+        <Table.ColumnHeader minWidth={"110px"} textAlign={"center"}>
           {t("common.cars")}
         </Table.ColumnHeader>
-        <Table.ColumnHeader minWidth={"90px"} textAlign={"center"}>
+        <Table.ColumnHeader minWidth={"110px"} textAlign={"center"}>
           {t("common.tracks")}
         </Table.ColumnHeader>
         <Table.ColumnHeader minWidth={"90px"} textAlign={"center"}>

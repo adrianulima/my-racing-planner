@@ -9,7 +9,15 @@ import { Category } from "@/ir-data/utils/types";
 import { IR_URL } from "@/ir-data/utils/urls";
 import { setFavoriteSeriesItem } from "@/store/ir";
 import { trackEvent } from "@/utils/analytics";
-import { Badge, Box, Center, HStack, Image, Table } from "@chakra-ui/react";
+import {
+  Badge,
+  Box,
+  Center,
+  HStack,
+  Image,
+  Table,
+  Text,
+} from "@chakra-ui/react";
 import {
   faCar,
   faCaretDown,
@@ -27,6 +35,13 @@ import getScheduleDescription from "./getScheduleDescription";
 import { useUi } from "@/store/ui";
 import { useTranslation } from "react-i18next";
 import { getCategoryTranslationKey } from "@/i18n/category";
+import CARS_JSON from "@/ir-data/cars.json";
+import TRACKS_JSON from "@/ir-data/tracks.json";
+import { useIr } from "@/store/ir";
+import { ownNurbCombined, wishNurbCombined } from "@/ir-data/utils/tracks";
+import { useMemo } from "react";
+
+const WISH_HIGHLIGHT_COLOR = { base: "blue.500", _dark: "blue.300" };
 
 function SeriesTableRow({
   id,
@@ -57,12 +72,75 @@ function SeriesTableRow({
   laps: number | null;
   official: boolean;
 }) {
-  const tracks = [...new Set(weeks.map((w) => w.track.id))];
+  const tracks = useMemo(
+    () => [...new Set(weeks.map((w) => w.track.id))],
+    [weeks],
+  );
+  const { myCars, myTracks, wishCars, wishTracks } = useIr();
+
+  const { ownedCars, ownedWishCars, hasWishCars } = useMemo(() => {
+    const myCarsSet = new Set(myCars);
+    const wishCarsSet = new Set(wishCars);
+
+    let ownedCars = 0;
+    let ownedWishCars = 0;
+
+    for (const carId of cars) {
+      const car = CARS_JSON[carId as unknown as keyof typeof CARS_JSON];
+      if (!car) continue;
+
+      const isOwned = car.free || myCarsSet.has(car.sku);
+      if (isOwned) ownedCars++;
+      if (isOwned || wishCarsSet.has(car.sku)) ownedWishCars++;
+    }
+
+    return {
+      ownedCars,
+      ownedWishCars,
+      hasWishCars: ownedWishCars > ownedCars,
+    };
+  }, [cars, myCars, wishCars]);
+
+  const { ownedWishTracks, hasWishTracks } = useMemo(() => {
+    const myTracksSet = new Set(myTracks);
+    const wishTracksSet = new Set(wishTracks);
+
+    let ownedWishTracks = 0;
+    let hasWishTracks = false;
+
+    for (const trackId of tracks) {
+      const track = TRACKS_JSON[trackId as unknown as keyof typeof TRACKS_JSON];
+      if (!track) continue;
+
+      const isOwned =
+        track.free ||
+        myTracksSet.has(track.sku) ||
+        ownNurbCombined(trackId, myTracks);
+
+      if (
+        isOwned ||
+        wishTracksSet.has(track.sku) ||
+        wishNurbCombined(trackId, wishTracks, myTracks)
+      ) {
+        ownedWishTracks++;
+      }
+
+      if (
+        wishTracksSet.has(track.sku) ||
+        wishNurbCombined(trackId, wishTracks, myTracks)
+      ) {
+        hasWishTracks = true;
+      }
+    }
+
+    return { ownedWishTracks, hasWishTracks };
+  }, [tracks, myTracks, wishTracks]);
+
   const { seasonUseLocalTimezone } = useUi();
   const { t } = useTranslation();
-  const scheduleDescription = getScheduleDescription(
-    id,
-    seasonUseLocalTimezone,
+  const scheduleDescription = useMemo(
+    () => getScheduleDescription(id, seasonUseLocalTimezone),
+    [id, seasonUseLocalTimezone],
   );
   return (
     <Table.Row bgColor={"transparent"}>
@@ -142,12 +220,26 @@ function SeriesTableRow({
           </Tooltip>
         )}
       </Table.Cell>
-      <Table.Cell minWidth={"90px"} textAlign={"center"}>
+      <Table.Cell minWidth={"110px"} textAlign={"center"}>
         <PopoverRoot lazyMount unmountOnExit>
           <PopoverTrigger asChild>
             <HStack gap={1} justifyContent={"center"} cursor={"pointer"}>
               <FontAwesomeIcon icon={faCar} />
-              {cars.length}
+              <Text whiteSpace={"nowrap"}>
+                <Box
+                  as="span"
+                  color={
+                    ownedWishCars >= cars.length
+                      ? undefined
+                      : hasWishCars && ownedCars === 0
+                        ? WISH_HIGHLIGHT_COLOR
+                        : undefined
+                  }
+                >
+                  {ownedWishCars}
+                </Box>
+                <Box as="span">/{cars.length}</Box>
+              </Text>
               <FontAwesomeIcon icon={faCaretDown} />
             </HStack>
           </PopoverTrigger>
@@ -157,12 +249,20 @@ function SeriesTableRow({
           </PopoverContent>
         </PopoverRoot>
       </Table.Cell>
-      <Table.Cell minWidth={"90px"} textAlign={"center"}>
+      <Table.Cell minWidth={"110px"} textAlign={"center"}>
         <PopoverRoot lazyMount unmountOnExit>
           <PopoverTrigger asChild>
             <HStack gap={1} justifyContent={"center"} cursor={"pointer"}>
               <FontAwesomeIcon icon={faRoad} />
-              {tracks.length}
+              <Text whiteSpace={"nowrap"}>
+                <Box
+                  as="span"
+                  color={hasWishTracks ? WISH_HIGHLIGHT_COLOR : undefined}
+                >
+                  {ownedWishTracks}
+                </Box>
+                <Box as="span">/{tracks.length}</Box>
+              </Text>
               <FontAwesomeIcon icon={faCaretDown} />
             </HStack>
           </PopoverTrigger>
