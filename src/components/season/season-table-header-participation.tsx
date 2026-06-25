@@ -13,7 +13,7 @@ const PARTICIPATION_THRESHOLD = 0.66;
 function SeasonTableHeaderParticipation({
   seriesTracks,
 }: {
-  seriesTracks: Record<string, number | number[]>;
+  seriesTracks?: Record<string, number | number[]>;
 }) {
   const { myTracks, wishTracks } = useIr();
   const { t } = useTranslation();
@@ -26,7 +26,7 @@ function SeasonTableHeaderParticipation({
     enoughTracksWithWish,
   } = (() => {
     const filteredTracks = Object.fromEntries(
-      Object.entries(seriesTracks).filter(
+      Object.entries(seriesTracks ?? {}).filter(
         ([key]) => !key.includes("_cars") && !key.includes("_rainChance"),
       ),
     );

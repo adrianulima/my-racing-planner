@@ -5,6 +5,7 @@ All notable changes to the **"Racing Planner"** project will be documented in th
 ## 0.11.1
 
 - Added content owned count to series page rows
+- Fix a crash when unfavorite a series from the season page with participation credit program enabled
 
 ## 0.11.0
 
