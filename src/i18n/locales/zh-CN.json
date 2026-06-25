@@ -22,6 +22,7 @@
     "license": "执照",
     "name": "名称",
     "owned": "已拥有",
+    "notOwned": "未拥有",
     "ownedContent": "已拥有内容",
     "ownedContentCheckbox": "已拥有内容复选框",
     "print": "打印",
@@ -126,7 +127,8 @@
       "three_years": "过去三年",
       "five_years": "过去五年",
       "ten_years": "过去十年"
-    }
+    },
+    "ownership": "按状态筛选"
   },
   "settings": {
     "showContentCheckboxes": "显示内容复选框",

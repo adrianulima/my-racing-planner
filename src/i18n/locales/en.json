@@ -22,6 +22,7 @@
     "license": "License",
     "name": "Name",
     "owned": "Owned",
+    "notOwned": "Not Owned",
     "ownedContent": "Owned content",
     "ownedContentCheckbox": "Owned Content Checkbox",
     "print": "Print",
@@ -126,7 +127,8 @@
       "three_years": "Past Three Years",
       "five_years": "Past Five Years",
       "ten_years": "Past Ten Years"
-    }
+    },
+    "ownership": "Filter by status"
   },
   "settings": {
     "showContentCheckboxes": "Show content checkboxes",

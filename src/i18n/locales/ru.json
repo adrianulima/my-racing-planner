@@ -17,6 +17,7 @@
     "license": "Лицензия",
     "name": "Название",
     "owned": "Куплено",
+    "notOwned": "Не куплено",
     "ownedContent": "Купленный контент",
     "ownedContentCheckbox": "Флажок купленного контента",
     "print": "Печать",
@@ -121,7 +122,8 @@
       "three_years": "Последние три года",
       "five_years": "Последние пять лет",
       "ten_years": "Последние десять лет"
-    }
+    },
+    "ownership": "Фильтр по статусу"
   },
   "settings": {
     "showContentCheckboxes": "Показывать флажки контента",
