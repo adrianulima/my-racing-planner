@@ -1,6 +1,8 @@
 {
   "common": {
     "apply": "Appliquer",
+    "backTo": "Retour à",
+    "calendar": "Calendrier",
     "cars": "Voitures",
     "cancel": "Annuler",
     "category": "Catégorie",
@@ -14,6 +16,9 @@
     "history": "Historique",
     "includes": "Inclut",
     "language": "Langue",
+    "max": "Max",
+    "min": "Min",
+    "clear": "Effacer",
     "license": "Licence",
     "name": "Nom",
     "owned": "Possédé",
@@ -29,10 +34,14 @@
     "settings": "Réglages",
     "setup": "Setup",
     "tracks": "Circuits",
+    "type": "Type",
     "unranked": "Non classée",
     "used": "Utilisé",
     "usagePerYear": "Utilisation/an",
     "week": "semaine",
+    "weeks": "Semaines",
+    "weeksRaced": "semaines courues",
+    "weeksUsed": "semaines utilisées",
     "wishlist": "Liste d'envies"
   },
   "categories": {
@@ -147,6 +156,8 @@
     "localTimezone": "Horaires en {{timezone}}",
     "localTimezoneTooltip": "Convertir les horaires de course UTC vers votre fuseau horaire local",
     "invertAxis": "Permuter les axes",
+    "hideEmptyWeeks": "Masquer les semaines vides",
+    "hideEmptyWeeksTooltip": "Masquer les semaines où aucune série n'utilise ce contenu",
     "hidePastWeeks": "Masquer les semaines passées",
     "hidePastWeeksTooltip": "Masquer les semaines déjà écoulées",
     "volumeDiscount": "Remise de volume",
@@ -158,6 +169,11 @@
     "markWeekOffTooltip": "Lorsque décoché, les circuits de cette semaine ne seront pas comptés dans votre Shop Guide",
     "showWeekOff": "Afficher les cases de semaine libre",
     "showWeekOffTooltip": "Afficher des cases pour chaque semaine afin de la marquer comme semaine libre et exclure ses circuits du Shop Guide"
+  },
+  "detail": {
+    "noSeries": "Aucune série trouvée pour ce contenu",
+    "notFound": "Contenu non trouvé",
+    "notFoundDescription": "Le contenu demandé n'a pas pu être trouvé."
   },
   "help": {
     "seriesHeading": "Commencez par la page <series>Mes séries</series>",

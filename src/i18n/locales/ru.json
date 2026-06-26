@@ -1,6 +1,8 @@
 {
   "common": {
     "apply": "Применить",
+    "backTo": "Назад к",
+    "calendar": "Календарь",
     "cars": "Автомобили",
     "cancel": "Отмена",
     "category": "Категория",
@@ -14,6 +16,9 @@
     "history": "История",
     "includes": "Включает",
     "language": "Язык",
+    "max": "Макс",
+    "min": "Мин",
+    "clear": "Очистить",
     "license": "Лицензия",
     "name": "Название",
     "owned": "Куплено",
@@ -29,10 +34,14 @@
     "settings": "Настройки",
     "setup": "Сетап",
     "tracks": "Трассы",
+    "type": "Тип",
     "unranked": "Без рейтинга",
     "used": "Использовано",
     "usagePerYear": "Исп./год",
     "week": "неделя",
+    "weeks": "Недели",
+    "weeksRaced": "недель проведено",
+    "weeksUsed": "недель использовано",
     "wishlist": "Список желаний"
   },
   "categories": {
@@ -147,6 +156,8 @@
     "localTimezone": "Расписание в {{timezone}}",
     "localTimezoneTooltip": "Конвертировать время гонок из UTC в ваш локальный часовой пояс",
     "invertAxis": "Поменять оси",
+    "hideEmptyWeeks": "Скрыть пустые недели",
+    "hideEmptyWeeksTooltip": "Скрывать недели, где ни одна серия не использует этот контент",
     "hidePastWeeks": "Скрыть прошедшие недели",
     "hidePastWeeksTooltip": "Скрывать недели, которые уже прошли",
     "volumeDiscount": "Скидка за объём",
@@ -158,6 +169,11 @@
     "markWeekOffTooltip": "Если флажок снят, трассы этой недели не будут учитываться в Shop Guide",
     "showWeekOff": "Показывать флажки свободной недели",
     "showWeekOffTooltip": "Показывать флажки у каждой недели, чтобы помечать её как свободную и исключать её трассы из Shop Guide"
+  },
+  "detail": {
+    "noSeries": "Серии для этого контента не найдены",
+    "notFound": "Контент не найден",
+    "notFoundDescription": "Запрошенный контент не найден."
   },
   "help": {
     "seriesHeading": "Начните со страницы <series>Мои серии</series>",

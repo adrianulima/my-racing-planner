@@ -5,6 +5,8 @@
   },
   "common": {
     "apply": "Aplicar",
+    "backTo": "Volver a",
+    "calendar": "Calendario",
     "cars": "Autos",
     "cancel": "Cancelar",
     "category": "Categoría",
@@ -20,6 +22,9 @@
     "includes": "Incluye",
     "language": "Idioma",
     "license": "Licencia",
+	"max": "Máx",
+    "min": "Mín",
+    "clear": "Limpiar",
     "name": "Nombre",
     "owned": "Propio",
     "ownedContent": "Contenido propio",
@@ -34,10 +39,14 @@
     "settings": "Configuración",
     "setup": "Setup",
     "tracks": "Pistas",
+    "type": "Tipo",
     "unranked": "No puntuable",
     "used": "Usado",
     "usagePerYear": "Uso/año",
     "week": "semana",
+    "weeks": "Semanas",
+    "weeksRaced": "semanas corridas",
+    "weeksUsed": "semanas usadas",
     "wishlist": "Lista de deseos"
   },
   "categories": {
@@ -152,6 +161,8 @@
     "localTimezone": "Horarios en {{timezone}}",
     "localTimezoneTooltip": "Convierte horarios de carreras de UTC a tu zona horaria local",
     "invertAxis": "Intercambiar ejes",
+    "hideEmptyWeeks": "Ocultar semanas vacías",
+    "hideEmptyWeeksTooltip": "Ocultar semanas donde ninguna serie usa este contenido",
     "hidePastWeeks": "Ocultar semanas pasadas",
     "hidePastWeeksTooltip": "Ocultar las semanas que ya han pasado",
     "volumeDiscount": "Descuento por volumen",
@@ -163,6 +174,11 @@
     "markWeekOffTooltip": "Cuando está desactivado, las pistas de esta semana no contarán para tu Shop Guide",
     "showWeekOff": "Mostrar casillas de semana libre",
     "showWeekOffTooltip": "Muestra casillas en cada semana para marcarla como semana libre y excluir sus pistas del Shop Guide"
+  },
+  "detail": {
+    "noSeries": "No se encontraron series para este contenido",
+    "notFound": "Contenido no encontrado",
+    "notFoundDescription": "El contenido solicitado no pudo ser encontrado."
   },
   "counts": {
     "freeTooltip": "Disponible gratis con una suscripción de iRacing",

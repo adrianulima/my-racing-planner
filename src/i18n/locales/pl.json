@@ -1,6 +1,8 @@
 {
   "common": {
     "apply": "Zastosuj",
+    "backTo": "Powrót do",
+    "calendar": "Kalendarz",
     "cars": "Samochody",
     "cancel": "Anuluj",
     "category": "Kategoria",
@@ -14,6 +16,9 @@
     "history": "Historia",
     "includes": "Zawiera",
     "language": "Język",
+    "max": "Maks",
+    "min": "Min",
+    "clear": "Wyczyść",
     "license": "Licencja",
     "name": "Nazwa",
     "owned": "Posiadane",
@@ -29,10 +34,14 @@
     "settings": "Ustawienia",
     "setup": "Setup",
     "tracks": "Tory",
+    "type": "Typ",
     "unranked": "Nierankingowa",
     "used": "Użycia",
     "usagePerYear": "Użycia/rok",
     "week": "tydzień",
+    "weeks": "Tygodnie",
+    "weeksRaced": "tygodnie przejechane",
+    "weeksUsed": "tygodnie wykorzystane",
     "wishlist": "Lista życzeń"
   },
   "categories": {
@@ -147,6 +156,8 @@
     "localTimezone": "Harmonogram w czasie {{timezone}}",
     "localTimezoneTooltip": "Konwertuj czasy wyścigów z UTC na lokalną strefę czasową",
     "invertAxis": "Zamień osie",
+    "hideEmptyWeeks": "Ukryj puste tygodnie",
+    "hideEmptyWeeksTooltip": "Ukryj tygodnie, w których żadna seria nie używa tej zawartości",
     "hidePastWeeks": "Ukryj minione tygodnie",
     "hidePastWeeksTooltip": "Ukryj tygodnie, które już minęły",
     "volumeDiscount": "Rabat ilościowy",
@@ -158,6 +169,11 @@
     "markWeekOffTooltip": "Gdy odznaczone, tory z tego tygodnia nie będą liczone do Shop Guide",
     "showWeekOff": "Pokaż pola wyboru tygodnia wolnego",
     "showWeekOffTooltip": "Pokaż pola wyboru przy każdym tygodniu, aby oznaczyć go jako tydzień wolny i wykluczyć jego tory z Shop Guide"
+  },
+  "detail": {
+    "noSeries": "Nie znaleziono serii dla tej zawartości",
+    "notFound": "Zawartość nie znaleziona",
+    "notFoundDescription": "Żądana zawartość nie została znaleziona."
   },
   "help": {
     "seriesHeading": "Zacznij od strony <series>Moje serie</series>",

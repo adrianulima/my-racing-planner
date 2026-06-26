@@ -1,8 +1,15 @@
 import { useEffect, useState } from "react";
-import { formatDate, getPreviousTuesday } from "@/components/season/useSeason";
 
 function getTodayStartDate() {
-  return getPreviousTuesday(formatDate(new Date()));
+  const now = new Date();
+  const day = now.getDay();
+  const diff = (day + 5) % 7;
+  const tuesday = new Date(now);
+  tuesday.setDate(now.getDate() - diff);
+  const y = tuesday.getFullYear();
+  const m = String(tuesday.getMonth() + 1).padStart(2, "0");
+  const d = String(tuesday.getDate()).padStart(2, "0");
+  return `${y}-${m}-${d}`;
 }
 
 function useTodayStartDate() {

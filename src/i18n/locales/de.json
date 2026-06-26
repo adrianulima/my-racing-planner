@@ -1,6 +1,8 @@
 {
   "common": {
     "apply": "Anwenden",
+    "backTo": "Zurück zu",
+    "calendar": "Kalender",
     "cars": "Autos",
     "cancel": "Abbrechen",
     "category": "Kategorie",
@@ -14,6 +16,9 @@
     "history": "Verlauf",
     "includes": "Enthält",
     "language": "Sprache",
+    "max": "Max",
+    "min": "Min",
+    "clear": "Löschen",
     "license": "Lizenz",
     "name": "Name",
     "owned": "Besitzt",
@@ -29,10 +34,14 @@
     "settings": "Einstellungen",
     "setup": "Setup",
     "tracks": "Strecken",
+    "type": "Typ",
     "unranked": "Nicht gewertet",
     "used": "Genutzt",
     "usagePerYear": "Nutzung/Jahr",
     "week": "Woche",
+    "weeks": "Wochen",
+    "weeksRaced": "Wochen gefahren",
+    "weeksUsed": "Wochen genutzt",
     "wishlist": "Wunschliste"
   },
   "categories": {
@@ -147,6 +156,8 @@
     "localTimezone": "Zeitplan in {{timezone}}",
     "localTimezoneTooltip": "Rennzeiten von UTC in deine lokale Zeitzone umrechnen",
     "invertAxis": "Achsen tauschen",
+    "hideEmptyWeeks": "Leere Wochen ausblenden",
+    "hideEmptyWeeksTooltip": "Wochen ausblenden, in denen keine Serie diesen Inhalt nutzt",
     "hidePastWeeks": "Vergangene Wochen ausblenden",
     "hidePastWeeksTooltip": "Bereits vergangene Wochen ausblenden",
     "volumeDiscount": "Mengenrabatt",
@@ -158,6 +169,11 @@
     "markWeekOffTooltip": "Wenn deaktiviert, werden die Strecken dieser Woche nicht für deinen Shop Guide gezählt",
     "showWeekOff": "Week-off-Checkboxen anzeigen",
     "showWeekOffTooltip": "Checkboxen für jede Woche anzeigen, um sie als week-off zu markieren und ihre Strecken aus dem Shop Guide auszuschließen"
+  },
+  "detail": {
+    "noSeries": "Keine Serien für diesen Inhalt gefunden",
+    "notFound": "Inhalt nicht gefunden",
+    "notFoundDescription": "Der angeforderte Inhalt konnte nicht gefunden werden."
   },
   "help": {
     "seriesHeading": "Beginne mit der Seite <series>Meine Serien</series>",

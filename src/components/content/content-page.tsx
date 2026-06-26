@@ -8,6 +8,7 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
+import { useLocation } from "wouter";
 import Page from "../page/page";
 import PageHeader from "../page/page-header";
 import { Checkbox } from "../ui/checkbox";
@@ -52,6 +53,7 @@ function ContentPage({
   const [list, setList] = useState(contentListJson);
   const [filterChecks, setFilterChecks] = useState(EContentCheckState.None);
   const { t } = useTranslation();
+  const [, navigate] = useLocation();
 
   const filterOwned = filterChecks === EContentCheckState.Owned;
   const filterWish = filterChecks === EContentCheckState.Wish;
@@ -96,7 +98,7 @@ function ContentPage({
       : filteredContentWithCheck;
 
     setList(filteredContentWithSearch);
-  }, [debouncedSearch, tabCategory, filterChecks]);
+  }, [debouncedSearch, tabCategory, filterChecks, allTab, contentListJson, tabs, wish, myContent]);
 
   return (
     <Page>
@@ -181,6 +183,7 @@ function ContentPage({
               series={item.skuSeries ? item.skuSeries : item.series}
               owned={owned}
               wish={wished}
+              onDetail={(id) => navigate(`/${content}/${id}`)}
             />
           );
         }}

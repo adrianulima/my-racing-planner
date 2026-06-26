@@ -1,4 +1,4 @@
-import { Badge, Text } from "@chakra-ui/react";
+import { Badge, Text, type TextProps } from "@chakra-ui/react";
 import { PropsWithChildren } from "react";
 
 const patterns = {
@@ -26,9 +26,10 @@ function NameWithBadges({ name }: { name: string }) {
 function ContentNameBadge({
   name,
   children,
-}: PropsWithChildren<{ name: string }>) {
+  ...rest
+}: PropsWithChildren<{ name: string } & TextProps>) {
   return (
-    <Text fontWeight={"bold"} truncate>
+    <Text fontWeight={"bold"} truncate {...rest}>
       {children}
       <NameWithBadges name={name} />
     </Text>
