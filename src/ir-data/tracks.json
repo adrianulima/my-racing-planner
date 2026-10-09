@@ -3175,7 +3175,9 @@
       456,
       551,
       552,
-      65
+      65,
+      423,
+      422
     ],
     "logo": "/img/logos/tracks/mountpanoramacircuit-logo.png"
   },
@@ -5039,8 +5041,7 @@
       447,
       539,
       496,
-      495,
-      623
+      495
     ],
     "logo": "/img/logos/tracks/silverstone-logo.png",
     "skuGroup": {
@@ -5065,7 +5066,6 @@
       539,
       496,
       495,
-      623,
       112,
       584,
       430,
@@ -8567,7 +8567,7 @@
   },
   "550": {
     "id": 550,
-    "name": "Charlotte Motor Speedway ",
+    "name": "Charlotte Motor Speedway",
     "config": "Legends Road Course 2025",
     "categories": [
       "road",
@@ -8640,7 +8640,7 @@
   },
   "551": {
     "id": 551,
-    "name": "Charlotte Motor Speedway ",
+    "name": "Charlotte Motor Speedway",
     "config": "Infield Road Course Long",
     "categories": [
       "road"
@@ -8657,7 +8657,7 @@
   },
   "552": {
     "id": 552,
-    "name": "Charlotte Motor Speedway ",
+    "name": "Charlotte Motor Speedway",
     "config": "Infield Road Course",
     "categories": [
       "road"
@@ -8670,7 +8670,7 @@
   },
   "553": {
     "id": 553,
-    "name": "Charlotte Motor Speedway ",
+    "name": "Charlotte Motor Speedway",
     "config": "Roval 2019",
     "categories": [
       "road"
@@ -8694,7 +8694,7 @@
   },
   "554": {
     "id": 554,
-    "name": "Charlotte Motor Speedway ",
+    "name": "Charlotte Motor Speedway",
     "config": "Roval 2025",
     "categories": [
       "road"
@@ -8712,7 +8712,7 @@
   },
   "555": {
     "id": 555,
-    "name": "Charlotte Motor Speedway ",
+    "name": "Charlotte Motor Speedway",
     "config": "Roval No Chicanes",
     "categories": [
       "road"
@@ -8728,7 +8728,7 @@
   },
   "556": {
     "id": 556,
-    "name": "Charlotte Motor Speedway ",
+    "name": "Charlotte Motor Speedway",
     "config": "Oval",
     "categories": [
       "oval"
@@ -8780,7 +8780,7 @@
   },
   "558": {
     "id": 558,
-    "name": "Charlotte Motor Speedway ",
+    "name": "Charlotte Motor Speedway",
     "config": "Rallyx",
     "categories": [
       "dirt_road"

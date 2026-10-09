@@ -794,7 +794,7 @@
         "date": "2026-05-19",
         "track": {
           "id": 556,
-          "name": "Charlotte Motor Speedway ",
+          "name": "Charlotte Motor Speedway",
           "config": "Oval"
         },
         "rainChance": 0
@@ -988,7 +988,7 @@
         "date": "2026-10-06",
         "track": {
           "id": 556,
-          "name": "Charlotte Motor Speedway ",
+          "name": "Charlotte Motor Speedway",
           "config": "Oval"
         },
         "rainChance": 0
@@ -1268,7 +1268,7 @@
         "date": "2026-10-06",
         "track": {
           "id": 556,
-          "name": "Charlotte Motor Speedway ",
+          "name": "Charlotte Motor Speedway",
           "config": "Oval"
         },
         "rainChance": 0
@@ -1533,7 +1533,7 @@
         "date": "2026-05-19",
         "track": {
           "id": 556,
-          "name": "Charlotte Motor Speedway ",
+          "name": "Charlotte Motor Speedway",
           "config": "Oval"
         },
         "rainChance": 0
@@ -1726,7 +1726,7 @@
         "date": "2026-10-06",
         "track": {
           "id": 556,
-          "name": "Charlotte Motor Speedway ",
+          "name": "Charlotte Motor Speedway",
           "config": "Oval"
         },
         "rainChance": 0
@@ -2166,7 +2166,7 @@
         "date": "2026-10-06",
         "track": {
           "id": 553,
-          "name": "Charlotte Motor Speedway ",
+          "name": "Charlotte Motor Speedway",
           "config": "Roval 2019"
         },
         "rainChance": 0
@@ -2489,7 +2489,7 @@
         "date": "2026-10-06",
         "track": {
           "id": 556,
-          "name": "Charlotte Motor Speedway ",
+          "name": "Charlotte Motor Speedway",
           "config": "Oval"
         },
         "rainChance": 0
@@ -2644,7 +2644,7 @@
           "name": "Snetterton Circuit",
           "config": "300"
         },
-        "rainChance": 7.3
+        "rainChance": 19
       },
       {
         "weekNum": 3,
@@ -2794,7 +2794,7 @@
         "date": "2026-09-22",
         "track": {
           "id": 556,
-          "name": "Charlotte Motor Speedway ",
+          "name": "Charlotte Motor Speedway",
           "config": "Oval"
         },
         "rainChance": 0
@@ -2852,7 +2852,7 @@
         "date": "2026-11-03",
         "track": {
           "id": 556,
-          "name": "Charlotte Motor Speedway ",
+          "name": "Charlotte Motor Speedway",
           "config": "Oval"
         },
         "rainChance": 0
@@ -3131,7 +3131,7 @@
         "date": "2026-09-29",
         "track": {
           "id": 556,
-          "name": "Charlotte Motor Speedway ",
+          "name": "Charlotte Motor Speedway",
           "config": "Oval"
         },
         "rainChance": 0
@@ -3537,7 +3537,7 @@
         "date": "2026-12-01",
         "track": {
           "id": 554,
-          "name": "Charlotte Motor Speedway ",
+          "name": "Charlotte Motor Speedway",
           "config": "Roval 2025"
         },
         "rainChance": 0
@@ -3622,7 +3622,7 @@
         "date": "2026-10-06",
         "track": {
           "id": 556,
-          "name": "Charlotte Motor Speedway ",
+          "name": "Charlotte Motor Speedway",
           "config": "Oval"
         },
         "rainChance": 0
@@ -4017,7 +4017,7 @@
         "date": "2026-12-01",
         "track": {
           "id": 556,
-          "name": "Charlotte Motor Speedway ",
+          "name": "Charlotte Motor Speedway",
           "config": "Oval"
         },
         "rainChance": 0
@@ -4071,7 +4071,7 @@
         "date": "2026-09-15",
         "track": {
           "id": 556,
-          "name": "Charlotte Motor Speedway ",
+          "name": "Charlotte Motor Speedway",
           "config": "Oval"
         },
         "rainChance": 0
@@ -4156,7 +4156,7 @@
         "date": "2026-11-17",
         "track": {
           "id": 556,
-          "name": "Charlotte Motor Speedway ",
+          "name": "Charlotte Motor Speedway",
           "config": "Oval"
         },
         "rainChance": 0
@@ -4416,7 +4416,7 @@
         "date": "2026-10-06",
         "track": {
           "id": 556,
-          "name": "Charlotte Motor Speedway ",
+          "name": "Charlotte Motor Speedway",
           "config": "Oval"
         },
         "rainChance": 0
@@ -4566,7 +4566,7 @@
           "name": "Circuit de Nevers Magny-Cours",
           "config": "Grand Prix"
         },
-        "rainChance": 1.3
+        "rainChance": 13
       },
       {
         "weekNum": 3,
@@ -4823,7 +4823,7 @@
         "date": "2026-05-20",
         "track": {
           "id": 556,
-          "name": "Charlotte Motor Speedway ",
+          "name": "Charlotte Motor Speedway",
           "config": "Oval"
         },
         "rainChance": 0
@@ -5006,7 +5006,7 @@
         "date": "2026-10-07",
         "track": {
           "id": 556,
-          "name": "Charlotte Motor Speedway ",
+          "name": "Charlotte Motor Speedway",
           "config": "Oval"
         },
         "rainChance": 0
@@ -5414,7 +5414,7 @@
           "name": "Silverstone Circuit",
           "config": "Grand Prix"
         },
-        "rainChance": 0
+        "rainChance": 0.6
       },
       {
         "weekNum": 1,
@@ -5692,7 +5692,7 @@
         "date": "2026-05-21",
         "track": {
           "id": 556,
-          "name": "Charlotte Motor Speedway ",
+          "name": "Charlotte Motor Speedway",
           "config": "Oval"
         },
         "rainChance": 0
@@ -5875,7 +5875,7 @@
         "date": "2026-10-08",
         "track": {
           "id": 556,
-          "name": "Charlotte Motor Speedway ",
+          "name": "Charlotte Motor Speedway",
           "config": "Oval"
         },
         "rainChance": 0
@@ -5966,7 +5966,7 @@
           "name": "Okayama International Circuit",
           "config": "Full Course"
         },
-        "rainChance": 6.3
+        "rainChance": 0
       },
       {
         "weekNum": 2,
@@ -6020,7 +6020,7 @@
         "date": "2026-11-03",
         "track": {
           "id": 553,
-          "name": "Charlotte Motor Speedway ",
+          "name": "Charlotte Motor Speedway",
           "config": "Roval 2019"
         },
         "rainChance": 0
@@ -6282,7 +6282,7 @@
         "date": "2026-09-22",
         "track": {
           "id": 556,
-          "name": "Charlotte Motor Speedway ",
+          "name": "Charlotte Motor Speedway",
           "config": "Oval"
         },
         "rainChance": 0
@@ -6342,7 +6342,7 @@
         "date": "2026-11-03",
         "track": {
           "id": 556,
-          "name": "Charlotte Motor Speedway ",
+          "name": "Charlotte Motor Speedway",
           "config": "Oval"
         },
         "rainChance": 0
@@ -6372,7 +6372,7 @@
         "date": "2026-11-24",
         "track": {
           "id": 556,
-          "name": "Charlotte Motor Speedway ",
+          "name": "Charlotte Motor Speedway",
           "config": "Oval"
         },
         "rainChance": 0
@@ -6752,7 +6752,7 @@
           "id": 144,
           "name": "Canadian Tire Motorsports Park"
         },
-        "rainChance": 2.3
+        "rainChance": 40
       },
       {
         "weekNum": 1,
@@ -6762,7 +6762,7 @@
           "name": "Summit Point Raceway",
           "config": "Summit Point Raceway"
         },
-        "rainChance": 21
+        "rainChance": 0
       },
       {
         "weekNum": 2,
@@ -6781,7 +6781,7 @@
           "name": "Indianapolis Motor Speedway",
           "config": "Road Course"
         },
-        "rainChance": 1.5
+        "rainChance": 0
       },
       {
         "weekNum": 4,
@@ -7218,7 +7218,7 @@
           "name": "Road Atlanta",
           "config": "Full Course"
         },
-        "rainChance": 4.4
+        "rainChance": 0
       },
       {
         "weekNum": 1,
@@ -7238,7 +7238,7 @@
           "name": "Sebring International Raceway",
           "config": "International"
         },
-        "rainChance": 42
+        "rainChance": 0
       },
       {
         "weekNum": 3,
@@ -7247,7 +7247,7 @@
           "id": 219,
           "name": "Mount Panorama Circuit"
         },
-        "rainChance": 8.3
+        "rainChance": 0
       },
       {
         "weekNum": 4,
@@ -8633,7 +8633,7 @@
         "date": "2026-10-06",
         "track": {
           "id": 558,
-          "name": "Charlotte Motor Speedway ",
+          "name": "Charlotte Motor Speedway",
           "config": "Rallyx"
         },
         "rainChance": 0
@@ -9057,7 +9057,7 @@
           "name": "Circuit des 24 Heures du Mans",
           "config": "Historic"
         },
-        "rainChance": 53
+        "rainChance": 0
       },
       {
         "weekNum": 4,
@@ -9343,7 +9343,7 @@
           "name": "St. Petersburg Grand Prix",
           "config": "Grand Prix"
         },
-        "rainChance": 41
+        "rainChance": 2
       },
       {
         "weekNum": 1,
@@ -9352,7 +9352,7 @@
           "id": 580,
           "name": "Adelaide Street Circuit"
         },
-        "rainChance": 0
+        "rainChance": 1.6
       },
       {
         "weekNum": 2,
@@ -9361,7 +9361,7 @@
           "id": 219,
           "name": "Mount Panorama Circuit"
         },
-        "rainChance": 0
+        "rainChance": 99
       },
       {
         "weekNum": 3,
@@ -9371,7 +9371,7 @@
           "name": "Miami International Autodrome",
           "config": "Grand Prix"
         },
-        "rainChance": 0.2
+        "rainChance": 0
       },
       {
         "weekNum": 4,
@@ -9501,7 +9501,7 @@
           "name": "St. Petersburg Grand Prix",
           "config": "Grand Prix"
         },
-        "rainChance": 0
+        "rainChance": 11
       },
       {
         "weekNum": 1,
@@ -9519,7 +9519,7 @@
           "id": 219,
           "name": "Mount Panorama Circuit"
         },
-        "rainChance": 0
+        "rainChance": 4.2
       },
       {
         "weekNum": 3,
@@ -10210,6 +10210,86 @@
       }
     ]
   },
+  "422": {
+    "id": 422,
+    "name": "Bathurst 1000 US Presented by Next Level Racing",
+    "category": "sports_car",
+    "laps": 161,
+    "duration": null,
+    "switching": false,
+    "official": true,
+    "fixed": false,
+    "multiclass": false,
+    "cars": [
+      190,
+      192
+    ],
+    "license": {
+      "id": 3,
+      "name": "Class C",
+      "letter": "C",
+      "color": "feec04"
+    },
+    "logo": "seriesid_422.png",
+    "weeks": [
+      {
+        "weekNum": 0,
+        "date": "2026-10-03",
+        "track": {
+          "id": 219,
+          "name": "Mount Panorama Circuit"
+        },
+        "rainChance": 0
+      }
+    ],
+    "raceSchedule": [
+      {
+        "repeating": false,
+        "sessionMinutes": 399,
+        "superSession": false
+      }
+    ]
+  },
+  "423": {
+    "id": 423,
+    "name": "Bathurst 1000 AU Presented by Next Level Racing",
+    "category": "sports_car",
+    "laps": 161,
+    "duration": null,
+    "switching": false,
+    "official": true,
+    "fixed": false,
+    "multiclass": false,
+    "cars": [
+      190,
+      192
+    ],
+    "license": {
+      "id": 3,
+      "name": "Class C",
+      "letter": "C",
+      "color": "feec04"
+    },
+    "logo": "seriesid_423.png",
+    "weeks": [
+      {
+        "weekNum": 0,
+        "date": "2026-10-03",
+        "track": {
+          "id": 219,
+          "name": "Mount Panorama Circuit"
+        },
+        "rainChance": 0
+      }
+    ],
+    "raceSchedule": [
+      {
+        "repeating": false,
+        "sessionMinutes": 399,
+        "superSession": false
+      }
+    ]
+  },
   "428": {
     "id": 428,
     "name": "SUPER DIRTcar Big Block Modified Series",
@@ -10602,7 +10682,7 @@
         "date": "2026-10-20",
         "track": {
           "id": 553,
-          "name": "Charlotte Motor Speedway ",
+          "name": "Charlotte Motor Speedway",
           "config": "Roval 2019"
         },
         "rainChance": 0
@@ -11585,7 +11665,7 @@
         "date": "2026-11-10",
         "track": {
           "id": 551,
-          "name": "Charlotte Motor Speedway ",
+          "name": "Charlotte Motor Speedway",
           "config": "Infield Road Course Long"
         },
         "rainChance": 0
@@ -11689,7 +11769,7 @@
           "name": "Road Atlanta",
           "config": "Full Course"
         },
-        "rainChance": 35
+        "rainChance": 0
       },
       {
         "weekNum": 2,
@@ -11699,7 +11779,7 @@
           "name": "Circuit Zandvoort",
           "config": "Grand Prix"
         },
-        "rainChance": 73
+        "rainChance": 0
       },
       {
         "weekNum": 3,
@@ -11709,7 +11789,7 @@
           "name": "Mobility Resort Motegi",
           "config": "Grand Prix"
         },
-        "rainChance": 100
+        "rainChance": 0
       },
       {
         "weekNum": 4,
@@ -12015,7 +12095,7 @@
           "name": "Indianapolis Motor Speedway",
           "config": "Road Course"
         },
-        "rainChance": 0
+        "rainChance": 0.4
       },
       {
         "weekNum": 1,
@@ -12045,7 +12125,7 @@
           "name": "Red Bull Ring",
           "config": "Grand Prix"
         },
-        "rainChance": 0
+        "rainChance": 99
       },
       {
         "weekNum": 4,
@@ -12617,7 +12697,7 @@
           "name": "Fuji International Speedway",
           "config": "Grand Prix"
         },
-        "rainChance": 25
+        "rainChance": 3.2
       },
       {
         "weekNum": 3,
@@ -12627,7 +12707,7 @@
           "name": "Red Bull Ring",
           "config": "Grand Prix"
         },
-        "rainChance": 0.1
+        "rainChance": 0
       },
       {
         "weekNum": 4,
@@ -12948,7 +13028,7 @@
         "date": "2026-10-13",
         "track": {
           "id": 558,
-          "name": "Charlotte Motor Speedway ",
+          "name": "Charlotte Motor Speedway",
           "config": "Rallyx"
         },
         "rainChance": 0
@@ -12988,7 +13068,7 @@
         "date": "2026-11-10",
         "track": {
           "id": 558,
-          "name": "Charlotte Motor Speedway ",
+          "name": "Charlotte Motor Speedway",
           "config": "Rallyx"
         },
         "rainChance": 0
@@ -13150,7 +13230,7 @@
         "date": "2026-11-10",
         "track": {
           "id": 558,
-          "name": "Charlotte Motor Speedway ",
+          "name": "Charlotte Motor Speedway",
           "config": "Rallyx"
         },
         "rainChance": 0
@@ -13264,7 +13344,7 @@
         "date": "2026-10-06",
         "track": {
           "id": 558,
-          "name": "Charlotte Motor Speedway ",
+          "name": "Charlotte Motor Speedway",
           "config": "Rallyx"
         },
         "rainChance": 0
@@ -14019,7 +14099,7 @@
         "date": "2026-09-15",
         "track": {
           "id": 556,
-          "name": "Charlotte Motor Speedway ",
+          "name": "Charlotte Motor Speedway",
           "config": "Oval"
         },
         "rainChance": 0
@@ -14270,7 +14350,7 @@
           "name": "Okayama International Circuit",
           "config": "Full Course"
         },
-        "rainChance": 12
+        "rainChance": 0
       },
       {
         "weekNum": 2,
@@ -14289,7 +14369,7 @@
           "id": 219,
           "name": "Mount Panorama Circuit"
         },
-        "rainChance": 0
+        "rainChance": 0.1
       },
       {
         "weekNum": 4,
@@ -14741,7 +14821,7 @@
           "name": "Silverstone Circuit",
           "config": "Grand Prix"
         },
-        "rainChance": 81
+        "rainChance": 0
       },
       {
         "weekNum": 1,
@@ -14751,7 +14831,7 @@
           "name": "Indianapolis Motor Speedway",
           "config": "Road Course"
         },
-        "rainChance": 0
+        "rainChance": 1.9
       },
       {
         "weekNum": 2,
@@ -14788,7 +14868,7 @@
         "date": "2026-10-20",
         "track": {
           "id": 553,
-          "name": "Charlotte Motor Speedway ",
+          "name": "Charlotte Motor Speedway",
           "config": "Roval 2019"
         },
         "rainChance": 0
@@ -14929,7 +15009,7 @@
         "date": "2026-10-24",
         "track": {
           "id": 553,
-          "name": "Charlotte Motor Speedway ",
+          "name": "Charlotte Motor Speedway",
           "config": "Roval 2019"
         },
         "rainChance": 0
@@ -15108,7 +15188,7 @@
         "date": "2026-12-01",
         "track": {
           "id": 554,
-          "name": "Charlotte Motor Speedway ",
+          "name": "Charlotte Motor Speedway",
           "config": "Roval 2025"
         },
         "rainChance": 0
@@ -15695,7 +15775,7 @@
           "name": "Okayama International Circuit",
           "config": "Full Course"
         },
-        "rainChance": 0
+        "rainChance": 8.6
       },
       {
         "weekNum": 1,
@@ -16633,7 +16713,7 @@
           "name": "Indianapolis Motor Speedway",
           "config": "Road Course"
         },
-        "rainChance": 0.2
+        "rainChance": 0
       },
       {
         "weekNum": 2,
@@ -16643,7 +16723,7 @@
           "name": "Brands Hatch Circuit",
           "config": "Grand Prix"
         },
-        "rainChance": 0
+        "rainChance": 0.1
       },
       {
         "weekNum": 3,
@@ -16670,7 +16750,7 @@
         "date": "2026-10-20",
         "track": {
           "id": 553,
-          "name": "Charlotte Motor Speedway ",
+          "name": "Charlotte Motor Speedway",
           "config": "Roval 2019"
         },
         "rainChance": 0
@@ -16808,7 +16888,7 @@
           "name": "Snetterton Circuit",
           "config": "200"
         },
-        "rainChance": 85
+        "rainChance": 2.1
       },
       {
         "weekNum": 3,
@@ -16835,7 +16915,7 @@
         "date": "2026-10-20",
         "track": {
           "id": 553,
-          "name": "Charlotte Motor Speedway ",
+          "name": "Charlotte Motor Speedway",
           "config": "Roval 2019"
         },
         "rainChance": 0
@@ -17140,7 +17220,7 @@
           "name": "Indianapolis Motor Speedway",
           "config": "Road Course"
         },
-        "rainChance": 15
+        "rainChance": 6.1
       },
       {
         "weekNum": 4,
@@ -18403,7 +18483,7 @@
         "date": "2026-10-13",
         "track": {
           "id": 556,
-          "name": "Charlotte Motor Speedway ",
+          "name": "Charlotte Motor Speedway",
           "config": "Oval"
         },
         "rainChance": 0
@@ -18527,7 +18607,7 @@
           "name": "Silverstone Circuit",
           "config": "Grand Prix"
         },
-        "rainChance": 0
+        "rainChance": 0.4
       },
       {
         "weekNum": 1,
@@ -18537,7 +18617,7 @@
           "name": "Indianapolis Motor Speedway",
           "config": "Road Course"
         },
-        "rainChance": 0
+        "rainChance": 100
       },
       {
         "weekNum": 2,
@@ -18547,7 +18627,7 @@
           "name": "Brands Hatch Circuit",
           "config": "Grand Prix"
         },
-        "rainChance": 98
+        "rainChance": 0
       },
       {
         "weekNum": 3,
@@ -18574,7 +18654,7 @@
         "date": "2026-10-20",
         "track": {
           "id": 553,
-          "name": "Charlotte Motor Speedway ",
+          "name": "Charlotte Motor Speedway",
           "config": "Roval 2019"
         },
         "rainChance": 0
@@ -19080,7 +19160,7 @@
         "date": "2026-10-13",
         "track": {
           "id": 555,
-          "name": "Charlotte Motor Speedway ",
+          "name": "Charlotte Motor Speedway",
           "config": "Roval No Chicanes"
         },
         "rainChance": 0
@@ -19371,7 +19451,7 @@
           "name": "Autódromo José Carlos Pace",
           "config": "Grand Prix"
         },
-        "rainChance": 0
+        "rainChance": 100
       },
       {
         "weekNum": 1,
@@ -19381,7 +19461,7 @@
           "name": "Miami International Autodrome",
           "config": "Grand Prix"
         },
-        "rainChance": 11
+        "rainChance": 0.7
       },
       {
         "weekNum": 2,
@@ -19391,7 +19471,7 @@
           "name": "Red Bull Ring",
           "config": "Grand Prix"
         },
-        "rainChance": 0.9
+        "rainChance": 6
       },
       {
         "weekNum": 3,
@@ -19401,7 +19481,7 @@
           "name": "Sebring International Raceway",
           "config": "International"
         },
-        "rainChance": 22
+        "rainChance": 0
       },
       {
         "weekNum": 4,
@@ -19533,7 +19613,7 @@
           "name": "Autódromo José Carlos Pace",
           "config": "Grand Prix"
         },
-        "rainChance": 100
+        "rainChance": 0
       },
       {
         "weekNum": 1,
@@ -20044,7 +20124,7 @@
           "name": "Fuji International Speedway",
           "config": "Grand Prix"
         },
-        "rainChance": 0
+        "rainChance": 63
       },
       {
         "weekNum": 3,
@@ -20816,7 +20896,7 @@
           "name": "Watkins Glen International",
           "config": "Classic Boot"
         },
-        "rainChance": 57
+        "rainChance": 86
       },
       {
         "weekNum": 1,
@@ -20826,7 +20906,7 @@
           "name": "Road Atlanta",
           "config": "Full Course"
         },
-        "rainChance": 0
+        "rainChance": 31
       },
       {
         "weekNum": 2,
@@ -20836,7 +20916,7 @@
           "name": "Red Bull Ring",
           "config": "Grand Prix"
         },
-        "rainChance": 1.8
+        "rainChance": 0.2
       },
       {
         "weekNum": 3,
@@ -20846,7 +20926,7 @@
           "name": "Autódromo Hermanos Rodríguez",
           "config": "Grand Prix Historic"
         },
-        "rainChance": 1
+        "rainChance": 62
       },
       {
         "weekNum": 4,
@@ -20997,7 +21077,7 @@
           "name": "Red Bull Ring",
           "config": "Grand Prix"
         },
-        "rainChance": 28
+        "rainChance": 0
       },
       {
         "weekNum": 3,
@@ -21524,7 +21604,7 @@
           "name": "Summit Point Raceway",
           "config": "Summit Point Raceway"
         },
-        "rainChance": 60
+        "rainChance": 0
       },
       {
         "weekNum": 1,
@@ -22007,7 +22087,7 @@
         "date": "2026-09-15",
         "track": {
           "id": 551,
-          "name": "Charlotte Motor Speedway ",
+          "name": "Charlotte Motor Speedway",
           "config": "Infield Road Course Long"
         },
         "rainChance": 0
@@ -22086,7 +22166,7 @@
         "date": "2026-11-10",
         "track": {
           "id": 553,
-          "name": "Charlotte Motor Speedway ",
+          "name": "Charlotte Motor Speedway",
           "config": "Roval 2019"
         },
         "rainChance": 0
@@ -22116,7 +22196,7 @@
         "date": "2026-12-01",
         "track": {
           "id": 550,
-          "name": "Charlotte Motor Speedway ",
+          "name": "Charlotte Motor Speedway",
           "config": "Legends Road Course 2025"
         },
         "rainChance": 0
@@ -22323,7 +22403,7 @@
         "date": "2026-09-15",
         "track": {
           "id": 556,
-          "name": "Charlotte Motor Speedway ",
+          "name": "Charlotte Motor Speedway",
           "config": "Oval"
         },
         "rainChance": 0
@@ -22408,7 +22488,7 @@
         "date": "2026-11-17",
         "track": {
           "id": 556,
-          "name": "Charlotte Motor Speedway ",
+          "name": "Charlotte Motor Speedway",
           "config": "Oval"
         },
         "rainChance": 0
@@ -22821,7 +22901,7 @@
         "date": "2026-12-01",
         "track": {
           "id": 554,
-          "name": "Charlotte Motor Speedway ",
+          "name": "Charlotte Motor Speedway",
           "config": "Roval 2025"
         },
         "rainChance": 0
@@ -23928,7 +24008,7 @@
           "name": "Nürburgring Grand-Prix-Strecke",
           "config": "Kurzanbindung w/out Arena"
         },
-        "rainChance": 34
+        "rainChance": 32
       },
       {
         "weekNum": 6,
@@ -23978,7 +24058,7 @@
           "name": "Watkins Glen International",
           "config": "Classic Boot"
         },
-        "rainChance": 28
+        "rainChance": 34
       },
       {
         "weekNum": 11,
@@ -24193,7 +24273,7 @@
           "name": "Road Atlanta",
           "config": "Full Course"
         },
-        "rainChance": 0
+        "rainChance": 2.2
       },
       {
         "weekNum": 2,
@@ -24203,7 +24283,7 @@
           "name": "Fuji International Speedway",
           "config": "Grand Prix"
         },
-        "rainChance": 14
+        "rainChance": 0
       },
       {
         "weekNum": 3,
@@ -24671,7 +24751,7 @@
           "id": 152,
           "name": "Phillip Island Circuit"
         },
-        "rainChance": 12
+        "rainChance": 0
       },
       {
         "weekNum": 1,
@@ -24700,7 +24780,7 @@
           "name": "Shell V-Power Motorsport Park at The Bend",
           "config": "GT Circuit"
         },
-        "rainChance": 0
+        "rainChance": 57
       },
       {
         "weekNum": 4,
@@ -24850,7 +24930,7 @@
           "name": "Watkins Glen International",
           "config": "Boot"
         },
-        "rainChance": 0
+        "rainChance": 85
       },
       {
         "weekNum": 2,
@@ -25011,7 +25091,7 @@
           "name": "Autodromo Nazionale Monza",
           "config": "Grand Prix"
         },
-        "rainChance": 0.8
+        "rainChance": 0.3
       },
       {
         "weekNum": 1,
@@ -25021,7 +25101,7 @@
           "name": "Nürburgring Grand-Prix-Strecke",
           "config": "Grand Prix"
         },
-        "rainChance": 67
+        "rainChance": 0
       },
       {
         "weekNum": 2,
@@ -25041,7 +25121,7 @@
           "name": "Hockenheimring Baden-Württemberg",
           "config": "Grand Prix"
         },
-        "rainChance": 2.4
+        "rainChance": 0
       },
       {
         "weekNum": 4,
@@ -25210,7 +25290,7 @@
         "date": "2026-10-13",
         "track": {
           "id": 558,
-          "name": "Charlotte Motor Speedway ",
+          "name": "Charlotte Motor Speedway",
           "config": "Rallyx"
         },
         "rainChance": 0
@@ -25250,7 +25330,7 @@
         "date": "2026-11-10",
         "track": {
           "id": 558,
-          "name": "Charlotte Motor Speedway ",
+          "name": "Charlotte Motor Speedway",
           "config": "Rallyx"
         },
         "rainChance": 0
@@ -25484,7 +25564,7 @@
           "name": "Suzuka International Racing Course",
           "config": "East"
         },
-        "rainChance": 100
+        "rainChance": 2.4
       },
       {
         "weekNum": 4,
@@ -25584,62 +25664,6 @@
       }
     ]
   },
-  "623": {
-    "id": 623,
-    "name": "Britcar 24 Presented by Cosworth",
-    "category": "sports_car",
-    "laps": null,
-    "duration": 1440,
-    "switching": false,
-    "official": true,
-    "fixed": false,
-    "multiclass": true,
-    "cars": [
-      156,
-      188,
-      173,
-      206,
-      176,
-      194,
-      132,
-      133,
-      184,
-      169,
-      185,
-      204,
-      157,
-      189,
-      150,
-      119,
-      135
-    ],
-    "license": {
-      "id": 3,
-      "name": "Class C",
-      "letter": "C",
-      "color": "feec04"
-    },
-    "logo": "seriesid_623.png",
-    "weeks": [
-      {
-        "weekNum": 0,
-        "date": "2026-09-18",
-        "track": {
-          "id": 341,
-          "name": "Silverstone Circuit",
-          "config": "Grand Prix"
-        },
-        "rainChance": 41
-      }
-    ],
-    "raceSchedule": [
-      {
-        "repeating": false,
-        "sessionMinutes": 1481,
-        "superSession": false
-      }
-    ]
-  },
   "624": {
     "id": 624,
     "name": "NASCAR Gen 4 Grand National Series",
@@ -25704,7 +25728,7 @@
         "date": "2026-10-13",
         "track": {
           "id": 556,
-          "name": "Charlotte Motor Speedway ",
+          "name": "Charlotte Motor Speedway",
           "config": "Oval"
         },
         "rainChance": 0
@@ -25988,7 +26012,7 @@
           "name": "Oulton Park Circuit",
           "config": "International"
         },
-        "rainChance": 0
+        "rainChance": 2.4
       },
       {
         "weekNum": 1,
@@ -26008,7 +26032,7 @@
           "name": "Circuit Zandvoort",
           "config": "Grand Prix"
         },
-        "rainChance": 0
+        "rainChance": 98
       },
       {
         "weekNum": 3,
@@ -26018,7 +26042,7 @@
           "name": "Snetterton Circuit",
           "config": "200"
         },
-        "rainChance": 0
+        "rainChance": 84
       },
       {
         "weekNum": 4,

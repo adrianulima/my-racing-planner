@@ -1444,8 +1444,7 @@
       502,
       492,
       572,
-      275,
-      623
+      275
     ],
     "logo": "/img/logos/partners/porsche-logo.png"
   },
@@ -1627,8 +1626,7 @@
       447,
       539,
       275,
-      619,
-      623
+      619
     ],
     "logo": "/img/logos/partners/bmw-logo.png"
   },
@@ -1656,8 +1654,7 @@
       447,
       539,
       275,
-      619,
-      623
+      619
     ],
     "logo": "/img/logos/partners/lamborghini-logo.png"
   },
@@ -1691,8 +1688,7 @@
       491,
       502,
       492,
-      572,
-      623
+      572
     ],
     "logo": "/img/logos/partners/mclaren-logo.png"
   },
@@ -1919,8 +1915,7 @@
       502,
       492,
       572,
-      275,
-      623
+      275
     ],
     "logo": "/img/logos/partners/astonmartin-logo.png"
   },
@@ -2025,8 +2020,7 @@
       447,
       539,
       275,
-      619,
-      623
+      619
     ],
     "logo": "/img/logos/partners/amg-logo.png"
   },
@@ -2046,8 +2040,7 @@
       502,
       492,
       572,
-      275,
-      623
+      275
     ],
     "logo": "/img/logos/partners/amg-logo.png"
   },
@@ -2235,8 +2228,7 @@
       447,
       539,
       275,
-      619,
-      623
+      619
     ],
     "logo": "/img/logos/partners/porsche-logo.png"
   },
@@ -2321,8 +2313,7 @@
       447,
       539,
       275,
-      619,
-      623
+      619
     ],
     "logo": "/img/logos/partners/ferrari-logo.png"
   },
@@ -2378,8 +2369,7 @@
       594,
       595,
       596,
-      619,
-      623
+      619
     ],
     "logo": "/img/logos/partners/audi-logo.png"
   },
@@ -2501,8 +2491,7 @@
       419,
       447,
       539,
-      619,
-      623
+      619
     ],
     "logo": "/img/logos/partners/chevrolet-logo.png"
   },
@@ -2530,8 +2519,7 @@
       447,
       539,
       275,
-      619,
-      623
+      619
     ],
     "logo": "/img/logos/partners/ford-logo.png"
   },
@@ -2597,8 +2585,7 @@
       419,
       447,
       539,
-      619,
-      623
+      619
     ],
     "logo": "/img/logos/partners/mclaren-logo.png"
   },
@@ -2618,8 +2605,7 @@
       502,
       492,
       572,
-      275,
-      623
+      275
     ],
     "logo": "/img/logos/partners/bmw-logo.png"
   },
@@ -2634,7 +2620,9 @@
     "sku": 10585,
     "series": [
       399,
-      405
+      405,
+      423,
+      422
     ],
     "logo": "/img/logos/partners/ford-logo.png"
   },
@@ -2663,7 +2651,9 @@
     "sku": 10587,
     "series": [
       399,
-      405
+      405,
+      423,
+      422
     ],
     "logo": "/img/logos/partners/chevrolet-logo.png"
   },
@@ -2702,8 +2692,7 @@
       419,
       447,
       539,
-      619,
-      623
+      619
     ],
     "logo": "/img/logos/partners/acura-logo.png"
   },
@@ -2839,8 +2828,7 @@
       491,
       502,
       492,
-      572,
-      623
+      572
     ],
     "logo": "/img/logos/partners/ford-logo.png"
   },
@@ -2883,8 +2871,7 @@
       447,
       539,
       275,
-      619,
-      623
+      619
     ],
     "logo": "/img/logos/partners/astonmartin-logo.png"
   },

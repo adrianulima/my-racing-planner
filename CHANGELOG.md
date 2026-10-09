@@ -2,6 +2,11 @@
 
 All notable changes to the **"Racing Planner"** project will be documented in this file.
 
+## 0.11.4
+
+- Fix missing localization keys for de, fr, pl and ru
+- Small data update with lates iRacing changes to track names and series cars
+
 ## 0.11.3
 
 - Forgot to update the season label at the top
