@@ -2,6 +2,14 @@
 
 All notable changes to the **"Racing Planner"** project will be documented in this file.
 
+## 0.11.3
+
+- Forgot to update the season label at the top
+
+## 0.11.2
+
+- Updated with data of Season 4 2026
+
 ## 0.11.1
 
 - Added content owned count to series page rows
