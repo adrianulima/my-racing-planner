@@ -30,4 +30,5 @@ export type TContent = {
   logo?: string;
   skuGroup?: { [key: string | number]: string };
   group?: number;
+  week?: string;
 };

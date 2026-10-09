@@ -15,7 +15,7 @@ function SeasonTableHeaderParticipation({
 }: {
   seriesTracks?: Record<string, number | number[]>;
 }) {
-  const { myTracks, wishTracks } = useIr();
+  const { myTracks, wishTracks, weekOffDates } = useIr();
   const { t } = useTranslation();
 
   const {
@@ -31,12 +31,13 @@ function SeasonTableHeaderParticipation({
       ),
     );
 
-    const tracks = Object.values(filteredTracks)
-      .map((trackId) => {
+    const tracks = Object.entries(filteredTracks)
+      .map((entry) => {
         const track =
           TRACKS_JSON[
-            (trackId as number).toString() as keyof typeof TRACKS_JSON
-          ];
+            (entry[1] as number).toString() as keyof typeof TRACKS_JSON
+          ] as TContent;
+        track.week = entry[0].toString();
         return track;
       })
       .filter(Boolean) as TContent[];
@@ -45,14 +46,18 @@ function SeasonTableHeaderParticipation({
 
     const ownedTracks = tracks.filter(
       (track) =>
-        track.free ||
-        myTracks.includes(track.sku) ||
-        ownNurbCombined(track.id, myTracks),
+        !weekOffDates.includes(track.week ?? "") && (
+          track.free ||
+          myTracks.includes(track.sku) ||
+          ownNurbCombined(track.id, myTracks)
+        )
     ).length;
 
     const wishedTracks = tracks.filter(
       (track) =>
-        wishTracks.includes(track.sku) || ownNurbCombined(track.id, wishTracks),
+        !weekOffDates.includes(track.week ?? "") && (
+          wishTracks.includes(track.sku) || ownNurbCombined(track.id, wishTracks)
+        )
     ).length;
 
     return {
